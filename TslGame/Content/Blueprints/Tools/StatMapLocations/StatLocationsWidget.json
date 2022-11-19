@@ -1,0 +1,1397 @@
+[
+  {
+    "Type": "TextProperty",
+    "Name": "Stats",
+    "Outer": "StatLocationsWidget_C",
+    "Next": null,
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "VerticalStatbox",
+    "Outer": "StatLocationsWidget_C",
+    "Next": {
+      "ObjectName": "TextProperty StatLocationsWidget_C:Stats",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.0"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class VerticalBox",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "VerticalMaxBox",
+    "Outer": "StatLocationsWidget_C",
+    "Next": {
+      "ObjectName": "ObjectProperty StatLocationsWidget_C:VerticalStatbox",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.1"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class VerticalBox",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "VerticalCallBox",
+    "Outer": "StatLocationsWidget_C",
+    "Next": {
+      "ObjectName": "ObjectProperty StatLocationsWidget_C:VerticalMaxBox",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.2"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class VerticalBox",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "VerticalAvgBox",
+    "Outer": "StatLocationsWidget_C",
+    "Next": {
+      "ObjectName": "ObjectProperty StatLocationsWidget_C:VerticalCallBox",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.3"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class VerticalBox",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "ReturnValue",
+    "Outer": "GetText_0",
+    "Next": null,
+    "PropertyFlags": 1408
+  },
+  {
+    "Type": "Function",
+    "Name": "GetText_0",
+    "Outer": "StatLocationsWidget_C",
+    "Next": {
+      "ObjectName": "ObjectProperty StatLocationsWidget_C:VerticalAvgBox",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.4"
+    },
+    "Children": [
+      {
+        "ObjectName": "TextProperty StatLocationsWidget_C:GetText_0.ReturnValue",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.5"
+      }
+    ],
+    "FunctionFlags": 474087424
+  },
+  {
+    "Type": "StrProperty",
+    "Name": "Stats",
+    "Outer": "Stats",
+    "Next": null
+  },
+  {
+    "Type": "StrProperty",
+    "Name": "CallFunc_ParseIntoArray_ReturnValue",
+    "Outer": "CallFunc_ParseIntoArray_ReturnValue",
+    "Next": null
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_SwitchInteger_CmpSuccess",
+    "Outer": "SetText",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "CallFunc_Conv_StringToText_ReturnValue2",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "BoolProperty StatLocationsWidget_C:SetText.K2Node_SwitchInteger_CmpSuccess",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.9"
+    }
+  },
+  {
+    "Type": "StrProperty",
+    "Name": "CallFunc_Array_Get_Item2",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "TextProperty StatLocationsWidget_C:SetText.CallFunc_Conv_StringToText_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.10"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "CallFunc_Conv_StringToText_ReturnValue",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "StrProperty StatLocationsWidget_C:SetText.CallFunc_Array_Get_Item2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.11"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Array_Index_Variable2",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "TextProperty StatLocationsWidget_C:SetText.CallFunc_Conv_StringToText_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.12"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue2",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "IntProperty StatLocationsWidget_C:SetText.Temp_int_Array_Index_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.13"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue2",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "IntProperty StatLocationsWidget_C:SetText.CallFunc_Add_IntInt_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.14"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_AddChildToVerticalBox_ReturnValue4",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "BoolProperty StatLocationsWidget_C:SetText.CallFunc_Less_IntInt_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.15"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class VerticalBoxSlot",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Loop_Counter_Variable2",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "ObjectProperty StatLocationsWidget_C:SetText.CallFunc_AddChildToVerticalBox_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.16"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_AddChildToVerticalBox_ReturnValue3",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "IntProperty StatLocationsWidget_C:SetText.Temp_int_Loop_Counter_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.17"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class VerticalBoxSlot",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_AddChildToVerticalBox_ReturnValue2",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "ObjectProperty StatLocationsWidget_C:SetText.CallFunc_AddChildToVerticalBox_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.18"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class VerticalBoxSlot",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_AddChildToVerticalBox_ReturnValue",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "ObjectProperty StatLocationsWidget_C:SetText.CallFunc_AddChildToVerticalBox_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.19"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class VerticalBoxSlot",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Create_ReturnValue",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "ObjectProperty StatLocationsWidget_C:SetText.CallFunc_AddChildToVerticalBox_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.20"
+    },
+    "PropertyClass": {
+      "ObjectName": "WidgetBlueprintGeneratedClass SingleStatText_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.15"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "ObjectProperty StatLocationsWidget_C:SetText.CallFunc_Create_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.21"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "IntProperty StatLocationsWidget_C:SetText.CallFunc_Add_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.22"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Loop_Counter_Variable",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "BoolProperty StatLocationsWidget_C:SetText.CallFunc_Less_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.23"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue2",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "IntProperty StatLocationsWidget_C:SetText.Temp_int_Loop_Counter_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.24"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "IntProperty StatLocationsWidget_C:SetText.CallFunc_Array_Length_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.25"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "CallFunc_ParseIntoArray_ReturnValue",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "BoolProperty StatLocationsWidget_C:SetText.CallFunc_EqualEqual_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.26"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "StrProperty StatLocationsWidget_C:SetText.CallFunc_ParseIntoArray_ReturnValue.CallFunc_ParseIntoArray_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.8"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Percent_IntInt_ReturnValue",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "ArrayProperty StatLocationsWidget_C:SetText.CallFunc_ParseIntoArray_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.27"
+    }
+  },
+  {
+    "Type": "StrProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "IntProperty StatLocationsWidget_C:SetText.CallFunc_Percent_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.28"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "StrProperty StatLocationsWidget_C:SetText.CallFunc_Array_Get_Item",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.29"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Array_Index_Variable",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "IntProperty StatLocationsWidget_C:SetText.CallFunc_Array_Length_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.30"
+    }
+  },
+  {
+    "Type": "StrProperty",
+    "Name": "AppendedStats",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "IntProperty StatLocationsWidget_C:SetText.Temp_int_Array_Index_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.31"
+    },
+    "PropertyFlags": 1
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "Stats",
+    "Outer": "SetText",
+    "Next": {
+      "ObjectName": "StrProperty StatLocationsWidget_C:SetText.AppendedStats",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.32"
+    },
+    "PropertyFlags": 134218112,
+    "Inner": {
+      "ObjectName": "StrProperty StatLocationsWidget_C:SetText.Stats.Stats",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.7"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "SetText",
+    "Outer": "StatLocationsWidget_C",
+    "Next": {
+      "ObjectName": "Function StatLocationsWidget_C:GetText_0",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.6"
+    },
+    "Children": [
+      {
+        "ObjectName": "ArrayProperty StatLocationsWidget_C:SetText.Stats",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.33"
+      }
+    ],
+    "FunctionFlags": 214040576
+  },
+  {
+    "Type": "Function",
+    "Name": "ClearStatBoxes",
+    "Outer": "StatLocationsWidget_C",
+    "Next": {
+      "ObjectName": "Function StatLocationsWidget_C:SetText",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.34"
+    },
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "StatLocationsWidget_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree StatLocationsWidget_C:WidgetTree",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.81"
+      },
+      "bAllowTemplate": true,
+      "Bindings": [
+        {
+          "ObjectName": "statName",
+          "PropertyName": "Text",
+          "FunctionName": "GetText_0",
+          "SourcePath": {
+            "Segments": [
+              {
+                "Name": "GetText_0",
+                "ArrayIndex": -1
+              }
+            ]
+          },
+          "Kind": "EBindingKind::Function"
+        }
+      ],
+      "bValidTemplate": true,
+      "TemplateAsset": "/Game/Blueprints/Tools/StatMapLocations/StatLocationsWidget.WidgetArchetype"
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class UserWidget",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function StatLocationsWidget_C:ClearStatBoxes",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.35"
+      }
+    ],
+    "FuncMap": {
+      "GetText_0": {
+        "ObjectName": "Function StatLocationsWidget_C:GetText_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.6"
+      },
+      "SetText": {
+        "ObjectName": "Function StatLocationsWidget_C:SetText",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.34"
+      },
+      "ClearStatBoxes": {
+        "ObjectName": "Function StatLocationsWidget_C:ClearStatBoxes",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.35"
+      }
+    },
+    "ClassFlags": 10752016,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "StatLocationsWidget_C Default__StatLocationsWidget_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.37"
+    }
+  },
+  {
+    "Type": "StatLocationsWidget_C",
+    "Name": "Default__StatLocationsWidget_C",
+    "Properties": {
+      "Stats": {
+        "Namespace": "[D671316F46B0A94211E41A9FA45A37E4]",
+        "Key": "5B3B964641AA2069A81CE6B7AC04218F",
+        "SourceString": "No Stats"
+      },
+      "bCanEverTick": false,
+      "bCanEverPaint": false
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot StatLocationsWidget_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.40"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot StatLocationsWidget_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.41"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.42"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.43"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 52.0,
+          "Top": 244.0,
+          "Right": 1254.0,
+          "Bottom": 800.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel StatLocationsWidget_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.38"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox StatLocationsWidget_C:WidgetTree.HorizontalBox_39",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.44"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 52.0,
+          "Top": 204.0,
+          "Right": 1296.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel StatLocationsWidget_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.38"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox StatLocationsWidget_C:WidgetTree.HorizontalBox_40",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.45"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_3",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 52.0,
+          "Top": 244.0,
+          "Right": 1254.0,
+          "Bottom": 800.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.39"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_39",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.46"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_4",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Left": 52.0,
+          "Top": 204.0,
+          "Right": 1296.0
+        }
+      },
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.39"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_40",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.47"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_39",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_39.HorizontalBoxSlot_12",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.49"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_39.HorizontalBoxSlot_15",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.51"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_39.HorizontalBoxSlot_11",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.48"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_39.HorizontalBoxSlot_13",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.50"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot StatLocationsWidget_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.40"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_40",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_40.HorizontalBoxSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.52"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_40.HorizontalBoxSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.53"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_40.HorizontalBoxSlot_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.54"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_40.HorizontalBoxSlot_5",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.55"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot StatLocationsWidget_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_4",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.41"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_39",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_39.HorizontalBoxSlot_12",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.57"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_39.HorizontalBoxSlot_15",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.59"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_39.HorizontalBoxSlot_11",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.56"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_39.HorizontalBoxSlot_13",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.58"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.42"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_40",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_40.HorizontalBoxSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.60"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_40.HorizontalBoxSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.61"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_40.HorizontalBoxSlot_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.62"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_40.HorizontalBoxSlot_5",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.63"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_4",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.43"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_11",
+    "Outer": "HorizontalBox_39",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox StatLocationsWidget_C:WidgetTree.HorizontalBox_39",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.44"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox StatLocationsWidget_C:WidgetTree.VerticalAvgBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.73"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_12",
+    "Outer": "HorizontalBox_39",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox StatLocationsWidget_C:WidgetTree.HorizontalBox_39",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.44"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox StatLocationsWidget_C:WidgetTree.VerticalStatbox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.76"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_13",
+    "Outer": "HorizontalBox_39",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox StatLocationsWidget_C:WidgetTree.HorizontalBox_39",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.44"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox StatLocationsWidget_C:WidgetTree.VerticalMaxBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.75"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_15",
+    "Outer": "HorizontalBox_39",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox StatLocationsWidget_C:WidgetTree.HorizontalBox_39",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.44"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox StatLocationsWidget_C:WidgetTree.VerticalCallBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.74"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_40",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox StatLocationsWidget_C:WidgetTree.HorizontalBox_40",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.45"
+      },
+      "Content": {
+        "ObjectName": "TextBlock StatLocationsWidget_C:WidgetTree.TextBlock_220",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.65"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_40",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox StatLocationsWidget_C:WidgetTree.HorizontalBox_40",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.45"
+      },
+      "Content": {
+        "ObjectName": "TextBlock StatLocationsWidget_C:WidgetTree.TextBlock_221",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.66"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_40",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox StatLocationsWidget_C:WidgetTree.HorizontalBox_40",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.45"
+      },
+      "Content": {
+        "ObjectName": "TextBlock StatLocationsWidget_C:WidgetTree.TextBlock_222",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.67"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HorizontalBox_40",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox StatLocationsWidget_C:WidgetTree.HorizontalBox_40",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.45"
+      },
+      "Content": {
+        "ObjectName": "TextBlock StatLocationsWidget_C:WidgetTree.TextBlock_224",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.68"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_11",
+    "Outer": "HorizontalBox_39",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_39",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.46"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalAvgBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.77"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_12",
+    "Outer": "HorizontalBox_39",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_39",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.46"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalStatbox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.80"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_13",
+    "Outer": "HorizontalBox_39",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_39",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.46"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalMaxBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.79"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_15",
+    "Outer": "HorizontalBox_39",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_39",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.46"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalCallBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.78"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_40",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_40",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.47"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_220",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.69"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_40",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_40",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.47"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_221",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.70"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_40",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_40",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.47"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_222",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.71"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HorizontalBox_40",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_40",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.47"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_224",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.72"
+      }
+    }
+  },
+  {
+    "Type": "StatLocationsWidget_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__StatLocationsWidget_C",
+    "Properties": {
+      "VerticalAvgBox": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalAvgBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.77"
+      },
+      "VerticalCallBox": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalCallBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.78"
+      },
+      "VerticalMaxBox": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalMaxBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.79"
+      },
+      "VerticalStatbox": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalStatbox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.80"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.82"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_220",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "[D671316F46B0A94211E41A9FA45A37E4]",
+        "Key": "251646B64727D75D99EA6981CC78564F",
+        "SourceString": "Stat Name"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.05098,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF40FF00"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 16
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "MinDesiredWidth": 275.0,
+      "AutoWrapText": true,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_40.HorizontalBoxSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.52"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_221",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "[D671316F46B0A94211E41A9FA45A37E4]",
+        "Key": "4610041A43E35E5E6553CD97D380668B",
+        "SourceString": "Call Count"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.05098,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF40FF00"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 16
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "MinDesiredWidth": 200.0,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_40.HorizontalBoxSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.53"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_222",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "[D671316F46B0A94211E41A9FA45A37E4]",
+        "Key": "1F63322A40524D4AF8DACAAB9AC40C2D",
+        "SourceString": "Inc Avg"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.05098,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF40FF00"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 16
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "MinDesiredWidth": 200.0,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_40.HorizontalBoxSlot_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.54"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_224",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "[D671316F46B0A94211E41A9FA45A37E4]",
+        "Key": "A626DF32454BE2844AA3A1A6D4F7A79F",
+        "SourceString": "Inc Max"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.05098,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF40FF00"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 16
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "MinDesiredWidth": 200.0,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_40.HorizontalBoxSlot_5",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.55"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_220",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "[D671316F46B0A94211E41A9FA45A37E4]",
+        "Key": "251646B64727D75D99EA6981CC78564F",
+        "SourceString": "Stat Name"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.05098,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF40FF00"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 16
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "MinDesiredWidth": 275.0,
+      "AutoWrapText": true,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_40.HorizontalBoxSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.60"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_221",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "[D671316F46B0A94211E41A9FA45A37E4]",
+        "Key": "4610041A43E35E5E6553CD97D380668B",
+        "SourceString": "Call Count"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.05098,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF40FF00"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 16
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "MinDesiredWidth": 200.0,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_40.HorizontalBoxSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.61"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_222",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "[D671316F46B0A94211E41A9FA45A37E4]",
+        "Key": "1F63322A40524D4AF8DACAAB9AC40C2D",
+        "SourceString": "Inc Avg"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.05098,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF40FF00"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 16
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "MinDesiredWidth": 200.0,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_40.HorizontalBoxSlot_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.62"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_224",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "[D671316F46B0A94211E41A9FA45A37E4]",
+        "Key": "A626DF32454BE2844AA3A1A6D4F7A79F",
+        "SourceString": "Inc Max"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.05098,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF40FF00"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 16
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "MinDesiredWidth": 200.0,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_40.HorizontalBoxSlot_5",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.63"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalAvgBox",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_39.HorizontalBoxSlot_11",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.48"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalCallBox",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_39.HorizontalBoxSlot_15",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.51"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalMaxBox",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_39.HorizontalBoxSlot_13",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.50"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalStatbox",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot StatLocationsWidget_C:WidgetTree.HorizontalBox_39.HorizontalBoxSlot_12",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.49"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalAvgBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_39.HorizontalBoxSlot_11",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.56"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalCallBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_39.HorizontalBoxSlot_15",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.59"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalMaxBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_39.HorizontalBoxSlot_13",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.58"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalStatbox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_39.HorizontalBoxSlot_12",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.57"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "StatLocationsWidget_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel StatLocationsWidget_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.38"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/StatLocationsWidget.39"
+      }
+    }
+  }
+]

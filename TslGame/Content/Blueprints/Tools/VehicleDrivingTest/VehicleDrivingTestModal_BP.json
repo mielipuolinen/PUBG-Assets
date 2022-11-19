@@ -1,0 +1,1291 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "OkayButton",
+    "Outer": "VehicleDrivingTestModal_BP_C",
+    "Next": null,
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class Button",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ModalEditText",
+    "Outer": "VehicleDrivingTestModal_BP_C",
+    "Next": {
+      "ObjectName": "ObjectProperty VehicleDrivingTestModal_BP_C:OkayButton",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.0"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class EditableText",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CancelButton",
+    "Outer": "VehicleDrivingTestModal_BP_C",
+    "Next": {
+      "ObjectName": "ObjectProperty VehicleDrivingTestModal_BP_C:ModalEditText",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.1"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class Button",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_VehicleDrivingTestModal_BP",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_VehicleDrivingTestModal_BP",
+    "Outer": "VehicleDrivingTestModal_BP_C",
+    "Next": {
+      "ObjectName": "ObjectProperty VehicleDrivingTestModal_BP_C:CancelButton",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.2"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty VehicleDrivingTestModal_BP_C:ExecuteUbergraph_VehicleDrivingTestModal_BP.EntryPoint",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.3"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__CancelButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature",
+    "Outer": "VehicleDrivingTestModal_BP_C",
+    "Next": {
+      "ObjectName": "Function VehicleDrivingTestModal_BP_C:ExecuteUbergraph_VehicleDrivingTestModal_BP",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.4"
+    },
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__OkayButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+    "Outer": "VehicleDrivingTestModal_BP_C",
+    "Next": {
+      "ObjectName": "Function VehicleDrivingTestModal_BP_C:BndEvt__CancelButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.5"
+    },
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "VehicleDrivingTestModal_BP_C",
+    "Next": {
+      "ObjectName": "Function VehicleDrivingTestModal_BP_C:BndEvt__OkayButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.6"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "VehicleDrivingTestModal_BP_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree VehicleDrivingTestModal_BP_C:WidgetTree",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.58"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "TemplateAsset": "/Game/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.WidgetArchetype",
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding VehicleDrivingTestModal_BP_C:ComponentDelegateBinding_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.30"
+        }
+      ],
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty VehicleDrivingTestModal_BP_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.7"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function VehicleDrivingTestModal_BP_C:ExecuteUbergraph_VehicleDrivingTestModal_BP",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.4"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class VehicleDrivingTestModal",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty VehicleDrivingTestModal_BP_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.7"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_VehicleDrivingTestModal_BP": {
+        "ObjectName": "Function VehicleDrivingTestModal_BP_C:ExecuteUbergraph_VehicleDrivingTestModal_BP",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.4"
+      },
+      "BndEvt__CancelButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature": {
+        "ObjectName": "Function VehicleDrivingTestModal_BP_C:BndEvt__CancelButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.5"
+      },
+      "BndEvt__OkayButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature": {
+        "ObjectName": "Function VehicleDrivingTestModal_BP_C:BndEvt__OkayButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.6"
+      }
+    },
+    "ClassFlags": 10752016,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "VehicleDrivingTestModal_BP_C Default__VehicleDrivingTestModal_BP_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.9"
+    }
+  },
+  {
+    "Type": "VehicleDrivingTestModal_BP_C",
+    "Name": "Default__VehicleDrivingTestModal_BP_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "EditText": {
+        "Name": "ModalEditText"
+      },
+      "TextBlock": {
+        "Name": "ModalTitleText"
+      },
+      "OnPrepass": {
+        "Num": 10,
+        "Name": "HandleMainPrepass"
+      }
+    }
+  },
+  {
+    "Type": "Border",
+    "Name": "Border_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Padding": {
+        "Left": 15.0,
+        "Top": 15.0,
+        "Right": 15.0,
+        "Bottom": 15.0
+      },
+      "BrushColor": {
+        "R": 0.753,
+        "G": 0.753,
+        "B": 0.753,
+        "A": 1.0,
+        "Hex": "FFE1E1E1"
+      },
+      "Slots": [
+        {
+          "ObjectName": "BorderSlot VehicleDrivingTestModal_BP_C:WidgetTree.Border_0.BorderSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.16"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot VehicleDrivingTestModal_BP_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_11",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.53"
+      }
+    }
+  },
+  {
+    "Type": "Border",
+    "Name": "Border_43",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Background": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.5,
+            "Hex": "7F000000"
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "BorderSlot VehicleDrivingTestModal_BP_C:WidgetTree.Border_43.BorderSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.17"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Border",
+    "Name": "Border_44",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Background": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.033,
+            "G": 0.033,
+            "B": 0.033,
+            "A": 1.0,
+            "Hex": "FF333333"
+          }
+        }
+      },
+      "DesiredSizeScale": {
+        "X": 57.233063,
+        "Y": 77.08083
+      },
+      "Slots": [
+        {
+          "ObjectName": "BorderSlot VehicleDrivingTestModal_BP_C:WidgetTree.Border_44.BorderSlot_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.18"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot VehicleDrivingTestModal_BP_C:WidgetTree.SizeBox_0.SizeBoxSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.41"
+      }
+    }
+  },
+  {
+    "Type": "Border",
+    "Name": "Border_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Padding": {
+        "Left": 15.0,
+        "Top": 15.0,
+        "Right": 15.0,
+        "Bottom": 15.0
+      },
+      "BrushColor": {
+        "R": 0.753,
+        "G": 0.753,
+        "B": 0.753,
+        "A": 1.0,
+        "Hex": "FFE1E1E1"
+      },
+      "Slots": [
+        {
+          "ObjectName": "BorderSlot WidgetArchetype:WidgetTree_0.Border_0.BorderSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.19"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_11",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.56"
+      }
+    }
+  },
+  {
+    "Type": "Border",
+    "Name": "Border_43",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Background": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.5,
+            "Hex": "7F000000"
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "BorderSlot WidgetArchetype:WidgetTree_0.Border_43.BorderSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.20"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Border",
+    "Name": "Border_44",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Background": {
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.033,
+            "G": 0.033,
+            "B": 0.033,
+            "A": 1.0,
+            "Hex": "FF333333"
+          }
+        }
+      },
+      "DesiredSizeScale": {
+        "X": 57.233063,
+        "Y": 77.08083
+      },
+      "Slots": [
+        {
+          "ObjectName": "BorderSlot WidgetArchetype:WidgetTree_0.Border_44.BorderSlot_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.21"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.42"
+      }
+    }
+  },
+  {
+    "Type": "BorderSlot",
+    "Name": "BorderSlot_0",
+    "Outer": "Border_0",
+    "Properties": {
+      "Padding": {
+        "Left": 15.0,
+        "Top": 15.0,
+        "Right": 15.0,
+        "Bottom": 15.0
+      },
+      "Parent": {
+        "ObjectName": "Border VehicleDrivingTestModal_BP_C:WidgetTree.Border_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.10"
+      },
+      "Content": {
+        "ObjectName": "EditableText VehicleDrivingTestModal_BP_C:WidgetTree.ModalEditText",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.31"
+      }
+    }
+  },
+  {
+    "Type": "BorderSlot",
+    "Name": "BorderSlot_1",
+    "Outer": "Border_43",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "Border VehicleDrivingTestModal_BP_C:WidgetTree.Border_43",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.11"
+      },
+      "Content": {
+        "ObjectName": "SizeBox VehicleDrivingTestModal_BP_C:WidgetTree.SizeBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.39"
+      }
+    }
+  },
+  {
+    "Type": "BorderSlot",
+    "Name": "BorderSlot_2",
+    "Outer": "Border_44",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Border VehicleDrivingTestModal_BP_C:WidgetTree.Border_44",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.12"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox VehicleDrivingTestModal_BP_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.50"
+      }
+    }
+  },
+  {
+    "Type": "BorderSlot",
+    "Name": "BorderSlot_0",
+    "Outer": "Border_0",
+    "Properties": {
+      "Padding": {
+        "Left": 15.0,
+        "Top": 15.0,
+        "Right": 15.0,
+        "Bottom": 15.0
+      },
+      "Parent": {
+        "ObjectName": "Border WidgetArchetype:WidgetTree_0.Border_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.13"
+      },
+      "Content": {
+        "ObjectName": "EditableText WidgetArchetype:WidgetTree_0.ModalEditText",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.32"
+      }
+    }
+  },
+  {
+    "Type": "BorderSlot",
+    "Name": "BorderSlot_1",
+    "Outer": "Border_43",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "Border WidgetArchetype:WidgetTree_0.Border_43",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.14"
+      },
+      "Content": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.40"
+      }
+    }
+  },
+  {
+    "Type": "BorderSlot",
+    "Name": "BorderSlot_2",
+    "Outer": "Border_44",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Border WidgetArchetype:WidgetTree_0.Border_44",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.15"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.51"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "CancelButton",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "BackgroundColor": {
+        "R": 1.0,
+        "G": 0.139,
+        "B": 0.139,
+        "A": 1.0,
+        "Hex": "FFFF6868"
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot VehicleDrivingTestModal_BP_C:WidgetTree.CancelButton.ButtonSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.26"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot VehicleDrivingTestModal_BP_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.36"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "OkayButton",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot VehicleDrivingTestModal_BP_C:WidgetTree.OkayButton.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.27"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot VehicleDrivingTestModal_BP_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.35"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "CancelButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "BackgroundColor": {
+        "R": 1.0,
+        "G": 0.139,
+        "B": 0.139,
+        "A": 1.0,
+        "Hex": "FFFF6868"
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.CancelButton.ButtonSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.28"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.38"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "OkayButton",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.OkayButton.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.29"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.37"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_1",
+    "Outer": "CancelButton",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "Parent": {
+        "ObjectName": "Button VehicleDrivingTestModal_BP_C:WidgetTree.CancelButton",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.22"
+      },
+      "Content": {
+        "ObjectName": "TextBlock VehicleDrivingTestModal_BP_C:WidgetTree.TextBlock_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.45"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "OkayButton",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Button VehicleDrivingTestModal_BP_C:WidgetTree.OkayButton",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.23"
+      },
+      "Content": {
+        "ObjectName": "TextBlock VehicleDrivingTestModal_BP_C:WidgetTree.TextBlock_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.44"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_1",
+    "Outer": "CancelButton",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "Parent": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.CancelButton",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.24"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.48"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "OkayButton",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.OkayButton",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.25"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.47"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_2",
+    "Outer": "VehicleDrivingTestModal_BP_C",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "CancelButton",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__CancelButton_K2Node_ComponentBoundEvent_1_OnButtonClickedEvent__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "OkayButton",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__OkayButton_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "EditableText",
+    "Name": "ModalEditText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Font": {
+          "FontObject": {
+            "ObjectName": "Font TSLFont",
+            "ObjectPath": "TslGame/Content/UI/Fonts/TSLFont.0"
+          },
+          "TypefaceFontName": "RopaSans-Regular",
+          "Size": 24
+        },
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 0.053,
+            "G": 0.052814,
+            "B": 0.050458,
+            "A": 1.64421,
+            "Hex": "FF41413F"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "BackgroundImageSelected": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "BackgroundImageComposing": {
+          "DrawAs": "ESlateBrushDrawType::Box"
+        }
+      },
+      "Slot": {
+        "ObjectName": "BorderSlot VehicleDrivingTestModal_BP_C:WidgetTree.Border_0.BorderSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.16"
+      }
+    }
+  },
+  {
+    "Type": "EditableText",
+    "Name": "ModalEditText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Font": {
+          "FontObject": {
+            "ObjectName": "Font TSLFont",
+            "ObjectPath": "TslGame/Content/UI/Fonts/TSLFont.0"
+          },
+          "TypefaceFontName": "RopaSans-Regular",
+          "Size": 24
+        },
+        "ColorAndOpacity": {
+          "SpecifiedColor": {
+            "R": 0.053,
+            "G": 0.052814,
+            "B": 0.050458,
+            "A": 1.64421,
+            "Hex": "FF41413F"
+          },
+          "ColorUseRule": "ESlateColorStylingMode::UseColor_Specified"
+        },
+        "BackgroundImageSelected": {
+          "DrawAs": "ESlateBrushDrawType::NoDrawType"
+        },
+        "BackgroundImageComposing": {
+          "DrawAs": "ESlateBrushDrawType::Box"
+        }
+      },
+      "Slot": {
+        "ObjectName": "BorderSlot WidgetArchetype:WidgetTree_0.Border_0.BorderSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.19"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot VehicleDrivingTestModal_BP_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.35"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot VehicleDrivingTestModal_BP_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.36"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot VehicleDrivingTestModal_BP_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.54"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.37"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.38"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.57"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 15.0,
+        "Top": 15.0,
+        "Right": 15.0,
+        "Bottom": 15.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "Parent": {
+        "ObjectName": "HorizontalBox VehicleDrivingTestModal_BP_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.33"
+      },
+      "Content": {
+        "ObjectName": "Button VehicleDrivingTestModal_BP_C:WidgetTree.OkayButton",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.23"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 15.0,
+        "Top": 15.0,
+        "Right": 15.0,
+        "Bottom": 15.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox VehicleDrivingTestModal_BP_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.33"
+      },
+      "Content": {
+        "ObjectName": "Button VehicleDrivingTestModal_BP_C:WidgetTree.CancelButton",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.22"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 15.0,
+        "Top": 15.0,
+        "Right": 15.0,
+        "Bottom": 15.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.34"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.OkayButton",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.25"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 15.0,
+        "Top": 15.0,
+        "Right": 15.0,
+        "Bottom": 15.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.34"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.CancelButton",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.24"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "bOverride_MinDesiredWidth": true,
+      "bOverride_MinDesiredHeight": true,
+      "bOverride_MaxDesiredWidth": true,
+      "bOverride_MaxDesiredHeight": true,
+      "MaxDesiredWidth": 570.21893,
+      "MaxDesiredHeight": 360.70142,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot VehicleDrivingTestModal_BP_C:WidgetTree.SizeBox_0.SizeBoxSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.41"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "BorderSlot VehicleDrivingTestModal_BP_C:WidgetTree.Border_43.BorderSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.17"
+      }
+    }
+  },
+  {
+    "Type": "SizeBox",
+    "Name": "SizeBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "bOverride_MinDesiredWidth": true,
+      "bOverride_MinDesiredHeight": true,
+      "bOverride_MaxDesiredWidth": true,
+      "bOverride_MaxDesiredHeight": true,
+      "MaxDesiredWidth": 570.21893,
+      "MaxDesiredHeight": 360.70142,
+      "Slots": [
+        {
+          "ObjectName": "SizeBoxSlot WidgetArchetype:WidgetTree_0.SizeBox_0.SizeBoxSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.42"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "BorderSlot WidgetArchetype:WidgetTree_0.Border_43.BorderSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.20"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox VehicleDrivingTestModal_BP_C:WidgetTree.SizeBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.39"
+      },
+      "Content": {
+        "ObjectName": "Border VehicleDrivingTestModal_BP_C:WidgetTree.Border_44",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.12"
+      }
+    }
+  },
+  {
+    "Type": "SizeBoxSlot",
+    "Name": "SizeBoxSlot_0",
+    "Outer": "SizeBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "SizeBox WidgetArchetype:WidgetTree_0.SizeBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.40"
+      },
+      "Content": {
+        "ObjectName": "Border WidgetArchetype:WidgetTree_0.Border_44",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.15"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ModalTitleText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "86C09C9E4E04230BBDE99AAAE4ECF1E1",
+        "SourceString": "Text Bock"
+      },
+      "Font": {
+        "Size": 19
+      },
+      "Justification": "ETextJustify::Center",
+      "AutoWrapText": true,
+      "Margin": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot VehicleDrivingTestModal_BP_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.52"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "F15248C3416AD6599ADFB18098A477A2",
+        "SourceString": "Okay"
+      },
+      "Font": {
+        "Size": 19
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot VehicleDrivingTestModal_BP_C:WidgetTree.OkayButton.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.27"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C4AFDD7B40663C6B04BA2DAEF8E4A658",
+        "SourceString": "Cancel"
+      },
+      "Font": {
+        "Size": 19
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot VehicleDrivingTestModal_BP_C:WidgetTree.CancelButton.ButtonSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.26"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "ModalTitleText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "86C09C9E4E04230BBDE99AAAE4ECF1E1",
+        "SourceString": "Text Bock"
+      },
+      "Font": {
+        "Size": 19
+      },
+      "Justification": "ETextJustify::Center",
+      "AutoWrapText": true,
+      "Margin": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.55"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "F15248C3416AD6599ADFB18098A477A2",
+        "SourceString": "Okay"
+      },
+      "Font": {
+        "Size": 19
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.OkayButton.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.29"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C4AFDD7B40663C6B04BA2DAEF8E4A658",
+        "SourceString": "Cancel"
+      },
+      "Font": {
+        "Size": 19
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.CancelButton.ButtonSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.28"
+      }
+    }
+  },
+  {
+    "Type": "VehicleDrivingTestModal_BP_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__VehicleDrivingTestModal_BP_C",
+    "Properties": {
+      "CancelButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.CancelButton",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.24"
+      },
+      "ModalEditText": {
+        "ObjectName": "EditableText WidgetArchetype:WidgetTree_0.ModalEditText",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.32"
+      },
+      "OkayButton": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.OkayButton",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.25"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.59"
+      },
+      "bCookedWidgetTree": true,
+      "OnPrepass": {
+        "Num": 50,
+        "Name": "HandleMainPrepass"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot VehicleDrivingTestModal_BP_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.52"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot VehicleDrivingTestModal_BP_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_11",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.53"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot VehicleDrivingTestModal_BP_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.54"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "BorderSlot VehicleDrivingTestModal_BP_C:WidgetTree.Border_44.BorderSlot_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.18"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.55"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_11",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.56"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.57"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "BorderSlot WidgetArchetype:WidgetTree_0.Border_44.BorderSlot_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.21"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox VehicleDrivingTestModal_BP_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.50"
+      },
+      "Content": {
+        "ObjectName": "TextBlock VehicleDrivingTestModal_BP_C:WidgetTree.ModalTitleText",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.43"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_11",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 50.0,
+        "Right": 50.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox VehicleDrivingTestModal_BP_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.50"
+      },
+      "Content": {
+        "ObjectName": "Border VehicleDrivingTestModal_BP_C:WidgetTree.Border_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.10"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox VehicleDrivingTestModal_BP_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.50"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox VehicleDrivingTestModal_BP_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.33"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.51"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.ModalTitleText",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.46"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_11",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 50.0,
+        "Right": 50.0
+      },
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.51"
+      },
+      "Content": {
+        "ObjectName": "Border WidgetArchetype:WidgetTree_0.Border_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.13"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Size": {
+        "SizeRule": "ESlateSizeRule::Fill"
+      },
+      "VerticalAlignment": "VAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.51"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.34"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "VehicleDrivingTestModal_BP_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "Border VehicleDrivingTestModal_BP_C:WidgetTree.Border_43",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.11"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "Border WidgetArchetype:WidgetTree_0.Border_43",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestModal_BP.14"
+      }
+    }
+  }
+]

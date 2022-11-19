@@ -1,0 +1,95 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "CameraTransforms_19_644B33EF4A303A7E926395AC9280C0FD",
+    "Outer": "CameraTransforms_19_644B33EF4A303A7E926395AC9280C0FD",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct Transform",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "MapStatRawDatas_18_77CED96A4F8E18D8DFADCA954BBCE41A",
+    "Outer": "MapStatRawDatas_18_77CED96A4F8E18D8DFADCA954BBCE41A",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "UserDefinedStruct MapStatRawData",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/MapStatRawData.6"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "MapStatRawDatas_18_77CED96A4F8E18D8DFADCA954BBCE41A",
+    "Outer": "MapStatPositionData",
+    "Next": null,
+    "PropertyFlags": 5,
+    "Inner": {
+      "ObjectName": "StructProperty MapStatPositionData:MapStatRawDatas_18_77CED96A4F8E18D8DFADCA954BBCE41A.MapStatRawDatas_18_77CED96A4F8E18D8DFADCA954BBCE41A",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/MapStatPositionData.1"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "CameraTransforms_19_644B33EF4A303A7E926395AC9280C0FD",
+    "Outer": "MapStatPositionData",
+    "Next": {
+      "ObjectName": "ArrayProperty MapStatPositionData:MapStatRawDatas_18_77CED96A4F8E18D8DFADCA954BBCE41A",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/MapStatPositionData.2"
+    },
+    "PropertyFlags": 5,
+    "Inner": {
+      "ObjectName": "StructProperty MapStatPositionData:CameraTransforms_19_644B33EF4A303A7E926395AC9280C0FD.CameraTransforms_19_644B33EF4A303A7E926395AC9280C0FD",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/MapStatPositionData.0"
+    }
+  },
+  {
+    "Type": "UserDefinedStruct",
+    "Name": "MapStatPositionData",
+    "Properties": {
+      "Guid": "EDFF8D8D-421AD9D6-180E86BD-E71E73F6"
+    },
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty MapStatPositionData:WorldIndexX_26_E4EA437B435AC01A4392AFA89818B06F",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/MapStatPositionData.7"
+      }
+    ]
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CameraCenter_28_179F8E4E451F4DE0CB8DA3BCE7C62409",
+    "Outer": "MapStatPositionData",
+    "Next": {
+      "ObjectName": "ArrayProperty MapStatPositionData:CameraTransforms_19_644B33EF4A303A7E926395AC9280C0FD",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/MapStatPositionData.3"
+    },
+    "PropertyFlags": 5,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "WorldIndexY_27_941B901240E6C56400BA92BDF73F1AAC",
+    "Outer": "MapStatPositionData",
+    "Next": {
+      "ObjectName": "StructProperty MapStatPositionData:CameraCenter_28_179F8E4E451F4DE0CB8DA3BCE7C62409",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/MapStatPositionData.5"
+    },
+    "PropertyFlags": 5
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "WorldIndexX_26_E4EA437B435AC01A4392AFA89818B06F",
+    "Outer": "MapStatPositionData",
+    "Next": {
+      "ObjectName": "IntProperty MapStatPositionData:WorldIndexY_27_941B901240E6C56400BA92BDF73F1AAC",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/MapStatPositionData.6"
+    },
+    "PropertyFlags": 5
+  }
+]

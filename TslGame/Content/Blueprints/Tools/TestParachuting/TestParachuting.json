@@ -1,0 +1,5864 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "TestSpotMarkWidgets",
+    "Outer": "TestSpotMarkWidgets",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "WidgetBlueprintGeneratedClass TestSpotMark_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.28"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "TestSpotMarkOffset",
+    "Outer": "TestParachuting_C",
+    "Next": null,
+    "PropertyFlags": 65557,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "TestSpotMarkWidgets",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:TestSpotMarkOffset",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.1"
+    },
+    "PropertyFlags": 65541,
+    "Inner": {
+      "ObjectName": "ObjectProperty TestParachuting_C:TestSpotMarkWidgets.TestSpotMarkWidgets",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "TextBlock_OptionText",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "ArrayProperty TestParachuting_C:TestSpotMarkWidgets",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.2"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class TextBlock",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "TestSpotMarkContainer",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:TextBlock_OptionText",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.3"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class CanvasPanel",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "NumOfSpots",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:TestSpotMarkContainer",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.4"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class TextBlock",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "MapImage",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:NumOfSpots",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.5"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class Image",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Button_StopTest",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:MapImage",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.6"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class Button",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Button_Save",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:Button_StopTest",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.7"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class Button",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Button_RunTest",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:Button_Save",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.8"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class Button",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Button_LoadDefault",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:Button_RunTest",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.9"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class Button",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Button_Enable",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:Button_LoadDefault",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.10"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class Button",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Button_Disable",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:Button_Enable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.11"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class Button",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Button_Close",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:Button_Disable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.12"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class Button",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Button_ClearSpots",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:Button_Close",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.13"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class Button",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "K2Node_MakeArray_Array",
+    "Next": null
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "K2Node_Event_Indexes3",
+    "Outer": "K2Node_Event_Indexes3",
+    "Next": null
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "K2Node_Event_Indexes2",
+    "Outer": "K2Node_Event_Indexes2",
+    "Next": null
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "K2Node_Event_Indexes",
+    "Outer": "K2Node_Event_Indexes",
+    "Next": null
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanAND_ReturnValue4",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue4",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_BooleanAND_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.19"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeStruct_TestSpot",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Less_IntInt_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.20"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct TestSpot",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue5",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_MakeStruct_TestSpot",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.21"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_Event_bUseRealCoord",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_GreaterEqual_IntInt_ReturnValue5",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.22"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_Event_bOnlyAddMark",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_Event_bUseRealCoord",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.23"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_Coord",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_Event_bOnlyAddMark",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.24"
+    },
+    "PropertyFlags": 2,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_Coords",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_Event_Coord",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.25"
+    },
+    "PropertyFlags": 2,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "K2Node_Event_TargetIndex",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_Event_Coords",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.26"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Max_ReturnValue",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_Event_TargetIndex",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.27"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Subtract_IntInt_ReturnValue2",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Max_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.28"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanAND_ReturnValue3",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Subtract_IntInt_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.29"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue5",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_BooleanAND_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.30"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue3",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Array_Length_ReturnValue5",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.31"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue4",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Less_IntInt_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.32"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanAND_ReturnValue2",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_GreaterEqual_IntInt_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.33"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue2",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_BooleanAND_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.34"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanAND_ReturnValue",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Less_IntInt_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.35"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_BooleanAND_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.36"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue3",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Less_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.37"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue2",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_GreaterEqual_IntInt_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.38"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_GreaterEqual_IntInt_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.39"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "K2Node_Event_Index2",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Array_Get_Item",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.40"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "K2Node_Event_Index1",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_Event_Index2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.41"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_Event_Indexes",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_Event_Index1",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.42"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_Event_Indexes.K2Node_Event_Indexes",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.18"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_Event_Indexes2",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "ArrayProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_Event_Indexes",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.43"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_Event_Indexes2.K2Node_Event_Indexes2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.17"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_Event_Indexes3",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "ArrayProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_Event_Indexes2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.44"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_Event_Indexes3.K2Node_Event_Indexes3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.16"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "ArrayProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_Event_Indexes3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.45"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_MakeArray_Array.K2Node_MakeArray_Array",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.15"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Not_PreBool_ReturnValue",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "ArrayProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_MakeArray_Array",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.46"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Find_ReturnValue2",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Not_PreBool_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.47"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_OnLoadDefaultButtonClicked_ReturnValue",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Array_Find_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.48"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue4",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_OnLoadDefaultButtonClicked_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.49"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue3",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Array_Length_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.50"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Array_Length_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.51"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_GreaterEqual_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.52"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Loop_Counter_Variable",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Subtract_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.53"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_CustomEvent_TestSpotMark",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.Temp_int_Loop_Counter_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.54"
+    },
+    "PropertyClass": {
+      "ObjectName": "WidgetBlueprintGeneratedClass TestSpotMark_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.28"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Find_ReturnValue",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_CustomEvent_TestSpotMark",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.55"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_CustomEvent_TestSpotMark2",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Array_Find_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.56"
+    },
+    "PropertyClass": {
+      "ObjectName": "WidgetBlueprintGeneratedClass TestSpotMark_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.28"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsRunning_ReturnValue4",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.K2Node_CustomEvent_TestSpotMark2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.57"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsRunning_ReturnValue3",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_IsRunning_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.58"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsRunning_ReturnValue2",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_IsRunning_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.59"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsRunning_ReturnValue",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_IsRunning_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.60"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue2",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_IsRunning_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.61"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Array_Length_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.62"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Array_Index_Variable",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.CallFunc_Array_Length_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.63"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_TestParachuting",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.Temp_int_Array_Index_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.64"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_TestParachuting",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:Button_ClearSpots",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.14"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty TestParachuting_C:ExecuteUbergraph_TestParachuting.EntryPoint",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.65"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__Button_Save_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:ExecuteUbergraph_TestParachuting",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.66"
+    },
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "bUseRealCoord",
+    "Outer": "AddTestSpot",
+    "Next": null,
+    "PropertyFlags": 128,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "bOnlyAddMark",
+    "Outer": "AddTestSpot",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:AddTestSpot.bUseRealCoord",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.68"
+    },
+    "PropertyFlags": 128,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Coord",
+    "Outer": "AddTestSpot",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:AddTestSpot.bOnlyAddMark",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.69"
+    },
+    "PropertyFlags": 134218114,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AddTestSpot",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:BndEvt__Button_Save_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.67"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function TestParachuting:AddTestSpot",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty TestParachuting_C:AddTestSpot.Coord",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.70"
+      }
+    ],
+    "FunctionFlags": 138545152
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Coords",
+    "Outer": "MoveTestSpot",
+    "Next": null,
+    "PropertyFlags": 134218114,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "TargetIndex",
+    "Outer": "MoveTestSpot",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:MoveTestSpot.Coords",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.72"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "MoveTestSpot",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:AddTestSpot",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.71"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function TestParachuting:MoveTestSpot",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty TestParachuting_C:MoveTestSpot.TargetIndex",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.73"
+      }
+    ],
+    "FunctionFlags": 138545152
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Index2",
+    "Outer": "SwapTestSpots",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Index1",
+    "Outer": "SwapTestSpots",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:SwapTestSpots.Index2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.75"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "SwapTestSpots",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:MoveTestSpot",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.74"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function TestParachuting:SwapTestSpots",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty TestParachuting_C:SwapTestSpots.Index1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.76"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Indexes",
+    "Outer": "Indexes",
+    "Next": null
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "Indexes",
+    "Outer": "RemoveTestSpots",
+    "Next": null,
+    "PropertyFlags": 134218114,
+    "Inner": {
+      "ObjectName": "IntProperty TestParachuting_C:RemoveTestSpots.Indexes.Indexes",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.78"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "RemoveTestSpots",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:SwapTestSpots",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.77"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function TestParachuting:RemoveTestSpots",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "ArrayProperty TestParachuting_C:RemoveTestSpots.Indexes",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.79"
+      }
+    ],
+    "FunctionFlags": 138545152
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Indexes",
+    "Outer": "Indexes",
+    "Next": null
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "Indexes",
+    "Outer": "EnableTestSpots",
+    "Next": null,
+    "PropertyFlags": 134218114,
+    "Inner": {
+      "ObjectName": "IntProperty TestParachuting_C:EnableTestSpots.Indexes.Indexes",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.81"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "EnableTestSpots",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:RemoveTestSpots",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.80"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function TestParachuting:EnableTestSpots",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "ArrayProperty TestParachuting_C:EnableTestSpots.Indexes",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.82"
+      }
+    ],
+    "FunctionFlags": 138545152
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Indexes",
+    "Outer": "Indexes",
+    "Next": null
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "Indexes",
+    "Outer": "DisableTestSpots",
+    "Next": null,
+    "PropertyFlags": 134218114,
+    "Inner": {
+      "ObjectName": "IntProperty TestParachuting_C:DisableTestSpots.Indexes.Indexes",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.84"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "DisableTestSpots",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:EnableTestSpots",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.83"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function TestParachuting:DisableTestSpots",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "ArrayProperty TestParachuting_C:DisableTestSpots.Indexes",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.85"
+      }
+    ],
+    "FunctionFlags": 138545152
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__Button_Disable_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:DisableTestSpots",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.86"
+    },
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__Button_Enable_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:BndEvt__Button_Disable_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.87"
+    },
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__Button_LoadDefault_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:BndEvt__Button_Enable_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.88"
+    },
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "TestSpotMark",
+    "Outer": "OnTestSpotMarkToggle",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "WidgetBlueprintGeneratedClass TestSpotMark_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.28"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTestSpotMarkToggle",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:BndEvt__Button_LoadDefault_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.89"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty TestParachuting_C:OnTestSpotMarkToggle.TestSpotMark",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.90"
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__Button_ClearSpots_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:OnTestSpotMarkToggle",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.91"
+    },
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "TestSpotMark",
+    "Outer": "OnTestSpotMarkRemove",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "WidgetBlueprintGeneratedClass TestSpotMark_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.28"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTestSpotMarkRemove",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:BndEvt__Button_ClearSpots_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.92"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty TestParachuting_C:OnTestSpotMarkRemove.TestSpotMark",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.93"
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "OnInitialized",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:OnTestSpotMarkRemove",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.94"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function TestParachuting:OnInitialized",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__Button_Close_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:OnInitialized",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.95"
+    },
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__Button_StopTest_K2Node_ComponentBoundEvent_34_OnButtonClickedEvent__DelegateSignature",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:BndEvt__Button_Close_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.96"
+    },
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__Button_RunTest_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:BndEvt__Button_StopTest_K2Node_ComponentBoundEvent_34_OnButtonClickedEvent__DelegateSignature",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.97"
+    },
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue",
+    "Outer": "InitTestSpotMarkers",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "InitTestSpotMarkers",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:InitTestSpotMarkers.CallFunc_Less_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.99"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct TestSpot",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue",
+    "Outer": "InitTestSpotMarkers",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:InitTestSpotMarkers.CallFunc_Array_Get_Item",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.100"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue",
+    "Outer": "InitTestSpotMarkers",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:InitTestSpotMarkers.CallFunc_Array_Length_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.101"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Loop_Counter_Variable",
+    "Outer": "InitTestSpotMarkers",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:InitTestSpotMarkers.CallFunc_Add_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.102"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Array_Index_Variable",
+    "Outer": "InitTestSpotMarkers",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:InitTestSpotMarkers.Temp_int_Loop_Counter_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.103"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InitTestSpotMarkers",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:BndEvt__Button_RunTest_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.98"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty TestParachuting_C:InitTestSpotMarkers.Temp_int_Array_Index_Variable",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.104"
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "RemoveTestSpotImpl",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "WidgetBlueprintGeneratedClass TestSpotMark_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.28"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Index",
+    "Outer": "RemoveTestSpotImpl",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:RemoveTestSpotImpl.CallFunc_Array_Get_Item",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.106"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "RemoveTestSpotImpl",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:InitTestSpotMarkers",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.105"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty TestParachuting_C:RemoveTestSpotImpl.Index",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.107"
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeStruct_TestSpot",
+    "Outer": "On_MapImage_MouseButtonDown",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct TestSpot",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_AbsoluteToLocal_ReturnValue",
+    "Outer": "On_MapImage_MouseButtonDown",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:On_MapImage_MouseButtonDown.K2Node_MakeStruct_TestSpot",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.109"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_PointerEvent_GetScreenSpacePosition_ReturnValue",
+    "Outer": "On_MapImage_MouseButtonDown",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:On_MapImage_MouseButtonDown.CallFunc_AbsoluteToLocal_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.110"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue",
+    "Outer": "On_MapImage_MouseButtonDown",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:On_MapImage_MouseButtonDown.CallFunc_PointerEvent_GetScreenSpacePosition_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.111"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Handled_ReturnValue",
+    "Outer": "On_MapImage_MouseButtonDown",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:On_MapImage_MouseButtonDown.CallFunc_PointerEvent_IsMouseButtonDown_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.112"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct EventReply",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "ReturnValue",
+    "Outer": "On_MapImage_MouseButtonDown",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:On_MapImage_MouseButtonDown.CallFunc_Handled_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.113"
+    },
+    "PropertyFlags": 1408,
+    "Struct": {
+      "ObjectName": "ScriptStruct EventReply",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "MouseEvent",
+    "Outer": "On_MapImage_MouseButtonDown",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:On_MapImage_MouseButtonDown.ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.114"
+    },
+    "PropertyFlags": 134218114,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerEvent",
+      "ObjectPath": "/Script/SlateCore"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "MyGeometry",
+    "Outer": "On_MapImage_MouseButtonDown",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:On_MapImage_MouseButtonDown.MouseEvent",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.115"
+    },
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Geometry",
+      "ObjectPath": "/Script/SlateCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "On_MapImage_MouseButtonDown",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:RemoveTestSpotImpl",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.108"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty TestParachuting_C:On_MapImage_MouseButtonDown.MyGeometry",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.116"
+      }
+    ],
+    "FunctionFlags": 214040576
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "UnderlyingType",
+    "Outer": "Temp_byte_Variable",
+    "Next": null,
+    "Enum": null
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "UnderlyingType",
+    "Outer": "Temp_byte_Variable2",
+    "Next": null,
+    "Enum": null
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "UnderlyingType",
+    "Outer": "K2Node_Select_Default",
+    "Next": null,
+    "Enum": null
+  },
+  {
+    "Type": "EnumProperty",
+    "Name": "K2Node_Select_Default",
+    "Outer": "UpdateTestSpotsText",
+    "Next": null,
+    "Enum": {
+      "ObjectName": "Enum ESlateVisibility",
+      "ObjectPath": "/Script/UMG"
+    },
+    "UnderlyingProp": {
+      "ObjectName": "ByteProperty TestParachuting_C:UpdateTestSpotsText.K2Node_Select_Default.UnderlyingType",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.120"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "CallFunc_Conv_StringToText_ReturnValue",
+    "Outer": "UpdateTestSpotsText",
+    "Next": {
+      "ObjectName": "EnumProperty TestParachuting_C:UpdateTestSpotsText.K2Node_Select_Default",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.121"
+    }
+  },
+  {
+    "Type": "StrProperty",
+    "Name": "CallFunc_Concat_StrStr_ReturnValue",
+    "Outer": "UpdateTestSpotsText",
+    "Next": {
+      "ObjectName": "TextProperty TestParachuting_C:UpdateTestSpotsText.CallFunc_Conv_StringToText_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.122"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Greater_IntInt_ReturnValue",
+    "Outer": "UpdateTestSpotsText",
+    "Next": {
+      "ObjectName": "StrProperty TestParachuting_C:UpdateTestSpotsText.CallFunc_Concat_StrStr_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.123"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StrProperty",
+    "Name": "CallFunc_Conv_IntToString_ReturnValue",
+    "Outer": "UpdateTestSpotsText",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:UpdateTestSpotsText.CallFunc_Greater_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.124"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue",
+    "Outer": "UpdateTestSpotsText",
+    "Next": {
+      "ObjectName": "StrProperty TestParachuting_C:UpdateTestSpotsText.CallFunc_Conv_IntToString_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.125"
+    }
+  },
+  {
+    "Type": "EnumProperty",
+    "Name": "Temp_byte_Variable2",
+    "Outer": "UpdateTestSpotsText",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:UpdateTestSpotsText.CallFunc_Array_Length_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.126"
+    },
+    "Enum": {
+      "ObjectName": "Enum ESlateVisibility",
+      "ObjectPath": "/Script/UMG"
+    },
+    "UnderlyingProp": {
+      "ObjectName": "ByteProperty TestParachuting_C:UpdateTestSpotsText.Temp_byte_Variable2.UnderlyingType",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.119"
+    }
+  },
+  {
+    "Type": "EnumProperty",
+    "Name": "Temp_byte_Variable",
+    "Outer": "UpdateTestSpotsText",
+    "Next": {
+      "ObjectName": "EnumProperty TestParachuting_C:UpdateTestSpotsText.Temp_byte_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.127"
+    },
+    "Enum": {
+      "ObjectName": "Enum ESlateVisibility",
+      "ObjectPath": "/Script/UMG"
+    },
+    "UnderlyingProp": {
+      "ObjectName": "ByteProperty TestParachuting_C:UpdateTestSpotsText.Temp_byte_Variable.UnderlyingType",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.118"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "Temp_bool_Variable",
+    "Outer": "UpdateTestSpotsText",
+    "Next": {
+      "ObjectName": "EnumProperty TestParachuting_C:UpdateTestSpotsText.Temp_byte_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.128"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateTestSpotsText",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:On_MapImage_MouseButtonDown",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.117"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty TestParachuting_C:UpdateTestSpotsText.Temp_bool_Variable",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.129"
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue",
+    "Outer": "ClearTestSpotMarkers",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue",
+    "Outer": "ClearTestSpotMarkers",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:ClearTestSpotMarkers.CallFunc_Less_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.131"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "ClearTestSpotMarkers",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ClearTestSpotMarkers.CallFunc_Array_Length_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.132"
+    },
+    "PropertyClass": {
+      "ObjectName": "WidgetBlueprintGeneratedClass TestSpotMark_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.28"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue",
+    "Outer": "ClearTestSpotMarkers",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:ClearTestSpotMarkers.CallFunc_Array_Get_Item",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.133"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Loop_Counter_Variable",
+    "Outer": "ClearTestSpotMarkers",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ClearTestSpotMarkers.CallFunc_Add_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.134"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Array_Index_Variable",
+    "Outer": "ClearTestSpotMarkers",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:ClearTestSpotMarkers.Temp_int_Loop_Counter_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.135"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ClearTestSpotMarkers",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:UpdateTestSpotsText",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.130"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty TestParachuting_C:ClearTestSpotMarkers.Temp_int_Array_Index_Variable",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.136"
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue",
+    "Outer": "UpdateMarker",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue",
+    "Outer": "UpdateMarker",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:UpdateMarker.CallFunc_Less_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.138"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "UpdateMarker",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:UpdateMarker.CallFunc_Array_Length_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.139"
+    },
+    "PropertyClass": {
+      "ObjectName": "WidgetBlueprintGeneratedClass TestSpotMark_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.28"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue",
+    "Outer": "UpdateMarker",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:UpdateMarker.CallFunc_Array_Get_Item",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.140"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Loop_Counter_Variable",
+    "Outer": "UpdateMarker",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:UpdateMarker.CallFunc_Add_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.141"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Array_Index_Variable",
+    "Outer": "UpdateMarker",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:UpdateMarker.Temp_int_Loop_Counter_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.142"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateMarker",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:ClearTestSpotMarkers",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.137"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty TestParachuting_C:UpdateMarker.Temp_int_Array_Index_Variable",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.143"
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item2",
+    "Outer": "SwapTestSpotImpl",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "WidgetBlueprintGeneratedClass TestSpotMark_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.28"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "SwapTestSpotImpl",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:SwapTestSpotImpl.CallFunc_Array_Get_Item2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.145"
+    },
+    "PropertyClass": {
+      "ObjectName": "WidgetBlueprintGeneratedClass TestSpotMark_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.28"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Temp1",
+    "Outer": "SwapTestSpotImpl",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:SwapTestSpotImpl.CallFunc_Array_Get_Item",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.146"
+    },
+    "PropertyFlags": 1,
+    "Struct": {
+      "ObjectName": "ScriptStruct TestSpot",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Temp2",
+    "Outer": "SwapTestSpotImpl",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:SwapTestSpotImpl.Temp1",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.147"
+    },
+    "PropertyFlags": 1,
+    "PropertyClass": {
+      "ObjectName": "WidgetBlueprintGeneratedClass TestSpotMark_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.28"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Spot2",
+    "Outer": "SwapTestSpotImpl",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:SwapTestSpotImpl.Temp2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.148"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Spot1",
+    "Outer": "SwapTestSpotImpl",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:SwapTestSpotImpl.Spot2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.149"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "SwapTestSpotImpl",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:UpdateMarker",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.144"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty TestParachuting_C:SwapTestSpotImpl.Spot1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.150"
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Array",
+    "Outer": "Array",
+    "Next": null
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue3",
+    "Outer": "SetTestSpotDisabled",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue4",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:SetTestSpotDisabled.CallFunc_Less_IntInt_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.153"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsRunning_ReturnValue",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:SetTestSpotDisabled.CallFunc_Array_Length_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.154"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Array_Index_Variable2",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:SetTestSpotDisabled.CallFunc_IsRunning_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.155"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanAND_ReturnValue",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:SetTestSpotDisabled.Temp_int_Array_Index_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.156"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue2",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:SetTestSpotDisabled.CallFunc_BooleanAND_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.157"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:SetTestSpotDisabled.CallFunc_Less_IntInt_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.158"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue2",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:SetTestSpotDisabled.CallFunc_GreaterEqual_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.159"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:SetTestSpotDisabled.CallFunc_Add_IntInt_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.160"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Loop_Counter_Variable2",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:SetTestSpotDisabled.CallFunc_Array_Get_Item",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.161"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Array_Index_Variable",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:SetTestSpotDisabled.Temp_int_Loop_Counter_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.162"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:SetTestSpotDisabled.Temp_int_Array_Index_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.163"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:SetTestSpotDisabled.CallFunc_Add_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.164"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Loop_Counter_Variable",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:SetTestSpotDisabled.CallFunc_Less_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.165"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:SetTestSpotDisabled.Temp_int_Loop_Counter_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.166"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue3",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:SetTestSpotDisabled.CallFunc_EqualEqual_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.167"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue2",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:SetTestSpotDisabled.CallFunc_Array_Length_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.168"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:SetTestSpotDisabled.CallFunc_Array_Length_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.169"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "Disabled",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:SetTestSpotDisabled.CallFunc_Array_Length_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.170"
+    },
+    "PropertyFlags": 128,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "Array",
+    "Outer": "SetTestSpotDisabled",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:SetTestSpotDisabled.Disabled",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.171"
+    },
+    "PropertyFlags": 134218112,
+    "Inner": {
+      "ObjectName": "IntProperty TestParachuting_C:SetTestSpotDisabled.Array.Array",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.152"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "SetTestSpotDisabled",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:SwapTestSpotImpl",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.151"
+    },
+    "Children": [
+      {
+        "ObjectName": "ArrayProperty TestParachuting_C:SetTestSpotDisabled.Array",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.172"
+      }
+    ],
+    "FunctionFlags": 205651968
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Add_Vector2DVector2D_ReturnValue",
+    "Outer": "UpdateMarkerPosition",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_RealToUiCoord_ReturnValue",
+    "Outer": "UpdateMarkerPosition",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:UpdateMarkerPosition.CallFunc_Add_Vector2DVector2D_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.174"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_SlotAsCanvasSlot_ReturnValue",
+    "Outer": "UpdateMarkerPosition",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:UpdateMarkerPosition.CallFunc_RealToUiCoord_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.175"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class CanvasPanelSlot",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "UpdateMarkerPosition",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:UpdateMarkerPosition.CallFunc_SlotAsCanvasSlot_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.176"
+    },
+    "PropertyClass": {
+      "ObjectName": "WidgetBlueprintGeneratedClass TestSpotMark_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.28"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "index",
+    "Outer": "UpdateMarkerPosition",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:UpdateMarkerPosition.CallFunc_Array_Get_Item",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.177"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "UpdateMarkerPosition",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:SetTestSpotDisabled",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.173"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty TestParachuting_C:UpdateMarkerPosition.index",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.178"
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "AddTestSpotImpl",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsCanvas_Panel_Slot",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:AddTestSpotImpl.K2Node_DynamicCast_bSuccess",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.180"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class CanvasPanelSlot",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_AddChild_ReturnValue",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:AddTestSpotImpl.K2Node_DynamicCast_AsCanvas_Panel_Slot",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.181"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class PanelSlot",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Add_Vector2DVector2D_ReturnValue",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:AddTestSpotImpl.CallFunc_AddChild_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.182"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Add_ReturnValue2",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:AddTestSpotImpl.CallFunc_Add_Vector2DVector2D_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.183"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Select2_Default",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:AddTestSpotImpl.CallFunc_Array_Add_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.184"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Add_ReturnValue",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:AddTestSpotImpl.K2Node_Select2_Default",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.185"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "Temp_bool_Variable2",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "IntProperty TestParachuting_C:AddTestSpotImpl.CallFunc_Array_Add_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.186"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeStruct_TestSpot",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:AddTestSpotImpl.Temp_bool_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.187"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct TestSpot",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Select_Default",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:AddTestSpotImpl.K2Node_MakeStruct_TestSpot",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.188"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Create_ReturnValue",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:AddTestSpotImpl.K2Node_Select_Default",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.189"
+    },
+    "PropertyClass": {
+      "ObjectName": "WidgetBlueprintGeneratedClass TestSpotMark_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.28"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetPlayerController_ReturnValue",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:AddTestSpotImpl.CallFunc_Create_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.190"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class PlayerController",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "Temp_bool_Variable",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "ObjectProperty TestParachuting_C:AddTestSpotImpl.CallFunc_GetPlayerController_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.191"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_UiToRealCoord_ReturnValue",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:AddTestSpotImpl.Temp_bool_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.192"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_RealToUiCoord_ReturnValue",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:AddTestSpotImpl.CallFunc_UiToRealCoord_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.193"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector2D",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "DelegateProperty",
+    "Name": "K2Node_CreateDelegate_OutputDelegate2",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "StructProperty TestParachuting_C:AddTestSpotImpl.CallFunc_RealToUiCoord_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.194"
+    },
+    "SignatureFunction": {
+      "ObjectName": "Function TestSpotMark_C:TestMarkerLeftClicked__DelegateSignature",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.6"
+    }
+  },
+  {
+    "Type": "DelegateProperty",
+    "Name": "K2Node_CreateDelegate_OutputDelegate",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "DelegateProperty TestParachuting_C:AddTestSpotImpl.K2Node_CreateDelegate_OutputDelegate2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.195"
+    },
+    "SignatureFunction": {
+      "ObjectName": "Function TestSpotMark_C:TestMarkerRightClicked__DelegateSignature",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestSpotMark.8"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "bUseRealCoord",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "DelegateProperty TestParachuting_C:AddTestSpotImpl.K2Node_CreateDelegate_OutputDelegate",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.196"
+    },
+    "PropertyFlags": 128,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "bAddOnlyMark",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:AddTestSpotImpl.bUseRealCoord",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.197"
+    },
+    "PropertyFlags": 128,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "TestSpot",
+    "Outer": "AddTestSpotImpl",
+    "Next": {
+      "ObjectName": "BoolProperty TestParachuting_C:AddTestSpotImpl.bAddOnlyMark",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.198"
+    },
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct TestSpot",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AddTestSpotImpl",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:UpdateMarkerPosition",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.179"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty TestParachuting_C:AddTestSpotImpl.TestSpot",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.199"
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "TestParachuting_C",
+    "Next": {
+      "ObjectName": "Function TestParachuting_C:AddTestSpotImpl",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.200"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "TestParachuting_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree TestParachuting_C:WidgetTree",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.328"
+      },
+      "bAllowTemplate": true,
+      "Bindings": [
+        {
+          "ObjectName": "MapImage",
+          "PropertyName": "OnMouseButtonDownEvent",
+          "FunctionName": "On_MapImage_MouseButtonDown",
+          "SourcePath": {
+            "Segments": [
+              {
+                "Name": "On_MapImage_MouseButtonDown",
+                "ArrayIndex": -1
+              }
+            ]
+          },
+          "Kind": "EBindingKind::Function"
+        }
+      ],
+      "bValidTemplate": true,
+      "TemplateAsset": "/Game/Blueprints/Tools/TestParachuting/TestParachuting.WidgetArchetype",
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding TestParachuting_C:ComponentDelegateBinding_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.244"
+        }
+      ],
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty TestParachuting_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.201"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function TestParachuting_C:ExecuteUbergraph_TestParachuting",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.66"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TestParachuting",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty TestParachuting_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.201"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_TestParachuting": {
+        "ObjectName": "Function TestParachuting_C:ExecuteUbergraph_TestParachuting",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.66"
+      },
+      "BndEvt__Button_Save_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature": {
+        "ObjectName": "Function TestParachuting_C:BndEvt__Button_Save_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.67"
+      },
+      "AddTestSpot": {
+        "ObjectName": "Function TestParachuting_C:AddTestSpot",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.71"
+      },
+      "MoveTestSpot": {
+        "ObjectName": "Function TestParachuting_C:MoveTestSpot",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.74"
+      },
+      "SwapTestSpots": {
+        "ObjectName": "Function TestParachuting_C:SwapTestSpots",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.77"
+      },
+      "RemoveTestSpots": {
+        "ObjectName": "Function TestParachuting_C:RemoveTestSpots",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.80"
+      },
+      "EnableTestSpots": {
+        "ObjectName": "Function TestParachuting_C:EnableTestSpots",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.83"
+      },
+      "DisableTestSpots": {
+        "ObjectName": "Function TestParachuting_C:DisableTestSpots",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.86"
+      },
+      "BndEvt__Button_Disable_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature": {
+        "ObjectName": "Function TestParachuting_C:BndEvt__Button_Disable_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.87"
+      },
+      "BndEvt__Button_Enable_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature": {
+        "ObjectName": "Function TestParachuting_C:BndEvt__Button_Enable_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.88"
+      },
+      "BndEvt__Button_LoadDefault_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature": {
+        "ObjectName": "Function TestParachuting_C:BndEvt__Button_LoadDefault_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.89"
+      },
+      "OnTestSpotMarkToggle": {
+        "ObjectName": "Function TestParachuting_C:OnTestSpotMarkToggle",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.91"
+      },
+      "BndEvt__Button_ClearSpots_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature": {
+        "ObjectName": "Function TestParachuting_C:BndEvt__Button_ClearSpots_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.92"
+      },
+      "OnTestSpotMarkRemove": {
+        "ObjectName": "Function TestParachuting_C:OnTestSpotMarkRemove",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.94"
+      },
+      "OnInitialized": {
+        "ObjectName": "Function TestParachuting_C:OnInitialized",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.95"
+      },
+      "BndEvt__Button_Close_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature": {
+        "ObjectName": "Function TestParachuting_C:BndEvt__Button_Close_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.96"
+      },
+      "BndEvt__Button_StopTest_K2Node_ComponentBoundEvent_34_OnButtonClickedEvent__DelegateSignature": {
+        "ObjectName": "Function TestParachuting_C:BndEvt__Button_StopTest_K2Node_ComponentBoundEvent_34_OnButtonClickedEvent__DelegateSignature",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.97"
+      },
+      "BndEvt__Button_RunTest_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature": {
+        "ObjectName": "Function TestParachuting_C:BndEvt__Button_RunTest_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.98"
+      },
+      "InitTestSpotMarkers": {
+        "ObjectName": "Function TestParachuting_C:InitTestSpotMarkers",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.105"
+      },
+      "RemoveTestSpotImpl": {
+        "ObjectName": "Function TestParachuting_C:RemoveTestSpotImpl",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.108"
+      },
+      "On_MapImage_MouseButtonDown": {
+        "ObjectName": "Function TestParachuting_C:On_MapImage_MouseButtonDown",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.117"
+      },
+      "UpdateTestSpotsText": {
+        "ObjectName": "Function TestParachuting_C:UpdateTestSpotsText",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.130"
+      },
+      "ClearTestSpotMarkers": {
+        "ObjectName": "Function TestParachuting_C:ClearTestSpotMarkers",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.137"
+      },
+      "UpdateMarker": {
+        "ObjectName": "Function TestParachuting_C:UpdateMarker",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.144"
+      },
+      "SwapTestSpotImpl": {
+        "ObjectName": "Function TestParachuting_C:SwapTestSpotImpl",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.151"
+      },
+      "SetTestSpotDisabled": {
+        "ObjectName": "Function TestParachuting_C:SetTestSpotDisabled",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.173"
+      },
+      "UpdateMarkerPosition": {
+        "ObjectName": "Function TestParachuting_C:UpdateMarkerPosition",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.179"
+      },
+      "AddTestSpotImpl": {
+        "ObjectName": "Function TestParachuting_C:AddTestSpotImpl",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.200"
+      }
+    },
+    "ClassFlags": 10752016,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "TestParachuting_C Default__TestParachuting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.203"
+    }
+  },
+  {
+    "Type": "TestParachuting_C",
+    "Name": "Default__TestParachuting_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "TestSpotMarkOffset": {
+        "X": -13.3333,
+        "Y": -28.0
+      },
+      "MapImageContainerBinder": {
+        "Name": "MapImageContainer"
+      },
+      "MapImageBinder": {
+        "Name": "MapImage"
+      },
+      "MessageBinder": {
+        "Name": "Message"
+      },
+      "RunTestButton": {
+        "Name": "Button_RunTest"
+      },
+      "StopTestButton": {
+        "Name": "Button_StopTest"
+      },
+      "ClearSpotsButton": {
+        "Name": "Button_ClearSpots"
+      },
+      "CloseButton": {
+        "Name": "Button_Close"
+      },
+      "LoadDefaultButton": {
+        "Name": "Button_LoadDefault"
+      },
+      "SaveButton": {
+        "Name": "Button_Save"
+      },
+      "EnableButton": {
+        "Name": "Button_Enable"
+      },
+      "DisableButton": {
+        "Name": "Button_Disable"
+      },
+      "StatusTextBlock": {
+        "Name": "TextBlock_OptionText"
+      },
+      "bUseFakeCursor": true,
+      "CursorCanvas_Binder": {
+        "Name": "MainCanvas"
+      },
+      "CursorWidget_Binder": {
+        "Name": "DebugCrosshair"
+      },
+      "OnPrepass": {
+        "Num": 204,
+        "Name": "HandleMainPrepass"
+      },
+      "Visibility": "ESlateVisibility::Visible"
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_ClearSpots",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.37592,
+              "G": 0.42,
+              "B": 0.3675,
+              "A": 1.0,
+              "Hex": "FFA5AEA3"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.880575,
+              "G": 0.885,
+              "B": 0.881186,
+              "A": 1.0,
+              "Hex": "FFF2F2F2"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.362675,
+              "G": 0.400298,
+              "B": 0.445,
+              "A": 1.0,
+              "Hex": "FFA2AAB2"
+            }
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_ClearSpots.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.220"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_5",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.254"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_Close",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.42,
+              "G": 0.268924,
+              "B": 0.247978,
+              "A": 1.0,
+              "Hex": "FFAE8E88"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.585,
+              "G": 0.251851,
+              "B": 0.151958,
+              "A": 1.0,
+              "Hex": "FFC9896D"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.009,
+              "G": 0.279093,
+              "B": 0.6,
+              "A": 1.0,
+              "Hex": "FF1790CC"
+            }
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 3.11263,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FFFFFFFF"
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_Close.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.221"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.251"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_Disable",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.282853,
+              "G": 0.42,
+              "B": 0.256654,
+              "A": 1.0,
+              "Hex": "FF91AE8B"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.491791,
+              "G": 0.992157,
+              "B": 0.560926,
+              "A": 1.0,
+              "Hex": "FFBAFFC6"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.009,
+              "G": 0.279093,
+              "B": 0.6,
+              "A": 1.0,
+              "Hex": "FF1790CC"
+            }
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_Disable.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.222"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.252"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_Enable",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.282853,
+              "G": 0.42,
+              "B": 0.256654,
+              "A": 1.0,
+              "Hex": "FF91AE8B"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.491791,
+              "G": 0.992157,
+              "B": 0.560926,
+              "A": 1.0,
+              "Hex": "FFBAFFC6"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.009,
+              "G": 0.279093,
+              "B": 0.6,
+              "A": 1.0,
+              "Hex": "FF1790CC"
+            }
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_Enable.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.223"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_7",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.256"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_LoadDefault",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.384736,
+              "G": 0.42,
+              "B": 0.378,
+              "A": 1.0,
+              "Hex": "FFA7AEA5"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.88798,
+              "G": 0.992157,
+              "B": 0.902374,
+              "A": 1.0,
+              "Hex": "FFF2FFF4"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.44,
+              "G": 0.44,
+              "B": 0.44,
+              "A": 1.0,
+              "Hex": "FFB1B1B1"
+            }
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_LoadDefault.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.224"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_6",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.255"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_RunTest",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.14,
+              "G": 0.27,
+              "B": 0.42,
+              "A": 1.0,
+              "Hex": "FF688EAE"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.258824,
+              "G": 0.592157,
+              "B": 0.992157,
+              "A": 1.0,
+              "Hex": "FF8BCBFF"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.009,
+              "G": 0.279093,
+              "B": 0.6,
+              "A": 1.0,
+              "Hex": "FF1790CC"
+            }
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_RunTest.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.225"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.249"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_Save",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.384736,
+              "G": 0.42,
+              "B": 0.378,
+              "A": 1.0,
+              "Hex": "FFA7AEA5"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.88798,
+              "G": 0.992157,
+              "B": 0.902374,
+              "A": 1.0,
+              "Hex": "FFF2FFF4"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.44,
+              "G": 0.44,
+              "B": 0.44,
+              "A": 1.0,
+              "Hex": "FFB1B1B1"
+            }
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_Save.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.226"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_4",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.253"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_StopTest",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.14,
+              "G": 0.27,
+              "B": 0.42,
+              "A": 1.0,
+              "Hex": "FF688EAE"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.258824,
+              "G": 0.592157,
+              "B": 0.992157,
+              "A": 1.0,
+              "Hex": "FF8BCBFF"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.009,
+              "G": 0.279093,
+              "B": 0.6,
+              "A": 1.0,
+              "Hex": "FF1790CC"
+            }
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_StopTest.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.227"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.250"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_ClearSpots",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.37592,
+              "G": 0.42,
+              "B": 0.3675,
+              "A": 1.0,
+              "Hex": "FFA5AEA3"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.880575,
+              "G": 0.885,
+              "B": 0.881186,
+              "A": 1.0,
+              "Hex": "FFF2F2F2"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.362675,
+              "G": 0.400298,
+              "B": 0.445,
+              "A": 1.0,
+              "Hex": "FFA2AAB2"
+            }
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_ClearSpots.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.228"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_5",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.264"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_Close",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.42,
+              "G": 0.268924,
+              "B": 0.247978,
+              "A": 1.0,
+              "Hex": "FFAE8E88"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.585,
+              "G": 0.251851,
+              "B": 0.151958,
+              "A": 1.0,
+              "Hex": "FFC9896D"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.009,
+              "G": 0.279093,
+              "B": 0.6,
+              "A": 1.0,
+              "Hex": "FF1790CC"
+            }
+          }
+        }
+      },
+      "ColorAndOpacity": {
+        "R": 3.11263,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FFFFFFFF"
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_Close.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.229"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.261"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_Disable",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.282853,
+              "G": 0.42,
+              "B": 0.256654,
+              "A": 1.0,
+              "Hex": "FF91AE8B"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.491791,
+              "G": 0.992157,
+              "B": 0.560926,
+              "A": 1.0,
+              "Hex": "FFBAFFC6"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.009,
+              "G": 0.279093,
+              "B": 0.6,
+              "A": 1.0,
+              "Hex": "FF1790CC"
+            }
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_Disable.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.230"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.262"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_Enable",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.282853,
+              "G": 0.42,
+              "B": 0.256654,
+              "A": 1.0,
+              "Hex": "FF91AE8B"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.491791,
+              "G": 0.992157,
+              "B": 0.560926,
+              "A": 1.0,
+              "Hex": "FFBAFFC6"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.009,
+              "G": 0.279093,
+              "B": 0.6,
+              "A": 1.0,
+              "Hex": "FF1790CC"
+            }
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_Enable.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.231"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_7",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.266"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_LoadDefault",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.384736,
+              "G": 0.42,
+              "B": 0.378,
+              "A": 1.0,
+              "Hex": "FFA7AEA5"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.88798,
+              "G": 0.992157,
+              "B": 0.902374,
+              "A": 1.0,
+              "Hex": "FFF2FFF4"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.44,
+              "G": 0.44,
+              "B": 0.44,
+              "A": 1.0,
+              "Hex": "FFB1B1B1"
+            }
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_LoadDefault.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.232"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_6",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.265"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_RunTest",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.14,
+              "G": 0.27,
+              "B": 0.42,
+              "A": 1.0,
+              "Hex": "FF688EAE"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.258824,
+              "G": 0.592157,
+              "B": 0.992157,
+              "A": 1.0,
+              "Hex": "FF8BCBFF"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.009,
+              "G": 0.279093,
+              "B": 0.6,
+              "A": 1.0,
+              "Hex": "FF1790CC"
+            }
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_RunTest.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.233"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.259"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_Save",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.384736,
+              "G": 0.42,
+              "B": 0.378,
+              "A": 1.0,
+              "Hex": "FFA7AEA5"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.88798,
+              "G": 0.992157,
+              "B": 0.902374,
+              "A": 1.0,
+              "Hex": "FFF2FFF4"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.44,
+              "G": 0.44,
+              "B": 0.44,
+              "A": 1.0,
+              "Hex": "FFB1B1B1"
+            }
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_Save.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.234"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_4",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.263"
+      }
+    }
+  },
+  {
+    "Type": "Button",
+    "Name": "Button_StopTest",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "WidgetStyle": {
+        "Normal": {
+          "ImageSize": {
+            "X": 33.0,
+            "Y": 30.0
+          },
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.14,
+              "G": 0.27,
+              "B": 0.42,
+              "A": 1.0,
+              "Hex": "FF688EAE"
+            }
+          }
+        },
+        "Hovered": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.258824,
+              "G": 0.592157,
+              "B": 0.992157,
+              "A": 1.0,
+              "Hex": "FF8BCBFF"
+            }
+          }
+        },
+        "Pressed": {
+          "TintColor": {
+            "SpecifiedColor": {
+              "R": 0.009,
+              "G": 0.279093,
+              "B": 0.6,
+              "A": 1.0,
+              "Hex": "FF1790CC"
+            }
+          }
+        }
+      },
+      "Slots": [
+        {
+          "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_StopTest.ButtonSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.235"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.260"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_ClearSpots",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_ClearSpots",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.204"
+      },
+      "Content": {
+        "ObjectName": "TextBlock TestParachuting_C:WidgetTree.TextBlock_5",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.301"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_Close",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_Close",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.205"
+      },
+      "Content": {
+        "ObjectName": "TextBlock TestParachuting_C:WidgetTree.TextBlock_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.298"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_Disable",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_Disable",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.206"
+      },
+      "Content": {
+        "ObjectName": "TextBlock TestParachuting_C:WidgetTree.TextBlock_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.299"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_Enable",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_Enable",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.207"
+      },
+      "Content": {
+        "ObjectName": "TextBlock TestParachuting_C:WidgetTree.TextBlock_A",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.303"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_LoadDefault",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_LoadDefault",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.208"
+      },
+      "Content": {
+        "ObjectName": "TextBlock TestParachuting_C:WidgetTree.TextBlock_8",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.302"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_RunTest",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_RunTest",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.209"
+      },
+      "Content": {
+        "ObjectName": "TextBlock TestParachuting_C:WidgetTree.TextBlock_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.296"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_Save",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_Save",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.210"
+      },
+      "Content": {
+        "ObjectName": "TextBlock TestParachuting_C:WidgetTree.TextBlock_4",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.300"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_StopTest",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_StopTest",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.211"
+      },
+      "Content": {
+        "ObjectName": "TextBlock TestParachuting_C:WidgetTree.TextBlock_158",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.297"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_ClearSpots",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_ClearSpots",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.212"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_5",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.313"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_Close",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_Close",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.213"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.310"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_Disable",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_Disable",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.214"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.311"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_Enable",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_Enable",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.215"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_A",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.315"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_LoadDefault",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_LoadDefault",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.216"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_8",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.314"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_RunTest",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_RunTest",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.217"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.308"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_Save",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_Save",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.218"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_4",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.312"
+      }
+    }
+  },
+  {
+    "Type": "ButtonSlot",
+    "Name": "ButtonSlot_0",
+    "Outer": "Button_StopTest",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 4.0,
+        "Right": 10.0,
+        "Bottom": 4.0
+      },
+      "Parent": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_StopTest",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.219"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_158",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.309"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "MainCanvas",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot TestParachuting_C:WidgetTree.MainCanvas.CanvasPanelSlot_12",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.241"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot TestParachuting_C:WidgetTree.MainCanvas.CanvasPanelSlot_10",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.240"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "TestSpotMarkContainer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "OverlaySlot TestParachuting_C:WidgetTree.MapImageContainer.OverlaySlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.281"
+      },
+      "bIsVolatile": true
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "MainCanvas",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MainCanvas.CanvasPanelSlot_12",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.243"
+        },
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MainCanvas.CanvasPanelSlot_10",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.242"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "TestSpotMarkContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "OverlaySlot WidgetArchetype:WidgetTree_0.MapImageContainer.OverlaySlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.286"
+      },
+      "bIsVolatile": true
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "MainCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel TestParachuting_C:WidgetTree.MainCanvas",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.236"
+      },
+      "Content": {
+        "ObjectName": "InvalidationBox TestParachuting_C:WidgetTree.InvalidationBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.275"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "MainCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 50.0,
+          "Bottom": 50.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "ZOrder": 1000,
+      "Parent": {
+        "ObjectName": "CanvasPanel TestParachuting_C:WidgetTree.MainCanvas",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.236"
+      },
+      "Content": {
+        "ObjectName": "Image TestParachuting_C:WidgetTree.DebugCrosshair",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.270"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_10",
+    "Outer": "MainCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Anchors": {
+          "Minimum": {
+            "X": 0.5,
+            "Y": 0.5
+          },
+          "Maximum": {
+            "X": 0.5,
+            "Y": 0.5
+          }
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MainCanvas",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.238"
+      },
+      "Content": {
+        "ObjectName": "InvalidationBox WidgetArchetype:WidgetTree_0.InvalidationBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.276"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_12",
+    "Outer": "MainCanvas",
+    "Properties": {
+      "LayoutData": {
+        "Offsets": {
+          "Right": 50.0,
+          "Bottom": 50.0
+        },
+        "Alignment": {
+          "X": 0.5,
+          "Y": 0.5
+        }
+      },
+      "ZOrder": 1000,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MainCanvas",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.238"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.DebugCrosshair",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.273"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_2",
+    "Outer": "TestParachuting_C",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "Button_Save",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__Button_Save_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "Button_Disable",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__Button_Disable_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "Button_Enable",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__Button_Enable_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "Button_LoadDefault",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__Button_LoadDefault_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "Button_ClearSpots",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__Button_ClearSpots_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "Button_Close",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__Button_Close_K2Node_ComponentBoundEvent_52_OnButtonClickedEvent__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "Button_StopTest",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__Button_StopTest_K2Node_ComponentBoundEvent_34_OnButtonClickedEvent__DelegateSignature"
+        },
+        {
+          "ComponentPropertyName": "Button_RunTest",
+          "DelegatePropertyName": "OnClicked",
+          "FunctionNameToBind": "BndEvt__Button_RunTest_K2Node_ComponentBoundEvent_0_OnButtonClickedEvent__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.249"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.250"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_7",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.256"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.252"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_5",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.254"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_6",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.255"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_4",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.253"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.HorizontalBox_0.HorizontalBoxSlot_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.251"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot TestParachuting_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.322"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "TestStatusBox",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.TestStatusBox.HorizontalBoxSlot_5",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.257"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.TestStatusBox.HorizontalBoxSlot_6",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.258"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot TestParachuting_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.320"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "HorizontalBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.259"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.260"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_7",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.266"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.262"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_5",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.264"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_6",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.265"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_4",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.263"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.HorizontalBox_0.HorizontalBoxSlot_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.261"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.326"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBox",
+    "Name": "TestStatusBox",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.TestStatusBox.HorizontalBoxSlot_5",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.267"
+        },
+        {
+          "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.TestStatusBox.HorizontalBoxSlot_6",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.268"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.324"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox TestParachuting_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.245"
+      },
+      "Content": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_RunTest",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.209"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox TestParachuting_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.245"
+      },
+      "Content": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_StopTest",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.211"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox TestParachuting_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.245"
+      },
+      "Content": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_Close",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.205"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox TestParachuting_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.245"
+      },
+      "Content": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_Disable",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.206"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox TestParachuting_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.245"
+      },
+      "Content": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_Save",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.210"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox TestParachuting_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.245"
+      },
+      "Content": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_ClearSpots",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.204"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox TestParachuting_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.245"
+      },
+      "Content": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_LoadDefault",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.208"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_7",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox TestParachuting_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.245"
+      },
+      "Content": {
+        "ObjectName": "Button TestParachuting_C:WidgetTree.Button_Enable",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.207"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "TestStatusBox",
+    "Properties": {
+      "Padding": {
+        "Left": 5.0,
+        "Top": 5.0,
+        "Right": 5.0,
+        "Bottom": 5.0
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox TestParachuting_C:WidgetTree.TestStatusBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.246"
+      },
+      "Content": {
+        "ObjectName": "TextBlock TestParachuting_C:WidgetTree.TextBlock_Options",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.304"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "TestStatusBox",
+    "Properties": {
+      "Padding": {
+        "Left": 5.0,
+        "Top": 5.0,
+        "Right": 5.0,
+        "Bottom": 5.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox TestParachuting_C:WidgetTree.TestStatusBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.246"
+      },
+      "Content": {
+        "ObjectName": "TextBlock TestParachuting_C:WidgetTree.TextBlock_OptionText",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.305"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_0",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.247"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_RunTest",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.217"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_1",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.247"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_StopTest",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.219"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_2",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.247"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_Close",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.213"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_3",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.247"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_Disable",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.214"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_4",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.247"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_Save",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.218"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.247"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_ClearSpots",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.212"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.247"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_LoadDefault",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.216"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_7",
+    "Outer": "HorizontalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Right": 10.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.247"
+      },
+      "Content": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_Enable",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.215"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_5",
+    "Outer": "TestStatusBox",
+    "Properties": {
+      "Padding": {
+        "Left": 5.0,
+        "Top": 5.0,
+        "Right": 5.0,
+        "Bottom": 5.0
+      },
+      "HorizontalAlignment": "HAlign_Left",
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.TestStatusBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.248"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_Options",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.316"
+      }
+    }
+  },
+  {
+    "Type": "HorizontalBoxSlot",
+    "Name": "HorizontalBoxSlot_6",
+    "Outer": "TestStatusBox",
+    "Properties": {
+      "Padding": {
+        "Left": 5.0,
+        "Top": 5.0,
+        "Right": 5.0,
+        "Bottom": 5.0
+      },
+      "Parent": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.TestStatusBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.248"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_OptionText",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.317"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Bg",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 100.0,
+          "Y": 100.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.8,
+            "Hex": "CC000000"
+          }
+        }
+      },
+      "bIsVariable": false,
+      "Slot": {
+        "ObjectName": "OverlaySlot TestParachuting_C:WidgetTree.Overlay_3.OverlaySlot_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.284"
+      },
+      "bIsEnabled": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "DebugCrosshair",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 30.0,
+          "Y": 30.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Crosshairs__17_",
+          "ObjectPath": "TslGame/Content/Export_Marek/AdaptiveCrosshair/Crosshairs__17_.0"
+        }
+      },
+      "bIsVariable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot TestParachuting_C:WidgetTree.MainCanvas.CanvasPanelSlot_12",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.241"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "MapImage",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 950.0,
+          "Y": 950.0
+        }
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot TestParachuting_C:WidgetTree.MapImageContainer.OverlaySlot_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.282"
+      }
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "Bg",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 100.0,
+          "Y": 100.0
+        },
+        "TintColor": {
+          "SpecifiedColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.8,
+            "Hex": "CC000000"
+          }
+        }
+      },
+      "bIsVariable": false,
+      "Slot": {
+        "ObjectName": "OverlaySlot WidgetArchetype:WidgetTree_0.Overlay_3.OverlaySlot_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.289"
+      },
+      "bIsEnabled": false,
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "DebugCrosshair",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 30.0,
+          "Y": 30.0
+        },
+        "ResourceObject": {
+          "ObjectName": "Texture2D Crosshairs__17_",
+          "ObjectPath": "TslGame/Content/Export_Marek/AdaptiveCrosshair/Crosshairs__17_.0"
+        }
+      },
+      "bIsVariable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MainCanvas.CanvasPanelSlot_12",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.243"
+      },
+      "Visibility": "ESlateVisibility::SelfHitTestInvisible"
+    }
+  },
+  {
+    "Type": "Image",
+    "Name": "MapImage",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Brush": {
+        "ImageSize": {
+          "X": 950.0,
+          "Y": 950.0
+        }
+      },
+      "Slot": {
+        "ObjectName": "OverlaySlot WidgetArchetype:WidgetTree_0.MapImageContainer.OverlaySlot_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.287"
+      }
+    }
+  },
+  {
+    "Type": "InvalidationBox",
+    "Name": "InvalidationBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "PanelSlot TestParachuting_C:WidgetTree.InvalidationBox_0.PanelSlot_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.291"
+        }
+      ],
+      "bIsVariable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot TestParachuting_C:WidgetTree.MainCanvas.CanvasPanelSlot_10",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.240"
+      }
+    }
+  },
+  {
+    "Type": "InvalidationBox",
+    "Name": "InvalidationBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "PanelSlot WidgetArchetype:WidgetTree_0.InvalidationBox_0.PanelSlot_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.292"
+        }
+      ],
+      "bIsVariable": false,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.MainCanvas.CanvasPanelSlot_10",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.242"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "MapImageContainer",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot TestParachuting_C:WidgetTree.MapImageContainer.OverlaySlot_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.282"
+        },
+        {
+          "ObjectName": "OverlaySlot TestParachuting_C:WidgetTree.MapImageContainer.OverlaySlot_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.283"
+        },
+        {
+          "ObjectName": "OverlaySlot TestParachuting_C:WidgetTree.MapImageContainer.OverlaySlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.281"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot TestParachuting_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_6",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.323"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_3",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot TestParachuting_C:WidgetTree.Overlay_3.OverlaySlot_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.284"
+        },
+        {
+          "ObjectName": "OverlaySlot TestParachuting_C:WidgetTree.Overlay_3.OverlaySlot_4",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.285"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "PanelSlot TestParachuting_C:WidgetTree.InvalidationBox_0.PanelSlot_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.291"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "MapImageContainer",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot WidgetArchetype:WidgetTree_0.MapImageContainer.OverlaySlot_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.287"
+        },
+        {
+          "ObjectName": "OverlaySlot WidgetArchetype:WidgetTree_0.MapImageContainer.OverlaySlot_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.288"
+        },
+        {
+          "ObjectName": "OverlaySlot WidgetArchetype:WidgetTree_0.MapImageContainer.OverlaySlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.286"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_6",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.327"
+      }
+    }
+  },
+  {
+    "Type": "Overlay",
+    "Name": "Overlay_3",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "OverlaySlot WidgetArchetype:WidgetTree_0.Overlay_3.OverlaySlot_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.289"
+        },
+        {
+          "ObjectName": "OverlaySlot WidgetArchetype:WidgetTree_0.Overlay_3.OverlaySlot_4",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.290"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "PanelSlot WidgetArchetype:WidgetTree_0.InvalidationBox_0.PanelSlot_2",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.292"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "MapImageContainer",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "ZOrder": 10,
+      "Parent": {
+        "ObjectName": "Overlay TestParachuting_C:WidgetTree.MapImageContainer",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.277"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel TestParachuting_C:WidgetTree.TestSpotMarkContainer",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.237"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "MapImageContainer",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Overlay TestParachuting_C:WidgetTree.MapImageContainer",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.277"
+      },
+      "Content": {
+        "ObjectName": "Image TestParachuting_C:WidgetTree.MapImage",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.271"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_3",
+    "Outer": "MapImageContainer",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay TestParachuting_C:WidgetTree.MapImageContainer",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.277"
+      },
+      "Content": {
+        "ObjectName": "TextBlock TestParachuting_C:WidgetTree.NumOfSpots",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.295"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_3",
+    "Outer": "Overlay_3",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay TestParachuting_C:WidgetTree.Overlay_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.278"
+      },
+      "Content": {
+        "ObjectName": "Image TestParachuting_C:WidgetTree.Bg",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.269"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_4",
+    "Outer": "Overlay_3",
+    "Properties": {
+      "Padding": {
+        "Left": 15.0,
+        "Top": 15.0,
+        "Right": 15.0,
+        "Bottom": 15.0
+      },
+      "ZOrder": 2,
+      "Parent": {
+        "ObjectName": "Overlay TestParachuting_C:WidgetTree.Overlay_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.278"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox TestParachuting_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.318"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_1",
+    "Outer": "MapImageContainer",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "ZOrder": 10,
+      "Parent": {
+        "ObjectName": "Overlay WidgetArchetype:WidgetTree_0.MapImageContainer",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.279"
+      },
+      "Content": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TestSpotMarkContainer",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.239"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_2",
+    "Outer": "MapImageContainer",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Overlay WidgetArchetype:WidgetTree_0.MapImageContainer",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.279"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MapImage",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.274"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_3",
+    "Outer": "MapImageContainer",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "HorizontalAlignment": "HAlign_Right",
+      "VerticalAlignment": "VAlign_Bottom",
+      "Parent": {
+        "ObjectName": "Overlay WidgetArchetype:WidgetTree_0.MapImageContainer",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.279"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.NumOfSpots",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.307"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_3",
+    "Outer": "Overlay_3",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Fill",
+      "VerticalAlignment": "VAlign_Fill",
+      "Parent": {
+        "ObjectName": "Overlay WidgetArchetype:WidgetTree_0.Overlay_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.280"
+      },
+      "Content": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.Bg",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.272"
+      }
+    }
+  },
+  {
+    "Type": "OverlaySlot",
+    "Name": "OverlaySlot_4",
+    "Outer": "Overlay_3",
+    "Properties": {
+      "Padding": {
+        "Left": 15.0,
+        "Top": 15.0,
+        "Right": 15.0,
+        "Bottom": 15.0
+      },
+      "ZOrder": 2,
+      "Parent": {
+        "ObjectName": "Overlay WidgetArchetype:WidgetTree_0.Overlay_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.280"
+      },
+      "Content": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.319"
+      }
+    }
+  },
+  {
+    "Type": "PanelSlot",
+    "Name": "PanelSlot_2",
+    "Outer": "InvalidationBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "InvalidationBox TestParachuting_C:WidgetTree.InvalidationBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.275"
+      },
+      "Content": {
+        "ObjectName": "Overlay TestParachuting_C:WidgetTree.Overlay_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.278"
+      }
+    }
+  },
+  {
+    "Type": "PanelSlot",
+    "Name": "PanelSlot_2",
+    "Outer": "InvalidationBox_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "InvalidationBox WidgetArchetype:WidgetTree_0.InvalidationBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.276"
+      },
+      "Content": {
+        "ObjectName": "Overlay WidgetArchetype:WidgetTree_0.Overlay_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.280"
+      }
+    }
+  },
+  {
+    "Type": "TestParachuting_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__TestParachuting_C",
+    "Properties": {
+      "Button_ClearSpots": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_ClearSpots",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.212"
+      },
+      "Button_Close": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_Close",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.213"
+      },
+      "Button_Disable": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_Disable",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.214"
+      },
+      "Button_Enable": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_Enable",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.215"
+      },
+      "Button_LoadDefault": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_LoadDefault",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.216"
+      },
+      "Button_RunTest": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_RunTest",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.217"
+      },
+      "Button_Save": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_Save",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.218"
+      },
+      "Button_StopTest": {
+        "ObjectName": "Button WidgetArchetype:WidgetTree_0.Button_StopTest",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.219"
+      },
+      "MapImage": {
+        "ObjectName": "Image WidgetArchetype:WidgetTree_0.MapImage",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.274"
+      },
+      "NumOfSpots": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.NumOfSpots",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.307"
+      },
+      "TestSpotMarkContainer": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.TestSpotMarkContainer",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.239"
+      },
+      "TextBlock_OptionText": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_OptionText",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.317"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.329"
+      },
+      "bCookedWidgetTree": true,
+      "OnPrepass": {
+        "Num": 294,
+        "Name": "HandleMainPrepass"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Message",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "[AEE036D440233D6F134CC0B3FA395FA0]",
+        "Key": "1CB42A8A480996765FB896947D4AD3F7",
+        "SourceString": "Message"
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineColor": {
+            "R": 1.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FFFF0000"
+          }
+        },
+        "TypefaceFontName": "Regular",
+        "Size": 18
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot TestParachuting_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.321"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "NumOfSpots",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "[AEE036D440233D6F134CC0B3FA395FA0]",
+        "Key": "E019CCD74339FC05BD6CA181AAC74684",
+        "SourceString": "0 Spot(s)"
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 1,
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.7,
+            "Hex": "B3000000"
+          }
+        },
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Justification": "ETextJustify::Center",
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "OverlaySlot TestParachuting_C:WidgetTree.MapImageContainer.OverlaySlot_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.283"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_1",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "82EB881D4B796F55134D12849909CB30",
+        "SourceString": "Run Test"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_RunTest.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.225"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_158",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "E9528A614B1EA277DF3FA3A73C75EA75",
+        "SourceString": "Stop Test"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_StopTest.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.227"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_2",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "[AEE036D440233D6F134CC0B3FA395FA0]",
+        "Key": "395284604360D6633B88FA8C8F108A60",
+        "SourceString": "Close"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_Close.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.221"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_3",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "4F69B31B49F7A44E952E90A415EC27A2",
+        "SourceString": "Disable All"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_Disable.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.222"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_4",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "B2ABC93A451DDC9233A35F8C9B9C2D34",
+        "SourceString": "Save"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_Save.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.226"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_5",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "949DFFEB4AED5DA8919341B22EF850E8",
+        "SourceString": "Clear"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_ClearSpots.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.220"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_8",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "ED0A70334C18F77540F54EBB28496495",
+        "SourceString": "Load Default"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_LoadDefault.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.224"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_A",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C284364E4699C1158E9A1D87385217CD",
+        "SourceString": "Enable All"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot TestParachuting_C:WidgetTree.Button_Enable.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.223"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_Options",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "82590EB74EC6958F3FA387B8AB60B2AE",
+        "SourceString": "Options:"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.635,
+          "G": 0.635,
+          "B": 0.635,
+          "A": 1.0,
+          "Hex": "FFD1D1D1"
+        }
+      },
+      "Font": {
+        "Size": 11
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.TestStatusBox.HorizontalBoxSlot_5",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.257"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_OptionText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.635,
+          "G": 0.635,
+          "B": 0.635,
+          "A": 1.0,
+          "Hex": "FFD1D1D1"
+        }
+      },
+      "Font": {
+        "Size": 11
+      },
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot TestParachuting_C:WidgetTree.TestStatusBox.HorizontalBoxSlot_6",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.258"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "Message",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "[AEE036D440233D6F134CC0B3FA395FA0]",
+        "Key": "1CB42A8A480996765FB896947D4AD3F7",
+        "SourceString": "Message"
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineColor": {
+            "R": 1.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 1.0,
+            "Hex": "FFFF0000"
+          }
+        },
+        "TypefaceFontName": "Regular",
+        "Size": 18
+      },
+      "Justification": "ETextJustify::Center",
+      "Slot": {
+        "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.325"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "NumOfSpots",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "[AEE036D440233D6F134CC0B3FA395FA0]",
+        "Key": "E019CCD74339FC05BD6CA181AAC74684",
+        "SourceString": "0 Spot(s)"
+      },
+      "Font": {
+        "OutlineSettings": {
+          "OutlineSize": 1,
+          "OutlineColor": {
+            "R": 0.0,
+            "G": 0.0,
+            "B": 0.0,
+            "A": 0.7,
+            "Hex": "B3000000"
+          }
+        },
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Justification": "ETextJustify::Center",
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "OverlaySlot WidgetArchetype:WidgetTree_0.MapImageContainer.OverlaySlot_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.288"
+      },
+      "Visibility": "ESlateVisibility::HitTestInvisible"
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_1",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "82EB881D4B796F55134D12849909CB30",
+        "SourceString": "Run Test"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_RunTest.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.233"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_158",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "E9528A614B1EA277DF3FA3A73C75EA75",
+        "SourceString": "Stop Test"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_StopTest.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.235"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_2",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "[AEE036D440233D6F134CC0B3FA395FA0]",
+        "Key": "395284604360D6633B88FA8C8F108A60",
+        "SourceString": "Close"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_Close.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.229"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_3",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "4F69B31B49F7A44E952E90A415EC27A2",
+        "SourceString": "Disable All"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_Disable.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.230"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_4",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "B2ABC93A451DDC9233A35F8C9B9C2D34",
+        "SourceString": "Save"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_Save.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.234"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_5",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "949DFFEB4AED5DA8919341B22EF850E8",
+        "SourceString": "Clear"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_ClearSpots.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.228"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_8",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "ED0A70334C18F77540F54EBB28496495",
+        "SourceString": "Load Default"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_LoadDefault.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.232"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_A",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "C284364E4699C1158E9A1D87385217CD",
+        "SourceString": "Enable All"
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 14
+      },
+      "Slot": {
+        "ObjectName": "ButtonSlot WidgetArchetype:WidgetTree_0.Button_Enable.ButtonSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.231"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_Options",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "",
+        "Key": "82590EB74EC6958F3FA387B8AB60B2AE",
+        "SourceString": "Options:"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.635,
+          "G": 0.635,
+          "B": 0.635,
+          "A": 1.0,
+          "Hex": "FFD1D1D1"
+        }
+      },
+      "Font": {
+        "Size": 11
+      },
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.TestStatusBox.HorizontalBoxSlot_5",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.267"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_OptionText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.635,
+          "G": 0.635,
+          "B": 0.635,
+          "A": 1.0,
+          "Hex": "FFD1D1D1"
+        }
+      },
+      "Font": {
+        "Size": 11
+      },
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "HorizontalBoxSlot WidgetArchetype:WidgetTree_0.TestStatusBox.HorizontalBoxSlot_6",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.268"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot TestParachuting_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_6",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.323"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot TestParachuting_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.321"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot TestParachuting_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.322"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot TestParachuting_C:WidgetTree.VerticalBox_0.VerticalBoxSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.320"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot TestParachuting_C:WidgetTree.Overlay_3.OverlaySlot_4",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.285"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBox",
+    "Name": "VerticalBox_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_6",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.327"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.325"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.326"
+        },
+        {
+          "ObjectName": "VerticalBoxSlot WidgetArchetype:WidgetTree_0.VerticalBox_0.VerticalBoxSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.324"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "OverlaySlot WidgetArchetype:WidgetTree_0.Overlay_3.OverlaySlot_4",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.290"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "VerticalBox TestParachuting_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.318"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox TestParachuting_C:WidgetTree.TestStatusBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.246"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox TestParachuting_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.318"
+      },
+      "Content": {
+        "ObjectName": "TextBlock TestParachuting_C:WidgetTree.Message",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.294"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox TestParachuting_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.318"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox TestParachuting_C:WidgetTree.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.245"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_6",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "VerticalBox TestParachuting_C:WidgetTree.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.318"
+      },
+      "Content": {
+        "ObjectName": "Overlay TestParachuting_C:WidgetTree.MapImageContainer",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.277"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_0",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.319"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.TestStatusBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.248"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_1",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.319"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.Message",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.306"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_2",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.319"
+      },
+      "Content": {
+        "ObjectName": "HorizontalBox WidgetArchetype:WidgetTree_0.HorizontalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.247"
+      }
+    }
+  },
+  {
+    "Type": "VerticalBoxSlot",
+    "Name": "VerticalBoxSlot_6",
+    "Outer": "VerticalBox_0",
+    "Properties": {
+      "HorizontalAlignment": "HAlign_Center",
+      "VerticalAlignment": "VAlign_Top",
+      "Parent": {
+        "ObjectName": "VerticalBox WidgetArchetype:WidgetTree_0.VerticalBox_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.319"
+      },
+      "Content": {
+        "ObjectName": "Overlay WidgetArchetype:WidgetTree_0.MapImageContainer",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.279"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "TestParachuting_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel TestParachuting_C:WidgetTree.MainCanvas",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.236"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.MainCanvas",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/TestParachuting/TestParachuting.238"
+      }
+    }
+  }
+]

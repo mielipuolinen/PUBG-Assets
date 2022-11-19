@@ -1,0 +1,514 @@
+[
+  {
+    "Type": "TextProperty",
+    "Name": "Text",
+    "Outer": "SingleStatText_C",
+    "Next": null,
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "TextBlock_87",
+    "Outer": "SingleStatText_C",
+    "Next": {
+      "ObjectName": "TextProperty SingleStatText_C:Text",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.0"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class TextBlock",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Border_0",
+    "Outer": "SingleStatText_C",
+    "Next": {
+      "ObjectName": "ObjectProperty SingleStatText_C:TextBlock_87",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.1"
+    },
+    "PropertyFlags": 562952101429260,
+    "PropertyClass": {
+      "ObjectName": "Class Border",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "ReturnValue",
+    "Outer": "GetText_0",
+    "Next": null,
+    "PropertyFlags": 1408
+  },
+  {
+    "Type": "Function",
+    "Name": "GetText_0",
+    "Outer": "SingleStatText_C",
+    "Next": {
+      "ObjectName": "ObjectProperty SingleStatText_C:Border_0",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.2"
+    },
+    "Children": [
+      {
+        "ObjectName": "TextProperty SingleStatText_C:GetText_0.ReturnValue",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.3"
+      }
+    ],
+    "FunctionFlags": 474087424
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "Text",
+    "Outer": "SetText",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "SetText",
+    "Outer": "SingleStatText_C",
+    "Next": {
+      "ObjectName": "Function SingleStatText_C:GetText_0",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.4"
+    },
+    "Children": [
+      {
+        "ObjectName": "TextProperty SingleStatText_C:SetText.Text",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.5"
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Select_Default",
+    "Outer": "SetBackgroundColor",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct LinearColor",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Temp_struct_Variable2",
+    "Outer": "SetBackgroundColor",
+    "Next": {
+      "ObjectName": "StructProperty SingleStatText_C:SetBackgroundColor.K2Node_Select_Default",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.7"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct LinearColor",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Temp_struct_Variable",
+    "Outer": "SetBackgroundColor",
+    "Next": {
+      "ObjectName": "StructProperty SingleStatText_C:SetBackgroundColor.Temp_struct_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.8"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct LinearColor",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "Temp_bool_Variable",
+    "Outer": "SetBackgroundColor",
+    "Next": {
+      "ObjectName": "StructProperty SingleStatText_C:SetBackgroundColor.Temp_struct_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.9"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "IsEven",
+    "Outer": "SetBackgroundColor",
+    "Next": {
+      "ObjectName": "BoolProperty SingleStatText_C:SetBackgroundColor.Temp_bool_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.10"
+    },
+    "PropertyFlags": 128,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "Function",
+    "Name": "SetBackgroundColor",
+    "Outer": "SingleStatText_C",
+    "Next": {
+      "ObjectName": "Function SingleStatText_C:SetText",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.6"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty SingleStatText_C:SetBackgroundColor.IsEven",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.11"
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "InMinDesiredWidth",
+    "Outer": "SetDesiredWidth",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "SetDesiredWidth",
+    "Outer": "SingleStatText_C",
+    "Next": {
+      "ObjectName": "Function SingleStatText_C:SetBackgroundColor",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.12"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty SingleStatText_C:SetDesiredWidth.InMinDesiredWidth",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.13"
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "SingleStatText_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree SingleStatText_C:WidgetTree",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.28"
+      },
+      "bAllowTemplate": true,
+      "Bindings": [
+        {
+          "ObjectName": "TextBlock_87",
+          "PropertyName": "Text",
+          "FunctionName": "GetText_0",
+          "SourcePath": {
+            "Segments": [
+              {
+                "Name": "GetText_0",
+                "ArrayIndex": -1
+              }
+            ]
+          },
+          "Kind": "EBindingKind::Function"
+        }
+      ],
+      "bValidTemplate": true,
+      "TemplateAsset": "/Game/Blueprints/Tools/StatMapLocations/SingleStatText.WidgetArchetype"
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class UserWidget",
+      "ObjectPath": "/Script/UMG"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function SingleStatText_C:SetDesiredWidth",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.14"
+      }
+    ],
+    "FuncMap": {
+      "GetText_0": {
+        "ObjectName": "Function SingleStatText_C:GetText_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.4"
+      },
+      "SetText": {
+        "ObjectName": "Function SingleStatText_C:SetText",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.6"
+      },
+      "SetBackgroundColor": {
+        "ObjectName": "Function SingleStatText_C:SetBackgroundColor",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.12"
+      },
+      "SetDesiredWidth": {
+        "ObjectName": "Function SingleStatText_C:SetDesiredWidth",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.14"
+      }
+    },
+    "ClassFlags": 10752016,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SingleStatText_C Default__SingleStatText_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.16"
+    }
+  },
+  {
+    "Type": "SingleStatText_C",
+    "Name": "Default__SingleStatText_C",
+    "Properties": {
+      "bCanEverTick": false,
+      "bCanEverPaint": false
+    }
+  },
+  {
+    "Type": "Border",
+    "Name": "Border_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "BrushColor": {
+        "R": 0.329412,
+        "G": 0.329412,
+        "B": 0.329412,
+        "A": 0.4,
+        "Hex": "669B9B9B"
+      },
+      "Slots": [
+        {
+          "ObjectName": "BorderSlot SingleStatText_C:WidgetTree.Border_0.BorderSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.19"
+        }
+      ],
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot SingleStatText_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.23"
+      }
+    }
+  },
+  {
+    "Type": "Border",
+    "Name": "Border_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "BrushColor": {
+        "R": 0.329412,
+        "G": 0.329412,
+        "B": 0.329412,
+        "A": 0.4,
+        "Hex": "669B9B9B"
+      },
+      "Slots": [
+        {
+          "ObjectName": "BorderSlot WidgetArchetype:WidgetTree_0.Border_0.BorderSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.20"
+        }
+      ],
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.24"
+      }
+    }
+  },
+  {
+    "Type": "BorderSlot",
+    "Name": "BorderSlot_0",
+    "Outer": "Border_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Border SingleStatText_C:WidgetTree.Border_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.17"
+      },
+      "Content": {
+        "ObjectName": "TextBlock SingleStatText_C:WidgetTree.TextBlock_87",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.26"
+      }
+    }
+  },
+  {
+    "Type": "BorderSlot",
+    "Name": "BorderSlot_0",
+    "Outer": "Border_0",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Border WidgetArchetype:WidgetTree_0.Border_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.18"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_87",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.27"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot SingleStatText_C:WidgetTree.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.23"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanel",
+    "Name": "CanvasPanel_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Slots": [
+        {
+          "ObjectName": "CanvasPanelSlot WidgetArchetype:WidgetTree_0.CanvasPanel_0.CanvasPanelSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.24"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel SingleStatText_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.21"
+      },
+      "Content": {
+        "ObjectName": "Border SingleStatText_C:WidgetTree.Border_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.17"
+      }
+    }
+  },
+  {
+    "Type": "CanvasPanelSlot",
+    "Name": "CanvasPanelSlot_1",
+    "Outer": "CanvasPanel_0",
+    "Properties": {
+      "bAutoSize": true,
+      "Parent": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.22"
+      },
+      "Content": {
+        "ObjectName": "Border WidgetArchetype:WidgetTree_0.Border_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.18"
+      }
+    }
+  },
+  {
+    "Type": "SingleStatText_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__SingleStatText_C",
+    "Properties": {
+      "Border_0": {
+        "ObjectName": "Border WidgetArchetype:WidgetTree_0.Border_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.18"
+      },
+      "TextBlock_87": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.TextBlock_87",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.27"
+      },
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.29"
+      },
+      "bCookedWidgetTree": true
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_87",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.141176,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF69FF00"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 13
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "MinDesiredWidth": 200.0,
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "BorderSlot SingleStatText_C:WidgetTree.Border_0.BorderSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.19"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "TextBlock_87",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block"
+      },
+      "ColorAndOpacity": {
+        "SpecifiedColor": {
+          "R": 0.141176,
+          "G": 1.0,
+          "B": 0.0,
+          "A": 1.0,
+          "Hex": "FF69FF00"
+        }
+      },
+      "Font": {
+        "TypefaceFontName": "Regular",
+        "Size": 13
+      },
+      "ShadowColorAndOpacity": {
+        "R": 0.0,
+        "G": 0.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF000000"
+      },
+      "MinDesiredWidth": 200.0,
+      "bIsVariable": true,
+      "Slot": {
+        "ObjectName": "BorderSlot WidgetArchetype:WidgetTree_0.Border_0.BorderSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.20"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "SingleStatText_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel SingleStatText_C:WidgetTree.CanvasPanel_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.21"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "CanvasPanel WidgetArchetype:WidgetTree_0.CanvasPanel_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/StatMapLocations/SingleStatText.22"
+      }
+    }
+  }
+]

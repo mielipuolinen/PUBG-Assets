@@ -1,0 +1,133 @@
+[
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "VehicleDrivingTestMarker_BP_C",
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "VehicleDrivingTestMarker_BP_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript VehicleDrivingTestMarker_BP_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestMarker_BP.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class VehicleDrivingTestMarker",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function VehicleDrivingTestMarker_BP_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestMarker_BP.0"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function VehicleDrivingTestMarker_BP_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestMarker_BP.0"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "VehicleDrivingTestMarker_BP_C Default__VehicleDrivingTestMarker_BP_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestMarker_BP.2"
+    }
+  },
+  {
+    "Type": "VehicleDrivingTestMarker_BP_C",
+    "Name": "Default__VehicleDrivingTestMarker_BP_C",
+    "Properties": {
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent Default__VehicleDrivingTestMarker_BP_C:Static Mesh Component",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestMarker_BP.6"
+      },
+      "bCanBeDamaged": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "VehicleDrivingTestMarker_BP_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent VehicleDrivingTestMarker_BP_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestMarker_BP.3"
+      },
+      "VariableGuid": "203BEE74-4A06D708-0BBD4EB9-7F94AA68",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "VehicleDrivingTestMarker_BP_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node VehicleDrivingTestMarker_BP_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestMarker_BP.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Static Mesh Component",
+    "Outer": "Default__VehicleDrivingTestMarker_BP_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Replay_Sphere",
+        "ObjectPath": "TslGame/Content/UI/HUD/Replay/Replay_Sphere.1"
+      },
+      "bVisibleInReflectionCaptures": false,
+      "CastShadow": false,
+      "bApplyImpulseOnDamage": false,
+      "DecalChannel": "EDecalChannel::Channel0",
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "bCanEverAffectNavigation": false
+    }
+  }
+]

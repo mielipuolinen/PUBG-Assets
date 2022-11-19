@@ -1,0 +1,319 @@
+[
+  {
+    "Type": "WidgetBlueprintGeneratedClass",
+    "Name": "VehicleDrivingTestListItem_BP_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree VehicleDrivingTestListItem_BP_C:WidgetTree",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.13"
+      },
+      "bAllowTemplate": true,
+      "bValidTemplate": true,
+      "TemplateAsset": "/Game/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.WidgetArchetype"
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class VehicleDrivingTestListItem",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 10752016,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "VehicleDrivingTestListItem_BP_C Default__VehicleDrivingTestListItem_BP_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.1"
+    }
+  },
+  {
+    "Type": "VehicleDrivingTestListItem_BP_C",
+    "Name": "Default__VehicleDrivingTestListItem_BP_C",
+    "Properties": {
+      "Label": {
+        "Name": "LabelText"
+      },
+      "Border": {
+        "Name": "BGBorder"
+      },
+      "OnPrepass": {
+        "Num": 2,
+        "Name": "HandleMainPrepass"
+      }
+    }
+  },
+  {
+    "Type": "Border",
+    "Name": "BGBorder",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "BrushColor": {
+        "R": 0.02,
+        "G": 0.02,
+        "B": 0.02,
+        "A": 1.0,
+        "Hex": "FF262626"
+      },
+      "Slots": [
+        {
+          "ObjectName": "BorderSlot VehicleDrivingTestListItem_BP_C:WidgetTree.BGBorder.BorderSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.6"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "BorderSlot VehicleDrivingTestListItem_BP_C:WidgetTree.Border_0.BorderSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.7"
+      }
+    }
+  },
+  {
+    "Type": "Border",
+    "Name": "Border_0",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Padding": {
+        "Left": 5.0,
+        "Top": 5.0,
+        "Right": 5.0,
+        "Bottom": 5.0
+      },
+      "BrushColor": {
+        "R": 0.001,
+        "G": 0.001,
+        "B": 0.001,
+        "A": 1.0,
+        "Hex": "FF030303"
+      },
+      "Slots": [
+        {
+          "ObjectName": "BorderSlot VehicleDrivingTestListItem_BP_C:WidgetTree.Border_0.BorderSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.7"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Border",
+    "Name": "BGBorder",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "BrushColor": {
+        "R": 0.02,
+        "G": 0.02,
+        "B": 0.02,
+        "A": 1.0,
+        "Hex": "FF262626"
+      },
+      "Slots": [
+        {
+          "ObjectName": "BorderSlot WidgetArchetype:WidgetTree_0.BGBorder.BorderSlot_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.8"
+        }
+      ],
+      "Slot": {
+        "ObjectName": "BorderSlot WidgetArchetype:WidgetTree_0.Border_0.BorderSlot_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.9"
+      }
+    }
+  },
+  {
+    "Type": "Border",
+    "Name": "Border_0",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Padding": {
+        "Left": 5.0,
+        "Top": 5.0,
+        "Right": 5.0,
+        "Bottom": 5.0
+      },
+      "BrushColor": {
+        "R": 0.001,
+        "G": 0.001,
+        "B": 0.001,
+        "A": 1.0,
+        "Hex": "FF030303"
+      },
+      "Slots": [
+        {
+          "ObjectName": "BorderSlot WidgetArchetype:WidgetTree_0.Border_0.BorderSlot_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.9"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BorderSlot",
+    "Name": "BorderSlot_1",
+    "Outer": "BGBorder",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "Parent": {
+        "ObjectName": "Border VehicleDrivingTestListItem_BP_C:WidgetTree.BGBorder",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.2"
+      },
+      "Content": {
+        "ObjectName": "TextBlock VehicleDrivingTestListItem_BP_C:WidgetTree.LabelText",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.10"
+      }
+    }
+  },
+  {
+    "Type": "BorderSlot",
+    "Name": "BorderSlot_0",
+    "Outer": "Border_0",
+    "Properties": {
+      "Padding": {
+        "Left": 5.0,
+        "Top": 5.0,
+        "Right": 5.0,
+        "Bottom": 5.0
+      },
+      "Parent": {
+        "ObjectName": "Border VehicleDrivingTestListItem_BP_C:WidgetTree.Border_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.3"
+      },
+      "Content": {
+        "ObjectName": "Border VehicleDrivingTestListItem_BP_C:WidgetTree.BGBorder",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.2"
+      }
+    }
+  },
+  {
+    "Type": "BorderSlot",
+    "Name": "BorderSlot_1",
+    "Outer": "BGBorder",
+    "Properties": {
+      "Padding": {
+        "Left": 10.0,
+        "Top": 10.0,
+        "Right": 10.0,
+        "Bottom": 10.0
+      },
+      "Parent": {
+        "ObjectName": "Border WidgetArchetype:WidgetTree_0.BGBorder",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.4"
+      },
+      "Content": {
+        "ObjectName": "TextBlock WidgetArchetype:WidgetTree_0.LabelText",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.11"
+      }
+    }
+  },
+  {
+    "Type": "BorderSlot",
+    "Name": "BorderSlot_0",
+    "Outer": "Border_0",
+    "Properties": {
+      "Padding": {
+        "Left": 5.0,
+        "Top": 5.0,
+        "Right": 5.0,
+        "Bottom": 5.0
+      },
+      "Parent": {
+        "ObjectName": "Border WidgetArchetype:WidgetTree_0.Border_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.5"
+      },
+      "Content": {
+        "ObjectName": "Border WidgetArchetype:WidgetTree_0.BGBorder",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.4"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "LabelText",
+    "Outer": "WidgetTree",
+    "Properties": {
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block"
+      },
+      "Font": {
+        "Size": 15
+      },
+      "Slot": {
+        "ObjectName": "BorderSlot VehicleDrivingTestListItem_BP_C:WidgetTree.BGBorder.BorderSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.6"
+      }
+    }
+  },
+  {
+    "Type": "TextBlock",
+    "Name": "LabelText",
+    "Outer": "WidgetTree_0",
+    "Properties": {
+      "Text": {
+        "Namespace": "UMG",
+        "Key": "TextBlockDefaultValue",
+        "SourceString": "Text Block"
+      },
+      "Font": {
+        "Size": 15
+      },
+      "Slot": {
+        "ObjectName": "BorderSlot WidgetArchetype:WidgetTree_0.BGBorder.BorderSlot_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.8"
+      }
+    }
+  },
+  {
+    "Type": "VehicleDrivingTestListItem_BP_C",
+    "Name": "WidgetArchetype",
+    "Template": "Default__VehicleDrivingTestListItem_BP_C",
+    "Properties": {
+      "WidgetTree": {
+        "ObjectName": "WidgetTree WidgetArchetype:WidgetTree_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.14"
+      },
+      "bCookedWidgetTree": true,
+      "OnPrepass": {
+        "Num": 13,
+        "Name": "HandleMainPrepass"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree",
+    "Outer": "VehicleDrivingTestListItem_BP_C",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "Border VehicleDrivingTestListItem_BP_C:WidgetTree.Border_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.3"
+      }
+    }
+  },
+  {
+    "Type": "WidgetTree",
+    "Name": "WidgetTree_0",
+    "Outer": "WidgetArchetype",
+    "Properties": {
+      "RootWidget": {
+        "ObjectName": "Border WidgetArchetype:WidgetTree_0.Border_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/VehicleDrivingTest/VehicleDrivingTestListItem_BP.5"
+      }
+    }
+  }
+]

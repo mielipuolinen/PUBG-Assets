@@ -1,0 +1,1719 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "NewVar_0",
+    "Outer": "NewVar_0",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct LinearColor",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "NewVar_0",
+    "Outer": "SaveMapImage_C",
+    "Next": null,
+    "PropertyFlags": 65541,
+    "Inner": {
+      "ObjectName": "StructProperty SaveMapImage_C:NewVar_0.NewVar_0",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.0"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "SamplingScale",
+    "Outer": "SaveMapImage_C",
+    "Next": {
+      "ObjectName": "ArrayProperty SaveMapImage_C:NewVar_0",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.1"
+    },
+    "PropertyFlags": 65541,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "WorldMax",
+    "Outer": "SaveMapImage_C",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:SamplingScale",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.2"
+    },
+    "PropertyFlags": 65541,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "WorldMin",
+    "Outer": "SaveMapImage_C",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:WorldMax",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.3"
+    },
+    "PropertyFlags": 65541,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "SaveMapImage_C",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:WorldMin",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.4"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+    "Outer": "CallFunc_GetAllActorsOfClass_OutActors",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class TslBlueZoneCreateArea",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Temp_object_Variable",
+    "Outer": "Temp_object_Variable",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetAllActorsOfClass_OutActors2",
+    "Outer": "CallFunc_GetAllActorsOfClass_OutActors2",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class LandscapeStreamingProxy",
+      "ObjectPath": "/Script/Landscape"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetAllActorsOfClass_OutActors3",
+    "Outer": "CallFunc_GetAllActorsOfClass_OutActors3",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class AirborneEjectionArea",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetAllActorsOfClass_OutActors4",
+    "Outer": "CallFunc_GetAllActorsOfClass_OutActors4",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class TslPassBluezoneArea",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "BoolProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Greater_FloatFloat_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.11"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsBP_Ocean",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "BoolProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.K2Node_DynamicCast_bSuccess",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.12"
+    },
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass BP_Ocean_C",
+      "ObjectPath": "TslGame/Content/Ocean/BP_Ocean.161"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Z5",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "ObjectProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.K2Node_DynamicCast_AsBP_Ocean",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.13"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Y5",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_Z5",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.14"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_X5",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_Y5",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.15"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_TraceEnd",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_X5",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.16"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_TraceStart",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_TraceEnd",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.17"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_BreakHitResult_FaceIndex",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_TraceStart",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.18"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_BreakHitResult_HitItem",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_FaceIndex",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.19"
+    }
+  },
+  {
+    "Type": "NameProperty",
+    "Name": "CallFunc_BreakHitResult_HitBoneName",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_HitItem",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.20"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_HitComponent",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "NameProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_HitBoneName",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.21"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class PrimitiveComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_HitActor",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "ObjectProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_HitComponent",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.22"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_PhysMat",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "ObjectProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_HitActor",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.23"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class PhysicalMaterial",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_ImpactNormal",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "ObjectProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_PhysMat",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.24"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_Normal",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_ImpactNormal",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.25"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_ImpactPoint",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_Normal",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.26"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_Location",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_ImpactPoint",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.27"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakHitResult_Time",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_Location",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.28"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_Time",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.29"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BreakHitResult_bBlockingHit",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "BoolProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_bInitialOverlap",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.30"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_LineTraceSingle_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "BoolProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakHitResult_bBlockingHit",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.31"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_LineTraceSingle_OutHit",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "BoolProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_LineTraceSingle_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.32"
+    },
+    "PropertyFlags": 549755813888,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Add_VectorVector_ReturnValue3",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_LineTraceSingle_OutHit",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.33"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Add_VectorVector_ReturnValue2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Add_VectorVector_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.34"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeVector_ReturnValue4",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Add_VectorVector_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.35"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Z4",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_MakeVector_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.36"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Y4",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_Z4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.37"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_X4",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_Y4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.38"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeVector_ReturnValue3",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_X4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.39"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Multiply_VectorFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_MakeVector_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.40"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Z3",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Multiply_VectorFloat_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.41"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Y3",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_Z3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.42"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_X3",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_Y3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.43"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Temp_struct_Variable2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_X3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.44"
+    },
+    "PropertyFlags": 2,
+    "Struct": {
+      "ObjectName": "ScriptStruct LinearColor",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue4",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.Temp_struct_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.45"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue4",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "BoolProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Less_IntInt_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.46"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item4",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Array_Length_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.47"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class TslPassBluezoneArea",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "CallFunc_GetAllActorsOfClass_OutActors4",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "ObjectProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Array_Get_Item4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.48"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "ObjectProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_GetAllActorsOfClass_OutActors4.CallFunc_GetAllActorsOfClass_OutActors4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.10"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Multiply_IntInt_ReturnValue2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "ArrayProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_GetAllActorsOfClass_OutActors4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.49"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue7",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Multiply_IntInt_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.50"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_LessEqual_IntInt_ReturnValue2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Add_IntInt_ReturnValue7",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.51"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Multiply_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "BoolProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_LessEqual_IntInt_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.52"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_FTrunc_ReturnValue4",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Multiply_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.53"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_FTrunc_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.54"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue3",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "BoolProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_LessEqual_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.55"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_FTrunc_ReturnValue3",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "BoolProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Less_IntInt_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.56"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue3",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_FTrunc_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.57"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Multiply_VectorVector_ReturnValue2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Array_Length_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.58"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item3",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Multiply_VectorVector_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.59"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class AirborneEjectionArea",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeVector_ReturnValue2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "ObjectProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Array_Get_Item3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.60"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "CallFunc_GetAllActorsOfClass_OutActors3",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_MakeVector_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.61"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "ObjectProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_GetAllActorsOfClass_OutActors3.CallFunc_GetAllActorsOfClass_OutActors3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.9"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Z2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "ArrayProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_GetAllActorsOfClass_OutActors3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.62"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Y2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_Z2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.63"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_X2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_Y2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.64"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Multiply_VectorVector_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_X2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.65"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Divide_VectorVector_ReturnValue2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Multiply_VectorVector_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.66"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Add_VectorVector_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Divide_VectorVector_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.67"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_FTrunc_ReturnValue2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Add_VectorVector_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.68"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_FTrunc_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_FTrunc_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.69"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeVector_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_FTrunc_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.70"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_MakeVector_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.71"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Z",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Subtract_VectorVector_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.72"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Y",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_Z",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.73"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_X",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_Y",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.74"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetActorBounds_BoxExtent",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_BreakVector_X",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.75"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetActorBounds_Origin",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_GetActorBounds_BoxExtent",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.76"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Divide_VectorVector_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_GetActorBounds_Origin",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.77"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Divide_VectorVector_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.78"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class LandscapeStreamingProxy",
+      "ObjectPath": "/Script/Landscape"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Array_Index_Variable4",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "ObjectProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Array_Get_Item2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.79"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.Temp_int_Array_Index_Variable4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.80"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "BoolProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Less_IntInt_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.81"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "CallFunc_GetAllActorsOfClass_OutActors2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Array_Length_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.82"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "ObjectProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_GetAllActorsOfClass_OutActors2.CallFunc_GetAllActorsOfClass_OutActors2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.8"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "ArrayProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_GetAllActorsOfClass_OutActors2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.83"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class TslBlueZoneCreateArea",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Array_Index_Variable3",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "ObjectProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Array_Get_Item",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.84"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue6",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.Temp_int_Array_Index_Variable3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.85"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Add_IntInt_ReturnValue6",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.86"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Loop_Counter_Variable4",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "BoolProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Less_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.87"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue5",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.Temp_int_Loop_Counter_Variable4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.88"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Conv_IntToFloat_ReturnValue2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Add_IntInt_ReturnValue5",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.89"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Temp_struct_Variable",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Conv_IntToFloat_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.90"
+    },
+    "PropertyFlags": 2,
+    "Struct": {
+      "ObjectName": "ScriptStruct LinearColor",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Variable2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.Temp_struct_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.91"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue4",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.Temp_int_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.92"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Loop_Counter_Variable3",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Add_IntInt_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.93"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Array_Index_Variable2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.Temp_int_Loop_Counter_Variable3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.94"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue3",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.Temp_int_Array_Index_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.95"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Loop_Counter_Variable2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Add_IntInt_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.96"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "Temp_object_Variable",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.Temp_int_Loop_Counter_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.97"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "ObjectProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.Temp_object_Variable.Temp_object_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.7"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Array_Index_Variable",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "ArrayProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.Temp_object_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.98"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue2",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.Temp_int_Array_Index_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.99"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Add_IntInt_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.100"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Conv_IntToFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Add_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.101"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Loop_Counter_Variable",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Conv_IntToFloat_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.102"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Variable",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.Temp_int_Loop_Counter_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.103"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.Temp_int_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.104"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_Array_Length_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.105"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "ObjectProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_GetAllActorsOfClass_OutActors.CallFunc_GetAllActorsOfClass_OutActors",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.6"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_SaveMapImage",
+    "Next": {
+      "ObjectName": "ArrayProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.CallFunc_GetAllActorsOfClass_OutActors",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.106"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_SaveMapImage",
+    "Outer": "SaveMapImage_C",
+    "Next": {
+      "ObjectName": "ObjectProperty SaveMapImage_C:DefaultSceneRoot",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.5"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty SaveMapImage_C:ExecuteUbergraph_SaveMapImage.EntryPoint",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.107"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "Function",
+    "Name": "NextPhase",
+    "Outer": "SaveMapImage_C",
+    "Next": {
+      "ObjectName": "Function SaveMapImage_C:ExecuteUbergraph_SaveMapImage",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.108"
+    },
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "SaveMapImage_C",
+    "Next": {
+      "ObjectName": "Function SaveMapImage_C:NextPhase",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.109"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:ReceiveBeginPlay",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "SaveMapImage_C",
+    "Next": {
+      "ObjectName": "Function SaveMapImage_C:ReceiveBeginPlay",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.110"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "K2Node_MakeArray_Array",
+    "Next": null
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_MakeArray_Array2",
+    "Outer": "K2Node_MakeArray_Array2",
+    "Next": null
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_MakeArray_Array3",
+    "Outer": "K2Node_MakeArray_Array3",
+    "Next": null
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeVector_ReturnValue2",
+    "Outer": "ComputeWorldSize",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeVector_ReturnValue",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ComputeWorldSize.CallFunc_MakeVector_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.115"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_MaxOfFloatArray_MaxValue3",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ComputeWorldSize.CallFunc_MakeVector_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.116"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_MaxOfFloatArray_IndexOfMaxValue3",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_MaxOfFloatArray_MaxValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.117"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_MinOfFloatArray_MinValue3",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ComputeWorldSize.CallFunc_MaxOfFloatArray_IndexOfMaxValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.118"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_MinOfFloatArray_IndexOfMinValue3",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_MinOfFloatArray_MinValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.119"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array3",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ComputeWorldSize.CallFunc_MinOfFloatArray_IndexOfMinValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.120"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.K2Node_MakeArray_Array3.K2Node_MakeArray_Array3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.114"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_MinOfFloatArray_MinValue2",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "ArrayProperty SaveMapImage_C:ComputeWorldSize.K2Node_MakeArray_Array3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.121"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_MinOfFloatArray_IndexOfMinValue2",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_MinOfFloatArray_MinValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.122"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_MinOfFloatArray_MinValue",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ComputeWorldSize.CallFunc_MinOfFloatArray_IndexOfMinValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.123"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_MinOfFloatArray_IndexOfMinValue",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_MinOfFloatArray_MinValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.124"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_MaxOfFloatArray_MaxValue2",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ComputeWorldSize.CallFunc_MinOfFloatArray_IndexOfMinValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.125"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_MaxOfFloatArray_IndexOfMaxValue2",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_MaxOfFloatArray_MaxValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.126"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_MaxOfFloatArray_MaxValue",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ComputeWorldSize.CallFunc_MaxOfFloatArray_IndexOfMaxValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.127"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_MaxOfFloatArray_IndexOfMaxValue",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_MaxOfFloatArray_MaxValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.128"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array2",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "IntProperty SaveMapImage_C:ComputeWorldSize.CallFunc_MaxOfFloatArray_IndexOfMaxValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.129"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.K2Node_MakeArray_Array2.K2Node_MakeArray_Array2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.113"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "ArrayProperty SaveMapImage_C:ComputeWorldSize.K2Node_MakeArray_Array2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.130"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.K2Node_MakeArray_Array.K2Node_MakeArray_Array",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.112"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Z4",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "ArrayProperty SaveMapImage_C:ComputeWorldSize.K2Node_MakeArray_Array",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.131"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Y4",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_BreakVector_Z4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.132"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_X4",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_BreakVector_Y4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.133"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Z3",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_BreakVector_X4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.134"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Y3",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_BreakVector_Z3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.135"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_X3",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_BreakVector_Y3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.136"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Z2",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_BreakVector_X3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.137"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Y2",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_BreakVector_Z2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.138"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_X2",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_BreakVector_Y2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.139"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Z",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_BreakVector_X2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.140"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Y",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_BreakVector_Z",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.141"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_X",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_BreakVector_Y",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.142"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Max",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "FloatProperty SaveMapImage_C:ComputeWorldSize.CallFunc_BreakVector_X",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.143"
+    },
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Min",
+    "Outer": "ComputeWorldSize",
+    "Next": {
+      "ObjectName": "StructProperty SaveMapImage_C:ComputeWorldSize.Max",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.144"
+    },
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ComputeWorldSize",
+    "Outer": "SaveMapImage_C",
+    "Next": {
+      "ObjectName": "Function SaveMapImage_C:UserConstructionScript",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.111"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty SaveMapImage_C:ComputeWorldSize.Min",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.145"
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "SaveMapImage_C",
+    "Next": {
+      "ObjectName": "Function SaveMapImage_C:ComputeWorldSize",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.146"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "SaveMapImage_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript SaveMapImage_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.152"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty SaveMapImage_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.147"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function SaveMapImage_C:ExecuteUbergraph_SaveMapImage",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.108"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty SaveMapImage_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.147"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_SaveMapImage": {
+        "ObjectName": "Function SaveMapImage_C:ExecuteUbergraph_SaveMapImage",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.108"
+      },
+      "NextPhase": {
+        "ObjectName": "Function SaveMapImage_C:NextPhase",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.109"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function SaveMapImage_C:ReceiveBeginPlay",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.110"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function SaveMapImage_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.111"
+      },
+      "ComputeWorldSize": {
+        "ObjectName": "Function SaveMapImage_C:ComputeWorldSize",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.146"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "SaveMapImage_C Default__SaveMapImage_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.149"
+    }
+  },
+  {
+    "Type": "SaveMapImage_C",
+    "Name": "Default__SaveMapImage_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "WorldMin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "WorldMax": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SamplingScale": {
+        "X": 100.0,
+        "Y": 100.0,
+        "Z": 1.0
+      },
+      "AutoReceiveInput": "EAutoReceiveInput::Player0"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "SaveMapImage_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent SaveMapImage_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.150"
+      },
+      "VariableGuid": "3A5660B8-43EF2844-D3BB8494-44ADD848",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "SaveMapImage_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node SaveMapImage_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.151"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node SaveMapImage_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.151"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node SaveMapImage_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/MapStatAnalyzer/SaveMapImage.151"
+      }
+    }
+  }
+]

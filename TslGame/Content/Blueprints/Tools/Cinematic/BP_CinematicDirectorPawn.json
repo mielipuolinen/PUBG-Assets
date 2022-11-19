@@ -1,0 +1,1734 @@
+[
+  {
+    "Type": "FloatProperty",
+    "Name": "CameraDistance",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": null,
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "MoveSpeedChangeRate",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:CameraDistance",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.0"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "MoveSpeedRange",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:MoveSpeedChangeRate",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.1"
+    },
+    "PropertyFlags": 65541,
+    "Struct": {
+      "ObjectName": "ScriptStruct InputRange",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CurrentMoveSpeed",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:MoveSpeedRange",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.2"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:CurrentMoveSpeed",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.3"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Camera",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "ObjectProperty BP_CinematicDirectorPawn_C:DefaultSceneRoot",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.4"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class CameraComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FloatingPawnMovement",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "ObjectProperty BP_CinematicDirectorPawn_C:Camera",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.5"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class FloatingPawnMovement",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetRelativeLocation_SweepHitResult2",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": null,
+    "PropertyFlags": 549755813888,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue6",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_K2_SetRelativeLocation_SweepHitResult2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.7"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeVector_ReturnValue2",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_IsValid_ReturnValue6",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.8"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_Select2_Default",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_MakeVector_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.9"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "Temp_bool_Variable2",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_Select2_Default",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.10"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Temp_float_Variable2",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.Temp_bool_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.11"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_K2_SetActorTransform_ReturnValue2",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.Temp_float_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.12"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetActorTransform_SweepHitResult2",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_K2_SetActorTransform_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.13"
+    },
+    "PropertyFlags": 549755813888,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetTransform_ReturnValue3",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_K2_SetActorTransform_SweepHitResult2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.14"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Transform",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_GetActorRotation_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_GetTransform_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.15"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Rotator",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_K2_SetActorTransform_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_K2_GetActorRotation_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.16"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetActorTransform_SweepHitResult",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_K2_SetActorTransform_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.17"
+    },
+    "PropertyFlags": 549755813888,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue5",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_K2_SetActorTransform_SweepHitResult",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.18"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue4",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_IsValid_ReturnValue5",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.19"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_AddActorLocalOffset_SweepHitResult",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_IsValid_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.20"
+    },
+    "PropertyFlags": 549755813888,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "Temp_bool_IsClosed_Variable",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_K2_AddActorLocalOffset_SweepHitResult",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.21"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetController_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.Temp_bool_IsClosed_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.22"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class Controller",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue3",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "ObjectProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_GetController_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.23"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetRelativeLocation_SweepHitResult",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_IsValid_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.24"
+    },
+    "PropertyFlags": 549755813888,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeVector_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_K2_SetRelativeLocation_SweepHitResult",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.25"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_Select_Default",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_MakeVector_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.26"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "Temp_bool_Has_Been_Initd_Variable",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_Select_Default",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.27"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "Temp_bool_Variable",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.Temp_bool_Has_Been_Initd_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.28"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_InputAxisKeyEvent_AxisValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.Temp_bool_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.29"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeTransform_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputAxisKeyEvent_AxisValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.30"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Transform",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_LocalPositionToServer_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_MakeTransform_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.31"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_HasAuthority_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_LocalPositionToServer_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.32"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakTransform_Scale",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_HasAuthority_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.33"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakTransform_Rotation",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_BreakTransform_Scale",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.34"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Rotator",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakTransform_Location",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_BreakTransform_Rotation",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.35"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetTransform_ReturnValue2",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_BreakTransform_Location",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.36"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Transform",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetTransform_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_GetTransform_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.37"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Transform",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Temp_float_Variable",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_GetTransform_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.38"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.Temp_float_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.39"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_FClamp_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.Temp_bool_Whether_the_gate_is_currently_open_or_close_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.40"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetActorUpVector_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_FClamp_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.41"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Add_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_GetActorUpVector_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.42"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_InputAxisEvent_AxisValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_Add_FloatFloat_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.43"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Multiply_FloatFloat_ReturnValue2",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputAxisEvent_AxisValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.44"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_Multiply_FloatFloat_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.45"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputKeyEvent_Key2",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_Multiply_FloatFloat_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.46"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetMaxSpeed_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputKeyEvent_Key2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.47"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_InputAxisKeyEvent_AxisValue2",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_GetMaxSpeed_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.48"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_InputAxisEvent_AxisValue2",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputAxisKeyEvent_AxisValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.49"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_InputAxisEvent_AxisValue3",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputAxisEvent_AxisValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.50"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetActorRightVector_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputAxisEvent_AxisValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.51"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetActorForwardVector_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_GetActorRightVector_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.52"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_InputAxisEvent_AxisValue4",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_GetActorForwardVector_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.53"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_InputAxisEvent_AxisValue5",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputAxisEvent_AxisValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.54"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetPlayerController_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputAxisEvent_AxisValue5",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.55"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class PlayerController",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_Event_DeltaSeconds",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "ObjectProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_GetPlayerController_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.56"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue2",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_Event_DeltaSeconds",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.57"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputKeyEvent_Key5",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_IsValid_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.58"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputKeyEvent_Key5",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.59"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputKeyEvent_Key4",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.CallFunc_IsValid_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.60"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputKeyEvent_Key3",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputKeyEvent_Key4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.61"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputKeyEvent_Key",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputKeyEvent_Key3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.62"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputActionEvent_Key",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputKeyEvent_Key",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.63"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputActionEvent_Key2",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputActionEvent_Key",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.64"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputActionEvent_Key3",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputActionEvent_Key2",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.65"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Temp_struct_Variable",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.K2Node_InputActionEvent_Key3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.66"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Next": {
+      "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.Temp_struct_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.67"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_CinematicDirectorPawn",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "ObjectProperty BP_CinematicDirectorPawn_C:FloatingPawnMovement",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.6"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn.EntryPoint",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.68"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "Function",
+    "Name": "OnNewLightPossessed",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.69"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function TslCinematicDirectorPawn:OnNewLightPossessed",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "AxisValue",
+    "Outer": "InpAxisKeyEvt_MouseY_K2Node_InputAxisKeyEvent_40",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "InpAxisKeyEvt_MouseY_K2Node_InputAxisKeyEvent_40",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:OnNewLightPossessed",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.70"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:InpAxisKeyEvt_MouseY_K2Node_InputAxisKeyEvent_40.AxisValue",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.71"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "AxisValue",
+    "Outer": "InpAxisEvt_MoveUp_K2Node_InputAxisEvent_110",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "InpAxisEvt_MoveUp_K2Node_InputAxisEvent_110",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpAxisKeyEvt_MouseY_K2Node_InputAxisKeyEvent_40",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.72"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:InpAxisEvt_MoveUp_K2Node_InputAxisEvent_110.AxisValue",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.73"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "AxisValue",
+    "Outer": "InpAxisKeyEvt_MouseWheelAxis_K2Node_InputAxisKeyEvent_0",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "InpAxisKeyEvt_MouseWheelAxis_K2Node_InputAxisKeyEvent_0",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpAxisEvt_MoveUp_K2Node_InputAxisEvent_110",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.74"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:InpAxisKeyEvt_MouseWheelAxis_K2Node_InputAxisKeyEvent_0.AxisValue",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.75"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "AxisValue",
+    "Outer": "InpAxisEvt_LookUp_K2Node_InputAxisEvent_6",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "InpAxisEvt_LookUp_K2Node_InputAxisEvent_6",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpAxisKeyEvt_MouseWheelAxis_K2Node_InputAxisKeyEvent_0",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.76"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:InpAxisEvt_LookUp_K2Node_InputAxisEvent_6.AxisValue",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.77"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "AxisValue",
+    "Outer": "InpAxisEvt_Turn_K2Node_InputAxisEvent_3",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "InpAxisEvt_Turn_K2Node_InputAxisEvent_3",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpAxisEvt_LookUp_K2Node_InputAxisEvent_6",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.78"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:InpAxisEvt_Turn_K2Node_InputAxisEvent_3.AxisValue",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.79"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "AxisValue",
+    "Outer": "InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpAxisEvt_Turn_K2Node_InputAxisEvent_3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.80"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1.AxisValue",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.81"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "AxisValue",
+    "Outer": "InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.82"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0.AxisValue",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.83"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "DeltaSeconds",
+    "Outer": "ReceiveTick",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.84"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:ReceiveTick",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty BP_CinematicDirectorPawn_C:ReceiveTick.DeltaSeconds",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.85"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:ReceiveTick",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.86"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:ReceiveBeginPlay",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_Insert_K2Node_InputKeyEvent_5",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_Insert_K2Node_InputKeyEvent_5",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:ReceiveBeginPlay",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.87"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:InpActEvt_Insert_K2Node_InputKeyEvent_5.Key",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.88"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_PeekRight_K2Node_InputActionEvent_3",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_PeekRight_K2Node_InputActionEvent_3",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_Insert_K2Node_InputKeyEvent_5",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.89"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:InpActEvt_PeekRight_K2Node_InputActionEvent_3.Key",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.90"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_PeekLeft_K2Node_InputActionEvent_4",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_PeekLeft_K2Node_InputActionEvent_4",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_PeekRight_K2Node_InputActionEvent_3",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.91"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:InpActEvt_PeekLeft_K2Node_InputActionEvent_4.Key",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.92"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_Interact_K2Node_InputActionEvent_5",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_Interact_K2Node_InputActionEvent_5",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_PeekLeft_K2Node_InputActionEvent_4",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.93"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:InpActEvt_Interact_K2Node_InputActionEvent_5.Key",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.94"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_Interact_K2Node_InputActionEvent_5",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.95"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6.Key",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.96"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.97"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7.Key",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.98"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_Home_K2Node_InputKeyEvent_8",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_Home_K2Node_InputKeyEvent_8",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.99"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:InpActEvt_Home_K2Node_InputKeyEvent_8.Key",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.100"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_Delete_K2Node_InputKeyEvent_9",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Key",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_Delete_K2Node_InputKeyEvent_9",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_Home_K2Node_InputKeyEvent_8",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.101"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:InpActEvt_Delete_K2Node_InputKeyEvent_9.Key",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.102"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_Delete_K2Node_InputKeyEvent_9",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.103"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Next": {
+      "ObjectName": "Function BP_CinematicDirectorPawn_C:UserConstructionScript",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.104"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_CinematicDirectorPawn_C",
+    "Properties": {
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "InputAxisKeyDelegateBinding BP_CinematicDirectorPawn_C:InputAxisKeyDelegateBinding_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.112"
+        },
+        {
+          "ObjectName": "InputAxisDelegateBinding BP_CinematicDirectorPawn_C:InputAxisDelegateBinding_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.111"
+        },
+        {
+          "ObjectName": "InputKeyDelegateBinding BP_CinematicDirectorPawn_C:InputKeyDelegateBinding_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.113"
+        },
+        {
+          "ObjectName": "InputActionDelegateBinding BP_CinematicDirectorPawn_C:InputActionDelegateBinding_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.110"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BP_CinematicDirectorPawn_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.118"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.105"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.69"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslCinematicDirectorPawn",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BP_CinematicDirectorPawn_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.105"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_CinematicDirectorPawn": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:ExecuteUbergraph_BP_CinematicDirectorPawn",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.69"
+      },
+      "OnNewLightPossessed": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:OnNewLightPossessed",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.70"
+      },
+      "InpAxisKeyEvt_MouseY_K2Node_InputAxisKeyEvent_40": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpAxisKeyEvt_MouseY_K2Node_InputAxisKeyEvent_40",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.72"
+      },
+      "InpAxisEvt_MoveUp_K2Node_InputAxisEvent_110": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpAxisEvt_MoveUp_K2Node_InputAxisEvent_110",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.74"
+      },
+      "InpAxisKeyEvt_MouseWheelAxis_K2Node_InputAxisKeyEvent_0": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpAxisKeyEvt_MouseWheelAxis_K2Node_InputAxisKeyEvent_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.76"
+      },
+      "InpAxisEvt_LookUp_K2Node_InputAxisEvent_6": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpAxisEvt_LookUp_K2Node_InputAxisEvent_6",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.78"
+      },
+      "InpAxisEvt_Turn_K2Node_InputAxisEvent_3": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpAxisEvt_Turn_K2Node_InputAxisEvent_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.80"
+      },
+      "InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.82"
+      },
+      "InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.84"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:ReceiveTick",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.86"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:ReceiveBeginPlay",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.87"
+      },
+      "InpActEvt_Insert_K2Node_InputKeyEvent_5": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_Insert_K2Node_InputKeyEvent_5",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.89"
+      },
+      "InpActEvt_PeekRight_K2Node_InputActionEvent_3": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_PeekRight_K2Node_InputActionEvent_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.91"
+      },
+      "InpActEvt_PeekLeft_K2Node_InputActionEvent_4": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_PeekLeft_K2Node_InputActionEvent_4",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.93"
+      },
+      "InpActEvt_Interact_K2Node_InputActionEvent_5": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_Interact_K2Node_InputActionEvent_5",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.95"
+      },
+      "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.97"
+      },
+      "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.99"
+      },
+      "InpActEvt_Home_K2Node_InputKeyEvent_8": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_Home_K2Node_InputKeyEvent_8",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.101"
+      },
+      "InpActEvt_Delete_K2Node_InputKeyEvent_9": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:InpActEvt_Delete_K2Node_InputKeyEvent_9",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.103"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function BP_CinematicDirectorPawn_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.104"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_CinematicDirectorPawn_C Default__BP_CinematicDirectorPawn_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.107"
+    }
+  },
+  {
+    "Type": "BP_CinematicDirectorPawn_C",
+    "Name": "Default__BP_CinematicDirectorPawn_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "MoveSpeedRange": {
+        "Min": 200.0,
+        "Max": 10000.0
+      },
+      "MoveSpeedChangeRate": 0.05,
+      "CameraDistance": -60.0,
+      "PostProcessEditorClass": {
+        "ObjectName": "BlueprintGeneratedClass BP_PostprocessEditor_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_PostprocessEditor.0"
+      },
+      "SpotlightClass": {
+        "ObjectName": "BlueprintGeneratedClass BP_CinematicLight_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicLight.0"
+      },
+      "bUseControllerRotationPitch": true,
+      "bUseControllerRotationYaw": true,
+      "NetUpdateFrequency": 10.0
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "Camera_GEN_VARIABLE",
+    "Outer": "BP_CinematicDirectorPawn_C"
+  },
+  {
+    "Type": "FloatingPawnMovement",
+    "Name": "FloatingPawnMovement_GEN_VARIABLE",
+    "Outer": "BP_CinematicDirectorPawn_C"
+  },
+  {
+    "Type": "InputActionDelegateBinding",
+    "Name": "InputActionDelegateBinding_1",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Properties": {
+      "InputActionDelegateBindings": [
+        {
+          "InputActionName": "PeekRight",
+          "InputKeyEvent": "IE_Pressed",
+          "FunctionNameToBind": "InpActEvt_PeekRight_K2Node_InputActionEvent_3",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputActionName": "PeekLeft",
+          "InputKeyEvent": "IE_Pressed",
+          "FunctionNameToBind": "InpActEvt_PeekLeft_K2Node_InputActionEvent_4",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputActionName": "Interact",
+          "InputKeyEvent": "IE_Pressed",
+          "FunctionNameToBind": "InpActEvt_Interact_K2Node_InputActionEvent_5",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InputAxisDelegateBinding",
+    "Name": "InputAxisDelegateBinding_2",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Properties": {
+      "InputAxisDelegateBindings": [
+        {
+          "InputAxisName": "MoveUp",
+          "FunctionNameToBind": "InpAxisEvt_MoveUp_K2Node_InputAxisEvent_110",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputAxisName": "LookUp",
+          "FunctionNameToBind": "InpAxisEvt_LookUp_K2Node_InputAxisEvent_6",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputAxisName": "Turn",
+          "FunctionNameToBind": "InpAxisEvt_Turn_K2Node_InputAxisEvent_3",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputAxisName": "MoveRight",
+          "FunctionNameToBind": "InpAxisEvt_MoveRight_K2Node_InputAxisEvent_1",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputAxisName": "MoveForward",
+          "FunctionNameToBind": "InpAxisEvt_MoveForward_K2Node_InputAxisEvent_0",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InputAxisKeyDelegateBinding",
+    "Name": "InputAxisKeyDelegateBinding_2",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Properties": {
+      "InputAxisKeyDelegateBindings": [
+        {
+          "AxisKey": {
+            "KeyName": "MouseY"
+          },
+          "FunctionNameToBind": "InpAxisKeyEvt_MouseY_K2Node_InputAxisKeyEvent_40",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "AxisKey": {
+            "KeyName": "MouseWheelAxis"
+          },
+          "FunctionNameToBind": "InpAxisKeyEvt_MouseWheelAxis_K2Node_InputAxisKeyEvent_0",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InputKeyDelegateBinding",
+    "Name": "InputKeyDelegateBinding_1",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Properties": {
+      "InputKeyDelegateBindings": [
+        {
+          "InputChord": {
+            "Key": {
+              "KeyName": "RightMouseButton"
+            },
+            "bShift": false,
+            "bCtrl": false,
+            "bAlt": false,
+            "bCmd": false
+          },
+          "InputKeyEvent": "IE_Pressed",
+          "FunctionNameToBind": "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_6",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputChord": {
+            "Key": {
+              "KeyName": "Delete"
+            },
+            "bShift": false,
+            "bCtrl": false,
+            "bAlt": false,
+            "bCmd": false
+          },
+          "InputKeyEvent": "IE_Pressed",
+          "FunctionNameToBind": "InpActEvt_Delete_K2Node_InputKeyEvent_9",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputChord": {
+            "Key": {
+              "KeyName": "Home"
+            },
+            "bShift": false,
+            "bCtrl": false,
+            "bAlt": false,
+            "bCmd": false
+          },
+          "InputKeyEvent": "IE_Pressed",
+          "FunctionNameToBind": "InpActEvt_Home_K2Node_InputKeyEvent_8",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputChord": {
+            "Key": {
+              "KeyName": "RightMouseButton"
+            },
+            "bShift": false,
+            "bCtrl": false,
+            "bAlt": false,
+            "bCmd": false
+          },
+          "InputKeyEvent": "IE_Released",
+          "FunctionNameToBind": "InpActEvt_RightMouseButton_K2Node_InputKeyEvent_7",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputChord": {
+            "Key": {
+              "KeyName": "Insert"
+            },
+            "bShift": false,
+            "bCtrl": false,
+            "bAlt": false,
+            "bCmd": false
+          },
+          "InputKeyEvent": "IE_Pressed",
+          "FunctionNameToBind": "InpActEvt_Insert_K2Node_InputKeyEvent_5",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_CinematicDirectorPawn_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BP_CinematicDirectorPawn_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.114"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BP_CinematicDirectorPawn_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.116"
+        }
+      ],
+      "VariableGuid": "60FF0AC1-4FF7637B-8A7759BB-97AA9414",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class CameraComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "CameraComponent BP_CinematicDirectorPawn_C:Camera_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.108"
+      },
+      "VariableGuid": "D0307428-49242C2D-7E90DEA6-63A907F0",
+      "InternalVariableName": "Camera"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class FloatingPawnMovement",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "FloatingPawnMovement BP_CinematicDirectorPawn_C:FloatingPawnMovement_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.109"
+      },
+      "VariableGuid": "875FB79D-4FE15AA8-6A8B30A1-A3754190",
+      "InternalVariableName": "FloatingPawnMovement"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_CinematicDirectorPawn_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BP_CinematicDirectorPawn_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.115"
+        },
+        {
+          "ObjectName": "SCS_Node BP_CinematicDirectorPawn_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.117"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BP_CinematicDirectorPawn_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.115"
+        },
+        {
+          "ObjectName": "SCS_Node BP_CinematicDirectorPawn_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.116"
+        },
+        {
+          "ObjectName": "SCS_Node BP_CinematicDirectorPawn_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.117"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BP_CinematicDirectorPawn_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.115"
+      }
+    }
+  }
+]
