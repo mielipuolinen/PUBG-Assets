@@ -1,0 +1,524 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "LaserPointerAttachmentP90",
+    "Outer": "WeapP90_C",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass LaserPointerAttachmentP90_C",
+      "ObjectPath": "TslGame/Content/Weapon/Accessories/LaserPointer/LaserPointerAttachmentP90.0"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsProning_ReturnValue",
+    "Outer": "ExecuteUbergraph_WeapP90",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_WeapP90",
+    "Next": {
+      "ObjectName": "BoolProperty WeapP90_C:ExecuteUbergraph_WeapP90.CallFunc_IsProning_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.1"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetWeaponGunCollisionAlpha_ReturnValue",
+    "Outer": "ExecuteUbergraph_WeapP90",
+    "Next": {
+      "ObjectName": "BoolProperty WeapP90_C:ExecuteUbergraph_WeapP90.CallFunc_Greater_FloatFloat_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.2"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsMoving_ReturnValue",
+    "Outer": "ExecuteUbergraph_WeapP90",
+    "Next": {
+      "ObjectName": "FloatProperty WeapP90_C:ExecuteUbergraph_WeapP90.CallFunc_GetWeaponGunCollisionAlpha_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.3"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetPawnOwner_ReturnValue",
+    "Outer": "ExecuteUbergraph_WeapP90",
+    "Next": {
+      "ObjectName": "BoolProperty WeapP90_C:ExecuteUbergraph_WeapP90.CallFunc_IsMoving_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.4"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class TslCharacter",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_Event_DeltaSeconds",
+    "Outer": "ExecuteUbergraph_WeapP90",
+    "Next": {
+      "ObjectName": "ObjectProperty WeapP90_C:ExecuteUbergraph_WeapP90.CallFunc_GetPawnOwner_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.5"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_WeapP90",
+    "Next": {
+      "ObjectName": "FloatProperty WeapP90_C:ExecuteUbergraph_WeapP90.K2Node_Event_DeltaSeconds",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.6"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WeapP90",
+    "Outer": "WeapP90_C",
+    "Next": {
+      "ObjectName": "ObjectProperty WeapP90_C:LaserPointerAttachmentP90",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty WeapP90_C:ExecuteUbergraph_WeapP90.EntryPoint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.7"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "DeltaSeconds",
+    "Outer": "ReceiveTick",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "WeapP90_C",
+    "Next": {
+      "ObjectName": "Function WeapP90_C:ExecuteUbergraph_WeapP90",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.8"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:ReceiveTick",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty WeapP90_C:ReceiveTick.DeltaSeconds",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.9"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "WeapP90_C",
+    "Next": {
+      "ObjectName": "Function WeapP90_C:ReceiveTick",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.10"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:ReceiveBeginPlay",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "WeapP90_C",
+    "Next": {
+      "ObjectName": "Function WeapP90_C:ReceiveBeginPlay",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.11"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "WeapP90_C",
+    "Next": {
+      "ObjectName": "Function WeapP90_C:UserConstructionScript",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.12"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapP90_C",
+    "Super": "DefaultRifleSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapP90_C:SimpleConstructionScript_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.21"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty WeapP90_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.13"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function WeapP90_C:ExecuteUbergraph_WeapP90",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.8"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty WeapP90_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.13"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WeapP90": {
+        "ObjectName": "Function WeapP90_C:ExecuteUbergraph_WeapP90",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.8"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function WeapP90_C:ReceiveTick",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.10"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function WeapP90_C:ReceiveBeginPlay",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.11"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function WeapP90_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.12"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapP90_C Default__WeapP90_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.15"
+    }
+  },
+  {
+    "Type": "WeapP90_C",
+    "Name": "Default__WeapP90_C",
+    "Template": "Default__DefaultRifleSetting_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "TrailFX": null,
+      "WeaponTrajectoryData": {
+        "ObjectName": "WeaponTrajectoryData Weap_P90_WeaponTrajectoryData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/Weap_P90_WeaponTrajectoryData.0"
+      },
+      "WeaponGunPostprocessSettings": {
+        "ScopeRadiusNear": 3.0,
+        "ScopeRadiusFar": 3.0,
+        "ReticleRect": {
+          "X": 2.2,
+          "Y": 1.55
+        },
+        "ReticleAngularSize": 2.0,
+        "ReticleTint": {
+          "R": 0.0,
+          "G": 0.0,
+          "B": 5.0,
+          "A": 1.0,
+          "Hex": "FF0000FF"
+        },
+        "ReticleGamma": 1.85,
+        "ReticleTexture": {
+          "ObjectName": "Texture2D Red_dot_Reticle",
+          "ObjectPath": "TslGame/Content/Weapon/Accessories/red_dot/Red_dot_Reticle.0"
+        },
+        "ReticleSettings": {
+          "ObjectName": "ReticleSettings P90ReticleData",
+          "ObjectPath": "TslGame/Content/Weapon/Accessories/ReticleSettings/P90ReticleData.0"
+        },
+        "ScopeLensTint": {
+          "R": 0.9,
+          "G": 0.95,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFF4FAFF"
+        },
+        "DepthBlurPower": 1.0,
+        "DepthBlurWhitePoint": 45.0,
+        "DepthBlurBlackPoint": 3.0,
+        "ParallaxMovementScale": 1.5,
+        "ParallaxRadiusScale": 1.5,
+        "NearClipStaticOffset": 12.0,
+        "BrightSceneVisibility": {
+          "OpacityMultiplier": 0.5
+        }
+      },
+      "ReticlePostprocessData": {
+        "ObjectName": "ReticlePostprocessData Sight_P90Scope_PostprocessData",
+        "ObjectPath": "TslGame/Content/Item/Attachment/AttachmentDataAssets/Sight_P90Scope_PostprocessData.0"
+      },
+      "ReticleBrightnessConfig": {
+        "ReticleBrightnessSettingsCurve": {
+          "ObjectName": "CurveVector C_EOTechReticleBrightnessLevels",
+          "ObjectPath": "TslGame/Content/Weapon/Accessories/EOTech/C_EOTechReticleBrightnessLevels.0"
+        },
+        "ReticleBrightnessParamX": "Brightness",
+        "ReticleBrightnessParamY": "OpacityMul"
+      },
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset Weap_P90_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/Weap_P90_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_gun_P90",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_P90.0"
+      },
+      "WeaponIconRatio": 2.6,
+      "DefaultWeaponAttachments": [
+        "Item_Attach_Weapon_Lower_LaserPointer_C"
+      ],
+      "WeaponConfig": {
+        "TargetingFOV": 68.0,
+        "HoldBreathFOV": 60.0,
+        "ScopeTypeFOVOverridesMap": null,
+        "SocketOffset_Shoulder": {
+          "X": 0.0,
+          "Y": 30.0,
+          "Z": -5.0
+        },
+        "SocketOffset_Hand": {
+          "X": 3.0,
+          "Y": 6.0,
+          "Z": 0.5
+        },
+        "WeaponClass": "EWeaponClass::Class_SMG",
+        "IronSightZeroingDistances": [
+          100.0
+        ],
+        "RecoilMontage": {
+          "ObjectName": "AnimMontage SMG_Recoil_9_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Recoil/SMG_Recoil_9_Montage.0"
+        },
+        "WeaponEquipDuration": 0.2,
+        "WeaponUnequipDuration": 0.4,
+        "PhysicalBodyHitImpactPower": 7000.0
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapP90_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.22"
+      },
+      "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
+      "AttachmentPositionData": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentPoint": "Magazine_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MagazineMedium",
+              "AttachmentPoint": "Magazine_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::LowerRail",
+          "AttachmentPoint": "Lower_LaserPointer",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "LowerLaserPointer",
+              "AttachmentPoint": "Lower_LaserPointer"
+            }
+          ]
+        }
+      ],
+      "DefaultAttachedItemAssets": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentTag": "MagazineDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/P90/Meshes/SM_P90_MAG.SM_P90_MAG",
+          "AttachmentMeshName": "MagazineDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        }
+      ],
+      "WeaponTag": "P90",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem P_Muzzle_P90_Suppressor",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/SMG/P_Muzzle_P90_Suppressor.76"
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_Secondary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.5
+        },
+        "EAccessorySlot::Slot_SideArm": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        },
+        "EAccessorySlot::Slot_Primary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData Weap_P90_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/Weap_P90_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapP90_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.17"
+      }
+    }
+  },
+  {
+    "Type": "LaserPointerAttachmentP90_C",
+    "Name": "LaserPointerAttachmentP90_GEN_VARIABLE",
+    "Outer": "WeapP90_C",
+    "Template": "Default__LaserPointerAttachmentP90_C",
+    "Properties": {
+      "StaticMeshAsset": "/Game/Weapon/Accessories/LaserPointer/SM_LaserPointerTip_Set__1_.SM_LaserPointerTip_Set__1_",
+      "RelativeLocation": {
+        "X": 19.35003,
+        "Y": 4.6E-05,
+        "Z": 5.243816
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapP90_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapP90_C Default__WeapP90_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.15"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapP90_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "BlueprintGeneratedClass LaserPointerAttachmentP90_C",
+        "ObjectPath": "TslGame/Content/Weapon/Accessories/LaserPointer/LaserPointerAttachmentP90.0"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "LaserPointerAttachmentP90_C WeapP90_C:LaserPointerAttachmentP90_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.16"
+      },
+      "ParentComponentOrVariableName": "WeaponMesh3P",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "29B2D7A2-4AD0868C-E34981BA-A066FBF3",
+      "InternalVariableName": "LaserPointerAttachmentP90"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapP90_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.18"
+      },
+      "VariableGuid": "D6F634D4-4DBF99D6-59773C9A-370D8B0F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "WeapP90_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node WeapP90_C:SimpleConstructionScript_1.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.19"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node WeapP90_C:SimpleConstructionScript_1.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.19"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapP90_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.20"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapP90_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_P90_RD_C",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/P90/Redux/Weapon_RD/ABP_P90_RD.45"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_P90_Set",
+        "ObjectPath": "TslGame/Content/Weapon/Rifles/P90/Meshes/SK_P90_Set.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapP90_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapP90.17"
+      }
+    }
+  }
+]

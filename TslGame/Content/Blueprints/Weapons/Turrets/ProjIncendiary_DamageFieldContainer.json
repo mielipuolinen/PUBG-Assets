@@ -1,0 +1,199 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "ProjIncendiary_DamageFieldContainer_C",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "ProjIncendiary_DamageFieldContainer_C",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjIncendiary_DamageFieldContainer_C:DefaultSceneRoot",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageFieldContainer.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ProjIncendiary_DamageFieldContainer_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ProjIncendiary_DamageFieldContainer_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageFieldContainer.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslDamageFieldContainer",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function ProjIncendiary_DamageFieldContainer_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageFieldContainer.1"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function ProjIncendiary_DamageFieldContainer_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageFieldContainer.1"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ProjIncendiary_DamageFieldContainer_C Default__ProjIncendiary_DamageFieldContainer_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageFieldContainer.3"
+    }
+  },
+  {
+    "Type": "ProjIncendiary_DamageFieldContainer_C",
+    "Name": "Default__ProjIncendiary_DamageFieldContainer_C",
+    "Properties": {
+      "DamageFieldLayouts": [
+        {
+          "CreationDelay": 0.0,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "CreationDelay": 0.5,
+          "LocationOffset": {
+            "X": 70.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "CreationDelay": 0.5,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": 70.0
+          }
+        },
+        {
+          "CreationDelay": 0.5,
+          "LocationOffset": {
+            "X": -70.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "CreationDelay": 0.5,
+          "LocationOffset": {
+            "X": 0.0,
+            "Y": -70.0
+          }
+        },
+        {
+          "CreationDelay": 0.7,
+          "LocationOffset": {
+            "X": 70.0,
+            "Y": 70.0
+          }
+        },
+        {
+          "CreationDelay": 0.7,
+          "LocationOffset": {
+            "X": -70.0,
+            "Y": 70.0
+          }
+        },
+        {
+          "CreationDelay": 0.7,
+          "LocationOffset": {
+            "X": 70.0,
+            "Y": -70.0
+          }
+        },
+        {
+          "CreationDelay": 0.7,
+          "LocationOffset": {
+            "X": -70.0,
+            "Y": -70.0
+          }
+        },
+        {
+          "CreationDelay": 0.8,
+          "LocationOffset": {
+            "X": 140.0,
+            "Y": 0.0
+          }
+        },
+        {
+          "CreationDelay": 0.8,
+          "LocationOffset": {
+            "X": -140.0,
+            "Y": 0.0
+          }
+        }
+      ],
+      "DamageFieldTemplate": {
+        "ObjectName": "BlueprintGeneratedClass ProjIncendiary_DamageField_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "ProjIncendiary_DamageFieldContainer_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ProjIncendiary_DamageFieldContainer_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageFieldContainer.4"
+      },
+      "VariableGuid": "1F3A0E77-4DA9D358-90CF74BE-F4A675A1",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "ProjIncendiary_DamageFieldContainer_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node ProjIncendiary_DamageFieldContainer_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageFieldContainer.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node ProjIncendiary_DamageFieldContainer_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageFieldContainer.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ProjIncendiary_DamageFieldContainer_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageFieldContainer.5"
+      }
+    }
+  }
+]

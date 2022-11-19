@@ -1,0 +1,285 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapACE32_C",
+    "Super": "DefaultRifleSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapACE32_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapACE32.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapACE32_C Default__WeapACE32_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapACE32.1"
+    }
+  },
+  {
+    "Type": "WeapACE32_C",
+    "Name": "Default__WeapACE32_C",
+    "Template": "Default__DefaultRifleSetting_C",
+    "Properties": {
+      "TrailFX": null,
+      "WeaponTrajectoryData": {
+        "ObjectName": "WeaponTrajectoryData WeapACE32_WeaponTrajectoryData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapACE32_WeaponTrajectoryData.0"
+      },
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapACE32_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapACE32_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_gun_ACE32",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_ACE32.0"
+      },
+      "WeaponIconRatio": 3.58,
+      "WeaponConfig": {
+        "TargetingFOV": 70.0,
+        "WeaponClass": "EWeaponClass::Class_Rifle",
+        "IronSightZeroingDistances": [
+          100.0,
+          200.0,
+          300.0,
+          400.0
+        ],
+        "RecoilMontage": {
+          "ObjectName": "AnimMontage Rifle_Recoil_762_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Recoil/Rifle_Recoil_762_Montage.0"
+        },
+        "WeaponEquipDuration": 0.2,
+        "WeaponUnequipDuration": 0.4
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapACE32_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapACE32.6"
+      },
+      "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
+      "AttachmentPositionData": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentPoint": "Upper_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "UpperSmall",
+              "AttachmentPoint": "Upper_Small"
+            },
+            {
+              "AttachmentTag": "UpperDefault",
+              "AttachmentPoint": "Upper_Default"
+            },
+            {
+              "AttachmentTag": "UpperReddot",
+              "AttachmentPoint": "Upper_Reddot"
+            },
+            {
+              "AttachmentTag": "UpperHolo",
+              "AttachmentPoint": "Upper_Small"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::LowerRail",
+          "AttachmentPoint": "Lower_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "LowerDefault",
+              "AttachmentPoint": "Lower_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentPoint": "Magazine_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MagazineLarge",
+              "AttachmentPoint": "Magazine_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+          "AttachmentPoint": "Muzzle_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MuzzleLarge",
+              "AttachmentPoint": "Muzzle_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+          "AttachmentPoint": "StockAssaultRifle",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "StockAssaultRifle",
+              "AttachmentPoint": "Stock_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+          "AttachmentPoint": "Upper_Angled",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "RMR",
+              "AttachmentPoint": "Upper_Angled"
+            }
+          ]
+        }
+      ],
+      "DefaultAttachedItemAssets": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentTag": "MagazineDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/GalilAce32/Meshes/GalilAce32_Mag_Setting.GalilAce32_Mag_Setting",
+          "AttachmentMeshName": "MagazineDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+          "AttachmentTag": "StockAssaultRifle",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/GalilAce32/Meshes/GalilAce32_Stock_Setting.GalilAce32_Stock_Setting",
+          "AttachmentMeshName": "StockAssaultRifle",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+          "AttachmentTag": "MuzzleDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/GalilAce32/Meshes/GalilAce32_Muzzle_Setting.GalilAce32_Muzzle_Setting",
+          "AttachmentMeshName": "MuzzleDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        }
+      ],
+      "WeaponTag": "ACE32",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem P_Muzzle_ACE32",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Rifle/P_Muzzle_ACE32.96"
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_Secondary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.5
+        },
+        "EAccessorySlot::Slot_SideArm": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        },
+        "EAccessorySlot::Slot_Primary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapAce32_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapAce32_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapACE32_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapACE32.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapACE32_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapACE32_C Default__WeapACE32_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapACE32.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapACE32_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapACE32_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapACE32.3"
+      },
+      "VariableGuid": "07D58AAE-4DB7359B-4F57CABC-152A872E",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapACE32_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapACE32_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapACE32.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapACE32_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_Weapon_GalilAce32_RD_C",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/GalilAce32/Redux/Weapon_RD/ABP_Weapon_GalilAce32_RD.35"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh GalilAce32_Setting",
+        "ObjectPath": "TslGame/Content/Weapon/Rifles/GalilAce32/Meshes/GalilAce32_Setting.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapACE32_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapACE32.2"
+      }
+    }
+  }
+]

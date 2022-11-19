@@ -1,0 +1,206 @@
+[
+  {
+    "Type": "SkeletalMeshSocket",
+    "Name": "SkeletalMeshSocket_0",
+    "Outer": "SK_Tiger_BluezoneGrenade_Skeleton",
+    "Properties": {
+      "SocketName": "UIcamera",
+      "BoneName": "G_Root",
+      "RelativeLocation": {
+        "X": 1.87374,
+        "Y": -10.0,
+        "Z": 2.719317
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": -35.0
+      },
+      "RelativeScale": {
+        "X": 0.7,
+        "Y": 0.7,
+        "Z": 0.7
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshSocket",
+    "Name": "SkeletalMeshSocket_1",
+    "Outer": "SK_Tiger_BluezoneGrenade_Skeleton",
+    "Properties": {
+      "SocketName": "UIcamera_XBOX",
+      "BoneName": "G_Root",
+      "RelativeLocation": {
+        "X": 1.87374,
+        "Y": -10.0,
+        "Z": 2.719317
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": -35.0
+      },
+      "RelativeScale": {
+        "X": 0.7,
+        "Y": 0.7,
+        "Z": 0.7
+      }
+    }
+  },
+  {
+    "Type": "Skeleton",
+    "Name": "SK_Tiger_BluezoneGrenade_Skeleton",
+    "Properties": {
+      "BoneTree": [
+        {
+          "TranslationRetargetingMode": "EBoneTranslationRetargetingMode::Animation"
+        },
+        {
+          "TranslationRetargetingMode": "EBoneTranslationRetargetingMode::Animation"
+        },
+        {
+          "TranslationRetargetingMode": "EBoneTranslationRetargetingMode::Animation"
+        },
+        {
+          "TranslationRetargetingMode": "EBoneTranslationRetargetingMode::Animation"
+        }
+      ],
+      "Sockets": [
+        {
+          "ObjectName": "SkeletalMeshSocket SK_Tiger_BluezoneGrenade_Skeleton:SkeletalMeshSocket_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BluezoneGrenade/SK_Tiger_BluezoneGrenade_Skeleton.1"
+        },
+        {
+          "ObjectName": "SkeletalMeshSocket SK_Tiger_BluezoneGrenade_Skeleton:SkeletalMeshSocket_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BluezoneGrenade/SK_Tiger_BluezoneGrenade_Skeleton.0"
+        }
+      ]
+    },
+    "ReferenceSkeleton": {
+      "FinalRefBoneInfo": [
+        {
+          "Name": "G_Root",
+          "ParentIndex": -1
+        },
+        {
+          "Name": "G_Lever",
+          "ParentIndex": 0
+        },
+        {
+          "Name": "G_Ring",
+          "ParentIndex": 0
+        },
+        {
+          "Name": "SM_Tiger_BluezoneGrenade_01",
+          "ParentIndex": 0
+        }
+      ],
+      "FinalRefBonePose": [
+        {
+          "Rotation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 1.0,
+            "IsNormalized": true,
+            "Size": 1.0,
+            "SizeSquared": 1.0
+          },
+          "Translation": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        },
+        {
+          "Rotation": {
+            "X": 3.061617E-17,
+            "Y": -0.0,
+            "Z": 0.0,
+            "W": -1.0,
+            "IsNormalized": true,
+            "Size": 1.0,
+            "SizeSquared": 1.0
+          },
+          "Translation": {
+            "X": 1.5297124,
+            "Y": -3.0086824E-07,
+            "Z": 8.872639
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        },
+        {
+          "Rotation": {
+            "X": 0.0,
+            "Y": -0.0,
+            "Z": 0.0,
+            "W": -1.0,
+            "IsNormalized": true,
+            "Size": 1.0,
+            "SizeSquared": 1.0
+          },
+          "Translation": {
+            "X": 5.908598,
+            "Y": 1.6410048,
+            "Z": 8.090546
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        },
+        {
+          "Rotation": {
+            "X": 0.0,
+            "Y": -0.0,
+            "Z": 0.0,
+            "W": -1.0,
+            "IsNormalized": true,
+            "Size": 1.0,
+            "SizeSquared": 1.0
+          },
+          "Translation": {
+            "X": 0.0,
+            "Y": -0.0,
+            "Z": 0.0
+          },
+          "Scale3D": {
+            "X": 1.0,
+            "Y": 1.0,
+            "Z": 1.0
+          },
+          "IsRotationNormalized": true
+        }
+      ],
+      "FinalNameToIndexMap": {
+        "G_Root": 0,
+        "G_Lever": 1,
+        "G_Ring": 2,
+        "SM_Tiger_BluezoneGrenade_01": 3
+      }
+    },
+    "Guid": "0E8ACBC6-4EDFA508-7ED3B796-3E80BFEE",
+    "AnimRetargetSources": {},
+    "NameMappings": {
+      "AnimationCurves": {
+        "GuidMap": {},
+        "UidMap": null,
+        "CurveMetaDataMap": {}
+      }
+    },
+    "ExistingMarkerNames": null
+  }
+]

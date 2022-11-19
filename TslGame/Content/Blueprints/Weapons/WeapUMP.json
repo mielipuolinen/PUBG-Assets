@@ -1,0 +1,269 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapUMP_C",
+    "Super": "DefaultRifleSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapUMP_C:SimpleConstructionScript_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUMP.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapUMP_C Default__WeapUMP_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUMP.1"
+    }
+  },
+  {
+    "Type": "WeapUMP_C",
+    "Name": "Default__WeapUMP_C",
+    "Template": "Default__DefaultRifleSetting_C",
+    "Properties": {
+      "TrailFX": null,
+      "WeaponTrajectoryData": {
+        "ObjectName": "WeaponTrajectoryData WeapUMP_WeaponTrajectoryData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapUMP_WeaponTrajectoryData.0"
+      },
+      "WeaponGunPostprocessSettings": {
+        "BlurLevel": 0.52,
+        "ScopeRadiusNear": 0.1,
+        "ScopeRadiusFar": 0.1,
+        "ReticleAngularSize": 15.0,
+        "DepthBlurPower": 1.0,
+        "DepthBlurWhitePoint": 5.0,
+        "DepthBlurBlackPoint": 30.0
+      },
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapUMP_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapUMP_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_gun_UMP45",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_UMP45.0"
+      },
+      "WeaponIconRatio": 2.24,
+      "WeaponConfig": {
+        "TargetingFOV": 75.0,
+        "HoldBreathFOV": 60.0,
+        "SocketOffset_Shoulder": {
+          "X": 0.0,
+          "Y": 30.0,
+          "Z": -5.0
+        },
+        "SocketOffset_Hand": {
+          "X": 3.0,
+          "Y": 6.0,
+          "Z": 0.5
+        },
+        "WeaponClass": "EWeaponClass::Class_SMG",
+        "IronSightZeroingDistances": [
+          100.0
+        ],
+        "RecoilMontage": {
+          "ObjectName": "AnimMontage SMG_Recoil_9_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Recoil/SMG_Recoil_9_Montage.0"
+        },
+        "WeaponEquipDuration": 0.2,
+        "WeaponUnequipDuration": 0.4,
+        "PhysicalBodyHitImpactPower": 7000.0
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapUMP_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUMP.6"
+      },
+      "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
+      "AttachmentPositionData": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentPoint": "Upper_Small",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "UpperSmall",
+              "AttachmentPoint": "Upper_Small"
+            },
+            {
+              "AttachmentTag": "UpperReddot",
+              "AttachmentPoint": "Upper_Reddot"
+            },
+            {
+              "AttachmentTag": "UpperHolo",
+              "AttachmentPoint": "Upper_Holo"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::LowerRail",
+          "AttachmentPoint": "Lower_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "LowerDefault",
+              "AttachmentPoint": "Lower_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentPoint": "Magazine_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MagazineMedium",
+              "AttachmentPoint": "Magazine_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+          "AttachmentPoint": "Muzzle_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MuzzleMedium",
+              "AttachmentPoint": "Muzzle_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+          "AttachmentPoint": "Upper_Angled",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "RMR",
+              "AttachmentPoint": "Upper_Angled"
+            }
+          ]
+        }
+      ],
+      "DefaultAttachedItemAssets": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentTag": "MagazineDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/UMP/Meshes/UMP_Mag_setting.UMP_Mag_setting",
+          "AttachmentMeshName": "MagazineDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        }
+      ],
+      "WeaponTag": "UMP",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem P_Muzzle_UMP",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/SMG/P_Muzzle_UMP.95"
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_Secondary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.5
+        },
+        "EAccessorySlot::Slot_SideArm": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        },
+        "EAccessorySlot::Slot_Primary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapUMP_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapUMP_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapUMP_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUMP.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapUMP_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapUMP_C Default__WeapUMP_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUMP.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapUMP_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapUMP_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUMP.3"
+      },
+      "VariableGuid": "D6F634D4-4DBF99D6-59773C9A-370D8B0F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "WeapUMP_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapUMP_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUMP.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapUMP_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_Weapon_UMP_RD_C",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/UMP/Redux/Weapon_RD/ABP_Weapon_UMP_RD.30"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh UMP_setting",
+        "ObjectPath": "TslGame/Content/Weapon/Rifles/UMP/Meshes/UMP_setting.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapUMP_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUMP.2"
+      }
+    }
+  }
+]

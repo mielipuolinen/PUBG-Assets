@@ -1,0 +1,58 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "CS_WeapGun_Pistol_Eagle_C",
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class CameraShake",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassFlags": 266256,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "CS_WeapGun_Pistol_Eagle_C Default__CS_WeapGun_Pistol_Eagle_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Pistol_Eagle.1"
+    }
+  },
+  {
+    "Type": "CS_WeapGun_Pistol_Eagle_C",
+    "Name": "Default__CS_WeapGun_Pistol_Eagle_C",
+    "Properties": {
+      "OscillationDuration": 0.25,
+      "OscillationBlendInTime": 0.02,
+      "OscillationBlendOutTime": 0.25,
+      "RotOscillation": {
+        "Pitch": {
+          "Amplitude": 0.4,
+          "Frequency": 2.0,
+          "InitialOffset": "EOO_OffsetZero"
+        },
+        "Yaw": {
+          "Amplitude": 1.2,
+          "Frequency": 10.0
+        },
+        "Roll": {
+          "Amplitude": 2.0,
+          "Frequency": 10.0
+        }
+      },
+      "LocOscillation": {
+        "X": {
+          "Amplitude": 1.5,
+          "Frequency": 20.0,
+          "InitialOffset": "EOO_OffsetZero"
+        },
+        "Z": {
+          "Amplitude": 0.5,
+          "Frequency": 8.0,
+          "InitialOffset": "EOO_OffsetZero"
+        }
+      }
+    }
+  }
+]

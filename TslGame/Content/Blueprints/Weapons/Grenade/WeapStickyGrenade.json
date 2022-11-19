@@ -1,0 +1,367 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_Event_bIsActive",
+    "Outer": "ExecuteUbergraph_WeapStickyGrenade",
+    "Next": null,
+    "PropertyFlags": 2,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_WeapStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty WeapStickyGrenade_C:ExecuteUbergraph_WeapStickyGrenade.K2Node_Event_bIsActive",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.0"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_WeapStickyGrenade",
+    "Outer": "WeapStickyGrenade_C",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty WeapStickyGrenade_C:ExecuteUbergraph_WeapStickyGrenade.EntryPoint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.1"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "bIsActive",
+    "Outer": "CustomTrigger_BP",
+    "Next": null,
+    "PropertyFlags": 130,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "Function",
+    "Name": "CustomTrigger_BP",
+    "Outer": "WeapStickyGrenade_C",
+    "Next": {
+      "ObjectName": "Function WeapStickyGrenade_C:ExecuteUbergraph_WeapStickyGrenade",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function TslWeapon_Throwable:CustomTrigger_BP",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty WeapStickyGrenade_C:CustomTrigger_BP.bIsActive",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.3"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "WeapStickyGrenade_C",
+    "Next": {
+      "ObjectName": "Function WeapStickyGrenade_C:CustomTrigger_BP",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.4"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Select_Default",
+    "Outer": "ToggleLight",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class MaterialInterface",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Temp_object_Variable2",
+    "Outer": "ToggleLight",
+    "Next": {
+      "ObjectName": "ObjectProperty WeapStickyGrenade_C:ToggleLight.K2Node_Select_Default",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.6"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class MaterialInterface",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Temp_object_Variable",
+    "Outer": "ToggleLight",
+    "Next": {
+      "ObjectName": "ObjectProperty WeapStickyGrenade_C:ToggleLight.Temp_object_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.7"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class MaterialInterface",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "Temp_bool_Variable",
+    "Outer": "ToggleLight",
+    "Next": {
+      "ObjectName": "ObjectProperty WeapStickyGrenade_C:ToggleLight.Temp_object_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.8"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "IsActive",
+    "Outer": "ToggleLight",
+    "Next": {
+      "ObjectName": "BoolProperty WeapStickyGrenade_C:ToggleLight.Temp_bool_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.9"
+    },
+    "PropertyFlags": 128,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "Function",
+    "Name": "ToggleLight",
+    "Outer": "WeapStickyGrenade_C",
+    "Next": {
+      "ObjectName": "Function WeapStickyGrenade_C:UserConstructionScript",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.5"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty WeapStickyGrenade_C:ToggleLight.IsActive",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.10"
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "WeapStickyGrenade_C",
+    "Next": {
+      "ObjectName": "Function WeapStickyGrenade_C:ToggleLight",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.11"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapStickyGrenade_C",
+    "Super": "DefaultGrenadeSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapStickyGrenade_C:SimpleConstructionScript_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.18"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty WeapStickyGrenade_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.12"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function WeapStickyGrenade_C:ExecuteUbergraph_WeapStickyGrenade",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.2"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultGrenadeSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty WeapStickyGrenade_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.12"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_WeapStickyGrenade": {
+        "ObjectName": "Function WeapStickyGrenade_C:ExecuteUbergraph_WeapStickyGrenade",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.2"
+      },
+      "CustomTrigger_BP": {
+        "ObjectName": "Function WeapStickyGrenade_C:CustomTrigger_BP",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.4"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function WeapStickyGrenade_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.5"
+      },
+      "ToggleLight": {
+        "ObjectName": "Function WeapStickyGrenade_C:ToggleLight",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.11"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapStickyGrenade_C Default__WeapStickyGrenade_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.14"
+    }
+  },
+  {
+    "Type": "WeapStickyGrenade_C",
+    "Name": "Default__WeapStickyGrenade_C",
+    "Template": "Default__DefaultGrenadeSetting_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ThrowableConfig": {
+        "ProjectileClass": {
+          "ObjectName": "BlueprintGeneratedClass ProjStickyGrenade_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.98"
+        },
+        "CookingEffectClass": {
+          "ObjectName": "BlueprintGeneratedClass P_Grenade_Start_BP_C",
+          "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Grenade_Start_BP.5"
+        },
+        "FireDelay": 0.4,
+        "SpeedCurve": {
+          "ObjectName": "CurveFloat StickyBombSpeedCurve",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/StickyBombSpeedCurve.0"
+        },
+        "ThrowTime": 1.3,
+        "ThrowCooldownDuration": 2.0,
+        "bCanBeCooked": false
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_sticky_grenade",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_sticky_grenade.0"
+      },
+      "WeaponIconRatio": 1.12,
+      "WeaponConfig": {
+        "SocketOffset_Hand": {
+          "X": -0.5,
+          "Y": 2.0,
+          "Z": 0.0
+        },
+        "SocketRotationOffset_Hand": {
+          "Pitch": 0.0,
+          "Yaw": -90.0,
+          "Roll": 0.0
+        },
+        "WeaponClass": "EWeaponClass::Class_Throwable",
+        "ThrownType": "EThrownWeaponType::Thrown_StickyBomb",
+        "WeaponEquipDuration": 0.3,
+        "WeaponReadyDuration": 1.0
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapStickyGrenade_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.19"
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapStickyGrenade_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DataAssets/WeapStickyGrenade_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapStickyGrenade_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.15"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapStickyGrenade_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapStickyGrenade_C Default__WeapStickyGrenade_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.14"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapStickyGrenade_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapStickyGrenade_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.16"
+      },
+      "VariableGuid": "028EC49A-48E4171F-BF4E70B7-59BAFBFD",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "WeapStickyGrenade_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapStickyGrenade_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.17"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapStickyGrenade_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh Sticky_Set_E2",
+        "ObjectPath": "TslGame/Content/Weapon/Grenades/Sticky/Sticky_Set_E2.0"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant Sticky_Unarmed",
+          "ObjectPath": "TslGame/Content/Weapon/Grenades/Sticky/Materials/Sticky_Unarmed.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant Sticky_Unarmed",
+          "ObjectPath": "TslGame/Content/Weapon/Grenades/Sticky/Materials/Sticky_Unarmed.0"
+        }
+      ],
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapStickyGrenade_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapStickyGrenade.15"
+      }
+    }
+  }
+]

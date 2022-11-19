@@ -1,0 +1,148 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BP_FlashbangDebuff_C",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "BP_FlashbangDebuff_C",
+    "Next": {
+      "ObjectName": "ObjectProperty BP_FlashbangDebuff_C:DefaultSceneRoot",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Buffs/BP_FlashbangDebuff.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_FlashbangDebuff_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BP_FlashbangDebuff_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Buffs/BP_FlashbangDebuff.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslFlashbangDebuff",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function BP_FlashbangDebuff_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Buffs/BP_FlashbangDebuff.1"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function BP_FlashbangDebuff_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Buffs/BP_FlashbangDebuff.1"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_FlashbangDebuff_C Default__BP_FlashbangDebuff_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Buffs/BP_FlashbangDebuff.3"
+    }
+  },
+  {
+    "Type": "BP_FlashbangDebuff_C",
+    "Name": "Default__BP_FlashbangDebuff_C",
+    "Properties": {
+      "DebuffCurve": {
+        "ObjectName": "FlashbangDebuffCurve C_FlashbangDebuffCurve",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/C_FlashbangDebuffCurve.0"
+      },
+      "TinnitusLevels": [
+        {
+          "ObjectName": "AkAudioEvent Flare_Fx_Lv5",
+          "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv5.0"
+        },
+        {
+          "ObjectName": "AkAudioEvent Flare_Fx_Lv4",
+          "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv4.0"
+        },
+        {
+          "ObjectName": "AkAudioEvent Flare_Fx_Lv3",
+          "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv3.0"
+        },
+        {
+          "ObjectName": "AkAudioEvent Flare_Fx_Lv2",
+          "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv2.0"
+        },
+        {
+          "ObjectName": "AkAudioEvent Flare_Fx_Lv1",
+          "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv1.0"
+        }
+      ],
+      "EffectActorClass": {
+        "ObjectName": "BlueprintGeneratedClass BP_Flashbang_Blind_03_C",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/BP_Flashbang_Blind_03.28"
+      },
+      "OverlapId": "FlashbangDebuff",
+      "NetCullDistanceSquared": 2.5E+09
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_FlashbangDebuff_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BP_FlashbangDebuff_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Buffs/BP_FlashbangDebuff.4"
+      },
+      "VariableGuid": "CEBBC6E1-495B8474-512C04BA-152FFEDF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_FlashbangDebuff_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BP_FlashbangDebuff_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Buffs/BP_FlashbangDebuff.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BP_FlashbangDebuff_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Buffs/BP_FlashbangDebuff.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BP_FlashbangDebuff_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Buffs/BP_FlashbangDebuff.5"
+      }
+    }
+  }
+]

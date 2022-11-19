@@ -1,0 +1,280 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapSCAR-L_C",
+    "Super": "DefaultRifleSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapSCAR-L_C:SimpleConstructionScript_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSCAR-L.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapSCAR-L_C Default__WeapSCAR-L_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSCAR-L.1"
+    }
+  },
+  {
+    "Type": "WeapSCAR-L_C",
+    "Name": "Default__WeapSCAR-L_C",
+    "Template": "Default__DefaultRifleSetting_C",
+    "Properties": {
+      "TrailFX": null,
+      "WeaponTrajectoryData": {
+        "ObjectName": "WeaponTrajectoryData WeapSCAR-L_WeaponTrajectoryData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapSCAR-L_WeaponTrajectoryData.0"
+      },
+      "WeaponGunPostprocessSettings": {
+        "BlurLevel": 0.6,
+        "ScopeRadiusNear": 0.1,
+        "ScopeRadiusFar": 0.1,
+        "ReticleAngularSize": 15.0,
+        "DepthBlurPower": 1.0,
+        "DepthBlurWhitePoint": 15.0,
+        "DepthBlurBlackPoint": 45.0
+      },
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapSCAR-L_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapSCAR-L_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_gun_SCAR-L",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_SCAR-L.0"
+      },
+      "WeaponIconRatio": 3.36,
+      "WeaponConfig": {
+        "TargetingFOV": 70.0,
+        "HoldBreathFOV": 52.0,
+        "SocketOffset_Shoulder": {
+          "X": 0.0,
+          "Y": 34.0,
+          "Z": -5.0
+        },
+        "SocketOffset_Hand": {
+          "X": 3.0,
+          "Y": 6.0,
+          "Z": 0.5
+        },
+        "WeaponClass": "EWeaponClass::Class_Rifle",
+        "IronSightZeroingDistances": [
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0
+        ],
+        "RecoilMontage": {
+          "ObjectName": "AnimMontage Rifle_Recoil_556_Var1_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Recoil/Rifle_Recoil_556_Var1_Montage.0"
+        },
+        "WeaponEquipDuration": 0.2,
+        "WeaponUnequipDuration": 0.4,
+        "PhysicalBodyHitImpactPower": 9000.0
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapSCAR-L_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSCAR-L.6"
+      },
+      "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
+      "AttachmentPositionData": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentPoint": "Upper_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "UpperSmall",
+              "AttachmentPoint": "Upper_Small"
+            },
+            {
+              "AttachmentTag": "UpperDefault",
+              "AttachmentPoint": "Upper_Default"
+            },
+            {
+              "AttachmentTag": "UpperReddot",
+              "AttachmentPoint": "Upper_Reddot"
+            },
+            {
+              "AttachmentTag": "UpperHolo",
+              "AttachmentPoint": "Upper_Small"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::LowerRail",
+          "AttachmentPoint": "Lower_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "LowerDefault",
+              "AttachmentPoint": "Lower_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentPoint": "Magazine_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MagazineLarge",
+              "AttachmentPoint": "Magazine_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+          "AttachmentPoint": "Muzzle_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MuzzleLarge",
+              "AttachmentPoint": "Muzzle_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+          "AttachmentPoint": "Upper_Angled",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "RMR",
+              "AttachmentPoint": "Upper_Angled"
+            }
+          ]
+        }
+      ],
+      "DefaultAttachedItemAssets": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentTag": "MagazineDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/SCAR-L/Meshes/scar-L_Mag_01_setting.scar-L_Mag_01_setting",
+          "AttachmentMeshName": "MagazineDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        }
+      ],
+      "WeaponTag": "SCAR-L",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem P_Muzzle_SCAR-L",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Rifle/P_Muzzle_SCAR-L.132"
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_Secondary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.5
+        },
+        "EAccessorySlot::Slot_SideArm": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        },
+        "EAccessorySlot::Slot_Primary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapSCAR-L_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapSCAR-L_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapSCAR-L_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSCAR-L.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapSCAR-L_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapSCAR-L_C Default__WeapSCAR-L_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSCAR-L.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapSCAR-L_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapSCAR-L_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSCAR-L.3"
+      },
+      "VariableGuid": "D6F634D4-4DBF99D6-59773C9A-370D8B0F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "WeapSCAR-L_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapSCAR-L_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSCAR-L.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapSCAR-L_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_Weapon_SCAR_RD_C",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/SCARL/Redux/Weapon_RD/ABP_Weapon_SCAR_RD.56"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh scar-L_setting",
+        "ObjectPath": "TslGame/Content/Weapon/Rifles/SCAR-L/Meshes/scar-L_setting.0"
+      },
+      "BodyInstance": {
+        "MassInKgOverride": 14.274484
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapSCAR-L_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSCAR-L.2"
+      }
+    }
+  }
+]

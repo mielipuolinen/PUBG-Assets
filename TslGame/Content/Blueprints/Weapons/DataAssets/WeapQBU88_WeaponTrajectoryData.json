@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "WeaponTrajectoryData",
+    "Name": "WeapQBU88_WeaponTrajectoryData",
+    "Properties": {
+      "RecoilConfig": {
+        "VerticalRecoilMin": 0.05,
+        "VerticalRecoilMax": 3.15,
+        "VerticalRecoilVariation": 0.1,
+        "VerticalRecoveryModifier": 0.4,
+        "VerticalRecoveryClamp": 4.9,
+        "VerticalRecoveryMax": 1.5,
+        "HorizontalTendency": 0.15,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_QBU",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_QBU.0"
+        },
+        "BulletsPerSwitch": 1,
+        "RecoilSpeed_Vertical": 11.2,
+        "RecoilSpeed_Horizontal": 11.0,
+        "RecoverySpeed_Vertical": 9.0,
+        "RecoilValue_Climb": 1.2,
+        "RecoilValue_Fall": 3.0,
+        "RecoilModifier_Crouch": 0.75,
+        "RecoilModifier_Prone": 0.2,
+        "RecoilHorizontalMinScalar": 0.3
+      },
+      "TrajectoryConfig": {
+        "InitialSpeed": 945.0,
+        "HitDamage": 48.0,
+        "BallisticCurve": {
+          "ObjectName": "CurveVector C_Ballistic_QBU",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/BallisticData/C_Ballistic_QBU.0"
+        },
+        "RangeModifier": 0.95,
+        "ReferenceDistance": 400.0,
+        "TravelDistanceMax": 1000.0,
+        "VDragCoefficient": 0.85,
+        "BDS": 1.04,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
+        },
+        "WeaponSpread": 5.0
+      }
+    }
+  }
+]

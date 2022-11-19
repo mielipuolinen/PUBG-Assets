@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "WeaponTrajectoryData",
+    "Name": "WeapMk47Mutant_WeaponTrajectoryData",
+    "Properties": {
+      "RecoilConfig": {
+        "VerticalRecoilMin": 0.05,
+        "VerticalRecoilMax": 8.0,
+        "VerticalRecoilVariation": 0.1,
+        "VerticalRecoveryModifier": 0.56,
+        "VerticalRecoveryClamp": 4.2,
+        "VerticalRecoveryMax": 1.5,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_Mutant",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_Mutant.0"
+        },
+        "BulletsPerSwitch": 1,
+        "RecoilSpeed_Vertical": 12.5,
+        "RecoilSpeed_Horizontal": 10.0,
+        "RecoverySpeed_Vertical": 8.2,
+        "RecoilValue_Climb": 0.7,
+        "RecoilValue_Fall": 2.5,
+        "RecoilModifier_Crouch": 0.88,
+        "RecoilModifier_Prone": 0.7,
+        "RecoilHorizontalMinScalar": 0.48,
+        "RecoilBlendInOutMap": {
+          "X": 0.0,
+          "Y": 0.04
+        }
+      },
+      "TrajectoryConfig": {
+        "InitialSpeed": 780.0,
+        "HitDamage": 49.0,
+        "BallisticCurve": {
+          "ObjectName": "CurveVector C_Ballistic_Mutant",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/BallisticData/C_Ballistic_Mutant.0"
+        },
+        "RangeModifier": 0.95,
+        "ReferenceDistance": 380.0,
+        "TravelDistanceMax": 1000.0,
+        "VDragCoefficient": 0.75,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
+        },
+        "WeaponSpread": 6.0
+      }
+    }
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "Type": "TslExplosionEffectData",
+    "Name": "C4ExplosionEffectData",
+    "Properties": {
+      "ShakeConfig": {
+        "ShakeArray": [
+          {
+            "ShakeClass": {
+              "ObjectName": "BlueprintGeneratedClass CameraShake_C4World_C",
+              "ObjectPath": "TslGame/Content/Effects/tooner/Camera/CameraShake_C4World.0"
+            },
+            "InnerRadius": 1000.0,
+            "OuterRadius": 5000.0,
+            "Falloff": 1.0,
+            "bOrientShake": true
+          },
+          {
+            "ShakeClass": {
+              "ObjectName": "BlueprintGeneratedClass CameraShake_C4World_Far_C",
+              "ObjectPath": "TslGame/Content/Effects/tooner/Camera/CameraShake_C4World_Far.0"
+            },
+            "InnerRadius": 2500.0,
+            "OuterRadius": 7500.0,
+            "Falloff": 1.0,
+            "bOrientShake": false
+          }
+        ]
+      },
+      "AudioConfig": {
+        "VisibilitySocket": "HeadPoint",
+        "DirectEffect": {
+          "ObjectName": "AkAudioEvent Tinnitus_Fx_C4_Direct",
+          "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Tinnitus_Fx_C4_Direct.0"
+        },
+        "ProxyEffect": {
+          "ObjectName": "AkAudioEvent Tinnitus_Fx_C4_Proximity",
+          "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Tinnitus_Fx_C4_Proximity.0"
+        },
+        "bUseDirectEffect": true,
+        "bUseProxyEffect": true,
+        "DirectEffectDistance": 2500.0,
+        "ProxyEffectDistance": 3500.0
+      }
+    }
+  }
+]

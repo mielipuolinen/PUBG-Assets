@@ -1,0 +1,42 @@
+[
+  {
+    "Type": "WeaponTrajectoryData",
+    "Name": "WeapG18_WeaponTrajectoryData",
+    "Properties": {
+      "RecoilConfig": {
+        "VerticalRecoilVariation": 0.05,
+        "VerticalRecoveryModifier": 0.2,
+        "VerticalRecoveryClamp": 8.0,
+        "VerticalRecoveryMax": 2.0,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_Pistol_G18",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_Pistol_G18.0"
+        },
+        "BulletsPerSwitch": 1,
+        "RecoilSpeed_Vertical": 15.0,
+        "RecoilSpeed_Horizontal": 12.0,
+        "RecoverySpeed_Vertical": 11.0,
+        "RecoilValue_Climb": 0.18,
+        "RecoilValue_Fall": 2.0,
+        "RecoilModifier_Prone": 0.7,
+        "RecoilModifier_Vehicle": 1.0,
+        "RecoilHorizontalMinScalar": 0.15,
+        "VehicleRecoilScalar": 0.5
+      },
+      "TrajectoryConfig": {
+        "InitialSpeed": 375.0,
+        "HitDamage": 23.0,
+        "BallisticCurve": null,
+        "RangeModifier": 0.83,
+        "ReferenceDistance": 75.0,
+        "TravelDistanceMax": 1000.0,
+        "bUseAdvancedBallistics": false,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
+        },
+        "WeaponSpread": 3.5
+      }
+    }
+  }
+]

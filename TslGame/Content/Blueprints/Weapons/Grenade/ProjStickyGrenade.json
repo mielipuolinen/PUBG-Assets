@@ -1,0 +1,1609 @@
+[
+  {
+    "Type": "IntProperty",
+    "Name": "BreachWallInstanceIndex",
+    "Outer": "ProjStickyGrenade_C",
+    "Next": null,
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "BreachWall",
+    "Outer": "ProjStickyGrenade_C",
+    "Next": {
+      "ObjectName": "IntProperty ProjStickyGrenade_C:BreachWallInstanceIndex",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.0"
+    },
+    "PropertyFlags": 65541,
+    "PropertyClass": {
+      "ObjectName": "Class TslInstancedDestructibleSurfaceComponent",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Tinnitus_Direct",
+    "Outer": "ProjStickyGrenade_C",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:BreachWall",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.1"
+    },
+    "PropertyFlags": 65541,
+    "PropertyClass": {
+      "ObjectName": "Class AkAudioEvent",
+      "ObjectPath": "/Script/AkAudio"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Tinnitus_Proximity",
+    "Outer": "ProjStickyGrenade_C",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:Tinnitus_Direct",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.2"
+    },
+    "PropertyFlags": 65541,
+    "PropertyClass": {
+      "ObjectName": "Class AkAudioEvent",
+      "ObjectPath": "/Script/AkAudio"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LocalShooterCharacter",
+    "Outer": "ProjStickyGrenade_C",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:Tinnitus_Proximity",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.3"
+    },
+    "PropertyFlags": 67589,
+    "PropertyClass": {
+      "ObjectName": "Class TslCharacter",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "ExplodeLocation",
+    "Outer": "ProjStickyGrenade_C",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:LocalShooterCharacter",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.4"
+    },
+    "PropertyFlags": 65541,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Temp_object_Variable",
+    "Outer": "Temp_object_Variable",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Temp_object_Variable2",
+    "Outer": "Temp_object_Variable2",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "K2Node_MakeArray_Array",
+    "Next": null,
+    "Enum": {
+      "ObjectName": "Enum EObjectTypeQuery",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "K2Node_MakeArray_Array2",
+    "Outer": "K2Node_MakeArray_Array2",
+    "Next": null,
+    "Enum": {
+      "ObjectName": "Enum EObjectTypeQuery",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_SphereOverlapActors_OutActors",
+    "Outer": "CallFunc_SphereOverlapActors_OutActors",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_EqualEqual_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.11"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess2",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_IsValid_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.12"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Instanced_Destructible_Surface_Component",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_DynamicCast_bSuccess2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.13"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class TslInstancedDestructibleSurfaceComponent",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_TraceEnd",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_DynamicCast_AsTsl_Instanced_Destructible_Surface_Component",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.14"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_TraceStart",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_TraceEnd",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.15"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_BreakHitResult_FaceIndex",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_TraceStart",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.16"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_BreakHitResult_HitItem",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "IntProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_FaceIndex",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.17"
+    }
+  },
+  {
+    "Type": "NameProperty",
+    "Name": "CallFunc_BreakHitResult_HitBoneName",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "IntProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_HitItem",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.18"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_HitComponent",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "NameProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_HitBoneName",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.19"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class PrimitiveComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_HitActor",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_HitComponent",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.20"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_PhysMat",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_HitActor",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.21"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class PhysicalMaterial",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_ImpactNormal",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_PhysMat",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.22"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_Normal",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_ImpactNormal",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.23"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_ImpactPoint",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_Normal",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.24"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_Location",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_ImpactPoint",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.25"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakHitResult_Time",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_Location",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.26"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "FloatProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_Time",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.27"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BreakHitResult_bBlockingHit",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_bInitialOverlap",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.28"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "K2Node_CustomEvent_InstanceIndex",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BreakHitResult_bBlockingHit",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.29"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_Hit",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "IntProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_CustomEvent_InstanceIndex",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.30"
+    },
+    "PropertyFlags": 549755813890,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_NormalImpulse",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_Event_Hit",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.31"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_HitNormal",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_Event_NormalImpulse",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.32"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_HitLocation",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_Event_HitNormal",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.33"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_Event_bSelfMoved",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_Event_HitLocation",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.34"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OtherComp",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_Event_bSelfMoved",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.35"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class PrimitiveComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_Other",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_Event_OtherComp",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.36"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_MyComp",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_Event_Other",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.37"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class PrimitiveComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanAND_ReturnValue2",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_Event_MyComp",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.38"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_PostEventAtLocation_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BooleanAND_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.39"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Not_PreBool_ReturnValue2",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "IntProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_PostEventAtLocation_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.40"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Select_Default",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_Not_PreBool_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.41"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class AkAudioEvent",
+      "ObjectPath": "/Script/AkAudio"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "Temp_bool_True_if_break_was_hit_Variable",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_Select_Default",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.42"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "Temp_bool_Variable",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.Temp_bool_True_if_break_was_hit_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.43"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanOR_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.Temp_bool_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.44"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_LineTraceSingleForObjects_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BooleanOR_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.45"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_LineTraceSingleForObjects_OutHit",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_LineTraceSingleForObjects_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.46"
+    },
+    "PropertyFlags": 549755813888,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_LineTraceSingleForObjects_OutHit",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.47"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_Less_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.48"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanAND_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "IntProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_Array_Length_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.49"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Not_PreBool_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_BooleanAND_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.50"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsLocalOrSpectating_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_Not_PreBool_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.51"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsUnderwater_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_IsLocalOrSpectating_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.52"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_GreaterEqual_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_IsUnderwater_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.53"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_GreaterEqual_FloatFloat_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.54"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Character",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_DynamicCast_bSuccess",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.55"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class TslCharacter",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_VSize_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_DynamicCast_AsTsl_Character",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.56"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "FloatProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_VSize_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.57"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_Array_Get_Item",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.58"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_SphereOverlapActors_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_Subtract_VectorVector_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.59"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "CallFunc_SphereOverlapActors_OutActors",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_SphereOverlapActors_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.60"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_SphereOverlapActors_OutActors.CallFunc_SphereOverlapActors_OutActors",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.10"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetSocketLocation_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_SphereOverlapActors_OutActors",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.61"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array2",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_GetSocketLocation_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.62"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "ByteProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_MakeArray_Array2.K2Node_MakeArray_Array2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.9"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_MakeArray_Array2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.63"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "ByteProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_MakeArray_Array.K2Node_MakeArray_Array",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.8"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_MakeArray_Array",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.64"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_Event_Radius",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_K2_GetActorLocation_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.65"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_Impact",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "FloatProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_Event_Radius",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.66"
+    },
+    "PropertyFlags": 549755813890,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_Rotation",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_Event_Impact",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.67"
+    },
+    "PropertyFlags": 2,
+    "Struct": {
+      "ObjectName": "ScriptStruct Rotator",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_Location",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_Event_Rotation",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.68"
+    },
+    "PropertyFlags": 2,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "Temp_object_Variable2",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_Event_Location",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.69"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.Temp_object_Variable2.Temp_object_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.7"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.Temp_object_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.70"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_HasAuthority_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "IntProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_Add_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.71"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Loop_Counter_Variable",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.CallFunc_HasAuthority_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.72"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "Temp_object_Variable",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "IntProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.Temp_int_Loop_Counter_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.73"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.Temp_object_Variable.Temp_object_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.6"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Array_Index_Variable",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.Temp_object_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.74"
+    }
+  },
+  {
+    "Type": "DelegateProperty",
+    "Name": "K2Node_CreateDelegate_OutputDelegate",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "IntProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.Temp_int_Array_Index_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.75"
+    },
+    "SignatureFunction": {
+      "ObjectName": "DelegateFunction DestructibleComponentDestroyed__DelegateSignature",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ProjStickyGrenade",
+    "Next": {
+      "ObjectName": "DelegateProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.K2Node_CreateDelegate_OutputDelegate",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.76"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ProjStickyGrenade",
+    "Outer": "ProjStickyGrenade_C",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExplodeLocation",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.5"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade.EntryPoint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.77"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "InstanceIndex",
+    "Outer": "DestroyMe",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "DestroyMe",
+    "Outer": "ProjStickyGrenade_C",
+    "Next": {
+      "ObjectName": "Function ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.78"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty ProjStickyGrenade_C:DestroyMe.InstanceIndex",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.79"
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Hit",
+    "Outer": "ReceiveHit",
+    "Next": null,
+    "PropertyFlags": 549890032002,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "NormalImpulse",
+    "Outer": "ReceiveHit",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ReceiveHit.Hit",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.81"
+    },
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "HitNormal",
+    "Outer": "ReceiveHit",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ReceiveHit.NormalImpulse",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.82"
+    },
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "HitLocation",
+    "Outer": "ReceiveHit",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ReceiveHit.HitNormal",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.83"
+    },
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "bSelfMoved",
+    "Outer": "ReceiveHit",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ReceiveHit.HitLocation",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.84"
+    },
+    "PropertyFlags": 128,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OtherComp",
+    "Outer": "ReceiveHit",
+    "Next": {
+      "ObjectName": "BoolProperty ProjStickyGrenade_C:ReceiveHit.bSelfMoved",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.85"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class PrimitiveComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Other",
+    "Outer": "ReceiveHit",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ReceiveHit.OtherComp",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.86"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "MyComp",
+    "Outer": "ReceiveHit",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStickyGrenade_C:ReceiveHit.Other",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.87"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class PrimitiveComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveHit",
+    "Outer": "ProjStickyGrenade_C",
+    "Next": {
+      "ObjectName": "Function ProjStickyGrenade_C:DestroyMe",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.80"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:ReceiveHit",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty ProjStickyGrenade_C:ReceiveHit.MyComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.88"
+      }
+    ],
+    "FunctionFlags": 138545152
+  },
+  {
+    "Type": "Function",
+    "Name": "OverrideExplosionDelay",
+    "Outer": "ProjStickyGrenade_C",
+    "Next": {
+      "ObjectName": "Function ProjStickyGrenade_C:ReceiveHit",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.89"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function TslProjectile:OverrideExplosionDelay",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "FunctionFlags": 201852928
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Radius",
+    "Outer": "ExplodeBP",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Impact",
+    "Outer": "ExplodeBP",
+    "Next": {
+      "ObjectName": "FloatProperty ProjStickyGrenade_C:ExplodeBP.Radius",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.91"
+    },
+    "PropertyFlags": 549890032002,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Rotation",
+    "Outer": "ExplodeBP",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExplodeBP.Impact",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.92"
+    },
+    "PropertyFlags": 134218114,
+    "Struct": {
+      "ObjectName": "ScriptStruct Rotator",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Location",
+    "Outer": "ExplodeBP",
+    "Next": {
+      "ObjectName": "StructProperty ProjStickyGrenade_C:ExplodeBP.Rotation",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.93"
+    },
+    "PropertyFlags": 134218114,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExplodeBP",
+    "Outer": "ProjStickyGrenade_C",
+    "Next": {
+      "ObjectName": "Function ProjStickyGrenade_C:OverrideExplosionDelay",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.90"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function TslProjectile:ExplodeBP",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ProjStickyGrenade_C:ExplodeBP.Location",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.94"
+      }
+    ],
+    "FunctionFlags": 138938368
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "ProjStickyGrenade_C",
+    "Next": {
+      "ObjectName": "Function ProjStickyGrenade_C:ExplodeBP",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.95"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ProjStickyGrenade_C",
+    "Next": {
+      "ObjectName": "Function ProjStickyGrenade_C:UserConstructionScript",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.96"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ProjStickyGrenade_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ProjStickyGrenade_C:SimpleConstructionScript_0__57659476",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.105"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty ProjStickyGrenade_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.97"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.78"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslProjectile",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ProjStickyGrenade_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.97"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ProjStickyGrenade": {
+        "ObjectName": "Function ProjStickyGrenade_C:ExecuteUbergraph_ProjStickyGrenade",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.78"
+      },
+      "DestroyMe": {
+        "ObjectName": "Function ProjStickyGrenade_C:DestroyMe",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.80"
+      },
+      "ReceiveHit": {
+        "ObjectName": "Function ProjStickyGrenade_C:ReceiveHit",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.89"
+      },
+      "OverrideExplosionDelay": {
+        "ObjectName": "Function ProjStickyGrenade_C:OverrideExplosionDelay",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.90"
+      },
+      "ExplodeBP": {
+        "ObjectName": "Function ProjStickyGrenade_C:ExplodeBP",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.95"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function ProjStickyGrenade_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.96"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ProjStickyGrenade_C Default__ProjStickyGrenade_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.99"
+    }
+  },
+  {
+    "Type": "ProjStickyGrenade_C",
+    "Name": "Default__ProjStickyGrenade_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ExplodeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "Tinnitus_Proximity": {
+        "ObjectName": "AkAudioEvent Tinnitus_Fx_Frag_Proximity",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Tinnitus_Fx_Frag_Proximity.0"
+      },
+      "Tinnitus_Direct": {
+        "ObjectName": "AkAudioEvent Tinnitus_Fx_Frag_Direct",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Tinnitus_Fx_Frag_Direct.0"
+      },
+      "MovementComp": {
+        "ObjectName": "TslProjectileMovementComponent Default__ProjStickyGrenade_C:ProjectileComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.109"
+      },
+      "CollisionComp": {
+        "ObjectName": "SphereComponent Default__ProjStickyGrenade_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.107"
+      },
+      "ParticleComp": {
+        "ObjectName": "ParticleSystemComponent Default__ProjStickyGrenade_C:ParticleComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.101"
+      },
+      "MeshComp": {
+        "ObjectName": "StaticMeshComponent Default__ProjStickyGrenade_C:MeshComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.108"
+      },
+      "InterpolationTargetComp": {
+        "ObjectName": "SphereComponent Default__ProjStickyGrenade_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.106"
+      },
+      "ConstraintComp": {
+        "ObjectName": "PhysicsConstraintComponent Default__ProjStickyGrenade_C:MeshConstraint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.102"
+      },
+      "MeshInitialRotationRate": {
+        "X": -0.9,
+        "Y": 0.0,
+        "Z": 0.4
+      },
+      "ExplosionTracer": {
+        "bEnabled": true
+      },
+      "ProjectileParticleClass": "EProjectileParticleClass::PPC_Frag",
+      "ExplosionRotationType": "EProjectileExplosionRotationType::ProjectileForwardVector",
+      "ExplosionTemplate": {
+        "ObjectName": "BlueprintGeneratedClass ProjStickyBomb_Explosion_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyBomb_Explosion.24"
+      },
+      "ExplosionTemplateInAir": {
+        "ObjectName": "BlueprintGeneratedClass ProjStickyBomb_Explosion_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyBomb_Explosion.24"
+      },
+      "ExplosionTemplateInWater": {
+        "ObjectName": "BlueprintGeneratedClass ProjStickyBomb_Explosion_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyBomb_Explosion.24"
+      },
+      "ExplosionTemplateDestroyedWall": {
+        "ObjectName": "BlueprintGeneratedClass ProjStickyBomb_WallExplosion_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyBomb_WallExplosion.24"
+      },
+      "ImpactSound": {
+        "ObjectName": "AkAudioEvent StickyBomb_Adhere",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/StickyBomb/StickyBomb_Adhere.0"
+      },
+      "AkComp": {
+        "ObjectName": "AkComponent Default__ProjStickyGrenade_C:AkComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.100"
+      },
+      "ProjectileConfig": {
+        "ExplosionDamage": 300,
+        "ExplosionRadius": 400.0,
+        "IgniteFuelInRadius": 200.0,
+        "DamageCurve": {
+          "ObjectName": "CurveFloat StickyBombDamageCurve",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/StickyBombDamageCurve.0"
+        },
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgTypeExplosion_StickyBomb_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgTypeExplosion_StickyBomb.0"
+        },
+        "bExplodeOnDamage": true,
+        "ExplodeFromDamageTypes": [
+          "EDamageTypeCategory::Damage_Explosion",
+          "EDamageTypeCategory::Damage_Explosion_Grenade",
+          "EDamageTypeCategory::Damage_Explosion_RedZone",
+          "EDamageTypeCategory::Damage_Explosion_Vehicle",
+          "EDamageTypeCategory::Damage_Explosion_JerryCan",
+          "EDamageTypeCategory::Damage_Explosion_C4",
+          "EDamageTypeCategory::Damage_Explosion_StickyBomb",
+          "EDamageTypeCategory::Damage_Explosion_PanzerFaustWarhead",
+          "EDamageTypeCategory::Damage_Explosion_PanzerFaustBackBlast",
+          "EDamageTypeCategory::Damage_Explosion_BlackZone"
+        ],
+        "bAttachToHitActor": true,
+        "AttachToPhysicalMaterials": [
+          88,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          70,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          81,
+          1,
+          0
+        ],
+        "IgnoreAttachActorClasses": [
+          {
+            "ObjectName": "Class DroppedItem",
+            "ObjectPath": "/Script/TslGame"
+          },
+          {
+            "ObjectName": "Class TslEmPickupVehicle",
+            "ObjectPath": "/Script/TslGame"
+          },
+          {
+            "ObjectName": "Class TslDrone",
+            "ObjectPath": "/Script/TslGame"
+          },
+          {
+            "ObjectName": "Class TslBicycleVehicle",
+            "ObjectPath": "/Script/TslGame"
+          }
+        ],
+        "bShouldCheckMovementBase": false,
+        "DamageCauserIcon": {
+          "ObjectName": "Texture2D weapons_sticky_grenade",
+          "ObjectPath": "TslGame/Content/UI/Weapon/weapons_sticky_grenade.0"
+        },
+        "DamageIconRatio": 1.12,
+        "DamageCauserItemName": {
+          "TableId": "/Game/Item/Weapon/NS_WEAPONNAME.NS_WEAPONNAME",
+          "Key": "K_UXU_02"
+        }
+      },
+      "PreExplosionSound": {
+        "ObjectName": "AkAudioEvent StickyBomb_PreExplosion",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/StickyBomb/StickyBomb_PreExplosion.0"
+      },
+      "PreExplosionTime": 2.0,
+      "RootComponent": {
+        "ObjectName": "SphereComponent Default__ProjStickyGrenade_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.107"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkComp",
+    "Outer": "Default__ProjStickyGrenade_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjStickyGrenade_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.107"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleComp",
+    "Outer": "Default__ProjStickyGrenade_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent Default__ProjStickyGrenade_C:MeshComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.108"
+      },
+      "bAutoActivate": true
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "MeshConstraint",
+    "Outer": "Default__ProjStickyGrenade_C",
+    "Properties": {
+      "ConstraintInstance": {
+        "ProfileInstance": {
+          "ProjectionLinearTolerance": 0.1,
+          "ProjectionAngularTolerance": 1.0
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjStickyGrenade_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.106"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_1",
+    "Outer": "ProjStickyGrenade_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0__57659476",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ProjStickyGrenade_C:SceneComponent_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.103"
+      },
+      "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0__57659476",
+    "Outer": "ProjStickyGrenade_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ProjStickyGrenade_C:SimpleConstructionScript_0__57659476.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.104"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "InterpolationTarget",
+    "Outer": "Default__ProjStickyGrenade_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjStickyGrenade_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.107"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__ProjStickyGrenade_C",
+    "Properties": {
+      "BodyInstance": {
+        "MassInKgOverride": 0.61551815
+      },
+      "OnComponentHit": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "ProjStickyGrenade_C Default__ProjStickyGrenade_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.99"
+            },
+            "FunctionName": "OnHit"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "MeshComp",
+    "Outer": "Default__ProjStickyGrenade_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Sticky_Drop_E2_Projectile",
+        "ObjectPath": "TslGame/Content/Weapon/Grenades/Sticky/Sticky_Drop_E2_Projectile.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant Sticky_Drop_RedBlink_Armed",
+          "ObjectPath": "TslGame/Content/Weapon/Grenades/Sticky/Materials/Sticky_Drop_RedBlink_Armed.0"
+        }
+      ],
+      "bApplyImpulseOnDamage": false,
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bUseCCD": true,
+        "AngularDamping": 1.0,
+        "PhysMaterialOverride": {
+          "ObjectName": "PhysicalMaterial PhysMat_Grenade",
+          "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Grenade.0"
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "RelativeScale3D": {
+        "X": 1.4,
+        "Y": 1.4,
+        "Z": 1.4
+      },
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": 180.0
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjStickyGrenade_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStickyGrenade.106"
+      }
+    }
+  },
+  {
+    "Type": "TslProjectileMovementComponent",
+    "Name": "ProjectileComp",
+    "Outer": "Default__ProjStickyGrenade_C",
+    "Properties": {
+      "SlidingFriction_Speed_In": {
+        "X": 0.0,
+        "Y": 300.0
+      },
+      "SlidingFriction_Speed_Out": {
+        "X": 0.48,
+        "Y": 1.0
+      },
+      "InitialSpeed": 1500.0,
+      "MaxSpeed": 4000.0,
+      "bShouldBounce": true,
+      "bInitialVelocityInLocalSpace": false,
+      "bForceSubStepping": true,
+      "Bounciness": 0.1,
+      "Friction": 0.7,
+      "BounceVelocityStopSimulatingThreshold": 1.0
+    }
+  }
+]

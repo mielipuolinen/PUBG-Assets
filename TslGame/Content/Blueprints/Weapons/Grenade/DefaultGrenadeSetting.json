@@ -1,0 +1,175 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DefaultGrenadeSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript DefaultGrenadeSetting_C:SimpleConstructionScript_4",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslWeapon_Throwable",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DefaultGrenadeSetting_C Default__DefaultGrenadeSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.1"
+    }
+  },
+  {
+    "Type": "DefaultGrenadeSetting_C",
+    "Name": "Default__DefaultGrenadeSetting_C",
+    "Properties": {
+      "ThrowableConfig": {
+        "StandAnim": {
+          "PinOff": {
+            "ObjectName": "AnimMontage w3_pinoff_Montage",
+            "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Throwing/w3_pinoff_Montage.0"
+          },
+          "Release": {
+            "ObjectName": "AnimMontage w3_release_Montage",
+            "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Throwing/w3_release_Montage.0"
+          }
+        },
+        "CrouchAnim": {
+          "PinOff": {
+            "ObjectName": "AnimMontage w3_pinoff_Montage",
+            "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Throwing/w3_pinoff_Montage.0"
+          },
+          "Release": {
+            "ObjectName": "AnimMontage w3_release_Montage",
+            "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Throwing/w3_release_Montage.0"
+          }
+        },
+        "ProneAnim": {
+          "PinOff": {
+            "ObjectName": "AnimMontage w3_Prone_pinoff_Montage",
+            "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Throwing/w3_Prone_pinoff_Montage.0"
+          },
+          "Release": {
+            "ObjectName": "AnimMontage w3_Prone_release_Montage",
+            "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Throwing/w3_Prone_release_Montage.0"
+          }
+        },
+        "SpeedCurve": {
+          "ObjectName": "CurveFloat SpeedCurve",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/SpeedCurve.0"
+        },
+        "PitchCurve": {
+          "ObjectName": "CurveFloat PitchCurve",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/PitchCurve.0"
+        },
+        "ThrowCooldownDuration": 1.0
+      },
+      "ThrowWeaponSocketName": "GrenadeThrowSocket",
+      "PawnMotionContributionMultiplier": {
+        "X": 1.0,
+        "Y": 0.1,
+        "Z": 1.0
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__DefaultGrenadeSetting_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.6"
+      },
+      "MuzzleAttachPoint": "MuzzleFlashSocket",
+      "FireForceFeedback": {
+        "ObjectName": "TslForceFeedbackEffect TslFFE_Fire",
+        "ObjectPath": "TslGame/Content/Effects/ForceFeedback/TslFFE_Fire.0"
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_Thrown": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_Throw_Montage",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Rifle_Combat_Stand_THrow_Montage.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__DefaultGrenadeSetting_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__DefaultGrenadeSetting_C",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "DefaultGrenadeSetting_C Default__DefaultGrenadeSetting_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_3",
+    "Outer": "DefaultGrenadeSetting_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_4",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent DefaultGrenadeSetting_C:SceneComponent_3",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.3"
+      },
+      "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_4",
+    "Outer": "DefaultGrenadeSetting_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node DefaultGrenadeSetting_C:SimpleConstructionScript_4.SCS_Node_4",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__DefaultGrenadeSetting_C",
+    "Properties": {
+      "bLightAttachmentsAsGroup": true,
+      "BodyInstance": {
+        "MassInKgOverride": 0.0
+      },
+      "CanCharacterStepUpOn": "ECB_Yes",
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": -90.0
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__DefaultGrenadeSetting_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.2"
+      }
+    }
+  }
+]

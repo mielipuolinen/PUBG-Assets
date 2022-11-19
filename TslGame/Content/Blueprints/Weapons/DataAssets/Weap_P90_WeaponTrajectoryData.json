@@ -1,0 +1,55 @@
+[
+  {
+    "Type": "WeaponTrajectoryData",
+    "Name": "Weap_P90_WeaponTrajectoryData",
+    "Properties": {
+      "RecoilConfig": {
+        "VerticalRecoilVariation": 0.05,
+        "VerticalRecoveryModifier": 0.59,
+        "VerticalRecoveryClamp": 5.0,
+        "VerticalRecoveryMax": 1.8,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_SMG_P90",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_SMG_P90.0"
+        },
+        "RecoilSpeed_Vertical": 11.0,
+        "RecoilSpeed_Horizontal": 10.5,
+        "RecoverySpeed_Vertical": 7.0,
+        "RecoilValue_Climb": 0.4,
+        "RecoilValue_Fall": 2.0,
+        "RecoilModifier_Prone": 0.7,
+        "RecoilHorizontalMinScalar": 0.63,
+        "RecoilStartTimeInMap": {
+          "X": 0.1,
+          "Y": 0.25
+        },
+        "RecoilStartTimeOutMap": {
+          "X": 0.0,
+          "Y": 0.025
+        },
+        "RecoilBlendInOutMap": {
+          "X": 0.0,
+          "Y": 0.05
+        }
+      },
+      "TrajectoryConfig": {
+        "InitialSpeed": 716.0,
+        "HitDamage": 35.0,
+        "BallisticCurve": {
+          "ObjectName": "CurveVector C_Ballistic_P90",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/BallisticData/C_Ballistic_P90.0"
+        },
+        "RangeModifier": 0.89,
+        "ReferenceDistance": 200.0,
+        "TravelDistanceMax": 1000.0,
+        "VDragCoefficient": 0.68,
+        "BDS": 0.8,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
+        },
+        "WeaponSpread": 4.5
+      }
+    }
+  }
+]

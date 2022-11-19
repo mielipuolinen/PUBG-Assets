@@ -1,0 +1,155 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapBrick_C",
+    "Super": "DefaultGrenadeSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapBrick_C:SimpleConstructionScript_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBrick.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultGrenadeSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapBrick_C Default__WeapBrick_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBrick.1"
+    }
+  },
+  {
+    "Type": "WeapBrick_C",
+    "Name": "Default__WeapBrick_C",
+    "Template": "Default__DefaultGrenadeSetting_C",
+    "Properties": {
+      "ThrowableConfig": {
+        "ProjectileClass": {
+          "ObjectName": "BlueprintGeneratedClass ProjBrick_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBrick.0"
+        },
+        "ExplosionStartType": "EProjectileExplosionStartType::Impact",
+        "ExplosionDelay": 0.0,
+        "FireDelay": 0.4,
+        "StandAnim": {
+          "PinOff": null
+        },
+        "CrouchAnim": {
+          "PinOff": null
+        },
+        "ProneAnim": {
+          "PinOff": null
+        },
+        "ThrowTime": 1.3,
+        "ThrowCooldownDuration": 1.5,
+        "bCanBeCooked": false
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_apple",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_apple.0"
+      },
+      "WeaponIconRatio": 0.68,
+      "WeaponConfig": {
+        "SocketOffset_Hand": {
+          "X": 0.0,
+          "Y": -2.0,
+          "Z": 0.0
+        },
+        "WeaponClass": "EWeaponClass::Class_Throwable"
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapBrick_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBrick.6"
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapBrick_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DataAssets/WeapBrick_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapBrick_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBrick.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapBrick_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapBrick_C Default__WeapBrick_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBrick.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapBrick_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapBrick_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBrick.3"
+      },
+      "VariableGuid": "028EC49A-48E4171F-BF4E70B7-59BAFBFD",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "WeapBrick_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapBrick_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBrick.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapBrick_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh Brick_s",
+        "ObjectPath": "TslGame/Content/Weapon/Grenades/Brick/Brick_s.0"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapBrick_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBrick.2"
+      }
+    }
+  }
+]

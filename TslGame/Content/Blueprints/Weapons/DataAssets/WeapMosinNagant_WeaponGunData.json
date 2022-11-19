@@ -1,0 +1,144 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapMosinNagant_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_762mm_C",
+        "TracerClass": {
+          "ObjectName": "ParticleSystem P_Tracer1",
+          "ObjectPath": "TslGame/Content/Export_Marek/Tracer/P_Tracer1.10"
+        },
+        "AmmoPerClip": 5,
+        "TimeBetweenShots": 1.55,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperLarge",
+              "UpperSmall",
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleSniperRifle"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+            "AttachableTags": [
+              "StockSniperRifle",
+              "StockSniperRifleBullet"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+            "AttachableTags": [
+              "RMR"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 2.0,
+        "BurstShots": 1,
+        "FiringBulletsSpread": 1.0,
+        "ReloadMethod": "EWeaponReloadMethod::OneByOneAndClip",
+        "WeaponLength": 59.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffset": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 4.0
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 1.8,
+          "Y": 0.4,
+          "Z": 1.6
+        },
+        "bManualCycleAfterShot": true
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 3.7,
+        "DeviationBaseAim": 1.3,
+        "MOA": 0.7,
+        "DeviationRecoilGain": 1.3,
+        "DeviationRecoilGainAim": 0.8,
+        "DeviationRecoilGainADS": 0.02,
+        "DeviationMax": 8.0,
+        "DeviationMaxMove": 2.5,
+        "DeviationMoveMultiplier": 1.5
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_Mosin_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mosin/Redux/Weapon_Mosin_Grip_RD.0"
+        },
+        "CharacterFireCycle": {
+          "ObjectName": "AnimMontage CharacterWeapon_Mosin_BoltAction_1_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mosin/Redux/CharacterWeapon_Mosin_BoltAction_1_Montage_RD.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage CharacterWeapon_Mosin_Reload_StartLoopEnd_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mosin/Redux/CharacterWeapon_Mosin_Reload_StartLoopEnd_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage CharacterWeapon_Mosin_ReloadFast_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mosin/Redux/CharacterWeapon_Mosin_ReloadFast_Montage_RD.0"
+        },
+        "CharacterReloadByOneStart": {
+          "ObjectName": "AnimMontage CharacterWeapon_Mosin_Reload_StartLoopEnd_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mosin/Redux/CharacterWeapon_Mosin_Reload_StartLoopEnd_Montage_RD.0"
+        },
+        "CharacterReloadByOneStop": {
+          "ObjectName": "AnimMontage CharacterWeapon_Mosin_Reload_StartLoopEnd_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mosin/Redux/CharacterWeapon_Mosin_Reload_StartLoopEnd_Montage_RD.0"
+        },
+        "CharacterReloadByOneSingle": {
+          "ObjectName": "AnimMontage CharacterWeapon_Mosin_Reload_StartLoopEnd_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mosin/Redux/CharacterWeapon_Mosin_Reload_StartLoopEnd_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationCharge": 4.0,
+        "ReloadDurationStart": 1.69,
+        "ReloadDurationLoop": 0.75,
+        "ReloadDurationMagOut": 0.4,
+        "bUseBoltAction": true,
+        "FireCycleDelay": 0.275,
+        "FireCycleDuration": 1.36,
+        "bCycleAfterLastShot": false,
+        "bCycleDuringReload": true,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Sniper_762_Kar98_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Sniper_762_Kar98.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Sniper_762_Kar98_Ironsight_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Sniper_762_Kar98_Ironsight.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Sniper_762_Kar98_Scope_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Sniper_762_Kar98_Scope.0"
+        },
+        "CycleCameraAnim": {
+          "ObjectName": "CameraAnim CSA_Sniper_Kar98_Cycle",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CSA_Sniper_Kar98_Cycle.0"
+        },
+        "RecoilKickADS": 0.12,
+        "MagDropLinearVelocity": {
+          "X": 400.0,
+          "Y": 260.0,
+          "Z": 60.0
+        }
+      },
+      "ConsoleWeaponRecoilData": {
+        "ObjectName": "WeaponGunRecoilData WeapKar98k_RecoilDataConsole",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapKar98k_RecoilDataConsole.0"
+      }
+    }
+  }
+]

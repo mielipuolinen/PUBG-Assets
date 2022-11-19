@@ -1,0 +1,172 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapUziPro_C",
+    "Super": "WeapUZI_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapUziPro_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUziPro.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass WeapUZI_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUZI.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapUziPro_C Default__WeapUziPro_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUziPro.1"
+    }
+  },
+  {
+    "Type": "WeapUziPro_C",
+    "Name": "Default__WeapUziPro_C",
+    "Template": "Default__WeapUZI_C",
+    "Properties": {
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapUZIPro_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapUZIPro_WeaponGunData.0"
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapUziPro_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUziPro.6"
+      },
+      "AttachmentPositionData": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentPoint": "Magazine_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MagazineMedium",
+              "AttachmentPoint": "Magazine_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+          "AttachmentPoint": "Muzzle_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MuzzleMedium",
+              "AttachmentPoint": "Muzzle_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+          "AttachmentPoint": "Stock_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "StockUZI",
+              "AttachmentPoint": "Stock_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentPoint": "Upper_Small",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "UpperSmall",
+              "AttachmentPoint": "Upper_Small"
+            },
+            {
+              "AttachmentTag": "UpperReddot",
+              "AttachmentPoint": "Upper_Small"
+            },
+            {
+              "AttachmentTag": "UpperHolo",
+              "AttachmentPoint": "Upper_Small"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+          "AttachmentPoint": "Upper_Angled",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "RMR",
+              "AttachmentPoint": "Upper_Angled"
+            }
+          ]
+        }
+      ],
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapUziPro_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUziPro.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapUziPro_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapUziPro_C Default__WeapUziPro_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUziPro.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapUziPro_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapUziPro_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUziPro.3"
+      },
+      "VariableGuid": "FB5F038E-481E4CDC-79B7D2BD-9115AB8D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapUziPro_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapUziPro_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUziPro.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapUziPro_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapUziPro_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapUziPro.2"
+      }
+    }
+  }
+]

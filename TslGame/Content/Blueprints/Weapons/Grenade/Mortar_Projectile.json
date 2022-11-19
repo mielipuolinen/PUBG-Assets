@@ -1,0 +1,278 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Mortar_Projectile_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript Mortar_Projectile_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Mortar_Projectile.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslProjectile_Warhead",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Mortar_Projectile_C Default__Mortar_Projectile_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Mortar_Projectile.1"
+    }
+  },
+  {
+    "Type": "Mortar_Projectile_C",
+    "Name": "Default__Mortar_Projectile_C",
+    "Properties": {
+      "ProjectileMovementComp": {
+        "ObjectName": "TslProjectileMovementComponent Default__Mortar_Projectile_C:ProjectileMovementComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Mortar_Projectile.9"
+      },
+      "MeshComp": {
+        "ObjectName": "StaticMeshComponent Default__Mortar_Projectile_C:MeshComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Mortar_Projectile.8"
+      },
+      "CollisionComp": {
+        "ObjectName": "SphereComponent Default__Mortar_Projectile_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Mortar_Projectile.7"
+      },
+      "ProjectileConfig": {
+        "ExplosionDamage": 350,
+        "ExplosionRadius": 1200.0,
+        "IgniteFuelInRadius": 500.0,
+        "DamageCurve": {
+          "ObjectName": "CurveFloat MortarDamageCurve",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/MortarDamageCurve.0"
+        },
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgTypeExplosion_MortarWarhead_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgTypeExplosion_MortarWarhead.0"
+        },
+        "ExplosionTemplate": {
+          "ObjectName": "BlueprintGeneratedClass ProjMortar_Explosion_C",
+          "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Mortar/ProjMortar_Explosion.26"
+        },
+        "ExplosionTemplateWater": {
+          "ObjectName": "BlueprintGeneratedClass ProjMortar_Water_C",
+          "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Mortar/ProjMortar_Water.8"
+        },
+        "ExplosionTemplatePenetration": {
+          "ObjectName": "BlueprintGeneratedClass ProjMortar_Penetration_C",
+          "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Mortar/ProjMortar_Penetration.9"
+        },
+        "ExplosionDamageVehicleArmorPenetration": 150,
+        "DamageTypeVehicleArmorPenetration": {
+          "ObjectName": "BlueprintGeneratedClass DmgTypeExplosion_MortarWarheadVehiclePenetration_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgTypeExplosion_MortarWarheadVehiclePenetration.0"
+        },
+        "DamageCauserIcon": {
+          "ObjectName": "Texture2D weapons_mortar",
+          "ObjectPath": "TslGame/Content/UI/Weapon/weapons_mortar.0"
+        },
+        "DamageIconRatio": 3.08,
+        "DamageCauserItemName": {
+          "TableId": "/Game/Item/Weapon/NS_WEAPONNAME.NS_WEAPONNAME",
+          "Key": "K_UXU_14"
+        },
+        "DamageCauserClass": "EWeaponClass::Class_Mortar",
+        "ConeShapeDamageMultiplier": 1.0,
+        "RotationSpeed": 1500.0,
+        "ExplosionTracer": {
+          "bEnabled": true
+        },
+        "bShouldPenetrate": true,
+        "TrailPostExplodeLifetime": 20.0
+      },
+      "AkComp": {
+        "ObjectName": "AkComponent Default__Mortar_Projectile_C:AkComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Mortar_Projectile.2"
+      },
+      "bUseBackTraceHit": false,
+      "InterpolationTargetComp": {
+        "ObjectName": "SphereComponent Default__Mortar_Projectile_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Mortar_Projectile.6"
+      },
+      "TrailEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass ProjMortar_Trail_C",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Mortar/ProjMortar_Trail.0"
+      },
+      "bReplicates": true,
+      "RootComponent": {
+        "ObjectName": "SphereComponent Default__Mortar_Projectile_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Mortar_Projectile.7"
+      },
+      "NetUpdateFrequency": 5.0,
+      "bAlwaysRelevant": true,
+      "bReplicateMovement": true,
+      "InitialLifeSpan": 150.0
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkComp",
+    "Outer": "Default__Mortar_Projectile_C",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent Weapon_Mortar_FlyBy",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/Mortar/Weapon_Mortar_FlyBy.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__Mortar_Projectile_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Mortar_Projectile.7"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Mortar_Projectile_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent Mortar_Projectile_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Mortar_Projectile.3"
+      },
+      "VariableGuid": "1AFF89E1-40D8D623-22134B9E-7EAC811B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Mortar_Projectile_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node Mortar_Projectile_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Mortar_Projectile.4"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "InterpolationTarget",
+    "Outer": "Default__Mortar_Projectile_C",
+    "Properties": {
+      "CanCharacterStepUpOn": "ECB_No",
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__Mortar_Projectile_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Mortar_Projectile.7"
+      },
+      "bCanEverAffectNavigation": false
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__Mortar_Projectile_C",
+    "Properties": {
+      "SphereRadius": 9.0,
+      "CanCharacterStepUpOn": "ECB_No",
+      "bCanEverAffectNavigation": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "MeshComp",
+    "Outer": "Default__Mortar_Projectile_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SM_MortarBomb",
+        "ObjectPath": "TslGame/Content/Weapon/Mortar/Meshes/SM_MortarBomb.1"
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Grenade",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "InteractiveObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "ObjectType": "ECC_GameTraceChannel4"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__Mortar_Projectile_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Mortar_Projectile.6"
+      },
+      "bCanEverAffectNavigation": false
+    }
+  },
+  {
+    "Type": "TslProjectileMovementComponent",
+    "Name": "ProjectileMovementComp",
+    "Outer": "Default__Mortar_Projectile_C",
+    "Properties": {
+      "InitialSpeed": 14820.0,
+      "MaxSpeed": 14820.0,
+      "bRotationFollowsVelocity": true,
+      "bForceSubStepping": true,
+      "ProjectileGravityScale": 3.2,
+      "MaxSimulationTimeStep": 0.1,
+      "bReplicates": true
+    }
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapMk47Mutant_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_762mm_C",
+        "TracerClass": {
+          "ObjectName": "ParticleSystem P_Tracer_Mini14",
+          "ObjectPath": "TslGame/Content/Export_Marek/Tracer/P_Tracer_Mini14.10"
+        },
+        "TimeBetweenShots": 0.1,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperSmall",
+              "UpperReddot",
+              "UpperHolo",
+              "UpperLarge"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::LowerRail",
+            "AttachableTags": [
+              "LowerDefault"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+            "AttachableTags": [
+              "MagazineLarge"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleLarge"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+            "AttachableTags": [
+              "RMR"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+            "AttachableTags": [
+              "StockAssaultRifle"
+            ]
+          }
+        ],
+        "bUseTimeBetweenBursts": true,
+        "NoAnimReloadDuration": 3.1,
+        "FiringModes": [
+          "EFiringMode::Normal",
+          "EFiringMode::Burst"
+        ],
+        "BurstShots": 2,
+        "BurstDelay": 0.070588,
+        "FiringBulletsSpread": 1.0,
+        "WeaponLength": 40.0,
+        "HandWeaponOffsetFPP": {
+          "X": 4.0,
+          "Y": -1.0,
+          "Z": 3.0
+        },
+        "ReloadSpeedScalar": 0.9
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 3.5,
+        "DeviationBaseAim": 1.45,
+        "MOA": 1.5,
+        "DeviationRecoilGain": 1.4,
+        "DeviationRecoilGainAim": 0.9,
+        "DeviationRecoilGainADS": 0.022,
+        "DeviationMax": 8.0,
+        "DeviationMaxMove": 3.5,
+        "DeviationMoveMaxReferenceVelocity": 300.0
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_Mk47_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Weapon_Mk47_Grip_RD.0"
+        },
+        "CharacterLHGripBlendspace": {
+          "ObjectName": "BlendSpace Weapon_Mk47_LH_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Weapon_Mk47_LH_Grip_RD.0"
+        },
+        "CharacterFireSelector": {
+          "ObjectName": "AnimMontage Character_Weapon_Mk47_Firemode_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Character_Weapon_Mk47_Firemode_Montage_RD.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage Character_Weapon_Mk47_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Character_Weapon_Mk47_Reload_Tactical_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage Character_Weapon_Mk47_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Character_Weapon_Mk47_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponReloadTactical": {
+          "ObjectName": "AnimMontage Weapon_Mk47_Reload_Tactical_FPP_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Weapon_RD/Weapon_Mk47_Reload_Tactical_FPP_Montage_RD.0"
+        },
+        "WeaponReloadCharge": {
+          "ObjectName": "AnimMontage Weapon_Mk47_Reload_Charge_FPP_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Weapon_RD/Weapon_Mk47_Reload_Charge_FPP_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 2.7,
+        "ReloadDurationCharge": 3.35,
+        "ReloadDurationMagOut": 0.4,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_762_Mutant_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_762_Mutant.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_762_Mutant_Ironsight_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_762_Mutant_Ironsight.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_762_Mutant_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_762_Mutant_ADS.0"
+        },
+        "RecoilKickADS": 0.9,
+        "RecoilKick_MovementMaxMultiplier": 1.3,
+        "MagDropLinearVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -320.0
+        },
+        "MagDropAngularVelocity": {
+          "X": 1.0,
+          "Y": 4.0,
+          "Z": 35.0
+        },
+        "bUseBurstRecoilMap": true,
+        "BurstRecoilInMap": {
+          "X": 0.55,
+          "Y": 2.4
+        },
+        "BurstRecoilOutMap": {
+          "X": 0.2,
+          "Y": 0.8
+        }
+      }
+    }
+  }
+]

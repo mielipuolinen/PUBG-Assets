@@ -1,0 +1,2181 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "InitialTraceArray",
+    "Outer": "InitialTraceArray",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct Rotator",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "ConfirmedHitArray",
+    "Outer": "ConfirmedHitArray",
+    "Next": null,
+    "PropertyFlags": 549755813888,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SpreadCompArray",
+    "Outer": "SpreadCompArray",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class SphereComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ClassProperty",
+    "Name": "DamageFieldClass",
+    "Outer": "ProjMolotov_C",
+    "Next": null,
+    "PropertyFlags": 65541,
+    "PropertyClass": {
+      "ObjectName": "Class Class",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "MetaClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "MaxMaterialAdditiveCount",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "ClassProperty ProjMolotov_C:DamageFieldClass",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.3"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "MaterialAdditiveInstanceCount",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:MaxMaterialAdditiveCount",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.4"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "InstanceCountMax",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:MaterialAdditiveInstanceCount",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.5"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "ActorSpawnerIndex",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:InstanceCountMax",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.6"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "SpreadLenZ",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:ActorSpawnerIndex",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.7"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "SpreadLenXY",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "FloatProperty ProjMolotov_C:SpreadLenZ",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.8"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "StepsPerTick",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "FloatProperty ProjMolotov_C:SpreadLenXY",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.9"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "DirectionIndex",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:StepsPerTick",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.10"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "SpreadIndex",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:DirectionIndex",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.11"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "SpreadCompArray",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:SpreadIndex",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.12"
+    },
+    "PropertyFlags": 65541,
+    "Inner": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:SpreadCompArray.SpreadCompArray",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.2"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "bHitArrayProcessed",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjMolotov_C:SpreadCompArray",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.13"
+    },
+    "PropertyFlags": 65541,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "ConfirmedHitArray",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:bHitArrayProcessed",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.14"
+    },
+    "PropertyFlags": 549755879429,
+    "Inner": {
+      "ObjectName": "StructProperty ProjMolotov_C:ConfirmedHitArray.ConfirmedHitArray",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.1"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "bInitialTraceComplete",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjMolotov_C:ConfirmedHitArray",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.15"
+    },
+    "PropertyFlags": 65541,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "InitialTraceArray",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:bInitialTraceComplete",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.16"
+    },
+    "PropertyFlags": 65541,
+    "Inner": {
+      "ObjectName": "StructProperty ProjMolotov_C:InitialTraceArray.InitialTraceArray",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "PotatoCapsule",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjMolotov_C:InitialTraceArray",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.17"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class CapsuleComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "DelegateProperty",
+    "Name": "K2Node_CreateDelegate_OutputDelegate",
+    "Outer": "ExecuteUbergraph_ProjMolotov",
+    "Next": null,
+    "SignatureFunction": {
+      "ObjectName": "DelegateFunction OnEnterWater__DelegateSignature",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_HasAuthority_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjMolotov",
+    "Next": {
+      "ObjectName": "DelegateProperty ProjMolotov_C:ExecuteUbergraph_ProjMolotov.K2Node_CreateDelegate_OutputDelegate",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.19"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_CustomEvent_ActorLoc",
+    "Outer": "ExecuteUbergraph_ProjMolotov",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:ExecuteUbergraph_ProjMolotov.CallFunc_HasAuthority_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.20"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_CustomEvent_Vel",
+    "Outer": "ExecuteUbergraph_ProjMolotov",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:ExecuteUbergraph_ProjMolotov.K2Node_CustomEvent_ActorLoc",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.21"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_Event_Radius",
+    "Outer": "ExecuteUbergraph_ProjMolotov",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:ExecuteUbergraph_ProjMolotov.K2Node_CustomEvent_Vel",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.22"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_Impact",
+    "Outer": "ExecuteUbergraph_ProjMolotov",
+    "Next": {
+      "ObjectName": "FloatProperty ProjMolotov_C:ExecuteUbergraph_ProjMolotov.K2Node_Event_Radius",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.23"
+    },
+    "PropertyFlags": 549755813890,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_Rotation",
+    "Outer": "ExecuteUbergraph_ProjMolotov",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:ExecuteUbergraph_ProjMolotov.K2Node_Event_Impact",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.24"
+    },
+    "PropertyFlags": 2,
+    "Struct": {
+      "ObjectName": "ScriptStruct Rotator",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_Location",
+    "Outer": "ExecuteUbergraph_ProjMolotov",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:ExecuteUbergraph_ProjMolotov.K2Node_Event_Rotation",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.25"
+    },
+    "PropertyFlags": 2,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ProjMolotov",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:ExecuteUbergraph_ProjMolotov.K2Node_Event_Location",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.26"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ProjMolotov",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:PotatoCapsule",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.18"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty ProjMolotov_C:ExecuteUbergraph_ProjMolotov.EntryPoint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.27"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "Function",
+    "Name": "OnEnterWater_Event_0",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "Function ProjMolotov_C:ExecuteUbergraph_ProjMolotov",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.28"
+    },
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "ActorLoc",
+    "Outer": "Multi_TickSpread",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Vel",
+    "Outer": "Multi_TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:Multi_TickSpread.ActorLoc",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.30"
+    },
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "Multi_TickSpread",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "Function ProjMolotov_C:OnEnterWater_Event_0",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.29"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ProjMolotov_C:Multi_TickSpread.Vel",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.31"
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Radius",
+    "Outer": "ExplodeBP",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Impact",
+    "Outer": "ExplodeBP",
+    "Next": {
+      "ObjectName": "FloatProperty ProjMolotov_C:ExplodeBP.Radius",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.33"
+    },
+    "PropertyFlags": 549890032002,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Rotation",
+    "Outer": "ExplodeBP",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:ExplodeBP.Impact",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.34"
+    },
+    "PropertyFlags": 134218114,
+    "Struct": {
+      "ObjectName": "ScriptStruct Rotator",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Location",
+    "Outer": "ExplodeBP",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:ExplodeBP.Rotation",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.35"
+    },
+    "PropertyFlags": 134218114,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExplodeBP",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "Function ProjMolotov_C:Multi_TickSpread",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.32"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function TslProjectile:ExplodeBP",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ProjMolotov_C:ExplodeBP.Location",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.36"
+      }
+    ],
+    "FunctionFlags": 138938368
+  },
+  {
+    "Type": "Function",
+    "Name": "SimulationVolumetricSpreadTick_BP",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "Function ProjMolotov_C:ExplodeBP",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.37"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function TslProjectileMolotov:SimulationVolumetricSpreadTick_BP",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "Function ProjMolotov_C:SimulationVolumetricSpreadTick_BP",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.38"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:ReceiveBeginPlay",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsForKoreanRating_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsForChineseLicensing_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:UserConstructionScript.CallFunc_IsForKoreanRating_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.40"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "Function ProjMolotov_C:ReceiveBeginPlay",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.39"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty ProjMolotov_C:UserConstructionScript.CallFunc_IsForChineseLicensing_ReturnValue",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.41"
+      }
+    ],
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Temp_object_Variable",
+    "Outer": "Temp_object_Variable",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "K2Node_MakeArray_Array",
+    "Next": null,
+    "Enum": {
+      "ObjectName": "Enum EObjectTypeQuery",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_SphereOverlapComponents_OutComponents",
+    "Outer": "CallFunc_SphereOverlapComponents_OutComponents",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class PrimitiveComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Not_PreBool_ReturnValue",
+    "Outer": "AddSphereColl",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetWorldTransform_SweepHitResult",
+    "Outer": "AddSphereColl",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:AddSphereColl.CallFunc_Not_PreBool_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.46"
+    },
+    "PropertyFlags": 549755813888,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_SphereOverlapComponents_ReturnValue",
+    "Outer": "AddSphereColl",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:AddSphereColl.CallFunc_K2_SetWorldTransform_SweepHitResult",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.47"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "CallFunc_SphereOverlapComponents_OutComponents",
+    "Outer": "AddSphereColl",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:AddSphereColl.CallFunc_SphereOverlapComponents_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.48"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:AddSphereColl.CallFunc_SphereOverlapComponents_OutComponents.CallFunc_SphereOverlapComponents_OutComponents",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.45"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Add_ReturnValue",
+    "Outer": "AddSphereColl",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjMolotov_C:AddSphereColl.CallFunc_SphereOverlapComponents_OutComponents",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.49"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "AddSphereColl",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:AddSphereColl.CallFunc_Array_Add_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.50"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "ByteProperty ProjMolotov_C:AddSphereColl.K2Node_MakeArray_Array.K2Node_MakeArray_Array",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.44"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_AddComponent_ReturnValue",
+    "Outer": "AddSphereColl",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjMolotov_C:AddSphereColl.K2Node_MakeArray_Array",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.51"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class SphereComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeTransform_ReturnValue2",
+    "Outer": "AddSphereColl",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:AddSphereColl.CallFunc_AddComponent_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.52"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Transform",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeTransform_ReturnValue",
+    "Outer": "AddSphereColl",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:AddSphereColl.CallFunc_MakeTransform_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.53"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Transform",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "Temp_object_Variable",
+    "Outer": "AddSphereColl",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:AddSphereColl.CallFunc_MakeTransform_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.54"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:AddSphereColl.Temp_object_Variable.Temp_object_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.43"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Loc",
+    "Outer": "AddSphereColl",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjMolotov_C:AddSphereColl.Temp_object_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.55"
+    },
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "AddSphereColl",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "Function ProjMolotov_C:UserConstructionScript",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.42"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ProjMolotov_C:AddSphereColl.Loc",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.56"
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Temp_object_Variable",
+    "Outer": "Temp_object_Variable",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "K2Node_MakeArray_Array",
+    "Next": null,
+    "Enum": {
+      "ObjectName": "Enum EObjectTypeQuery",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "K2Node_MakeArray_Array2",
+    "Outer": "K2Node_MakeArray_Array2",
+    "Next": null,
+    "Enum": {
+      "ObjectName": "Enum EObjectTypeQuery",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Temp_object_Variable2",
+    "Outer": "Temp_object_Variable2",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Add_VectorVector_ReturnValue5",
+    "Outer": "TickSpread",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanAND_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue5",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.62"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_BooleanAND_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.63"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_GreaterEqual_FloatFloat_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_EqualEqual_ByteByte_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.64"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Z",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_GreaterEqual_FloatFloat_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.65"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Y",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "FloatProperty ProjMolotov_C:TickSpread.CallFunc_BreakVector_Z",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.66"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_X",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "FloatProperty ProjMolotov_C:TickSpread.CallFunc_BreakVector_Y",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.67"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_TraceEnd2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "FloatProperty ProjMolotov_C:TickSpread.CallFunc_BreakVector_X",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.68"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_TraceStart2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_TraceEnd2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.69"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_BreakHitResult_FaceIndex2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_TraceStart2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.70"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_BreakHitResult_HitItem2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_FaceIndex2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.71"
+    }
+  },
+  {
+    "Type": "NameProperty",
+    "Name": "CallFunc_BreakHitResult_HitBoneName2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_HitItem2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.72"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_HitComponent2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "NameProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_HitBoneName2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.73"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class PrimitiveComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_HitActor2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_HitComponent2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.74"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_PhysMat2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_HitActor2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.75"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class PhysicalMaterial",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_ImpactNormal2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_PhysMat2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.76"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_Normal2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_ImpactNormal2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.77"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_ImpactPoint2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_Normal2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.78"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_Location2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_ImpactPoint2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.79"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakHitResult_Time2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_Location2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.80"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BreakHitResult_bInitialOverlap2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "FloatProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_Time2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.81"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BreakHitResult_bBlockingHit2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_bInitialOverlap2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.82"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_LineTraceSingleForObjects_ReturnValue2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_bBlockingHit2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.83"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_LineTraceSingleForObjects_OutHit2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_LineTraceSingleForObjects_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.84"
+    },
+    "PropertyFlags": 549755813888,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Not_PreBool_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_LineTraceSingleForObjects_OutHit2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.85"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Add_VectorVector_ReturnValue4",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_Not_PreBool_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.86"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_VLerp_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.87"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Array_IsValidIndex_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_VLerp_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.88"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_TraceEnd",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_Array_IsValidIndex_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.89"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_TraceStart",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_TraceEnd",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.90"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_BreakHitResult_FaceIndex",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_TraceStart",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.91"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_BreakHitResult_HitItem",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_FaceIndex",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.92"
+    }
+  },
+  {
+    "Type": "NameProperty",
+    "Name": "CallFunc_BreakHitResult_HitBoneName",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_HitItem",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.93"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_HitComponent",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "NameProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_HitBoneName",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.94"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class PrimitiveComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_HitActor",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_HitComponent",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.95"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_PhysMat",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_HitActor",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.96"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class PhysicalMaterial",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_ImpactNormal",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_PhysMat",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.97"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_Normal",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_ImpactNormal",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.98"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_ImpactPoint",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_Normal",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.99"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_Location",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_ImpactPoint",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.100"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakHitResult_Time",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_Location",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.101"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "FloatProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_Time",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.102"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BreakHitResult_bBlockingHit",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_bInitialOverlap",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.103"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_LineTraceSingleForObjects_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_BreakHitResult_bBlockingHit",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.104"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_LineTraceSingleForObjects_OutHit",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_LineTraceSingleForObjects_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.105"
+    },
+    "PropertyFlags": 549755813888,
+    "Struct": {
+      "ObjectName": "ScriptStruct HitResult",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Add_VectorVector_ReturnValue3",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_LineTraceSingleForObjects_OutHit",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.106"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Add_VectorVector_ReturnValue2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.107"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.108"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Add_VectorVector_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_LessEqual_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.109"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_GetComponentLocation_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.110"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_K2_GetComponentLocation_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.111"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class SphereComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Multiply_VectorFloat_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:TickSpread.CallFunc_Array_Get_Item",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.112"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Conv_RotatorToVector_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_Multiply_VectorFloat_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.113"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "Temp_object_Variable2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_Conv_RotatorToVector_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.114"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:TickSpread.Temp_object_Variable2.Temp_object_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.61"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeRotator_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjMolotov_C:TickSpread.Temp_object_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.115"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Rotator",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Multiply_IntFloat_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_MakeRotator_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.116"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "FloatProperty ProjMolotov_C:TickSpread.CallFunc_Multiply_IntFloat_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.117"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "ByteProperty ProjMolotov_C:TickSpread.K2Node_MakeArray_Array2.K2Node_MakeArray_Array2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.60"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeVector_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjMolotov_C:TickSpread.K2Node_MakeArray_Array2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.118"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue6",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickSpread.CallFunc_MakeVector_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.119"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:TickSpread.CallFunc_Add_IntInt_ReturnValue6",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.120"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "ByteProperty ProjMolotov_C:TickSpread.K2Node_MakeArray_Array.K2Node_MakeArray_Array",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.59"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue5",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjMolotov_C:TickSpread.K2Node_MakeArray_Array",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.121"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:TickSpread.CallFunc_Add_IntInt_ReturnValue5",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.122"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue4",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_GreaterEqual_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.123"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue3",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:TickSpread.CallFunc_Add_IntInt_ReturnValue4",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.124"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_HasAuthority_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:TickSpread.CallFunc_Add_IntInt_ReturnValue3",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.125"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "Temp_object_Variable",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_HasAuthority_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.126"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:TickSpread.Temp_object_Variable.Temp_object_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.58"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "ArrayProperty ProjMolotov_C:TickSpread.Temp_object_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.127"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Clamp_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickSpread.CallFunc_Less_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.128"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue2",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:TickSpread.CallFunc_Clamp_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.129"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:TickSpread.CallFunc_Add_IntInt_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.130"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "LocalTicker",
+    "Outer": "TickSpread",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:TickSpread.CallFunc_Add_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.131"
+    },
+    "PropertyFlags": 1
+  },
+  {
+    "Type": "Function",
+    "Name": "TickSpread",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "Function ProjMolotov_C:AddSphereColl",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.57"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty ProjMolotov_C:TickSpread.LocalTicker",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.132"
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_FinishSpawningActor_ReturnValue",
+    "Outer": "TickActorSpawner",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+    "Outer": "TickActorSpawner",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:TickActorSpawner.CallFunc_FinishSpawningActor_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.134"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_GetComponentToWorld_ReturnValue",
+    "Outer": "TickActorSpawner",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:TickActorSpawner.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.135"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Transform",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "TickActorSpawner",
+    "Next": {
+      "ObjectName": "StructProperty ProjMolotov_C:TickActorSpawner.CallFunc_K2_GetComponentToWorld_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.136"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class SphereComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Array_IsValidIndex_ReturnValue",
+    "Outer": "TickActorSpawner",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjMolotov_C:TickActorSpawner.CallFunc_Array_Get_Item",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.137"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue",
+    "Outer": "TickActorSpawner",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_C:TickActorSpawner.CallFunc_Array_IsValidIndex_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.138"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_HasAuthority_ReturnValue",
+    "Outer": "TickActorSpawner",
+    "Next": {
+      "ObjectName": "IntProperty ProjMolotov_C:TickActorSpawner.CallFunc_Add_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.139"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "Function",
+    "Name": "TickActorSpawner",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "Function ProjMolotov_C:TickSpread",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.133"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty ProjMolotov_C:TickActorSpawner.CallFunc_HasAuthority_ReturnValue",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.140"
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "Function",
+    "Name": "DisableParticle",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "Function ProjMolotov_C:TickActorSpawner",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.141"
+    },
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ProjMolotov_C",
+    "Next": {
+      "ObjectName": "Function ProjMolotov_C:DisableParticle",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.142"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ProjMolotov_C",
+    "Properties": {
+      "ComponentTemplates": [
+        {
+          "ObjectName": "SphereComponent ProjMolotov_C:NODE_AddSphereComponent-1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.156"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ProjMolotov_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.153"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty ProjMolotov_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.143"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function ProjMolotov_C:ExecuteUbergraph_ProjMolotov",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.28"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslProjectileMolotov",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ProjMolotov_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.143"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ProjMolotov": {
+        "ObjectName": "Function ProjMolotov_C:ExecuteUbergraph_ProjMolotov",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.28"
+      },
+      "OnEnterWater_Event_0": {
+        "ObjectName": "Function ProjMolotov_C:OnEnterWater_Event_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.29"
+      },
+      "Multi_TickSpread": {
+        "ObjectName": "Function ProjMolotov_C:Multi_TickSpread",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.32"
+      },
+      "ExplodeBP": {
+        "ObjectName": "Function ProjMolotov_C:ExplodeBP",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.37"
+      },
+      "SimulationVolumetricSpreadTick_BP": {
+        "ObjectName": "Function ProjMolotov_C:SimulationVolumetricSpreadTick_BP",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.38"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function ProjMolotov_C:ReceiveBeginPlay",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.39"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function ProjMolotov_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.42"
+      },
+      "AddSphereColl": {
+        "ObjectName": "Function ProjMolotov_C:AddSphereColl",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.57"
+      },
+      "TickSpread": {
+        "ObjectName": "Function ProjMolotov_C:TickSpread",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.133"
+      },
+      "TickActorSpawner": {
+        "ObjectName": "Function ProjMolotov_C:TickActorSpawner",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.141"
+      },
+      "DisableParticle": {
+        "ObjectName": "Function ProjMolotov_C:DisableParticle",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.142"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ProjMolotov_C Default__ProjMolotov_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.145"
+    }
+  },
+  {
+    "Type": "ProjMolotov_C",
+    "Name": "Default__ProjMolotov_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "InitialTraceArray": [
+        {
+          "Pitch": 0.0,
+          "Yaw": 0.0,
+          "Roll": 0.0
+        },
+        {
+          "Pitch": 0.0,
+          "Yaw": -30.0,
+          "Roll": 0.0
+        },
+        {
+          "Pitch": 0.0,
+          "Yaw": 30.0,
+          "Roll": 0.0
+        },
+        {
+          "Pitch": -30.0,
+          "Yaw": 0.0,
+          "Roll": 0.0
+        },
+        {
+          "Pitch": 30.0,
+          "Yaw": 0.0,
+          "Roll": 0.0
+        }
+      ],
+      "StepsPerTick": 1,
+      "SpreadLenXY": 175.0,
+      "SpreadLenZ": 40.0,
+      "InstanceCountMax": 22,
+      "MaxMaterialAdditiveCount": 5,
+      "DamageFieldClass": {
+        "ObjectName": "BlueprintGeneratedClass ProjMolotov_DamageField_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.3"
+      },
+      "MolotovSimulation": "EMolotovSimulationType::Molotov_SimulationVolumetric",
+      "FireTrailEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass P_MolotovBottleFlame_BP_C",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_MolotovBottleFlame_BP.6"
+      },
+      "SimulationTickTime": 0.2,
+      "EffectControllerClass": {
+        "ObjectName": "BlueprintGeneratedClass BP_FireEffectController_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_FireEffectController.0"
+      },
+      "DamageFieldContainerTemplate": {
+        "ObjectName": "BlueprintGeneratedClass ProjMolotov_DamageFieldContainer_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldContainer.2"
+      },
+      "DamageFieldContainerInWallTemplate": {
+        "ObjectName": "BlueprintGeneratedClass ProjMolotov_DamageFieldContainerInWall_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldContainerInWall.2"
+      },
+      "FragmentProjectileClass": {
+        "ObjectName": "BlueprintGeneratedClass ProjMolotov_Fragment_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.0"
+      },
+      "DirectDebuff": {
+        "ObjectName": "BlueprintGeneratedClass BP_MolotovFireDebuff_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/BP_MolotovFireDebuff.2"
+      },
+      "MovementComp": {
+        "ObjectName": "TslProjectileMovementComponent Default__ProjMolotov_C:ProjectileComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.158"
+      },
+      "CollisionComp": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.155"
+      },
+      "ParticleComp": {
+        "ObjectName": "ParticleSystemComponent Default__ProjMolotov_C:ParticleComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.148"
+      },
+      "MeshComp": {
+        "ObjectName": "StaticMeshComponent Default__ProjMolotov_C:MeshComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.157"
+      },
+      "InterpolationTargetComp": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.154"
+      },
+      "ConstraintComp": {
+        "ObjectName": "PhysicsConstraintComponent Default__ProjMolotov_C:MeshConstraint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.149"
+      },
+      "MeshInitialRotationRate": {
+        "X": 0.0,
+        "Y": 1.6,
+        "Z": 0.2
+      },
+      "ProjectileParticleClass": "EProjectileParticleClass::PPC_Molotov",
+      "ExplosionInWater": false,
+      "ExplosionTemplate": {
+        "ObjectName": "BlueprintGeneratedClass ProjMolotov_Explosion_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Explosion.6"
+      },
+      "ExplosionTemplateInAir": {
+        "ObjectName": "BlueprintGeneratedClass ProjMolotov_ExplosionInAir_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_ExplosionInAir.6"
+      },
+      "ExplosionTemplateDestroyedWall": {
+        "ObjectName": "BlueprintGeneratedClass ProjMolotov_Explosion_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Explosion.6"
+      },
+      "AkComp": {
+        "ObjectName": "AkComponent Default__ProjMolotov_C:AkComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.146"
+      },
+      "PostExplodeLifetime": 0.25,
+      "ProjectileConfig": {
+        "ProjectileLife": 30.0,
+        "ExplosionDamage": 20,
+        "ExplosionRadius": 100.0,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Molotov_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Molotov.0"
+        },
+        "bExplodeOnDamage": true,
+        "bExplodeOnBreachable": true
+      },
+      "RootComponent": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.155"
+      },
+      "PrimaryActorTick": {
+        "bAllowTickOnDedicatedServer": true
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkComp",
+    "Outer": "Default__ProjMolotov_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.155"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "PotatoCapsule_GEN_VARIABLE",
+    "Outer": "ProjMolotov_C",
+    "Properties": {
+      "CapsuleHalfHeight": 22.0,
+      "CapsuleRadius": 8.0,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "InteractiveObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CrosshairImpact",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Grenade",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "ObjectType": "ECC_GameTraceChannel2"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "bVisible": false,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 3.9519262
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleComp",
+    "Outer": "Default__ProjMolotov_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent Default__ProjMolotov_C:MeshComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.157"
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "MeshConstraint",
+    "Outer": "Default__ProjMolotov_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.154"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "ProjMolotov_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ProjMolotov_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.150"
+      },
+      "VariableGuid": "04C2B595-45B6CBB2-91C0F58E-32CCDD40",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class CapsuleComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "CapsuleComponent ProjMolotov_C:PotatoCapsule_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.147"
+      },
+      "ParentComponentOrVariableName": "MeshComp",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "715CF5D9-44596BF1-0EC9E1B1-76A6B8B7",
+      "InternalVariableName": "PotatoCapsule"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "ProjMolotov_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node ProjMolotov_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.152"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node ProjMolotov_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.152"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ProjMolotov_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.151"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "InterpolationTarget",
+    "Outer": "Default__ProjMolotov_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.155"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__ProjMolotov_C",
+    "Properties": {
+      "OnComponentHit": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "ProjMolotov_C Default__ProjMolotov_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.145"
+            },
+            "FunctionName": "OnHit"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "NODE_AddSphereComponent-1",
+    "Outer": "ProjMolotov_C",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "MeshComp",
+    "Outer": "Default__ProjMolotov_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Molotov_01_Projectile",
+        "ObjectPath": "TslGame/Content/Weapon/Grenades/Molotov/Molotov_01_Projectile.1"
+      },
+      "BodyInstance": {
+        "PhysMaterialOverride": {
+          "ObjectName": "PhysicalMaterial PhysMat_Grass",
+          "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Grass.0"
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -3.0
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.154"
+      }
+    }
+  },
+  {
+    "Type": "TslProjectileMovementComponent",
+    "Name": "ProjectileComp",
+    "Outer": "Default__ProjMolotov_C",
+    "Properties": {
+      "InitialSpeed": 1300.0,
+      "MaxSpeed": 4000.0,
+      "bShouldBounce": true,
+      "bInitialVelocityInLocalSpace": false,
+      "bBounceAngleAffectsFriction": true,
+      "Bounciness": 0.0,
+      "Friction": 1.0
+    }
+  }
+]

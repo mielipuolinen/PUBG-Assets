@@ -1,0 +1,317 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapMk47Mutant_C",
+    "Super": "DefaultRifleSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapMk47Mutant_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMk47Mutant.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapMk47Mutant_C Default__WeapMk47Mutant_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMk47Mutant.1"
+    }
+  },
+  {
+    "Type": "WeapMk47Mutant_C",
+    "Name": "Default__WeapMk47Mutant_C",
+    "Template": "Default__DefaultRifleSetting_C",
+    "Properties": {
+      "TrailFX": null,
+      "WeaponTrajectoryData": {
+        "ObjectName": "WeaponTrajectoryData WeapMk47Mutant_WeaponTrajectoryData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapMk47Mutant_WeaponTrajectoryData.0"
+      },
+      "WeaponGunPostprocessSettings": {
+        "BlurLevel": 0.6,
+        "ScopeRadiusNear": 0.1,
+        "ScopeRadiusFar": 0.1,
+        "ReticleAngularSize": 15.0,
+        "DepthBlurPower": 1.0,
+        "DepthBlurWhitePoint": 1.0,
+        "DepthBlurBlackPoint": 45.0
+      },
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapMk47Mutant_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapMk47Mutant_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_gun_Mk47Mutant",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_Mk47Mutant.0"
+      },
+      "WeaponIconRatio": 3.28,
+      "WeaponConfig": {
+        "TargetingFOV": 70.0,
+        "HoldBreathFOV": 52.0,
+        "SocketOffset_Shoulder": {
+          "X": 0.0,
+          "Y": 34.0,
+          "Z": -5.0
+        },
+        "SocketOffset_Hand": {
+          "X": 3.0,
+          "Y": 6.0,
+          "Z": 0.5
+        },
+        "WeaponClass": "EWeaponClass::Class_Rifle",
+        "SwayModifier_Movement": 1.0,
+        "IronSightZeroingDistances": [
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          800.0,
+          900.0,
+          1000.0
+        ],
+        "RecoilMontage": {
+          "ObjectName": "AnimMontage Rifle_Recoil_762_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Recoil/Rifle_Recoil_762_Montage.0"
+        },
+        "WeaponEquipDuration": 0.2,
+        "WeaponUnequipDuration": 0.4,
+        "WeaponReadyDuration": 0.4,
+        "PhysicalBodyHitImpactPower": 10000.0
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapMk47Mutant_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMk47Mutant.6"
+      },
+      "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
+      "AttachmentPositionData": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentPoint": "Upper_Small",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "UpperSmall",
+              "AttachmentPoint": "Upper_Small"
+            },
+            {
+              "AttachmentTag": "UpperDefault",
+              "AttachmentPoint": "Upper_Default"
+            },
+            {
+              "AttachmentTag": "UpperReddot",
+              "AttachmentPoint": "Upper_Reddot"
+            },
+            {
+              "AttachmentTag": "UpperHolo",
+              "AttachmentPoint": "Upper_Small"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::LowerRail",
+          "AttachmentPoint": "Lower_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "LowerDefault",
+              "AttachmentPoint": "Lower_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentPoint": "Magazine_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MagazineLarge",
+              "AttachmentPoint": "Magazine_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+          "AttachmentPoint": "Muzzle_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MuzzleLarge",
+              "AttachmentPoint": "Muzzle_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+          "AttachmentPoint": "Upper_Angled",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "RMR",
+              "AttachmentPoint": "Upper_Angled"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+          "AttachmentPoint": "StockAssaultRifle",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "StockAssaultRifle",
+              "AttachmentPoint": "Stock_Default"
+            }
+          ]
+        }
+      ],
+      "DefaultAttachedItemAssets": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentTag": "MagazineDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/Mutant/Meshes/SM_Mutant_Mag_CK47AKS13.SM_Mutant_Mag_CK47AKS13",
+          "AttachmentMeshName": "MagazineDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentTag": "UpperDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/Mutant/Meshes/SM_Mutant_Sight.SM_Mutant_Sight",
+          "AttachmentMeshName": "UpperDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+          "AttachmentTag": "StockAssaultRifle",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/Mutant/Meshes/SM_Mutant_Stock.SM_Mutant_Stock",
+          "AttachmentMeshName": "StockAssaultRifle",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        }
+      ],
+      "WeaponTag": "Mutant",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem P_Muzzle_Mk47Mutant",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Rifle/P_Muzzle_Mk47Mutant.96"
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_Secondary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.5
+        },
+        "EAccessorySlot::Slot_SideArm": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        },
+        "EAccessorySlot::Slot_Primary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapMk47_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapMk47_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapMk47Mutant_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMk47Mutant.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapMk47Mutant_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapMk47Mutant_C Default__WeapMk47Mutant_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMk47Mutant.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapMk47Mutant_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapMk47Mutant_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMk47Mutant.3"
+      },
+      "VariableGuid": "4B1B0ABE-483B9FB5-B48D1D92-B9412BF2",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapMk47Mutant_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapMk47Mutant_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMk47Mutant.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapMk47Mutant_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_Mk47_Mutant_RD_C",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Weapon_RD/ABP_Mk47_Mutant_RD.36"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_Mutant_CK47AKS13",
+        "ObjectPath": "TslGame/Content/Weapon/Rifles/Mutant/Meshes/SK_Mutant_CK47AKS13.0"
+      },
+      "BodyInstance": {
+        "MassInKgOverride": 14.318548
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapMk47Mutant_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMk47Mutant.2"
+      }
+    }
+  }
+]

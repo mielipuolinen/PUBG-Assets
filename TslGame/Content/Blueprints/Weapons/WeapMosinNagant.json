@@ -1,0 +1,295 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapMosinNagant_C",
+    "Super": "DefaultRifleSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapMosinNagant_C:SimpleConstructionScript_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMosinNagant.6"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler WeapMosinNagant_C:InheritableComponentHandler",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMosinNagant.2"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapMosinNagant_C Default__WeapMosinNagant_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMosinNagant.1"
+    }
+  },
+  {
+    "Type": "WeapMosinNagant_C",
+    "Name": "Default__WeapMosinNagant_C",
+    "Template": "Default__DefaultRifleSetting_C",
+    "Properties": {
+      "TrailFX": null,
+      "ImpactTemplate": {
+        "ObjectName": "BlueprintGeneratedClass GunImpact_Sniper_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Sniper.4"
+      },
+      "WeaponTrajectoryData": {
+        "ObjectName": "WeaponTrajectoryData WeapMosinNagant_WeaponTrajectoryData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapMosinNagant_WeaponTrajectoryData.0"
+      },
+      "WeaponGunPostprocessSettings": {
+        "BlurLevel": 0.7,
+        "ScopeRadiusNear": 0.1,
+        "ScopeRadiusFar": 0.1,
+        "DepthBlurPower": 1.0,
+        "DepthBlurWhitePoint": 5.0,
+        "DepthBlurBlackPoint": 55.0
+      },
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapMosinNagant_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapMosinNagant_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_gun_MosinNagant",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_MosinNagant.0"
+      },
+      "WeaponIconRatio": 3.82,
+      "BoneVisibilityPerAttachSlot": [
+        {
+          "Slot": "EWeaponAttachmentSlotID::UpperRail",
+          "BonesToShow": [
+            "Gun_Rails"
+          ],
+          "BonesToHide": []
+        },
+        {
+          "Slot": "EWeaponAttachmentSlotID::Angled",
+          "BonesToShow": [
+            "Gun_Rails"
+          ],
+          "BonesToHide": []
+        }
+      ],
+      "WeaponConfig": {
+        "TargetingFOV": 70.0,
+        "SocketOffset_Shoulder": {
+          "X": 0.0,
+          "Y": 33.0,
+          "Z": 0.0
+        },
+        "SocketOffset_Hand": {
+          "X": 3.0,
+          "Y": 6.0,
+          "Z": 0.5
+        },
+        "WeaponClass": "EWeaponClass::Class_Sniper",
+        "IronSightZeroingDistances": [
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0
+        ],
+        "RecoilMontage": {
+          "ObjectName": "AnimMontage Rifle_Recoil_Sniper_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Recoil/Rifle_Recoil_Sniper_Montage.0"
+        },
+        "WeaponEquipDuration": 0.2,
+        "WeaponUnequipDuration": 0.4,
+        "PhysicalBodyHitImpactPower": 16000.0
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapMosinNagant_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMosinNagant.7"
+      },
+      "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
+      "AttachmentPositionData": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentPoint": "Upper_Small",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "UpperLarge",
+              "AttachmentPoint": "Upper_Large"
+            },
+            {
+              "AttachmentTag": "UpperSmall",
+              "AttachmentPoint": "Upper_Small"
+            },
+            {
+              "AttachmentTag": "UpperReddot",
+              "AttachmentPoint": "Upper_Reddot"
+            },
+            {
+              "AttachmentTag": "UpperHolo",
+              "AttachmentPoint": "Upper_Small"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentPoint": "Magazine_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MagazineSniperRifle",
+              "AttachmentPoint": "Magazine_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+          "AttachmentPoint": "Muzzle_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MuzzleSniperRifle",
+              "AttachmentPoint": "Muzzle_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+          "AttachmentPoint": "StockSniperRifle",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "StockSniperRifle",
+              "AttachmentPoint": "Stock_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+          "AttachmentPoint": "Upper_Angled",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "RMR",
+              "AttachmentPoint": "Upper_Angled"
+            }
+          ]
+        }
+      ],
+      "WeaponTag": "Mosin",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem P_Muzzle_Kar98k",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Sniper/P_Muzzle_Kar98k.75"
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_Secondary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.5
+        },
+        "EAccessorySlot::Slot_SideArm": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        },
+        "EAccessorySlot::Slot_Primary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapMosinNagant_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapMosinNagant_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapMosinNagant_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMosinNagant.3"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "WeapMosinNagant_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapMosinNagant_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapMosinNagant_C Default__WeapMosinNagant_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMosinNagant.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapMosinNagant_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapMosinNagant_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMosinNagant.4"
+      },
+      "VariableGuid": "D6F634D4-4DBF99D6-59773C9A-370D8B0F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "WeapMosinNagant_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapMosinNagant_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMosinNagant.5"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapMosinNagant_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_Mosin_RD_C",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mosin/Redux/Weapon_RD/ABP_Mosin_RD.98"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_Mosin_Set",
+        "ObjectPath": "TslGame/Content/Weapon/Rifles/Mosin/Meshes/SK_Mosin_Set.0"
+      },
+      "BodyInstance": {
+        "MassInKgOverride": 3.4574442
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapMosinNagant_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMosinNagant.3"
+      }
+    }
+  }
+]

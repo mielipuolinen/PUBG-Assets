@@ -1,0 +1,730 @@
+[
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_GunImpact_Med",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_GunImpact_Med",
+    "Outer": "GunImpact_Med_C",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty GunImpact_Med_C:ExecuteUbergraph_GunImpact_Med.EntryPoint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.0"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "GunImpact_Med_C",
+    "Next": {
+      "ObjectName": "Function GunImpact_Med_C:ExecuteUbergraph_GunImpact_Med",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "GunImpact_Med_C",
+    "Next": {
+      "ObjectName": "Function GunImpact_Med_C:UserConstructionScript",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.2"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "GunImpact_Med_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript GunImpact_Med_C:SimpleConstructionScript_0__57659476",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.10"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty GunImpact_Med_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.3"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function GunImpact_Med_C:ExecuteUbergraph_GunImpact_Med",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.1"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslGunImpact",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty GunImpact_Med_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.3"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_GunImpact_Med": {
+        "ObjectName": "Function GunImpact_Med_C:ExecuteUbergraph_GunImpact_Med",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.1"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function GunImpact_Med_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.2"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "GunImpact_Med_C Default__GunImpact_Med_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.5"
+    }
+  },
+  {
+    "Type": "GunImpact_Med_C",
+    "Name": "Default__GunImpact_Med_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "DefaultFX": {
+        "ObjectName": "ParticleSystem P_Impact_Default_Medium",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Default/P_Impact_Default_Medium.38"
+      },
+      "EffectMap": {
+        "204": null,
+        "161": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Rock_Medium",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Rock/P_Impact_Rock_Medium.103"
+        },
+        "215": null,
+        "158": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Water_Medium",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Water/P_Impact_Water_Medium.96"
+        },
+        "219": null,
+        "153": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Wood_Medium",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Wood/P_Impact_Wood_Medium.79"
+        },
+        "222": null,
+        "156": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Grass_Medium",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Grass/P_Impact_Grass_Medium.123"
+        },
+        "205": null,
+        "148": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Blood_Med_New_VAT",
+          "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/SurfaceImpact/Flesh/P_Blood_Med_New_VAT.177"
+        },
+        "206": null,
+        "152": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Crops_Medium",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Crops/P_Impact_Crops_Medium.85"
+        },
+        "209": null,
+        "162": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Paper_Medium",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Paper/P_Impact_Paper_Medium.73"
+        }
+      },
+      "AkSound": {
+        "ObjectName": "AkAudioEvent Impact_MediumBullet",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Impact/Impact_MediumBullet.0"
+      },
+      "AkSound_Ricochet": {
+        "ObjectName": "AkAudioEvent Impact_Ricochet",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Impact/Impact_Ricochet.0"
+      },
+      "bConvertForColorBlind": true,
+      "VectorParameters": null,
+      "DecalEffectDataSet": {
+        "DefaultDecal": {
+          "Size": {
+            "LowerBound": {
+              "Value": 12.0
+            },
+            "UpperBound": {
+              "Value": 14.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "ConcreteDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Concrete",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Concrete.0"
+          },
+          "RicochetMaterial": {
+            "ObjectName": "Material M_BulletScratchDecal_Concrete",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletScratchDecal_Concrete.0"
+          },
+          "Size": {
+            "UpperBound": {
+              "Value": 6.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true,
+          "bUseRicochet": true,
+          "DotProductLongScaleMapOut": {
+            "X": 1.3,
+            "Y": 3.0
+          },
+          "DotProductLatScaleMapOut": {
+            "X": 1.3,
+            "Y": 0.5
+          }
+        },
+        "RockDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Rock",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Rock.0"
+          },
+          "RicochetMaterial": {
+            "ObjectName": "Material M_BulletScratchDecal_Concrete",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletScratchDecal_Concrete.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 3.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true,
+          "bUseRicochet": true,
+          "DotProductLongScaleMapOut": {
+            "X": 1.0,
+            "Y": 3.0
+          },
+          "DotProductLatScaleMapOut": {
+            "X": 0.65,
+            "Y": 0.45
+          }
+        },
+        "DirtDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Dirt",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Dirt.0"
+          },
+          "RicochetMaterial": {
+            "ObjectName": "Material M_BulletScratchDecal_Dirt",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletScratchDecal_Dirt.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true,
+          "bUseRicochet": true,
+          "DotProductLongScaleMapOut": {
+            "X": 1.1,
+            "Y": 3.5
+          },
+          "DotProductLatScaleMapOut": {
+            "X": 0.85,
+            "Y": 0.65
+          }
+        },
+        "SandDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Sand",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Sand.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.5
+            },
+            "UpperBound": {
+              "Value": 12.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "MetalDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Steel",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Steel.0"
+          },
+          "RicochetMaterial": {
+            "ObjectName": "Material M_BulletScratchDecal_Steel",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletScratchDecal_Steel.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 3.5
+            },
+            "UpperBound": {
+              "Value": 4.5
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true,
+          "bUseRicochet": true,
+          "DotProductLongScaleMapOut": {
+            "X": 1.0,
+            "Y": 2.0
+          },
+          "DotProductLatScaleMapOut": {
+            "X": 0.85,
+            "Y": 0.65
+          }
+        },
+        "WoodDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Wood",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Wood.0"
+          },
+          "RicochetMaterial": {
+            "ObjectName": "Material M_BulletScratchDecal_Wood",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletScratchDecal_Wood.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 3.5
+            },
+            "UpperBound": {
+              "Value": 5.5
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true,
+          "bUseRicochet": true,
+          "DotProductLongScaleMapOut": {
+            "X": 1.0,
+            "Y": 4.0
+          },
+          "DotProductLatScaleMapOut": {
+            "X": 0.65,
+            "Y": 0.45
+          }
+        },
+        "GlassDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Glass",
+            "ObjectPath": "TslGame/Content/Assets/Effects/Materials/M_BulletDecal_Glass.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "GrassDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Dirt",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Dirt.0"
+          },
+          "RicochetMaterial": {
+            "ObjectName": "Material M_BulletScratchDecal_Dirt",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletScratchDecal_Dirt.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 6.0
+            },
+            "UpperBound": {
+              "Value": 7.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true,
+          "bUseRicochet": true,
+          "DotProductLongScaleMapOut": {
+            "X": 1.0,
+            "Y": 3.0
+          },
+          "DotProductLatScaleMapOut": {
+            "X": 0.85,
+            "Y": 0.65
+          }
+        },
+        "FleshDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Flesh",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Flesh.0"
+          },
+          "Size": {
+            "UpperBound": {
+              "Value": 6.0
+            }
+          },
+          "NormalFadeAngle": {
+            "LowerBound": {
+              "Value": 0.0
+            },
+            "UpperBound": {
+              "Value": 0.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "CropsDecal": {
+          "Size": {
+            "LowerBound": {
+              "Value": 12.0
+            },
+            "UpperBound": {
+              "Value": 14.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "CactusDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Cactus",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Cactus.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 4.2
+            },
+            "UpperBound": {
+              "Value": 5.6
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "PaperDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Paper",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Paper.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "RubberDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Rubber",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Rubber.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.7
+            },
+            "UpperBound": {
+              "Value": 8.8
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "FabricDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Fabric",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Fabric.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 5.8
+            },
+            "UpperBound": {
+              "Value": 6.5
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "SnowDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_snow",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_snow.0"
+          },
+          "RicochetMaterial": {
+            "ObjectName": "Material M_BulletScratchDecal_snow",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletScratchDecal_snow.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.7
+            },
+            "UpperBound": {
+              "Value": 8.8
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true,
+          "bUseRicochet": true,
+          "DotProductLongScaleMapOut": {
+            "X": 1.5,
+            "Y": 3.0
+          },
+          "DotProductLatScaleMapOut": {
+            "X": 1.25,
+            "Y": 0.95
+          }
+        },
+        "SnowRockDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Rock",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Rock.0"
+          },
+          "RicochetMaterial": {
+            "ObjectName": "Material M_BulletScratchDecal_Concrete",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletScratchDecal_Concrete.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 3.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true,
+          "bUseRicochet": true,
+          "DotProductLongScaleMapOut": {
+            "X": 1.0,
+            "Y": 3.0
+          },
+          "DotProductLatScaleMapOut": {
+            "X": 0.65,
+            "Y": 0.45
+          }
+        },
+        "IceDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Ice",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Ice.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 9.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "TargetDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_Target",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_Target.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 10.8
+            },
+            "UpperBound": {
+              "Value": 12.0
+            }
+          },
+          "FadeStartDelay": 120.0,
+          "FadeDuration": 1.5
+        },
+        "BulletproofShieldDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_BulletShield",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_BulletShield.0"
+          },
+          "RicochetMaterial": {
+            "ObjectName": "Material M_BulletScratchDecal_BulletShield",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletScratchDecal_BulletShield.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 4.4
+            },
+            "UpperBound": {
+              "Value": 5.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true,
+          "DotProductLongScaleMapOut": {
+            "X": 1.5,
+            "Y": 3.0
+          },
+          "DotProductLatScaleMapOut": {
+            "X": 1.25,
+            "Y": 0.95
+          }
+        },
+        "BulletproofGlassDecal": {
+          "Material": {
+            "ObjectName": "Material M_BulletDecal_BulletproofGlass",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_BulletDecal_BulletproofGlass.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 0.15
+            },
+            "UpperBound": {
+              "Value": 0.18
+            }
+          },
+          "FadeStartDelay": 15.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        }
+      },
+      "bCalculateRicochet": true,
+      "RicochetReflectParamName": "RicochetAngle",
+      "DefaultRicochetSettings": {
+        "RicochetChance": {
+          "LowerBound": {
+            "Value": -0.75
+          },
+          "UpperBound": {
+            "Value": 0.25
+          }
+        }
+      },
+      "RicochetEffectMap": null,
+      "ChineseLicensingFleshEffect": {
+        "ObjectName": "ParticleSystem P_Blood_Med",
+        "ObjectPath": "/Game/Effects/PUBG_Gapp/Particles/Weapons/SurfaceImpact/Flesh/P_Blood_Med"
+      },
+      "UniversalFleshEffect": {
+        "ObjectName": "ParticleSystem P_Blood_Med_New_VAT",
+        "ObjectPath": "TslGame/Content/Effects/Clets_Teen/Particles/Weapons/SurfaceImpact/Flesh/P_Blood_Med_New_VAT.177"
+      },
+      "BulletDecalMaterial": {
+        "ObjectName": "Material M_BulletDecal_Flesh",
+        "ObjectPath": "TslGame/Content/Effects/Clets_Teen/Material/M_BulletDecal_Flesh.0"
+      },
+      "AKCom": {
+        "ObjectName": "AkComponent Default__GunImpact_Med_C:AkSound",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.6"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__GunImpact_Med_C:RootSceneComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.7"
+      },
+      "InitialLifeSpan": 5.0
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Default__GunImpact_Med_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__GunImpact_Med_C:RootSceneComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.7"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootSceneComp",
+    "Outer": "Default__GunImpact_Med_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_0__F25C6BF4",
+    "Outer": "GunImpact_Med_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0__57659476",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent GunImpact_Med_C:SceneComponent_0__F25C6BF4",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.8"
+      },
+      "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0__57659476",
+    "Outer": "GunImpact_Med_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node GunImpact_Med_C:SimpleConstructionScript_0__57659476.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.9"
+      }
+    }
+  }
+]

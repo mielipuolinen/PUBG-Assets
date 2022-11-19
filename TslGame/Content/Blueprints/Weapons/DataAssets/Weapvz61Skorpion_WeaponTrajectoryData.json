@@ -1,0 +1,58 @@
+[
+  {
+    "Type": "WeaponTrajectoryData",
+    "Name": "Weapvz61Skorpion_WeaponTrajectoryData",
+    "Properties": {
+      "RecoilConfig": {
+        "VerticalRecoilVariation": 0.05,
+        "VerticalRecoveryClamp": 4.0,
+        "VerticalRecoveryMax": 3.0,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_SMG_Skorpion",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_SMG_Skorpion.0"
+        },
+        "BulletsPerSwitch": 2,
+        "RecoilSpeed_Vertical": 15.0,
+        "RecoilSpeed_Horizontal": 14.0,
+        "RecoverySpeed_Vertical": 12.0,
+        "RecoilValue_Climb": 0.23,
+        "RecoilValue_Fall": 2.0,
+        "RecoilModifier_Crouch": 0.85,
+        "RecoilModifier_Prone": 0.8,
+        "RecoilModifier_Vehicle": 1.0,
+        "RecoilHorizontalMinScalar": 0.35,
+        "RecoilStartTimeInMap": {
+          "X": 0.1,
+          "Y": 0.25
+        },
+        "RecoilStartTimeOutMap": {
+          "X": 0.0,
+          "Y": 0.016
+        },
+        "RecoilBlendInOutMap": {
+          "X": 0.0,
+          "Y": 0.024
+        },
+        "VehicleRecoilScalar": 0.8
+      },
+      "TrajectoryConfig": {
+        "InitialSpeed": 350.0,
+        "HitDamage": 22.0,
+        "BallisticCurve": {
+          "ObjectName": "CurveVector C_Ballistic_Skorpion",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/BallisticData/C_Ballistic_Skorpion.0"
+        },
+        "RangeModifier": 0.88,
+        "ReferenceDistance": 150.0,
+        "TravelDistanceMax": 1000.0,
+        "VDragCoefficient": 0.65,
+        "BDS": 0.8,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
+        },
+        "WeaponSpread": 5.5
+      }
+    }
+  }
+]

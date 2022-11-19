@@ -1,0 +1,57 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "CS_WeapGun_Rifle_556_C",
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class CameraShake",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassFlags": 266256,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "CS_WeapGun_Rifle_556_C Default__CS_WeapGun_Rifle_556_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_556.1"
+    }
+  },
+  {
+    "Type": "CS_WeapGun_Rifle_556_C",
+    "Name": "Default__CS_WeapGun_Rifle_556_C",
+    "Properties": {
+      "OscillationDuration": 0.2,
+      "OscillationBlendInTime": 0.025,
+      "OscillationBlendOutTime": 0.15,
+      "RotOscillation": {
+        "Pitch": {
+          "Amplitude": 0.33,
+          "Frequency": 10.0
+        },
+        "Yaw": {
+          "Amplitude": 0.33,
+          "Frequency": 10.0
+        },
+        "Roll": {
+          "Amplitude": 0.33,
+          "Frequency": 20.0
+        }
+      },
+      "LocOscillation": {
+        "X": {
+          "Amplitude": 1.0,
+          "Frequency": 20.0,
+          "InitialOffset": "EOO_OffsetZero"
+        },
+        "Z": {
+          "Amplitude": 0.1,
+          "Frequency": 8.0,
+          "InitialOffset": "EOO_OffsetZero"
+        }
+      }
+    }
+  }
+]

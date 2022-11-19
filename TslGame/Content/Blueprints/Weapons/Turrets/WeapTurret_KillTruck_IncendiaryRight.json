@@ -1,0 +1,325 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "WC_Gun",
+    "Outer": "WeapTurret_KillTruck_IncendiaryRight_C",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "WC_Base",
+    "Outer": "WeapTurret_KillTruck_IncendiaryRight_C",
+    "Next": {
+      "ObjectName": "ObjectProperty WeapTurret_KillTruck_IncendiaryRight_C:WC_Gun",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.0"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "WeapTurret_KillTruck_IncendiaryRight_C",
+    "Next": {
+      "ObjectName": "ObjectProperty WeapTurret_KillTruck_IncendiaryRight_C:WC_Base",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapTurret_KillTruck_IncendiaryRight_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapTurret_KillTruck_IncendiaryRight_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.11"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler WeapTurret_KillTruck_IncendiaryRight_C:InheritableComponentHandler",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslWeapon_Trajectory",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function WeapTurret_KillTruck_IncendiaryRight_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.2"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function WeapTurret_KillTruck_IncendiaryRight_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.2"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapTurret_KillTruck_IncendiaryRight_C Default__WeapTurret_KillTruck_IncendiaryRight_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.4"
+    }
+  },
+  {
+    "Type": "WeapTurret_KillTruck_IncendiaryRight_C",
+    "Name": "Default__WeapTurret_KillTruck_IncendiaryRight_C",
+    "Properties": {
+      "WeaponIcon": {
+        "ObjectName": "Texture2D Icon_killfeed_killtruckturret",
+        "ObjectPath": "TslGame/Content/UI/HUD/KillMessage/Icon_killfeed_killtruckturret.0"
+      },
+      "WeaponIconRatio": 1.5769,
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapTurret_KillTruck_IncendiaryRight_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.14"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapTurret_KillTruck_IncendiaryRight_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.6"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "WeapTurret_KillTruck_IncendiaryRight_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapTurret_KillTruck_IncendiaryRight_C",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapTurret_KillTruck_IncendiaryRight_C Default__WeapTurret_KillTruck_IncendiaryRight_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.4"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapTurret_KillTruck_IncendiaryRight_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapTurret_KillTruck_IncendiaryRight_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.7"
+      },
+      "VariableGuid": "004D4A5A-43F1B4CA-BDA301BC-4177750A",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent WeapTurret_KillTruck_IncendiaryRight_C:WC_Base_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.12"
+      },
+      "AttachToName": "root",
+      "ParentComponentOrVariableName": "WeaponMesh3P",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "3FED887D-4A506122-5432929A-C210C901",
+      "InternalVariableName": "WC_Base"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent WeapTurret_KillTruck_IncendiaryRight_C:WC_Gun_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.13"
+      },
+      "AttachToName": "gun_turret_RR",
+      "ParentComponentOrVariableName": "WeaponMesh3P",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "B8593F1B-48B2C282-9605B19B-8B25BD9C",
+      "InternalVariableName": "WC_Gun"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapTurret_KillTruck_IncendiaryRight_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node WeapTurret_KillTruck_IncendiaryRight_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.10"
+        },
+        {
+          "ObjectName": "SCS_Node WeapTurret_KillTruck_IncendiaryRight_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.9"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node WeapTurret_KillTruck_IncendiaryRight_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.10"
+        },
+        {
+          "ObjectName": "SCS_Node WeapTurret_KillTruck_IncendiaryRight_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.9"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapTurret_KillTruck_IncendiaryRight_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "WC_Base_GEN_VARIABLE",
+    "Outer": "WeapTurret_KillTruck_IncendiaryRight_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SK_Heaven_TurretGunRR_Collision_Base",
+        "ObjectPath": "TslGame/Content/Vehicles/KillTruck/Meshes/SK_Heaven_TurretGunRR_Collision_Base.1"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "InteractiveObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "ObjectType": "ECC_Vehicle"
+      },
+      "bVisible": false,
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "WC_Gun_GEN_VARIABLE",
+    "Outer": "WeapTurret_KillTruck_IncendiaryRight_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SK_Heaven_TurretGunRR_Collision_Clean",
+        "ObjectPath": "TslGame/Content/Vehicles/KillTruck/Meshes/SK_Heaven_TurretGunRR_Collision_Clean.1"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "InteractiveObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "ObjectType": "ECC_Vehicle"
+      },
+      "bVisible": false,
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapTurret_KillTruck_IncendiaryRight_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_KillTruck_TurretRight_C",
+        "ObjectPath": "TslGame/Content/Vehicles/KillTruck/Meshes/ABP_KillTruck_TurretRight.15"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_Heaven_KillTruck_TurretGun_RR",
+        "ObjectPath": "TslGame/Content/Vehicles/KillTruck/Meshes/SK_Heaven_KillTruck_TurretGun_RR.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapTurret_KillTruck_IncendiaryRight_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/WeapTurret_KillTruck_IncendiaryRight.6"
+      }
+    }
+  }
+]

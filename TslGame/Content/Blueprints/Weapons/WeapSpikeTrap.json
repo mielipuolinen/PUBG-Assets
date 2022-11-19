@@ -1,0 +1,180 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapSpikeTrap_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapSpikeTrap_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpikeTrap.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslWeapon_SpikeTrap",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapSpikeTrap_C Default__WeapSpikeTrap_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpikeTrap.1"
+    }
+  },
+  {
+    "Type": "WeapSpikeTrap_C",
+    "Name": "Default__WeapSpikeTrap_C",
+    "Properties": {
+      "ThrowableConfig": {
+        "ProjectileClass": {
+          "ObjectName": "BlueprintGeneratedClass ProjSpiketrap_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.2"
+        },
+        "ExplosionStartType": "EProjectileExplosionStartType::NotStart",
+        "ExplosionDelay": 0.0,
+        "FireDelay": 0.314,
+        "CrouchAnim": {
+          "Release": {
+            "ObjectName": "AnimMontage w3_release_Montage",
+            "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Throwing/w3_release_Montage.0"
+          }
+        },
+        "ProneAnim": {
+          "Release": {
+            "ObjectName": "AnimMontage w3_Prone_release_Montage",
+            "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Throwing/w3_Prone_release_Montage.0"
+          }
+        },
+        "SpeedCurve": {
+          "ObjectName": "CurveFloat SpeedCurve_Spiketrap",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/SpeedCurve_Spiketrap.0"
+        },
+        "PitchCurve": {
+          "ObjectName": "CurveFloat PitchCurve_Spiketrap",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/PitchCurve_Spiketrap.0"
+        },
+        "ThrowTime": 1.0,
+        "ThrowCooldownDuration": 1.5,
+        "bCanBeCooked": false
+      },
+      "ThrowWeaponSocketName": "SpikeTrap_ReleasePoint",
+      "PawnMotionContributionMultiplier": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_spiketrap",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_spiketrap.0"
+      },
+      "WeaponIconRatio": 1.64,
+      "WeaponConfig": {
+        "SocketOffset_Hand": {
+          "X": 0.0,
+          "Y": -2.0,
+          "Z": 0.0
+        },
+        "WeaponClass": "EWeaponClass::Class_Throwable",
+        "ThrownType": "EThrownWeaponType::Thrown_Trap",
+        "bBlockPeeking": true
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapSpikeTrap_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpikeTrap.6"
+      },
+      "AllowedThrowMode": "EAllowedThrowMode::ThrowLow",
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_Thrown": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_SpikeTrap_Montage",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Rifle_Combat_Stand_SpikeTrap_Montage.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapSpikeTrap_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DataAssets/WeapSpikeTrap_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapSpikeTrap_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpikeTrap.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapSpikeTrap_C",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapSpikeTrap_C Default__WeapSpikeTrap_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpikeTrap.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapSpikeTrap_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapSpikeTrap_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpikeTrap.3"
+      },
+      "VariableGuid": "98A7F839-4AD3CC94-749494AB-5958641D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapSpikeTrap_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapSpikeTrap_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpikeTrap.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapSpikeTrap_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SpikeTrap_SkelMesh_v03",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/SpikeTrap_SkelMesh_v03.0"
+      },
+      "RelativeRotation": {
+        "Pitch": 176.39954,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapSpikeTrap_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpikeTrap.2"
+      }
+    }
+  }
+]

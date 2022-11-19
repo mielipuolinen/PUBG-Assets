@@ -1,0 +1,232 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapMortar_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapMortar_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMortar.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslWeapon_Mortar",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapMortar_C Default__WeapMortar_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMortar.1"
+    }
+  },
+  {
+    "Type": "WeapMortar_C",
+    "Name": "Default__WeapMortar_C",
+    "Properties": {
+      "MortarPawnClass": {
+        "ObjectName": "BlueprintGeneratedClass MortarPawn_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.7"
+      },
+      "InstallAreaPSC": {
+        "ObjectName": "ParticleSystemComponent Default__WeapMortar_C:InstallAreaPsComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMortar.2"
+      },
+      "MaxFloorDiff": 30.0,
+      "CastConfig": {
+        "CastName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "K_UXU_04"
+        },
+        "CastTime": 3.0,
+        "CastWalkSpeedModifier": 0.0,
+        "bNeedUnarm": false,
+        "bForceStance": true,
+        "bLockRotation": true,
+        "CastAnim": "ECastAnim::MortarInstall",
+        "Stance": "STANCE_Crouch"
+      },
+      "MaxAimErrorAngleDegree": 1.0,
+      "WeaponHiddenStartDelay": 0.55,
+      "BarrelRotateAkAudioEvent": {
+        "ObjectName": "AkAudioEvent Weapons_Rotate_Mortar",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/_Common/Equip_and_Unequip/Weapons_Rotate_Mortar.0"
+      },
+      "SpawnFailedReason_Moving": {
+        "TableId": "/Game/StringTables/World/ST_MORTAR.ST_MORTAR",
+        "Key": "K_UXU_00"
+      },
+      "LauncherClass": {
+        "ObjectName": "BlueprintGeneratedClass Mortar_Projectile_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Mortar_Projectile.0"
+      },
+      "MaxDelta": 100.0,
+      "ZeroingSpawnPitchOffsetCurve": {
+        "ObjectName": "CurveFloat PanzerFaustZeroingPitchOffsetCurve",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/PanzerFaustZeroingPitchOffsetCurve.0"
+      },
+      "ThrowAwayMontage": {
+        "ObjectName": "AnimMontage CharacterWeapon_Panzer_ThrowAway",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Panzerfaust/CharacterWeapon_Panzer_ThrowAway.0"
+      },
+      "bAlwaysUseIronSightZeroing": true,
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapMortar_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapMortar_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_mortar",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_mortar.0"
+      },
+      "WeaponIconRatio": 1.4,
+      "WeaponConfig": {
+        "SocketOffset_Hand": {
+          "X": 0.0,
+          "Y": -2.0,
+          "Z": 0.0
+        },
+        "WeaponClass": "EWeaponClass::Class_Mortar",
+        "ThrownType": "EThrownWeaponType::Thrown_Trap",
+        "WeaponEquipDuration": 0.0,
+        "WeaponUnequipDuration": 0.0,
+        "bBlockPeeking": true
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapMortar_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMortar.7"
+      },
+      "WeaponTag": "Mortar",
+      "AllowedThrowMode": "EAllowedThrowMode::ThrowLow",
+      "MuzzleAttachPoint": "Muzzle_Effect_Soket",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem P_Mortar_Muzzle",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Mortar/P_Mortar_Muzzle.79"
+      },
+      "AnimWeaponType": "EAnimWeaponType::Mortar",
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapMortar_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapMortar_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapMortar_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMortar.3"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "InstallAreaPsComponent",
+    "Outer": "Default__WeapMortar_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem P_MortarInstallPS",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Mortar/P_MortarInstallPS.13"
+      },
+      "InstanceParameters": [
+        {
+          "Name": "ColorOverLife",
+          "ParamType": "PSPT_Color",
+          "Scalar": 0.0,
+          "Scalar_Low": 0.0,
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "Vector_Low": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "Color": {
+            "B": 1,
+            "G": 1,
+            "R": 1,
+            "A": 1,
+            "Hex": "010101"
+          },
+          "Actor": null,
+          "Material": null
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapMortar_C",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapMortar_C Default__WeapMortar_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMortar.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapMortar_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapMortar_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMortar.4"
+      },
+      "VariableGuid": "98A7F839-4AD3CC94-749494AB-5958641D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapMortar_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapMortar_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMortar.5"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapMortar_C",
+    "Properties": {
+      "AnimationData": {
+        "AnimToPlay": {
+          "ObjectName": "AnimSequence MortarWeapon_Slot",
+          "ObjectPath": "TslGame/Content/Weapon/Mortar/Anims/MortarWeapon_Slot.0"
+        }
+      },
+      "AnimationMode": "EAnimationMode::AnimationSingleNode",
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_Mortar",
+        "ObjectPath": "TslGame/Content/Weapon/Mortar/Meshes/SK_Mortar.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapMortar_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMortar.3"
+      }
+    }
+  }
+]

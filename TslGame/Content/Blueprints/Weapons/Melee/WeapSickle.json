@@ -1,0 +1,4587 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapSickle_C",
+    "Super": "DefaultMeleeSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapSickle_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapSickle.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultMeleeSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/DefaultMeleeSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapSickle_C Default__WeapSickle_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapSickle.1"
+    }
+  },
+  {
+    "Type": "WeapSickle_C",
+    "Name": "Default__WeapSickle_C",
+    "Template": "Default__DefaultMeleeSetting_C",
+    "Properties": {
+      "HitCapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__WeapSickle_C:HitCollisionCylinder",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapSickle.2"
+      },
+      "AttackAnims": [
+        {
+          "AttackAnim": {
+            "ObjectName": "AnimMontage Melee_Combat_Upperbody_Attack_1_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Melee/Attack/Redux/Melee_Combat_Upperbody_Attack_1_Montage_RD.0"
+          },
+          "AttackDecalEffectDataSet": {
+            "DefaultDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "ConcreteDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Concrete",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Concrete.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "RockDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Concrete",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Concrete.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 10.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "DirtDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Dirt",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Dirt.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "SandDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "WaterDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "MetalDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Steel",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Steel.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "WoodDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Wood",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Wood.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "GlassDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "GrassDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "FleshDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "MudDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "CropsDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "CactusDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Cactus",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Cactus.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "PaperDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Paper",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Paper.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "RubberDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Rubber",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Rubber.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "FabricDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Fabric",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Fabric.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "SnowDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Snow",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Snow.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "SnowRockDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "IceDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Ice",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Ice.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "ReedDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "MapleDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "bHideOnMovableObjects": false,
+            "SprayDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "TargetDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "BulletproofShieldDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": false
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "BulletproofGlassDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": false
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "bSearchForStaticSurface": false
+          }
+        },
+        {
+          "AttackAnim": {
+            "ObjectName": "AnimMontage Melee_Combat_Upperbody_Attack_2_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Melee/Attack/Redux/Melee_Combat_Upperbody_Attack_2_Montage_RD.0"
+          },
+          "AttackDecalEffectDataSet": {
+            "DefaultDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "ConcreteDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Concrete",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Concrete.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "RockDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Concrete",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Concrete.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 10.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "DirtDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Dirt",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Dirt.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "SandDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "WaterDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "MetalDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Steel",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Steel.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "WoodDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Wood",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Wood.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "GlassDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "GrassDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "FleshDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "MudDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "CropsDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "CactusDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Cactus",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Cactus.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "PaperDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Paper",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Paper.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "RubberDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Rubber",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Rubber.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "FabricDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Fabric",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Fabric.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "SnowDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Snow",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Snow.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "SnowRockDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Concrete",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Concrete.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "IceDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Ice",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Ice.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "ReedDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "MapleDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "bHideOnMovableObjects": false,
+            "SprayDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "TargetDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "BulletproofShieldDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": false
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "BulletproofGlassDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": false
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "bSearchForStaticSurface": false
+          }
+        },
+        {
+          "AttackAnim": {
+            "ObjectName": "AnimMontage Melee_Combat_Upperbody_Attack_3_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Melee/Attack/Redux/Melee_Combat_Upperbody_Attack_3_Montage_RD.0"
+          },
+          "AttackDecalEffectDataSet": {
+            "DefaultDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "ConcreteDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Concrete",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Concrete.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "RockDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Concrete",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Concrete.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 10.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "DirtDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Dirt",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Dirt.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "SandDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "WaterDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "MetalDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Steel",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Steel.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "WoodDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Wood",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Wood.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "GlassDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "GrassDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "FleshDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "MudDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "CropsDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "CactusDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Cactus",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Cactus.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "PaperDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Paper",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Paper.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "RubberDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Rubber",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Rubber.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "FabricDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Fabric",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Fabric.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "SnowDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Snow",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Snow.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "SnowRockDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "IceDecal": {
+              "Material": {
+                "ObjectName": "Material M_Melee_Blade_Ice",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blade_Ice.0"
+              },
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 11.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 12.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 35.0,
+              "FadeDuration": 1.5,
+              "bUseRandomInput": true,
+              "bUseRandomRoll": false,
+              "bReversal": true,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "ReedDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "MapleDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "bHideOnMovableObjects": false,
+            "SprayDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "TargetDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": true
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "BulletproofShieldDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": false
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "BulletproofGlassDecal": {
+              "Material": null,
+              "RicochetMaterial": null,
+              "Size": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 5.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 10.0
+                }
+              },
+              "NormalFadeAngle": {
+                "LowerBound": {
+                  "Type": "ERangeBoundTypes::Inclusive",
+                  "Value": 85.0
+                },
+                "UpperBound": {
+                  "Type": "ERangeBoundTypes::Exclusive",
+                  "Value": 95.0
+                }
+              },
+              "FadeScreenSize": 0.0,
+              "FadeStartDelay": 1.0,
+              "FadeDuration": 1.0,
+              "bUseRandomInput": false,
+              "bUseRandomRoll": false,
+              "bReversal": false,
+              "bUseRicochet": false,
+              "DecalChannels": {
+                "bChannel1": true,
+                "bChannel2": true,
+                "bChannel3": false
+              },
+              "DotProductLongScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLongScaleMapOut": {
+                "X": 1.5,
+                "Y": 5.0
+              },
+              "DotProductLatScaleMapIn": {
+                "X": 0.5,
+                "Y": 0.0
+              },
+              "DotProductLatScaleMapOut": {
+                "X": 0.5,
+                "Y": 0.2
+              },
+              "SprayDecalTexture": null,
+              "DecalSortOder": 0,
+              "DecalRotation": 0.0
+            },
+            "bSearchForStaticSurface": false
+          }
+        }
+      ],
+      "ThrowAnim": {
+        "ObjectName": "AnimMontage Melee_Combat_Throw_Montage",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Melee/Attack/Melee_Combat_Throw_Montage.0"
+      },
+      "ThrowPrepareTime": 0.4,
+      "bCanBeThrown": true,
+      "ThrowSocketOffsets_TPP": null,
+      "ThrowSocketOffsets_FPP": null,
+      "ThrowConfig": {
+        "ObjectName": "ThrowableItemDataAsset DA_Sickle_Projectile",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/Throw/DA_Sickle_Projectile.0"
+      },
+      "Damage": 60.0,
+      "ImpactTemplate": {
+        "ObjectName": "BlueprintGeneratedClass MeleeImpact_Blade_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/MeleeImpact_Blade.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_melee_sickle",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_melee_sickle.0"
+      },
+      "WeaponIconRatio": 1.8,
+      "WeaponConfig": {
+        "ThrownType": "EThrownWeaponType::Thrown_Melee"
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapSickle_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapSickle.7"
+      },
+      "AllowedThrowMode": "EAllowedThrowMode::ThrowHigh",
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapSickle_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/DataAssets/WeapSickle_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapSickle_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapSickle.3"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCollisionCylinder",
+    "Outer": "Default__WeapSickle_C",
+    "Template": "HitCollisionCylinder",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "WeaponMeshComponent Default__WeapSickle_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapSickle.7"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapSickle_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapSickle_C Default__WeapSickle_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapSickle.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapSickle_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapSickle_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapSickle.4"
+      },
+      "VariableGuid": "39A13190-4EBB2694-BA56B891-9EEDE063",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapSickle_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapSickle_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapSickle.5"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapSickle_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh Sickle_setting",
+        "ObjectPath": "TslGame/Content/Weapon/Melee/Sickle/Sickle_setting.0"
+      },
+      "BodyInstance": {
+        "bNotifyRigidBodyCollision": true,
+        "bEnableGravity": false
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapSickle_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapSickle.3"
+      }
+    }
+  }
+]

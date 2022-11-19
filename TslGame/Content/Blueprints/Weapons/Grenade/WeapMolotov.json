@@ -1,0 +1,151 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapMolotov_C",
+    "Super": "DefaultGrenadeSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapMolotov_C:SimpleConstructionScript_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapMolotov.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultGrenadeSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapMolotov_C Default__WeapMolotov_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapMolotov.1"
+    }
+  },
+  {
+    "Type": "WeapMolotov_C",
+    "Name": "Default__WeapMolotov_C",
+    "Template": "Default__DefaultGrenadeSetting_C",
+    "Properties": {
+      "ThrowableConfig": {
+        "ProjectileClass": {
+          "ObjectName": "BlueprintGeneratedClass ProjMolotov_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.144"
+        },
+        "CookingEffectClass": {
+          "ObjectName": "BlueprintGeneratedClass P_Molotov_Start_BP_C",
+          "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Molotov_Start_BP.10"
+        },
+        "ExplosionStartType": "EProjectileExplosionStartType::ImpactOrDelay",
+        "FireDelay": 0.4,
+        "ThrowTime": 0.85,
+        "bCanBeCooked": false
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_frag_MolotovCocktail",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_frag_MolotovCocktail.0"
+      },
+      "WeaponIconRatio": 0.88,
+      "WeaponConfig": {
+        "WeaponClass": "EWeaponClass::Class_Throwable",
+        "ThrownType": "EThrownWeaponType::Thrown_Molotov",
+        "WeaponEquipDuration": 0.3,
+        "WeaponReadyDuration": 1.53
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapMolotov_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapMolotov.6"
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapMolotov_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DataAssets/WeapMolotov_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapMolotov_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapMolotov.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapMolotov_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapMolotov_C Default__WeapMolotov_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapMolotov.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapMolotov_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapMolotov_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapMolotov.3"
+      },
+      "VariableGuid": "028EC49A-48E4171F-BF4E70B7-59BAFBFD",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "WeapMolotov_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapMolotov_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapMolotov.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapMolotov_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh Molotov_setting",
+        "ObjectPath": "TslGame/Content/Weapon/Grenades/Molotov/Molotov_setting.0"
+      },
+      "RelativeScale3D": {
+        "X": 0.9,
+        "Y": 0.9,
+        "Z": 0.9
+      },
+      "RelativeRotation": {
+        "Pitch": 345.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapMolotov_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapMolotov.2"
+      }
+    }
+  }
+]

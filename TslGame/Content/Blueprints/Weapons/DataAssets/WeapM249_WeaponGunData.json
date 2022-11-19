@@ -1,0 +1,113 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapM249_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_556mm_C",
+        "TracerClass": null,
+        "AmmoPerClip": 75,
+        "TimeBetweenShots": 0.075,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperSmall",
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+            "AttachableTags": [
+              "RMR"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+            "AttachableTags": [
+              "MagazineLarge"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+            "AttachableTags": [
+              "StockAssaultRifle"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 3.5,
+        "FiringModes": [
+          "EFiringMode::FullAuto"
+        ],
+        "BurstShots": 1,
+        "FiringBulletsSpread": 1.0,
+        "WeaponLength": 45.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffset": {
+          "X": 3.0,
+          "Y": 0.0,
+          "Z": -3.0
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 3.0,
+          "Y": -0.5,
+          "Z": 2.0
+        }
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 3.1,
+        "DeviationBaseAim": 1.1,
+        "MOA": 3.0,
+        "DeviationRecoilGain": 1.3,
+        "DeviationRecoilGainAim": 0.8,
+        "DeviationRecoilGainADS": 0.02,
+        "DeviationMax": 10.0,
+        "DeviationMaxMove": 3.2,
+        "DeviationMoveMaxReferenceVelocity": 300.0
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_M249_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M249/Redux/Weapon_M249_Grip_RD.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage CharacterWeapon_M249_Reload_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M249/Redux/CharacterWeapon_M249_Reload_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage CharacterWeapon_M249_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M249/Redux/CharacterWeapon_M249_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 7.1,
+        "ReloadDurationCharge": 8.2,
+        "ReloadDurationMagOut": 0.4,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_LMG_SAW_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_LMG_SAW.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_LMG_SAW_Ironsight_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_LMG_SAW_Ironsight.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_LMG_SAW_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_LMG_SAW_ADS.0"
+        },
+        "RecoilKickADS": 0.7,
+        "RecoilKick_MovementMaxMultiplier": 1.3,
+        "ShakeScaleStanceMap": {
+          "EAnimStance::Prone": 0.7
+        }
+      },
+      "ConsoleWeaponRecoilData": {
+        "ObjectName": "WeaponGunRecoilData WeapM249_RecoilDataConsole",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapM249_RecoilDataConsole.0"
+      }
+    }
+  }
+]

@@ -1,0 +1,149 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapM16A4_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_556mm_C",
+        "TracerClass": {
+          "ObjectName": "ParticleSystem P_Tracer_Mini14",
+          "ObjectPath": "TslGame/Content/Export_Marek/Tracer/P_Tracer_Mini14.10"
+        },
+        "AmmoPerClip": 30,
+        "TimeBetweenShots": 0.1,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperDefault",
+              "UpperSmall",
+              "UpperReddot",
+              "UpperHolo",
+              "UpperLarge"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+            "AttachableTags": [
+              "MagazineLarge"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleLarge"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+            "AttachableTags": [
+              "StockAssaultRifle"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+            "AttachableTags": [
+              "RMR"
+            ]
+          }
+        ],
+        "bUseTimeBetweenBursts": true,
+        "NoAnimReloadDuration": 2.5,
+        "FiringModes": [
+          "EFiringMode::Normal",
+          "EFiringMode::Burst"
+        ],
+        "BurstDelay": 0.075,
+        "WeaponLength": 51.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffset": {
+          "X": -3.0,
+          "Y": -1.0,
+          "Z": -1.0
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 2.0,
+          "Y": 0.0,
+          "Z": 2.0
+        }
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 3.1,
+        "DeviationBaseAim": 1.3,
+        "MOA": 4.0,
+        "DeviationRecoilGain": 1.3,
+        "DeviationRecoilGainAim": 0.8,
+        "DeviationRecoilGainADS": 0.02,
+        "DeviationMax": 8.0,
+        "DeviationMaxMove": 3.2,
+        "DeviationMoveMaxReferenceVelocity": 300.0
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_M16_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M16/Redux/Weapon_M16_Grip_RD.0"
+        },
+        "CharacterFireSelector": {
+          "ObjectName": "AnimMontage Character_Weapon_M16_Firemode_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M16/Redux/Character_Weapon_M16_Firemode_Montage_RD.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage Character_Weapon_M16_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M16/Redux/Character_Weapon_M16_Reload_Tactical_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage Character_Weapon_M16_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M16/Redux/Character_Weapon_M16_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponReloadTactical": {
+          "ObjectName": "AnimMontage Weapon_M16_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M16/Redux/Weapon_RD/Weapon_M16_Reload_Tactical_Montage_RD.0"
+        },
+        "WeaponReloadCharge": {
+          "ObjectName": "AnimMontage Weapon_M16_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M16/Redux/Weapon_RD/Weapon_M16_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 1.9,
+        "ReloadDurationCharge": 2.2,
+        "ReloadDurationMagOut": 0.4,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_556_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_556.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_556_M16_Ironsight_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_556_M16_Ironsight.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_556_M16_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_556_M16_ADS.0"
+        },
+        "RecoilKickADS": 0.9,
+        "RecoilKick_MovementMaxMultiplier": 1.3,
+        "MagDropLinearVelocity": {
+          "X": -100.0,
+          "Y": 0.0,
+          "Z": -200.0
+        },
+        "MagDropAngularVelocity": {
+          "X": -100.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "bUseBurstRecoilMap": true,
+        "BurstRecoilInMap": {
+          "X": 1.7,
+          "Y": 2.5
+        },
+        "BurstRecoilOutMap": {
+          "X": 0.42,
+          "Y": 0.75
+        }
+      }
+    }
+  }
+]

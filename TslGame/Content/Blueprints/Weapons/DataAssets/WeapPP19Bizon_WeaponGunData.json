@@ -1,0 +1,119 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapPP19Bizon_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_9mm_C",
+        "TracerClass": null,
+        "AmmoPerClip": 53,
+        "TimeBetweenShots": 0.085714,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperSmall",
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleMedium"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+            "AttachableTags": [
+              "RMR"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 3.1,
+        "FiringModes": [
+          "EFiringMode::Normal",
+          "EFiringMode::FullAuto"
+        ],
+        "BurstShots": 1,
+        "BurstDelay": 0.085,
+        "FiringBulletsSpread": 1.0,
+        "MovementModifierAim": 1.6,
+        "MovementModifierScope": 1.4,
+        "WeaponLength": 15.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffsetFPP": {
+          "X": 3.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "StabilityForceModifier": 0.35,
+        "ReloadSpeedScalar": 1.1,
+        "ADSTimeMultiplier": 1.3
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 2.0,
+        "DeviationBaseAim": 1.3,
+        "MOA": 7.0,
+        "DeviationRecoilGain": 1.2,
+        "DeviationRecoilGainADS": 0.145,
+        "DeviationMax": 7.0,
+        "DeviationMaxMove": 2.0,
+        "DeviationMoveMultiplier": 1.6,
+        "DeviationMoveMinReferenceVelocity": 150.0,
+        "DeviationMoveMaxReferenceVelocity": 400.0,
+        "DeviationStanceCrouch": 0.82,
+        "DeviationStanceProne": 0.65
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_PP19Bizon_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/PP19Bizon/Redux/Weapon_PP19Bizon_Grip_RD.0"
+        },
+        "CharacterFireSelector": {
+          "ObjectName": "AnimMontage Character_Weapon_PP19Bizon_Firemode_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/PP19Bizon/Redux/Character_Weapon_PP19Bizon_Firemode_Montage_RD.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage Character_Weapon_PP19Bizon_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/PP19Bizon/Redux/Character_Weapon_PP19Bizon_Reload_Tactical_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage Character_Weapon_PP19Bizon_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/PP19Bizon/Redux/Character_Weapon_PP19Bizon_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 2.6,
+        "ReloadDurationCharge": 3.8,
+        "ReloadDurationMagOut": 0.4,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_UMP_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_UMP.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_UMP_Ironsight_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_UMP_Ironsight.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_UMP_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_UMP_ADS.0"
+        },
+        "RecoilKickADS": 0.9,
+        "RecoilKick_MovementMaxMultiplier": 1.1,
+        "MagDropLinearVelocity": {
+          "X": -90.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MagDropAngularVelocity": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 750.0
+        }
+      }
+    }
+  }
+]

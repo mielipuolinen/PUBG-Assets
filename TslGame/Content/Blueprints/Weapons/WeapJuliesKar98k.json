@@ -1,0 +1,124 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapJuliesKar98k_C",
+    "Super": "WeapKar98k_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapJuliesKar98k_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesKar98k.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass WeapKar98k_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapKar98k.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapJuliesKar98k_C Default__WeapJuliesKar98k_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesKar98k.1"
+    }
+  },
+  {
+    "Type": "WeapJuliesKar98k_C",
+    "Name": "Default__WeapJuliesKar98k_C",
+    "Template": "Default__WeapKar98k_C",
+    "Properties": {
+      "DefaultWeaponAttachments": [
+        "Item_Attach_Weapon_Stock_SniperRifle_BulletLoops_C",
+        "Item_Attach_Weapon_Muzzle_Suppressor_SniperRifle_C",
+        "Item_Attach_Weapon_Upper_CQBSS_C"
+      ],
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapJuliesKar98k_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesKar98k.6"
+      },
+      "WeaponTag": "Julie's Kar98k",
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapJuliesKar98k_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesKar98k.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapJuliesKar98k_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapJuliesKar98k_C Default__WeapJuliesKar98k_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesKar98k.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapJuliesKar98k_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapJuliesKar98k_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesKar98k.3"
+      },
+      "VariableGuid": "1D54641F-4C1580D7-24977FBA-B8692A8D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapJuliesKar98k_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapJuliesKar98k_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesKar98k.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapJuliesKar98k_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant Kar98k_FunkWood_01",
+          "ObjectPath": "TslGame/Content/Weapon/Skin/FunkWood/Materials/Kar98k_FunkWood_01.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant Kar98k_FunkWood_01",
+          "ObjectPath": "TslGame/Content/Weapon/Skin/FunkWood/Materials/Kar98k_FunkWood_01.0"
+        }
+      ],
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapJuliesKar98k_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesKar98k.2"
+      }
+    }
+  }
+]

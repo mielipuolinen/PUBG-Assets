@@ -1,0 +1,120 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapMadsQBU88_C",
+    "Super": "WeapQBU88_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapMadsQBU88_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMadsQBU88.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass WeapQBU88_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapQBU88.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapMadsQBU88_C Default__WeapMadsQBU88_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMadsQBU88.1"
+    }
+  },
+  {
+    "Type": "WeapMadsQBU88_C",
+    "Name": "Default__WeapMadsQBU88_C",
+    "Template": "Default__WeapQBU88_C",
+    "Properties": {
+      "DefaultWeaponAttachments": [
+        "Item_Attach_Weapon_Muzzle_Compensator_SniperRifle_C",
+        "Item_Attach_Weapon_Upper_Scope6x_C",
+        "Item_Attach_Weapon_Magazine_ExtendedQuickDraw_SniperRifle_C"
+      ],
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapMadsQBU88_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMadsQBU88.6"
+      },
+      "WeaponTag": "Mad's QBU",
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapMadsQBU88_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMadsQBU88.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapMadsQBU88_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapMadsQBU88_C Default__WeapMadsQBU88_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMadsQBU88.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapMadsQBU88_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapMadsQBU88_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMadsQBU88.3"
+      },
+      "VariableGuid": "E1850782-44E8F9CA-B407F5BE-FE5E8732",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapMadsQBU88_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapMadsQBU88_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMadsQBU88.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapMadsQBU88_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant QBU88_JCamo_02",
+          "ObjectPath": "TslGame/Content/Weapon/Skin/JCamo/Materials/QBU88_JCamo_02.0"
+        }
+      ],
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapMadsQBU88_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMadsQBU88.2"
+      }
+    }
+  }
+]

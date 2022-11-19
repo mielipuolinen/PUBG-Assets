@@ -1,0 +1,114 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapJuliesM24_C",
+    "Super": "WeapM24_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapJuliesM24_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesM24.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass WeapM24_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapM24.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapJuliesM24_C Default__WeapJuliesM24_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesM24.1"
+    }
+  },
+  {
+    "Type": "WeapJuliesM24_C",
+    "Name": "Default__WeapJuliesM24_C",
+    "Template": "Default__WeapM24_C",
+    "Properties": {
+      "DefaultWeaponAttachments": [
+        "Item_Attach_Weapon_Muzzle_Suppressor_SniperRifle_C",
+        "Item_Attach_Weapon_Stock_SniperRifle_CheekPad_C",
+        "Item_Attach_Weapon_Upper_CQBSS_C",
+        "Item_Attach_Weapon_Magazine_ExtendedQuickDraw_SniperRifle_C"
+      ],
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapJuliesM24_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesM24.6"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapJuliesM24_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesM24.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapJuliesM24_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapJuliesM24_C Default__WeapJuliesM24_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesM24.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapJuliesM24_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapJuliesM24_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesM24.3"
+      },
+      "VariableGuid": "7383094B-4797D4E2-15D5BAB0-E0AAF64B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapJuliesM24_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapJuliesM24_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesM24.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapJuliesM24_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapJuliesM24_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapJuliesM24.2"
+      }
+    }
+  }
+]

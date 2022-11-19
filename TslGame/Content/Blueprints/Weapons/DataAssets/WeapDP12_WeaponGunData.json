@@ -1,0 +1,119 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapDP12_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_12Guage_C",
+        "TracerClass": null,
+        "AmmoPerClip": 14,
+        "TimeBetweenShots": 0.125,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperReddot",
+              "UpperHolo",
+              "UpperSmall"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+            "AttachableTags": [
+              "RMR"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 6.1,
+        "BurstShots": 1,
+        "BulletPerFiring": 9,
+        "FiringBulletsSpread": 5.5,
+        "ReloadMethod": "EWeaponReloadMethod::OneByOne",
+        "WeaponLength": 32.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffsetFPP": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 2.0
+        },
+        "bManualCycleAfterShot": true,
+        "bManualCycleInitialStateReady": false,
+        "bCanScopeDuringWeaponCycle": true,
+        "bUseGridPelletSpread": true,
+        "PelletGrid": null,
+        "PelletGridScale": 0.75,
+        "GridPelletSpreadHalfAngle": 0.25,
+        "bUsePelletManager": true,
+        "PelletScale": 1.05
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 0.7,
+        "DeviationBaseAim": 0.4,
+        "DeviationRecoilGain": 0.7,
+        "DeviationRecoilGainAim": 0.3,
+        "DeviationMax": 7.0,
+        "DeviationMaxMove": 1.0,
+        "DeviationMoveMultiplier": 0.3,
+        "DeviationMoveMinReferenceVelocity": 100.0,
+        "DeviationMoveMaxReferenceVelocity": 400.0,
+        "DeviationStanceJump": 3.0
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_DP12_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DP12/Redux/Weapon_DP12_Grip_RD.0"
+        },
+        "CharacterFireCycle": {
+          "ObjectName": "AnimMontage CharacterWeapon_DP12_PumpAction_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DP12/Redux/CharacterWeapon_DP12_PumpAction_RD.0"
+        },
+        "CharacterReloadByOneStart": {
+          "ObjectName": "AnimMontage CharacterWeapon_DP12_Reload_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DP12/Redux/CharacterWeapon_DP12_Reload_RD.0"
+        },
+        "CharacterReloadByOneStop": {
+          "ObjectName": "AnimMontage CharacterWeapon_DP12_Reload_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DP12/Redux/CharacterWeapon_DP12_Reload_RD.0"
+        },
+        "CharacterReloadByOneSingle": {
+          "ObjectName": "AnimMontage CharacterWeapon_DP12_Reload_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DP12/Redux/CharacterWeapon_DP12_Reload_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationStart": 0.25,
+        "ReloadDurationLoop": 0.39,
+        "ReloadDurationMagOut": 0.4,
+        "bUseBoltAction": true,
+        "FireCycleDelay": 0.18,
+        "FireCycleDuration": 0.45,
+        "CycleAfterReloadDelay": 0.2,
+        "bCycleAfterLastShot": false,
+        "ShotsPerBoltAction": 2,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Shotgun_DP12_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Shotgun_DP12.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Shotgun_DP12_Ironsight_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Shotgun_DP12_Ironsight.0"
+        },
+        "ShotCameraShakeHolo": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Shotgun_DP12_Holo_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Shotgun_DP12_Holo.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Shotgun_DP12_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Shotgun_DP12_ADS.0"
+        },
+        "CycleCameraAnim": {
+          "ObjectName": "CameraAnim CSA_Shotgun_Winchester_Cycle",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CSA_Shotgun_Winchester_Cycle.0"
+        },
+        "RecoilKickADS": 1.0
+      }
+    }
+  }
+]

@@ -1,0 +1,415 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Audio1",
+    "Outer": "ProjSpiketrap_C",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class AudioComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "ProjSpiketrap_C",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjSpiketrap_C:Audio1",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ProjSpiketrap_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ProjSpiketrap_C:SimpleConstructionScript_0__57659476",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.11"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslProjectileSpikeTrap",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function ProjSpiketrap_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.1"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function ProjSpiketrap_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.1"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ProjSpiketrap_C Default__ProjSpiketrap_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.3"
+    }
+  },
+  {
+    "Type": "ProjSpiketrap_C",
+    "Name": "Default__ProjSpiketrap_C",
+    "Properties": {
+      "SpikeTrapActor": {
+        "ObjectName": "BlueprintGeneratedClass BP_Spiketrap_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/BP_Spiketrap.65"
+      },
+      "SpikeTrapItemID": "Item_Weapon_SpikeTrap_C",
+      "MovementComp": {
+        "ObjectName": "TslProjectileMovementComponent Default__ProjSpiketrap_C:ProjectileComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.15"
+      },
+      "CollisionComp": {
+        "ObjectName": "SphereComponent Default__ProjSpiketrap_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.13"
+      },
+      "ParticleComp": {
+        "ObjectName": "ParticleSystemComponent Default__ProjSpiketrap_C:ParticleComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.6"
+      },
+      "MeshComp": {
+        "ObjectName": "StaticMeshComponent Default__ProjSpiketrap_C:MeshComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.14"
+      },
+      "InterpolationTargetComp": {
+        "ObjectName": "SphereComponent Default__ProjSpiketrap_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.12"
+      },
+      "ConstraintComp": {
+        "ObjectName": "PhysicsConstraintComponent Default__ProjSpiketrap_C:MeshConstraint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.7"
+      },
+      "MeshInitialRotationRate": {
+        "X": 0.1,
+        "Y": 3.0,
+        "Z": 0.0
+      },
+      "ImpactSound": {
+        "ObjectName": "AkAudioEvent Trap_SpikeTrap_Deploy_Impact",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Trap/Trap_SpikeTrap_Deploy_Impact.0"
+      },
+      "AkComp": {
+        "ObjectName": "AkComponent Default__ProjSpiketrap_C:AkComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.4"
+      },
+      "PostExplodeLifetime": 1.0,
+      "ProjectileConfig": {
+        "ExplosionDamage": 0,
+        "ExplosionRadius": 0.0,
+        "DamageType": null
+      },
+      "RootComponent": {
+        "ObjectName": "SphereComponent Default__ProjSpiketrap_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.13"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkComp",
+    "Outer": "Default__ProjSpiketrap_C",
+    "Properties": {
+      "bUseDoppler": true,
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjSpiketrap_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.13"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "AudioComponent_3__E5DBC81A",
+    "Outer": "ProjSpiketrap_C"
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleComp",
+    "Outer": "Default__ProjSpiketrap_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent Default__ProjSpiketrap_C:MeshComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.14"
+      },
+      "bAutoActivate": true
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "MeshConstraint",
+    "Outer": "Default__ProjSpiketrap_C",
+    "Properties": {
+      "ConstraintInstance": {
+        "ProfileInstance": {
+          "LinearLimit": {
+            "XMotion": "LCM_Locked",
+            "YMotion": "LCM_Locked",
+            "ZMotion": "LCM_Locked",
+            "Stiffness": 150.0,
+            "Damping": 30.0,
+            "bSoftConstraint": true
+          },
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Locked",
+            "Swing2Motion": "ACM_Locked"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Locked"
+          },
+          "AngularDrive": {
+            "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+          },
+          "bDisableCollision": false
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjSpiketrap_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.12"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_1",
+    "Outer": "ProjSpiketrap_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0__57659476",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ProjSpiketrap_C:SceneComponent_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.8"
+      },
+      "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_12",
+    "Outer": "SimpleConstructionScript_0__57659476",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class AudioComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AudioComponent ProjSpiketrap_C:AudioComponent_3__E5DBC81A",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.5"
+      },
+      "ParentComponentOrVariableName": "SphereComp",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "488A69D2-9206DE5D-AB5BC209-1C2ED6AB",
+      "InternalVariableName": "Audio1"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0__57659476",
+    "Outer": "ProjSpiketrap_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node ProjSpiketrap_C:SimpleConstructionScript_0__57659476.SCS_Node_12",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.10"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node ProjSpiketrap_C:SimpleConstructionScript_0__57659476.SCS_Node_12",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.10"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ProjSpiketrap_C:SimpleConstructionScript_0__57659476.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.9"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "InterpolationTarget",
+    "Outer": "Default__ProjSpiketrap_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjSpiketrap_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.13"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__ProjSpiketrap_C",
+    "Properties": {
+      "SphereRadius": 4.0,
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Weapon",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Grenade",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CrosshairImpact",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "InteractiveObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "MassInKgOverride": 0.61551815
+      },
+      "OnComponentHit": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "ProjSpiketrap_C Default__ProjSpiketrap_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.3"
+            },
+            "FunctionName": "OnHit"
+          }
+        ]
+      },
+      "RelativeScale3D": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "MeshComp",
+    "Outer": "Default__ProjSpiketrap_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SpikeTrap_Projectile_Mesh",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/SpikeTrap_Projectile_Mesh.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material Black",
+          "ObjectPath": "TslGame/Content/ArtTools/MapCaptureRTT/Black.0"
+        }
+      ],
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "LinearDamping": 0.1,
+        "AngularDamping": 0.5,
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 180.0,
+        "Roll": 0.0
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 20.0
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjSpiketrap_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/ProjSpiketrap.12"
+      }
+    }
+  },
+  {
+    "Type": "TslProjectileMovementComponent",
+    "Name": "ProjectileComp",
+    "Outer": "Default__ProjSpiketrap_C",
+    "Properties": {
+      "InitialSpeed": 3000.0,
+      "MaxSpeed": 4000.0,
+      "bRotationFollowsVelocity": false,
+      "bShouldBounce": true,
+      "bInitialVelocityInLocalSpace": false,
+      "bBounceAngleAffectsFriction": true,
+      "Bounciness": 0.5,
+      "Friction": 0.35
+    }
+  }
+]

@@ -1,0 +1,120 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapLunchmeatsAK47_C",
+    "Super": "WeapAK47_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapLunchmeatsAK47_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapLunchmeatsAK47.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass WeapAK47_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapLunchmeatsAK47_C Default__WeapLunchmeatsAK47_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapLunchmeatsAK47.1"
+    }
+  },
+  {
+    "Type": "WeapLunchmeatsAK47_C",
+    "Name": "Default__WeapLunchmeatsAK47_C",
+    "Template": "Default__WeapAK47_C",
+    "Properties": {
+      "DefaultWeaponAttachments": [
+        "Item_Attach_Weapon_Magazine_ExtendedQuickDraw_Large_C",
+        "Item_Attach_Weapon_Upper_ACOG_01_C",
+        "Item_Attach_Weapon_Muzzle_Suppressor_Large_C"
+      ],
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapLunchmeatsAK47_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapLunchmeatsAK47.6"
+      },
+      "WeaponTag": "Lunchmeat's AKM",
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapLunchmeatsAK47_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapLunchmeatsAK47.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapLunchmeatsAK47_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapLunchmeatsAK47_C Default__WeapLunchmeatsAK47_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapLunchmeatsAK47.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapLunchmeatsAK47_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapLunchmeatsAK47_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapLunchmeatsAK47.3"
+      },
+      "VariableGuid": "88525042-4E62138C-34F436B8-9D55F029",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapLunchmeatsAK47_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapLunchmeatsAK47_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapLunchmeatsAK47.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapLunchmeatsAK47_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant AKM_Gcamo_01",
+          "ObjectPath": "TslGame/Content/Weapon/Skin/Gcamo/Materials/AKM_Gcamo_01.0"
+        }
+      ],
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapLunchmeatsAK47_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapLunchmeatsAK47.2"
+      }
+    }
+  }
+]

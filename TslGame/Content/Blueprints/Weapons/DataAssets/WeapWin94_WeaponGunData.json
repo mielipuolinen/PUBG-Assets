@@ -1,0 +1,108 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapWin94_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_45ACP_C",
+        "TracerClass": {
+          "ObjectName": "ParticleSystem P_Tracer1",
+          "ObjectPath": "TslGame/Content/Export_Marek/Tracer/P_Tracer1.10"
+        },
+        "AmmoPerClip": 8,
+        "TimeBetweenShots": 0.6,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+            "AttachableTags": [
+              "StockSniperRifleBullet"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 2.0,
+        "BurstShots": 1,
+        "FiringBulletsSpread": 1.0,
+        "ReloadMethod": "EWeaponReloadMethod::OneByOne",
+        "WeaponLength": 48.0,
+        "ShoulderLength": 22.0,
+        "TraceRadius": 1.8,
+        "HandWeaponOffset": {
+          "X": 0.0,
+          "Y": -1.5,
+          "Z": 0.0
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 2.0,
+          "Y": 0.5,
+          "Z": 2.0
+        },
+        "bManualCycleAfterShot": true,
+        "bManualCycleInitialStateReady": false,
+        "bHasSecondarySight": true
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 3.7,
+        "DeviationBaseAim": 1.3,
+        "MOA": 1.33,
+        "DeviationRecoilGain": 1.3,
+        "DeviationRecoilGainAim": 0.8,
+        "DeviationRecoilGainADS": 0.02,
+        "DeviationMax": 8.0,
+        "DeviationMaxMove": 2.5,
+        "DeviationMoveMultiplier": 1.5
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_Win1894_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Win1894/Redux/Weapon_Win1894_Grip_RD.0"
+        },
+        "CharacterFireCycle": {
+          "ObjectName": "AnimMontage CharacterWeapon_Win1894_BoltAction_Fast_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Win1894/Redux/CharacterWeapon_Win1894_BoltAction_Fast_Montage_RD.0"
+        },
+        "CharacterReloadByOneStart": {
+          "ObjectName": "AnimMontage CharacterWeapon_Win1894_Reload_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Win1894/Redux/CharacterWeapon_Win1894_Reload_Montage_RD.0"
+        },
+        "CharacterReloadByOneStop": {
+          "ObjectName": "AnimMontage CharacterWeapon_Win1894_Reload_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Win1894/Redux/CharacterWeapon_Win1894_Reload_Montage_RD.0"
+        },
+        "CharacterReloadByOneSingle": {
+          "ObjectName": "AnimMontage CharacterWeapon_Win1894_Reload_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Win1894/Redux/CharacterWeapon_Win1894_Reload_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationCharge": 4.0,
+        "ReloadDurationStart": 0.3,
+        "ReloadDurationLoop": 0.736,
+        "ReloadDurationMagOut": 0.4,
+        "bUseBoltAction": true,
+        "FireCycleDelay": 0.25,
+        "FireCycleDuration": 0.6,
+        "CycleAfterReloadDelay": 0.3,
+        "bCycleAfterLastShot": false,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Sniper_762_Kar98_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Sniper_762_Kar98.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Sniper_Win1894_Ironsight_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Sniper_Win1894_Ironsight.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Sniper_762_Kar98_Scope_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Sniper_762_Kar98_Scope.0"
+        },
+        "CycleCameraAnim": {
+          "ObjectName": "CameraAnim CSA_Sniper_Win1984_Cycle",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CSA_Sniper_Win1984_Cycle.0"
+        },
+        "RecoilKickADS": 0.09
+      }
+    }
+  }
+]

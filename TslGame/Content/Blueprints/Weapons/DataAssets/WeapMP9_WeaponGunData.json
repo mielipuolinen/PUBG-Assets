@@ -1,0 +1,126 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapMP9_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_9mm_C",
+        "TracerClass": null,
+        "AmmoPerClip": 30,
+        "TimeBetweenShots": 0.06,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+            "AttachableTags": [
+              "MagazineMedium"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+            "AttachableTags": [
+              "StockUZI"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 3.1,
+        "FiringModes": [
+          "EFiringMode::Normal",
+          "EFiringMode::FullAuto"
+        ],
+        "BurstShots": 4,
+        "BurstDelay": 0.0545,
+        "FiringBulletsSpread": 1.0,
+        "MovementModifierAim": 1.6,
+        "MovementModifierScope": 1.4,
+        "WeaponLength": 14.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffset": {
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 3.6
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 4.0,
+          "Y": 0.5,
+          "Z": 7.0
+        },
+        "StabilityForceModifier": 0.35,
+        "ADSTimeMultiplier": 1.3
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 1.4,
+        "DeviationBaseAim": 0.91,
+        "MOA": 3.5,
+        "DeviationRecoilGain": 1.2,
+        "DeviationRecoilGainADS": 0.22,
+        "DeviationMax": 7.0,
+        "DeviationMaxMove": 2.0,
+        "DeviationMoveMultiplier": 1.6,
+        "DeviationMoveMinReferenceVelocity": 150.0,
+        "DeviationMoveMaxReferenceVelocity": 400.0,
+        "DeviationStanceCrouch": 0.82,
+        "DeviationStanceProne": 0.65
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_MP9_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/MP9/Redux/Weapon_MP9_Grip_RD.0"
+        },
+        "CharacterLHGripBlendspace": {
+          "ObjectName": "BlendSpace Weapon_MP9_LH_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/MP9/Redux/Weapon_MP9_LH_Grip_RD.0"
+        },
+        "CharacterFireSelector": {
+          "ObjectName": "AnimMontage CharacterWeapon_MP9_Firemode_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/MP9/Redux/CharacterWeapon_MP9_Firemode_Montage_RD.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage CharacterWeapon_MP9_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/MP9/Redux/CharacterWeapon_MP9_Reload_Tactical_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage CharacterWeapon_MP9_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/MP9/Redux/CharacterWeapon_MP9_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 2.1,
+        "ReloadDurationCharge": 2.2,
+        "ReloadDurationMagOut": 0.4,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_UMP_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_UMP.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_Vector_Ironsight_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_Vector_Ironsight.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_UMP_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_UMP_ADS.0"
+        },
+        "RecoilKickADS": 1.0,
+        "RecoilKick_MovementMaxMultiplier": 1.1,
+        "MagDropLinearVelocity": {
+          "X": 2.551967,
+          "Y": 0.0,
+          "Z": -264.63428
+        },
+        "MagDropAngularVelocity": {
+          "X": 2.0,
+          "Y": 2.0,
+          "Z": 2.0
+        }
+      }
+    }
+  }
+]

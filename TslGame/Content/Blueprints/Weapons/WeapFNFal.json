@@ -1,0 +1,281 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapFNFal_C",
+    "Super": "DefaultRifleSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapFNFal_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFNFal.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapFNFal_C Default__WeapFNFal_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFNFal.1"
+    }
+  },
+  {
+    "Type": "WeapFNFal_C",
+    "Name": "Default__WeapFNFal_C",
+    "Template": "Default__DefaultRifleSetting_C",
+    "Properties": {
+      "TrailFX": null,
+      "ImpactTemplate": {
+        "ObjectName": "BlueprintGeneratedClass GunImpact_Heavy_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Heavy.4"
+      },
+      "WeaponTrajectoryData": {
+        "ObjectName": "WeaponTrajectoryData WeapFNFal_WeaponTrajectoryData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapFNFal_WeaponTrajectoryData.0"
+      },
+      "WeaponGunPostprocessSettings": {
+        "BlurLevel": 0.6,
+        "ScopeRadiusNear": 0.1,
+        "ScopeRadiusFar": 0.1,
+        "ReticleAngularSize": 15.0,
+        "DepthBlurPower": 1.0,
+        "DepthBlurWhitePoint": 5.0,
+        "DepthBlurBlackPoint": 50.0
+      },
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapFNFal_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapFNFal_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_gun_FNFAL",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_FNFAL.0"
+      },
+      "WeaponIconRatio": 3.28,
+      "WeaponConfig": {
+        "TargetingFOV": 70.0,
+        "WeaponClass": "EWeaponClass::Class_DMR",
+        "IronSightZeroingDistances": [
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0
+        ],
+        "AnimationKick": 1.2,
+        "RecoilMontage": {
+          "ObjectName": "AnimMontage DMR_Recoil_762_SLR_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Recoil/DMR_Recoil_762_SLR_Montage.0"
+        },
+        "WeaponEquipDuration": 0.2,
+        "WeaponUnequipDuration": 0.4,
+        "WeaponReadyDuration": 0.4,
+        "PhysicalBodyHitImpactPower": 20000.0
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapFNFal_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFNFal.6"
+      },
+      "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
+      "AttachmentPositionData": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentPoint": "Upper_Small",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "UpperSmall",
+              "AttachmentPoint": "Upper_Small"
+            },
+            {
+              "AttachmentTag": "UpperLarge",
+              "AttachmentPoint": "Upper_Large"
+            },
+            {
+              "AttachmentTag": "UpperHolo",
+              "AttachmentPoint": "Upper_Small"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentPoint": "Magazine_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MagazineSniperRifle",
+              "AttachmentPoint": "Magazine_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+          "AttachmentPoint": "Muzzle_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MuzzleSniperRifle",
+              "AttachmentPoint": "Muzzle_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+          "AttachmentPoint": "Stock_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "StockSniperRifle",
+              "AttachmentPoint": "Stock_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+          "AttachmentPoint": "Upper_Angled",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "RMR",
+              "AttachmentPoint": "Upper_Angled"
+            }
+          ]
+        }
+      ],
+      "DefaultAttachedItemAssets": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentTag": "MagazineDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/FNFAL/Meshes/FNFAL_Mag_01_Set.FNFAL_Mag_01_Set",
+          "AttachmentMeshName": "MagazineDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+          "AttachmentTag": "MuzzleDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/FNFAL/Meshes/SM_FNFAL_Flashhider.SM_FNFAL_Flashhider",
+          "AttachmentMeshName": "MuzzleDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        }
+      ],
+      "WeaponTag": "SLR",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem P_Muzzle_FNFal",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/DMR/P_Muzzle_FNFal.124"
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_Secondary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.5
+        },
+        "EAccessorySlot::Slot_SideArm": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        },
+        "EAccessorySlot::Slot_Primary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapFNFal_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapFNFal_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapFNFal_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFNFal.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapFNFal_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapFNFal_C Default__WeapFNFal_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFNFal.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapFNFal_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapFNFal_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFNFal.3"
+      },
+      "VariableGuid": "4B1B0ABE-483B9FB5-B48D1D92-B9412BF2",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapFNFal_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapFNFal_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFNFal.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapFNFal_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_Weapon_FNFal_RD_C",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/FNFal/Redux/Weapon_RD/ABP_Weapon_FNFal_RD.20"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_Fnfal",
+        "ObjectPath": "TslGame/Content/Weapon/Rifles/FNFAL/Meshes/SK_Fnfal.0"
+      },
+      "BodyInstance": {
+        "MassInKgOverride": 14.318548
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapFNFal_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFNFal.2"
+      }
+    }
+  }
+]

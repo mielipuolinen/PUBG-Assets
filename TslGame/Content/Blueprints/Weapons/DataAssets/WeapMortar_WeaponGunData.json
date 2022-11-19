@@ -1,0 +1,57 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapMortar_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_Mortar_C",
+        "TracerClass": null,
+        "AmmoPerClip": 1,
+        "TimeBetweenShots": 1.0,
+        "FiringBulletsSpread": 10.0,
+        "WeaponLength": 45.0,
+        "ShoulderLength": 10.0,
+        "HandWeaponOffsetFPP": {
+          "X": 3.0,
+          "Y": 2.0,
+          "Z": 13.0
+        },
+        "bExplodeOnImpact": true,
+        "ExplosionDamage": 300,
+        "ExplosionRadius": 100.0,
+        "DamageCurve": {
+          "ObjectName": "CurveFloat PanzerFaustWarheadDamageCurve",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/PanzerFaustWarheadDamageCurve.0"
+        },
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgTypeExplosion_Grenade_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgTypeExplosion_Grenade.0"
+        },
+        "ExplosionTemplate": {
+          "ObjectName": "BlueprintGeneratedClass ProjGrenade_Explosion_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.34"
+        }
+      },
+      "WeaponDeviationConfig": {
+        "DeviationMoveMaxReferenceVelocity": 50.0
+      },
+      "WeaponAnimConfig": {
+        "LobbyAnimClassOverride": "EWeaponClass::Class_Mortar",
+        "ReloadDurationTactical": 3.5,
+        "ReloadDurationCharge": 3.5,
+        "RecoilKickADS": 0.5,
+        "MagDropLinearVelocity": {
+          "X": 150.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MagDropAngularVelocity": {
+          "X": 0.0,
+          "Y": 6000.0,
+          "Z": 0.0
+        },
+        "DiscardWeaponDuration": 0.25
+      }
+    }
+  }
+]

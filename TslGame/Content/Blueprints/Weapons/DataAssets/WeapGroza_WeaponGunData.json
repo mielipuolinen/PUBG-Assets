@@ -1,0 +1,125 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapGroza_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_762mm_C",
+        "TracerClass": null,
+        "AmmoPerClip": 30,
+        "TimeBetweenShots": 0.08,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperDefault",
+              "UpperSmall",
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleLarge"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+            "AttachableTags": [
+              "MagazineLarge"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 3.1,
+        "FiringModes": [
+          "EFiringMode::Normal",
+          "EFiringMode::FullAuto"
+        ],
+        "BurstShots": 1,
+        "FiringBulletsSpread": 1.0,
+        "WeaponLength": 25.0,
+        "ShoulderLength": 15.0,
+        "HandWeaponOffsetFPP": {
+          "X": 2.5,
+          "Y": 0.0,
+          "Z": 1.5
+        }
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 3.1,
+        "DeviationBaseAim": 1.4,
+        "MOA": 3.0,
+        "DeviationRecoilGain": 1.45,
+        "DeviationRecoilGainAim": 0.9,
+        "DeviationRecoilGainADS": 0.012,
+        "DeviationMax": 8.0,
+        "DeviationMaxMove": 3.5,
+        "DeviationMoveMaxReferenceVelocity": 300.0
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_Groza_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Groza/Redux/Weapon_Groza_Grip_RD.0"
+        },
+        "CharacterLHGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_Groza_Grip_LH_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Groza/Redux/Weapon_Groza_Grip_LH_RD.0"
+        },
+        "CharacterFireSelector": {
+          "ObjectName": "AnimMontage Character_Weapon_Groza_Firemode_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Groza/Redux/Character_Weapon_Groza_Firemode_Montage_RD.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage Character_Weapon_Groza_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Groza/Redux/Character_Weapon_Groza_Reload_Tactical_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage Character_Weapon_Groza_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Groza/Redux/Character_Weapon_Groza_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponReloadTactical": {
+          "ObjectName": "AnimMontage Weapon_AK_Reload_Tactical_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/AK/Weapon/Weapon_AK_Reload_Tactical_Montage.0"
+        },
+        "WeaponReloadCharge": {
+          "ObjectName": "AnimMontage Weapon_AK_Reload_Charge_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/AK/Weapon/Weapon_AK_Reload_Charge_Montage.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "LobbyAnimClassOverride": "EWeaponClass::Class_SMG",
+        "bUseLobbyAnimClassOverride": true,
+        "ReloadDurationTactical": 2.25,
+        "ReloadDurationCharge": 3.0,
+        "ReloadDurationMagOut": 0.4,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_762_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_762.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_762_Groza_Ironsight_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_762_Groza_Ironsight.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_762_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_762_ADS.0"
+        },
+        "RecoilKickADS": 1.0,
+        "RecoilKick_MovementMaxMultiplier": 1.3,
+        "MagDropLinearVelocity": {
+          "X": 200.0,
+          "Y": 0.0,
+          "Z": -100.0
+        },
+        "MagDropAngularVelocity": {
+          "X": 50.0,
+          "Y": 500.0,
+          "Z": 0.0
+        }
+      }
+    }
+  }
+]

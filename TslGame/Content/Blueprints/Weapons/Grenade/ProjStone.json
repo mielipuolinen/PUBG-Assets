@@ -1,0 +1,498 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Audio1",
+    "Outer": "ProjStone_C",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class AudioComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_CustomEvent_DamageCauser",
+    "Outer": "ExecuteUbergraph_ProjStone",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_CustomEvent_InstigatedBy",
+    "Outer": "ExecuteUbergraph_ProjStone",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStone_C:ExecuteUbergraph_ProjStone.K2Node_CustomEvent_DamageCauser",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.1"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class Controller",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_CustomEvent_DamageType",
+    "Outer": "ExecuteUbergraph_ProjStone",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStone_C:ExecuteUbergraph_ProjStone.K2Node_CustomEvent_InstigatedBy",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.2"
+    },
+    "PropertyFlags": 2,
+    "PropertyClass": {
+      "ObjectName": "Class DamageType",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_CustomEvent_Damage",
+    "Outer": "ExecuteUbergraph_ProjStone",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStone_C:ExecuteUbergraph_ProjStone.K2Node_CustomEvent_DamageType",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.3"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_CustomEvent_DamagedActor",
+    "Outer": "ExecuteUbergraph_ProjStone",
+    "Next": {
+      "ObjectName": "FloatProperty ProjStone_C:ExecuteUbergraph_ProjStone.K2Node_CustomEvent_Damage",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.4"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ProjStone",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStone_C:ExecuteUbergraph_ProjStone.K2Node_CustomEvent_DamagedActor",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.5"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ProjStone",
+    "Outer": "ProjStone_C",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStone_C:Audio1",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty ProjStone_C:ExecuteUbergraph_ProjStone.EntryPoint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.6"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DamageCauser",
+    "Outer": "OnTakeAnyDamage_Event",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "InstigatedBy",
+    "Outer": "OnTakeAnyDamage_Event",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStone_C:OnTakeAnyDamage_Event.DamageCauser",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.8"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class Controller",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DamageType",
+    "Outer": "OnTakeAnyDamage_Event",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStone_C:OnTakeAnyDamage_Event.InstigatedBy",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.9"
+    },
+    "PropertyFlags": 130,
+    "PropertyClass": {
+      "ObjectName": "Class DamageType",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Damage",
+    "Outer": "OnTakeAnyDamage_Event",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjStone_C:OnTakeAnyDamage_Event.DamageType",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.10"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DamagedActor",
+    "Outer": "OnTakeAnyDamage_Event",
+    "Next": {
+      "ObjectName": "FloatProperty ProjStone_C:OnTakeAnyDamage_Event.Damage",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.11"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "OnTakeAnyDamage_Event",
+    "Outer": "ProjStone_C",
+    "Next": {
+      "ObjectName": "Function ProjStone_C:ExecuteUbergraph_ProjStone",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.7"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty ProjStone_C:OnTakeAnyDamage_Event.DamagedActor",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.12"
+      }
+    ],
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "ProjStone_C",
+    "Next": {
+      "ObjectName": "Function ProjStone_C:OnTakeAnyDamage_Event",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.13"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ProjStone_C",
+    "Next": {
+      "ObjectName": "Function ProjStone_C:UserConstructionScript",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.14"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ProjStone_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ProjStone_C:SimpleConstructionScript_0__57659476",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.25"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty ProjStone_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.15"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function ProjStone_C:ExecuteUbergraph_ProjStone",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.7"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslProjectile",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty ProjStone_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.15"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ProjStone": {
+        "ObjectName": "Function ProjStone_C:ExecuteUbergraph_ProjStone",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.7"
+      },
+      "OnTakeAnyDamage_Event": {
+        "ObjectName": "Function ProjStone_C:OnTakeAnyDamage_Event",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.13"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function ProjStone_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.14"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ProjStone_C Default__ProjStone_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.17"
+    }
+  },
+  {
+    "Type": "ProjStone_C",
+    "Name": "Default__ProjStone_C",
+    "Properties": {
+      "UberGraphFrame": {},
+      "MovementComp": {
+        "ObjectName": "TslProjectileMovementComponent Default__ProjStone_C:ProjectileComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.29"
+      },
+      "CollisionComp": {
+        "ObjectName": "SphereComponent Default__ProjStone_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.27"
+      },
+      "ParticleComp": {
+        "ObjectName": "ParticleSystemComponent Default__ProjStone_C:ParticleComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.20"
+      },
+      "MeshComp": {
+        "ObjectName": "StaticMeshComponent Default__ProjStone_C:MeshComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.28"
+      },
+      "InterpolationTargetComp": {
+        "ObjectName": "SphereComponent Default__ProjStone_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.26"
+      },
+      "ConstraintComp": {
+        "ObjectName": "PhysicsConstraintComponent Default__ProjStone_C:MeshConstraint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.21"
+      },
+      "MeshInitialRotationRate": {
+        "X": 0.1,
+        "Y": 3.0,
+        "Z": 0.0
+      },
+      "AkComp": {
+        "ObjectName": "AkComponent Default__ProjStone_C:AkComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.18"
+      },
+      "ProjectileConfig": {
+        "ExplosionDamage": 0,
+        "ExplosionRadius": 0.0,
+        "DamageType": null
+      },
+      "RootComponent": {
+        "ObjectName": "SphereComponent Default__ProjStone_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.27"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkComp",
+    "Outer": "Default__ProjStone_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjStone_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.27"
+      }
+    }
+  },
+  {
+    "Type": "AudioComponent",
+    "Name": "AudioComponent_3__E5DBC81A",
+    "Outer": "ProjStone_C"
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleComp",
+    "Outer": "Default__ProjStone_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent Default__ProjStone_C:MeshComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.28"
+      },
+      "bAutoActivate": true
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "MeshConstraint",
+    "Outer": "Default__ProjStone_C",
+    "Properties": {
+      "ConstraintInstance": {
+        "ProfileInstance": {
+          "LinearLimit": {
+            "XMotion": "LCM_Locked",
+            "YMotion": "LCM_Locked",
+            "ZMotion": "LCM_Locked",
+            "Stiffness": 150.0,
+            "Damping": 30.0,
+            "bSoftConstraint": true
+          },
+          "AngularDrive": {
+            "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+          },
+          "bDisableCollision": false
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjStone_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.26"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_1",
+    "Outer": "ProjStone_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0__57659476",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ProjStone_C:SceneComponent_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.22"
+      },
+      "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_12",
+    "Outer": "SimpleConstructionScript_0__57659476",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class AudioComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AudioComponent ProjStone_C:AudioComponent_3__E5DBC81A",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.19"
+      },
+      "ParentComponentOrVariableName": "SphereComp",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "488A69D2-9206DE5D-AB5BC209-1C2ED6AB",
+      "InternalVariableName": "Audio1"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0__57659476",
+    "Outer": "ProjStone_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node ProjStone_C:SimpleConstructionScript_0__57659476.SCS_Node_12",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.24"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node ProjStone_C:SimpleConstructionScript_0__57659476.SCS_Node_12",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.24"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ProjStone_C:SimpleConstructionScript_0__57659476.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.23"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "InterpolationTarget",
+    "Outer": "Default__ProjStone_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjStone_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.27"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__ProjStone_C",
+    "Properties": {
+      "BodyInstance": {
+        "MassInKgOverride": 0.61551815
+      },
+      "OnComponentHit": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "ProjStone_C Default__ProjStone_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.17"
+            },
+            "FunctionName": "OnHit"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "MeshComp",
+    "Outer": "Default__ProjStone_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Dirt_Stone",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Mesh/Dirt_Stone.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material M_Stone_02",
+          "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Stone_02.0"
+        }
+      ],
+      "BodyInstance": {
+        "MassInKgOverride": 0.5439235
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjStone_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjStone.26"
+      }
+    }
+  },
+  {
+    "Type": "TslProjectileMovementComponent",
+    "Name": "ProjectileComp",
+    "Outer": "Default__ProjStone_C",
+    "Properties": {
+      "InitialSpeed": 1300.0,
+      "MaxSpeed": 4000.0,
+      "bRotationFollowsVelocity": false,
+      "bShouldBounce": true,
+      "bInitialVelocityInLocalSpace": false,
+      "bBounceAngleAffectsFriction": true,
+      "Bounciness": 0.5,
+      "Friction": 0.8
+    }
+  }
+]

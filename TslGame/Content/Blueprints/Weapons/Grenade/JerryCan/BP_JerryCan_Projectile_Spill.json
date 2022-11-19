@@ -1,0 +1,200 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_JerryCan_Projectile_Spill_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BP_JerryCan_Projectile_Spill_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.9"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslProjectile_JerryCan",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_JerryCan_Projectile_Spill_C Default__BP_JerryCan_Projectile_Spill_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.1"
+    }
+  },
+  {
+    "Type": "BP_JerryCan_Projectile_Spill_C",
+    "Name": "Default__BP_JerryCan_Projectile_Spill_C",
+    "Properties": {
+      "PuddleContainerTemplate": {
+        "ObjectName": "BlueprintGeneratedClass BP_JerryCan_FuelPuddle_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_FuelPuddle.0"
+      },
+      "DefaultLifespan": 220.0,
+      "PuddleOffset": {
+        "X": 0.3,
+        "Y": 0.9
+      },
+      "StaticItemMesh": "/Game/Assets/ThirdParty/BarrelsAndCans/Models/SM_JerryCan_StaticProj.SM_JerryCan_StaticProj",
+      "VehicleReboundMinZ": 0.35,
+      "VehicleReboundMaxZ": 0.45,
+      "VehicleReboundMinMagnitude": 500.0,
+      "MaxVehicleHits": 2,
+      "ConstraintComp": {
+        "ObjectName": "PhysicsConstraintComponent Default__BP_JerryCan_Projectile_Spill_C:MeshConstraint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.6"
+      },
+      "CollisionComp": {
+        "ObjectName": "SphereComponent Default__BP_JerryCan_Projectile_Spill_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.11"
+      },
+      "InterpolationTargetComp": {
+        "ObjectName": "SphereComponent Default__BP_JerryCan_Projectile_Spill_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.10"
+      },
+      "MovementComp": {
+        "ObjectName": "TslProjectileMovementComponent Default__BP_JerryCan_Projectile_Spill_C:ProjectileComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.12"
+      },
+      "AkComp": {
+        "ObjectName": "AkComponent Default__BP_JerryCan_Projectile_Spill_C:AkComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.2"
+      },
+      "InteractionBoxComp": {
+        "ObjectName": "BoxComponent Default__BP_JerryCan_Projectile_Spill_C:InteractionBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.4"
+      },
+      "MeshComp": {
+        "ObjectName": "AsyncStaticMeshComponent Default__BP_JerryCan_Projectile_Spill_C:DropStaticMesh",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.3"
+      },
+      "InteractionComp": {
+        "ObjectName": "DroppedItemActorComponent Default__BP_JerryCan_Projectile_Spill_C:InteractionComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.5"
+      },
+      "RootComponent": {
+        "ObjectName": "SphereComponent Default__BP_JerryCan_Projectile_Spill_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.11"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkComp",
+    "Outer": "Default__BP_JerryCan_Projectile_Spill_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__BP_JerryCan_Projectile_Spill_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.11"
+      }
+    }
+  },
+  {
+    "Type": "AsyncStaticMeshComponent",
+    "Name": "DropStaticMesh",
+    "Outer": "Default__BP_JerryCan_Projectile_Spill_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__BP_JerryCan_Projectile_Spill_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.10"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "InteractionBox",
+    "Outer": "Default__BP_JerryCan_Projectile_Spill_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__BP_JerryCan_Projectile_Spill_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.11"
+      }
+    }
+  },
+  {
+    "Type": "DroppedItemActorComponent",
+    "Name": "InteractionComponent",
+    "Outer": "Default__BP_JerryCan_Projectile_Spill_C",
+    "Properties": {
+      "OnInteractBy": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "DroppedItemActorComponent Default__BP_JerryCan_Projectile_Spill_C:InteractionComponent",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.5"
+            },
+            "FunctionName": "OnInteractDelegate"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "MeshConstraint",
+    "Outer": "Default__BP_JerryCan_Projectile_Spill_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__BP_JerryCan_Projectile_Spill_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.10"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_JerryCan_Projectile_Spill_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BP_JerryCan_Projectile_Spill_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.7"
+      },
+      "VariableGuid": "28B98D6A-491CD400-449466BC-B4D8DA40",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_JerryCan_Projectile_Spill_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BP_JerryCan_Projectile_Spill_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.8"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "InterpolationTarget",
+    "Outer": "Default__BP_JerryCan_Projectile_Spill_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__BP_JerryCan_Projectile_Spill_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_Projectile_Spill.11"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__BP_JerryCan_Projectile_Spill_C"
+  },
+  {
+    "Type": "TslProjectileMovementComponent",
+    "Name": "ProjectileComp",
+    "Outer": "Default__BP_JerryCan_Projectile_Spill_C"
+  }
+]

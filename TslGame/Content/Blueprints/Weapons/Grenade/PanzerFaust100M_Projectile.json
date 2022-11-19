@@ -1,0 +1,286 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "PanzerFaust100M_Projectile_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript PanzerFaust100M_Projectile_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/PanzerFaust100M_Projectile.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslProjectile_Warhead",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "PanzerFaust100M_Projectile_C Default__PanzerFaust100M_Projectile_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/PanzerFaust100M_Projectile.1"
+    }
+  },
+  {
+    "Type": "PanzerFaust100M_Projectile_C",
+    "Name": "Default__PanzerFaust100M_Projectile_C",
+    "Properties": {
+      "ProjectileMovementComp": {
+        "ObjectName": "TslProjectileMovementComponent Default__PanzerFaust100M_Projectile_C:ProjectileMovementComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/PanzerFaust100M_Projectile.9"
+      },
+      "MeshComp": {
+        "ObjectName": "StaticMeshComponent Default__PanzerFaust100M_Projectile_C:MeshComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/PanzerFaust100M_Projectile.8"
+      },
+      "CollisionComp": {
+        "ObjectName": "SphereComponent Default__PanzerFaust100M_Projectile_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/PanzerFaust100M_Projectile.7"
+      },
+      "ProjectileConfig": {
+        "ExplosionDamage": 250,
+        "ExplosionRadius": 600.0,
+        "IgniteFuelInRadius": 300.0,
+        "DamageCurve": {
+          "ObjectName": "CurveFloat PanzerFaustWarheadDamageCurve",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/PanzerFaustWarheadDamageCurve.0"
+        },
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgTypeExplosion_PanzerFaustWarhead_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgTypeExplosion_PanzerFaustWarhead.0"
+        },
+        "ExplosionTemplate": {
+          "ObjectName": "BlueprintGeneratedClass ProjPanzerFaust_Explosion_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.26"
+        },
+        "ExplosionTemplateInAir": {
+          "ObjectName": "BlueprintGeneratedClass ProjPanzerFaust_Midair_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Midair.8"
+        },
+        "ExplosionTemplateWater": {
+          "ObjectName": "BlueprintGeneratedClass ProjPanzerFaust_Water_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Water.8"
+        },
+        "ExplosionTemplatePenetration": {
+          "ObjectName": "BlueprintGeneratedClass ProjPanzerFaust_Penetration_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.9"
+        },
+        "ExplosionDamageVehicleArmorPenetration": 150,
+        "DamageTypeVehicleArmorPenetration": {
+          "ObjectName": "BlueprintGeneratedClass DmgTypeExplosion_PanzerFaustWarheadVehiclePenetration_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgTypeExplosion_PanzerFaustWarheadVehiclePenetration.0"
+        },
+        "DamageCauserIcon": {
+          "ObjectName": "Texture2D weapons_gun_PanzerFaust100M",
+          "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_PanzerFaust100M.0"
+        },
+        "DamageIconRatio": 3.08,
+        "DamageCauserItemName": {
+          "TableId": "/Game/Item/Weapon/NS_WEAPONNAME.NS_WEAPONNAME",
+          "Key": "K_UXU_05"
+        },
+        "ConeShapeDamageMultiplier": 1.0,
+        "RotationSpeed": 1500.0,
+        "ExplosionTracer": {
+          "bEnabled": true
+        },
+        "bShouldPenetrate": true,
+        "TrailPostExplodeLifetime": 20.0
+      },
+      "AkComp": {
+        "ObjectName": "AkComponent Default__PanzerFaust100M_Projectile_C:AkComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/PanzerFaust100M_Projectile.2"
+      },
+      "InterpolationTargetComp": {
+        "ObjectName": "SphereComponent Default__PanzerFaust100M_Projectile_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/PanzerFaust100M_Projectile.6"
+      },
+      "TrailEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass ProjPanzerFaust_Trail_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Trail.0"
+      },
+      "bReplicates": true,
+      "RootComponent": {
+        "ObjectName": "SphereComponent Default__PanzerFaust100M_Projectile_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/PanzerFaust100M_Projectile.7"
+      },
+      "NetUpdateFrequency": 5.0,
+      "bAlwaysRelevant": true,
+      "bReplicateMovement": true,
+      "InitialLifeSpan": 150.0
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkComp",
+    "Outer": "Default__PanzerFaust100M_Projectile_C",
+    "Properties": {
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent Weapon_RocketLauncher_FlyBy",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/RocketLauncher/Weapon_RocketLauncher_FlyBy.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__PanzerFaust100M_Projectile_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/PanzerFaust100M_Projectile.7"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "PanzerFaust100M_Projectile_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent PanzerFaust100M_Projectile_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/PanzerFaust100M_Projectile.3"
+      },
+      "VariableGuid": "1AFF89E1-40D8D623-22134B9E-7EAC811B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "PanzerFaust100M_Projectile_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node PanzerFaust100M_Projectile_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/PanzerFaust100M_Projectile.4"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "InterpolationTarget",
+    "Outer": "Default__PanzerFaust100M_Projectile_C",
+    "Properties": {
+      "CanCharacterStepUpOn": "ECB_No",
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__PanzerFaust100M_Projectile_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/PanzerFaust100M_Projectile.7"
+      },
+      "bCanEverAffectNavigation": false
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__PanzerFaust100M_Projectile_C",
+    "Properties": {
+      "SphereRadius": 9.0,
+      "CanCharacterStepUpOn": "ECB_No",
+      "bCanEverAffectNavigation": false
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "MeshComp",
+    "Outer": "Default__PanzerFaust100M_Projectile_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SM_Panzer_Warhead",
+        "ObjectPath": "TslGame/Content/Weapon/Rifles/PanzerFaust/Meshes/Warhead/SM_Panzer_Warhead.1"
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Grenade",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "InteractiveObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly",
+        "ObjectType": "ECC_GameTraceChannel4"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "RelativeLocation": {
+        "X": -16.5,
+        "Y": -0.9,
+        "Z": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__PanzerFaust100M_Projectile_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/PanzerFaust100M_Projectile.6"
+      },
+      "bCanEverAffectNavigation": false
+    }
+  },
+  {
+    "Type": "TslProjectileMovementComponent",
+    "Name": "ProjectileMovementComp",
+    "Outer": "Default__PanzerFaust100M_Projectile_C",
+    "Properties": {
+      "DragForce": 0.21,
+      "InitialSpeed": 6200.0,
+      "MaxSpeed": 6200.0,
+      "bRotationFollowsVelocity": true,
+      "bForceSubStepping": true,
+      "ProjectileGravityScale": 0.9,
+      "MaxSimulationTimeStep": 0.1,
+      "bReplicates": true
+    }
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapFlareGun_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapFlareGun_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFlareGun.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslWeapon_Gun_Projectile",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapFlareGun_C Default__WeapFlareGun_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFlareGun.1"
+    }
+  },
+  {
+    "Type": "WeapFlareGun_C",
+    "Name": "Default__WeapFlareGun_C",
+    "Properties": {
+      "ProjectileClass": {
+        "ObjectName": "BlueprintGeneratedClass Flare_Projectile_C",
+        "ObjectPath": "TslGame/Content/Export_Marek/Exp_Flare/Flare_Projectile.56"
+      },
+      "bUseSkyAimingAnim": true,
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapFlareGun_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapFlareGun_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_gun_FLAREGUN",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_FLAREGUN.0"
+      },
+      "WeaponIconRatio": 1.37,
+      "WeaponConfig": {
+        "WeaponClass": "EWeaponClass::Class_Pistol",
+        "RecoilMontage": {
+          "ObjectName": "AnimMontage Recoil_1911_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/1911/Recoil/Recoil_1911_Montage.0"
+        }
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapFlareGun_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFlareGun.6"
+      },
+      "WeaponTag": "FlareGun",
+      "MuzzleAttachPoint": "Muzzle",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem P_Muzzle_Flaregun",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Other/P_Muzzle_Flaregun.75"
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_SideArm": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapFlareGun_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapFlareGun_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapFlareGun_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFlareGun.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapFlareGun_C",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapFlareGun_C Default__WeapFlareGun_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFlareGun.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapFlareGun_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapFlareGun_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFlareGun.3"
+      },
+      "VariableGuid": "25E0AE81-4CF50C75-221791BC-403C98B0",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapFlareGun_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapFlareGun_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFlareGun.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapFlareGun_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_Flaregun_RD_C",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Flaregun/Redux/Weapon/ABP_Flaregun_RD.15"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_Flaregun",
+        "ObjectPath": "TslGame/Content/Weapon/Pistols/FLAREGUN/Meshes/SK_Flaregun.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapFlareGun_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFlareGun.2"
+      }
+    }
+  }
+]

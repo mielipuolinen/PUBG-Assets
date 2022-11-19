@@ -1,0 +1,187 @@
+[
+  {
+    "Type": "Material",
+    "Name": "Material",
+    "Properties": {
+      "BaseColor": {
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSample_2",
+        "UseConstant": false,
+        "Constant": {
+          "B": 128,
+          "G": 128,
+          "R": 128,
+          "A": 255,
+          "Hex": "FF808080"
+        }
+      },
+      "Metallic": {
+        "OutputIndex": 3,
+        "InputName": "",
+        "Mask": 1,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSample_1",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "Roughness": {
+        "OutputIndex": 2,
+        "InputName": "",
+        "Mask": 1,
+        "MaskR": 0,
+        "MaskG": 1,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSample_1",
+        "UseConstant": false,
+        "Constant": 0.5
+      },
+      "Normal": {
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSample_0",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "AmbientOcclusion": {
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSample_3",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "bUsedWithSkeletalMesh": true,
+      "bUsedWithSplineMeshes": true,
+      "bUsedWithInstancedStaticMeshes": true,
+      "EditorX": 112,
+      "Expressions": [
+        {
+          "ObjectName": "MaterialExpressionTextureSample Material:MaterialExpressionTextureSample_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Material.3"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample Material:MaterialExpressionTextureSample_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Material.2"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample Material:MaterialExpressionTextureSample_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Material.1"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample Material:MaterialExpressionTextureSample_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Material.4"
+        }
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "096AC17D-4E7F0854-CE9C7484-A2428FF2",
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 0.25,
+          "UVChannelIndex": 0,
+          "TextureName": "Spike_01_AO"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "Spike_01_D"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "Spike_01_N"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "Spike_01_RM"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_0",
+    "Outer": "Material",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D Spike_01_N",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spike_01_N.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material Material",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Material.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_1",
+    "Outer": "Material",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D Spike_01_RM",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spike_01_RM.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material Material",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Material.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_2",
+    "Outer": "Material",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D Spike_01_D",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spike_01_D.0"
+      },
+      "Material": {
+        "ObjectName": "Material Material",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Material.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_3",
+    "Outer": "Material",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D Spike_01_AO",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spike_01_AO.0"
+      },
+      "Material": {
+        "ObjectName": "Material Material",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Material.0"
+      }
+    }
+  }
+]

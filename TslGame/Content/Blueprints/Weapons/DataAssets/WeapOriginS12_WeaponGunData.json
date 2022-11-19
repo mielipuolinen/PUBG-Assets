@@ -1,0 +1,134 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapOriginS12_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_12GuageSlug_C",
+        "TracerClass": null,
+        "AmmoPerClip": 30,
+        "TimeBetweenShots": 0.125,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperSmall",
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleLarge"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+            "AttachableTags": []
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::LowerRail",
+            "AttachableTags": [
+              "LowerDefault"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+            "AttachableTags": [
+              "RMR"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 2.3,
+        "FiringModes": [
+          "EFiringMode::Normal",
+          "EFiringMode::Burst",
+          "EFiringMode::FullAuto"
+        ],
+        "FiringBulletsSpread": 1.0,
+        "WeaponLength": 45.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffset": {
+          "X": -3.0,
+          "Y": -1.0,
+          "Z": -5.0
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 3.0,
+          "Y": 1.0,
+          "Z": 3.0
+        },
+        "PelletGrid": null,
+        "GridPelletSpreadHalfAngle": 0.4
+      },
+      "WeaponDeviationConfig": {
+        "DeviationRecoilGainADS": 0.025,
+        "DeviationMax": 7.0,
+        "DeviationMaxMove": 1.0,
+        "DeviationMoveMultiplier": 0.7,
+        "DeviationMoveMinReferenceVelocity": 100.0,
+        "DeviationMoveMaxReferenceVelocity": 300.0,
+        "DeviationStanceJump": 2.0
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_Origin_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/OriginS12/Redux/Weapon_Origin_Grip_RD.0"
+        },
+        "CharacterLHGripBlendspace": {
+          "ObjectName": "BlendSpace Weapon_Origin_LH_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/OriginS12/Redux/Weapon_Origin_LH_Grip_RD.0"
+        },
+        "CharacterFireSelector": {
+          "ObjectName": "AnimMontage CharacterWeapon_Origin_Firemode_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/OriginS12/Redux/CharacterWeapon_Origin_Firemode_Montage_RD.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage CharacterWeapon_Origin_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/OriginS12/Redux/CharacterWeapon_Origin_Reload_Tactical_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage CharacterWeapon_Origin_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/OriginS12/Redux/CharacterWeapon_Origin_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponReloadTactical": {
+          "ObjectName": "AnimMontage Weapon_OriginS12_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/OriginS12/Redux/Weapon_RD/Weapon_OriginS12_Reload_Tactical_Montage_RD.0"
+        },
+        "WeaponReloadCharge": {
+          "ObjectName": "AnimMontage Weapon_OriginS12_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/OriginS12/Redux/Weapon_RD/Weapon_OriginS12_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 3.0,
+        "ReloadDurationCharge": 3.75,
+        "ReloadDurationMagOut": 0.4,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_O12_Slug_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_O12_Slug.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_O12_Slug_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_O12_Slug.0"
+        },
+        "ShotCameraShakeHolo": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_O12_Slug_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_O12_Slug.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_O12_Slug_Scope_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_O12_Slug_Scope.0"
+        },
+        "CycleCameraAnim": {
+          "ObjectName": "CameraAnim CSA_Shotgun_Winchester_Cycle",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CSA_Shotgun_Winchester_Cycle.0"
+        },
+        "RecoilKickADS": 1.0
+      }
+    }
+  }
+]

@@ -1,0 +1,117 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapWinchester_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_12Guage_C",
+        "TracerClass": null,
+        "AmmoPerClip": 5,
+        "TimeBetweenShots": 0.58,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleShotgun",
+              "MuzzleDuckbill"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+            "AttachableTags": [
+              "StockShotgun",
+              "StockSniperRifleBullet"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 2.3,
+        "BurstShots": 1,
+        "BulletPerFiring": 9,
+        "FiringBulletsSpread": 5.5,
+        "ReloadMethod": "EWeaponReloadMethod::OneByOne",
+        "WeaponLength": 55.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffset": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 4.0
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 5.0
+        },
+        "bManualCycleAfterShot": true,
+        "bManualCycleInitialStateReady": false,
+        "bCanScopeDuringWeaponCycle": true,
+        "bUseGridPelletSpread": true,
+        "PelletGrid": null,
+        "PelletGridScale": 1.1,
+        "GridPelletSpreadHalfAngle": 0.35,
+        "bUsePelletManager": true
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 0.8,
+        "DeviationRecoilGain": 0.7,
+        "DeviationRecoilGainAim": 0.5,
+        "DeviationMax": 7.0,
+        "DeviationMaxMove": 1.0,
+        "DeviationMoveMultiplier": 0.4,
+        "DeviationMoveMinReferenceVelocity": 100.0,
+        "DeviationMoveMaxReferenceVelocity": 400.0,
+        "DeviationStanceJump": 2.7
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_Winchester_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Winchester/Redux/Weapon_Winchester_Grip_RD.0"
+        },
+        "CharacterFireCycle": {
+          "ObjectName": "AnimMontage CharacterWeapon_Winchester_Rechamber_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Winchester/Redux/CharacterWeapon_Winchester_Rechamber_Montage_RD.0"
+        },
+        "CharacterReloadByOneStart": {
+          "ObjectName": "AnimMontage CharacterWeapon_Winchester_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Winchester/Redux/CharacterWeapon_Winchester_Reload_Tactical_Montage_RD.0"
+        },
+        "CharacterReloadByOneStop": {
+          "ObjectName": "AnimMontage CharacterWeapon_Winchester_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Winchester/Redux/CharacterWeapon_Winchester_Reload_Tactical_Montage_RD.0"
+        },
+        "CharacterReloadByOneSingle": {
+          "ObjectName": "AnimMontage CharacterWeapon_Winchester_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Winchester/Redux/CharacterWeapon_Winchester_Reload_Tactical_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationStart": 0.45,
+        "ReloadDurationLoop": 0.715,
+        "ReloadDurationMagOut": 0.4,
+        "bUseBoltAction": true,
+        "FireCycleDelay": 0.2,
+        "FireCycleDuration": 0.5,
+        "CycleAfterReloadDelay": 0.2,
+        "bCycleAfterLastShot": false,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Shotgun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Shotgun.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Shotgun_Winchester_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Shotgun_Winchester.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Shotgun_Winchester_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Shotgun_Winchester.0"
+        },
+        "CycleCameraAnim": {
+          "ObjectName": "CameraAnim CSA_Shotgun_Winchester_Cycle",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CSA_Shotgun_Winchester_Cycle.0"
+        },
+        "RecoilKickADS": 1.0
+      }
+    }
+  }
+]

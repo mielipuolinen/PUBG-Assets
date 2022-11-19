@@ -1,0 +1,133 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapMini14_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_556mm_C",
+        "TracerClass": {
+          "ObjectName": "ParticleSystem P_Tracer_Mini14",
+          "ObjectPath": "TslGame/Content/Export_Marek/Tracer/P_Tracer_Mini14.10"
+        },
+        "TimeBetweenShots": 0.1,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperDefault",
+              "UpperSmall",
+              "UpperLarge",
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+            "AttachableTags": [
+              "MagazineSniperRifle"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleSniperRifle"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+            "AttachableTags": [
+              "RMR"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 2.5,
+        "BurstShots": 1,
+        "WeaponLength": 45.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffset": {
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 1.0
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        }
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 3.5,
+        "DeviationBaseAim": 1.2,
+        "MOA": 1.5,
+        "DeviationRecoilGain": 1.3,
+        "DeviationRecoilGainAim": 0.8,
+        "DeviationRecoilGainADS": 0.03,
+        "DeviationMax": 8.0,
+        "DeviationMaxMove": 3.4,
+        "DeviationMoveMaxReferenceVelocity": 300.0,
+        "DeviationStanceJump": 1.65
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_Mini14_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mini14/Redux/Weapon_Mini14_Grip_RD.0"
+        },
+        "CharacterLHGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_Mini14_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mini14/Redux/Weapon_Mini14_Grip_RD.0"
+        },
+        "CharacterFireSelector": {
+          "ObjectName": "AnimMontage Character_Weapon_M16_Firemode_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M16/Redux/Character_Weapon_M16_Firemode_Montage_RD.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage Character_Weapon_Mini14_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mini14/Redux/Character_Weapon_Mini14_Reload_Tactical_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage Character_Weapon_Mini14_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mini14/Redux/Character_Weapon_Mini14_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponReloadTactical": {
+          "ObjectName": "AnimMontage Weapon_Mini14_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mini14/Redux/Weapon_RD/Weapon_Mini14_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponReloadCharge": {
+          "ObjectName": "AnimMontage Weapon_Mini14_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mini14/Redux/Weapon_RD/Weapon_Mini14_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 2.7,
+        "ReloadDurationCharge": 3.6,
+        "ReloadDurationMagOut": 0.4,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_556_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_556.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_556_Mini14_Ironsight_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_556_Mini14_Ironsight.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_556_Mini14_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_556_Mini14_ADS.0"
+        },
+        "RecoilKickADS": 1.0,
+        "RecoilKick_MovementMaxMultiplier": 1.3,
+        "MagDropLinearVelocity": {
+          "X": 0.0,
+          "Y": -200.0,
+          "Z": -50.0
+        },
+        "MagDropAngularVelocity": {
+          "X": 150.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      }
+    }
+  }
+]

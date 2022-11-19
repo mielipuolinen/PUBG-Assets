@@ -1,0 +1,385 @@
+[
+  {
+    "Type": "Material",
+    "Name": "M_SpikeTrap",
+    "Properties": {
+      "BaseColor": {
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSample_2",
+        "UseConstant": false,
+        "Constant": {
+          "B": 128,
+          "G": 128,
+          "R": 128,
+          "A": 255,
+          "Hex": "FF808080"
+        }
+      },
+      "Metallic": {
+        "OutputIndex": 3,
+        "InputName": "",
+        "Mask": 1,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSample_1",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "Roughness": {
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionClamp_0",
+        "UseConstant": false,
+        "Constant": 0.5
+      },
+      "Normal": {
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSample_0",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "OpacityMask": {
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionStaticSwitchParameter_1",
+        "UseConstant": false,
+        "Constant": 1.0
+      },
+      "BlendMode": "BLEND_Masked",
+      "AmbientOcclusion": {
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSample_3",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "bUsedWithSkeletalMesh": true,
+      "bUsedWithSplineMeshes": true,
+      "bUsedWithInstancedStaticMeshes": true,
+      "EditorX": 112,
+      "Expressions": [
+        {
+          "ObjectName": "MaterialExpressionTextureSample M_SpikeTrap:MaterialExpressionTextureSample_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.8"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample M_SpikeTrap:MaterialExpressionTextureSample_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.7"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample M_SpikeTrap:MaterialExpressionTextureSample_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.6"
+        },
+        {
+          "ObjectName": "MaterialExpressionStaticSwitchParameter M_SpikeTrap:MaterialExpressionStaticSwitchParameter_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.5"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample M_SpikeTrap:MaterialExpressionTextureSample_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.9"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall M_SpikeTrap:MaterialExpressionMaterialFunctionCall_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.1"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter M_SpikeTrap:MaterialExpressionScalarParameter_10",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.3"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter M_SpikeTrap:MaterialExpressionScalarParameter_11",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.4"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter M_SpikeTrap:MaterialExpressionScalarParameter_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.2"
+        }
+      ],
+      "MaterialFunctionInfos": [
+        {
+          "StateId": "299BF683-48FFE94A-E2C4B187-097C95FB",
+          "Function": {
+            "ObjectName": "MaterialFunction DitherTemporalAA",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.2"
+          }
+        },
+        {
+          "StateId": "6B8C15DE-48E7C079-8F47FA90-755EA4F2",
+          "Function": {
+            "ObjectName": "MaterialFunction ScreenAlignedPixelToPixelUVs",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Texturing/ScreenAlignedPixelToPixelUVs.0"
+          }
+        }
+      ],
+      "StateId": "9C3B4143-468C1106-E0937C9A-96F0ECAB",
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "Good64x64TilingNoiseHighFreq"
+        },
+        {
+          "SamplingScale": 0.25,
+          "UVChannelIndex": 0,
+          "TextureName": "Spike_01_AO"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "Spike_01_D"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "Spike_01_N"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "Spike_01_RM"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_1",
+    "Outer": "M_SpikeTrap",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction DitherTemporalAA",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/DitherTemporalAA.2"
+      },
+      "FunctionInputs": [
+        {
+          "ExpressionInputId": "982BCAE7-401F814C-DC0AE295-5DEE46F3",
+          "Input": {
+            "OutputIndex": 0,
+            "InputName": "Alpha Threshold",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionScalarParameter_1"
+          }
+        },
+        {
+          "ExpressionInputId": "E8A932AF-4299B0D6-C16EDB8B-1E912796",
+          "Input": {
+            "OutputIndex": 0,
+            "InputName": "Random",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionScalarParameter_11"
+          }
+        }
+      ],
+      "FunctionOutputs": [
+        {
+          "ExpressionOutputId": "9BC32B08-4665F3D2-D59A90AA-45CA8A9F",
+          "Output": {
+            "OutputName": "Result",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        }
+      ],
+      "Material": {
+        "ObjectName": "Material M_SpikeTrap",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.0"
+      },
+      "Outputs": [
+        {
+          "OutputName": "Result",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_1",
+    "Outer": "M_SpikeTrap",
+    "Properties": {
+      "DefaultValue": 0.5,
+      "ParameterName": "Alpha Threshold (S)",
+      "ExpressionGUID": "2CB1A80A-45B473F7-7E6BE68A-D060F9DD",
+      "Material": {
+        "ObjectName": "Material M_SpikeTrap",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_10",
+    "Outer": "M_SpikeTrap",
+    "Properties": {
+      "DefaultValue": 1.0,
+      "ParameterName": "Dither_Amount",
+      "ExpressionGUID": "51F0929F-4CB4318A-BCDCB9A0-E3A6FB5B",
+      "Material": {
+        "ObjectName": "Material M_SpikeTrap",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_11",
+    "Outer": "M_SpikeTrap",
+    "Properties": {
+      "DefaultValue": 10.0,
+      "ParameterName": "Random (S)",
+      "ExpressionGUID": "A883AA27-423CDDFF-35C789A0-2228912D",
+      "Material": {
+        "ObjectName": "Material M_SpikeTrap",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionStaticSwitchParameter",
+    "Name": "MaterialExpressionStaticSwitchParameter_1",
+    "Outer": "M_SpikeTrap",
+    "Properties": {
+      "A": {
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_5"
+      },
+      "B": {
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_3"
+      },
+      "DefaultValue": true,
+      "ParameterName": "Use_Dither",
+      "ExpressionGUID": "50D3291C-484161D7-DE8B47A5-9DB20FD7",
+      "Material": {
+        "ObjectName": "Material M_SpikeTrap",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_0",
+    "Outer": "M_SpikeTrap",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D Spike_01_N",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spike_01_N.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material M_SpikeTrap",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_1",
+    "Outer": "M_SpikeTrap",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D Spike_01_RM",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spike_01_RM.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material M_SpikeTrap",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_2",
+    "Outer": "M_SpikeTrap",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D Spike_01_D",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spike_01_D.0"
+      },
+      "Material": {
+        "ObjectName": "Material M_SpikeTrap",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_3",
+    "Outer": "M_SpikeTrap",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D Spike_01_AO",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spike_01_AO.0"
+      },
+      "Material": {
+        "ObjectName": "Material M_SpikeTrap",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_SpikeTrap.0"
+      }
+    }
+  }
+]

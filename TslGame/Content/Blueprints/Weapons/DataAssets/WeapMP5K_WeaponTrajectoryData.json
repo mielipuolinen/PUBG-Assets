@@ -1,0 +1,57 @@
+[
+  {
+    "Type": "WeaponTrajectoryData",
+    "Name": "WeapMP5K_WeaponTrajectoryData",
+    "Properties": {
+      "RecoilConfig": {
+        "VerticalRecoilVariation": 0.05,
+        "VerticalRecoveryModifier": 0.6,
+        "VerticalRecoveryClamp": 5.5,
+        "VerticalRecoveryMax": 1.5,
+        "HorizontalTendency": 0.05,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_SMG_MP5K",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_SMG_MP5K.0"
+        },
+        "BulletsPerSwitch": 2,
+        "RecoilSpeed_Vertical": 12.0,
+        "RecoilSpeed_Horizontal": 12.0,
+        "RecoverySpeed_Vertical": 8.5,
+        "RecoilValue_Climb": 0.6,
+        "RecoilValue_Fall": 2.5,
+        "RecoilModifier_Prone": 0.7,
+        "RecoilHorizontalMinScalar": 0.6,
+        "RecoilStartTimeInMap": {
+          "X": 0.7,
+          "Y": 1.25
+        },
+        "RecoilStartTimeOutMap": {
+          "X": 0.0,
+          "Y": 0.025
+        },
+        "RecoilBlendInOutMap": {
+          "X": 0.0,
+          "Y": 0.04
+        }
+      },
+      "TrajectoryConfig": {
+        "InitialSpeed": 400.0,
+        "HitDamage": 33.0,
+        "BallisticCurve": {
+          "ObjectName": "CurveVector C_Ballistic_MP5K",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/BallisticData/C_Ballistic_MP5K.0"
+        },
+        "RangeModifier": 0.89,
+        "ReferenceDistance": 200.0,
+        "TravelDistanceMax": 1000.0,
+        "VDragCoefficient": 0.68,
+        "BDS": 0.8,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
+        },
+        "WeaponSpread": 4.5
+      }
+    }
+  }
+]

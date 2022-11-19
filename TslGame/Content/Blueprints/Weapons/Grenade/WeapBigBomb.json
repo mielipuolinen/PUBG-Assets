@@ -1,0 +1,147 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapBigBomb_C",
+    "Super": "DefaultGrenadeSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapBigBomb_C:SimpleConstructionScript_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBigBomb.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultGrenadeSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapBigBomb_C Default__WeapBigBomb_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBigBomb.1"
+    }
+  },
+  {
+    "Type": "WeapBigBomb_C",
+    "Name": "Default__WeapBigBomb_C",
+    "Template": "Default__DefaultGrenadeSetting_C",
+    "Properties": {
+      "ThrowableConfig": {
+        "ProjectileClass": {
+          "ObjectName": "BlueprintGeneratedClass ProjBigBomb_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBigBomb.16"
+        },
+        "ExplosionStartType": "EProjectileExplosionStartType::Impact",
+        "ExplosionDelay": 0.0,
+        "StandAnim": {
+          "PinOff": null
+        },
+        "CrouchAnim": {
+          "PinOff": null
+        },
+        "ProneAnim": {
+          "PinOff": null
+        }
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_apple",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_apple.0"
+      },
+      "WeaponIconRatio": 0.68,
+      "WeaponConfig": {
+        "WeaponClass": "EWeaponClass::Class_Throwable"
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapBigBomb_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBigBomb.6"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapBigBomb_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBigBomb.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapBigBomb_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapBigBomb_C Default__WeapBigBomb_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBigBomb.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapBigBomb_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapBigBomb_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBigBomb.3"
+      },
+      "VariableGuid": "028EC49A-48E4171F-BF4E70B7-59BAFBFD",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "WeapBigBomb_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapBigBomb_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBigBomb.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapBigBomb_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh Apple",
+        "ObjectPath": "TslGame/Content/Weapon/Grenades/Apple/Apple.0"
+      },
+      "RelativeScale3D": {
+        "X": 5.0,
+        "Y": 5.0,
+        "Z": 5.0
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -1.0,
+        "Z": 5.960465E-08
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapBigBomb_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBigBomb.2"
+      }
+    }
+  }
+]

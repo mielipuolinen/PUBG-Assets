@@ -1,0 +1,240 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapDesertEagle_C",
+    "Super": "DefaultPistolSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapDesertEagle_C:SimpleConstructionScript_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDesertEagle.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultPistolSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultPistolSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapDesertEagle_C Default__WeapDesertEagle_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDesertEagle.1"
+    }
+  },
+  {
+    "Type": "WeapDesertEagle_C",
+    "Name": "Default__WeapDesertEagle_C",
+    "Template": "Default__DefaultPistolSetting_C",
+    "Properties": {
+      "WeaponTrajectoryData": {
+        "ObjectName": "WeaponTrajectoryData WeapDesertEagle_WeaponTrajectoryData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapDesertEagle_WeaponTrajectoryData.0"
+      },
+      "bOverrideScopeCameraDistanceOffset": true,
+      "WeaponGunPostprocessSettings": {
+        "BlurLevel": 1.0,
+        "ScopeRadiusNear": 0.1,
+        "ScopeRadiusFar": 0.1,
+        "DepthBlurPower": 0.5,
+        "DepthBlurWhitePoint": 7.0,
+        "DepthBlurBlackPoint": 35.0
+      },
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapDesertEagle_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapDesertEagle_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_gun_DEagle",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_DEagle.0"
+      },
+      "WeaponIconRatio": 1.58,
+      "WeaponConfig": {
+        "TargetingFOV": 80.0,
+        "HoldBreathFOV": 65.0,
+        "SocketOffset_Shoulder": {
+          "X": 6.0,
+          "Y": 40.0,
+          "Z": 5.0
+        },
+        "SocketOffset_Hand": {
+          "X": 3.0,
+          "Y": 7.0,
+          "Z": 0.5
+        },
+        "SwayModifier_Pitch": 2.0,
+        "SwayModifier_YawOffset": 2.0,
+        "IronSightZeroingDistances": [
+          50.0
+        ],
+        "RecoilMontage": {
+          "ObjectName": "AnimMontage Rifle_Recoil_DesertEagle_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DesertEagle/Recoil/Rifle_Recoil_DesertEagle_Montage.0"
+        },
+        "WeaponEquipDuration": 0.2,
+        "PhysicalBodyHitImpactPower": 8000.0
+      },
+      "WeaponHand": "EWeaponHand::Right",
+      "bCanArmAsDriver": true,
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapDesertEagle_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDesertEagle.6"
+      },
+      "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
+      "AttachmentPositionData": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentPoint": "UpperSmall",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "UpperReddot",
+              "AttachmentPoint": "UpperSmall"
+            },
+            {
+              "AttachmentTag": "UpperHolo",
+              "AttachmentPoint": "Upper_Holo"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::LowerRail",
+          "AttachmentPoint": "Lower_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "LowerDefault",
+              "AttachmentPoint": "Lower_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentPoint": "Magazine_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MagazineSmall",
+              "AttachmentPoint": "Magazine_Default"
+            }
+          ]
+        }
+      ],
+      "DefaultAttachedItemAssets": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentTag": "MagazineDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Pistols/DesertEagle/Meshes/SM_DesertEagle_Mag.SM_DesertEagle_Mag",
+          "AttachmentMeshName": "MagazineDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        }
+      ],
+      "WeaponTag": "Deagle",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem P_Muzzle_DesertEagle",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Pistol/P_Muzzle_DesertEagle.90"
+      },
+      "FireForceFeedback": {
+        "ObjectName": "TslForceFeedbackEffect TslFFE_Fire",
+        "ObjectPath": "TslGame/Content/Effects/ForceFeedback/TslFFE_Fire.0"
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_SideArm": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+          },
+          "PlayRate": 1.5
+        }
+      },
+      "HipDuration": 1.875,
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapDesertEagle_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapDesertEagle_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapDesertEagle_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDesertEagle.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapDesertEagle_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapDesertEagle_C Default__WeapDesertEagle_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDesertEagle.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapDesertEagle_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapDesertEagle_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDesertEagle.3"
+      },
+      "VariableGuid": "BDA1A7CC-4A9E5D50-F8948EBC-0B1B6578",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "WeapDesertEagle_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapDesertEagle_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDesertEagle.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapDesertEagle_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_DesertEagle_RD_C",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DesertEagle/Redux/Weapon_RD/ABP_DesertEagle_RD.27"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_DesertEagle",
+        "ObjectPath": "TslGame/Content/Weapon/Pistols/DesertEagle/Meshes/SK_DesertEagle.0"
+      },
+      "BodyInstance": {
+        "MassInKgOverride": 100.0
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapDesertEagle_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDesertEagle.2"
+      }
+    }
+  }
+]

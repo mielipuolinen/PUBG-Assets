@@ -1,0 +1,213 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapTacPack_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapTacPack_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslWeapon_TacPack",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapTacPack_C Default__WeapTacPack_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.1"
+    }
+  },
+  {
+    "Type": "WeapTacPack_C",
+    "Name": "Default__WeapTacPack_C",
+    "Properties": {
+      "SlotCapacity": 60.0,
+      "WeaponSoftRolesData": {
+        "ObjectName": "WeaponSoftRolesData WeapTacPack_WeaponSoftRolesData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapTacPack_WeaponSoftRolesData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_Tac_Pack",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_Tac_Pack.0"
+      },
+      "WeaponIconRatio": 2.76,
+      "WeaponConfig": {
+        "SocketRotationOffset_Hand": {
+          "Pitch": 0.0,
+          "Yaw": 141.74716,
+          "Roll": 0.0
+        },
+        "bApplyRotationOffset": true,
+        "ThrownType": "EThrownWeaponType::Thrown_TacPack",
+        "WeaponEquipDuration": 0.3,
+        "WeaponUnequipDuration": 0.5,
+        "AddTransformOnBackpack_Primary": {
+          "Translation": {
+            "X": -10.0,
+            "Y": 0.0,
+            "Z": -4.0
+          }
+        },
+        "AddTransformOnBackpack_Secondary": {
+          "Rotation": {
+            "X": 0.99999994,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 3.5762787E-07,
+            "IsNormalized": true,
+            "Size": 0.99999994,
+            "SizeSquared": 0.9999999
+          },
+          "Translation": {
+            "X": -5.0,
+            "Y": 15.0,
+            "Z": 8.0
+          }
+        },
+        "AddTransformWithoutBackpack_Primary": {
+          "Rotation": {
+            "X": 0.99999994,
+            "Y": 0.0,
+            "Z": 0.0,
+            "W": 3.5762787E-07,
+            "IsNormalized": true,
+            "Size": 0.99999994,
+            "SizeSquared": 0.9999999
+          },
+          "Translation": {
+            "X": 0.0,
+            "Y": 2.0,
+            "Z": -5.0
+          }
+        },
+        "AddTransformWithoutBackpack_Secondary": {
+          "Translation": {
+            "X": -2.0,
+            "Y": 7.0,
+            "Z": -5.0
+          }
+        }
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapTacPack_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.6"
+      },
+      "AnimWeaponType": "EAnimWeaponType::Throwable",
+      "WeaponAnim": {
+        "PickUp": {
+          "ObjectName": "AnimMontage MOB1_M1_Glean_Montage",
+          "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Mobility/MOB1_M1_Glean_Montage.0"
+        }
+      },
+      "ProneRollAnim": {
+        "RollLeft": {
+          "ObjectName": "AnimMontage MOB1_M1_ProneRoll_L_Loop_IP_Montage",
+          "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Mobility/MOB1_M1_ProneRoll_L_Loop_IP_Montage.0"
+        },
+        "RollRight": {
+          "ObjectName": "AnimMontage MOB1_M1_ProneRoll_R_Loop_IP_Montage",
+          "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Mobility/MOB1_M1_ProneRoll_R_Loop_IP_Montage.0"
+        }
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_Secondary": {
+          "Montage": {
+            "ObjectName": "AnimMontage TacPack_Combat_Stand_SecondarySlot_Montage",
+            "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TacPack/TacPack_Combat_Stand_SecondarySlot_Montage.0"
+          },
+          "PlayRate": 1.0
+        },
+        "EAccessorySlot::Slot_Primary": {
+          "Montage": {
+            "ObjectName": "AnimMontage TacPack_Combat_Stand_PrimarySlot_Montage",
+            "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TacPack/TacPack_Combat_Stand_PrimarySlot_Montage.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "HipDuration": 0.1,
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapTacPack_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapTacPack_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapTacPack_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapTacPack_C",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapTacPack_C Default__WeapTacPack_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapTacPack_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapTacPack_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.3"
+      },
+      "VariableGuid": "5819FDFE-471BB583-B38ACEBC-8A5C72B2",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapTacPack_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapTacPack_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapTacPack_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_Tac_Pack",
+        "ObjectPath": "TslGame/Content/Item/TacPack/Meshes/SK_Tac_Pack.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapTacPack_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.2"
+      }
+    }
+  }
+]

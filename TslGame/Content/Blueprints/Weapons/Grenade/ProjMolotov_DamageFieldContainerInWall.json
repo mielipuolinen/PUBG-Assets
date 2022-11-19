@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "ProjMolotov_DamageFieldContainerInWall_C",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "ProjMolotov_DamageFieldContainerInWall_C",
+    "Next": {
+      "ObjectName": "ObjectProperty ProjMolotov_DamageFieldContainerInWall_C:DefaultSceneRoot",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldContainerInWall.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ProjMolotov_DamageFieldContainerInWall_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ProjMolotov_DamageFieldContainerInWall_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldContainerInWall.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslDamageFieldContainer",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function ProjMolotov_DamageFieldContainerInWall_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldContainerInWall.1"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function ProjMolotov_DamageFieldContainerInWall_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldContainerInWall.1"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ProjMolotov_DamageFieldContainerInWall_C Default__ProjMolotov_DamageFieldContainerInWall_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldContainerInWall.3"
+    }
+  },
+  {
+    "Type": "ProjMolotov_DamageFieldContainerInWall_C",
+    "Name": "Default__ProjMolotov_DamageFieldContainerInWall_C",
+    "Properties": {
+      "DamageFieldTemplate": {
+        "ObjectName": "BlueprintGeneratedClass ProjMolotov_DamageFieldInWall_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldInWall.3"
+      },
+      "FlameInWall": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "ProjMolotov_DamageFieldContainerInWall_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ProjMolotov_DamageFieldContainerInWall_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldContainerInWall.4"
+      },
+      "VariableGuid": "1F3A0E77-4DA9D358-90CF74BE-F4A675A1",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "ProjMolotov_DamageFieldContainerInWall_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node ProjMolotov_DamageFieldContainerInWall_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldContainerInWall.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node ProjMolotov_DamageFieldContainerInWall_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldContainerInWall.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ProjMolotov_DamageFieldContainerInWall_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldContainerInWall.5"
+      }
+    }
+  }
+]

@@ -1,0 +1,180 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "WeaponDisplay_C",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Cube",
+    "Outer": "WeaponDisplay_C",
+    "Next": {
+      "ObjectName": "ObjectProperty WeaponDisplay_C:DefaultSceneRoot",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponDisplay.0"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "WeaponDisplay_C",
+    "Next": {
+      "ObjectName": "ObjectProperty WeaponDisplay_C:Cube",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponDisplay.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeaponDisplay_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeaponDisplay_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponDisplay.8"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function WeaponDisplay_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponDisplay.2"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function WeaponDisplay_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponDisplay.2"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeaponDisplay_C Default__WeaponDisplay_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponDisplay.4"
+    }
+  },
+  {
+    "Type": "WeaponDisplay_C",
+    "Name": "Default__WeaponDisplay_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeaponDisplay_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeaponDisplay_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponDisplay.5"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node WeaponDisplay_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponDisplay.7"
+        }
+      ],
+      "VariableGuid": "8D6C4653-4FF65394-D10A7FAE-6A13B903",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent WeaponDisplay_C:Cube_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponDisplay.9"
+      },
+      "VariableGuid": "76A4FEF9-4451D55F-5F4F32BA-C12584AC",
+      "InternalVariableName": "Cube"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeaponDisplay_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node WeaponDisplay_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponDisplay.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node WeaponDisplay_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponDisplay.6"
+        },
+        {
+          "ObjectName": "SCS_Node WeaponDisplay_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponDisplay.7"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeaponDisplay_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponDisplay.6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Cube_GEN_VARIABLE",
+    "Outer": "WeaponDisplay_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Cube",
+        "ObjectPath": "Engine/Content/BasicShapes/Cube.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material BasicShapeMaterial",
+          "ObjectPath": "Engine/Content/BasicShapes/BasicShapeMaterial.0"
+        }
+      ],
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "bVisible": false,
+      "RelativeScale3D": {
+        "X": 0.1,
+        "Y": 0.1,
+        "Z": 0.1
+      }
+    }
+  }
+]

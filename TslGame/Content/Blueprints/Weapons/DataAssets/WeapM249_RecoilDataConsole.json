@@ -1,0 +1,35 @@
+[
+  {
+    "Type": "WeaponGunRecoilData",
+    "Name": "WeapM249_RecoilDataConsole",
+    "Properties": {
+      "WeaponGunRecoilConfig": {
+        "RecoilKickADS": 0.7,
+        "RecoilKick_MovementMaxMultiplier": 1.3,
+        "DeviationRecoilGain": 1.3,
+        "DeviationRecoilGainAim": 0.8,
+        "DeviationRecoilGainADS": 0.02,
+        "VerticalRecoilMin": 0.05,
+        "VerticalRecoilMax": 7.0,
+        "VerticalRecoilVariation": 0.1,
+        "VerticalRecoveryModifier": 0.6,
+        "VerticalRecoveryClamp": 5.5,
+        "VerticalRecoveryMax": 4.0,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_M249_Console",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_M249_Console.0"
+        },
+        "RecoilSpeed_Vertical": 15.0,
+        "RecoilSpeed_Horizontal": 10.0,
+        "RecoverySpeed_Vertical": 6.0,
+        "RecoilValue_Climb": 0.75,
+        "RecoilValue_Fall": 2.4,
+        "RecoilModifier_Crouch": 0.6,
+        "RecoilModifier_Prone": 0.22,
+        "RecoilHorizontalMinScalar": 0.2
+      },
+      "ParentWeaponGunData": "/Game/Blueprints/Weapons/DataAssets/WeapM249_WeaponGunData.WeapM249_WeaponGunData",
+      "ParentWeaponTrajectoryData": "/Game/Blueprints/Weapons/DataAssets/WeapM249_WeaponTrajectoryData.WeapM249_WeaponTrajectoryData"
+    }
+  }
+]

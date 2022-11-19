@@ -1,0 +1,485 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "Spikes-Anim_Cube_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup Spikes-Anim_Cube_PhysicsAsset:SkeletalBodySetup_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/Spikes-Anim_Cube_PhysicsAsset.7"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup Spikes-Anim_Cube_PhysicsAsset:SkeletalBodySetup_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/Spikes-Anim_Cube_PhysicsAsset.8"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup Spikes-Anim_Cube_PhysicsAsset:SkeletalBodySetup_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/Spikes-Anim_Cube_PhysicsAsset.9"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup Spikes-Anim_Cube_PhysicsAsset:SkeletalBodySetup_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/Spikes-Anim_Cube_PhysicsAsset.10"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup Spikes-Anim_Cube_PhysicsAsset:SkeletalBodySetup_4",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/Spikes-Anim_Cube_PhysicsAsset.11"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup Spikes-Anim_Cube_PhysicsAsset:SkeletalBodySetup_5",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/Spikes-Anim_Cube_PhysicsAsset.12"
+        },
+        {
+          "ObjectName": "SkeletalBodySetup Spikes-Anim_Cube_PhysicsAsset:SkeletalBodySetup_6",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/Spikes-Anim_Cube_PhysicsAsset.13"
+        }
+      ],
+      "ConstraintSetup": [
+        {
+          "ObjectName": "PhysicsConstraintTemplate Spikes-Anim_Cube_PhysicsAsset:PhysicsConstraintTemplate_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/Spikes-Anim_Cube_PhysicsAsset.1"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate Spikes-Anim_Cube_PhysicsAsset:PhysicsConstraintTemplate_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/Spikes-Anim_Cube_PhysicsAsset.2"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate Spikes-Anim_Cube_PhysicsAsset:PhysicsConstraintTemplate_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/Spikes-Anim_Cube_PhysicsAsset.3"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate Spikes-Anim_Cube_PhysicsAsset:PhysicsConstraintTemplate_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/Spikes-Anim_Cube_PhysicsAsset.4"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate Spikes-Anim_Cube_PhysicsAsset:PhysicsConstraintTemplate_4",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/Spikes-Anim_Cube_PhysicsAsset.5"
+        },
+        {
+          "ObjectName": "PhysicsConstraintTemplate Spikes-Anim_Cube_PhysicsAsset:PhysicsConstraintTemplate_5",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/Spikes-Anim_Cube_PhysicsAsset.6"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_0",
+    "Outer": "Spikes-Anim_Cube_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Bone_001",
+        "ConstraintBone1": "Bone_001",
+        "ConstraintBone2": "Bone",
+        "Pos2": {
+          "X": 2.561977E-10,
+          "Y": -52.505177,
+          "Z": -2.237967E-08
+        },
+        "PriAxis2": {
+          "X": 0.99993986,
+          "Y": -0.010967923,
+          "Z": 8.0976686E-05
+        },
+        "SecAxis2": {
+          "X": 0.010968214,
+          "Y": 0.999921,
+          "Z": -0.0061321356
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_1",
+    "Outer": "Spikes-Anim_Cube_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Bone_002",
+        "ConstraintBone1": "Bone_002",
+        "ConstraintBone2": "Bone_001",
+        "Pos2": {
+          "X": 1.2083942E-07,
+          "Y": -58.039368,
+          "Z": 5.3831506E-08
+        },
+        "PriAxis2": {
+          "X": 0.99984485,
+          "Y": 0.017613215,
+          "Z": -1.95314E-11
+        },
+        "SecAxis2": {
+          "X": -0.017613215,
+          "Y": 0.99984485,
+          "Z": -9.2727587E-10
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_2",
+    "Outer": "Spikes-Anim_Cube_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Bone_003",
+        "ConstraintBone1": "Bone_003",
+        "ConstraintBone2": "Bone_002",
+        "Pos2": {
+          "X": -3.259802E-07,
+          "Y": -52.555485,
+          "Z": -6.1062266E-16
+        },
+        "PriAxis2": {
+          "X": 0.9999593,
+          "Y": 0.0090211695,
+          "Z": -8.40381E-12
+        },
+        "SecAxis2": {
+          "X": -0.0090211695,
+          "Y": 0.9999593,
+          "Z": 1.2204264E-14
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_3",
+    "Outer": "Spikes-Anim_Cube_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Bone_004",
+        "ConstraintBone1": "Bone_004",
+        "ConstraintBone2": "Bone_003",
+        "Pos2": {
+          "X": 1.4171611E-07,
+          "Y": -54.30356,
+          "Z": 0.0
+        },
+        "PriAxis2": {
+          "X": 0.999836,
+          "Y": -0.018107407,
+          "Z": 1.6867768E-11
+        },
+        "SecAxis2": {
+          "X": 0.018107407,
+          "Y": 0.999836,
+          "Z": 1.2769782E-13
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_4",
+    "Outer": "Spikes-Anim_Cube_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Bone_005",
+        "ConstraintBone1": "Bone_005",
+        "ConstraintBone2": "Bone_004",
+        "Pos2": {
+          "X": 6.1835664E-07,
+          "Y": -57.287918,
+          "Z": -5.551115E-17
+        },
+        "PriAxis2": {
+          "X": 0.999957,
+          "Y": 0.009273737,
+          "Z": -8.63862E-12
+        },
+        "SecAxis2": {
+          "X": -0.009273737,
+          "Y": 0.999957,
+          "Z": 9.1037326E-14
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintTemplate",
+    "Name": "PhysicsConstraintTemplate_5",
+    "Outer": "Spikes-Anim_Cube_PhysicsAsset",
+    "Properties": {
+      "DefaultInstance": {
+        "JointName": "Bone_006",
+        "ConstraintBone1": "Bone_006",
+        "ConstraintBone2": "Bone_005",
+        "Pos2": {
+          "X": -1.3028561E-07,
+          "Y": -50.562912,
+          "Z": 5.551115E-17
+        },
+        "PriAxis2": {
+          "X": 0.99998784,
+          "Y": -0.004926049,
+          "Z": 4.588938E-12
+        },
+        "SecAxis2": {
+          "X": 0.004926049,
+          "Y": 0.99998784,
+          "Z": -5.801094E-15
+        },
+        "ProfileInstance": {
+          "ConeLimit": {
+            "Swing1Motion": "ACM_Limited",
+            "Swing2Motion": "ACM_Limited"
+          },
+          "TwistLimit": {
+            "TwistMotion": "ACM_Limited"
+          }
+        }
+      }
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "Spikes-Anim_Cube_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.24901652,
+              "Y": -13.8904915,
+              "Z": 0.3551159
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.89377594,
+              "Roll": -89.67369
+            },
+            "Radius": 3.0,
+            "Length": 40.175392
+          }
+        ]
+      },
+      "BoneName": "Bone",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "328532BA4A8BBCD87927DFB76DBE4A37"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_1",
+    "Outer": "Spikes-Anim_Cube_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.011754274,
+              "Y": -28.190002,
+              "Z": 0.59233046
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -177.57631,
+              "Roll": -89.990425
+            },
+            "Radius": 3.0,
+            "Length": 30.876945
+          }
+        ]
+      },
+      "BoneName": "Bone_001",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "9557F8F749496E4D72EECA9A69343D49"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_2",
+    "Outer": "Spikes-Anim_Cube_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 0.27194807,
+              "Y": -24.801064,
+              "Z": 0.59171486
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 2.3410265,
+              "Roll": -89.96697
+            },
+            "Radius": 3.0,
+            "Length": 26.849102
+          }
+        ]
+      },
+      "BoneName": "Bone_002",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "933774824D865C13FDD7448BDBE838CA"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_3",
+    "Outer": "Spikes-Anim_Cube_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.29681128,
+              "Y": -24.00766,
+              "Z": 0.5928192
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -178.13431,
+              "Roll": -89.97775
+            },
+            "Radius": 3.0,
+            "Length": 29.185547
+          }
+        ]
+      },
+      "BoneName": "Bone_003",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "E78B61104CE3ED3A5639A9B253DC7E25"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_4",
+    "Outer": "Spikes-Anim_Cube_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.47650573,
+              "Y": -29.112558,
+              "Z": 0.5917349
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -179.617,
+              "Roll": -89.96994
+            },
+            "Radius": 3.0,
+            "Length": 29.738632
+          }
+        ]
+      },
+      "BoneName": "Bone_004",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "013CED344C53FF073070C0876E0E7DFE"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_5",
+    "Outer": "Spikes-Anim_Cube_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.47184828,
+              "Y": -25.573128,
+              "Z": 0.49519587
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -179.9475,
+              "Roll": -89.93337
+            },
+            "Radius": 3.0,
+            "Length": 23.97544
+          }
+        ]
+      },
+      "BoneName": "Bone_005",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "C947654E45585A6823E71BA2BA8A4DF3"
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_6",
+    "Outer": "Spikes-Anim_Cube_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.7958698,
+              "Y": -38.384502,
+              "Z": 0.59234667
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": -179.29845,
+              "Roll": -89.99712
+            },
+            "Radius": 3.0,
+            "Length": 43.5288
+          }
+        ]
+      },
+      "BoneName": "Bone_006",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "C68BEDBA46A33F44A206CAA5CD1D4E45"
+  }
+]

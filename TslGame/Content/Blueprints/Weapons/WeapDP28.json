@@ -1,0 +1,242 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapDP28_C",
+    "Super": "DefaultRifleSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapDP28_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapDP28_C Default__WeapDP28_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.1"
+    }
+  },
+  {
+    "Type": "WeapDP28_C",
+    "Name": "Default__WeapDP28_C",
+    "Template": "Default__DefaultRifleSetting_C",
+    "Properties": {
+      "TrailFX": null,
+      "WeaponTrajectoryData": {
+        "ObjectName": "WeaponTrajectoryData WeapDP28_WeaponTrajectoryData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapDP28_WeaponTrajectoryData.0"
+      },
+      "WeaponGunPostprocessSettings": {
+        "BlurLevel": 0.6,
+        "ScopeRadiusNear": 0.1,
+        "ScopeRadiusFar": 0.1,
+        "DepthBlurPower": 1.0,
+        "DepthBlurWhitePoint": 10.0,
+        "DepthBlurBlackPoint": 50.0
+      },
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapDP28_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapDP28_WeaponGunData.0"
+      },
+      "MagDropOverrides": {
+        "Mesh": {
+          "ObjectName": "StaticMesh DP28_Mag",
+          "ObjectPath": "TslGame/Content/Weapon/Rifles/DP28/Meshes/DP28_Mag.1"
+        },
+        "bUseParentMaterial": true,
+        "ParentMaterialSlotName": "Material #0",
+        "MagazineMaterialSlotName": "Material #85"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_gun_DP28",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_DP28.0"
+      },
+      "WeaponIconRatio": 3.28,
+      "WeaponConfig": {
+        "TargetingFOV": 70.0,
+        "HoldBreathFOV": 52.0,
+        "SocketOffset_Shoulder": {
+          "X": 0.0,
+          "Y": 34.0,
+          "Z": -5.0
+        },
+        "SocketOffset_Hand": {
+          "X": 3.0,
+          "Y": 6.0,
+          "Z": 0.5
+        },
+        "WeaponClass": "EWeaponClass::Class_LMG",
+        "IronSightZeroingDistances": [
+          100.0,
+          200.0,
+          300.0,
+          400.0,
+          500.0,
+          600.0,
+          700.0,
+          800.0,
+          900.0,
+          1000.0
+        ],
+        "RecoilMontage": {
+          "ObjectName": "AnimMontage Rifle_Recoil_762_DP28_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DP28/Recoil/Rifle_Recoil_762_DP28_Montage.0"
+        },
+        "WeaponEquipDuration": 0.2,
+        "WeaponUnequipDuration": 0.4,
+        "WeaponReadyDuration": 0.4,
+        "PhysicalBodyHitImpactPower": 10000.0
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapDP28_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.6"
+      },
+      "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
+      "AttachmentPositionData": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentPoint": "Upper_Small",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "UpperSmall",
+              "AttachmentPoint": "Upper_Small"
+            },
+            {
+              "AttachmentTag": "UpperHolo",
+              "AttachmentPoint": "Upper_Small"
+            }
+          ]
+        }
+      ],
+      "WeaponTag": "DP28",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem P_Muzzle_DP28",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Other/P_Muzzle_DP28.122"
+      },
+      "WeaponAnim": {
+        "PickUp": null
+      },
+      "ProneRollAnim": {
+        "RollLeft": null,
+        "RollRight": null
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_Secondary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.5
+        },
+        "EAccessorySlot::Slot_SideArm": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        },
+        "EAccessorySlot::Slot_Primary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapDP28_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapDP28_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapDP28_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapDP28_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapDP28_C Default__WeapDP28_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapDP28_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapDP28_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.3"
+      },
+      "VariableGuid": "4B1B0ABE-483B9FB5-B48D1D92-B9412BF2",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapDP28_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapDP28_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapDP28_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_DP28_RD_C",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DP28/Redux/Weapon_RD/ABP_DP28_RD.95"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh DP28_Set",
+        "ObjectPath": "TslGame/Content/Weapon/Rifles/DP28/Meshes/DP28_Set.0"
+      },
+      "bEnableUpdateRateOptimizations": true,
+      "BodyInstance": {
+        "MassInKgOverride": 14.318548
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapDP28_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.2"
+      }
+    }
+  }
+]

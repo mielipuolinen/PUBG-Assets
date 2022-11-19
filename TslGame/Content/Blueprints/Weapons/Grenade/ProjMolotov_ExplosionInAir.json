@@ -1,0 +1,176 @@
+[
+  {
+    "Type": "ByteProperty",
+    "Name": "UnderlyingType",
+    "Outer": "CallFunc_BranchOnPlatformGroup_PlatformGroupBranch",
+    "Next": null,
+    "Enum": null
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsForKoreanRating_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_SwitchEnum_CmpSuccess",
+    "Outer": "UserConstructionScript",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_ExplosionInAir_C:UserConstructionScript.CallFunc_IsForKoreanRating_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_ExplosionInAir.1"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsForChineseLicensing_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_ExplosionInAir_C:UserConstructionScript.K2Node_SwitchEnum_CmpSuccess",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_ExplosionInAir.2"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "EnumProperty",
+    "Name": "CallFunc_BranchOnPlatformGroup_PlatformGroupBranch",
+    "Outer": "UserConstructionScript",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_ExplosionInAir_C:UserConstructionScript.CallFunc_IsForChineseLicensing_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_ExplosionInAir.3"
+    },
+    "Enum": {
+      "ObjectName": "Enum ETslPlatformGroupBranch_BPOnly",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "UnderlyingProp": {
+      "ObjectName": "ByteProperty ProjMolotov_ExplosionInAir_C:UserConstructionScript.CallFunc_BranchOnPlatformGroup_PlatformGroupBranch.UnderlyingType",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_ExplosionInAir.0"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "ProjMolotov_ExplosionInAir_C",
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "EnumProperty ProjMolotov_ExplosionInAir_C:UserConstructionScript.CallFunc_BranchOnPlatformGroup_PlatformGroupBranch",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_ExplosionInAir.4"
+      }
+    ],
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ProjMolotov_ExplosionInAir_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ProjMolotov_ExplosionInAir_C:SimpleConstructionScript_1__EFD9F313",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_ExplosionInAir.11"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslExplosionEffect",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function ProjMolotov_ExplosionInAir_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_ExplosionInAir.5"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function ProjMolotov_ExplosionInAir_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_ExplosionInAir.5"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ProjMolotov_ExplosionInAir_C Default__ProjMolotov_ExplosionInAir_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_ExplosionInAir.7"
+    }
+  },
+  {
+    "Type": "ProjMolotov_ExplosionInAir_C",
+    "Name": "Default__ProjMolotov_ExplosionInAir_C",
+    "Properties": {
+      "ExplosionFX": {
+        "ObjectName": "ParticleSystem P_MolotovImpact_Air",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_MolotovImpact_Air.182"
+      },
+      "ExplosionLight": {
+        "ObjectName": "PointLightComponent Default__ProjMolotov_ExplosionInAir_C:ExplosionLight",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_ExplosionInAir.8"
+      },
+      "ExplosionSound": {
+        "ObjectName": "AkAudioEvent FireBomb_Impact",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/FireBomb/FireBomb_Impact.0"
+      },
+      "RootComponent": {
+        "ObjectName": "PointLightComponent Default__ProjMolotov_ExplosionInAir_C:ExplosionLight",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_ExplosionInAir.8"
+      }
+    }
+  },
+  {
+    "Type": "PointLightComponent",
+    "Name": "ExplosionLight",
+    "Outer": "Default__ProjMolotov_ExplosionInAir_C",
+    "Properties": {
+      "AttenuationRadius": 1024.0,
+      "LightGuid": "65BEFC86-495AC8B3-41C106A0-F8872BE0",
+      "Intensity": 3.1415927
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_0",
+    "Outer": "ProjMolotov_ExplosionInAir_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_1__EFD9F313",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ProjMolotov_ExplosionInAir_C:SceneComponent_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_ExplosionInAir.9"
+      },
+      "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1__EFD9F313",
+    "Outer": "ProjMolotov_ExplosionInAir_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ProjMolotov_ExplosionInAir_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_ExplosionInAir.10"
+      }
+    }
+  }
+]

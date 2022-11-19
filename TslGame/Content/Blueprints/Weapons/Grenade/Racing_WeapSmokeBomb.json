@@ -1,0 +1,155 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Racing_WeapSmokeBomb_C",
+    "Super": "DefaultGrenadeSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript Racing_WeapSmokeBomb_C:SimpleConstructionScript_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Racing_WeapSmokeBomb.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultGrenadeSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Racing_WeapSmokeBomb_C Default__Racing_WeapSmokeBomb_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Racing_WeapSmokeBomb.1"
+    }
+  },
+  {
+    "Type": "Racing_WeapSmokeBomb_C",
+    "Name": "Default__Racing_WeapSmokeBomb_C",
+    "Template": "Default__DefaultGrenadeSetting_C",
+    "Properties": {
+      "ThrowableConfig": {
+        "ProjectileClass": {
+          "ObjectName": "BlueprintGeneratedClass ProjSmokeBomb_v2_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_v2.54"
+        },
+        "CookingEffectClass": {
+          "ObjectName": "BlueprintGeneratedClass P_Grenade_Start_BP_C",
+          "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Grenade_Start_BP.5"
+        },
+        "Ring": {
+          "ObjectName": "BlueprintGeneratedClass BP_GrenadeRing_C",
+          "ObjectPath": "TslGame/Content/Weapon/Grenades/BP_GrenadeRing.3"
+        },
+        "ExplosionStartType": "EProjectileExplosionStartType::NotStart",
+        "ExplosionDelay": 0.0,
+        "FireDelay": 0.4,
+        "ActivationTimeLimit": 1.0,
+        "ThrowTime": 1.3
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_smoke_M18",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_smoke_M18.0"
+      },
+      "WeaponIconRatio": 0.92,
+      "WeaponConfig": {
+        "WeaponClass": "EWeaponClass::Class_Throwable",
+        "ThrownType": "EThrownWeaponType::Thrown_Grenade",
+        "WeaponReadyDuration": 1.0
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__Racing_WeapSmokeBomb_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Racing_WeapSmokeBomb.6"
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapSmokeBomb_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DataAssets/WeapSmokeBomb_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__Racing_WeapSmokeBomb_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Racing_WeapSmokeBomb.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__Racing_WeapSmokeBomb_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "Racing_WeapSmokeBomb_C Default__Racing_WeapSmokeBomb_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Racing_WeapSmokeBomb.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Racing_WeapSmokeBomb_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent Racing_WeapSmokeBomb_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Racing_WeapSmokeBomb.3"
+      },
+      "VariableGuid": "028EC49A-48E4171F-BF4E70B7-59BAFBFD",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "Racing_WeapSmokeBomb_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node Racing_WeapSmokeBomb_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Racing_WeapSmokeBomb.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__Racing_WeapSmokeBomb_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh M18_setting",
+        "ObjectPath": "TslGame/Content/Weapon/Grenades/M18_Smoke/M18_setting.0"
+      },
+      "RelativeScale3D": {
+        "X": 0.9,
+        "Y": 0.9,
+        "Z": 0.9
+      },
+      "RelativeRotation": {
+        "Pitch": -10.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__Racing_WeapSmokeBomb_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Racing_WeapSmokeBomb.2"
+      }
+    }
+  }
+]

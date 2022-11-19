@@ -1,0 +1,228 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ProjMolotov_Fragment_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ProjMolotov_Fragment_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.7"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslProjectileMolotov",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ProjMolotov_Fragment_C Default__ProjMolotov_Fragment_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.1"
+    }
+  },
+  {
+    "Type": "ProjMolotov_Fragment_C",
+    "Name": "Default__ProjMolotov_Fragment_C",
+    "Properties": {
+      "MolotovSimulation": "EMolotovSimulationType::Molotov_SimulationProjectile",
+      "DamageFieldContainerTemplate": {
+        "ObjectName": "BlueprintGeneratedClass ProjMolotov_DamageFieldContainerFragment_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldContainerFragment.2"
+      },
+      "DamageFieldContainerInWallTemplate": {
+        "ObjectName": "BlueprintGeneratedClass ProjMolotov_DamageFieldContainerInWall_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldContainerInWall.2"
+      },
+      "DamageFieldTemplate": {
+        "ObjectName": "BlueprintGeneratedClass ProjMolotov_DamageField_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.3"
+      },
+      "DamageFieldTemplateInWall": {
+        "ObjectName": "BlueprintGeneratedClass ProjMolotov_DamageFieldInWall_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldInWall.3"
+      },
+      "ImpactMaxCount": 2,
+      "MovementComp": {
+        "ObjectName": "TslProjectileMovementComponent Default__ProjMolotov_Fragment_C:ProjectileComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.11"
+      },
+      "CollisionComp": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_Fragment_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.9"
+      },
+      "ParticleComp": {
+        "ObjectName": "ParticleSystemComponent Default__ProjMolotov_Fragment_C:ParticleComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.3"
+      },
+      "MeshComp": {
+        "ObjectName": "StaticMeshComponent Default__ProjMolotov_Fragment_C:MeshComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.10"
+      },
+      "InterpolationTargetComp": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_Fragment_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.8"
+      },
+      "ConstraintComp": {
+        "ObjectName": "PhysicsConstraintComponent Default__ProjMolotov_Fragment_C:MeshConstraint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.4"
+      },
+      "AkComp": {
+        "ObjectName": "AkComponent Default__ProjMolotov_Fragment_C:AkComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.2"
+      },
+      "bReplicates": false,
+      "RootComponent": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_Fragment_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.9"
+      },
+      "bReplicateMovement": false
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkComp",
+    "Outer": "Default__ProjMolotov_Fragment_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_Fragment_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.9"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleComp",
+    "Outer": "Default__ProjMolotov_Fragment_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent Default__ProjMolotov_Fragment_C:MeshComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.10"
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "MeshConstraint",
+    "Outer": "Default__ProjMolotov_Fragment_C",
+    "Properties": {
+      "ConstraintInstance": {
+        "ProfileInstance": {
+          "LinearLimit": {
+            "XMotion": "LCM_Locked",
+            "YMotion": "LCM_Locked",
+            "ZMotion": "LCM_Locked",
+            "Stiffness": 150.0,
+            "Damping": 30.0,
+            "bSoftConstraint": true
+          },
+          "AngularDrive": {
+            "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+          },
+          "bDisableCollision": false
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_Fragment_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "ProjMolotov_Fragment_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ProjMolotov_Fragment_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.5"
+      },
+      "VariableGuid": "02507041-444EB3DE-29B8A086-C9DCC68F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "ProjMolotov_Fragment_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ProjMolotov_Fragment_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "InterpolationTarget",
+    "Outer": "Default__ProjMolotov_Fragment_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_Fragment_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.9"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__ProjMolotov_Fragment_C",
+    "Properties": {
+      "OnComponentHit": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "ProjMolotov_Fragment_C Default__ProjMolotov_Fragment_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.1"
+            },
+            "FunctionName": "OnHit"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "MeshComp",
+    "Outer": "Default__ProjMolotov_Fragment_C",
+    "Properties": {
+      "RelativeScale3D": {
+        "X": 2.0,
+        "Y": 2.0,
+        "Z": 2.0
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_Fragment_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_Fragment.8"
+      }
+    }
+  },
+  {
+    "Type": "TslProjectileMovementComponent",
+    "Name": "ProjectileComp",
+    "Outer": "Default__ProjMolotov_Fragment_C",
+    "Properties": {
+      "InitialSpeed": 500.0,
+      "MaxSpeed": 400.0,
+      "bRotationFollowsVelocity": false,
+      "bShouldBounce": true,
+      "bInitialVelocityInLocalSpace": false,
+      "ProjectileGravityScale": 0.7,
+      "Bounciness": 0.7,
+      "Friction": 0.1
+    }
+  }
+]

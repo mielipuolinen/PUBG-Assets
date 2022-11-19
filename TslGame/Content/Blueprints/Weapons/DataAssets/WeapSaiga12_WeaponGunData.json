@@ -1,0 +1,116 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapSaiga12_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_12Guage_C",
+        "TracerClass": null,
+        "AmmoPerClip": 5,
+        "TimeBetweenShots": 0.25,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperSmall",
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+            "AttachableTags": [
+              "MagazineLarge"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleLarge",
+              "MuzzleDuckbill"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+            "AttachableTags": [
+              "RMR"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 2.3,
+        "BurstShots": 1,
+        "BulletPerFiring": 9,
+        "FiringBulletsSpread": 5.5,
+        "WeaponLength": 45.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffset": {
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 3.0,
+          "Y": 1.0,
+          "Z": 4.0
+        },
+        "bUseGridPelletSpread": true,
+        "PelletGrid": null,
+        "GridPelletSpreadHalfAngle": 0.4,
+        "bUsePelletManager": true
+      },
+      "WeaponDeviationConfig": {
+        "DeviationRecoilGainADS": 0.5,
+        "DeviationMax": 7.0,
+        "DeviationMaxMove": 1.0,
+        "DeviationMoveMultiplier": 0.7,
+        "DeviationMoveMinReferenceVelocity": 100.0,
+        "DeviationMoveMaxReferenceVelocity": 300.0,
+        "DeviationStanceJump": 2.0
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_Saiga_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Saiga/Redux/Weapon_Saiga_Grip_RD.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage CharacterWeapon_Saiga_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Saiga/Redux/CharacterWeapon_Saiga_Reload_Tactical_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage CharacterWeapon_Saiga_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Saiga/Redux/CharacterWeapon_Saiga_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 2.4,
+        "ReloadDurationCharge": 3.0,
+        "ReloadDurationMagOut": 0.4,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Shotgun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Shotgun.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Shotgun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Shotgun.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Shotgun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Shotgun.0"
+        },
+        "RecoilKickADS": 1.0,
+        "MagDropLinearVelocity": {
+          "X": 100.0,
+          "Y": 200.0,
+          "Z": -200.0
+        },
+        "MagDropAngularVelocity": {
+          "X": 100.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      }
+    }
+  }
+]

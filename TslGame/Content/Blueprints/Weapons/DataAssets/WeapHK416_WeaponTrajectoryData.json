@@ -1,0 +1,49 @@
+[
+  {
+    "Type": "WeaponTrajectoryData",
+    "Name": "WeapHK416_WeaponTrajectoryData",
+    "Properties": {
+      "RecoilConfig": {
+        "VerticalRecoilMin": 0.05,
+        "VerticalRecoilMax": 7.0,
+        "VerticalRecoilVariation": 0.1,
+        "VerticalRecoveryClamp": 5.0,
+        "VerticalRecoveryMax": 2.4,
+        "HorizontalTendency": -0.1,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_HK416",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_HK416.0"
+        },
+        "BulletsPerSwitch": 2,
+        "RecoilSpeed_Vertical": 12.0,
+        "RecoilSpeed_Horizontal": 12.0,
+        "RecoverySpeed_Vertical": 7.0,
+        "RecoilValue_Climb": 0.7,
+        "RecoilValue_Fall": 2.1,
+        "RecoilModifier_Crouch": 0.84,
+        "RecoilHorizontalMinScalar": 0.4,
+        "RecoilBlendInOutMap": {
+          "X": 0.0,
+          "Y": 0.04
+        }
+      },
+      "TrajectoryConfig": {
+        "InitialSpeed": 880.0,
+        "HitDamage": 41.0,
+        "BallisticCurve": {
+          "ObjectName": "CurveVector C_Ballistic_HK416",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/BallisticData/C_Ballistic_HK416.0"
+        },
+        "RangeModifier": 0.94,
+        "ReferenceDistance": 360.0,
+        "TravelDistanceMax": 1000.0,
+        "VDragCoefficient": 0.76,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
+        },
+        "WeaponSpread": 4.0
+      }
+    }
+  }
+]

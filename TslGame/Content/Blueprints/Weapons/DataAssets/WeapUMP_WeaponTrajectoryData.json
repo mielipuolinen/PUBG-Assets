@@ -1,0 +1,56 @@
+[
+  {
+    "Type": "WeaponTrajectoryData",
+    "Name": "WeapUMP_WeaponTrajectoryData",
+    "Properties": {
+      "RecoilConfig": {
+        "VerticalRecoilVariation": 0.05,
+        "VerticalRecoveryClamp": 4.7,
+        "VerticalRecoveryMax": 1.6,
+        "HorizontalTendency": 0.12,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_SMG_UMP",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_SMG_UMP.0"
+        },
+        "BulletsPerSwitch": 2,
+        "RecoilSpeed_Vertical": 10.0,
+        "RecoilSpeed_Horizontal": 9.0,
+        "RecoverySpeed_Vertical": 7.0,
+        "RecoilValue_Climb": 0.48,
+        "RecoilValue_Fall": 1.8,
+        "RecoilModifier_Prone": 0.7,
+        "RecoilHorizontalMinScalar": 0.5,
+        "RecoilStartTimeInMap": {
+          "X": 0.1,
+          "Y": 0.25
+        },
+        "RecoilStartTimeOutMap": {
+          "X": 0.0,
+          "Y": 0.024
+        },
+        "RecoilBlendInOutMap": {
+          "X": 0.0,
+          "Y": 0.06
+        }
+      },
+      "TrajectoryConfig": {
+        "InitialSpeed": 400.0,
+        "HitDamage": 41.0,
+        "BallisticCurve": {
+          "ObjectName": "CurveVector C_Ballistic_UMP45",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/BallisticData/C_Ballistic_UMP45.0"
+        },
+        "RangeModifier": 0.89,
+        "ReferenceDistance": 200.0,
+        "TravelDistanceMax": 1000.0,
+        "VDragCoefficient": 0.68,
+        "BDS": 0.8,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
+        },
+        "WeaponSpread": 4.5
+      }
+    }
+  }
+]

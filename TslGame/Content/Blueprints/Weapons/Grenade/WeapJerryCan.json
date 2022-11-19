@@ -1,0 +1,244 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapJerryCan_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapJerryCan_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapJerryCan.7"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslWeapon_JerryCan",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapJerryCan_C Default__WeapJerryCan_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapJerryCan.1"
+    }
+  },
+  {
+    "Type": "WeapJerryCan_C",
+    "Name": "Default__WeapJerryCan_C",
+    "Properties": {
+      "SpillParticleComp": {
+        "ObjectName": "ParticleSystemComponent Default__WeapJerryCan_C:SpillParticleComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapJerryCan.3"
+      },
+      "PuddleOffset": {
+        "X": 35.0,
+        "Y": 10.0,
+        "Z": 0.0
+      },
+      "SpawnTracePullback": 35.0,
+      "SpawnTracePullup": 4.0,
+      "DiscardDelay": 0.7,
+      "SpillActionCastTime": 0.4,
+      "ArmMontageMinPlayTime": 0.22,
+      "DiscardRelativeLoc": {
+        "X": 46.0,
+        "Y": 10.0,
+        "Z": 6.0
+      },
+      "DiscardMeshRot": {
+        "Pitch": 195.0,
+        "Yaw": 0.0,
+        "Roll": -14.0
+      },
+      "PuddleContainerTemplate": {
+        "ObjectName": "BlueprintGeneratedClass BP_JerryCan_FuelPuddle_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_FuelPuddle.0"
+      },
+      "DiscardThrowConfig": {
+        "ObjectName": "ThrowableItemDataAsset DA_JerryCan_ThrowDiscard",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/DA_JerryCan_ThrowDiscard.0"
+      },
+      "PourAnimMontage": {
+        "ObjectName": "AnimMontage Melee_JerryCan_Pour",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Jerrycan/Melee_JerryCan_Pour.0"
+      },
+      "ArmAnimMontage": {
+        "ObjectName": "AnimMontage Melee_JerryCan_Arm",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Jerrycan/Melee_JerryCan_Arm.0"
+      },
+      "DiscardAnimMontage": {
+        "ObjectName": "AnimMontage Melee_JerryCan_Discard",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Jerrycan/Melee_JerryCan_Discard.0"
+      },
+      "SpillSoundStart": {
+        "ObjectName": "AkAudioEvent HandBomb_JerryCan_Spilling",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/JerryCan/HandBomb_JerryCan_Spilling.0"
+      },
+      "SpillSoundStop": {
+        "ObjectName": "AkAudioEvent HandBomb_JerryCan_Spilling_Stop",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/JerryCan/HandBomb_JerryCan_Spilling_Stop.0"
+      },
+      "HitCapsuleComponent": {
+        "ObjectName": "CapsuleComponent Default__WeapJerryCan_C:HitCollisionCylinder",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapJerryCan.2"
+      },
+      "ThrowAnim": {
+        "ObjectName": "AnimMontage JerryCan_Throw",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Melee/Attack/JerryCan_Throw.0"
+      },
+      "bCanBeThrown": true,
+      "ThrowConfig": {
+        "ObjectName": "ThrowableItemDataAsset DA_JerryCan_Throw",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/DA_JerryCan_Throw.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_jerrycan",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_jerrycan.0"
+      },
+      "WeaponIconRatio": 0.72,
+      "WeaponConfig": {
+        "WeaponClass": "EWeaponClass::Class_Throwable",
+        "ThrownType": "EThrownWeaponType::Thrown_JerryCan",
+        "WeaponUnequipDuration": 0.55,
+        "RestrictedStances": [
+          118
+        ],
+        "bBlockPeeking": true,
+        "bVisibleWhenUnarmed": false
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapJerryCan_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapJerryCan.8"
+      },
+      "AllowedThrowMode": "EAllowedThrowMode::ThrowHigh",
+      "AnimWeaponType": "EAnimWeaponType::Throwable",
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_Melee": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_JerryCan_Montage",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Rifle_Combat_Stand_JerryCan_Montage.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapJerryCan_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DataAssets/WeapJerryCan_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapJerryCan_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapJerryCan.4"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "HitCollisionCylinder",
+    "Outer": "Default__WeapJerryCan_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -25.0
+      },
+      "AttachParent": {
+        "ObjectName": "WeaponMeshComponent Default__WeapJerryCan_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapJerryCan.8"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "SpillParticleComp",
+    "Outer": "Default__WeapJerryCan_C",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem P_Jerrycan_Spill",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_Jerrycan_Spill.19"
+      },
+      "RelativeRotation": {
+        "Pitch": 59.994576,
+        "Yaw": 2.9714013E-11,
+        "Roll": 5.8716643E-12
+      },
+      "RelativeLocation": {
+        "X": 26.29578,
+        "Y": -3.3922083,
+        "Z": 10.298162
+      },
+      "AttachParent": {
+        "ObjectName": "WeaponMeshComponent Default__WeapJerryCan_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapJerryCan.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapJerryCan_C",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapJerryCan_C Default__WeapJerryCan_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapJerryCan.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapJerryCan_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapJerryCan_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapJerryCan.5"
+      },
+      "VariableGuid": "59FB062F-4E57285E-BCD5DC97-BFE8CF91",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapJerryCan_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapJerryCan_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapJerryCan.6"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapJerryCan_C",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh JerryCan_setting",
+        "ObjectPath": "TslGame/Content/Weapon/Grenades/JerryCan/JerryCan_setting.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapJerryCan_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapJerryCan.4"
+      }
+    }
+  }
+]

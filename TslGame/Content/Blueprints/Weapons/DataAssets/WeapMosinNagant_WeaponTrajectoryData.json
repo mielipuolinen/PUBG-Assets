@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "WeaponTrajectoryData",
+    "Name": "WeapMosinNagant_WeaponTrajectoryData",
+    "Properties": {
+      "RecoilConfig": {
+        "VerticalRecoilMax": 7.0,
+        "VerticalRecoilVariation": 0.1,
+        "VerticalRecoveryModifier": 0.6,
+        "VerticalRecoveryClamp": 8.0,
+        "VerticalRecoveryMax": 15.0,
+        "LeftMax": -0.8,
+        "RightMax": 0.8,
+        "HorizontalTendency": 0.1,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_K98",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_K98.0"
+        },
+        "BulletsPerSwitch": 1,
+        "RecoilSpeed_Vertical": 15.0,
+        "RecoilSpeed_Horizontal": 7.0,
+        "RecoverySpeed_Vertical": 5.5,
+        "RecoilValue_Climb": 0.7,
+        "RecoilValue_Fall": 3.0
+      },
+      "TrajectoryConfig": {
+        "InitialSpeed": 760.0,
+        "HitDamage": 79.0,
+        "BallisticCurve": {
+          "ObjectName": "CurveVector C_Ballistic_Kar98",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/BallisticData/C_Ballistic_Kar98.0"
+        },
+        "RangeModifier": 0.95,
+        "ReferenceDistance": 500.0,
+        "TravelDistanceMax": 1000.0,
+        "VDragCoefficient": 0.81,
+        "BDS": 0.7,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
+        },
+        "WeaponSpread": 8.0
+      },
+      "ConsoleWeaponRecoilData": {
+        "ObjectName": "WeaponGunRecoilData WeapKar98k_RecoilDataConsole",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapKar98k_RecoilDataConsole.0"
+      }
+    }
+  }
+]

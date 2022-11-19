@@ -1,0 +1,175 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsForKoreanRating_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsForChineseLicensing_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Next": {
+      "ObjectName": "BoolProperty ProjMolotov_DamageFieldFragment_C:UserConstructionScript.CallFunc_IsForKoreanRating_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldFragment.0"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "ProjMolotov_DamageFieldFragment_C",
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty ProjMolotov_DamageFieldFragment_C:UserConstructionScript.CallFunc_IsForChineseLicensing_ReturnValue",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldFragment.1"
+      }
+    ],
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ProjMolotov_DamageFieldFragment_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ProjMolotov_DamageFieldFragment_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldFragment.7"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslDamageField",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function ProjMolotov_DamageFieldFragment_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldFragment.2"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function ProjMolotov_DamageFieldFragment_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldFragment.2"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ProjMolotov_DamageFieldFragment_C Default__ProjMolotov_DamageFieldFragment_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldFragment.4"
+    }
+  },
+  {
+    "Type": "ProjMolotov_DamageFieldFragment_C",
+    "Name": "Default__ProjMolotov_DamageFieldFragment_C",
+    "Properties": {
+      "DamageRadius": 60.0,
+      "DamageFieldFX": {
+        "ObjectName": "ParticleSystem P_Molotov_Fire",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Molotov_Fire.158"
+      },
+      "Damage": 4,
+      "DamageInterval": 0.7,
+      "SphereCollision": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_DamageFieldFragment_C:SphereCollision",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldFragment.8"
+      },
+      "SimpleCollision": {
+        "ObjectName": "TslSimpleCollisionReceiver Default__ProjMolotov_DamageFieldFragment_C:SimpleCollision",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldFragment.9"
+      },
+      "RootComponent": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_DamageFieldFragment_C:SphereCollision",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldFragment.8"
+      },
+      "InitialLifeSpan": 8.0
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "ProjMolotov_DamageFieldFragment_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ProjMolotov_DamageFieldFragment_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldFragment.5"
+      },
+      "VariableGuid": "9DD632BC-4EEA668E-886FE49A-9E67B3CF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "ProjMolotov_DamageFieldFragment_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ProjMolotov_DamageFieldFragment_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldFragment.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereCollision",
+    "Outer": "Default__ProjMolotov_DamageFieldFragment_C",
+    "Properties": {
+      "OnComponentBeginOverlap": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "ProjMolotov_DamageFieldFragment_C Default__ProjMolotov_DamageFieldFragment_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldFragment.4"
+            },
+            "FunctionName": "OverlapStart"
+          }
+        ]
+      },
+      "OnComponentEndOverlap": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "ProjMolotov_DamageFieldFragment_C Default__ProjMolotov_DamageFieldFragment_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldFragment.4"
+            },
+            "FunctionName": "OverlapEnd"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "TslSimpleCollisionReceiver",
+    "Name": "SimpleCollision",
+    "Outer": "Default__ProjMolotov_DamageFieldFragment_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjMolotov_DamageFieldFragment_C:SphereCollision",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageFieldFragment.8"
+      }
+    }
+  }
+]

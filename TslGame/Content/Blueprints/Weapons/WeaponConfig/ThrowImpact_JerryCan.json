@@ -1,0 +1,136 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ThrowImpact_JerryCan_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ThrowImpact_JerryCan_C:SimpleConstructionScript_0__57659476",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/ThrowImpact_JerryCan.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslImpactEffect",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ThrowImpact_JerryCan_C Default__ThrowImpact_JerryCan_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/ThrowImpact_JerryCan.1"
+    }
+  },
+  {
+    "Type": "ThrowImpact_JerryCan_C",
+    "Name": "Default__ThrowImpact_JerryCan_C",
+    "Properties": {
+      "DefaultFX": {
+        "ObjectName": "ParticleSystem P_Impact_Default_Melee",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Default/P_Impact_Default_Melee.38"
+      },
+      "EffectMap": {
+        "81": null,
+        "222": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Rock_Melee",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Rock/P_Impact_Rock_Melee.43"
+        },
+        "92": null,
+        "219": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Water_Melee",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Water/P_Impact_Water_Melee.96"
+        },
+        "94": null,
+        "215": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Wood_Melee",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Wood/P_Impact_Wood_Melee.45"
+        },
+        "97": null,
+        "218": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Grass_Melee",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Grass/P_Impact_Grass_Melee.63"
+        },
+        "82": null,
+        "211": null,
+        "0": null,
+        "83": null,
+        "214": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Crops_Melee",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Crops/P_Impact_Crops_Melee.85"
+        },
+        "86": null
+      },
+      "AkSound": {
+        "ObjectName": "AkAudioEvent HandBomb_JerryCan_Landing",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/JerryCan/HandBomb_JerryCan_Landing.0"
+      },
+      "AKCom": {
+        "ObjectName": "AkComponent Default__ThrowImpact_JerryCan_C:AkSound",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/ThrowImpact_JerryCan.2"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__ThrowImpact_JerryCan_C:RootSceneComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/ThrowImpact_JerryCan.3"
+      },
+      "InitialLifeSpan": 5.0
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Default__ThrowImpact_JerryCan_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__ThrowImpact_JerryCan_C:RootSceneComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/ThrowImpact_JerryCan.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootSceneComp",
+    "Outer": "Default__ThrowImpact_JerryCan_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_0__F25C6BF4",
+    "Outer": "ThrowImpact_JerryCan_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0__57659476",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ThrowImpact_JerryCan_C:SceneComponent_0__F25C6BF4",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/ThrowImpact_JerryCan.4"
+      },
+      "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0__57659476",
+    "Outer": "ThrowImpact_JerryCan_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ThrowImpact_JerryCan_C:SimpleConstructionScript_0__57659476.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/ThrowImpact_JerryCan.5"
+      }
+    }
+  }
+]

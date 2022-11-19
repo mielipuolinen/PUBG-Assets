@@ -1,0 +1,76 @@
+[
+  {
+    "Type": "WeaponTrajectoryData",
+    "Name": "WeapMG3_WeaponTrajectoryData",
+    "Properties": {
+      "RecoilConfig": {
+        "VerticalRecoilMin": 0.05,
+        "VerticalRecoilRecoveryMin": 0.05,
+        "VerticalRecoilVariation": 0.1,
+        "VerticalRecoveryModifier": 0.7,
+        "VerticalRecoveryClamp": 4.0,
+        "VerticalRecoveryMax": 2.0,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_MG3",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_MG3.0"
+        },
+        "BulletsPerSwitch": 2,
+        "RecoilSpeed_Vertical": 16.0,
+        "RecoilSpeed_Horizontal": 11.5,
+        "RecoverySpeed_Vertical": 8.5,
+        "RecoilValue_Climb": 0.75,
+        "RecoilValue_Fall": 3.3,
+        "RecoilModifier_Stand": 0.85,
+        "RecoilModifier_Crouch": 0.5,
+        "RecoilModifier_Prone": 0.265,
+        "RecoilHorizontalMinScalar": 0.25,
+        "RecoilStartTimeInMap": {
+          "X": 0.0,
+          "Y": 0.3
+        },
+        "RecoilStartTimeOutMap": {
+          "X": 0.0,
+          "Y": 0.033
+        },
+        "RecoilBlendInInMap": {
+          "X": 0.0,
+          "Y": 0.75
+        },
+        "RecoilBlendInOutMap": {
+          "X": 0.016,
+          "Y": 0.1
+        },
+        "ROFRecoilMap": {
+          "EFiringMode::FullAutoFast": {
+            "StanceMap": {
+              "EAnimStance::Prone": 0.475
+            }
+          }
+        }
+      },
+      "TrajectoryConfig": {
+        "InitialSpeed": 820.0,
+        "HitDamage": 42.0,
+        "VehicleDamageScalar": 1.25,
+        "BallisticCurve": {
+          "ObjectName": "CurveVector C_Ballistic_MG3",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/BallisticData/C_Ballistic_MG3.0"
+        },
+        "RangeModifier": 0.94,
+        "ReferenceDistance": 450.0,
+        "TravelDistanceMax": 1000.0,
+        "VDragCoefficient": 0.75,
+        "BDS": 0.95,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
+        },
+        "WeaponSpread": 8.0
+      },
+      "ConsoleWeaponRecoilData": {
+        "ObjectName": "WeaponGunRecoilData WeapM249_RecoilDataConsole",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapM249_RecoilDataConsole.0"
+      }
+    }
+  }
+]

@@ -1,0 +1,212 @@
+[
+  {
+    "Type": "Material",
+    "Name": "M_C4_Blink",
+    "Properties": {
+      "BaseColor": {
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "None",
+        "UseConstant": false,
+        "Constant": {
+          "B": 128,
+          "G": 128,
+          "R": 128,
+          "A": 255,
+          "Hex": "FF808080"
+        }
+      },
+      "EmissiveColor": {
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionParticleColor_0",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "Opacity": {
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_1",
+        "UseConstant": false,
+        "Constant": 1.0
+      },
+      "BlendMode": "BLEND_Translucent",
+      "ShadingModel": "MSM_Unlit",
+      "WorldPositionOffset": {
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_0",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "bUsedWithParticleSprites": true,
+      "Expressions": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall M_C4_Blink:MaterialExpressionMaterialFunctionCall_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_C4_Blink.1"
+        },
+        null,
+        null
+      ],
+      "MaterialFunctionInfos": [
+        {
+          "StateId": "235C8133-44D704CA-0297108A-59B9F710",
+          "Function": {
+            "ObjectName": "MaterialFunction RadialGradientExponential",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.2"
+          }
+        },
+        {
+          "StateId": "42FB52C9-4B6E464D-2D6CB2B5-E6A65899",
+          "Function": {
+            "ObjectName": "MaterialFunction ExponentialDensity",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.0"
+          }
+        }
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "DA3CD089-4D17AFDD-E1D6F0B5-DD4218B7"
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_0",
+    "Outer": "M_C4_Blink",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction RadialGradientExponential",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.2"
+      },
+      "FunctionInputs": [
+        {
+          "ExpressionInputId": "D38E6C0F-499293F6-CC65C0AE-55AE0D4E",
+          "Input": {
+            "OutputIndex": -1,
+            "InputName": "UVs",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "None"
+          }
+        },
+        {
+          "ExpressionInputId": "2997555B-436C7354-59B9D695-B58F219E",
+          "Input": {
+            "OutputIndex": -1,
+            "InputName": "CenterPosition",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "None"
+          }
+        },
+        {
+          "ExpressionInputId": "B330351C-4B254660-CCDCA592-3C8F3F26",
+          "Input": {
+            "OutputIndex": -1,
+            "InputName": "Radius",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "None"
+          }
+        },
+        {
+          "ExpressionInputId": "2B61E834-449DAE3B-C4D079B9-53B5DE0E",
+          "Input": {
+            "OutputIndex": 0,
+            "InputName": "Density",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionConstant_0"
+          }
+        },
+        {
+          "ExpressionInputId": "7D5AC525-4448D12A-92351AA3-6BEED90A",
+          "Input": {
+            "OutputIndex": -1,
+            "InputName": "Invert Density",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "None"
+          }
+        }
+      ],
+      "FunctionOutputs": [
+        {
+          "ExpressionOutputId": "8D076353-4D7AAC86-623FB1AE-8CD0CC39",
+          "Output": {
+            "OutputName": "RadialGradientExponential",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        }
+      ],
+      "Material": {
+        "ObjectName": "Material M_C4_Blink",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_C4_Blink.0"
+      },
+      "Outputs": [
+        {
+          "OutputName": "RadialGradientExponential",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        }
+      ]
+    }
+  }
+]

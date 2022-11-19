@@ -1,0 +1,211 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_JerryCan_FuelPuddle_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BP_JerryCan_FuelPuddle_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_FuelPuddle.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslFuelPuddleContainer",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_JerryCan_FuelPuddle_C Default__BP_JerryCan_FuelPuddle_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_FuelPuddle.1"
+    }
+  },
+  {
+    "Type": "BP_JerryCan_FuelPuddle_C",
+    "Name": "Default__BP_JerryCan_FuelPuddle_C",
+    "Properties": {
+      "AkComponent": {
+        "ObjectName": "AkComponent Default__BP_JerryCan_FuelPuddle_C:AkComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_FuelPuddle.2"
+      },
+      "FireSoundStart": {
+        "ObjectName": "AkAudioEvent HandBomb_JerryCan_Fire",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/JerryCan/HandBomb_JerryCan_Fire.0"
+      },
+      "FireSoundStop": {
+        "ObjectName": "AkAudioEvent HandBomb_JerryCan_Fire_Stop",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/JerryCan/HandBomb_JerryCan_Fire_Stop.0"
+      },
+      "DebuffTemplate": {
+        "ObjectName": "BlueprintGeneratedClass BP_JerryCanFireDebuff_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/BP_JerryCanFireDebuff.2"
+      },
+      "FireParticle": [
+        {
+          "ParticleSystem": {
+            "ObjectName": "ParticleSystem P_JerryCan_Flames",
+            "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_JerryCan_Flames.104"
+          },
+          "ParticleSystem_Console": {
+            "ObjectName": "ParticleSystem P_JerryCan_Flames_CONSOLE",
+            "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_JerryCan_Flames_CONSOLE.104"
+          },
+          "ParticleSystem_KoreanAndChinese": {
+            "ObjectName": "ParticleSystem P_Jerrycan_Fire",
+            "ObjectPath": "TslGame/Content/Effects/Clets_Teen/Particles/Weapons/Grenade/P_Jerrycan_Fire.87"
+          },
+          "MinRadius": 0.0
+        },
+        {
+          "ParticleSystem": {
+            "ObjectName": "ParticleSystem P_JerrycanFalmes_Med",
+            "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_JerrycanFalmes_Med.89"
+          },
+          "ParticleSystem_Console": {
+            "ObjectName": "ParticleSystem P_JerrycanFalmes_Med_CONSOLE",
+            "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_JerrycanFalmes_Med_CONSOLE.89"
+          },
+          "ParticleSystem_KoreanAndChinese": {
+            "ObjectName": "ParticleSystem P_Jerrycan_Fire_Med",
+            "ObjectPath": "TslGame/Content/Effects/Clets_Teen/Particles/Weapons/Grenade/P_Jerrycan_Fire_Med.87"
+          },
+          "MinRadius": 90.0
+        }
+      ],
+      "PuddleDecal": {
+        "Material": {
+          "ObjectName": "Material M_FuelDecal_Iridescent",
+          "ObjectPath": "TslGame/Content/Assets/Effects/Materials/M_FuelDecal_Iridescent.0"
+        },
+        "Size": {
+          "LowerBound": {
+            "Value": 120.0
+          },
+          "UpperBound": {
+            "Value": 140.0
+          }
+        },
+        "NormalFadeAngle": {
+          "LowerBound": {
+            "Value": 80.0
+          },
+          "UpperBound": {
+            "Value": 180.0
+          }
+        },
+        "FadeScreenSize": 0.04,
+        "FadeStartDelay": 0.0,
+        "FadeDuration": 0.0,
+        "bUseRandomRoll": true
+      },
+      "PuddleSizeCurve_Appear": {
+        "ObjectName": "CurveFloat JerrycanFuelPuddle_SizeCurveAppear",
+        "ObjectPath": "TslGame/Content/Assets/Effects/Blueprints/JerrycanFuelPuddle_SizeCurveAppear.0"
+      },
+      "PuddleSizeCurve_Disappear": {
+        "ObjectName": "CurveFloat JerrycanFuelPuddle_SizeCurveDisappear",
+        "ObjectPath": "TslGame/Content/Assets/Effects/Blueprints/JerrycanFuelPuddle_SizeCurveDisappear.0"
+      },
+      "PuddleSizeCurve": {
+        "ObjectName": "CurveFloat JerrycanFuelPuddle_SizeCurve",
+        "ObjectPath": "TslGame/Content/Assets/Effects/Blueprints/JerrycanFuelPuddle_SizeCurve.0"
+      },
+      "IgnitedPuddleLifespan": 6.0,
+      "PuddleSizeMaterialParam": "PuddleSize",
+      "PuddleRandomOffset": {
+        "X": 40.0,
+        "Y": 40.0
+      },
+      "MaxPuddleRadius": 120.0,
+      "PuddleGrowFactor": 1400.0,
+      "GenerationDistance": 70.0,
+      "MinDistanceBetweenPuddles": 30.0,
+      "IgnitionDelay": 0.05,
+      "PuddleLifespan": 220.0,
+      "FireLifespan": 20.0,
+      "AkCompMultiPositionStride": 5,
+      "DamageTickInterval": 0.4,
+      "DamageType": {
+        "ObjectName": "BlueprintGeneratedClass DmgTypeFire_JerryCan_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgTypeFire_JerryCan.0"
+      },
+      "MaxSpreadSteps": 16,
+      "SimpleCollision_Puddle": {
+        "ObjectName": "TslSimpleCollisionReceiver Default__BP_JerryCan_FuelPuddle_C:SimpleCollisionReceiver_Puddle",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_FuelPuddle.8"
+      },
+      "SimpleCollision_FireField": {
+        "ObjectName": "TslSimpleCollisionReceiver Default__BP_JerryCan_FuelPuddle_C:SimpleCollisionReceiver_Fire",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_FuelPuddle.7"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__BP_JerryCan_FuelPuddle_C:SceneRoot",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_FuelPuddle.4"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkComponent",
+    "Outer": "Default__BP_JerryCan_FuelPuddle_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__BP_JerryCan_FuelPuddle_C:SceneRoot",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_FuelPuddle.4"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_JerryCan_FuelPuddle_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneRoot",
+    "Outer": "Default__BP_JerryCan_FuelPuddle_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BP_JerryCan_FuelPuddle_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_FuelPuddle.3"
+      },
+      "VariableGuid": "055E3F81-46FC1910-88413281-4571A028",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_JerryCan_FuelPuddle_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BP_JerryCan_FuelPuddle_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/JerryCan/BP_JerryCan_FuelPuddle.5"
+      }
+    }
+  },
+  {
+    "Type": "TslSimpleCollisionReceiver",
+    "Name": "SimpleCollisionReceiver_Fire",
+    "Outer": "Default__BP_JerryCan_FuelPuddle_C"
+  },
+  {
+    "Type": "TslSimpleCollisionReceiver",
+    "Name": "SimpleCollisionReceiver_Puddle",
+    "Outer": "Default__BP_JerryCan_FuelPuddle_C"
+  }
+]

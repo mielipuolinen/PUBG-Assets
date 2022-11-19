@@ -1,0 +1,36 @@
+[
+  {
+    "Type": "TslExplosionEffectData",
+    "Name": "FragExplosionEffectData",
+    "Properties": {
+      "ShakeConfig": {
+        "ShakeArray": [
+          {
+            "ShakeClass": {
+              "ObjectName": "BlueprintGeneratedClass CameraShake_FragGrenadeWorld_C",
+              "ObjectPath": "TslGame/Content/Effects/tooner/Camera/CameraShake_FragGrenadeWorld.0"
+            },
+            "InnerRadius": 100.0,
+            "OuterRadius": 2000.0,
+            "Falloff": 1.0,
+            "bOrientShake": true
+          }
+        ]
+      },
+      "AudioConfig": {
+        "VisibilitySocket": "HeadPoint",
+        "DirectEffect": {
+          "ObjectName": "AkAudioEvent Tinnitus_Fx_Frag_Direct",
+          "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Tinnitus_Fx_Frag_Direct.0"
+        },
+        "ProxyEffect": {
+          "ObjectName": "AkAudioEvent Tinnitus_Fx_Frag_Proximity",
+          "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Tinnitus_Fx_Frag_Proximity.0"
+        },
+        "bUseDirectEffect": true,
+        "bUseProxyEffect": true,
+        "ProxyEffectDistance": 1300.0
+      }
+    }
+  }
+]

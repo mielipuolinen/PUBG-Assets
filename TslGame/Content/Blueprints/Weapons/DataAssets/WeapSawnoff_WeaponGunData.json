@@ -1,0 +1,103 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapSawnoff_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_12Guage_C",
+        "TracerClass": null,
+        "AmmoPerClip": 2,
+        "TimeBetweenShots": 0.25,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleShotgun"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 3.0,
+        "BurstShots": 1,
+        "BulletPerFiring": 9,
+        "FiringBulletsSpread": 6.7,
+        "MovementModifierAim": 2.0,
+        "MovementModifierScope": 2.0,
+        "WeaponLength": 24.0,
+        "ShoulderLength": 22.0,
+        "WeaponToShoulderOffset": -10.0,
+        "HandWeaponOffset": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 5.0
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 5.0
+        },
+        "bUseGridPelletSpread": true,
+        "PelletGrid": null,
+        "PelletGridScale": 1.1,
+        "GridPelletSpreadHalfAngle": 0.7,
+        "bUsePelletManager": true,
+        "StabilityForceModifier": 0.75,
+        "ReloadSpeedScalar": 1.2,
+        "VehicleReloadSpeedModifier": 0.666
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 1.75,
+        "DeviationBaseAim": 1.25,
+        "MOA": 4.0,
+        "DeviationRecoilGain": 0.8,
+        "DeviationRecoilGainAim": 0.7,
+        "DeviationRecoilGainADS": 0.03,
+        "DeviationMax": 4.0,
+        "DeviationMaxMove": 1.3,
+        "DeviationMoveMultiplier": 1.0,
+        "DeviationMoveMinReferenceVelocity": 200.0,
+        "DeviationMoveMaxReferenceVelocity": 480.0,
+        "DeviationStanceJump": 2.0
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_SawedOff_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/SawedOff/Redux/Weapon_SawedOff_Grip_RD.0"
+        },
+        "CharacterFire": {
+          "ObjectName": "AnimMontage CharacterWeapon_SawedOff_Fire_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/SawedOff/CharacterWeapon_SawedOff_Fire_Montage.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage CharacterWeapon_SawedOff_Reload_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/SawedOff/Redux/CharacterWeapon_SawedOff_Reload_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage CharacterWeapon_SawedOff_Reload_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/SawedOff/Redux/CharacterWeapon_SawedOff_Reload_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 3.2,
+        "ReloadDurationCharge": 3.2,
+        "ReloadDurationMagOut": 0.4,
+        "bCycleAfterLastShot": false,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Pistol_SawnOff_Hip_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Pistol_SawnOff_Hip.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Pistol_SawnOff_Ironsight_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Pistol_SawnOff_Ironsight.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Pistol_SawnOff_Ironsight_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Pistol_SawnOff_Ironsight.0"
+        },
+        "RecoilKickADS": 0.9,
+        "RecoilKick_MovementMaxMultiplier": 1.2
+      }
+    }
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapUZIPro_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_9mm_C",
+        "TracerClass": null,
+        "AmmoPerClip": 25,
+        "TimeBetweenShots": 0.048,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+            "AttachableTags": [
+              "MagazineMedium"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleMedium"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+            "AttachableTags": [
+              "StockUZI"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+            "AttachableTags": [
+              "RMR"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 3.1,
+        "FiringModes": [
+          "EFiringMode::Normal",
+          "EFiringMode::FullAuto"
+        ],
+        "BurstShots": 1,
+        "FiringBulletsSpread": 1.0,
+        "MovementModifierAim": 1.8,
+        "MovementModifierScope": 1.6,
+        "WeaponLength": 12.0,
+        "ShoulderLength": 8.0,
+        "HandWeaponOffset": {
+          "X": 10.0,
+          "Y": 0.0,
+          "Z": 5.0
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 12.0,
+          "Y": -1.2,
+          "Z": 7.0
+        },
+        "StabilitySpeedModifier": 1.1,
+        "StabilityForceModifier": 0.4,
+        "ADSTimeMultiplier": 1.3
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 2.3,
+        "DeviationBaseAim": 2.0,
+        "MOA": 9.0,
+        "DeviationRecoilGainAim": 0.85,
+        "DeviationRecoilGainADS": 0.15,
+        "DeviationMax": 7.0,
+        "DeviationMaxMove": 2.0,
+        "DeviationMoveMultiplier": 1.7,
+        "DeviationMoveMinReferenceVelocity": 150.0,
+        "DeviationMoveMaxReferenceVelocity": 400.0,
+        "DeviationStanceCrouch": 0.85,
+        "DeviationStanceProne": 0.69
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_Uzi_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Uzi/Redux/Weapon_Uzi_Grip_RD.0"
+        },
+        "CharacterFireSelector": {
+          "ObjectName": "AnimMontage CharacterWeapon_UZI_Firemode_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Uzi/CharacterWeapon_UZI_Firemode_Montage.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage CharacterWeapon_Uzi_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Uzi/Redux/CharacterWeapon_Uzi_Reload_Tactical_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage CharacterWeapon_Uzi_Pro_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Uzi/Redux/PRO/CharacterWeapon_Uzi_Pro_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 2.5,
+        "ReloadDurationCharge": 3.1,
+        "ReloadDurationMagOut": 0.4,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_Uzi_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_Uzi.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_Uzi_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_Uzi_ADS.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_Uzi_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_Uzi_ADS.0"
+        },
+        "RecoilKickADS": 1.0,
+        "RecoilKick_MovementMaxMultiplier": 1.1,
+        "MagDropLinearVelocity": {
+          "X": -25.0,
+          "Y": 0.0,
+          "Z": -125.0
+        },
+        "MagDropAngularVelocity": {
+          "X": 0.0,
+          "Y": -25.0,
+          "Z": -5.0
+        }
+      }
+    }
+  }
+]

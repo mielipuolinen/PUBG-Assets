@@ -1,0 +1,372 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "SM_BarrelMount_VSS_03",
+    "Outer": "WeapVSS_C",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class StaticMeshComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "WeapVSS_C",
+    "Next": {
+      "ObjectName": "ObjectProperty WeapVSS_C:SM_BarrelMount_VSS_03",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapVSS.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapVSS_C",
+    "Super": "DefaultRifleSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapVSS_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapVSS.8"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function WeapVSS_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapVSS.1"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function WeapVSS_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapVSS.1"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapVSS_C Default__WeapVSS_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapVSS.3"
+    }
+  },
+  {
+    "Type": "WeapVSS_C",
+    "Name": "Default__WeapVSS_C",
+    "Template": "Default__DefaultRifleSetting_C",
+    "Properties": {
+      "TrailFX": null,
+      "WeaponTrajectoryData": {
+        "ObjectName": "WeaponTrajectoryData WeapVSS_WeaponTrajectoryData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapVSS_WeaponTrajectoryData.0"
+      },
+      "WeaponGunPostprocessSettings": {
+        "BlurLevel": 0.8,
+        "ScopeRadiusNear": 1.75,
+        "ScopeRadiusFar": 2.85,
+        "ReticleAngularSize": 3.7,
+        "ReticleTexture": {
+          "ObjectName": "Texture2D Vss_Reticle",
+          "ObjectPath": "TslGame/Content/Weapon/Rifles/Vss/Materials/Vss_Reticle.0"
+        },
+        "ReticleSettings": {
+          "ObjectName": "ReticleSettings VSS",
+          "ObjectPath": "TslGame/Content/Weapon/Accessories/ReticleSettings/VSS.0"
+        },
+        "ScopeLensDistortion": -0.045,
+        "ScopeLensCA": 0.1,
+        "ScopeLensTint": {
+          "R": 0.9,
+          "G": 0.9,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFF4F4FF"
+        },
+        "ScopeOuterBrightness": 1.05,
+        "DepthBlurPower": 1.0,
+        "DepthBlurWhitePoint": 50.0,
+        "DepthBlurBlackPoint": 1.0,
+        "RelativeOffsetMap": {
+          "X": 0.0,
+          "Y": 8.0
+        },
+        "ParallaxMovementScale": 4.5,
+        "ParallaxRadiusScale": 1.3,
+        "NearClipStaticOffset": 2.0
+      },
+      "ReticlePostprocessData": {
+        "ObjectName": "ReticlePostprocessData Sight_VSS_PostprocessData",
+        "ObjectPath": "TslGame/Content/Item/Attachment/AttachmentDataAssets/Sight_VSS_PostprocessData.0"
+      },
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapVSS_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapVSS_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_gun_vss",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_vss.0"
+      },
+      "WeaponIconRatio": 3.2,
+      "WeaponConfig": {
+        "TargetingFOV": 20.0,
+        "HoldBreathFOV": 20.0,
+        "ScopeTypeFOVOverridesMap": null,
+        "WeaponClass": "EWeaponClass::Class_DMR",
+        "IronSightZeroingDistances": [
+          100.0,
+          125.0,
+          150.0,
+          175.0,
+          200.0
+        ],
+        "RecoilMontage": {
+          "ObjectName": "AnimMontage Rifle_Recoil_9_VSS_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Recoil/Rifle_Recoil_9_VSS_Montage.0"
+        },
+        "WeaponEquipDuration": 0.2,
+        "WeaponUnequipDuration": 0.4,
+        "WeaponReadyDuration": 0.4,
+        "PhysicalBodyHitImpactPower": 20000.0,
+        "WeaponSensitivityOverride": "Scope4X"
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapVSS_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapVSS.10"
+      },
+      "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
+      "AttachmentPositionData": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentPoint": "UpperDefault",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "UpperDefault",
+              "AttachmentPoint": "UpperDefault"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentPoint": "Magazine_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MagazineSniperRifle",
+              "AttachmentPoint": "Magazine_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+          "AttachmentPoint": "StockSniperRifle",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "StockSniperRifle",
+              "AttachmentPoint": "Stock_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+          "AttachmentPoint": "Upper_Angled",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "RMR",
+              "AttachmentPoint": "Upper_Angled"
+            }
+          ]
+        }
+      ],
+      "DefaultAttachedItemAssets": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentTag": "MagazineDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/Vss/Mesh/Vss_01_Mag.Vss_01_Mag",
+          "AttachmentMeshName": "MagazineDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentTag": "UpperDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/Vss/Mesh/Vss_Sight_Setting.Vss_Sight_Setting",
+          "AttachmentMeshName": "UpperDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        }
+      ],
+      "WeaponTag": "VSS",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem P_Muzzle_VSS",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/DMR/P_Muzzle_VSS.78"
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_Secondary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.5
+        },
+        "EAccessorySlot::Slot_SideArm": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        },
+        "EAccessorySlot::Slot_Primary": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapVSS_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapVSS_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapVSS_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapVSS.4"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapVSS_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapVSS_C Default__WeapVSS_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapVSS.3"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapVSS_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapVSS_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapVSS.5"
+      },
+      "VariableGuid": "4B1B0ABE-483B9FB5-B48D1D92-B9412BF2",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class StaticMeshComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent WeapVSS_C:SM_BarrelMount_VSS_03_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapVSS.9"
+      },
+      "AttachToName": "BarrelMount",
+      "ParentComponentOrVariableName": "WeaponMesh3P",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "A8B93ADF-4CF55CA0-959B25B0-CE1F1C9E",
+      "InternalVariableName": "SM_BarrelMount_VSS_03"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapVSS_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node WeapVSS_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapVSS.7"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node WeapVSS_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapVSS.7"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapVSS_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapVSS.6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "SM_BarrelMount_VSS_03_GEN_VARIABLE",
+    "Outer": "WeapVSS_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SM_BarrelMount_VSS_02",
+        "ObjectPath": "TslGame/Content/Weapon/Accessories/BarrelMount/SM_BarrelMount_VSS_02.1"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapVSS_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_VSS_RD_C",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/VSS/Redux/Weapon_RD/ABP_VSS_RD.34"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh Vss_Setting",
+        "ObjectPath": "TslGame/Content/Weapon/Rifles/Vss/Mesh/Vss_setting.0"
+      },
+      "BodyInstance": {
+        "MassInKgOverride": 14.318548
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapVSS_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapVSS.4"
+      }
+    }
+  }
+]

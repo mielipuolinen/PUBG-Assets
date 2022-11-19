@@ -1,0 +1,256 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SpikeSplinePiece_Mesh_002",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 96.607506,
+                "Y": -4.9496374,
+                "Z": 0.875
+              },
+              {
+                "X": 96.607506,
+                "Y": -4.9496374,
+                "Z": 1.625
+              },
+              {
+                "X": 96.607506,
+                "Y": 4.96875,
+                "Z": 1.5
+              },
+              {
+                "X": 96.607506,
+                "Y": 4.96875,
+                "Z": 0.85726905
+              },
+              {
+                "X": -3.5940576,
+                "Y": 4.96875,
+                "Z": 0.875
+              },
+              {
+                "X": -3.5940576,
+                "Y": 4.96875,
+                "Z": 1.625
+              },
+              {
+                "X": -3.5940576,
+                "Y": -4.9496374,
+                "Z": 1.5
+              },
+              {
+                "X": -3.5940576,
+                "Y": -4.9496374,
+                "Z": 0.85726905
+              },
+              {
+                "X": 96.625,
+                "Y": 4.96183,
+                "Z": 1.625
+              },
+              {
+                "X": -3.6095276,
+                "Y": 4.96183,
+                "Z": 1.5
+              },
+              {
+                "X": -3.6095276,
+                "Y": -4.961775,
+                "Z": 1.625
+              },
+              {
+                "X": 96.625,
+                "Y": -4.961775,
+                "Z": 1.5
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -3.6095276,
+                "Y": -4.961775,
+                "Z": 0.85726905
+              },
+              "Max": {
+                "X": 96.625,
+                "Y": 4.96875,
+                "Z": 1.625
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "3628C90744B4526B6B1ADE90531D34A2",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 4785,
+        "SizeOnDisk": 4785,
+        "OffsetInFile": "0x57F1"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SpikeSplinePiece_Mesh_002",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "07 - Default",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 55.277966,
+            "LocalUVDensities": 47.16688,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 47.16688,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 46.506725,
+          "Y": 2.7656555E-05,
+          "Z": 1.1880301
+        },
+        "BoxExtent": {
+          "X": 50.000782,
+          "Y": 4.8618026,
+          "Z": 0.23076093
+        },
+        "SphereRadius": 50.23712
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SpikeSplinePiece_Mesh_002:BodySetup_0",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/SpikeSplinePiece_Mesh_002.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "A222EE5C-469D09C6-D72FF2B8-AC56769E",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 144,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 287,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 288
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 288,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 46.506725,
+          "Y": 2.7656555E-05,
+          "Z": 1.1880301
+        },
+        "BoxExtent": {
+          "X": 50.000782,
+          "Y": 4.8618026,
+          "Z": 0.23076093
+        },
+        "SphereRadius": 50.23712
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

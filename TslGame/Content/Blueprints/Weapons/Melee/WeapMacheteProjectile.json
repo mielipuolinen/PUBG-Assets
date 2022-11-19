@@ -1,0 +1,216 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapMacheteProjectile_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapMacheteProjectile_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.9"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslProjectile_MeleeWeapon",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapMacheteProjectile_C Default__WeapMacheteProjectile_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.1"
+    }
+  },
+  {
+    "Type": "WeapMacheteProjectile_C",
+    "Name": "Default__WeapMacheteProjectile_C",
+    "Properties": {
+      "WeaponClass": {
+        "ObjectName": "BlueprintGeneratedClass WeapMachete_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMachete.0"
+      },
+      "DamageCauserIcon": {
+        "ObjectName": "Texture2D icon_killfeed_melee_throw",
+        "ObjectPath": "TslGame/Content/UI/HUD/KillMessage/icon_killfeed_melee_throw.0"
+      },
+      "DamageIconRatio": 2.34,
+      "PlayerCollisionSphere": {
+        "ObjectName": "SphereComponent Default__WeapMacheteProjectile_C:PlayerCollisionComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.11"
+      },
+      "ConstraintComp": {
+        "ObjectName": "PhysicsConstraintComponent Default__WeapMacheteProjectile_C:MeshConstraint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.6"
+      },
+      "CollisionComp": {
+        "ObjectName": "SphereComponent Default__WeapMacheteProjectile_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.12"
+      },
+      "InterpolationTargetComp": {
+        "ObjectName": "SphereComponent Default__WeapMacheteProjectile_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.10"
+      },
+      "MovementComp": {
+        "ObjectName": "TslProjectileMovementComponent Default__WeapMacheteProjectile_C:ProjectileComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.13"
+      },
+      "AkComp": {
+        "ObjectName": "AkComponent Default__WeapMacheteProjectile_C:AkComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.2"
+      },
+      "InteractionBoxComp": {
+        "ObjectName": "BoxComponent Default__WeapMacheteProjectile_C:InteractionBox",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.4"
+      },
+      "MeshComp": {
+        "ObjectName": "AsyncStaticMeshComponent Default__WeapMacheteProjectile_C:DropStaticMesh",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.3"
+      },
+      "InteractionComp": {
+        "ObjectName": "DroppedItemActorComponent Default__WeapMacheteProjectile_C:InteractionComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.5"
+      },
+      "RootComponent": {
+        "ObjectName": "SphereComponent Default__WeapMacheteProjectile_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.12"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkComp",
+    "Outer": "Default__WeapMacheteProjectile_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__WeapMacheteProjectile_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.12"
+      }
+    }
+  },
+  {
+    "Type": "AsyncStaticMeshComponent",
+    "Name": "DropStaticMesh",
+    "Outer": "Default__WeapMacheteProjectile_C",
+    "Properties": {
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 1000.0
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__WeapMacheteProjectile_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.10"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "InteractionBox",
+    "Outer": "Default__WeapMacheteProjectile_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__WeapMacheteProjectile_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.12"
+      }
+    }
+  },
+  {
+    "Type": "DroppedItemActorComponent",
+    "Name": "InteractionComponent",
+    "Outer": "Default__WeapMacheteProjectile_C",
+    "Properties": {
+      "OnInteractBy": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "DroppedItemActorComponent Default__WeapMacheteProjectile_C:InteractionComponent",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.5"
+            },
+            "FunctionName": "OnInteractDelegate"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "MeshConstraint",
+    "Outer": "Default__WeapMacheteProjectile_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__WeapMacheteProjectile_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.10"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapMacheteProjectile_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapMacheteProjectile_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.7"
+      },
+      "VariableGuid": "5206DB54-46AB5D18-170EF996-C6B6852E",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapMacheteProjectile_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapMacheteProjectile_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.8"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "InterpolationTarget",
+    "Outer": "Default__WeapMacheteProjectile_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__WeapMacheteProjectile_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.12"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "PlayerCollisionComp",
+    "Outer": "Default__WeapMacheteProjectile_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__WeapMacheteProjectile_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapMacheteProjectile.12"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__WeapMacheteProjectile_C"
+  },
+  {
+    "Type": "TslProjectileMovementComponent",
+    "Name": "ProjectileComp",
+    "Outer": "Default__WeapMacheteProjectile_C",
+    "Properties": {
+      "DragForce": 0.5
+    }
+  }
+]

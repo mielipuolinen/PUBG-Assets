@@ -1,0 +1,45 @@
+[
+  {
+    "Type": "PhysicsAsset",
+    "Name": "SpikeTrap_SkelMesh_v03_PhysicsAsset",
+    "Properties": {
+      "BoundsBodies": [
+        0
+      ],
+      "SkeletalBodySetups": [
+        {
+          "ObjectName": "SkeletalBodySetup SpikeTrap_SkelMesh_v03_PhysicsAsset:SkeletalBodySetup_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/SpikeTrap_SkelMesh_v03_PhysicsAsset.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkeletalBodySetup",
+    "Name": "SkeletalBodySetup_0",
+    "Outer": "SpikeTrap_SkelMesh_v03_PhysicsAsset",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": 15.210177,
+              "Y": 0.5038333,
+              "Z": 19.41261
+            },
+            "Rotation": {
+              "Pitch": 0.11193997,
+              "Yaw": -91.243675,
+              "Roll": -142.71867
+            },
+            "Radius": 10.332811,
+            "Length": 30.703646
+          }
+        ]
+      },
+      "BoneName": "spike_handle",
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "E11787954B6E74F748E86897F7AA6309"
+  }
+]

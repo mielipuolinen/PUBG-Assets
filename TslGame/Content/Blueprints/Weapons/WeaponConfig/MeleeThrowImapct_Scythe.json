@@ -1,0 +1,398 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "MeleeThrowImapct_Scythe_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript MeleeThrowImapct_Scythe_C:SimpleConstructionScript_0__57659476",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/MeleeThrowImapct_Scythe.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslMeleeImpact",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "MeleeThrowImapct_Scythe_C Default__MeleeThrowImapct_Scythe_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/MeleeThrowImapct_Scythe.1"
+    }
+  },
+  {
+    "Type": "MeleeThrowImapct_Scythe_C",
+    "Name": "Default__MeleeThrowImapct_Scythe_C",
+    "Properties": {
+      "DefaultFX": {
+        "ObjectName": "ParticleSystem P_Impact_Default_Melee",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Default/P_Impact_Default_Melee.38"
+      },
+      "EffectMap": {
+        "139": null,
+        "199": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Rock_Melee",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Rock/P_Impact_Rock_Melee.43"
+        },
+        "150": null,
+        "196": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Water_Melee",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Water/P_Impact_Water_Melee.96"
+        },
+        "152": null,
+        "192": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Wood_Melee",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Wood/P_Impact_Wood_Melee.45"
+        },
+        "155": null,
+        "195": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Grass_Melee",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Grass/P_Impact_Grass_Melee.63"
+        },
+        "140": null,
+        "188": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Blood_Melee_BluntWeapon",
+          "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/SurfaceImpact/Flesh/P_Blood_Melee_BluntWeapon.116"
+        },
+        "141": null,
+        "191": null,
+        "0": {
+          "ObjectName": "ParticleSystem P_Impact_Crops_Melee",
+          "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/SurfaceImpacts/Crops/P_Impact_Crops_Melee.85"
+        },
+        "144": null
+      },
+      "AkSound": {
+        "ObjectName": "AkAudioEvent Impact_Scythe_Throwing",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Impact/Impact_Scythe_Throwing.0"
+      },
+      "bConvertForColorBlind": true,
+      "VectorParameters": null,
+      "DecalEffectDataSet": {
+        "DefaultDecal": {
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "ConcreteDecal": {
+          "Material": {
+            "ObjectName": "Material M_Melee_Blunt_Concrete",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Concrete.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "RockDecal": {
+          "Material": {
+            "ObjectName": "Material M_Melee_Blunt_Concrete",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Concrete.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "DirtDecal": {
+          "Material": {
+            "ObjectName": "Material M_Melee_Blunt_Dirt",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Dirt.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "MetalDecal": {
+          "Material": {
+            "ObjectName": "Material M_Melee_Blunt_Steel",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Steel.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "WoodDecal": {
+          "Material": {
+            "ObjectName": "Material M_Melee_Blunt_Wood",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Wood.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "FleshDecal": {
+          "Size": {
+            "UpperBound": {
+              "Value": 6.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "CropsDecal": {
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "CactusDecal": {
+          "Material": {
+            "ObjectName": "Material M_Melee_Blunt_Cactus",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Cactus.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "PaperDecal": {
+          "Material": {
+            "ObjectName": "Material M_Melee_Blunt_Paper",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Paper.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "RubberDecal": {
+          "Material": {
+            "ObjectName": "Material M_Melee_Blunt_Rubber",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Rubber.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "FabricDecal": {
+          "Material": {
+            "ObjectName": "Material M_Melee_Blunt_Fabric",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Fabric.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "SnowDecal": {
+          "Material": {
+            "ObjectName": "Material M_Melee_Blunt_Snow",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Snow.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "SnowRockDecal": {
+          "Material": {
+            "ObjectName": "Material M_Melee_Blunt_Concrete",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Concrete.0"
+          },
+          "Size": {
+            "LowerBound": {
+              "Value": 7.0
+            },
+            "UpperBound": {
+              "Value": 8.0
+            }
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        },
+        "IceDecal": {
+          "Material": {
+            "ObjectName": "Material M_Melee_Blunt_Ice",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Ice.0"
+          },
+          "FadeStartDelay": 35.0,
+          "FadeDuration": 1.5,
+          "bUseRandomInput": true,
+          "bUseRandomRoll": true
+        }
+      },
+      "ChineseLicensingFleshEffect": {
+        "ObjectName": "ParticleSystem P_Blood_Melee_BluntWeapon",
+        "ObjectPath": "/Game/Effects/PUBG_Gapp/Particles/Weapons/SurfaceImpact/Flesh/P_Blood_Melee_BluntWeapon"
+      },
+      "UniversalFleshEffect": {
+        "ObjectName": "ParticleSystem P_Blood_Melee_BluntWeapon",
+        "ObjectPath": "TslGame/Content/Effects/Clets_Teen/Particles/Weapons/SurfaceImpact/Flesh/P_Blood_Melee_BluntWeapon.133"
+      },
+      "AKCom": {
+        "ObjectName": "AkComponent Default__MeleeThrowImapct_Scythe_C:AkSound",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/MeleeThrowImapct_Scythe.2"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__MeleeThrowImapct_Scythe_C:RootSceneComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/MeleeThrowImapct_Scythe.3"
+      },
+      "InitialLifeSpan": 5.0
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Default__MeleeThrowImapct_Scythe_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__MeleeThrowImapct_Scythe_C:RootSceneComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/MeleeThrowImapct_Scythe.3"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootSceneComp",
+    "Outer": "Default__MeleeThrowImapct_Scythe_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_0__F25C6BF4",
+    "Outer": "MeleeThrowImapct_Scythe_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0__57659476",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent MeleeThrowImapct_Scythe_C:SceneComponent_0__F25C6BF4",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/MeleeThrowImapct_Scythe.4"
+      },
+      "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0__57659476",
+    "Outer": "MeleeThrowImapct_Scythe_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node MeleeThrowImapct_Scythe_C:SimpleConstructionScript_0__57659476.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/MeleeThrowImapct_Scythe.5"
+      }
+    }
+  }
+]

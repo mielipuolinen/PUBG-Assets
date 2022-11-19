@@ -1,0 +1,212 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapM79_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapM79_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapM79.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslWeapon_Gun_Projectile_GL",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapM79_C Default__WeapM79_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapM79.1"
+    }
+  },
+  {
+    "Type": "WeapM79_C",
+    "Name": "Default__WeapM79_C",
+    "Properties": {
+      "ProjectileMeshComponent": {
+        "ObjectName": "StaticMeshComponent Default__WeapM79_C:ProjectileMeshComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapM79.6"
+      },
+      "ShellMeshComponent": {
+        "ObjectName": "StaticMeshComponent Default__WeapM79_C:ShellMeshComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapM79.7"
+      },
+      "GrenadeLauncherConfig": {
+        "ProjectileAttachmentSocketName": "ProjectileMeshSocket",
+        "ShellAttachmentSocketName": "ShellMeshSocket"
+      },
+      "ProjectileClass": {
+        "ObjectName": "BlueprintGeneratedClass BP_Projectile_40mm_Smoke_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_Projectile_40mm_Smoke.13"
+      },
+      "bUseAimOffsetToFireDirection": true,
+      "bAddPitchAdditiveZeroToAim": true,
+      "bAlwaysUseIronSightZeroing": true,
+      "CurrentZeroLevel": 1,
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapM79_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapM79_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_gun_m79",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_m79.0"
+      },
+      "WeaponIconRatio": 1.44,
+      "WeaponConfig": {
+        "WeaponClass": "EWeaponClass::Class_GrenadeLauncher",
+        "AnimationWeaponClassOverride": "EWeaponClass::Class_SMG",
+        "SwayModifier_Pitch": 0.2,
+        "SwayModifier_YawOffset": 0.5,
+        "SwayModifier_Movement": 1.0,
+        "IronSightZeroingDistances": [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0
+        ],
+        "RecoilMontage": {
+          "ObjectName": "AnimMontage Recoil_1911_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/1911/Recoil/Recoil_1911_Montage.0"
+        },
+        "DestructibleDoor": false
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapM79_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapM79.8"
+      },
+      "WeaponTag": "M79",
+      "MuzzleAttachPoint": "Muzzle",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem P_Muzzle_M79",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Other/P_Muzzle_M79.57"
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_SideArm": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapM79_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapM79_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapM79_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapM79.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapM79_C",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapM79_C Default__WeapM79_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapM79.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapM79_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapM79_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapM79.3"
+      },
+      "VariableGuid": "25E0AE81-4CF50C75-221791BC-403C98B0",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapM79_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapM79_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapM79.4"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ProjectileMeshComponent",
+    "Outer": "Default__WeapM79_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SM_M79_Ammo",
+        "ObjectPath": "TslGame/Content/Weapon/Pistols/M79/Meshes/SM_M79_Ammo.1"
+      },
+      "bVisible": false,
+      "AttachParent": {
+        "ObjectName": "WeaponMeshComponent Default__WeapM79_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapM79.8"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "ShellMeshComponent",
+    "Outer": "Default__WeapM79_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh SM_M79_AmmoShell",
+        "ObjectPath": "TslGame/Content/Weapon/Pistols/M79/Meshes/SM_M79_AmmoShell.1"
+      },
+      "bVisible": false,
+      "AttachParent": {
+        "ObjectName": "WeaponMeshComponent Default__WeapM79_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapM79.8"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapM79_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_M79_RD_C",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M79/Redux/Weapon_RD/ABP_M79_RD.31"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_M79_SET",
+        "ObjectPath": "TslGame/Content/Weapon/Pistols/M79/Meshes/SK_M79_SET.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapM79_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapM79.2"
+      }
+    }
+  }
+]

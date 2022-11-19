@@ -1,0 +1,150 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapCinderblock_C",
+    "Super": "DefaultGrenadeSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapCinderblock_C:SimpleConstructionScript_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapCinderblock.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultGrenadeSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapCinderblock_C Default__WeapCinderblock_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapCinderblock.1"
+    }
+  },
+  {
+    "Type": "WeapCinderblock_C",
+    "Name": "Default__WeapCinderblock_C",
+    "Template": "Default__DefaultGrenadeSetting_C",
+    "Properties": {
+      "ThrowableConfig": {
+        "ProjectileClass": {
+          "ObjectName": "BlueprintGeneratedClass ProjCinderblock_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjCinderblock.0"
+        },
+        "ExplosionStartType": "EProjectileExplosionStartType::NotStart",
+        "ExplosionDelay": 0.0,
+        "FireDelay": 0.4,
+        "StandAnim": {
+          "PinOff": null
+        },
+        "CrouchAnim": {
+          "PinOff": null
+        },
+        "ProneAnim": {
+          "PinOff": null
+        },
+        "ThrowTime": 1.3,
+        "ThrowCooldownDuration": 1.5,
+        "bCanBeCooked": false
+      },
+      "WeaponIconRatio": 0.68,
+      "WeaponConfig": {
+        "SocketOffset_Hand": {
+          "X": 0.0,
+          "Y": -2.0,
+          "Z": 0.0
+        },
+        "WeaponClass": "EWeaponClass::Class_Throwable"
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapCinderblock_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapCinderblock.6"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapCinderblock_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapCinderblock.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapCinderblock_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapCinderblock_C Default__WeapCinderblock_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapCinderblock.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapCinderblock_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapCinderblock_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapCinderblock.3"
+      },
+      "VariableGuid": "028EC49A-48E4171F-BF4E70B7-59BAFBFD",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "WeapCinderblock_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapCinderblock_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapCinderblock.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapCinderblock_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh Cinderblock_s",
+        "ObjectPath": "TslGame/Content/Weapon/Grenades/Cinderblock/Cinderblock_s.0"
+      },
+      "OverrideMaterials": [
+        null
+      ],
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapCinderblock_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapCinderblock.2"
+      }
+    }
+  }
+]

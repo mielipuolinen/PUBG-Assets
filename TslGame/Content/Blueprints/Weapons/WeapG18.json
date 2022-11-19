@@ -1,0 +1,248 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapG18_C",
+    "Super": "DefaultPistolSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapG18_C:SimpleConstructionScript_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapG18.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultPistolSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultPistolSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapG18_C Default__WeapG18_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapG18.1"
+    }
+  },
+  {
+    "Type": "WeapG18_C",
+    "Name": "Default__WeapG18_C",
+    "Template": "Default__DefaultPistolSetting_C",
+    "Properties": {
+      "WeaponTrajectoryData": {
+        "ObjectName": "WeaponTrajectoryData WeapG18_WeaponTrajectoryData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapG18_WeaponTrajectoryData.0"
+      },
+      "WeaponGunPostprocessSettings": {
+        "BlurLevel": 0.4,
+        "ScopeRadiusNear": 0.1,
+        "ScopeRadiusFar": 0.1,
+        "DepthBlurPower": 1.0,
+        "DepthBlurWhitePoint": 10.0,
+        "DepthBlurBlackPoint": 50.0
+      },
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapG18_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapG18_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_gun_GLOCK18C",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_GLOCK18C.0"
+      },
+      "WeaponIconRatio": 1.64,
+      "WeaponConfig": {
+        "TargetingFOV": 80.0,
+        "HoldBreathFOV": 65.0,
+        "SocketOffset_Shoulder": {
+          "X": 6.0,
+          "Y": 40.0,
+          "Z": 5.0
+        },
+        "SocketOffset_Hand": {
+          "X": 3.0,
+          "Y": 7.0,
+          "Z": 0.5
+        },
+        "SwayModifier_Pitch": 2.0,
+        "SwayModifier_YawOffset": 2.0,
+        "IronSightZeroingDistances": [
+          50.0
+        ],
+        "RecoilMontage": {
+          "ObjectName": "AnimMontage Recoil_G18_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/G18/Recoil/Recoil_G18_Montage.0"
+        },
+        "WeaponEquipDuration": 0.2,
+        "PhysicalBodyHitImpactPower": 7000.0
+      },
+      "WeaponHand": "EWeaponHand::Right",
+      "bCanArmAsDriver": true,
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapG18_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapG18.6"
+      },
+      "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
+      "AttachmentPositionData": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentPoint": "Magazine_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MagazineSmall",
+              "AttachmentPoint": "Magazine_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+          "AttachmentPoint": "Muzzle_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MuzzleSmall",
+              "AttachmentPoint": "Muzzle_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentPoint": "Upper_Small",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "UpperReddot",
+              "AttachmentPoint": "Upper_Small"
+            },
+            {
+              "AttachmentTag": "UpperHolo",
+              "AttachmentPoint": "Upper_Holo"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::LowerRail",
+          "AttachmentPoint": "Lower_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "LowerDefault",
+              "AttachmentPoint": "Lower_Default"
+            }
+          ]
+        }
+      ],
+      "DefaultAttachedItemAssets": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentTag": "MagazineDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Pistols/GLOCK18C/Meshes/GLOCK18C_Mag_01_setting.GLOCK18C_Mag_01_setting",
+          "AttachmentMeshName": "MagazineDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        }
+      ],
+      "WeaponTag": "G18",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem P_Muzzle_G18",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Pistol/P_Muzzle_G18.72"
+      },
+      "FireForceFeedback": {
+        "ObjectName": "TslForceFeedbackEffect TslFFE_Fire",
+        "ObjectPath": "TslGame/Content/Effects/ForceFeedback/TslFFE_Fire.0"
+      },
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_SideArm": {
+          "Montage": {
+            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+          },
+          "PlayRate": 1.5
+        }
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapG18_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapG18_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapG18_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapG18.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapG18_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapG18_C Default__WeapG18_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapG18.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapG18_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapG18_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapG18.3"
+      },
+      "VariableGuid": "BDA1A7CC-4A9E5D50-F8948EBC-0B1B6578",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "WeapG18_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapG18_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapG18.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapG18_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_Weapon_Glock18_RD_C",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/G18/Redux/Weapon_RD/ABP_Weapon_Glock18_RD.48"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh GLOCK18C_setting",
+        "ObjectPath": "TslGame/Content/Weapon/Pistols/GLOCK18C/Meshes/GLOCK18C_setting.0"
+      },
+      "BodyInstance": {
+        "MassInKgOverride": 100.0
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapG18_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapG18.2"
+      }
+    }
+  }
+]

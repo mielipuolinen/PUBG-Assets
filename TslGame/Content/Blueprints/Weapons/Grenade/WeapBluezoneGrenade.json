@@ -1,0 +1,153 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapBluezoneGrenade_C",
+    "Super": "DefaultGrenadeSetting_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapBluezoneGrenade_C:SimpleConstructionScript_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBluezoneGrenade.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass DefaultGrenadeSetting_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapBluezoneGrenade_C Default__WeapBluezoneGrenade_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBluezoneGrenade.1"
+    }
+  },
+  {
+    "Type": "WeapBluezoneGrenade_C",
+    "Name": "Default__WeapBluezoneGrenade_C",
+    "Template": "Default__DefaultGrenadeSetting_C",
+    "Properties": {
+      "ThrowableConfig": {
+        "ProjectileClass": {
+          "ObjectName": "BlueprintGeneratedClass ProjBluezoneBomb_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.47"
+        },
+        "ExplosionStartType": "EProjectileExplosionStartType::NotStart",
+        "ExplosionDelay": 0.0,
+        "FireDelay": 0.4,
+        "ThrowTime": 1.3,
+        "bCanBeCooked": false
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_bzgrenade",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_bzgrenade.0"
+      },
+      "WeaponIconRatio": 1.12,
+      "WeaponConfig": {
+        "WeaponClass": "EWeaponClass::Class_Throwable",
+        "ThrownType": "EThrownWeaponType::Thrown_Grenade",
+        "WeaponReadyDuration": 1.0
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapBluezoneGrenade_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBluezoneGrenade.6"
+      },
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapBluezoneGrenade_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DataAssets/WeapBluezoneGrenade_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapBluezoneGrenade_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBluezoneGrenade.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapBluezoneGrenade_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapBluezoneGrenade_C Default__WeapBluezoneGrenade_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBluezoneGrenade.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapBluezoneGrenade_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapBluezoneGrenade_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBluezoneGrenade.3"
+      },
+      "VariableGuid": "028EC49A-48E4171F-BF4E70B7-59BAFBFD",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "WeapBluezoneGrenade_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapBluezoneGrenade_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBluezoneGrenade.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapBluezoneGrenade_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_Tiger_BluezoneGrenade",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BluezoneGrenade/SK_Tiger_BluezoneGrenade.0"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant SM_Tiger_BluezoneGrenade_01_M",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BluezoneGrenade/SM_Tiger_BluezoneGrenade_01_M.0"
+        }
+      ],
+      "RelativeScale3D": {
+        "X": 0.9,
+        "Y": 0.9,
+        "Z": 0.9
+      },
+      "RelativeRotation": {
+        "Pitch": -10.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapBluezoneGrenade_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapBluezoneGrenade.2"
+      }
+    }
+  }
+]

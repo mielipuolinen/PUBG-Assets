@@ -1,0 +1,174 @@
+[
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "WeapAK47_Testing_C",
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "Function",
+    "Name": "DetachMag",
+    "Outer": "WeapAK47_Testing_C",
+    "Next": {
+      "ObjectName": "Function WeapAK47_Testing_C:UserConstructionScript",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47_Testing.0"
+    },
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapAK47_Testing_C",
+    "Super": "WeapAK47_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapAK47_Testing_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47_Testing.8"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler WeapAK47_Testing_C:InheritableComponentHandler",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47_Testing.4"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass WeapAK47_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function WeapAK47_Testing_C:DetachMag",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47_Testing.1"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function WeapAK47_Testing_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47_Testing.0"
+      },
+      "DetachMag": {
+        "ObjectName": "Function WeapAK47_Testing_C:DetachMag",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47_Testing.1"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapAK47_Testing_C Default__WeapAK47_Testing_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47_Testing.3"
+    }
+  },
+  {
+    "Type": "WeapAK47_Testing_C",
+    "Name": "Default__WeapAK47_Testing_C",
+    "Template": "Default__WeapAK47_C",
+    "Properties": {
+      "WeaponTrajectoryData": {
+        "ObjectName": "WeaponTrajectoryData WeapAK47_Testing_WeaponTrajectoryData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapAK47_Testing_WeaponTrajectoryData.0"
+      },
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapAK47_Testing_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapAK47_Testing_WeaponGunData.0"
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapAK47_Testing_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47_Testing.9"
+      },
+      "DefaultAttachedItemAssets": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentTag": "MagazineDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/AK-47/Meshes/AK-47_Mag_01_setting.AK-47_Mag_01_setting",
+          "AttachmentMeshName": "None",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        }
+      ],
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapAK47_Testing_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47_Testing.5"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "WeapAK47_Testing_C"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapAK47_Testing_C",
+    "Template": "RootScene",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapAK47_Testing_C Default__WeapAK47_Testing_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47_Testing.3"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapAK47_Testing_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapAK47_Testing_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47_Testing.6"
+      },
+      "VariableGuid": "5A1EE2C9-44CAD537-FD04AA8C-2A228861",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapAK47_Testing_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapAK47_Testing_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47_Testing.7"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapAK47_Testing_C",
+    "Template": "WeaponMesh3P",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapAK47_Testing_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapAK47_Testing.5"
+      }
+    }
+  }
+]

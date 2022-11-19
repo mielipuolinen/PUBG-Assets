@@ -1,0 +1,134 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_FireEffectController_Incendiary_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BP_FireEffectController_Incendiary_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/BP_FireEffectController_Incendiary.4"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslEffectController",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_FireEffectController_Incendiary_C Default__BP_FireEffectController_Incendiary_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/BP_FireEffectController_Incendiary.1"
+    }
+  },
+  {
+    "Type": "BP_FireEffectController_Incendiary_C",
+    "Name": "Default__BP_FireEffectController_Incendiary_C",
+    "Properties": {
+      "SimpleCollision": {
+        "ObjectName": "TslSimpleCollisionReceiver Default__BP_FireEffectController_Incendiary_C:SimpleCollision",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/BP_FireEffectController_Incendiary.6"
+      },
+      "SceneRoot": {
+        "ObjectName": "SphereComponent Default__BP_FireEffectController_Incendiary_C:SceneRoot",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/BP_FireEffectController_Incendiary.5"
+      },
+      "InitialTraceArray": [
+        {
+          "X": -20.0,
+          "Y": 0.0,
+          "Z": -20.0
+        },
+        {
+          "X": -20.0,
+          "Y": -20.0,
+          "Z": 15.0
+        },
+        {
+          "X": -20.0,
+          "Y": 20.0,
+          "Z": 15.0
+        },
+        {
+          "X": -20.0,
+          "Y": 0.0,
+          "Z": 20.0
+        }
+      ],
+      "StepsPerTick": 2,
+      "SpreadDirectionCount": 7,
+      "MaxInstanceCount": 22,
+      "MaxMaterialAdditiveInstanceCount": 12,
+      "MaxCenteredInstanceCount": 0,
+      "SphereRadius": 50.0,
+      "SpreadXY": 160.0,
+      "DamageFieldClass": {
+        "ObjectName": "BlueprintGeneratedClass ProjIncendiary_DamageField_Direct_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.6"
+      },
+      "DamageTickInterval": 0.4,
+      "DamageType": {
+        "ObjectName": "BlueprintGeneratedClass DmgType_KillTruckTurret_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_KillTruckTurret.0"
+      },
+      "bReplicates": true,
+      "RootComponent": {
+        "ObjectName": "SphereComponent Default__BP_FireEffectController_Incendiary_C:SceneRoot",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/BP_FireEffectController_Incendiary.5"
+      },
+      "PrimaryActorTick": {
+        "TickInterval": 0.075
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_FireEffectController_Incendiary_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BP_FireEffectController_Incendiary_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/BP_FireEffectController_Incendiary.2"
+      },
+      "VariableGuid": "8DAE21CD-48767A9D-EE5CC887-F684BB73",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_FireEffectController_Incendiary_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BP_FireEffectController_Incendiary_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/BP_FireEffectController_Incendiary.3"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SceneRoot",
+    "Outer": "Default__BP_FireEffectController_Incendiary_C",
+    "Properties": {
+      "BodyInstance": {}
+    }
+  },
+  {
+    "Type": "TslSimpleCollisionReceiver",
+    "Name": "SimpleCollision",
+    "Outer": "Default__BP_FireEffectController_Incendiary_C"
+  }
+]

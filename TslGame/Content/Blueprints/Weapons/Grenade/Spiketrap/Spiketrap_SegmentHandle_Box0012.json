@@ -1,0 +1,316 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Spiketrap_SegmentHandle_Box0012",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 12.8881235,
+                "Y": -3.3881233,
+                "Z": -0.11439805
+              },
+              {
+                "X": 12.8881235,
+                "Y": -4.236873,
+                "Z": -0.11754023
+              },
+              {
+                "X": 12.8881235,
+                "Y": -4.2368727,
+                "Z": 0.8618755
+              },
+              {
+                "X": 12.8881235,
+                "Y": -3.388123,
+                "Z": 0.86187536
+              },
+              {
+                "X": -12.888123,
+                "Y": -4.2368774,
+                "Z": -0.10746347
+              },
+              {
+                "X": -12.888123,
+                "Y": -3.388121,
+                "Z": -0.11060568
+              },
+              {
+                "X": -12.888123,
+                "Y": -3.3881216,
+                "Z": 0.861873
+              },
+              {
+                "X": -12.888123,
+                "Y": -4.2368784,
+                "Z": 0.8618728
+              },
+              {
+                "X": -9.009209,
+                "Y": 0.4907929,
+                "Z": 0.49079296
+              },
+              {
+                "X": 9.009209,
+                "Y": 0.4907929,
+                "Z": 0.4907929
+              },
+              {
+                "X": 9.009207,
+                "Y": 0.4907929,
+                "Z": 0.88420737
+              },
+              {
+                "X": -9.009209,
+                "Y": 0.4907929,
+                "Z": 0.88420784
+              },
+              {
+                "X": 10.871262,
+                "Y": -6.253735,
+                "Z": -0.10194831
+              },
+              {
+                "X": -10.871265,
+                "Y": -6.253735,
+                "Z": -0.12304904
+              },
+              {
+                "X": -10.871264,
+                "Y": -6.253735,
+                "Z": 2.8712645
+              },
+              {
+                "X": 10.871263,
+                "Y": -6.253735,
+                "Z": 2.8712656
+              },
+              {
+                "X": -8.852221,
+                "Y": -3.522774,
+                "Z": 4.8977747
+              },
+              {
+                "X": 8.852224,
+                "Y": -3.5227742,
+                "Z": 4.8977747
+              },
+              {
+                "X": 8.852224,
+                "Y": -4.2272253,
+                "Z": 4.8977747
+              },
+              {
+                "X": -8.852219,
+                "Y": -4.2272253,
+                "Z": 4.8977747
+              },
+              {
+                "X": 9.600004,
+                "Y": -0.10000414,
+                "Z": -0.100003816
+              },
+              {
+                "X": -9.600006,
+                "Y": -0.10000378,
+                "Z": -0.100003816
+              },
+              {
+                "X": -10.937499,
+                "Y": -1.4374976,
+                "Z": 2.8124974
+              },
+              {
+                "X": 10.937499,
+                "Y": -1.4375006,
+                "Z": 2.8125
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -12.888123,
+                "Y": -6.253735,
+                "Z": -0.12304904
+              },
+              "Max": {
+                "X": 12.8881235,
+                "Y": 0.4907929,
+                "Z": 4.8977747
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "C4F1F4204061C5C2C5264AB16714719E",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 20387,
+        "SizeOnDisk": 20387,
+        "OffsetInFile": "0xC9D7"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Spiketrap_SegmentHandle_Box0012",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "07 - Default",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 28.115334,
+            "LocalUVDensities": 25.255457,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 25.255457,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -2.8814712,
+          "Z": 2.3988855
+        },
+        "BoxExtent": {
+          "X": 12.788122,
+          "Y": 3.272264,
+          "Z": 2.3988893
+        },
+        "SphereRadius": 12.962432
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup Spiketrap_SegmentHandle_Box0012:BodySetup_0",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/Spiketrap_SegmentHandle_Box0012.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "C516109F-4EE7D6F2-1F880F85-79F23E1B",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 624,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 657,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 658
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 658,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": -2.8814712,
+          "Z": 2.3988855
+        },
+        "BoxExtent": {
+          "X": 12.788122,
+          "Y": 3.272264,
+          "Z": 2.3988893
+        },
+        "SphereRadius": 12.962432
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

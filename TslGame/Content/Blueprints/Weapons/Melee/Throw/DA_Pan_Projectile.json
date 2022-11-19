@@ -1,0 +1,75 @@
+[
+  {
+    "Type": "ThrowableItemDataAsset",
+    "Name": "DA_Pan_Projectile",
+    "Properties": {
+      "ProjectileClass": {
+        "ObjectName": "BlueprintGeneratedClass WeapPanProjectile_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapPanProjectile.0"
+      },
+      "Mesh": {
+        "ObjectName": "StaticMesh SM_Pan_Throw",
+        "ObjectPath": "TslGame/Content/Weapon/Melee/Pan/SM_Pan_Throw.1"
+      },
+      "PhysMatOverride": {
+        "ObjectName": "PhysicalMaterial PhysMat_MeleeThrown",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/PhysMat_MeleeThrown.0"
+      },
+      "MeshScale": 1.5,
+      "MeshRotationOffset": {
+        "Pitch": -90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "MeshRotationRate": {
+        "X": 0.3,
+        "Y": -0.8,
+        "Z": -0.1
+      },
+      "CollisionRadius": 15.0,
+      "Friction": 0.64,
+      "Bounciness": 0.12,
+      "GravityScaleOverride": 1.8,
+      "SlidingFriction_Speed_In": {
+        "X": 0.0,
+        "Y": 300.0
+      },
+      "SlidingFriction_Speed_Out": {
+        "X": 1.8,
+        "Y": 1.0
+      },
+      "PitchCurve": {
+        "ObjectName": "CurveFloat C_MeleeThrowPitchCurve",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/Curves/C_MeleeThrowPitchCurve.0"
+      },
+      "SpeedFalloffCurve": {
+        "ObjectName": "CurveFloat C_MeleeThrowSpeed_FallOff_Pan",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/Curves/C_MeleeThrowSpeed_FallOff_Pan.0"
+      },
+      "ThrowSpeed": 4000.0,
+      "ThrowSpeedProne": 2200.0,
+      "TrajectoryPredictionTime": 0.35,
+      "PawnMotionContributionMultiplier": {
+        "X": 1.0,
+        "Y": 0.1,
+        "Z": 0.1
+      },
+      "DamageCurve": {
+        "ObjectName": "CurveFloat C_MeleeThrowDamageCurve_Pan",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/Curves/C_MeleeThrowDamageCurve_Pan.0"
+      },
+      "DamageType": {
+        "ObjectName": "BlueprintGeneratedClass DmgType_MeleeThrow_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_MeleeThrow.0"
+      },
+      "MinImpactVelocityForEffects": 300.0,
+      "ImpactTemplatePtr": {
+        "ObjectName": "BlueprintGeneratedClass MeleeThrowImapct_Pan_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/MeleeThrowImapct_Pan.0"
+      },
+      "bAllowInteraction": false,
+      "bDealDamage": true,
+      "bEnableSlidingFriction": true
+    }
+  }
+]

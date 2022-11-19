@@ -1,0 +1,43 @@
+[
+  {
+    "Type": "WeaponTrajectoryData",
+    "Name": "WeapRhino_WeaponTrajectoryData",
+    "Properties": {
+      "RecoilConfig": {
+        "VerticalRecoilVariation": 0.05,
+        "VerticalRecoveryModifier": 0.2,
+        "VerticalRecoveryClamp": 8.0,
+        "VerticalRecoveryMax": 5.0,
+        "LeftMax": -0.3,
+        "RightMax": 0.3,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_Pistol_Rhino",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_Pistol_Rhino.0"
+        },
+        "BulletsPerSwitch": 1,
+        "RecoilSpeed_Vertical": 15.0,
+        "RecoilSpeed_Horizontal": 12.0,
+        "RecoverySpeed_Vertical": 11.0,
+        "RecoilValue_Climb": 1.2,
+        "RecoilValue_Fall": 3.5,
+        "RecoilModifier_Prone": 0.7,
+        "RecoilModifier_Vehicle": 1.0,
+        "VehicleRecoilScalar": 0.5
+      },
+      "TrajectoryConfig": {
+        "InitialSpeed": 330.0,
+        "HitDamage": 65.0,
+        "BallisticCurve": null,
+        "RangeModifier": 0.93,
+        "ReferenceDistance": 200.0,
+        "TravelDistanceMax": 1000.0,
+        "bUseAdvancedBallistics": false,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
+        },
+        "WeaponSpread": 3.5
+      }
+    }
+  }
+]

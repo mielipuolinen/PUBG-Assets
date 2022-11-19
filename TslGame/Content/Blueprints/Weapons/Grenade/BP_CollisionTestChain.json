@@ -1,0 +1,516 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Capsules",
+    "Outer": "Capsules",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class CapsuleComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "Capsules",
+    "Outer": "BP_CollisionTestChain_C",
+    "Next": null,
+    "PropertyFlags": 65541,
+    "Inner": {
+      "ObjectName": "ObjectProperty BP_CollisionTestChain_C:Capsules.Capsules",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BP_CollisionTestChain_C",
+    "Next": {
+      "ObjectName": "ArrayProperty BP_CollisionTestChain_C:Capsules",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.1"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class SceneComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Capsule",
+    "Outer": "BP_CollisionTestChain_C",
+    "Next": {
+      "ObjectName": "ObjectProperty BP_CollisionTestChain_C:DefaultSceneRoot",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.2"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class CapsuleComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_K2_AttachToComponent_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_AddComponent_ReturnValue2",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.CallFunc_K2_AttachToComponent_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.4"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class PhysicsConstraintComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeTransform_ReturnValue2",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "ObjectProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.CallFunc_AddComponent_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.5"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Transform",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item2",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "StructProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.CallFunc_MakeTransform_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.6"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class CapsuleComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "ObjectProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.CallFunc_Array_Get_Item2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.7"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class CapsuleComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Add_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "ObjectProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.CallFunc_Array_Get_Item",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.8"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue2",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "IntProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.CallFunc_Array_Add_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.9"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_AddComponent_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "IntProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.CallFunc_Add_IntInt_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.10"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class CapsuleComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_LessEqual_IntInt_ReturnValue2",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "ObjectProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.CallFunc_AddComponent_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.11"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeTransform_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.CallFunc_LessEqual_IntInt_ReturnValue2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.12"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Transform",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Multiply_VectorInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "StructProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.CallFunc_MakeTransform_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.13"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct Vector",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Variable2",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "StructProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.CallFunc_Multiply_VectorInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.14"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "IntProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.Temp_int_Variable2",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.15"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "IntProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.CallFunc_Add_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.16"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Subtract_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "BoolProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.CallFunc_LessEqual_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.17"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Temp_int_Variable",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "IntProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.CallFunc_Subtract_IntInt_ReturnValue",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.18"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Next": {
+      "ObjectName": "IntProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.Temp_int_Variable",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.19"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BP_CollisionTestChain",
+    "Outer": "BP_CollisionTestChain_C",
+    "Next": {
+      "ObjectName": "ObjectProperty BP_CollisionTestChain_C:Capsule",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.3"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain.EntryPoint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.20"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BP_CollisionTestChain_C",
+    "Next": {
+      "ObjectName": "Function BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.21"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:ReceiveBeginPlay",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "BP_CollisionTestChain_C",
+    "Next": {
+      "ObjectName": "Function BP_CollisionTestChain_C:ReceiveBeginPlay",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.22"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BP_CollisionTestChain_C",
+    "Next": {
+      "ObjectName": "Function BP_CollisionTestChain_C:UserConstructionScript",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.23"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_CollisionTestChain_C",
+    "Properties": {
+      "ComponentTemplates": [
+        {
+          "ObjectName": "CapsuleComponent BP_CollisionTestChain_C:NODE_AddCapsuleComponent-0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.28"
+        },
+        {
+          "ObjectName": "PhysicsConstraintComponent BP_CollisionTestChain_C:NODE_AddPhysicsConstraintComponent-0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.29"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript BP_CollisionTestChain_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.33"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty BP_CollisionTestChain_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.24"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.21"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class Actor",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty BP_CollisionTestChain_C:UberGraphFrame",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.24"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BP_CollisionTestChain": {
+        "ObjectName": "Function BP_CollisionTestChain_C:ExecuteUbergraph_BP_CollisionTestChain",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.21"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function BP_CollisionTestChain_C:ReceiveBeginPlay",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.22"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function BP_CollisionTestChain_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.23"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_CollisionTestChain_C Default__BP_CollisionTestChain_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.26"
+    }
+  },
+  {
+    "Type": "BP_CollisionTestChain_C",
+    "Name": "Default__BP_CollisionTestChain_C",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "Capsule_GEN_VARIABLE",
+    "Outer": "BP_CollisionTestChain_C",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bSimulatePhysics": true,
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "NODE_AddCapsuleComponent-0",
+    "Outer": "BP_CollisionTestChain_C",
+    "Properties": {
+      "CapsuleHalfHeight": 5.0,
+      "CapsuleRadius": 5.0,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAllDynamic",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bSimulatePhysics": true,
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "NODE_AddPhysicsConstraintComponent-0",
+    "Outer": "BP_CollisionTestChain_C",
+    "Properties": {
+      "ConstraintInstance": {
+        "ProfileInstance": {
+          "LinearLimit": {
+            "Limit": 200.0
+          },
+          "bEnableProjection": false
+        }
+      },
+      "bReplicatesAttachmentReference": false,
+      "bReplicatesAttachment": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_CollisionTestChain_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent BP_CollisionTestChain_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.30"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node BP_CollisionTestChain_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.32"
+        }
+      ],
+      "VariableGuid": "3413EE8E-4A516F1A-C81434A8-2F4A686F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class CapsuleComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "CapsuleComponent BP_CollisionTestChain_C:Capsule_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.27"
+      },
+      "VariableGuid": "51613475-43AEB01A-A605D791-6DF2425F",
+      "InternalVariableName": "Capsule"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_CollisionTestChain_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node BP_CollisionTestChain_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.31"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node BP_CollisionTestChain_C:SimpleConstructionScript_0.SCS_Node_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.31"
+        },
+        {
+          "ObjectName": "SCS_Node BP_CollisionTestChain_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.32"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node BP_CollisionTestChain_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BP_CollisionTestChain.31"
+      }
+    }
+  }
+]

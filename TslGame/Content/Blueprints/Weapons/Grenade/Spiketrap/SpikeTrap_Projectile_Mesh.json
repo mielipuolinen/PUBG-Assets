@@ -1,0 +1,316 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_4",
+    "Outer": "SpikeTrap_Projectile_Mesh",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 50.080967,
+                "Y": 8.669041,
+                "Z": -2.2940476
+              },
+              {
+                "X": 50.080967,
+                "Y": -8.6690235,
+                "Z": -2.294046
+              },
+              {
+                "X": 50.080967,
+                "Y": -8.669023,
+                "Z": 0.125
+              },
+              {
+                "X": 50.080967,
+                "Y": 8.669037,
+                "Z": 0.125
+              },
+              {
+                "X": 2.7055047,
+                "Y": 10.330505,
+                "Z": -0.6694933
+              },
+              {
+                "X": 48.419502,
+                "Y": 10.330505,
+                "Z": -0.66949344
+              },
+              {
+                "X": 48.419495,
+                "Y": 10.330505,
+                "Z": 0.125
+              },
+              {
+                "X": 2.7055054,
+                "Y": 10.330505,
+                "Z": 0.125
+              },
+              {
+                "X": 2.7055054,
+                "Y": -10.330505,
+                "Z": 0.125
+              },
+              {
+                "X": 48.419495,
+                "Y": -10.330505,
+                "Z": 0.125
+              },
+              {
+                "X": 48.419487,
+                "Y": -10.330505,
+                "Z": -0.6694925
+              },
+              {
+                "X": 2.7055092,
+                "Y": -10.330505,
+                "Z": -0.66949403
+              },
+              {
+                "X": -0.024997097,
+                "Y": -7.600005,
+                "Z": 0.100003056
+              },
+              {
+                "X": -0.024993673,
+                "Y": 7.600006,
+                "Z": 0.100003056
+              },
+              {
+                "X": 2.75,
+                "Y": -7.061779,
+                "Z": -3.93822
+              },
+              {
+                "X": 48.436787,
+                "Y": -7.0617776,
+                "Z": -3.93822
+              },
+              {
+                "X": 48.436787,
+                "Y": 7.0617776,
+                "Z": -3.93822
+              },
+              {
+                "X": 2.8132286,
+                "Y": 7.0617776,
+                "Z": -3.93822
+              },
+              {
+                "X": 1.1089277,
+                "Y": -8.733929,
+                "Z": -2.2660742
+              },
+              {
+                "X": 1.1099813,
+                "Y": 8.7349825,
+                "Z": -2.2650177
+              },
+              {
+                "X": 48.500008,
+                "Y": 10.25,
+                "Z": -0.7499999
+              },
+              {
+                "X": 2.6250076,
+                "Y": 10.250003,
+                "Z": -0.7499972
+              },
+              {
+                "X": -0.62499195,
+                "Y": 7.0000095,
+                "Z": -0.49999577
+              },
+              {
+                "X": -0.6249969,
+                "Y": -7.000005,
+                "Z": -0.5000007
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -0.6249969,
+                "Y": -10.330505,
+                "Z": -3.93822
+              },
+              "Max": {
+                "X": 50.080967,
+                "Y": 10.330505,
+                "Z": 0.125
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "ABEEDE1941E8046E6B53DEB1406E4C16",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 594817,
+        "SizeOnDisk": 594817,
+        "OffsetInFile": "0x1567E1"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SpikeTrap_Projectile_Mesh",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "07 - Default",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 24.818909,
+            "LocalUVDensities": 1515.0204,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 1515.0204,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 24.834171,
+          "Y": 0.0,
+          "Z": -1.9191085
+        },
+        "BoxExtent": {
+          "X": 25.146805,
+          "Y": 10.230505,
+          "Z": 1.9191116
+        },
+        "SphereRadius": 26.005241
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup SpikeTrap_Projectile_Mesh:BodySetup_4",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/SpikeTrap_Projectile_Mesh.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "A3873164-416A9967-F20FF382-E447576F",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 21260,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 23977,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 23978
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 23978,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 24.834171,
+          "Y": 0.0,
+          "Z": -1.9191085
+        },
+        "BoxExtent": {
+          "X": 25.146805,
+          "Y": 10.230505,
+          "Z": 1.9191116
+        },
+        "SphereRadius": 26.005241
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

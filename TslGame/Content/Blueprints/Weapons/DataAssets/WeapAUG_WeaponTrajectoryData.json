@@ -1,0 +1,48 @@
+[
+  {
+    "Type": "WeaponTrajectoryData",
+    "Name": "WeapAUG_WeaponTrajectoryData",
+    "Properties": {
+      "RecoilConfig": {
+        "VerticalRecoilMax": 7.0,
+        "VerticalRecoilVariation": 0.1,
+        "VerticalRecoveryClamp": 5.2,
+        "VerticalRecoveryMax": 4.0,
+        "HorizontalTendency": -0.05,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_AUG",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_AUG.0"
+        },
+        "BulletsPerSwitch": 2,
+        "RecoilSpeed_Vertical": 10.0,
+        "RecoilSpeed_Horizontal": 10.8,
+        "RecoverySpeed_Vertical": 6.0,
+        "RecoilValue_Climb": 0.72,
+        "RecoilValue_Fall": 2.45,
+        "RecoilModifier_Crouch": 0.84,
+        "RecoilHorizontalMinScalar": 0.3,
+        "RecoilBlendInOutMap": {
+          "X": 0.0,
+          "Y": 0.04
+        }
+      },
+      "TrajectoryConfig": {
+        "InitialSpeed": 940.0,
+        "HitDamage": 42.0,
+        "BallisticCurve": {
+          "ObjectName": "CurveVector C_Ballistic_AUG",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/BallisticData/C_Ballistic_AUG.0"
+        },
+        "RangeModifier": 0.94,
+        "ReferenceDistance": 350.0,
+        "TravelDistanceMax": 1000.0,
+        "VDragCoefficient": 0.8,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
+        },
+        "WeaponSpread": 4.0
+      }
+    }
+  }
+]

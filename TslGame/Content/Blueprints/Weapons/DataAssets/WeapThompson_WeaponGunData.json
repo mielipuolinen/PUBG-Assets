@@ -1,0 +1,139 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapThompson_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_45ACP_C",
+        "TracerClass": null,
+        "AmmoPerClip": 30,
+        "TimeBetweenShots": 0.08,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+            "AttachableTags": [
+              "MagazineMedium"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleMedium"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::LowerRail",
+            "AttachableTags": [
+              "LowerDefault"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 3.1,
+        "FiringModes": [
+          "EFiringMode::Normal",
+          "EFiringMode::FullAuto"
+        ],
+        "BurstShots": 1,
+        "FiringBulletsSpread": 1.0,
+        "MovementModifierAim": 1.5,
+        "MovementModifierScope": 1.3,
+        "WeaponLength": 27.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffset": {
+          "X": 4.0,
+          "Y": -2.0,
+          "Z": -0.05
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 0.0,
+          "Y": 0.25,
+          "Z": 2.0
+        },
+        "ADSTimeMultiplier": 1.3
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 2.25,
+        "DeviationBaseAim": 1.7,
+        "MOA": 4.9,
+        "DeviationRecoilGain": 0.6,
+        "DeviationRecoilGainAim": 0.5,
+        "DeviationRecoilGainADS": 0.15,
+        "DeviationMax": 7.0,
+        "DeviationMaxMove": 2.0,
+        "DeviationMoveMultiplier": 1.3,
+        "DeviationMoveMinReferenceVelocity": 150.0,
+        "DeviationMoveMaxReferenceVelocity": 400.0,
+        "DeviationStanceCrouch": 0.82,
+        "DeviationStanceProne": 0.65
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_Tommygun_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Tommygun/Redux/Weapon_Tommygun_Grip_RD.0"
+        },
+        "CharacterLHGripBlendspace": {
+          "ObjectName": "BlendSpace Weapon_Tommygun_LH_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Tommygun/Redux/Weapon_Tommygun_LH_Grip_RD.0"
+        },
+        "CharacterFireSelector": {
+          "ObjectName": "AnimMontage CharacterWeapon_Tommygun_Firemode_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Tommygun/Redux/CharacterWeapon_Tommygun_Firemode_Montage_RD.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage CharacterWeapon_Tommygun_Reload_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Tommygun/Redux/CharacterWeapon_Tommygun_Reload_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage CharacterWeapon_Tommygun_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Tommygun/Redux/CharacterWeapon_Tommygun_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponReloadTactical": {
+          "ObjectName": "AnimMontage Weapon_Tommygun_Reload_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Tommygun/Redux/Weapon_RD/Weapon_Tommygun_Reload_Montage_RD.0"
+        },
+        "WeaponReloadCharge": {
+          "ObjectName": "AnimMontage Weapon_Tommygun_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Tommygun/Redux/Weapon_RD/Weapon_Tommygun_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 2.85,
+        "ReloadDurationCharge": 3.45,
+        "ReloadDurationMagOut": 0.4,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_TommyGun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_TommyGun.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_TommyGun_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_TommyGun_ADS.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_TommyGun_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_TommyGun_ADS.0"
+        },
+        "RecoilKickADS": 1.0,
+        "RecoilKick_MovementMaxMultiplier": 1.1,
+        "MagDropLinearVelocity": {
+          "X": 55.0,
+          "Y": -75.0,
+          "Z": -150.0
+        },
+        "MagDropAngularVelocity": {
+          "X": 35.0,
+          "Y": 125.0,
+          "Z": 43.0
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "CS_WeapGun_Shotgun_C",
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class CameraShake",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassFlags": 266256,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "CS_WeapGun_Shotgun_C Default__CS_WeapGun_Shotgun_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Shotgun.1"
+    }
+  },
+  {
+    "Type": "CS_WeapGun_Shotgun_C",
+    "Name": "Default__CS_WeapGun_Shotgun_C",
+    "Properties": {
+      "OscillationDuration": 0.45,
+      "OscillationBlendOutTime": 0.3,
+      "RotOscillation": {
+        "Pitch": {
+          "Amplitude": 4.0,
+          "Frequency": 4.0,
+          "InitialOffset": "EOO_OffsetZero"
+        },
+        "Yaw": {
+          "Amplitude": 2.0,
+          "Frequency": 2.0,
+          "InitialOffset": "EOO_OffsetZero"
+        },
+        "Roll": {
+          "Amplitude": 4.0,
+          "Frequency": 6.0
+        }
+      },
+      "LocOscillation": {
+        "X": {
+          "Amplitude": 2.0,
+          "Frequency": 2.0,
+          "InitialOffset": "EOO_OffsetZero"
+        },
+        "Z": {
+          "Amplitude": 1.0,
+          "Frequency": 1.6,
+          "InitialOffset": "EOO_OffsetZero"
+        }
+      }
+    }
+  }
+]

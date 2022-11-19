@@ -1,0 +1,77 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapPanzerFaust100M_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_PanzerFaust100_C",
+        "TracerClass": null,
+        "AmmoPerClip": 1,
+        "NoAnimReloadDuration": 2.0,
+        "WeaponLength": 45.0,
+        "ShoulderLength": 10.0,
+        "HandWeaponOffsetFPP": {
+          "X": 3.0,
+          "Y": 2.0,
+          "Z": 13.0
+        },
+        "bExplodeOnImpact": true,
+        "ExplosionDamage": 250,
+        "ExplosionRadius": 100.0,
+        "DamageCurve": {
+          "ObjectName": "CurveFloat PanzerFaustWarheadDamageCurve",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/PanzerFaustWarheadDamageCurve.0"
+        },
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgTypeExplosion_Grenade_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgTypeExplosion_Grenade.0"
+        },
+        "bAmmoAttachedToWeapon": true,
+        "ExplosionTemplate": {
+          "ObjectName": "BlueprintGeneratedClass ProjGrenade_Explosion_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.34"
+        }
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Character_Panzerfaust_Grip",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Panzerfaust/Character_Panzerfaust_Grip.0"
+        },
+        "CharacterLHGripBlendspace": {
+          "ObjectName": "BlendSpace1D Character_Panzerfaust_Grip",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Panzerfaust/Character_Panzerfaust_Grip.0"
+        },
+        "CharacterFire": {
+          "ObjectName": "AnimMontage Weapon_Panzerfaust_Fire_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Panzerfaust/Weapon_Panzerfaust_Fire_Montage.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage CharacterWeapon_Flaregun_Reload_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Flaregun/CharacterWeapon_Flaregun_Reload_Montage.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage CharacterWeapon_Flaregun_Reload_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Flaregun/CharacterWeapon_Flaregun_Reload_Montage.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Launcher_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Launcher_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 3.5,
+        "ReloadDurationCharge": 3.5,
+        "RecoilKickADS": 0.5,
+        "MagDropLinearVelocity": {
+          "X": 150.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "MagDropAngularVelocity": {
+          "X": 0.0,
+          "Y": 6000.0,
+          "Z": 0.0
+        },
+        "DiscardWeaponDuration": 0.25
+      }
+    }
+  }
+]

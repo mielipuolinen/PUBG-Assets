@@ -1,0 +1,156 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapVector_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_9mm_C",
+        "TracerClass": null,
+        "AmmoPerClip": 19,
+        "TimeBetweenShots": 0.0545,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperSmall",
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::LowerRail",
+            "AttachableTags": [
+              "LowerDefault"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+            "AttachableTags": [
+              "MagazineMedium"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleMedium"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+            "AttachableTags": [
+              "StockAssaultRifle"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+            "AttachableTags": [
+              "RMR"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 3.1,
+        "FiringModes": [
+          "EFiringMode::Normal",
+          "EFiringMode::Burst",
+          "EFiringMode::FullAuto"
+        ],
+        "BurstShots": 2,
+        "BurstDelay": 0.0545,
+        "FiringBulletsSpread": 1.0,
+        "MovementModifierAim": 1.75,
+        "MovementModifierScope": 1.7,
+        "WeaponLength": 14.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffset": {
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 3.6
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 4.0,
+          "Y": 0.5,
+          "Z": 7.0
+        },
+        "StabilitySpeedModifier": 1.1,
+        "StabilityForceModifier": 0.4,
+        "ADSTimeMultiplier": 1.3
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 2.1,
+        "DeviationBaseAim": 1.4,
+        "MOA": 7.5,
+        "DeviationRecoilGainAim": 0.8,
+        "DeviationRecoilGainADS": 0.33,
+        "DeviationMax": 10.0,
+        "DeviationMaxMove": 2.5,
+        "DeviationMoveMultiplier": 1.65,
+        "DeviationMoveMinReferenceVelocity": 150.0,
+        "DeviationMoveMaxReferenceVelocity": 400.0,
+        "DeviationStanceCrouch": 0.84,
+        "DeviationStanceProne": 0.65,
+        "DeviationStanceJump": 1.6
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_Vector_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Vector/Redux/Weapon_Vector_Grip_RD.0"
+        },
+        "CharacterLHGripBlendspace": {
+          "ObjectName": "BlendSpace Weapon_Vector_LH_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Vector/Redux/Weapon_Vector_LH_Grip_RD.0"
+        },
+        "CharacterFireSelector": {
+          "ObjectName": "AnimMontage CharacterWeapon_UMP_Firemode_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/UMP/CharacterWeapon_UMP_Firemode_Montage.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage Weapon_Vector_Reload_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Vector/Redux/Weapon_Vector_Reload_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage Weapon_Vector_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Vector/Redux/Weapon_Vector_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponReloadTactical": {
+          "ObjectName": "AnimMontage Weapon_UMP_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/UMP/Redux/Weapon_RD/Weapon_UMP_Reload_Tactical_Montage_RD.0"
+        },
+        "WeaponReloadCharge": {
+          "ObjectName": "AnimMontage Weapon_UMP_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/UMP/Redux/Weapon_RD/Weapon_UMP_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 2.1,
+        "ReloadDurationCharge": 2.2,
+        "ReloadDurationMagOut": 0.4,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_UMP_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_UMP.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_Vector_Ironsight_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_Vector_Ironsight.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_SMG_UMP_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_SMG_UMP_ADS.0"
+        },
+        "RecoilKickADS": 1.0,
+        "RecoilKick_MovementMaxMultiplier": 1.1,
+        "MagDropLinearVelocity": {
+          "X": 86.13073,
+          "Y": 0.0,
+          "Z": -263.17786
+        },
+        "MagDropAngularVelocity": {
+          "X": 2.0,
+          "Y": 2.0,
+          "Z": 2.0
+        }
+      }
+    }
+  }
+]

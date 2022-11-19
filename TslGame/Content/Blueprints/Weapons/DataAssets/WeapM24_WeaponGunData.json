@@ -1,0 +1,146 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapM24_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_762mm_C",
+        "TracerClass": {
+          "ObjectName": "ParticleSystem P_Tracer1",
+          "ObjectPath": "TslGame/Content/Export_Marek/Tracer/P_Tracer1.10"
+        },
+        "AmmoPerClip": 5,
+        "TimeBetweenShots": 1.42,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperSmall",
+              "UpperLarge",
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+            "AttachableTags": [
+              "MagazineSniperRifle"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleSniperRifle"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+            "AttachableTags": [
+              "StockSniperRifle"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Stock",
+            "AttachableTags": [
+              "StockSniperRifle"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+            "AttachableTags": [
+              "RMR"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 3.7,
+        "BurstShots": 1,
+        "FiringBulletsSpread": 1.0,
+        "WeaponLength": 62.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffset": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 4.0
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 2.0,
+          "Y": 0.5,
+          "Z": 3.0
+        },
+        "bManualCycleAfterShot": true
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 4.0,
+        "DeviationBaseAim": 2.3,
+        "MOA": 0.33,
+        "DeviationRecoilGain": 1.3,
+        "DeviationRecoilGainAim": 0.8,
+        "DeviationMax": 8.0,
+        "DeviationMaxMove": 2.5,
+        "DeviationMoveMultiplier": 1.5,
+        "DeviationMoveMaxReferenceVelocity": 300.0
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_M24_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M24/Redux/Weapon_M24_Grip_RD.0"
+        },
+        "CharacterFireCycle": {
+          "ObjectName": "AnimMontage CharacterWeapon_M24_BoltAction_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M24/Redux/CharacterWeapon_M24_BoltAction_Montage_RD.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage CharacterWeapon_M24_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M24/Redux/CharacterWeapon_M24_Reload_Tactical_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage CharacterWeapon_M24_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M24/Redux/CharacterWeapon_M24_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 1.8,
+        "ReloadDurationCharge": 4.2,
+        "ReloadDurationMagOut": 0.4,
+        "bUseBoltAction": true,
+        "FireCycleDelay": 0.25,
+        "FireCycleDuration": 1.25,
+        "bCycleAfterLastShot": false,
+        "bCycleDuringReload": true,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Sniper_762_M24_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Sniper_762_M24.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Sniper_762_M24_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Sniper_762_M24_ADS.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Sniper_762_M24_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Sniper_762_M24_ADS.0"
+        },
+        "CycleCameraAnim": {
+          "ObjectName": "CameraAnim CSA_Sniper_M24_Cycle",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CSA_Sniper_M24_Cycle.0"
+        },
+        "RecoilKickADS": 0.053,
+        "MagDropLinearVelocity": {
+          "X": 200.0,
+          "Y": 0.0,
+          "Z": -250.0
+        },
+        "MagDropAngularVelocity": {
+          "X": 100.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "ConsoleWeaponRecoilData": {
+        "ObjectName": "WeaponGunRecoilData WeapM24_RecoilDataConsole",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapM24_RecoilDataConsole.0"
+      }
+    }
+  }
+]

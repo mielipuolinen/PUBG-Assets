@@ -1,0 +1,45 @@
+[
+  {
+    "Type": "WeaponAttachmentDataAsset",
+    "Name": "DA_3xScope",
+    "Properties": {
+      "AttachmentData": {
+        "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+        "AttachmentTag": "UpperSmall",
+        "Name": "Item_Attach_Weapon_Upper_Scope3x_C",
+        "MouseSensitiveName": "Scope3X",
+        "MagnificationFOV": 26.666666,
+        "ReticleBrightnessConfig": {
+          "ReticleBrightnessSettingsCurve": {
+            "ObjectName": "CurveVector C_Scope3XReticleBrightnessLevels1",
+            "ObjectPath": "TslGame/Content/Weapon/Accessories/Aimpoint2X/C_Scope3XReticleBrightnessLevels1.0"
+          },
+          "ReticleBrightnessParamX": "Brightness",
+          "ReticleBrightnessParamY": "OpacityMul"
+        },
+        "ZeroingDistances": [
+          100.0,
+          100.0
+        ],
+        "ScopePostprocessData": {
+          "ObjectName": "ReticlePostprocessData Sight_Scope3x_PostprocessData",
+          "ObjectPath": "TslGame/Content/Item/Attachment/AttachmentDataAssets/Sight_Scope3x_PostprocessData.0"
+        },
+        "ADSSpeedMultiplier": 1.1,
+        "FPPSocketOffset": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.35
+        },
+        "bUseDefaultReticleCaching": true
+      },
+      "AttachedSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Attachment/UI_Item_Equip_Attachment_Attached_Scopes.UI_Item_Equip_Attachment_Attached_Scopes",
+      "AttachmentMeshName": "3xScope",
+      "AttachmentMeshAsset": "/Game/Weapon/Accessories/Scope3x/Scope3x_Set.Scope3x_Set",
+      "AttachmentTemplate": {
+        "ObjectName": "Class AsyncStaticMeshComponent",
+        "ObjectPath": "/Script/TslGame"
+      }
+    }
+  }
+]

@@ -1,0 +1,273 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapSpotterScope_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript WeapSpotterScope_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpotterScope.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslWeapon_SpotterScope",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapSpotterScope_C Default__WeapSpotterScope_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpotterScope.1"
+    }
+  },
+  {
+    "Type": "WeapSpotterScope_C",
+    "Name": "Default__WeapSpotterScope_C",
+    "Properties": {
+      "ScanningForEnemiesWarmupSound": {
+        "ObjectName": "AkAudioEvent Weapon_FireMode_SpotterScope_Scan",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/_Common/FireMode/Weapon_FireMode_SpotterScope/Weapon_FireMode_SpotterScope_Scan.0"
+      },
+      "ScanningInterruptedSound": {
+        "ObjectName": "AkAudioEvent Weapon_FireMode_SpotterScope_Scan_Stop",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/_Common/FireMode/Weapon_FireMode_SpotterScope/Weapon_FireMode_SpotterScope_Scan_Stop.0"
+      },
+      "RaiseToFaceMontage": {
+        "ObjectName": "AnimMontage SpotterScope_Combat_ADS_Montage",
+        "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/SpotterScope/SpotterScope_Combat_ADS_Montage.0"
+      },
+      "SpottingMaxRange": 60000.0,
+      "CollisionChannels": [
+        81,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "NormalScopeMaterial": {
+        "ObjectName": "MaterialInstanceConstant M_Glass_Outer_6X",
+        "ObjectPath": "TslGame/Content/Weapon/Accessories/Scope6x/Materials/M_Glass_Outer_6X.0"
+      },
+      "MagnificationFOVMaxIncrement": 0.0,
+      "MagnificationFOV": 19.0,
+      "SpotterScopeWidgetClass": {
+        "ObjectName": "WidgetBlueprintGeneratedClass TslWeapon_SpotterScopeWidgetBP_C",
+        "ObjectPath": "TslGame/Content/Blueprints/UI/SpotterScope/TslWeapon_SpotterScopeWidgetBP.61"
+      },
+      "WeaponGunPostprocessSettings": {
+        "ReticleAngularSize": 2.5,
+        "ReticleTexture": {
+          "ObjectName": "Texture2D Spotter_Scope_Reticle_Postprocess",
+          "ObjectPath": "TslGame/Content/Item/Spotter_Scope/Textures/Spotter_Scope_Reticle_Postprocess.0"
+        },
+        "ReticleSettings": {
+          "ObjectName": "ReticleSettings Spotter_Scope",
+          "ObjectPath": "TslGame/Content/Weapon/Accessories/ReticleSettings/Spotter_Scope.0"
+        },
+        "ScopeLensDistortion": -0.01,
+        "ScopeLensCA": 0.1,
+        "ScopeLensTint": {
+          "R": 0.9,
+          "G": 0.9,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFF4F4FF"
+        },
+        "ScopeOuterBrightness": 1.05,
+        "DepthBlurPower": 1.0,
+        "DepthBlurWhitePoint": 50.0,
+        "DepthBlurBlackPoint": 1.0,
+        "ParallaxMovementScale": 4.5,
+        "ParallaxRadiusScale": 1.3,
+        "NearClipStaticOffset": 2.0
+      },
+      "ScopingAttachPointOverride": "None",
+      "ScopingFocusPoint": "root",
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset WeapSpotterScope_WeaponGunData",
+        "ObjectPath": "TslGame/Content/Item/Spotter_Scope/WeapSpotterScope_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D weapons_spotter_scope",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_spotter_scope.0"
+      },
+      "WeaponIconRatio": 1.2,
+      "WeaponConfig": {
+        "TargetingFOV": 15.0,
+        "SocketRotationOffset_Hand": {
+          "Pitch": 0.0,
+          "Yaw": 141.74716,
+          "Roll": 0.0
+        },
+        "bApplyRotationOffset": true,
+        "SwayModifier_Pitch": 0.0,
+        "SwayModifier_YawOffset": 0.0,
+        "SwayModifier_Movement": 0.0,
+        "SwayModifier_Stand": 0.0,
+        "SwayModifier_Crouch": 0.0,
+        "SwayModifier_Prone": 0.0,
+        "bUseDynamicReverbAK": false,
+        "IronSightZeroingDistances": [
+          50.0
+        ],
+        "AnimationKick": 0.0,
+        "ThrownType": "EThrownWeaponType::Thrown_SpotterScope",
+        "WeaponEquipDuration": 0.25,
+        "WeaponUnequipDuration": 0.4,
+        "bHasInfiniteAmmo": true
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent Default__WeapSpotterScope_C:WeaponMesh3P",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpotterScope.6"
+      },
+      "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
+      "AttachmentPositionData": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentPoint": "Upper_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "UpperDefault",
+              "AttachmentPoint": "Upper_Default"
+            }
+          ]
+        }
+      ],
+      "DefaultAttachedItemAssets": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentTag": "UpperDefault",
+          "AttachmentMeshAsset": "",
+          "AttachmentMeshName": "UpperDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectPath": "/Script/TslGame"
+          }
+        }
+      ],
+      "WeaponTag": "SpotterScope",
+      "OverrideAccessorySlot": "EAccessorySlot::Slot_Belt",
+      "MuzzleAttachPoint": "MuzzleLocation",
+      "AnimWeaponType": "EAnimWeaponType::Throwable",
+      "EquipAnimData": {
+        "EAccessorySlot::Slot_Secondary": {
+          "Montage": {
+            "ObjectName": "AnimMontage SpotterScope_Combat_Stand_SecondarySlot_Montage",
+            "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/SpotterScope/SpotterScope_Combat_Stand_SecondarySlot_Montage.0"
+          },
+          "PlayRate": 1.0
+        },
+        "EAccessorySlot::Slot_Belt": {
+          "Montage": {
+            "ObjectName": "AnimMontage SpotterScope_Combat_Stand_SecondarySlot_Montage",
+            "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/SpotterScope/SpotterScope_Combat_Stand_SecondarySlot_Montage.0"
+          },
+          "PlayRate": 1.0
+        },
+        "EAccessorySlot::Slot_Primary": {
+          "Montage": {
+            "ObjectName": "AnimMontage SpotterScope_Combat_Stand_SecondarySlot_Montage",
+            "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/SpotterScope/SpotterScope_Combat_Stand_SecondarySlot_Montage.0"
+          },
+          "PlayRate": 1.0
+        }
+      },
+      "HipDuration": 0.2,
+      "bAllowPingsWhileTargeting": false,
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData WeapSpotterScope_WeaponAudioData",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapSpotterScope_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent Default__WeapSpotterScope_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpotterScope.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapSpotterScope_C",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapSpotterScope_C Default__WeapSpotterScope_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpotterScope.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapSpotterScope_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent WeapSpotterScope_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpotterScope.3"
+      },
+      "VariableGuid": "F3C94333-4409925A-E30ECC98-81C500DB",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapSpotterScope_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node WeapSpotterScope_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpotterScope.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapSpotterScope_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_Spotter_Scope_C",
+        "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/SpotterScope/ABP_Spotter_Scope.26"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_Spotter_Scope",
+        "ObjectPath": "TslGame/Content/Item/Spotter_Scope/Meshes/SK_Spotter_Scope.0"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "Material M_Spotter_Scope_Main",
+          "ObjectPath": "TslGame/Content/Item/Spotter_Scope/Materials/M_Spotter_Scope_Main.0"
+        }
+      ],
+      "DecalChannel": "EDecalChannel::Channel1",
+      "BodyInstance": {
+        "CollisionProfileName": "Custom"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent Default__WeapSpotterScope_C:RootScene",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSpotterScope.2"
+      }
+    }
+  }
+]

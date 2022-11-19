@@ -1,0 +1,114 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapDesertEagle_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_45ACP_C",
+        "TracerClass": null,
+        "AmmoPerClip": 7,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::LowerRail",
+            "AttachableTags": [
+              "LowerDefault"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+            "AttachableTags": [
+              "MagazineSmall"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 2.0,
+        "BurstShots": 1,
+        "FiringBulletsSpread": 1.0,
+        "MovementModifierAim": 2.0,
+        "MovementModifierScope": 2.0,
+        "WeaponLength": 10.0,
+        "ShoulderLength": 10.0,
+        "WeaponToShoulderOffset": -20.0,
+        "HandWeaponOffset": {
+          "X": 18.0,
+          "Y": 1.0,
+          "Z": 7.0
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 20.0,
+          "Y": -2.0,
+          "Z": 10.0
+        },
+        "StabilityForceModifier": 0.8,
+        "VehicleReloadSpeedModifier": 0.666
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 2.5,
+        "DeviationBaseAim": 1.5,
+        "MOA": 4.0,
+        "DeviationRecoilGain": 3.0,
+        "DeviationRecoilGainADS": 0.03,
+        "DeviationMax": 4.0,
+        "DeviationMaxMove": 1.5,
+        "DeviationMoveMultiplier": 1.7,
+        "DeviationMoveMinReferenceVelocity": 200.0,
+        "DeviationMoveMaxReferenceVelocity": 480.0,
+        "DeviationStanceProne": 0.8,
+        "DeviationStanceJump": 1.2
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_DesertEagle_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DesertEagle/Redux/Weapon_DesertEagle_Grip_RD.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage CharacterWeapon_DesertEagle_Reload_Tactical_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DesertEagle/Redux/CharacterWeapon_DesertEagle_Reload_Tactical_Montage_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage CharacterWeapon_DesertEagle_Reload_Charge_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DesertEagle/Redux/CharacterWeapon_DesertEagle_Reload_Charge_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 1.733,
+        "ReloadDurationCharge": 2.0,
+        "ReloadDurationMagOut": 0.4,
+        "bCycleAfterLastShot": false,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Pistol_Eagle_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Pistol_Eagle.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Pistol_Eagle_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Pistol_Eagle_ADS.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Pistol_Eagle_ADS_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Pistol_Eagle_ADS.0"
+        },
+        "RecoilKickADS": 1.0,
+        "RecoilKick_MovementMaxMultiplier": 1.2,
+        "MagDropLinearVelocity": {
+          "X": -50.0,
+          "Y": -150.0,
+          "Z": -150.0
+        },
+        "MagDropAngularVelocity": {
+          "X": -250.0,
+          "Y": 25.0,
+          "Z": 25.0
+        }
+      }
+    }
+  }
+]

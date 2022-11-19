@@ -1,0 +1,50 @@
+[
+  {
+    "Type": "WeaponTrajectoryData",
+    "Name": "WeapSaiga12_WeaponTrajectoryData",
+    "Properties": {
+      "RecoilConfig": {
+        "VerticalRecoilMax": 9.0,
+        "VerticalRecoilVariation": 0.2,
+        "VerticalRecoveryModifier": 0.3,
+        "VerticalRecoveryClamp": 8.0,
+        "VerticalRecoveryMax": 15.0,
+        "LeftMax": -1.5,
+        "RightMax": 1.5,
+        "HorizontalTendency": 0.1,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_Saiga",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_Saiga.0"
+        },
+        "BulletsPerSwitch": 1,
+        "RecoilSpeed_Vertical": 15.0,
+        "RecoilSpeed_Horizontal": 16.0,
+        "RecoverySpeed_Vertical": 7.0,
+        "RecoilValue_Climb": 1.8,
+        "RecoilValue_Fall": 3.0,
+        "RecoilModifier_Crouch": 0.85,
+        "RecoilModifier_Prone": 0.75,
+        "RecoilHorizontalMinScalar": 0.5
+      },
+      "TrajectoryConfig": {
+        "InitialSpeed": 350.0,
+        "HitDamage": 24.0,
+        "LowerClampDamage": 4.0,
+        "BallisticCurve": {
+          "ObjectName": "CurveVector C_Ballistic_Saiga",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/BallisticData/C_Ballistic_Saiga.0"
+        },
+        "RangeModifier": 0.7,
+        "ReferenceDistance": 65.0,
+        "TravelDistanceMax": 150.0,
+        "bUseMaxDamageDistance": true,
+        "bCanProduceCrackSound": false,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
+        },
+        "WeaponSpread": 6.0
+      }
+    }
+  }
+]

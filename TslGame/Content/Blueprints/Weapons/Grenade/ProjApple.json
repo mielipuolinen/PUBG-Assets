@@ -1,0 +1,258 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ProjApple_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript ProjApple_C:SimpleConstructionScript_0__57659476",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.7"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslProjectile",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ProjApple_C Default__ProjApple_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.1"
+    }
+  },
+  {
+    "Type": "ProjApple_C",
+    "Name": "Default__ProjApple_C",
+    "Properties": {
+      "MovementComp": {
+        "ObjectName": "TslProjectileMovementComponent Default__ProjApple_C:ProjectileComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.11"
+      },
+      "CollisionComp": {
+        "ObjectName": "SphereComponent Default__ProjApple_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.9"
+      },
+      "ParticleComp": {
+        "ObjectName": "ParticleSystemComponent Default__ProjApple_C:ParticleComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.3"
+      },
+      "MeshComp": {
+        "ObjectName": "StaticMeshComponent Default__ProjApple_C:MeshComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.10"
+      },
+      "InterpolationTargetComp": {
+        "ObjectName": "SphereComponent Default__ProjApple_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.8"
+      },
+      "ConstraintComp": {
+        "ObjectName": "PhysicsConstraintComponent Default__ProjApple_C:MeshConstraint",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.4"
+      },
+      "MeshInitialRotationRate": {
+        "X": 0.1,
+        "Y": 3.0,
+        "Z": 0.0
+      },
+      "AkComp": {
+        "ObjectName": "AkComponent Default__ProjApple_C:AkComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.2"
+      },
+      "ProjectileConfig": {
+        "ExplosionDamage": 0,
+        "ExplosionRadius": 0.0,
+        "DamageType": null
+      },
+      "RootComponent": {
+        "ObjectName": "SphereComponent Default__ProjApple_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.9"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkComp",
+    "Outer": "Default__ProjApple_C",
+    "Properties": {
+      "bUseDoppler": true,
+      "RelativeLocation": {
+        "X": -0.0002863407,
+        "Y": 0.014977932,
+        "Z": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjApple_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.9"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleComp",
+    "Outer": "Default__ProjApple_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent Default__ProjApple_C:MeshComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.10"
+      },
+      "bAutoActivate": true
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "MeshConstraint",
+    "Outer": "Default__ProjApple_C",
+    "Properties": {
+      "ConstraintInstance": {
+        "ProfileInstance": {
+          "LinearLimit": {
+            "Stiffness": 150.0,
+            "Damping": 30.0
+          },
+          "AngularDrive": {
+            "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+          }
+        }
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjApple_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.8"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_1",
+    "Outer": "ProjApple_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0__57659476",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent ProjApple_C:SceneComponent_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.5"
+      },
+      "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0__57659476",
+    "Outer": "ProjApple_C",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node ProjApple_C:SimpleConstructionScript_0__57659476.SCS_Node_1",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.6"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "InterpolationTarget",
+    "Outer": "Default__ProjApple_C",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjApple_C:SphereComp",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.9"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__ProjApple_C",
+    "Properties": {
+      "BodyInstance": {
+        "MassInKgOverride": 0.61551815
+      },
+      "OnComponentHit": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "ProjApple_C Default__ProjApple_C",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.1"
+            },
+            "FunctionName": "OnHit"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "MeshComp",
+    "Outer": "Default__ProjApple_C",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh Apple_mdl",
+        "ObjectPath": "TslGame/Content/Environment/Mock-up/SurvivalProps/Models/Apple_mdl.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant Apple",
+          "ObjectPath": "TslGame/Content/Weapon/Grenades/Apple/Materials/Apple.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant Apple",
+          "ObjectPath": "TslGame/Content/Weapon/Grenades/Apple/Materials/Apple.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant Apple",
+          "ObjectPath": "TslGame/Content/Weapon/Grenades/Apple/Materials/Apple.0"
+        }
+      ],
+      "BodyInstance": {
+        "AngularDamping": 2.0
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "RelativeScale3D": {
+        "X": 1.2,
+        "Y": 1.2,
+        "Z": 1.2
+      },
+      "RelativeLocation": {
+        "X": -0.48,
+        "Y": -0.12,
+        "Z": -4.44
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent Default__ProjApple_C:InterpolationTarget",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.8"
+      }
+    }
+  },
+  {
+    "Type": "TslProjectileMovementComponent",
+    "Name": "ProjectileComp",
+    "Outer": "Default__ProjApple_C",
+    "Properties": {
+      "SimulationTimeStep": 0.05,
+      "SlidingFriction_Speed_In": {
+        "X": 0.0,
+        "Y": 300.0
+      },
+      "SlidingFriction_Speed_Out": {
+        "X": 0.2,
+        "Y": 0.05
+      },
+      "bUseSlidingFriction": true,
+      "InitialSpeed": 1300.0,
+      "MaxSpeed": 4000.0,
+      "bShouldBounce": true,
+      "bInitialVelocityInLocalSpace": false,
+      "Bounciness": 0.5,
+      "Friction": 0.22
+    }
+  }
+]

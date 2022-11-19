@@ -1,0 +1,72 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapCrossbow_1_WeaponGunData",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_Bolt_C",
+        "TracerClass": {
+          "ObjectName": "ParticleSystem P_Arrow_1",
+          "ObjectPath": "TslGame/Content/Effects/tooner/Projectiles/Arrows/P_Arrow_1.51"
+        },
+        "bUseGameplayTracers": false,
+        "AmmoPerClip": 1,
+        "TimeBetweenShots": 0.075,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperDefault",
+              "UpperSmall",
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::LowerRail",
+            "AttachableTags": [
+              "QuiverCrossbow"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 2.5,
+        "BurstShots": 1,
+        "bIsArrowProjectile": true,
+        "WeaponLength": 42.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffset": {
+          "X": 5.0,
+          "Y": 0.0,
+          "Z": -2.0
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 9.0,
+          "Y": 2.0,
+          "Z": 0.4
+        }
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 1.5,
+        "DeviationBaseAim": 1.0,
+        "MOA": 0.5
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D Weapon_Crossbow_Grip_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Crossbow/Redux/Weapon_Crossbow_Grip_RD.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage CharacterWeapon_Crossbow_Load_Montage_RD",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Crossbow/Redux/CharacterWeapon_Crossbow_Load_Montage_RD.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "ReloadDurationTactical": 3.549655,
+        "ReloadDurationCharge": 3.549655,
+        "ReloadDurationMagOut": 0.4
+      }
+    }
+  }
+]

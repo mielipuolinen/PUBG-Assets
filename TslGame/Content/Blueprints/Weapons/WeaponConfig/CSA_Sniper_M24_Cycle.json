@@ -1,0 +1,756 @@
+[
+  {
+    "Type": "CameraAnim",
+    "Name": "CSA_Sniper_M24_Cycle",
+    "Properties": {
+      "CameraInterpGroup": {
+        "ObjectName": "InterpGroupCamera CSA_Sniper_M24_Cycle:InterpGroupCamera_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CSA_Sniper_M24_Cycle.1"
+      },
+      "BoundingBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  },
+  {
+    "Type": "InterpGroupCamera",
+    "Name": "InterpGroupCamera_0",
+    "Outer": "CSA_Sniper_M24_Cycle",
+    "Properties": {
+      "InterpTracks": [
+        {
+          "ObjectName": "InterpTrackMove CSA_Sniper_M24_Cycle:InterpGroupCamera_0.InterpTrackMove_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CSA_Sniper_M24_Cycle.2"
+        }
+      ],
+      "GroupName": "CSA_Rifle_762"
+    }
+  },
+  {
+    "Type": "InterpTrackMove",
+    "Name": "InterpTrackMove_1",
+    "Outer": "InterpGroupCamera_0",
+    "Properties": {
+      "SubTracks": [
+        {
+          "ObjectName": "InterpTrackMoveAxis CSA_Sniper_M24_Cycle:InterpGroupCamera_0.InterpTrackMove_1.InterpTrackMoveAxis_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CSA_Sniper_M24_Cycle.3"
+        },
+        {
+          "ObjectName": "InterpTrackMoveAxis CSA_Sniper_M24_Cycle:InterpGroupCamera_0.InterpTrackMove_1.InterpTrackMoveAxis_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CSA_Sniper_M24_Cycle.4"
+        },
+        {
+          "ObjectName": "InterpTrackMoveAxis CSA_Sniper_M24_Cycle:InterpGroupCamera_0.InterpTrackMove_1.InterpTrackMoveAxis_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CSA_Sniper_M24_Cycle.5"
+        },
+        {
+          "ObjectName": "InterpTrackMoveAxis CSA_Sniper_M24_Cycle:InterpGroupCamera_0.InterpTrackMove_1.InterpTrackMoveAxis_3",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CSA_Sniper_M24_Cycle.6"
+        },
+        {
+          "ObjectName": "InterpTrackMoveAxis CSA_Sniper_M24_Cycle:InterpGroupCamera_0.InterpTrackMove_1.InterpTrackMoveAxis_4",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CSA_Sniper_M24_Cycle.7"
+        },
+        {
+          "ObjectName": "InterpTrackMoveAxis CSA_Sniper_M24_Cycle:InterpGroupCamera_0.InterpTrackMove_1.InterpTrackMoveAxis_5",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CSA_Sniper_M24_Cycle.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InterpTrackMoveAxis",
+    "Name": "InterpTrackMoveAxis_0",
+    "Outer": "InterpTrackMove_1",
+    "Properties": {
+      "LookupTrack": {
+        "Points": [
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": 0.75
+          },
+          {
+            "GroupName": "None",
+            "Time": 1.05
+          },
+          {
+            "GroupName": "None",
+            "Time": 1.72
+          }
+        ]
+      },
+      "FloatTrack": {
+        "Points": [
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": -2.4423416,
+            "LeaveTangent": -2.4423416,
+            "InterpMode": "CIM_CurveUser"
+          },
+          {
+            "InVal": 0.75,
+            "OutVal": 0.028515834,
+            "ArriveTangent": 3.0618563,
+            "LeaveTangent": 3.0618563,
+            "InterpMode": "CIM_CurveUser"
+          },
+          {
+            "InVal": 1.05,
+            "OutVal": 2.2394388,
+            "ArriveTangent": -5.7628493,
+            "LeaveTangent": -5.7628493,
+            "InterpMode": "CIM_CurveUser"
+          },
+          {
+            "InVal": 1.72,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          }
+        ]
+      },
+      "TrackTitle": "X"
+    }
+  },
+  {
+    "Type": "InterpTrackMoveAxis",
+    "Name": "InterpTrackMoveAxis_1",
+    "Outer": "InterpTrackMove_1",
+    "Properties": {
+      "MoveAxis": "AXIS_TranslationY",
+      "LookupTrack": {
+        "Points": [
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": -0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": 0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": 0.24
+          },
+          {
+            "GroupName": "None",
+            "Time": 1.63
+          },
+          {
+            "GroupName": "None",
+            "Time": 1.72
+          }
+        ]
+      },
+      "FloatTrack": {
+        "Points": [
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": -0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": -16.531006,
+            "LeaveTangent": -16.531006,
+            "InterpMode": "CIM_CurveUser"
+          },
+          {
+            "InVal": 0.24,
+            "OutVal": -3.0366812,
+            "ArriveTangent": -0.047120553,
+            "LeaveTangent": -0.047120553,
+            "InterpMode": "CIM_CurveUser"
+          },
+          {
+            "InVal": 1.63,
+            "OutVal": -0.7396468,
+            "ArriveTangent": 2.8557525,
+            "LeaveTangent": 2.8557525,
+            "InterpMode": "CIM_CurveUser"
+          },
+          {
+            "InVal": 1.72,
+            "OutVal": 0.0009786934,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          }
+        ]
+      },
+      "TrackTitle": "Y"
+    }
+  },
+  {
+    "Type": "InterpTrackMoveAxis",
+    "Name": "InterpTrackMoveAxis_2",
+    "Outer": "InterpTrackMove_1",
+    "Properties": {
+      "MoveAxis": "AXIS_TranslationZ",
+      "LookupTrack": {
+        "Points": [
+          {
+            "GroupName": "None",
+            "Time": 0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": 0.22999999
+          },
+          {
+            "GroupName": "None",
+            "Time": 1.5899999
+          },
+          {
+            "GroupName": "None",
+            "Time": 1.72
+          }
+        ]
+      },
+      "FloatTrack": {
+        "Points": [
+          {
+            "InVal": 0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 14.998749,
+            "LeaveTangent": 14.998749,
+            "InterpMode": "CIM_CurveUser"
+          },
+          {
+            "InVal": 0.22999999,
+            "OutVal": 3.726835,
+            "ArriveTangent": 3.3058105,
+            "LeaveTangent": 3.3058105,
+            "InterpMode": "CIM_CurveUser"
+          },
+          {
+            "InVal": 1.5899999,
+            "OutVal": 0.9583225,
+            "ArriveTangent": -2.5012314,
+            "LeaveTangent": -2.5012314,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 1.72,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          }
+        ]
+      },
+      "TrackTitle": "Z"
+    }
+  },
+  {
+    "Type": "InterpTrackMoveAxis",
+    "Name": "InterpTrackMoveAxis_3",
+    "Outer": "InterpTrackMove_1",
+    "Properties": {
+      "MoveAxis": "AXIS_RotationX",
+      "LookupTrack": {
+        "Points": [
+          {
+            "GroupName": "None",
+            "Time": 0.03
+          },
+          {
+            "GroupName": "None",
+            "Time": 0.11
+          },
+          {
+            "GroupName": "None",
+            "Time": 0.59999996
+          },
+          {
+            "GroupName": "None",
+            "Time": 0.89
+          },
+          {
+            "GroupName": "None",
+            "Time": 1.09
+          },
+          {
+            "GroupName": "None",
+            "Time": 1.18
+          },
+          {
+            "GroupName": "None",
+            "Time": 1.51
+          }
+        ]
+      },
+      "FloatTrack": {
+        "Points": [
+          {
+            "InVal": 0.03,
+            "OutVal": -1.1175871E-08,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 0.11,
+            "OutVal": -0.6958528,
+            "ArriveTangent": 2.587521,
+            "LeaveTangent": 2.587521,
+            "InterpMode": "CIM_CurveUser"
+          },
+          {
+            "InVal": 0.59999996,
+            "OutVal": 0.0424768,
+            "ArriveTangent": 2.6450622,
+            "LeaveTangent": 2.6450622,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 0.89,
+            "OutVal": 1.3672957,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 1.09,
+            "OutVal": 0.011694204,
+            "ArriveTangent": -8.899919,
+            "LeaveTangent": -8.899919,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 1.18,
+            "OutVal": -1.2136804,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 1.51,
+            "OutVal": -1.899898E-07,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          }
+        ]
+      },
+      "TrackTitle": "X"
+    }
+  },
+  {
+    "Type": "InterpTrackMoveAxis",
+    "Name": "InterpTrackMoveAxis_4",
+    "Outer": "InterpTrackMove_1",
+    "Properties": {
+      "MoveAxis": "AXIS_RotationY",
+      "LookupTrack": {
+        "Points": [
+          {
+            "GroupName": "None",
+            "Time": 0.0
+          },
+          {
+            "GroupName": "None",
+            "Time": 0.56
+          },
+          {
+            "GroupName": "None",
+            "Time": 0.81
+          },
+          {
+            "GroupName": "None",
+            "Time": 1.1
+          },
+          {
+            "GroupName": "None",
+            "Time": 1.23
+          },
+          {
+            "GroupName": "None",
+            "Time": 1.42
+          },
+          {
+            "GroupName": "None",
+            "Time": 1.5699999
+          }
+        ]
+      },
+      "FloatTrack": {
+        "Points": [
+          {
+            "InVal": 0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 1.3500038,
+            "LeaveTangent": 1.3500038,
+            "InterpMode": "CIM_CurveUser"
+          },
+          {
+            "InVal": 0.56,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 0.81,
+            "OutVal": 0.73059505,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 1.1,
+            "OutVal": 0.029799754,
+            "ArriveTangent": -1.1331145,
+            "LeaveTangent": -1.1331145,
+            "InterpMode": "CIM_CurveUser"
+          },
+          {
+            "InVal": 1.23,
+            "OutVal": -0.9021312,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 1.42,
+            "OutVal": -0.047323078,
+            "ArriveTangent": 0.6837529,
+            "LeaveTangent": 0.6837529,
+            "InterpMode": "CIM_CurveAutoClamped"
+          },
+          {
+            "InVal": 1.5699999,
+            "OutVal": -8.08388E-07,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          }
+        ]
+      },
+      "TrackTitle": "Y"
+    }
+  },
+  {
+    "Type": "InterpTrackMoveAxis",
+    "Name": "InterpTrackMoveAxis_5",
+    "Outer": "InterpTrackMove_1",
+    "Properties": {
+      "MoveAxis": "AXIS_RotationZ",
+      "LookupTrack": {
+        "Points": [
+          {
+            "GroupName": "None",
+            "Time": 0.0
+          }
+        ]
+      },
+      "FloatTrack": {
+        "Points": [
+          {
+            "InVal": 0.0,
+            "OutVal": 0.0,
+            "ArriveTangent": 0.0,
+            "LeaveTangent": 0.0,
+            "InterpMode": "CIM_CurveAutoClamped"
+          }
+        ]
+      },
+      "TrackTitle": "Z"
+    }
+  }
+]

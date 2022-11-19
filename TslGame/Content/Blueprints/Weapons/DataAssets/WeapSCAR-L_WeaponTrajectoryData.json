@@ -1,0 +1,52 @@
+[
+  {
+    "Type": "WeaponTrajectoryData",
+    "Name": "WeapSCAR-L_WeaponTrajectoryData",
+    "Properties": {
+      "RecoilConfig": {
+        "VerticalRecoilMax": 7.0,
+        "VerticalRecoilVariation": 0.1,
+        "VerticalRecoveryClamp": 5.0,
+        "VerticalRecoveryMax": 3.0,
+        "HorizontalTendency": 0.1,
+        "RecoilCurve": {
+          "ObjectName": "CurveVector C_Recoil_SCAR",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_SCAR.0"
+        },
+        "BulletsPerSwitch": 2,
+        "RecoilSpeed_Vertical": 15.0,
+        "RecoilSpeed_Horizontal": 11.0,
+        "RecoverySpeed_Vertical": 8.0,
+        "RecoilValue_Climb": 0.75,
+        "RecoilValue_Fall": 2.3,
+        "RecoilModifier_Crouch": 0.84,
+        "RecoilHorizontalMinScalar": 0.4,
+        "RecoilStartTimeInMap": {
+          "X": 0.1,
+          "Y": 0.25
+        },
+        "RecoilBlendInOutMap": {
+          "X": 0.0,
+          "Y": 0.032
+        }
+      },
+      "TrajectoryConfig": {
+        "InitialSpeed": 870.0,
+        "HitDamage": 42.0,
+        "BallisticCurve": {
+          "ObjectName": "CurveVector C_Ballistic_SCAR-L",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/BallisticData/C_Ballistic_SCAR-L.0"
+        },
+        "RangeModifier": 0.94,
+        "ReferenceDistance": 350.0,
+        "TravelDistanceMax": 1000.0,
+        "VDragCoefficient": 0.75,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
+        },
+        "WeaponSpread": 4.0
+      }
+    }
+  }
+]

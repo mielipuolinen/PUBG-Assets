@@ -1,0 +1,614 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "Sphere",
+    "Outer": "MortarPawn_C",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class SphereComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DriverSeat",
+    "Outer": "MortarPawn_C",
+    "Next": {
+      "ObjectName": "ObjectProperty MortarPawn_C:Sphere",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.0"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class TslMortarPawnSeatInteractionComponent",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ThirdPersonSpringArm",
+    "Outer": "MortarPawn_C",
+    "Next": {
+      "ObjectName": "ObjectProperty MortarPawn_C:DriverSeat",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.1"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class SpringArmComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ThirdPersonCameraInVehicle",
+    "Outer": "MortarPawn_C",
+    "Next": {
+      "ObjectName": "ObjectProperty MortarPawn_C:ThirdPersonSpringArm",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.2"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class CameraComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FirstPersonSpringArmInVehicle",
+    "Outer": "MortarPawn_C",
+    "Next": {
+      "ObjectName": "ObjectProperty MortarPawn_C:ThirdPersonCameraInVehicle",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.3"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class SpringArmComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "FirstPersonCameraInVehicle",
+    "Outer": "MortarPawn_C",
+    "Next": {
+      "ObjectName": "ObjectProperty MortarPawn_C:FirstPersonSpringArmInVehicle",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.4"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class CameraComponent",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "MortarPawn_C",
+    "Next": {
+      "ObjectName": "ObjectProperty MortarPawn_C:FirstPersonCameraInVehicle",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.5"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "MortarPawn_C",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript MortarPawn_C:SimpleConstructionScript_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.20"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class TslMortarPawn",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function MortarPawn_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.6"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function MortarPawn_C:UserConstructionScript",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.6"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class Object",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "MortarPawn_C Default__MortarPawn_C",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.8"
+    }
+  },
+  {
+    "Type": "MortarPawn_C",
+    "Name": "Default__MortarPawn_C",
+    "Properties": {
+      "VehicleMeshComponent": {
+        "ObjectName": "SkeletalMeshComponent Default__MortarPawn_C:VehicleMeshComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.21"
+      },
+      "WeaponActorComponent": {
+        "ObjectName": "ChildActorComponent Default__MortarPawn_C:MortarWeaponComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.11"
+      },
+      "WeaponProcessorComponent": {
+        "ObjectName": "WeaponProcessorComponent Default__MortarPawn_C:WeaponProcessorComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.30"
+      },
+      "VehicleSeatComponent": {
+        "ObjectName": "TslVehicleSeatComponent Default__MortarPawn_C:SeatComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.28"
+      },
+      "TslGamepadInputComponent": {
+        "ObjectName": "TslGamepadPawnInputComponent Default__MortarPawn_C:GamepadInputComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.25"
+      },
+      "TslPawnInputBindingComponent": {
+        "ObjectName": "TslPawnInputBindingComponent Default__MortarPawn_C:PawnInputBindingComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.27"
+      },
+      "VehicleDropItemInteractionComponent": {
+        "ObjectName": "VehicleDropItemInteractionComponent Default__MortarPawn_C:VehicleDropItemInteractionComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.29"
+      },
+      "AIControllerClass": null,
+      "RootComponent": {
+        "ObjectName": "SkeletalMeshComponent Default__MortarPawn_C:VehicleMeshComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.21"
+      }
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "FirstPersonCameraInVehicle_GEN_VARIABLE",
+    "Outer": "MortarPawn_C",
+    "Properties": {
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "ThirdPersonCameraInVehicle_GEN_VARIABLE",
+    "Outer": "MortarPawn_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 26.293823,
+        "Y": 0.00045776367,
+        "Z": 75.4718
+      }
+    }
+  },
+  {
+    "Type": "ChildActorComponent",
+    "Name": "MortarWeaponComponent",
+    "Outer": "Default__MortarPawn_C",
+    "Properties": {
+      "ChildActorClass": {
+        "ObjectName": "BlueprintGeneratedClass WeapMortar_C",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMortar.0"
+      },
+      "bVisible": false,
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__MortarPawn_C:VehicleMeshComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.21"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "MortarPawn_C"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SceneComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent MortarPawn_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.12"
+      },
+      "VariableGuid": "3A9FD5EC-4F51D761-8C8E5E9C-6AB38087",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpringArmComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpringArmComponent MortarPawn_C:FirstPersonSpringArmInVehicle_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.23"
+      },
+      "ParentComponentOrVariableName": "VehicleMeshComponent",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node MortarPawn_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.19"
+        }
+      ],
+      "VariableGuid": "2C08D7A4-438197B3-4318039E-CBDF7449",
+      "InternalVariableName": "FirstPersonSpringArmInVehicle"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class CameraComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "CameraComponent MortarPawn_C:ThirdPersonCameraInVehicle_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.10"
+      },
+      "VariableGuid": "2C3DBEAC-4CD20746-C302A981-BC542B4F",
+      "InternalVariableName": "ThirdPersonCameraInVehicle"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SphereComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SphereComponent MortarPawn_C:Sphere_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.22"
+      },
+      "VariableGuid": "13FB36EF-4538BE85-0A1C3185-BF14F6E7",
+      "InternalVariableName": "Sphere"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class TslMortarPawnSeatInteractionComponent",
+        "ObjectPath": "/Script/TslGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TslMortarPawnSeatInteractionComponent MortarPawn_C:DriverSeat_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.26"
+      },
+      "AttachToName": "Seat",
+      "ParentComponentOrVariableName": "VehicleMeshComponent",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node MortarPawn_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.16"
+        }
+      ],
+      "VariableGuid": "D55B3951-4BE20CD5-5B24639F-D14536FF",
+      "InternalVariableName": "DriverSeat"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class SpringArmComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SpringArmComponent MortarPawn_C:ThirdPersonSpringArm_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.24"
+      },
+      "ParentComponentOrVariableName": "VehicleMeshComponent",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node MortarPawn_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.15"
+        }
+      ],
+      "VariableGuid": "8312C64D-41909BFB-7DD182B2-B21221ED",
+      "InternalVariableName": "ThirdPersonSpringArm"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class CameraComponent",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "CameraComponent MortarPawn_C:FirstPersonCameraInVehicle_GEN_VARIABLE",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.9"
+      },
+      "VariableGuid": "A5EE8E59-456E1064-7B146FBE-86B2197E",
+      "InternalVariableName": "FirstPersonCameraInVehicle"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "MortarPawn_C",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node MortarPawn_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.17"
+        },
+        {
+          "ObjectName": "SCS_Node MortarPawn_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.18"
+        },
+        {
+          "ObjectName": "SCS_Node MortarPawn_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.14"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node MortarPawn_C:SimpleConstructionScript_0.SCS_Node_2",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.16"
+        },
+        {
+          "ObjectName": "SCS_Node MortarPawn_C:SimpleConstructionScript_0.SCS_Node_4",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.17"
+        },
+        {
+          "ObjectName": "SCS_Node MortarPawn_C:SimpleConstructionScript_0.SCS_Node_5",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.18"
+        },
+        {
+          "ObjectName": "SCS_Node MortarPawn_C:SimpleConstructionScript_0.SCS_Node_11",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.15"
+        },
+        {
+          "ObjectName": "SCS_Node MortarPawn_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.14"
+        },
+        {
+          "ObjectName": "SCS_Node MortarPawn_C:SimpleConstructionScript_0.SCS_Node_9",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.19"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node MortarPawn_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.13"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "VehicleMeshComponent",
+    "Outer": "Default__MortarPawn_C",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass ABP_Mortar_C",
+        "ObjectPath": "TslGame/Content/Weapon/Mortar/Meshes/ABP_Mortar.12"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh SK_Mortar",
+        "ObjectPath": "TslGame/Content/Weapon/Mortar/Meshes/SK_Mortar.0"
+      },
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CrosshairImpact",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            }
+          ]
+        }
+      },
+      "CanCharacterStepUpOn": "ECB_Yes"
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "Sphere_GEN_VARIABLE",
+    "Outer": "MortarPawn_C",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "InteractiveObject",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Weapon",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "InteractiveObject",
+              "Response": "ECR_Overlap"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "CrosshairImpact",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "ObjectType": "ECC_GameTraceChannel5"
+      }
+    }
+  },
+  {
+    "Type": "SpringArmComponent",
+    "Name": "FirstPersonSpringArmInVehicle_GEN_VARIABLE",
+    "Outer": "MortarPawn_C",
+    "Properties": {
+      "TargetArmLength": 0.0,
+      "bInheritPitch": false,
+      "bInheritRoll": false
+    }
+  },
+  {
+    "Type": "SpringArmComponent",
+    "Name": "ThirdPersonSpringArm_GEN_VARIABLE",
+    "Outer": "MortarPawn_C",
+    "Properties": {
+      "SocketOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 40.0
+      },
+      "bUsePawnControlRotation": true,
+      "bInheritPitch": false,
+      "bInheritRoll": false,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 30.0
+      }
+    }
+  },
+  {
+    "Type": "TslGamepadPawnInputComponent",
+    "Name": "GamepadInputComponent",
+    "Outer": "Default__MortarPawn_C"
+  },
+  {
+    "Type": "TslMortarPawnSeatInteractionComponent",
+    "Name": "DriverSeat_GEN_VARIABLE",
+    "Outer": "MortarPawn_C",
+    "Properties": {
+      "RiderType": "ERiderType::Driver",
+      "LeaveSocketName": "leave",
+      "RiderCollisionComponentName": "DriverCollision",
+      "bDisablePlayerCapsuleCollision": false,
+      "bRiderShouldLean": false,
+      "bRiderShouldUseStop": false,
+      "bRestricWeaponUse": true,
+      "bEjectOnHitByOtherVehicle": true,
+      "bUseTargetOffsetInLocalSpace": true,
+      "bUpdateUpVector": true,
+      "bUpdateHeightOffset": true,
+      "VehicleSeatData": {
+        "ObjectName": "DriverSeatDataAsset Mortar",
+        "ObjectPath": "TslGame/Content/Weapon/Mortar/Data/Mortar.0"
+      },
+      "InteractionVerb": {
+        "TableId": "/Game/StringTables/Interaction/NS_INTERACTION.NS_INTERACTION",
+        "Key": "K_UXU_02"
+      },
+      "InteractiveObjectName": {
+        "TableId": "/Game/Item/Weapon/NS_WEAPONNAME.NS_WEAPONNAME",
+        "Key": "K_UXU_14"
+      }
+    }
+  },
+  {
+    "Type": "TslPawnInputBindingComponent",
+    "Name": "PawnInputBindingComponent",
+    "Outer": "Default__MortarPawn_C"
+  },
+  {
+    "Type": "TslVehicleSeatComponent",
+    "Name": "SeatComponent",
+    "Outer": "Default__MortarPawn_C"
+  },
+  {
+    "Type": "VehicleDropItemInteractionComponent",
+    "Name": "VehicleDropItemInteractionComponent",
+    "Outer": "Default__MortarPawn_C",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 20.0
+      },
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent Default__MortarPawn_C:VehicleMeshComponent",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/MortarPawn.21"
+      }
+    }
+  },
+  {
+    "Type": "WeaponProcessorComponent",
+    "Name": "WeaponProcessorComponent",
+    "Outer": "Default__MortarPawn_C"
+  }
+]

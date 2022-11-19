@@ -1,0 +1,278 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BluezoneGrenade_Drop",
+    "Properties": {
+      "AggGeom": {
+        "SphylElems": [
+          {
+            "Center": {
+              "X": -0.32414293,
+              "Y": -0.3095286,
+              "Z": 4.896724
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "Radius": 4.6326523,
+            "Length": 13.008304
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "5551F1D64182B07A552D9FB3F4581CAB",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "ElementCount": 68254,
+        "SizeOnDisk": 68254,
+        "OffsetInFile": "0x3D6B9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BluezoneGrenade_Drop",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "SM_Tiger_BluezoneGrenade_01_M",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 19.250065,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 19.250065,
+      "Sockets": [
+        {
+          "ObjectName": "StaticMeshSocket BluezoneGrenade_Drop:StaticMeshSocket_0",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BluezoneGrenade/BluezoneGrenade_Drop.2"
+        },
+        {
+          "ObjectName": "StaticMeshSocket BluezoneGrenade_Drop:StaticMeshSocket_1",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BluezoneGrenade/BluezoneGrenade_Drop.3"
+        }
+      ],
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 1.5993428,
+          "Y": 0.26793456,
+          "Z": 7.214359
+        },
+        "BoxExtent": {
+          "X": 4.626193,
+          "Y": 3.30719,
+          "Z": 7.214359
+        },
+        "SphereRadius": 8.03059
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup BluezoneGrenade_Drop:BodySetup_0",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BluezoneGrenade/BluezoneGrenade_Drop.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "2ACA17D6-4B9AD0E0-22059384-42795AEC",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 2567,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 1770,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 1771
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 1771,
+            "Strides": 12,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 2567,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 1770,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 1771
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 1771,
+            "Strides": 12,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 2567,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 1770,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 1771
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 1,
+            "NumVertices": 1771,
+            "Strides": 12,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 1.5993428,
+          "Y": 0.26793456,
+          "Z": 7.214359
+        },
+        "BoxExtent": {
+          "X": 4.626193,
+          "Y": 3.30719,
+          "Z": 7.214359
+        },
+        "SphereRadius": 8.03059
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_0",
+    "Outer": "BluezoneGrenade_Drop",
+    "Properties": {
+      "SocketName": "UIcamera",
+      "RelativeLocation": {
+        "X": -2.7E-05,
+        "Y": -120.0,
+        "Z": 8.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_1",
+    "Outer": "BluezoneGrenade_Drop",
+    "Properties": {
+      "SocketName": "UIcamera_XBOX",
+      "RelativeLocation": {
+        "X": -8.0,
+        "Y": -110.0,
+        "Z": 8.0
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 0.0
+      }
+    }
+  }
+]
