@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "VaultingData",
+    "Name": "DA_Climb200_Stationary",
+    "Class": "UScriptClass'VaultingData'",
+    "Properties": {
+      "MoveRequirements": {
+        "RowRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 18
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": 23
+          }
+        },
+        "SpeedRange": {
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": 350.0
+          }
+        },
+        "IsClimb": "EVaultRequirementType::VaultReqType_True"
+      },
+      "VaultAnimType": "EVaultAnimType::Climb200_Stationary",
+      "LocationStartNormalScale": 61.5,
+      "LocationStartZOffset": -200.0,
+      "LocationEndNormalScale": -30.0,
+      "LocationEndZOffset": -100.0,
+      "bIsClimb": true,
+      "PreApexSpeedScale": 0.4,
+      "PostApexSpeedScale": 0.53,
+      "AnimBlendInTime": 0.1,
+      "AnimBlendOutTime": 0.4,
+      "ApexAdditiveStartTime": 0.4,
+      "ApexAdditiveEndTime": 0.5,
+      "StartCutoffByDistance_InMap": {
+        "X": 40.0,
+        "Y": 200.0
+      },
+      "StartCutoffByDistance_OutMap": {
+        "X": 0.005,
+        "Y": 0.0
+      },
+      "StartCutoffBySpeed_InMap": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_InMap_PreApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PreApex": {
+        "X": 1.0,
+        "Y": 1.1
+      },
+      "PlayrateBySpeed_InMap_PostApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PostApex": {
+        "X": 1.0,
+        "Y": 1.1
+      },
+      "AnimationSequence": {
+        "ObjectName": "AnimSequence'Unarmed_Vaulting_Climb_200'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Unarmed_Vaulting_Climb_200.7"
+      },
+      "AnimationCurve": {
+        "ObjectName": "CurveFloat'C_Climb_200'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Curves/C_Climb_200.0"
+      },
+      "CharLocationInterpSpeedInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "CharLocationInterpSpeedOutMap": {
+        "X": 4.5,
+        "Y": 4.0
+      },
+      "TimerProgressionByDistanceInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "TimerProgressionByDistanceOutMap": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "TimerProgressionVTimerMax": 0.1,
+      "VaultEndTimerNormal": 1.0,
+      "VaultEndTimerFall": 0.8,
+      "bIsCancellable": true,
+      "MinCancelVTimer": 0.2,
+      "MaxCancelVTimer": 0.4,
+      "TaskEndVTimer": 0.075,
+      "PostVaultTimerProgressionScale": 1.5,
+      "bUseMappedVTimerDampening": true,
+      "StaticDampeningScalar": 0.5,
+      "StaticDampeningVTimerMax": 0.1,
+      "MappedDampeningScalar": 0.1,
+      "MappedDampeningVTimerMax": 0.1
+    }
+  }
+]

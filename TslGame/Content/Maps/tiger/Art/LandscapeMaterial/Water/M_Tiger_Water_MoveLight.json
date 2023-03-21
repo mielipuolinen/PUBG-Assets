@@ -1,0 +1,220 @@
+[
+  {
+    "Type": "Material",
+    "Name": "M_Tiger_Water_MoveLight",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "BaseColor": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_5",
+        "UseConstant": false,
+        "Constant": {
+          "B": 128,
+          "G": 128,
+          "R": 128,
+          "A": 255,
+          "Hex": "FF808080"
+        }
+      },
+      "EmissiveColor": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_5",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "Opacity": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_8",
+        "UseConstant": false,
+        "Constant": 1.0
+      },
+      "MaterialDomain": "MD_DeferredDecal",
+      "BlendMode": "BLEND_Translucent",
+      "EditorX": 704,
+      "EditorY": 80,
+      "Expressions": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionVectorParameter'M_Tiger_Water_MoveLight:MaterialExpressionVectorParameter_0'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Water/M_Tiger_Water_MoveLight.5"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Water_MoveLight:MaterialExpressionScalarParameter_0'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Water/M_Tiger_Water_MoveLight.1"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Water_MoveLight:MaterialExpressionScalarParameter_1'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Water/M_Tiger_Water_MoveLight.2"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Water_MoveLight:MaterialExpressionScalarParameter_2'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Water/M_Tiger_Water_MoveLight.3"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample'M_Tiger_Water_MoveLight:MaterialExpressionTextureSample_0'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Water/M_Tiger_Water_MoveLight.4"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "BFEA940F-4897152E-26DB2CBB-57367729"
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_0",
+    "Outer": "M_Tiger_Water_MoveLight",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.01,
+      "ParameterName": "Light02_Intencity",
+      "ExpressionGUID": "60BA2E58-45E7FEEC-7D23B685-1D577AC2",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Water_MoveLight'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Water/M_Tiger_Water_MoveLight.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_1",
+    "Outer": "M_Tiger_Water_MoveLight",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.01,
+      "ParameterName": "Light01_Intencity",
+      "ExpressionGUID": "420C8EC5-481FB84B-6DAB79AD-8EEB3361",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Water_MoveLight'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Water/M_Tiger_Water_MoveLight.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_2",
+    "Outer": "M_Tiger_Water_MoveLight",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 2.0,
+      "ParameterName": "Mask_Power",
+      "ExpressionGUID": "C5F0A6FD-405C2ED3-57E8C0B5-D75E1EFA",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Water_MoveLight'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Water/M_Tiger_Water_MoveLight.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_0",
+    "Outer": "M_Tiger_Water_MoveLight",
+    "Class": "UScriptClass'MaterialExpressionTextureSample'",
+    "Properties": {
+      "Coordinates": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_6"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D'Baltic_dn_creases_and_folds_03_n'",
+        "ObjectPath": "TslGame/Content/Assets/World/Baltic/Old/Assets/DetialNormalTextures/Generic/Baltic_dn_creases_and_folds_03_n.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Water_MoveLight'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Water/M_Tiger_Water_MoveLight.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_0",
+    "Outer": "M_Tiger_Water_MoveLight",
+    "Class": "UScriptClass'MaterialExpressionVectorParameter'",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.109939,
+        "G": 0.183992,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FF5D77FF"
+      },
+      "ParameterName": "Light_Color",
+      "ExpressionGUID": "05C516C1-4964DB3D-8A3EA3A9-0AA3C371",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Water_MoveLight'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Water/M_Tiger_Water_MoveLight.0"
+      }
+    }
+  }
+]

@@ -1,0 +1,67 @@
+[
+  {
+    "Type": "FoliageType_InstancedStaticMesh",
+    "Name": "FoliageType_tree_5",
+    "Class": "UScriptClass'FoliageType_InstancedStaticMesh'",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'bro_Lombardy_Poplar_IM'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Tree/bro_Lombardy_Poplar_IM.1"
+      },
+      "UpdateGuid": "167C43F4-49207611-1BD1E2BE-433F3209",
+      "ZOffset": {
+        "Min": -30.0,
+        "Max": -30.0
+      },
+      "AlignToNormal": false,
+      "Height": {
+        "Min": 200.0
+      },
+      "LandscapeLayers": [
+        "Tree"
+      ],
+      "bAffectDynamicIndirectLighting": true,
+      "bAffectDistanceFieldLighting": true,
+      "bDecalChannelValid": true,
+      "DecalChannel": "EDecalChannel::Channel1",
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+      },
+      "CollisionRadius": 5.0,
+      "ShadeRadius": 2.0,
+      "NumSteps": 1,
+      "InitialSeedDensity": 0.1,
+      "AverageSpreadDistance": 2800.0,
+      "SpreadVariance": 300.0,
+      "MaxInitialSeedOffset": 4000.0,
+      "bCanGrowInShade": true,
+      "MaxAge": 1.0,
+      "OverlapPriority": 3.0,
+      "ProceduralScale": {
+        "Min": 1.3,
+        "Max": 1.5
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "ChangeCount": 6
+    }
+  }
+]

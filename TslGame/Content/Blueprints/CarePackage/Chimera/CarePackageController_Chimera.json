@@ -1,0 +1,240 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_RunBehaviorTree_ReturnValue",
+    "Outer": "ExecuteUbergraph_CarePackageController_Chimera",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_CarePackageController_Chimera",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'CarePackageController_Chimera_C:ExecuteUbergraph_CarePackageController_Chimera.CallFunc_RunBehaviorTree_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.0"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_CarePackageController_Chimera",
+    "Outer": "CarePackageController_Chimera_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'CarePackageController_Chimera_C:ExecuteUbergraph_CarePackageController_Chimera.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.1"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "CarePackageController_Chimera_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'CarePackageController_Chimera_C:ExecuteUbergraph_CarePackageController_Chimera'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "CarePackageController_Chimera_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'CarePackageController_Chimera_C:ReceiveBeginPlay'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.3"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "CarePackageController_Chimera_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'CarePackageController_Chimera_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.4"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "CarePackageController_Chimera_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'CarePackageController_Chimera_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.13"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'CarePackageController_Chimera_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.5"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'CarePackageController_Chimera_C:ExecuteUbergraph_CarePackageController_Chimera'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.2"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'CarePackageController'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'CarePackageController_Chimera_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.5"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_CarePackageController_Chimera": {
+        "ObjectName": "Function'CarePackageController_Chimera_C:ExecuteUbergraph_CarePackageController_Chimera'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'CarePackageController_Chimera_C:ReceiveBeginPlay'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.3"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'CarePackageController_Chimera_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.4"
+      }
+    },
+    "ClassFlags": 8651284,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "CarePackageController_Chimera_C'Default__CarePackageController_Chimera_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.7"
+    }
+  },
+  {
+    "Type": "CarePackageController_Chimera_C",
+    "Name": "Default__CarePackageController_Chimera_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.CarePackageController_Chimera_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AircraftCarePackageClassString": null,
+      "StartDelay": {
+        "X": 150.0,
+        "Y": 240.0
+      },
+      "SpawnInterval": {
+        "X": 180.0,
+        "Y": 360.0
+      },
+      "FlyingHeight": -1300.0,
+      "CarePackageLifeTime": 960.0,
+      "WhiteZoneSpawnInnerRate": 1.0,
+      "bDropOutsideWhiteZone": true,
+      "WhiteZoneOuterRadius": 50000.0,
+      "FlareDeploymentStringTypeMap": [
+        {
+          "EFlareDeploymentType::Deploy_InWhite": ""
+        },
+        {
+          "EFlareDeploymentType::Deploy_InBlue": ""
+        },
+        {
+          "EFlareDeploymentType::Deploy_Outside": ""
+        }
+      ],
+      "SpawnDelayMap": null,
+      "PathFollowingComponent": {
+        "ObjectName": "PathFollowingComponent'Default__CarePackageController_Chimera_C:PathFollowingComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.8"
+      },
+      "ActionsComp": {
+        "ObjectName": "PawnActionsComponent'Default__CarePackageController_Chimera_C:ActionsComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.9"
+      },
+      "TransformComponent": {
+        "ObjectName": "SceneComponent'Default__CarePackageController_Chimera_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.11"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__CarePackageController_Chimera_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.11"
+      }
+    }
+  },
+  {
+    "Type": "PathFollowingComponent",
+    "Name": "PathFollowingComponent",
+    "Outer": "Default__CarePackageController_Chimera_C",
+    "Class": "UScriptClass'PathFollowingComponent'"
+  },
+  {
+    "Type": "PawnActionsComponent",
+    "Name": "ActionsComp",
+    "Outer": "Default__CarePackageController_Chimera_C",
+    "Class": "UScriptClass'PawnActionsComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "CarePackageController_Chimera_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "TransformComponent0",
+    "Outer": "Default__CarePackageController_Chimera_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'CarePackageController_Chimera_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.10"
+      },
+      "VariableGuid": "99196F1F-4C74B2CB-8F238CA2-29DB599D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "CarePackageController_Chimera_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'CarePackageController_Chimera_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/CarePackageController_Chimera.12"
+      }
+    }
+  }
+]

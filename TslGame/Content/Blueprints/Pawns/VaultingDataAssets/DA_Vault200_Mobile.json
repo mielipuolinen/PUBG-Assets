@@ -1,0 +1,105 @@
+[
+  {
+    "Type": "VaultingData",
+    "Name": "DA_Vault200_Mobile",
+    "Class": "UScriptClass'VaultingData'",
+    "Properties": {
+      "MoveRequirements": {
+        "RowRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 18
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": 23
+          }
+        },
+        "SpeedRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 350.0
+          }
+        },
+        "IsVault": "EVaultRequirementType::VaultReqType_True",
+        "IsSlide": "EVaultRequirementType::VaultReqType_Any"
+      },
+      "VaultAnimType": "EVaultAnimType::Vault200_Mobile",
+      "LocationStartNormalScale": 138.3,
+      "LocationStartZOffset": -200.0,
+      "LocationEndNormalScale": -140.0,
+      "LocationEndZOffset": -280.0,
+      "PreApexSpeedScale": 0.25,
+      "PostApexSpeedScale": 0.58,
+      "AnimBlendInTime": 0.16,
+      "AnimBlendOutTime": 0.4,
+      "ApexAdditiveStartTime": 0.55,
+      "ApexAdditiveEndTime": 0.75,
+      "StartCutoffByDistance_InMap": {
+        "X": 40.0,
+        "Y": 200.0
+      },
+      "StartCutoffBySpeed_InMap": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_InMap_PreApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PreApex": {
+        "X": 1.4,
+        "Y": 1.6
+      },
+      "PlayrateBySpeed_InMap_PostApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PostApex": {
+        "X": 1.0,
+        "Y": 1.1
+      },
+      "AnimationSequence": {
+        "ObjectName": "AnimSequence'Unarmed_Vaulting_Jump_200'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Unarmed_Vaulting_Jump_200.10"
+      },
+      "AnimationCurve": {
+        "ObjectName": "CurveFloat'C_Vault_200'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Curves/C_Vault_200.0"
+      },
+      "CharLocationInterpSpeedInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "CharLocationInterpSpeedOutMap": {
+        "X": 6.0,
+        "Y": 3.0
+      },
+      "TimerProgressionByDistanceInMap": {
+        "X": 20.0,
+        "Y": 100.0
+      },
+      "TimerProgressionByDistanceOutMap": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "TimerProgressionVTimerMax": 0.075,
+      "VaultEndTimerNormal": 1.0,
+      "VaultEndTimerFall": 0.77,
+      "CharacterPostVaultVelocityScalar": 1.0,
+      "CharacterPostVaultVelocityScalarVector": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      },
+      "bIsCancellable": true,
+      "MinCancelVTimer": 0.2,
+      "MaxCancelVTimer": 0.4,
+      "TaskEndVTimer": 0.05,
+      "PostVaultTimerProgressionScale": 1.0,
+      "bUseMappedVTimerDampening": true,
+      "MappedDampeningScalar": 0.3,
+      "MappedDampeningVTimerMax": 0.09
+    }
+  }
+]

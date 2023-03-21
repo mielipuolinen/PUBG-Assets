@@ -2,86 +2,94 @@
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "DefaultPistolSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript DefaultPistolSetting_C:SimpleConstructionScript_1",
+        "ObjectName": "SimpleConstructionScript'DefaultPistolSetting_C:SimpleConstructionScript_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultPistolSetting.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslWeapon_Trajectory",
+      "ObjectName": "Class'TslWeapon_Trajectory'",
       "ObjectPath": "/Script/TslGame"
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "DefaultPistolSetting_C Default__DefaultPistolSetting_C",
+      "ObjectName": "DefaultPistolSetting_C'Default__DefaultPistolSetting_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultPistolSetting.1"
     }
   },
   {
     "Type": "DefaultPistolSetting_C",
     "Name": "Default__DefaultPistolSetting_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/DefaultPistolSetting.DefaultPistolSetting_C'",
     "Properties": {
-      "UnderWaterTrailFXClassPerLength": {
-        "90": {
-          "ObjectName": "BlueprintGeneratedClass BP_UnderwaterBulletTrailEffectShort_C",
-          "ObjectPath": "TslGame/Content/Effects/ParticleSystems/Weapons/AssaultRifle/Muzzle/BP_UnderwaterBulletTrailEffectShort.0"
-        },
-        "300": {
-          "ObjectName": "BlueprintGeneratedClass BP_UnderwaterBulletTrailEffectMid_C",
-          "ObjectPath": "TslGame/Content/Effects/ParticleSystems/Weapons/AssaultRifle/Muzzle/BP_UnderwaterBulletTrailEffectMid.0"
-        }
-      },
-      "TrailTargetParam": "ShockBeamEnd",
       "ImpactTemplate": {
-        "ObjectName": "BlueprintGeneratedClass GunImpact_Small_C",
+        "ObjectName": "BlueprintGeneratedClass'GunImpact_Small_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Small.0"
       },
+      "UnderWaterTrailFXClassPerLength": [
+        {
+          "90": {
+            "ObjectName": "BlueprintGeneratedClass'BP_UnderwaterBulletTrailEffectShort_C'",
+            "ObjectPath": "TslGame/Content/Effects/ParticleSystems/Weapons/AssaultRifle/Muzzle/BP_UnderwaterBulletTrailEffectShort.0"
+          }
+        },
+        {
+          "300": {
+            "ObjectName": "BlueprintGeneratedClass'BP_UnderwaterBulletTrailEffectMid_C'",
+            "ObjectPath": "TslGame/Content/Effects/ParticleSystems/Weapons/AssaultRifle/Muzzle/BP_UnderwaterBulletTrailEffectMid.0"
+          }
+        }
+      ],
+      "TrailTargetParam": "ShockBeamEnd",
       "WeaponConfig": {
         "WeaponClass": "EWeaponClass::Class_Pistol"
       },
       "WeaponHand": "EWeaponHand::Left",
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__DefaultPistolSetting_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__DefaultPistolSetting_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultPistolSetting.6"
       },
       "MuzzleAttachPoint": "MuzzleFlashSocket",
       "AnimWeaponType": "EAnimWeaponType::Pistol",
       "WeaponAnim": {
         "PickUp": {
-          "ObjectName": "AnimMontage MIL2_M3_W1_Glean_Montage",
+          "ObjectName": "AnimMontage'MIL2_M3_W1_Glean_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Military_Pistol/MIL2_M3_W1_Glean_Montage.0"
         }
       },
       "ProneRollAnim": {
         "RollLeft": {
-          "ObjectName": "AnimMontage MIL2_M3_W1_ProneRoll_L_Loop_IP_Montage",
+          "ObjectName": "AnimMontage'MIL2_M3_W1_ProneRoll_L_Loop_IP_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Military_Pistol/MIL2_M3_W1_ProneRoll_L_Loop_IP_Montage.0"
         },
         "RollRight": {
-          "ObjectName": "AnimMontage MIL2_M3_W1_ProneRoll_R_Loop_IP_Montage",
+          "ObjectName": "AnimMontage'MIL2_M3_W1_ProneRoll_R_Loop_IP_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Military_Pistol/MIL2_M3_W1_ProneRoll_R_Loop_IP_Montage.0"
         }
       },
-      "EquipAnimData": {
-        "EAccessorySlot::Slot_SideArm": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Rifle_Combat_Stand_PistolSlot_Montage.0"
-          },
-          "PlayRate": 1.5
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_SideArm": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PistolSlot_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Rifle_Combat_Stand_PistolSlot_Montage.0"
+            },
+            "PlayRate": 1.5
+          }
         }
-      },
+      ],
       "HipDuration": 0.1,
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__DefaultPistolSetting_C:RootScene",
+        "ObjectName": "SceneComponent'Default__DefaultPistolSetting_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultPistolSetting.2"
       }
     }
@@ -90,12 +98,13 @@
     "Type": "SceneComponent",
     "Name": "RootScene",
     "Outer": "Default__DefaultPistolSetting_C",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "DefaultPistolSetting_C Default__DefaultPistolSetting_C",
+              "ObjectName": "DefaultPistolSetting_C'Default__DefaultPistolSetting_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultPistolSetting.1"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -107,19 +116,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "DefaultPistolSetting_C"
+    "Outer": "DefaultPistolSetting_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent DefaultPistolSetting_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'DefaultPistolSetting_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultPistolSetting.3"
       },
       "VariableGuid": "BEA3985C-4A6C4983-65AACDB2-C73EF37A",
@@ -130,9 +141,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_1",
     "Outer": "DefaultPistolSetting_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node DefaultPistolSetting_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectName": "SCS_Node'DefaultPistolSetting_C:SimpleConstructionScript_1.SCS_Node_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultPistolSetting.4"
       }
     }
@@ -141,12 +153,13 @@
     "Type": "WeaponMeshComponent",
     "Name": "WeaponMesh3P",
     "Outer": "Default__DefaultPistolSetting_C",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "BodyInstance": {
         "MassInKgOverride": 0.0
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__DefaultPistolSetting_C:RootScene",
+        "ObjectName": "SceneComponent'Default__DefaultPistolSetting_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultPistolSetting.2"
       }
     }

@@ -1,0 +1,206 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Mud_Wood",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "0F274D9C4DAF8FE1CC8ECAAFD63C1CE1"
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Mud_Wood",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "winter_plants",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 67.76251,
+            "LocalUVDensities": 42.039818,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialSlotName": "winter_plants",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 69.2492,
+            "LocalUVDensities": 37.61678,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 39.67676,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.1444092E-05,
+          "Y": -3.8146973E-06,
+          "Z": 3.7587795
+        },
+        "BoxExtent": {
+          "X": 52.896038,
+          "Y": 41.639515,
+          "Z": 7.4846573
+        },
+        "SphereRadius": 59.971867
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'Mud_Wood:BodySetup_0'",
+      "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Mud/Mud_Wood.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "63FC247D-4C3029F4-6D263195-9F399AD4",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 84,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 133,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 134
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 134,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 0,
+              "NumTriangles": 48,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 95,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 96
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 96,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 96
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 0,
+              "NumTriangles": 24,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 47,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 48
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 48,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 48
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -1.1444092E-05,
+          "Y": -3.8146973E-06,
+          "Z": 3.7587795
+        },
+        "BoxExtent": {
+          "X": 52.896038,
+          "Y": 41.639515,
+          "Z": 7.4846573
+        },
+        "SphereRadius": 59.971867
+      },
+      "bLODsShareStaticLighting": false,
+      "ScreenSize": [
+        1.0,
+        0.25,
+        0.15,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

@@ -1,0 +1,1951 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess28",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Replay_Timeline7",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess28'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.0"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslReplayTimeline'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue7",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Replay_Timeline7'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.1"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetWidget_ReturnValue7",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_EqualEqual_ByteByte_ReturnValue7'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.2"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess27",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetWidget_ReturnValue7'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.3"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_HUD7",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess27'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.4"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslHUD'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess26",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_HUD7'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.5"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Spectator_Pawn7",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess26'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.6"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslSpectatorPawn'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetHUD_ReturnValue7",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Spectator_Pawn7'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.7"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'HUD'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetSpectatorPawn_ReturnValue7",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetHUD_ReturnValue7'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.8"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'SpectatorPawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess25",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetSpectatorPawn_ReturnValue7'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.9"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Player_Controller7",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess25'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.10"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslPlayerController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetPlayerController_ReturnValue7",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Player_Controller7'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.11"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PlayerController'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess24",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetPlayerController_ReturnValue7'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.12"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Replay_Timeline6",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess24'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.13"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslReplayTimeline'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess23",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Replay_Timeline6'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.14"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Replay_Timeline5",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess23'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.15"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslReplayTimeline'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetWidget_ReturnValue6",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Replay_Timeline5'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.16"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetWidget_ReturnValue5",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetWidget_ReturnValue6'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.17"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess22",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetWidget_ReturnValue5'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.18"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_HUD6",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess22'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.19"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslHUD'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess21",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_HUD6'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.20"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_HUD5",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess21'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.21"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslHUD'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetHUD_ReturnValue6",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_HUD5'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.22"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'HUD'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetHUD_ReturnValue5",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetHUD_ReturnValue6'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.23"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'HUD'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess20",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetHUD_ReturnValue5'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.24"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Player_Controller6",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess20'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.25"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslPlayerController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess19",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Player_Controller6'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.26"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Player_Controller5",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess19'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.27"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslPlayerController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue6",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Player_Controller5'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.28"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue5",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_EqualEqual_ByteByte_ReturnValue6'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.29"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess18",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_EqualEqual_ByteByte_ReturnValue5'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.30"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Spectator_Pawn6",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess18'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.31"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslSpectatorPawn'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess17",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Spectator_Pawn6'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.32"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Spectator_Pawn5",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess17'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.33"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslSpectatorPawn'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetSpectatorPawn_ReturnValue6",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Spectator_Pawn5'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.34"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'SpectatorPawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetSpectatorPawn_ReturnValue5",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetSpectatorPawn_ReturnValue6'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.35"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'SpectatorPawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetPlayerController_ReturnValue6",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetSpectatorPawn_ReturnValue5'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.36"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PlayerController'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetPlayerController_ReturnValue5",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetPlayerController_ReturnValue6'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.37"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PlayerController'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess16",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetPlayerController_ReturnValue5'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.38"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Replay_Timeline4",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess16'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.39"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslReplayTimeline'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess15",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Replay_Timeline4'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.40"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Replay_Timeline3",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess15'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.41"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslReplayTimeline'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetWidget_ReturnValue4",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Replay_Timeline3'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.42"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetWidget_ReturnValue3",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetWidget_ReturnValue4'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.43"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess14",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetWidget_ReturnValue3'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.44"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_HUD4",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess14'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.45"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslHUD'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess13",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_HUD4'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.46"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_HUD3",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess13'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.47"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslHUD'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetHUD_ReturnValue4",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_HUD3'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.48"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'HUD'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetHUD_ReturnValue3",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetHUD_ReturnValue4'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.49"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'HUD'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess12",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetHUD_ReturnValue3'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.50"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Player_Controller4",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess12'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.51"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslPlayerController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess11",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Player_Controller4'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.52"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Player_Controller3",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess11'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.53"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslPlayerController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue4",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Player_Controller3'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.54"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue3",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_EqualEqual_ByteByte_ReturnValue4'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.55"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess10",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_EqualEqual_ByteByte_ReturnValue3'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.56"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Spectator_Pawn4",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess10'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.57"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslSpectatorPawn'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess9",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Spectator_Pawn4'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.58"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Spectator_Pawn3",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess9'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.59"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslSpectatorPawn'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetSpectatorPawn_ReturnValue4",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Spectator_Pawn3'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.60"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'SpectatorPawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetSpectatorPawn_ReturnValue3",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetSpectatorPawn_ReturnValue4'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.61"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'SpectatorPawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetPlayerController_ReturnValue4",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetSpectatorPawn_ReturnValue3'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.62"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PlayerController'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetPlayerController_ReturnValue3",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetPlayerController_ReturnValue4'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.63"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PlayerController'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess8",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetPlayerController_ReturnValue3'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.64"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Replay_Timeline2",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess8'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.65"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslReplayTimeline'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess7",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Replay_Timeline2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.66"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Replay_Timeline",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess7'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.67"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslReplayTimeline'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetWidget_ReturnValue2",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Replay_Timeline'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.68"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetWidget_ReturnValue",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetWidget_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.69"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'UserWidget'",
+      "ObjectPath": "/Script/UMG"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess6",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetWidget_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.70"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_HUD2",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess6'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.71"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslHUD'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess5",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_HUD2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.72"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_HUD",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess5'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.73"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslHUD'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetHUD_ReturnValue2",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_HUD'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.74"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'HUD'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetHUD_ReturnValue",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetHUD_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.75"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'HUD'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess4",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetHUD_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.76"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Player_Controller2",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess4'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.77"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslPlayerController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess3",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Player_Controller2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.78"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Player_Controller",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess3'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.79"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslPlayerController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue2",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Player_Controller'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.80"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_EqualEqual_ByteByte_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.81"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess2",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_EqualEqual_ByteByte_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.82"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Spectator_Pawn2",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.83"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslSpectatorPawn'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Spectator_Pawn2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.84"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Spectator_Pawn",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.85"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslSpectatorPawn'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetSpectatorPawn_ReturnValue2",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_DynamicCast_AsTsl_Spectator_Pawn'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.86"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'SpectatorPawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetSpectatorPawn_ReturnValue",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetSpectatorPawn_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.87"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'SpectatorPawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetPlayerController_ReturnValue2",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetSpectatorPawn_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.88"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PlayerController'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetPlayerController_ReturnValue",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetPlayerController_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.89"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PlayerController'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputActionEvent_Key7",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.CallFunc_GetPlayerController_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.90"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Key'",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputActionEvent_Key6",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_InputActionEvent_Key7'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.91"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Key'",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputActionEvent_Key5",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_InputActionEvent_Key6'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.92"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Key'",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputActionEvent_Key4",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_InputActionEvent_Key5'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.93"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Key'",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputActionEvent_Key3",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_InputActionEvent_Key4'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.94"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Key'",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputActionEvent_Key2",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_InputActionEvent_Key3'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.95"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Key'",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_InputActionEvent_Key",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_InputActionEvent_Key2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.96"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Key'",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.K2Node_InputActionEvent_Key'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.97"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_TslArenaSpectatorPawn_Default",
+    "Outer": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.98"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "Function",
+    "Name": "switchedSpectatorCamera",
+    "Outer": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.99"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'TslSpectatorPawn:switchedSpectatorCamera'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_ReplayEditorReplayMode_K2Node_InputActionEvent_7",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Key'",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_ReplayEditorReplayMode_K2Node_InputActionEvent_7",
+    "Outer": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:switchedSpectatorCamera'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.100"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorReplayMode_K2Node_InputActionEvent_7.Key'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.101"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_ReplayEditorEditMode_K2Node_InputActionEvent_8",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Key'",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_ReplayEditorEditMode_K2Node_InputActionEvent_8",
+    "Outer": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorReplayMode_K2Node_InputActionEvent_7'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.102"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorEditMode_K2Node_InputActionEvent_8.Key'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.103"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_ReplayEditorExportCancel_K2Node_InputActionEvent_9",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Key'",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_ReplayEditorExportCancel_K2Node_InputActionEvent_9",
+    "Outer": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorEditMode_K2Node_InputActionEvent_8'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.104"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorExportCancel_K2Node_InputActionEvent_9.Key'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.105"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_ReplayEditorSettingReset_K2Node_InputActionEvent_10",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Key'",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_ReplayEditorSettingReset_K2Node_InputActionEvent_10",
+    "Outer": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorExportCancel_K2Node_InputActionEvent_9'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.106"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorSettingReset_K2Node_InputActionEvent_10.Key'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.107"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_ReplayEditorSettingApply_K2Node_InputActionEvent_11",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Key'",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_ReplayEditorSettingApply_K2Node_InputActionEvent_11",
+    "Outer": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorSettingReset_K2Node_InputActionEvent_10'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.108"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorSettingApply_K2Node_InputActionEvent_11.Key'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.109"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_ReplayEditorExport_K2Node_InputActionEvent_12",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Key'",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_ReplayEditorExport_K2Node_InputActionEvent_12",
+    "Outer": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorSettingApply_K2Node_InputActionEvent_11'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.110"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorExport_K2Node_InputActionEvent_12.Key'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.111"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Key",
+    "Outer": "InpActEvt_ReplayEditorSave_K2Node_InputActionEvent_13",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Key'",
+      "ObjectPath": "/Script/InputCore"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "InpActEvt_ReplayEditorSave_K2Node_InputActionEvent_13",
+    "Outer": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorExport_K2Node_InputActionEvent_12'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.112"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorSave_K2Node_InputActionEvent_13.Key'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.113"
+      }
+    ],
+    "FunctionFlags": 134217728
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorSave_K2Node_InputActionEvent_13'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.114"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.115"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "InputActionDelegateBinding'TslArenaSpectatorPawn_Default_C:InputActionDelegateBinding_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.121"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'TslArenaSpectatorPawn_Default_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.124"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.116"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.99"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslArenaSpectatorPawn'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'TslArenaSpectatorPawn_Default_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.116"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_TslArenaSpectatorPawn_Default": {
+        "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:ExecuteUbergraph_TslArenaSpectatorPawn_Default'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.99"
+      },
+      "switchedSpectatorCamera": {
+        "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:switchedSpectatorCamera'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.100"
+      },
+      "InpActEvt_ReplayEditorReplayMode_K2Node_InputActionEvent_7": {
+        "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorReplayMode_K2Node_InputActionEvent_7'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.102"
+      },
+      "InpActEvt_ReplayEditorEditMode_K2Node_InputActionEvent_8": {
+        "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorEditMode_K2Node_InputActionEvent_8'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.104"
+      },
+      "InpActEvt_ReplayEditorExportCancel_K2Node_InputActionEvent_9": {
+        "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorExportCancel_K2Node_InputActionEvent_9'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.106"
+      },
+      "InpActEvt_ReplayEditorSettingReset_K2Node_InputActionEvent_10": {
+        "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorSettingReset_K2Node_InputActionEvent_10'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.108"
+      },
+      "InpActEvt_ReplayEditorSettingApply_K2Node_InputActionEvent_11": {
+        "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorSettingApply_K2Node_InputActionEvent_11'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.110"
+      },
+      "InpActEvt_ReplayEditorExport_K2Node_InputActionEvent_12": {
+        "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorExport_K2Node_InputActionEvent_12'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.112"
+      },
+      "InpActEvt_ReplayEditorSave_K2Node_InputActionEvent_13": {
+        "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:InpActEvt_ReplayEditorSave_K2Node_InputActionEvent_13'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.114"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'TslArenaSpectatorPawn_Default_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.115"
+      }
+    },
+    "ClassFlags": 8651284,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "TslArenaSpectatorPawn_Default_C'Default__TslArenaSpectatorPawn_Default_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.118"
+    }
+  },
+  {
+    "Type": "TslArenaSpectatorPawn_Default_C",
+    "Name": "Default__TslArenaSpectatorPawn_Default_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.TslArenaSpectatorPawn_Default_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "MyShake": {
+        "ObjectName": "Class'CameraShake'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "OnGotoLobby": {
+        "Num": 119,
+        "Name": "OnGoToTheLobby"
+      },
+      "LevelAttributeClasses": null,
+      "ReplayHUD": null,
+      "FreeCameraSpringArmComponent": {
+        "ObjectName": "SpringArmComponent'Default__TslArenaSpectatorPawn_Default_C:FreeCameraSpringArmComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.126"
+      },
+      "FreeCameraComponent": {
+        "ObjectName": "CameraComponent'Default__TslArenaSpectatorPawn_Default_C:FreeCameraComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.120"
+      },
+      "FollowCameraSpringArmComponent": {
+        "ObjectName": "TslFollowCameraSpringArmComponent'Default__TslArenaSpectatorPawn_Default_C:FollowCameraSpringArmComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.129"
+      },
+      "FollowCameraComponent": {
+        "ObjectName": "TslFollowCameraComponent'Default__TslArenaSpectatorPawn_Default_C:FollowCameraComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.128"
+      },
+      "UpdateCameraComponent": {
+        "ObjectName": "UpdateCameraComponent'Default__TslArenaSpectatorPawn_Default_C:UpdateCameraComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.132"
+      },
+      "AudioListener": {
+        "ObjectName": "ArrowComponent'Default__TslArenaSpectatorPawn_Default_C:AudioListener'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.119"
+      },
+      "DeathCameraComponent": {
+        "ObjectName": "TslDeathCameraComponent'Default__TslArenaSpectatorPawn_Default_C:DeathCameraComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.127"
+      },
+      "ReplayZoneEffectClass": null,
+      "ReplayZoneAreaClass": null,
+      "TslGamepadInputComponent": {
+        "ObjectName": "TslGamepadPawnInputComponent'Default__TslArenaSpectatorPawn_Default_C:TslGamepadInputComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.130"
+      },
+      "MovementComponent": {
+        "ObjectName": "TslSpectatorPawnMovement'Default__TslArenaSpectatorPawn_Default_C:MovementComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.131"
+      },
+      "CollisionComponent": {
+        "ObjectName": "SphereComponent'Default__TslArenaSpectatorPawn_Default_C:CollisionComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.125"
+      },
+      "RootComponent": {
+        "ObjectName": "SphereComponent'Default__TslArenaSpectatorPawn_Default_C:CollisionComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.125"
+      }
+    }
+  },
+  {
+    "Type": "ArrowComponent",
+    "Name": "AudioListener",
+    "Outer": "Default__TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'ArrowComponent'",
+    "Properties": {
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.0,
+        "Roll": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__TslArenaSpectatorPawn_Default_C:CollisionComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.125"
+      },
+      "ComponentTags": [
+        "AudioListener"
+      ]
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "FreeCameraComponent",
+    "Outer": "Default__TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'CameraComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SpringArmComponent'Default__TslArenaSpectatorPawn_Default_C:FreeCameraSpringArmComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.126"
+      }
+    }
+  },
+  {
+    "Type": "InputActionDelegateBinding",
+    "Name": "InputActionDelegateBinding_1",
+    "Outer": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'InputActionDelegateBinding'",
+    "Properties": {
+      "InputActionDelegateBindings": [
+        {
+          "InputActionName": "ReplayEditorSave",
+          "InputKeyEvent": "IE_Pressed",
+          "FunctionNameToBind": "InpActEvt_ReplayEditorSave_K2Node_InputActionEvent_13",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputActionName": "ReplayEditorExport",
+          "InputKeyEvent": "IE_Pressed",
+          "FunctionNameToBind": "InpActEvt_ReplayEditorExport_K2Node_InputActionEvent_12",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputActionName": "ReplayEditorSettingApply",
+          "InputKeyEvent": "IE_Pressed",
+          "FunctionNameToBind": "InpActEvt_ReplayEditorSettingApply_K2Node_InputActionEvent_11",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputActionName": "ReplayEditorSettingReset",
+          "InputKeyEvent": "IE_Pressed",
+          "FunctionNameToBind": "InpActEvt_ReplayEditorSettingReset_K2Node_InputActionEvent_10",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputActionName": "ReplayEditorExportCancel",
+          "InputKeyEvent": "IE_Pressed",
+          "FunctionNameToBind": "InpActEvt_ReplayEditorExportCancel_K2Node_InputActionEvent_9",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputActionName": "ReplayEditorEditMode",
+          "InputKeyEvent": "IE_Pressed",
+          "FunctionNameToBind": "InpActEvt_ReplayEditorEditMode_K2Node_InputActionEvent_8",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        },
+        {
+          "InputActionName": "ReplayEditorReplayMode",
+          "InputKeyEvent": "IE_Pressed",
+          "FunctionNameToBind": "InpActEvt_ReplayEditorReplayMode_K2Node_InputActionEvent_7",
+          "bConsumeInput": true,
+          "bExecuteWhenPaused": false,
+          "bOverrideParentBinding": true
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'TslArenaSpectatorPawn_Default_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.122"
+      },
+      "VariableGuid": "F0520CF4-4EBC7466-50D5CA89-3D812633",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'TslArenaSpectatorPawn_Default_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.123"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "CollisionComponent0",
+    "Outer": "Default__TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'SphereComponent'"
+  },
+  {
+    "Type": "SpringArmComponent",
+    "Name": "FreeCameraSpringArmComponent",
+    "Outer": "Default__TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'SpringArmComponent'",
+    "Properties": {
+      "CameraLagSpeed": 2.0,
+      "CameraRotationLagSpeed": 2.0,
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__TslArenaSpectatorPawn_Default_C:CollisionComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.125"
+      }
+    }
+  },
+  {
+    "Type": "TslDeathCameraComponent",
+    "Name": "DeathCameraComponent",
+    "Outer": "Default__TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'TslDeathCameraComponent'"
+  },
+  {
+    "Type": "TslFollowCameraComponent",
+    "Name": "FollowCameraComponent",
+    "Outer": "Default__TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'TslFollowCameraComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "TslFollowCameraSpringArmComponent'Default__TslArenaSpectatorPawn_Default_C:FollowCameraSpringArmComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.129"
+      }
+    }
+  },
+  {
+    "Type": "TslFollowCameraSpringArmComponent",
+    "Name": "FollowCameraSpringArmComponent",
+    "Outer": "Default__TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'TslFollowCameraSpringArmComponent'",
+    "Properties": {
+      "SocketOffset": {
+        "X": 0.0,
+        "Y": 24.0,
+        "Z": 0.0
+      },
+      "TargetOffset": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 165.0
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__TslArenaSpectatorPawn_Default_C:CollisionComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/TslArenaSpectatorPawn_Default.125"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 15.0
+      }
+    }
+  },
+  {
+    "Type": "TslGamepadPawnInputComponent",
+    "Name": "TslGamepadInputComponent",
+    "Outer": "Default__TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'TslGamepadPawnInputComponent'"
+  },
+  {
+    "Type": "TslSpectatorPawnMovement",
+    "Name": "MovementComponent0",
+    "Outer": "Default__TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'TslSpectatorPawnMovement'",
+    "Properties": {
+      "FastMoveModifier": 3.0,
+      "MinFreeMoveSpeed": 1300.0,
+      "MaxFreeMoveSpeed": 14000.0,
+      "MaxFreeMoveSpeedHeight": 70000.0,
+      "AbsoluteMaxZ": 200000.0
+    }
+  },
+  {
+    "Type": "UpdateCameraComponent",
+    "Name": "UpdateCameraComponent",
+    "Outer": "Default__TslArenaSpectatorPawn_Default_C",
+    "Class": "UScriptClass'UpdateCameraComponent'"
+  }
+]

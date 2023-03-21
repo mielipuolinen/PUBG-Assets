@@ -1,0 +1,67 @@
+[
+  {
+    "Type": "FoliageType_InstancedStaticMesh",
+    "Name": "FoliageType_tree_1",
+    "Class": "UScriptClass'FoliageType_InstancedStaticMesh'",
+    "Properties": {
+      "Mesh": {
+        "ObjectName": "StaticMesh'bro_tree_09_Imposter'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Tree/bro_tree_09_Imposter.1"
+      },
+      "UpdateGuid": "485D3D97-43A5E4BB-9B18F983-1877CD1A",
+      "ZOffset": {
+        "Min": -30.0,
+        "Max": -30.0
+      },
+      "AlignToNormal": false,
+      "Height": {
+        "Min": 200.0
+      },
+      "LandscapeLayers": [
+        "Tree"
+      ],
+      "bAffectDynamicIndirectLighting": true,
+      "bAffectDistanceFieldLighting": true,
+      "bDecalChannelValid": true,
+      "DecalChannel": "EDecalChannel::Channel1",
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::QueryAndPhysics"
+      },
+      "CollisionRadius": 5.0,
+      "ShadeRadius": 2.0,
+      "NumSteps": 1,
+      "InitialSeedDensity": 0.1,
+      "AverageSpreadDistance": 2800.0,
+      "SpreadVariance": 300.0,
+      "MaxInitialSeedOffset": 4000.0,
+      "bCanGrowInShade": true,
+      "MaxAge": 1.0,
+      "OverlapPriority": 3.0,
+      "ProceduralScale": {
+        "Min": 0.7,
+        "Max": 0.7
+      },
+      "ScaleCurve": {
+        "EditorCurveData": {}
+      },
+      "ChangeCount": 6
+    }
+  }
+]

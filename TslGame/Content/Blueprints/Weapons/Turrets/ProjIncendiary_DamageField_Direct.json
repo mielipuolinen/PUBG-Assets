@@ -3,6 +3,7 @@
     "Type": "ByteProperty",
     "Name": "UnderlyingType",
     "Outer": "CallFunc_BranchOnPlatformGroup_PlatformGroupBranch",
+    "Class": "UScriptClass'ByteProperty'",
     "Next": null,
     "Enum": null
   },
@@ -10,6 +11,7 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsForKoreanRating_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "BoolSize": 1,
     "bIsNativeBool": true
@@ -18,8 +20,9 @@
     "Type": "BoolProperty",
     "Name": "K2Node_SwitchEnum_CmpSuccess",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_DamageField_Direct_C:UserConstructionScript.CallFunc_IsForKoreanRating_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_DamageField_Direct_C:UserConstructionScript.CallFunc_IsForKoreanRating_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.1"
     },
     "BoolSize": 1,
@@ -29,8 +32,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsForChineseLicensing_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_DamageField_Direct_C:UserConstructionScript.K2Node_SwitchEnum_CmpSuccess",
+      "ObjectName": "BoolProperty'ProjIncendiary_DamageField_Direct_C:UserConstructionScript.K2Node_SwitchEnum_CmpSuccess'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.2"
     },
     "BoolSize": 1,
@@ -40,16 +44,17 @@
     "Type": "EnumProperty",
     "Name": "CallFunc_BranchOnPlatformGroup_PlatformGroupBranch",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'EnumProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_DamageField_Direct_C:UserConstructionScript.CallFunc_IsForChineseLicensing_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_DamageField_Direct_C:UserConstructionScript.CallFunc_IsForChineseLicensing_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.3"
     },
     "Enum": {
-      "ObjectName": "Enum ETslPlatformGroupBranch_BPOnly",
+      "ObjectName": "Enum'ETslPlatformGroupBranch_BPOnly'",
       "ObjectPath": "/Script/TslGame"
     },
     "UnderlyingProp": {
-      "ObjectName": "ByteProperty ProjIncendiary_DamageField_Direct_C:UserConstructionScript.CallFunc_BranchOnPlatformGroup_PlatformGroupBranch.UnderlyingType",
+      "ObjectName": "ByteProperty'ProjIncendiary_DamageField_Direct_C:UserConstructionScript.CallFunc_BranchOnPlatformGroup_PlatformGroupBranch.UnderlyingType'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.0"
     }
   },
@@ -57,14 +62,15 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjIncendiary_DamageField_Direct_C",
+    "Class": "UScriptClass'Function'",
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "Children": [
       {
-        "ObjectName": "EnumProperty ProjIncendiary_DamageField_Direct_C:UserConstructionScript.CallFunc_BranchOnPlatformGroup_PlatformGroupBranch",
+        "ObjectName": "EnumProperty'ProjIncendiary_DamageField_Direct_C:UserConstructionScript.CallFunc_BranchOnPlatformGroup_PlatformGroupBranch'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.4"
       }
     ],
@@ -73,65 +79,67 @@
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjIncendiary_DamageField_Direct_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjIncendiary_DamageField_Direct_C:SimpleConstructionScript_0",
+        "ObjectName": "SimpleConstructionScript'ProjIncendiary_DamageField_Direct_C:SimpleConstructionScript_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.10"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslDamageField",
+      "ObjectName": "Class'TslDamageField'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "Function ProjIncendiary_DamageField_Direct_C:UserConstructionScript",
+        "ObjectName": "Function'ProjIncendiary_DamageField_Direct_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.5"
       }
     ],
     "FuncMap": {
       "UserConstructionScript": {
-        "ObjectName": "Function ProjIncendiary_DamageField_Direct_C:UserConstructionScript",
+        "ObjectName": "Function'ProjIncendiary_DamageField_Direct_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.5"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjIncendiary_DamageField_Direct_C Default__ProjIncendiary_DamageField_Direct_C",
+      "ObjectName": "ProjIncendiary_DamageField_Direct_C'Default__ProjIncendiary_DamageField_Direct_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.7"
     }
   },
   {
     "Type": "ProjIncendiary_DamageField_Direct_C",
     "Name": "Default__ProjIncendiary_DamageField_Direct_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.ProjIncendiary_DamageField_Direct_C'",
     "Properties": {
       "DamageRadius": 65.0,
       "DamageFieldFX": {
-        "ObjectName": "ParticleSystem P_MolotovFlames",
+        "ObjectName": "ParticleSystem'P_MolotovFlames'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_MolotovFlames.104"
       },
       "DamageFieldType": "EDamageFieldType::DirectTick",
       "DamageType": {
-        "ObjectName": "BlueprintGeneratedClass DmgType_KillTruckTurret_C",
+        "ObjectName": "BlueprintGeneratedClass'DmgType_KillTruckTurret_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_KillTruckTurret.0"
       },
       "DebuffTemplate": {
-        "ObjectName": "BlueprintGeneratedClass BP_IncendiaryDebuff_C",
+        "ObjectName": "BlueprintGeneratedClass'BP_IncendiaryDebuff_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Buff/BP_IncendiaryDebuff.2"
       },
       "SphereCollision": {
-        "ObjectName": "SphereComponent Default__ProjIncendiary_DamageField_Direct_C:SphereCollision",
+        "ObjectName": "SphereComponent'Default__ProjIncendiary_DamageField_Direct_C:SphereCollision'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.11"
       },
       "SimpleCollision": {
-        "ObjectName": "TslSimpleCollisionReceiver Default__ProjIncendiary_DamageField_Direct_C:SimpleCollision",
+        "ObjectName": "TslSimpleCollisionReceiver'Default__ProjIncendiary_DamageField_Direct_C:SimpleCollision'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.12"
       },
       "SimpleCollisionOffset": {
@@ -141,31 +149,33 @@
       },
       "bCanBeDamaged": false,
       "bFindCameraComponentWhenViewTarget": false,
-      "RootComponent": {
-        "ObjectName": "SphereComponent Default__ProjIncendiary_DamageField_Direct_C:SphereCollision",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.11"
-      },
       "PrimaryActorTick": {
         "bStartWithTickEnabled": false
+      },
+      "RootComponent": {
+        "ObjectName": "SphereComponent'Default__ProjIncendiary_DamageField_Direct_C:SphereCollision'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.11"
       }
     }
   },
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "ProjIncendiary_DamageField_Direct_C"
+    "Outer": "ProjIncendiary_DamageField_Direct_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjIncendiary_DamageField_Direct_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'ProjIncendiary_DamageField_Direct_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.8"
       },
       "VariableGuid": "9DD632BC-4EEA668E-886FE49A-9E67B3CF",
@@ -176,9 +186,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0",
     "Outer": "ProjIncendiary_DamageField_Direct_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjIncendiary_DamageField_Direct_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectName": "SCS_Node'ProjIncendiary_DamageField_Direct_C:SimpleConstructionScript_0.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.9"
       }
     }
@@ -187,12 +198,13 @@
     "Type": "SphereComponent",
     "Name": "SphereCollision",
     "Outer": "Default__ProjIncendiary_DamageField_Direct_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "OnComponentBeginOverlap": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "ProjIncendiary_DamageField_Direct_C Default__ProjIncendiary_DamageField_Direct_C",
+              "ObjectName": "ProjIncendiary_DamageField_Direct_C'Default__ProjIncendiary_DamageField_Direct_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.7"
             },
             "FunctionName": "OverlapStart"
@@ -203,7 +215,7 @@
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "ProjIncendiary_DamageField_Direct_C Default__ProjIncendiary_DamageField_Direct_C",
+              "ObjectName": "ProjIncendiary_DamageField_Direct_C'Default__ProjIncendiary_DamageField_Direct_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.7"
             },
             "FunctionName": "OverlapEnd"
@@ -217,9 +229,10 @@
     "Type": "TslSimpleCollisionReceiver",
     "Name": "SimpleCollision",
     "Outer": "Default__ProjIncendiary_DamageField_Direct_C",
+    "Class": "UScriptClass'TslSimpleCollisionReceiver'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjIncendiary_DamageField_Direct_C:SphereCollision",
+        "ObjectName": "SphereComponent'Default__ProjIncendiary_DamageField_Direct_C:SphereCollision'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageField_Direct.11"
       }
     }

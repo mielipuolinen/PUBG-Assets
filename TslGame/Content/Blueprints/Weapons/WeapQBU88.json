@@ -3,26 +3,27 @@
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapQBU88_C",
     "Super": "DefaultRifleSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapQBU88_C:SimpleConstructionScript_1",
+        "ObjectName": "SimpleConstructionScript'WeapQBU88_C:SimpleConstructionScript_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapQBU88.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectName": "BlueprintGeneratedClass'DefaultRifleSetting_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapQBU88_C Default__WeapQBU88_C",
+      "ObjectName": "WeapQBU88_C'Default__WeapQBU88_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapQBU88.1"
     }
   },
@@ -30,14 +31,15 @@
     "Type": "WeapQBU88_C",
     "Name": "Default__WeapQBU88_C",
     "Template": "Default__DefaultRifleSetting_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/WeapQBU88.WeapQBU88_C'",
     "Properties": {
       "TrailFX": null,
       "ImpactTemplate": {
-        "ObjectName": "BlueprintGeneratedClass GunImpact_Heavy_C",
+        "ObjectName": "BlueprintGeneratedClass'GunImpact_Heavy_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Heavy.4"
       },
       "WeaponTrajectoryData": {
-        "ObjectName": "WeaponTrajectoryData WeapQBU88_WeaponTrajectoryData",
+        "ObjectName": "WeaponTrajectoryData'WeapQBU88_WeaponTrajectoryData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapQBU88_WeaponTrajectoryData.0"
       },
       "WeaponGunPostprocessSettings": {
@@ -50,11 +52,11 @@
         "DepthBlurBlackPoint": 70.0
       },
       "WeaponGunData": {
-        "ObjectName": "WeaponGunDataAsset WeapQBU88_WeaponGunData",
+        "ObjectName": "WeaponGunDataAsset'WeapQBU88_WeaponGunData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapQBU88_WeaponGunData.0"
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_gun_QBU88",
+        "ObjectName": "Texture2D'weapons_gun_QBU88'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_QBU88.0"
       },
       "WeaponIconRatio": 3.28,
@@ -77,7 +79,7 @@
           200.0
         ],
         "RecoilMontage": {
-          "ObjectName": "AnimMontage DMR_Recoil_556_Montage",
+          "ObjectName": "AnimMontage'DMR_Recoil_556_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Recoil/DMR_Recoil_556_Montage.0"
         },
         "WeaponEquipDuration": 0.2,
@@ -85,7 +87,7 @@
         "PhysicalBodyHitImpactPower": 10000.0
       },
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapQBU88_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__WeapQBU88_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapQBU88.6"
       },
       "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
@@ -154,7 +156,7 @@
           "AttachmentMeshAsset": "/Game/Weapon/Rifles/QBU/Meshes/SM_QBU88_Mag.SM_QBU88_Mag",
           "AttachmentMeshName": "MagazineDefault",
           "AttachmentTemplate": {
-            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectName": "Class'AsyncStaticMeshComponent'",
             "ObjectPath": "/Script/TslGame"
           }
         },
@@ -164,41 +166,48 @@
           "AttachmentMeshAsset": "/Game/Weapon/Rifles/QBU/Meshes/QBU88_Muzzle_Set.QBU88_Muzzle_Set",
           "AttachmentMeshName": "MuzzleSniperRifle",
           "AttachmentTemplate": {
-            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectName": "Class'AsyncStaticMeshComponent'",
             "ObjectPath": "/Script/TslGame"
           }
         }
       ],
       "WeaponTag": "QBU",
       "MuzzleFX": {
-        "ObjectName": "ParticleSystem P_Muzzle_QBU88",
+        "ObjectName": "ParticleSystem'P_Muzzle_QBU88'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/DMR/P_Muzzle_QBU88.122"
       },
-      "EquipAnimData": {
-        "EAccessorySlot::Slot_Secondary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
-          },
-          "PlayRate": 1.5
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_Secondary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_SecondarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.5
+          }
         },
-        "EAccessorySlot::Slot_SideArm": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_SideArm": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PistolSlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
         },
-        "EAccessorySlot::Slot_Primary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_Primary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PrimarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
         }
-      },
+      ],
+      "bNeedSleepWeaponMesh": false,
       "WeaponAudioData": {
-        "ObjectName": "WeaponAudioData WeapQBU88_WeaponAudioData",
+        "ObjectName": "WeaponAudioData'WeapQBU88_WeaponAudioData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapQBU88_WeaponAudioData.0"
       },
       "ReplicatedMovement": {
@@ -206,7 +215,7 @@
         "RotationQuantizationLevel": "ERotatorQuantization::ShortComponents"
       },
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapQBU88_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapQBU88_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapQBU88.2"
       }
     }
@@ -216,12 +225,13 @@
     "Name": "RootScene",
     "Outer": "Default__WeapQBU88_C",
     "Template": "RootScene",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapQBU88_C Default__WeapQBU88_C",
+              "ObjectName": "WeapQBU88_C'Default__WeapQBU88_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapQBU88.1"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -233,19 +243,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapQBU88_C"
+    "Outer": "WeapQBU88_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapQBU88_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapQBU88_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapQBU88.3"
       },
       "VariableGuid": "D6F634D4-4DBF99D6-59773C9A-370D8B0F",
@@ -256,9 +268,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_1",
     "Outer": "WeapQBU88_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapQBU88_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectName": "SCS_Node'WeapQBU88_C:SimpleConstructionScript_1.SCS_Node_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapQBU88.4"
       }
     }
@@ -268,20 +281,21 @@
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapQBU88_C",
     "Template": "WeaponMesh3P",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "AnimClass": {
-        "ObjectName": "AnimBlueprintGeneratedClass ABP_Weapon_QBU88_RD_C",
-        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/QBU88/Redux/ABP_Weapon_QBU88_RD.73"
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_Weapon_QBU88_RD_C'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/QBU88/Redux/ABP_Weapon_QBU88_RD.77"
       },
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh SK_QBU88",
+        "ObjectName": "SkeletalMesh'SK_QBU88'",
         "ObjectPath": "TslGame/Content/Weapon/Rifles/QBU/Meshes/SK_QBU88.0"
       },
       "BodyInstance": {
         "MassInKgOverride": 0.0
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapQBU88_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapQBU88_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapQBU88.2"
       }
     }

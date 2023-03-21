@@ -1,0 +1,155 @@
+[
+  {
+    "Type": "VaultingData",
+    "Name": "DA_Ledge_Grab_Up_Vault",
+    "Class": "UScriptClass'VaultingData'",
+    "Properties": {
+      "MoveRequirements": {
+        "RowRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": 1
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 24
+          }
+        },
+        "SpeedRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Inclusive"
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 1000.0
+          }
+        },
+        "ZSpeedRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": -400.0
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Exclusive"
+          }
+        },
+        "LedgeRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 10
+          }
+        },
+        "IsVault": "EVaultRequirementType::VaultReqType_True",
+        "IsLedgeGrab": "EVaultRequirementType::VaultReqType_True",
+        "IsSlide": "EVaultRequirementType::VaultReqType_Any",
+        "ExecConfig": {
+          "ExecutionDistance": 60.0,
+          "AnticipationDistance": 250.0,
+          "bUseAnimStartForDistance": true,
+          "bUse3DDistance": true,
+          "ExecutionZRange": {
+            "LowerBound": {
+              "Value": -60.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 20.0
+            }
+          },
+          "AnticipationAnim": {
+            "ObjectName": "AnimSequence'Ledge_Grab_Up_Anticipate'",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/Ledge_Grab_Up_Anticipate.0"
+          }
+        }
+      },
+      "VaultAnimType": "EVaultAnimType::LedgeGrab_Up_Vault",
+      "LocationStartNormalScale": 69.66,
+      "LocationStartZOffset": -158.53,
+      "LocationEndNormalScale": -131.09,
+      "LocationEndZOffset": -148.06,
+      "PreApexSpeedScale": 0.36,
+      "PostApexSpeedScale": 0.48,
+      "AnimBlendInTime": 0.25,
+      "AnimBlendOutTime": 0.4,
+      "ApexAdditiveStartTime": 0.45,
+      "ApexAdditiveEndTime": 0.8,
+      "StartCutoffByDistance_InMap": {
+        "X": 40.0,
+        "Y": 200.0
+      },
+      "StartCutoffBySpeed_InMap": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_InMap_PreApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PreApex": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "PlayrateBySpeed_InMap_PostApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PostApex": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "AnimationSequence": {
+        "ObjectName": "AnimSequence'Ledge_Grab_Up_Vault'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/Ledge_Grab_Up_Vault.10"
+      },
+      "AnimationSequence_FPP": {
+        "ObjectName": "AnimSequence'Ledge_Grab_Up_Vault_FPP'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/FPP/Ledge_Grab_Up_Vault_FPP.9"
+      },
+      "AnimationSequence_Rifle": {
+        "ObjectName": "AnimSequence'Ledge_Grab_Up_Vault'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/Ledge_Grab_Up_Vault.10"
+      },
+      "AnimationSequence_Rifle_FPP": {
+        "ObjectName": "AnimSequence'Ledge_Grab_Up_Vault_FPP'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/FPP/Ledge_Grab_Up_Vault_FPP.9"
+      },
+      "AnimationCurve": {
+        "ObjectName": "CurveFloat'C_Ledge_Grab_Low_Vault'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Curves/C_Ledge_Grab_Low_Vault.0"
+      },
+      "CharLocationInterpSpeedInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "CharLocationInterpSpeedOutMap": {
+        "X": 15.0,
+        "Y": 15.0
+      },
+      "TimerProgressionByDistanceInMap": {
+        "X": 20.0,
+        "Y": 100.0
+      },
+      "TimerProgressionByDistanceOutMap": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "TimerProgressionVTimerMax": 0.075,
+      "VaultEndTimerNormal": 1.0,
+      "VaultEndTimerFall": 0.8,
+      "CharacterPostVaultVelocityScalar": 1.0,
+      "CharacterPostVaultVelocityScalarVector": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      },
+      "bIsCancellable": true,
+      "MinCancelVTimer": 0.15,
+      "MaxCancelVTimer": 0.4,
+      "TaskEndVTimer": 0.2,
+      "PostVaultTimerProgressionScale": 1.0,
+      "bUseMappedVTimerDampening": true,
+      "MappedDampeningScalar": 0.3,
+      "MappedDampeningVTimerMax": 0.09
+    }
+  }
+]

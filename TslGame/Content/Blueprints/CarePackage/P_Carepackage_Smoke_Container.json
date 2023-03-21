@@ -1,0 +1,121 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "P_Carepackage_Smoke_Container_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'P_Carepackage_Smoke_Container_C:SimpleConstructionScript_1'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Smoke_Container.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslParticle'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "P_Carepackage_Smoke_Container_C'Default__P_Carepackage_Smoke_Container_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Smoke_Container.1"
+    }
+  },
+  {
+    "Type": "P_Carepackage_Smoke_Container_C",
+    "Name": "Default__P_Carepackage_Smoke_Container_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/P_Carepackage_Smoke_Container.P_Carepackage_Smoke_Container_C'",
+    "Properties": {
+      "bConvertForColorBlind": true,
+      "VectorParameters": null,
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Default__P_Carepackage_Smoke_Container_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Smoke_Container.3"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Default__P_Carepackage_Smoke_Container_C:AkSound'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Smoke_Container.2"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Default__P_Carepackage_Smoke_Container_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Smoke_Container.3"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Default__P_Carepackage_Smoke_Container_C",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Default__P_Carepackage_Smoke_Container_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Smoke_Container.3"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "Default__P_Carepackage_Smoke_Container_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_CarePackage_02_Container'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_CarePackage_02_Container.101"
+      },
+      "OnSystemFinished": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "P_Carepackage_Smoke_Container_C'Default__P_Carepackage_Smoke_Container_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Smoke_Container.1"
+            },
+            "FunctionName": "OnParticleFinish"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "P_Carepackage_Smoke_Container_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'P_Carepackage_Smoke_Container_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Smoke_Container.4"
+      },
+      "VariableGuid": "B5A04342-451535D5-E69A1AAA-CB52CF3F",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_1",
+    "Outer": "P_Carepackage_Smoke_Container_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'P_Carepackage_Smoke_Container_C:SimpleConstructionScript_1.SCS_Node_1'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Smoke_Container.5"
+      }
+    }
+  }
+]

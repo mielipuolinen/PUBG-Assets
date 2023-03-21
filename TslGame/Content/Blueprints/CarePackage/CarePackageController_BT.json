@@ -1,0 +1,237 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "CarePackageController_BT",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Sequence'CarePackageController_BT:BTComposite_Sequence_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.1"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'CarePackageController_BB'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BB.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_0",
+    "Outer": "CarePackageController_BT",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_SimpleParallel'CarePackageController_BT:BTComposite_SimpleParallel_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.4"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'CarePackageController_BT:BTComposite_Sequence_3'",
+            "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.3"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'CarePackageController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_2",
+    "Outer": "CarePackageController_BT",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "Task_SpawnAircraft_C'CarePackageController_BT:Task_SpawnAircraft_C_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.9"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'CarePackageController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'CarePackageController_BT:BTComposite_SimpleParallel_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.4"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_3",
+    "Outer": "CarePackageController_BT",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "Task_FinishCarePackage_C'CarePackageController_BT:Task_FinishCarePackage_C_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.8"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'CarePackageController_BT:BTTask_Wait_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.6"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Loop'CarePackageController_BT:BTDecorator_Loop_0'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.5"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'CarePackageController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'CarePackageController_BT:BTComposite_Sequence_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.1"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_SimpleParallel",
+    "Name": "BTComposite_SimpleParallel_0",
+    "Outer": "CarePackageController_BT",
+    "Class": "UScriptClass'BTComposite_SimpleParallel'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "Task_CarePackageFinishCheck_C'CarePackageController_BT:Task_CarePackageFinishCheck_C_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.7"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'CarePackageController_BT:BTComposite_Sequence_2'",
+            "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.2"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'CarePackageController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'CarePackageController_BT:BTComposite_Sequence_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.1"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Loop",
+    "Name": "BTDecorator_Loop_0",
+    "Outer": "CarePackageController_BT",
+    "Class": "UScriptClass'BTDecorator_Loop'",
+    "Properties": {
+      "bInfiniteLoop": true,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'CarePackageController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'CarePackageController_BT:BTComposite_Sequence_3'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.3"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_0",
+    "Outer": "CarePackageController_BT",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'CarePackageController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'CarePackageController_BT:BTComposite_Sequence_3'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.3"
+      }
+    }
+  },
+  {
+    "Type": "Task_CarePackageFinishCheck_C",
+    "Name": "Task_CarePackageFinishCheck_C_0",
+    "Outer": "CarePackageController_BT",
+    "Template": "Default__Task_CarePackageFinishCheck_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.Task_CarePackageFinishCheck_C'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'CarePackageController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'CarePackageController_BT:BTComposite_SimpleParallel_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.4"
+      }
+    }
+  },
+  {
+    "Type": "Task_FinishCarePackage_C",
+    "Name": "Task_FinishCarePackage_C_0",
+    "Outer": "CarePackageController_BT",
+    "Template": "Default__Task_FinishCarePackage_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Task_FinishCarePackage.Task_FinishCarePackage_C'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'CarePackageController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'CarePackageController_BT:BTComposite_Sequence_3'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.3"
+      }
+    }
+  },
+  {
+    "Type": "Task_SpawnAircraft_C",
+    "Name": "Task_SpawnAircraft_C_0",
+    "Outer": "CarePackageController_BT",
+    "Template": "Default__Task_SpawnAircraft_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.Task_SpawnAircraft_C'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'CarePackageController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'CarePackageController_BT:BTComposite_Sequence_2'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackageController_BT.2"
+      }
+    }
+  }
+]

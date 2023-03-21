@@ -3,26 +3,27 @@
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapDP28_C",
     "Super": "DefaultRifleSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapDP28_C:SimpleConstructionScript_0",
+        "ObjectName": "SimpleConstructionScript'WeapDP28_C:SimpleConstructionScript_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectName": "BlueprintGeneratedClass'DefaultRifleSetting_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapDP28_C Default__WeapDP28_C",
+      "ObjectName": "WeapDP28_C'Default__WeapDP28_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.1"
     }
   },
@@ -30,10 +31,11 @@
     "Type": "WeapDP28_C",
     "Name": "Default__WeapDP28_C",
     "Template": "Default__DefaultRifleSetting_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/WeapDP28.WeapDP28_C'",
     "Properties": {
       "TrailFX": null,
       "WeaponTrajectoryData": {
-        "ObjectName": "WeaponTrajectoryData WeapDP28_WeaponTrajectoryData",
+        "ObjectName": "WeaponTrajectoryData'WeapDP28_WeaponTrajectoryData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapDP28_WeaponTrajectoryData.0"
       },
       "WeaponGunPostprocessSettings": {
@@ -45,12 +47,12 @@
         "DepthBlurBlackPoint": 50.0
       },
       "WeaponGunData": {
-        "ObjectName": "WeaponGunDataAsset WeapDP28_WeaponGunData",
+        "ObjectName": "WeaponGunDataAsset'WeapDP28_WeaponGunData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapDP28_WeaponGunData.0"
       },
       "MagDropOverrides": {
         "Mesh": {
-          "ObjectName": "StaticMesh DP28_Mag",
+          "ObjectName": "StaticMesh'DP28_Mag'",
           "ObjectPath": "TslGame/Content/Weapon/Rifles/DP28/Meshes/DP28_Mag.1"
         },
         "bUseParentMaterial": true,
@@ -58,7 +60,7 @@
         "MagazineMaterialSlotName": "Material #85"
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_gun_DP28",
+        "ObjectName": "Texture2D'weapons_gun_DP28'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_DP28.0"
       },
       "WeaponIconRatio": 3.28,
@@ -89,7 +91,7 @@
           1000.0
         ],
         "RecoilMontage": {
-          "ObjectName": "AnimMontage Rifle_Recoil_762_DP28_Montage",
+          "ObjectName": "AnimMontage'Rifle_Recoil_762_DP28_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DP28/Recoil/Rifle_Recoil_762_DP28_Montage.0"
         },
         "WeaponEquipDuration": 0.2,
@@ -98,7 +100,7 @@
         "PhysicalBodyHitImpactPower": 10000.0
       },
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapDP28_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__WeapDP28_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.6"
       },
       "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
@@ -120,7 +122,7 @@
       ],
       "WeaponTag": "DP28",
       "MuzzleFX": {
-        "ObjectName": "ParticleSystem P_Muzzle_DP28",
+        "ObjectName": "ParticleSystem'P_Muzzle_DP28'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Other/P_Muzzle_DP28.122"
       },
       "WeaponAnim": {
@@ -130,35 +132,42 @@
         "RollLeft": null,
         "RollRight": null
       },
-      "EquipAnimData": {
-        "EAccessorySlot::Slot_Secondary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
-          },
-          "PlayRate": 1.5
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_Secondary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_SecondarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.5
+          }
         },
-        "EAccessorySlot::Slot_SideArm": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_SideArm": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PistolSlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
         },
-        "EAccessorySlot::Slot_Primary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_Primary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PrimarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
         }
-      },
+      ],
+      "bNeedSleepWeaponMesh": false,
       "WeaponAudioData": {
-        "ObjectName": "WeaponAudioData WeapDP28_WeaponAudioData",
+        "ObjectName": "WeaponAudioData'WeapDP28_WeaponAudioData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapDP28_WeaponAudioData.0"
       },
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapDP28_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapDP28_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.2"
       }
     }
@@ -168,12 +177,13 @@
     "Name": "RootScene",
     "Outer": "Default__WeapDP28_C",
     "Template": "RootScene",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapDP28_C Default__WeapDP28_C",
+              "ObjectName": "WeapDP28_C'Default__WeapDP28_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.1"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -185,19 +195,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapDP28_C"
+    "Outer": "WeapDP28_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapDP28_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapDP28_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.3"
       },
       "VariableGuid": "4B1B0ABE-483B9FB5-B48D1D92-B9412BF2",
@@ -208,9 +220,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0",
     "Outer": "WeapDP28_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapDP28_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectName": "SCS_Node'WeapDP28_C:SimpleConstructionScript_0.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.4"
       }
     }
@@ -220,13 +233,14 @@
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapDP28_C",
     "Template": "WeaponMesh3P",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "AnimClass": {
-        "ObjectName": "AnimBlueprintGeneratedClass ABP_DP28_RD_C",
-        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DP28/Redux/Weapon_RD/ABP_DP28_RD.95"
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_DP28_RD_C'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DP28/Redux/Weapon_RD/ABP_DP28_RD.99"
       },
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh DP28_Set",
+        "ObjectName": "SkeletalMesh'DP28_Set'",
         "ObjectPath": "TslGame/Content/Weapon/Rifles/DP28/Meshes/DP28_Set.0"
       },
       "bEnableUpdateRateOptimizations": true,
@@ -234,7 +248,7 @@
         "MassInKgOverride": 14.318548
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapDP28_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapDP28_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapDP28.2"
       }
     }

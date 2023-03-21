@@ -1,0 +1,377 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Sequence'BattleRoyaleModeController_BT:BTComposite_Sequence_4'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.2"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'BattleRoyaleModeController_BB'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BB.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_2",
+    "Outer": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_FinishMatch'BattleRoyaleModeController_BT:BTTask_FinishMatch_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.11"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'BattleRoyaleModeController_BT:BTTask_Wait_1'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.13"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Loop'BattleRoyaleModeController_BT:BTDecorator_Loop_1'",
+              "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.5"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BattleRoyaleModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'BattleRoyaleModeController_BT:BTComposite_Sequence_4'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_4",
+    "Outer": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_SimpleParallel'BattleRoyaleModeController_BT:BTComposite_SimpleParallel_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.4"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'BattleRoyaleModeController_BT:BTComposite_Sequence_2'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.1"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BattleRoyaleModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_5",
+    "Outer": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_NextBluezoneInBlackBoard'BattleRoyaleModeController_BT:BTTask_NextBluezoneInBlackBoard_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.12"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_WaitBlackboardTime'BattleRoyaleModeController_BT:BTTask_WaitBlackboardTime_1'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.14"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_BluezoneWarning'BattleRoyaleModeController_BT:BTTask_BluezoneWarning_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.9"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_BluezoneRelease'BattleRoyaleModeController_BT:BTTask_BluezoneRelease_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.8"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "Services": [
+        {
+          "ObjectName": "BTService_BluezoneDamage'BattleRoyaleModeController_BT:BTService_BluezoneDamage_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.6"
+        },
+        {
+          "ObjectName": "BTService_PlayerFenceDamage'BattleRoyaleModeController_BT:BTService_PlayerFenceDamage_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.7"
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BattleRoyaleModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'BattleRoyaleModeController_BT:BTComposite_SimpleParallel_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.4"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_SimpleParallel",
+    "Name": "BTComposite_SimpleParallel_0",
+    "Outer": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BTComposite_SimpleParallel'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_CheckFinish'BattleRoyaleModeController_BT:BTTask_CheckFinish_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.10"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'BattleRoyaleModeController_BT:BTComposite_Sequence_5'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.3"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BattleRoyaleModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'BattleRoyaleModeController_BT:BTComposite_Sequence_4'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.2"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Loop",
+    "Name": "BTDecorator_Loop_1",
+    "Outer": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BTDecorator_Loop'",
+    "Properties": {
+      "bInfiniteLoop": true,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BattleRoyaleModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'BattleRoyaleModeController_BT:BTComposite_Sequence_2'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.1"
+      }
+    }
+  },
+  {
+    "Type": "BTService_BluezoneDamage",
+    "Name": "BTService_BluezoneDamage_0",
+    "Outer": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BTService_BluezoneDamage'",
+    "Properties": {
+      "BluezoneDamageType": {
+        "ObjectName": "BlueprintGeneratedClass'DmgType_BlueZone_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_BlueZone.0"
+      },
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BattleRoyaleModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'BattleRoyaleModeController_BT:BTComposite_Sequence_5'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.3"
+      }
+    }
+  },
+  {
+    "Type": "BTService_PlayerFenceDamage",
+    "Name": "BTService_PlayerFenceDamage_0",
+    "Outer": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BTService_PlayerFenceDamage'",
+    "Properties": {
+      "PlayerFenceZoneType": {
+        "ObjectName": "BlueprintGeneratedClass'DmgType_BlueZone_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_BlueZone.0"
+      },
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BattleRoyaleModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'BattleRoyaleModeController_BT:BTComposite_Sequence_5'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.3"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_BluezoneRelease",
+    "Name": "BTTask_BluezoneRelease_0",
+    "Outer": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BTTask_BluezoneRelease'",
+    "Properties": {
+      "ReleaseDuration": {
+        "SelectedKeyName": "ReleaseDuration"
+      },
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BattleRoyaleModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'BattleRoyaleModeController_BT:BTComposite_Sequence_5'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.3"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_BluezoneWarning",
+    "Name": "BTTask_BluezoneWarning_0",
+    "Outer": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BTTask_BluezoneWarning'",
+    "Properties": {
+      "WarningPosition": {
+        "SelectedKeyName": "WarningPosition"
+      },
+      "WarningRadius": {
+        "SelectedKeyName": "WarningRadius"
+      },
+      "WarningDuration": {
+        "SelectedKeyName": "WarningDuration"
+      },
+      "ReleaseDuration": {
+        "SelectedKeyName": "ReleaseDuration"
+      },
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BattleRoyaleModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'BattleRoyaleModeController_BT:BTComposite_Sequence_5'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.3"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_CheckFinish",
+    "Name": "BTTask_CheckFinish_0",
+    "Outer": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BTTask_CheckFinish'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BattleRoyaleModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'BattleRoyaleModeController_BT:BTComposite_SimpleParallel_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.4"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_FinishMatch",
+    "Name": "BTTask_FinishMatch_0",
+    "Outer": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BTTask_FinishMatch'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BattleRoyaleModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'BattleRoyaleModeController_BT:BTComposite_Sequence_2'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_NextBluezoneInBlackBoard",
+    "Name": "BTTask_NextBluezoneInBlackBoard_0",
+    "Outer": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BTTask_NextBluezoneInBlackBoard'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BattleRoyaleModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'BattleRoyaleModeController_BT:BTComposite_Sequence_5'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.3"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_1",
+    "Outer": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BattleRoyaleModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'BattleRoyaleModeController_BT:BTComposite_Sequence_2'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_WaitBlackboardTime",
+    "Name": "BTTask_WaitBlackboardTime_1",
+    "Outer": "BattleRoyaleModeController_BT",
+    "Class": "UScriptClass'BTTask_WaitBlackboardTime'",
+    "Properties": {
+      "BlackboardKey": {
+        "SelectedKeyName": "StartDelay"
+      },
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'BattleRoyaleModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'BattleRoyaleModeController_BT:BTComposite_Sequence_5'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BT.3"
+      }
+    }
+  }
+]

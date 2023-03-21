@@ -1,0 +1,215 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "LobbyCharacterFemale_v2_C",
+    "Super": "LobbyCharacterBase_v2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'LobbyCharacterFemale_v2_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.8"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'LobbyCharacterBase_v2_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "LobbyCharacterFemale_v2_C'Default__LobbyCharacterFemale_v2_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.1"
+    }
+  },
+  {
+    "Type": "LobbyCharacterFemale_v2_C",
+    "Name": "Default__LobbyCharacterFemale_v2_C",
+    "Template": "Default__LobbyCharacterBase_v2_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.LobbyCharacterFemale_v2_C'",
+    "Properties": {
+      "EmoteComponent": {
+        "ObjectName": "TslEmoteComponent'Default__LobbyCharacterFemale_v2_C:EmoteComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.13"
+      },
+      "OverrideLobbyWeaponAnimationClassDatas": [
+        {
+          "Item_Weapon_DP12_C": "EWeaponClass::Class_SMG"
+        }
+      ],
+      "WeaponAnimInfoComponent": {
+        "ObjectName": "WeaponAnimInfoComponent'Default__LobbyCharacterFemale_v2_C:WeaponAnimInfo'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.14"
+      },
+      "CustomizableObjectInstance": {
+        "ObjectName": "CustomizableObjectInstance'F_BaseBody_01_Inst'",
+        "ObjectPath": "TslGame/Content/Assets/Character/Avatar_Female/BaseBody/Mutables/F_BaseBody_01_Inst.0"
+      },
+      "CustomizableSkeletalComponent": {
+        "ObjectName": "TslCustomizableSkeletalComponent'Default__LobbyCharacterFemale_v2_C:CustomizableSkeletalComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.12"
+      },
+      "AbilitySystemComponent": {
+        "ObjectName": "TslAbilitySystemComponent'Default__LobbyCharacterFemale_v2_C:AbilitySystemComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.10"
+      },
+      "AttributeSet": {
+        "ObjectName": "TslAttributeSet'Default__LobbyCharacterFemale_v2_C:AttributeSet'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.11"
+      },
+      "BuffComponent": {
+        "ObjectName": "BuffComponet'Default__LobbyCharacterFemale_v2_C:BuffComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.2"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'Default__LobbyCharacterFemale_v2_C:CollisionCylinder'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.3"
+      },
+      "ProneCapsuleComponent": {
+        "ObjectName": "CapsuleComponent'Default__LobbyCharacterFemale_v2_C:ProneCollisionCylinder'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.4"
+      },
+      "CharacterMovement": {
+        "ObjectName": "CharacterMovementComponent'Default__LobbyCharacterFemale_v2_C:CharMoveComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.5"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent'Default__LobbyCharacterFemale_v2_C:CharacterMesh0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.9"
+      },
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'Default__LobbyCharacterFemale_v2_C:CollisionCylinder'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.3"
+      }
+    }
+  },
+  {
+    "Type": "BuffComponet",
+    "Name": "BuffComp",
+    "Outer": "Default__LobbyCharacterFemale_v2_C",
+    "Template": "BuffComp",
+    "Class": "UScriptClass'BuffComponet'"
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__LobbyCharacterFemale_v2_C",
+    "Template": "CollisionCylinder",
+    "Class": "UScriptClass'CapsuleComponent'"
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "ProneCollisionCylinder",
+    "Outer": "Default__LobbyCharacterFemale_v2_C",
+    "Template": "ProneCollisionCylinder",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__LobbyCharacterFemale_v2_C:CollisionCylinder'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.3"
+      }
+    }
+  },
+  {
+    "Type": "CharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__LobbyCharacterFemale_v2_C",
+    "Template": "CharMoveComp",
+    "Class": "UScriptClass'CharacterMovementComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "LobbyCharacterFemale_v2_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'LobbyCharacterFemale_v2_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.6"
+      },
+      "VariableGuid": "C08D777B-41FE9FA6-DFE1D699-EE53F98D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "LobbyCharacterFemale_v2_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'LobbyCharacterFemale_v2_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.7"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__LobbyCharacterFemale_v2_C",
+    "Template": "CharacterMesh0",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__LobbyCharacterFemale_v2_C:CollisionCylinder'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.3"
+      }
+    }
+  },
+  {
+    "Type": "TslAbilitySystemComponent",
+    "Name": "AbilitySystemComponent",
+    "Outer": "Default__LobbyCharacterFemale_v2_C",
+    "Template": "AbilitySystemComponent",
+    "Class": "UScriptClass'TslAbilitySystemComponent'"
+  },
+  {
+    "Type": "TslAttributeSet",
+    "Name": "AttributeSet",
+    "Outer": "Default__LobbyCharacterFemale_v2_C",
+    "Template": "AttributeSet",
+    "Class": "UScriptClass'TslAttributeSet'"
+  },
+  {
+    "Type": "TslCustomizableSkeletalComponent",
+    "Name": "CustomizableSkeletalComponent",
+    "Outer": "Default__LobbyCharacterFemale_v2_C",
+    "Template": "CustomizableSkeletalComponent",
+    "Class": "UScriptClass'TslCustomizableSkeletalComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent'Default__LobbyCharacterFemale_v2_C:CharacterMesh0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterFemale_v2.9"
+      }
+    }
+  },
+  {
+    "Type": "TslEmoteComponent",
+    "Name": "EmoteComponent",
+    "Outer": "Default__LobbyCharacterFemale_v2_C",
+    "Template": "EmoteComponent",
+    "Class": "UScriptClass'TslEmoteComponent'"
+  },
+  {
+    "Type": "WeaponAnimInfoComponent",
+    "Name": "WeaponAnimInfo",
+    "Outer": "Default__LobbyCharacterFemale_v2_C",
+    "Template": "WeaponAnimInfo",
+    "Class": "UScriptClass'WeaponAnimInfoComponent'"
+  }
+]

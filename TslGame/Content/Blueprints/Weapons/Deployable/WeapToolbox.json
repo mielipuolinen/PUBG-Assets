@@ -2,39 +2,41 @@
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapToolbox_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapToolbox_C:SimpleConstructionScript_0",
+        "ObjectName": "SimpleConstructionScript'WeapToolbox_C:SimpleConstructionScript_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapToolbox.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslWeapon_Toolbox",
+      "ObjectName": "Class'TslWeapon_Toolbox'",
       "ObjectPath": "/Script/TslGame"
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapToolbox_C Default__WeapToolbox_C",
+      "ObjectName": "WeapToolbox_C'Default__WeapToolbox_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapToolbox.1"
     }
   },
   {
     "Type": "WeapToolbox_C",
     "Name": "Default__WeapToolbox_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Deployable/WeapToolbox.WeapToolbox_C'",
     "Properties": {
       "WeaponSoftRolesData": {
-        "ObjectName": "WeaponSoftRolesData WeapToolBox_WeaponSoftRolesData",
+        "ObjectName": "WeaponSoftRolesData'WeapToolBox_WeaponSoftRolesData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapToolBox_WeaponSoftRolesData.0"
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_toolbox",
+        "ObjectName": "Texture2D'weapons_toolbox'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_toolbox.0"
       },
       "WeaponIconRatio": 3.0,
@@ -49,7 +51,7 @@
         "WeaponEquipDuration": 0.3,
         "WeaponUnequipDuration": 0.5,
         "WeaponStaticMesh": {
-          "ObjectName": "StaticMesh SM_Toolbox_drop",
+          "ObjectName": "StaticMesh'SM_Toolbox_drop'",
           "ObjectPath": "TslGame/Content/Item/Toolbox/Mesh/SM_Toolbox_drop.1"
         },
         "AddTransformOnBackpack_Primary": {
@@ -100,45 +102,49 @@
         }
       },
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapToolbox_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__WeapToolbox_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapToolbox.6"
       },
       "AnimWeaponType": "EAnimWeaponType::Throwable",
       "WeaponAnim": {
         "PickUp": {
-          "ObjectName": "AnimMontage MOB1_M1_Glean_Montage",
+          "ObjectName": "AnimMontage'MOB1_M1_Glean_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Mobility/MOB1_M1_Glean_Montage.0"
         }
       },
       "ProneRollAnim": {
         "RollLeft": {
-          "ObjectName": "AnimMontage MOB1_M1_ProneRoll_L_Loop_IP_Montage",
+          "ObjectName": "AnimMontage'MOB1_M1_ProneRoll_L_Loop_IP_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Mobility/MOB1_M1_ProneRoll_L_Loop_IP_Montage.0"
         },
         "RollRight": {
-          "ObjectName": "AnimMontage MOB1_M1_ProneRoll_R_Loop_IP_Montage",
+          "ObjectName": "AnimMontage'MOB1_M1_ProneRoll_R_Loop_IP_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Mobility/MOB1_M1_ProneRoll_R_Loop_IP_Montage.0"
         }
       },
-      "EquipAnimData": {
-        "EAccessorySlot::Slot_Secondary": {
-          "Montage": {
-            "ObjectName": "AnimMontage TacPack_Combat_Stand_SecondarySlot_Montage",
-            "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TacPack/TacPack_Combat_Stand_SecondarySlot_Montage.0"
-          },
-          "PlayRate": 1.0
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_Secondary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'TacPack_Combat_Stand_SecondarySlot_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TacPack/TacPack_Combat_Stand_SecondarySlot_Montage.0"
+            },
+            "PlayRate": 1.0
+          }
         },
-        "EAccessorySlot::Slot_Primary": {
-          "Montage": {
-            "ObjectName": "AnimMontage TacPack_Combat_Stand_PrimarySlot_Montage",
-            "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TacPack/TacPack_Combat_Stand_PrimarySlot_Montage.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_Primary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'TacPack_Combat_Stand_PrimarySlot_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TacPack/TacPack_Combat_Stand_PrimarySlot_Montage.0"
+            },
+            "PlayRate": 1.0
+          }
         }
-      },
+      ],
       "HipDuration": 0.1,
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapToolbox_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapToolbox_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapToolbox.2"
       }
     }
@@ -147,12 +153,13 @@
     "Type": "SceneComponent",
     "Name": "RootScene",
     "Outer": "Default__WeapToolbox_C",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapToolbox_C Default__WeapToolbox_C",
+              "ObjectName": "WeapToolbox_C'Default__WeapToolbox_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapToolbox.1"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -164,19 +171,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapToolbox_C"
+    "Outer": "WeapToolbox_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapToolbox_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapToolbox_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapToolbox.3"
       },
       "VariableGuid": "5819FDFE-471BB583-B38ACEBC-8A5C72B2",
@@ -187,9 +196,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0",
     "Outer": "WeapToolbox_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapToolbox_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectName": "SCS_Node'WeapToolbox_C:SimpleConstructionScript_0.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapToolbox.4"
       }
     }
@@ -198,17 +208,18 @@
     "Type": "WeaponMeshComponent",
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapToolbox_C",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "AnimClass": {
-        "ObjectName": "AnimBlueprintGeneratedClass ABP_Weapon_ToolBox_C",
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_Weapon_ToolBox_C'",
         "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/ToolBox/Weapon/ABP_Weapon_ToolBox.30"
       },
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh SK_Toolbox",
+        "ObjectName": "SkeletalMesh'SK_Toolbox'",
         "ObjectPath": "TslGame/Content/Item/Toolbox/Mesh/SK_Toolbox.0"
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapToolbox_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapToolbox_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapToolbox.2"
       }
     }

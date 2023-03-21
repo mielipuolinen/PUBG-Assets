@@ -2,6 +2,7 @@
   {
     "Type": "WeaponAttachmentDataAsset",
     "Name": "DA_Item_Attach_Weapon_Lower_QuickDraw_Large_Crossbow",
+    "Class": "UScriptClass'WeaponAttachmentDataAsset'",
     "Properties": {
       "AttachmentData": {
         "AttachmentSlotID": "EWeaponAttachmentSlotID::LowerRail",
@@ -37,8 +38,8 @@
               700.0,
               800.0
             ],
-            "ReticleMaterialOverrides": {},
-            "ReticleSettingsOverrides": {},
+            "ReticleMaterialOverrides": [],
+            "ReticleSettingsOverrides": [],
             "ScopePostprocessData": null,
             "AmmoPerClip": 0,
             "ReloadAnimationPlayRate": 1.5,
@@ -67,7 +68,7 @@
             "CharacterReloadCharge": null,
             "WeaponReloadCharge": null,
             "bUsePelletGridOverride": false,
-            "PelletGridOverride": {},
+            "PelletGridOverride": [],
             "StabilitySpeedScalar": 1.0,
             "StabilityMinForceAdditive": 0.0,
             "RecoilEarlyExitScale": 0.0,
@@ -101,6 +102,7 @@
                 "Y": 150.0
               }
             },
+            "bThermalTemperatureInteractive": false,
             "bBlocksGameplayTracers": false
           },
           "AttachmentTemplate": null
@@ -109,7 +111,7 @@
       "AttachedSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Ammo/Play_UI_Item_Equip_Ammo_Bolt.Play_UI_Item_Equip_Ammo_Bolt",
       "AttachmentMeshAsset": "/Game/Weapon/CrossBow/Quiver_setting.Quiver_setting",
       "AttachmentTemplate": {
-        "ObjectName": "Class AsyncStaticMeshComponent",
+        "ObjectName": "Class'AsyncStaticMeshComponent'",
         "ObjectPath": "/Script/TslGame"
       }
     }

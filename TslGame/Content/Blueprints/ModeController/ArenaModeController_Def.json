@@ -1,0 +1,326 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_RunBehaviorTree_ReturnValue",
+    "Outer": "ExecuteUbergraph_ArenaModeController_Def",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ArenaModeController_Def",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ArenaModeController_Def_C:ExecuteUbergraph_ArenaModeController_Def.CallFunc_RunBehaviorTree_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.0"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ArenaModeController_Def",
+    "Outer": "ArenaModeController_Def_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'ArenaModeController_Def_C:ExecuteUbergraph_ArenaModeController_Def.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.1"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "ArenaModeController_Def_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ArenaModeController_Def_C:ExecuteUbergraph_ArenaModeController_Def'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "ArenaModeController_Def_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ArenaModeController_Def_C:ReceiveBeginPlay'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.3"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ArenaModeController_Def_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'ArenaModeController_Def_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.4"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ArenaModeController_Def_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'ArenaModeController_Def_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.13"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'ArenaModeController_Def_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.5"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'ArenaModeController_Def_C:ExecuteUbergraph_ArenaModeController_Def'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.2"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslArenaModeController'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'ArenaModeController_Def_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.5"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ArenaModeController_Def": {
+        "ObjectName": "Function'ArenaModeController_Def_C:ExecuteUbergraph_ArenaModeController_Def'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'ArenaModeController_Def_C:ReceiveBeginPlay'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.3"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'ArenaModeController_Def_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.4"
+      }
+    },
+    "ClassFlags": 8651284,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ArenaModeController_Def_C'Default__ArenaModeController_Def_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.7"
+    }
+  },
+  {
+    "Type": "ArenaModeController_Def_C",
+    "Name": "Default__ArenaModeController_Def_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.ArenaModeController_Def_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BattleRoyalePoisonGasDataArray": [
+        {
+          "StartDelay": 65.0,
+          "WarningDuration": 3.0,
+          "ReleaseDuration": 60.0,
+          "RadiusRate": 0.6,
+          "RandomRadiusRate": 0.05,
+          "PoisonGasDamagePerSecond": 3.0,
+          "SpreadRatio": 0.5,
+          "DamageMagnifierForDistance": 1.0,
+          "DamageMagnifier": 3.0,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'Arena_BlueZone_Damage_Magnifier_Curve_Default1'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/Arena_BlueZone_Damage_Magnifier_Curve_Default1.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 3.0,
+          "ReleaseDuration": 50.0,
+          "RadiusRate": 0.6,
+          "RandomRadiusRate": 0.05,
+          "PoisonGasDamagePerSecond": 3.5,
+          "SpreadRatio": 0.5,
+          "DamageMagnifierForDistance": 1.0,
+          "DamageMagnifier": 3.0,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'Arena_BlueZone_Damage_Magnifier_Curve_Default1'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/Arena_BlueZone_Damage_Magnifier_Curve_Default1.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 3.0,
+          "ReleaseDuration": 50.0,
+          "RadiusRate": 0.6,
+          "RandomRadiusRate": 0.05,
+          "PoisonGasDamagePerSecond": 4.0,
+          "SpreadRatio": 0.5,
+          "DamageMagnifierForDistance": 1.0,
+          "DamageMagnifier": 3.0,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'Arena_BlueZone_Damage_Magnifier_Curve_Default1'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/Arena_BlueZone_Damage_Magnifier_Curve_Default1.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 3.0,
+          "ReleaseDuration": 40.0,
+          "RadiusRate": 0.5,
+          "RandomRadiusRate": 0.05,
+          "PoisonGasDamagePerSecond": 4.5,
+          "SpreadRatio": 0.5,
+          "DamageMagnifierForDistance": 1.0,
+          "DamageMagnifier": 3.0,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'Arena_BlueZone_Damage_Magnifier_Curve_Default1'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/Arena_BlueZone_Damage_Magnifier_Curve_Default1.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 3.0,
+          "ReleaseDuration": 25.0,
+          "RadiusRate": 0.0001,
+          "RandomRadiusRate": 0.05,
+          "PoisonGasDamagePerSecond": 16.5,
+          "SpreadRatio": 0.5,
+          "DamageMagnifierForDistance": 10000.0,
+          "DamageMagnifier": 1.0,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'Arena_BlueZone_Damage_Magnifier_Curve_Default1'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/Arena_BlueZone_Damage_Magnifier_Curve_Default1.0"
+          },
+          "bIgnoreSafetyZone": false
+        }
+      ],
+      "PathFollowingComponent": {
+        "ObjectName": "PathFollowingComponent'Default__ArenaModeController_Def_C:PathFollowingComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.8"
+      },
+      "ActionsComp": {
+        "ObjectName": "PawnActionsComponent'Default__ArenaModeController_Def_C:ActionsComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.9"
+      },
+      "TransformComponent": {
+        "ObjectName": "SceneComponent'Default__ArenaModeController_Def_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.11"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__ArenaModeController_Def_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.11"
+      }
+    }
+  },
+  {
+    "Type": "PathFollowingComponent",
+    "Name": "PathFollowingComponent",
+    "Outer": "Default__ArenaModeController_Def_C",
+    "Class": "UScriptClass'PathFollowingComponent'"
+  },
+  {
+    "Type": "PawnActionsComponent",
+    "Name": "ActionsComp",
+    "Outer": "Default__ArenaModeController_Def_C",
+    "Class": "UScriptClass'PawnActionsComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "ArenaModeController_Def_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "TransformComponent0",
+    "Outer": "Default__ArenaModeController_Def_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'ArenaModeController_Def_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.10"
+      },
+      "VariableGuid": "24819221-44D523F4-7B0FBFB7-C0B5592D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "ArenaModeController_Def_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'ArenaModeController_Def_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_Def.12"
+      }
+    }
+  }
+]

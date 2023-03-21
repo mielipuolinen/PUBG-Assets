@@ -1,0 +1,253 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "tiger_grass_4",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "C559AE38463C2FFB1A77F0ABEAFE609F"
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "tiger_grass_4",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "MI_Baltic_bro_tree_08_wind_Trunk",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 21.991444,
+            "LocalUVDensities": 395.02866,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 3.0854805
+          }
+        },
+        {
+          "MaterialSlotName": "MI_Baltic_bro_tree_08_wind_leaf",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 110.36514,
+            "LocalUVDensities": 345.50305,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 2.932232
+          }
+        }
+      ],
+      "LightmapUVDensity": 347.6753,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 17.245377,
+          "Y": -1.8994446,
+          "Z": 35.84674
+        },
+        "BoxExtent": {
+          "X": 69.613,
+          "Y": 86.98071,
+          "Z": 70.15759
+        },
+        "SphereRadius": 112.62091
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'tiger_grass_4:BodySetup_0'",
+      "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/grass01/tiger_grass_4.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "FBD539DA-45E4154F-93927DA2-2E285EBC",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 60,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 70,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 180,
+              "NumTriangles": 134,
+              "MinVertexIndex": 71,
+              "MaxVertexIndex": 306,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 307
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 8,
+            "NumVertices": 307,
+            "Strides": 40,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 4,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 5,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 12,
+              "NumTriangles": 93,
+              "MinVertexIndex": 6,
+              "MaxVertexIndex": 190,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 68.6396,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 191
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 8,
+            "NumVertices": 191,
+            "Strides": 40,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 4,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 5,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 12,
+              "NumTriangles": 44,
+              "MinVertexIndex": 6,
+              "MaxVertexIndex": 95,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 134.0013,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 96
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 8,
+            "NumVertices": 96,
+            "Strides": 40,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 17.245377,
+          "Y": -1.8994446,
+          "Z": 35.84674
+        },
+        "BoxExtent": {
+          "X": 69.613,
+          "Y": 86.98071,
+          "Z": 70.15759
+        },
+        "SphereRadius": 112.62091
+      },
+      "bLODsShareStaticLighting": false,
+      "ScreenSize": [
+        1.0,
+        0.3,
+        0.11,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

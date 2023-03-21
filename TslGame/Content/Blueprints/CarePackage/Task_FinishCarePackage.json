@@ -1,0 +1,141 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OwnerActor",
+    "Outer": "ExecuteUbergraph_Task_FinishCarePackage",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Task_FinishCarePackage",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_FinishCarePackage_C:ExecuteUbergraph_Task_FinishCarePackage.K2Node_Event_OwnerActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_FinishCarePackage.0"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Task_FinishCarePackage",
+    "Outer": "Task_FinishCarePackage_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Task_FinishCarePackage_C:ExecuteUbergraph_Task_FinishCarePackage.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_FinishCarePackage.1"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OwnerActor",
+    "Outer": "ReceiveExecute",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveExecute",
+    "Outer": "Task_FinishCarePackage_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Task_FinishCarePackage_C:ExecuteUbergraph_Task_FinishCarePackage'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_FinishCarePackage.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BTTask_BlueprintBase:ReceiveExecute'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Task_FinishCarePackage_C:ReceiveExecute.OwnerActor'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_FinishCarePackage.3"
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Task_FinishCarePackage_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Task_FinishCarePackage_C:ReceiveExecute'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_FinishCarePackage.4"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Task_FinishCarePackage_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Task_FinishCarePackage_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_FinishCarePackage.5"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Task_FinishCarePackage_C:ExecuteUbergraph_Task_FinishCarePackage'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_FinishCarePackage.2"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_BlueprintBase'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Task_FinishCarePackage_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_FinishCarePackage.5"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Task_FinishCarePackage": {
+        "ObjectName": "Function'Task_FinishCarePackage_C:ExecuteUbergraph_Task_FinishCarePackage'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_FinishCarePackage.2"
+      },
+      "ReceiveExecute": {
+        "ObjectName": "Function'Task_FinishCarePackage_C:ReceiveExecute'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_FinishCarePackage.4"
+      }
+    },
+    "ClassFlags": 262160,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Task_FinishCarePackage_C'Default__Task_FinishCarePackage_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_FinishCarePackage.7"
+    }
+  },
+  {
+    "Type": "Task_FinishCarePackage_C",
+    "Name": "Default__Task_FinishCarePackage_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Task_FinishCarePackage.Task_FinishCarePackage_C'",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]

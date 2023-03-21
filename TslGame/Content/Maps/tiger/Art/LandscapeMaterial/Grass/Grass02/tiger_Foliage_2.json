@@ -1,0 +1,217 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "tiger_Foliage_2",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "E9E9CDB0492B9DC2237BB6AA87DCB105"
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "tiger_Foliage_2",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "MinLOD": 1,
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "Material #26",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 154.00328,
+            "LocalUVDensities": 650.449,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialSlotName": "diho_Foliage_3_1_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 155.52715,
+            "LocalUVDensities": 650.3999,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        },
+        {
+          "MaterialSlotName": "diho_Foliage_3_2_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 650.43115,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 8.171631,
+          "Y": 16.474274,
+          "Z": 60.172737
+        },
+        "BoxExtent": {
+          "X": 198.54935,
+          "Y": 153.95062,
+          "Z": 77.61688
+        },
+        "SphereRadius": 208.80286
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'tiger_Foliage_2:BodySetup_0'",
+      "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Grass02/tiger_Foliage_2.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "87F9E183-4201BE77-CF76CE85-609C8751",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 144,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 179,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 180
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 180,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 0,
+              "NumTriangles": 72,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 107,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 108
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 108,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 14,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 35,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 1272.4635,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 36
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 36,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 8.171631,
+          "Y": 16.474274,
+          "Z": 60.172737
+        },
+        "BoxExtent": {
+          "X": 198.54935,
+          "Y": 153.95062,
+          "Z": 77.61688
+        },
+        "SphereRadius": 208.80286
+      },
+      "bLODsShareStaticLighting": false,
+      "ScreenSize": [
+        1.0,
+        0.6,
+        0.2,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

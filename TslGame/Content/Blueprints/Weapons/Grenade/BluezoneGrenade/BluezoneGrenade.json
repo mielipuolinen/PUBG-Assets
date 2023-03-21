@@ -3,6 +3,7 @@
     "Type": "BodySetup",
     "Name": "BodySetup_0",
     "Outer": "BluezoneGrenade",
+    "Class": "UScriptClass'BodySetup'",
     "Properties": {
       "AggGeom": {
         "SphylElems": [
@@ -62,7 +63,7 @@
     "BodySetupGuid": "29066BB04469F003A9B8749D2158D8EC",
     "CookedFormatData": {
       "PhysXPC": {
-        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
         "ElementCount": 68254,
         "SizeOnDisk": 68254,
         "OffsetInFile": "0x3D645"
@@ -72,6 +73,7 @@
   {
     "Type": "StaticMesh",
     "Name": "BluezoneGrenade",
+    "Class": "UScriptClass'StaticMesh'",
     "Properties": {
       "StaticMaterials": [
         {
@@ -89,11 +91,11 @@
       "LightmapUVDensity": 19.250065,
       "Sockets": [
         {
-          "ObjectName": "StaticMeshSocket BluezoneGrenade:StaticMeshSocket_0",
+          "ObjectName": "StaticMeshSocket'BluezoneGrenade:StaticMeshSocket_0'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BluezoneGrenade/BluezoneGrenade.2"
         },
         {
-          "ObjectName": "StaticMeshSocket BluezoneGrenade:StaticMeshSocket_1",
+          "ObjectName": "StaticMeshSocket'BluezoneGrenade:StaticMeshSocket_1'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BluezoneGrenade/BluezoneGrenade.3"
         }
       ],
@@ -112,7 +114,7 @@
       }
     },
     "BodySetup": {
-      "ObjectName": "BodySetup BluezoneGrenade:BodySetup_0",
+      "ObjectName": "BodySetup'BluezoneGrenade:BodySetup_0'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BluezoneGrenade/BluezoneGrenade.0"
     },
     "NavCollision": null,
@@ -243,6 +245,7 @@
     "Type": "StaticMeshSocket",
     "Name": "StaticMeshSocket_0",
     "Outer": "BluezoneGrenade",
+    "Class": "UScriptClass'StaticMeshSocket'",
     "Properties": {
       "SocketName": "UIcamera",
       "RelativeLocation": {
@@ -261,6 +264,7 @@
     "Type": "StaticMeshSocket",
     "Name": "StaticMeshSocket_1",
     "Outer": "BluezoneGrenade",
+    "Class": "UScriptClass'StaticMeshSocket'",
     "Properties": {
       "SocketName": "UIcamera_XBOX",
       "RelativeLocation": {

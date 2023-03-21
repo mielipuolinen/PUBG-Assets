@@ -1,0 +1,1283 @@
+[
+  {
+    "Type": "AkComponent",
+    "Name": "Ak",
+    "Outer": "TslGlobalSound_WeatherClear_28",
+    "Template": "Ak_GEN_VARIABLE",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1000.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BluezoneOpacity_BP_C",
+    "Name": "BluezoneOpacity_BP_28",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BluezoneOpacity_BP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/BluezoneOpacity_BP.BluezoneOpacity_BP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Sunset:PersistentLevel.BluezoneOpacity_BP_28.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.15"
+      },
+      "Set BluezoneOpacity": 0.55,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Sunset:PersistentLevel.BluezoneOpacity_BP_28.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.15"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Tiger_Sunset:PersistentLevel.BluezoneOpacity_BP_28.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.15"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_6",
+    "Outer": "BrushComponent0",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -100.0,
+                "Y": 100.0,
+                "Z": -100.0
+              },
+              {
+                "X": -100.0,
+                "Y": 100.0,
+                "Z": 100.0
+              },
+              {
+                "X": -100.0,
+                "Y": -100.0,
+                "Z": 100.0
+              },
+              {
+                "X": -100.0,
+                "Y": -100.0,
+                "Z": -100.0
+              },
+              {
+                "X": 100.0,
+                "Y": 100.0,
+                "Z": -100.0
+              },
+              {
+                "X": 100.0,
+                "Y": 100.0,
+                "Z": 100.0
+              },
+              {
+                "X": 100.0,
+                "Y": -100.0,
+                "Z": -100.0
+              },
+              {
+                "X": 100.0,
+                "Y": -100.0,
+                "Z": 100.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -100.0,
+                "Y": -100.0,
+                "Z": -100.0
+              },
+              "Max": {
+                "X": 100.0,
+                "Y": 100.0,
+                "Z": 100.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "bGenerateMirroredCollision": false,
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "7733D60845602629D9FF9E8DC71FABB5",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 470,
+        "SizeOnDisk": 470,
+        "OffsetInFile": "0x9085"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent0",
+    "Outer": "LevelBounds",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 403639.0,
+        "Y": 409737.0,
+        "Z": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 20480000.0,
+        "Y": 20480000.0,
+        "Z": 20480000.0
+      }
+    }
+  },
+  {
+    "Type": "BrushComponent",
+    "Name": "BrushComponent0",
+    "Outer": "PostProcessVolume_0",
+    "Class": "UScriptClass'BrushComponent'",
+    "Properties": {
+      "Brush": {
+        "ObjectName": "Model'Weather_Tiger_Sunset:PersistentLevel.PostProcessVolume_0.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.13"
+      },
+      "BrushBodySetup": {
+        "ObjectName": "BodySetup'Weather_Tiger_Sunset:PersistentLevel.PostProcessVolume_0.BrushComponent0.BodySetup_6'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.2"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 743484.0,
+        "Y": 623332.5,
+        "Z": -19744.75
+      }
+    }
+  },
+  {
+    "Type": "DirectionalLight",
+    "Name": "DirectionalLight_Sun",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'DirectionalLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "DirectionalLightComponent'Weather_Tiger_Sunset:PersistentLevel.DirectionalLight_Sun.LightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.6"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "DirectionalLightComponent'Weather_Tiger_Sunset:PersistentLevel.DirectionalLight_Sun.LightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.6"
+      }
+    }
+  },
+  {
+    "Type": "DirectionalLightComponent",
+    "Name": "LightComponent0",
+    "Outer": "DirectionalLight_Sun",
+    "Class": "UScriptClass'DirectionalLightComponent'",
+    "Properties": {
+      "OcclusionDepthRange": 5000.0,
+      "DynamicShadowDistanceMovableLight": 4000.0,
+      "CascadeDistributionExponent": 4.0,
+      "CascadeTransitionFraction": 0.3,
+      "DistanceFieldShadowDistance": 40000.0,
+      "TraceDistance": 5000.0,
+      "LightmassSettings": {
+        "LightSourceAngle": 1.5,
+        "ShadowExponent": 1.0
+      },
+      "ModulatedShadowColor": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 255,
+        "Hex": "FFFFFFFF"
+      },
+      "bUsedAsAtmosphereSunLight": true,
+      "bUseGridShadow": true,
+      "GridShadowSplitSettings": [
+        {
+          "CellSize": 1000.0,
+          "MaxRadius": 3000.0
+        },
+        {
+          "CellSize": 5000.0,
+          "MaxRadius": 15000.0
+        },
+        {
+          "CellSize": 25000.0,
+          "MaxRadius": 75000.0
+        }
+      ],
+      "Temperature": 5000.0,
+      "bUseTemperature": true,
+      "LightFunctionMaterial": {
+        "ObjectName": "MaterialInstanceConstant'M__LF_CloudShadow_Inst_04'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M__LF_CloudShadow_Inst_04.0"
+      },
+      "LightFunctionScale": {
+        "X": 111000.0,
+        "Y": 111000.01,
+        "Z": 111000.01
+      },
+      "BloomScale": 0.001,
+      "BloomThreshold": 0.3,
+      "BloomTint": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "bUseRayTracedDistanceFieldShadows": true,
+      "LightGuid": "10B42F6B-4E8EBF7D-6F1CCCB0-67343762",
+      "Intensity": 8.0,
+      "LightColor": {
+        "B": 192,
+        "G": 192,
+        "R": 192,
+        "A": 255,
+        "Hex": "FFC0C0C0"
+      },
+      "Mobility": "EComponentMobility::Movable",
+      "RelativeRotation": {
+        "Pitch": -18.459425,
+        "Yaw": -157.18483,
+        "Roll": -3.3333654
+      },
+      "RelativeLocation": {
+        "X": 455522.22,
+        "Y": 242062.88,
+        "Z": 3024.2314
+      }
+    }
+  },
+  {
+    "Type": "ExponentialHeightFog",
+    "Name": "ExponentialHeightFog_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'ExponentialHeightFog'",
+    "Properties": {
+      "Component": {
+        "ObjectName": "ExponentialHeightFogComponent'Weather_Tiger_Sunset:PersistentLevel.ExponentialHeightFog_0.HeightFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.8"
+      },
+      "RootComponent": {
+        "ObjectName": "ExponentialHeightFogComponent'Weather_Tiger_Sunset:PersistentLevel.ExponentialHeightFog_0.HeightFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.8"
+      }
+    }
+  },
+  {
+    "Type": "ExponentialHeightFogComponent",
+    "Name": "HeightFogComponent0",
+    "Outer": "ExponentialHeightFog_0",
+    "Class": "UScriptClass'ExponentialHeightFogComponent'",
+    "Properties": {
+      "FogDensity": 0.0015,
+      "FogInscatteringColor": {
+        "R": 1.0,
+        "G": 0.787329,
+        "B": 0.515,
+        "A": 1.0,
+        "Hex": "FFFFE6BE"
+      },
+      "HeightDensityLayers": [
+        {
+          "Height": 5000.0,
+          "Density": 1.0
+        },
+        {
+          "Height": 150000.0,
+          "Density": 1.0
+        }
+      ],
+      "FogHeightFalloff": 0.05,
+      "FogMaxOpacity": 0.65,
+      "VolumetricFogScatteringDistribution": 0.65,
+      "VolumetricFogDistance": 10000.0,
+      "RelativeLocation": {
+        "X": 621903.0,
+        "Y": 303118.0,
+        "Z": 2490.0
+      }
+    }
+  },
+  {
+    "Type": "IDCSettingsForDihorOtokClearWeather_C",
+    "Name": "IDCSettingsForDihorOtokClearWeather_28",
+    "Outer": "PersistentLevel",
+    "Template": "Default__IDCSettingsForDihorOtokClearWeather_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/IDC_DihorOtok/IDCSettingsForDihorOtokClearWeather.IDCSettingsForDihorOtokClearWeather_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Sunset:PersistentLevel.IDCSettingsForDihorOtokClearWeather_28.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.16"
+      },
+      "ConsoleCommands": [
+        "r.CGV.Fallback 0.334710 0.094216 -0.269714 -0.008018 0.260979 0.072405 -0.211327 -0.007172 0.214882 0.055859 -0.176884 -0.007689 0.061821 -0.116015 -0.048355 -0.058586 0.047291 -0.089008 -0.034988 -0.043716 0.037771 -0.066462 -0.020986 -0.031075 -0.040459 -0.031513 -0.025552 0.000000",
+        "r.CGV.Intensity 1",
+        "r.CGV.FallbackIntensity 0.2",
+        "r.CGV.Hairintensity 0.5",
+        "r.CGV.Skinintensity 1",
+        "r.CGV.BaseIntensity 0.5",
+        "r.CGV.IndoorIntensity 1.05",
+        "r.CGV.OutdoorIntensity 0.1",
+        "r.CGV.IndoorSaturation 0.1",
+        "r.CGV.OutdoorSaturation 0.5",
+        "r.WindowLightIntensity 1",
+        "r.CGV.UseFullFallback 1",
+        "r.CGV.FullFallbackIntensity 0.8",
+        "r.GIVolume.Enable 0"
+      ],
+      "ExecuteCommandsInEditor": true,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Sunset:PersistentLevel.IDCSettingsForDihorOtokClearWeather_28.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.16"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Tiger_Sunset:PersistentLevel.IDCSettingsForDihorOtokClearWeather_28.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.16"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Outer": "Weather_Tiger_Sunset",
+    "Class": "UScriptClass'Level'",
+    "Properties": {
+      "LevelBuildDataId": "62D0FC35-43D50228-382119BF-DA1908DD",
+      "Model": {
+        "ObjectName": "Model'Weather_Tiger_Sunset:PersistentLevel.Model_0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.12"
+      },
+      "WorldSettings": {
+        "ObjectName": "WorldSettings'Weather_Tiger_Sunset:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.25"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "WorldSettings'Weather_Tiger_Sunset:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.25"
+      },
+      null,
+      {
+        "ObjectName": "LevelBounds'Weather_Tiger_Sunset:PersistentLevel.LevelBounds'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.11"
+      },
+      {
+        "ObjectName": "PostProcessVolume'Weather_Tiger_Sunset:PersistentLevel.PostProcessVolume_0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.14"
+      },
+      {
+        "ObjectName": "ExponentialHeightFog'Weather_Tiger_Sunset:PersistentLevel.ExponentialHeightFog_0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.7"
+      },
+      {
+        "ObjectName": "IDCSettingsForDihorOtokClearWeather_C'Weather_Tiger_Sunset:PersistentLevel.IDCSettingsForDihorOtokClearWeather_28'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.9"
+      },
+      {
+        "ObjectName": "BluezoneOpacity_BP_C'Weather_Tiger_Sunset:PersistentLevel.BluezoneOpacity_BP_28'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.1"
+      },
+      {
+        "ObjectName": "WindDirectionalSource'Weather_Tiger_Sunset:PersistentLevel.WindDirectionalSource'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.22"
+      },
+      {
+        "ObjectName": "TslGlobalSound_WeatherClear_C'Weather_Tiger_Sunset:PersistentLevel.TslGlobalSound_WeatherClear_28'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.21"
+      },
+      {
+        "ObjectName": "DirectionalLight'Weather_Tiger_Sunset:PersistentLevel.DirectionalLight_Sun'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.5"
+      },
+      {
+        "ObjectName": "SkyLight'Weather_Tiger_Sunset:PersistentLevel.SkyLight'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.17"
+      },
+      {
+        "ObjectName": "StaticMeshActor'Weather_Tiger_Sunset:PersistentLevel.SM_SkySphere'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.19"
+      },
+      null
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/Maps/lobby/Seasonpass/TslLobby_Seasonpass20_0722_main",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'Weather_Tiger_Sunset:PersistentLevel.Model_0'",
+      "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.12"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": null,
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "LevelBounds",
+    "Name": "LevelBounds",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelBounds'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Weather_Tiger_Sunset:PersistentLevel.LevelBounds.BoxComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.3"
+      }
+    }
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "20D2E9C9-4F06818B-B17074A5-EFD89A41",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_14",
+    "Outer": "PostProcessVolume_0",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 100.0,
+        "Y": 100.0,
+        "Z": 100.0
+      },
+      "SphereRadius": 173.20508
+    },
+    "Vectors": [
+      {
+        "X": -1.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1.0
+      },
+      {
+        "X": 1.0,
+        "Y": -0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": -1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      }
+    ],
+    "Points": [
+      {
+        "X": -100.0,
+        "Y": -100.0,
+        "Z": -100.0
+      },
+      {
+        "X": -100.0,
+        "Y": -100.0,
+        "Z": 100.0
+      },
+      {
+        "X": -100.0,
+        "Y": 100.0,
+        "Z": 100.0
+      },
+      {
+        "X": -100.0,
+        "Y": 100.0,
+        "Z": -100.0
+      },
+      {
+        "X": 100.0,
+        "Y": 100.0,
+        "Z": 100.0
+      },
+      {
+        "X": 100.0,
+        "Y": 100.0,
+        "Z": -100.0
+      },
+      {
+        "X": 100.0,
+        "Y": -100.0,
+        "Z": 100.0
+      },
+      {
+        "X": 100.0,
+        "Y": -100.0,
+        "Z": -100.0
+      }
+    ],
+    "Nodes": [
+      {
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 0,
+        "iSurf": 0,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 4,
+        "iSurf": 1,
+        "iVertexIndex": 4,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 2,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 8,
+        "iSurf": 2,
+        "iVertexIndex": 8,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 3,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 12,
+        "iSurf": 3,
+        "iVertexIndex": 12,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 4,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "iVertPool": 16,
+        "iSurf": 4,
+        "iVertexIndex": 16,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 5,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "iVertPool": 20,
+        "iSurf": 5,
+        "iVertexIndex": 20,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": -1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": 0,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      }
+    ],
+    "Surfs": [
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 0,
+        "vTextureU": 1,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 3,
+        "vNormal": 1,
+        "vTextureU": 3,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 5,
+        "vNormal": 3,
+        "vTextureU": 4,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 7,
+        "vNormal": 4,
+        "vTextureU": 0,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 2,
+        "vNormal": 5,
+        "vTextureU": 3,
+        "vTextureV": 1,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 2,
+        "vTextureU": 3,
+        "vTextureV": 4,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      }
+    ],
+    "NumSharedSides": 4,
+    "VertexBuffer": null,
+    "LightingGuid": "0C9FF76F-4506A365-56855E96-CC4C66C6",
+    "LightmassSettings": [
+      {
+        "bUseTwoSidedLighting": false,
+        "bShadowIndirectOnly": false,
+        "bUseEmissiveForStaticLighting": false,
+        "bUseVertexNormalForHemisphereGather": false,
+        "EmissiveLightFalloffExponent": 8.0,
+        "EmissiveLightExplicitInfluenceRadius": 0.0,
+        "EmissiveBoost": 1.0,
+        "DiffuseBoost": 1.0,
+        "FullyOccludedSamplesFraction": 1.0
+      }
+    ]
+  },
+  {
+    "Type": "PostProcessVolume",
+    "Name": "PostProcessVolume_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'PostProcessVolume'",
+    "Properties": {
+      "Settings": {
+        "bOverride_ColorSaturation": true,
+        "bOverride_FilmToeAmount": true,
+        "bOverride_BloomIntensity": true,
+        "bOverride_BloomThreshold": true,
+        "bOverride_Bloom1Size": true,
+        "bOverride_Bloom2Size": true,
+        "bOverride_Bloom3Size": true,
+        "bOverride_Bloom4Size": true,
+        "bOverride_Bloom5Size": true,
+        "bOverride_Bloom6Size": true,
+        "bOverride_AutoExposureMethod": true,
+        "bOverride_AutoExposureMinBrightness": true,
+        "bOverride_AutoExposureMaxBrightness": true,
+        "bOverride_AutoExposureSpeedUp": true,
+        "bOverride_AutoExposureSpeedDown": true,
+        "bOverride_AutoExposureBias": true,
+        "bOverride_HistogramLogMin": true,
+        "bOverride_HistogramLogMax": true,
+        "ColorSaturation": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "FilmShadowTintBlend": 10.0,
+        "FilmShadowTintAmount": 10.0,
+        "FilmSaturation": 1.1,
+        "FilmChannelMixerGreen": {
+          "R": 0.0,
+          "G": 1.0,
+          "B": 0.12,
+          "A": 1.0,
+          "Hex": "FF00FF61"
+        },
+        "FilmChannelMixerBlue": {
+          "R": 0.0,
+          "G": 0.2,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FF007CFF"
+        },
+        "FilmContrast": 0.2,
+        "FilmToeAmount": 0.65,
+        "FilmHealAmount": 0.25,
+        "BloomIntensity": 0.6,
+        "Bloom1Size": 2.0,
+        "Bloom2Size": 4.0,
+        "Bloom3Size": 8.0,
+        "Bloom4Size": 16.0,
+        "Bloom5Size": 32.0,
+        "AutoExposureMethod": "AEM_Basic",
+        "AutoExposureLowPercent": 58.0,
+        "AutoExposureMinBrightness": 1.0,
+        "AutoExposureMaxBrightness": 1.0,
+        "AutoExposureSpeedUp": 5.0,
+        "AutoExposureSpeedDown": 3.0,
+        "HistogramLogMin": -5.0,
+        "HistogramLogMax": 1.5,
+        "DepthOfFieldFstop": 2.990826,
+        "DepthOfFieldDepthBlurRadius": 1.0
+      },
+      "bUnbound": true,
+      "BrushType": "Brush_Add",
+      "Brush": {
+        "ObjectName": "Model'Weather_Tiger_Sunset:PersistentLevel.PostProcessVolume_0.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.13"
+      },
+      "BrushComponent": {
+        "ObjectName": "BrushComponent'Weather_Tiger_Sunset:PersistentLevel.PostProcessVolume_0.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.4"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "bHidden": false,
+      "RootComponent": {
+        "ObjectName": "BrushComponent'Weather_Tiger_Sunset:PersistentLevel.PostProcessVolume_0.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.4"
+      },
+      "Tags": [
+        "TslEffectPostProcessVolume"
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BluezoneOpacity_BP_28",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 424728.56,
+        "Y": 370274.03,
+        "Z": 4332.4653
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "IDCSettingsForDihorOtokClearWeather_28",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 10324.156,
+        "Z": 0.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkyLight",
+    "Name": "SkyLight",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'SkyLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "SkyLightComponent'Weather_Tiger_Sunset:PersistentLevel.SkyLight.SkyLightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.18"
+      },
+      "RootComponent": {
+        "ObjectName": "SkyLightComponent'Weather_Tiger_Sunset:PersistentLevel.SkyLight.SkyLightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.18"
+      }
+    }
+  },
+  {
+    "Type": "SkyLightComponent",
+    "Name": "SkyLightComponent0",
+    "Outer": "SkyLight",
+    "Class": "UScriptClass'SkyLightComponent'",
+    "Properties": {
+      "SourceType": "SLS_SpecifiedCubemap",
+      "Cubemap": {
+        "ObjectName": "TextureCube'Tiger_Sunset_Cube01'",
+        "ObjectPath": "TslGame/Content/Assets/World/HDRI/Tiger/Tiger_Sunset_Cube01.0"
+      },
+      "LowerHemisphereColor": {
+        "R": 0.02,
+        "G": 0.02,
+        "B": 0.02,
+        "A": 1.0,
+        "Hex": "FF262626"
+      },
+      "OcclusionMaxDistance": 500.0,
+      "Contrast": 0.7,
+      "MinOcclusion": 0.2,
+      "OcclusionTint": {
+        "B": 14,
+        "G": 14,
+        "R": 14,
+        "A": 255,
+        "Hex": "FF0E0E0E"
+      },
+      "LightGuid": "B81FA81C-4488F917-CACE26A4-E0A2B150",
+      "Intensity": 2.0,
+      "Mobility": "EComponentMobility::Movable",
+      "RelativeLocation": {
+        "X": -487.0,
+        "Y": -705.0,
+        "Z": 483.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshActor",
+    "Name": "SM_SkySphere",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'StaticMeshActor'",
+    "Properties": {
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Tiger_Sunset:PersistentLevel.SM_SkySphere.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.20"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Tiger_Sunset:PersistentLevel.SM_SkySphere.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.20"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent0",
+    "Outer": "SM_SkySphere",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_SkySphere'",
+        "ObjectPath": "Engine/Content/EngineSky/SM_SkySphere.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_Sky_Tiger_Sunny'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/Skies/Tiger/MI_Sky_Tiger_Sunny.0"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 403638.7,
+        "Y": 409737.38,
+        "Z": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 2500.0,
+        "Y": 2500.0,
+        "Z": 2500.0
+      }
+    }
+  },
+  {
+    "Type": "TslGlobalSound_WeatherClear_C",
+    "Name": "TslGlobalSound_WeatherClear_28",
+    "Outer": "PersistentLevel",
+    "Template": "Default__TslGlobalSound_WeatherClear_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Environment/TslGlobalSound_WeatherClear.TslGlobalSound_WeatherClear_C'",
+    "Properties": {
+      "Ak": {
+        "ObjectName": "AkComponent'Weather_Tiger_Sunset:PersistentLevel.TslGlobalSound_WeatherClear_28.Ak'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.0"
+      },
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Tiger_Sunset:PersistentLevel.TslGlobalSound_WeatherClear_28.Ak'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.0"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "AkComponent'Weather_Tiger_Sunset:PersistentLevel.TslGlobalSound_WeatherClear_28.Ak'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.0"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "WindDirectionalSource",
+    "Name": "WindDirectionalSource",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WindDirectionalSource'",
+    "Properties": {
+      "Component": {
+        "ObjectName": "WindDirectionalSourceComponent'Weather_Tiger_Sunset:PersistentLevel.WindDirectionalSource.WindDirectionalSourceComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.23"
+      },
+      "RootComponent": {
+        "ObjectName": "WindDirectionalSourceComponent'Weather_Tiger_Sunset:PersistentLevel.WindDirectionalSource.WindDirectionalSourceComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.23"
+      }
+    }
+  },
+  {
+    "Type": "WindDirectionalSourceComponent",
+    "Name": "WindDirectionalSourceComponent0",
+    "Outer": "WindDirectionalSource",
+    "Class": "UScriptClass'WindDirectionalSourceComponent'",
+    "Properties": {
+      "Strength": 0.2,
+      "Speed": 0.2
+    }
+  },
+  {
+    "Type": "World",
+    "Name": "Weather_Tiger_Sunset",
+    "Class": "UScriptClass'World'",
+    "Properties": {
+      "DefaultPhysicsVolume": null
+    },
+    "PersistentLevel": {
+      "ObjectName": "Level'Weather_Tiger_Sunset:PersistentLevel'",
+      "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Sunset.10"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  },
+  {
+    "Type": "WorldSettings",
+    "Name": "WorldSettings",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WorldSettings'"
+  }
+]

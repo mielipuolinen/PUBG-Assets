@@ -1,0 +1,289 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "LobbyCharacterBase_v2_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'LobbyCharacterBase_v2_C:SimpleConstructionScript_0__57659476'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.8"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'LobbyCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "LobbyCharacterBase_v2_C'Default__LobbyCharacterBase_v2_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.1"
+    }
+  },
+  {
+    "Type": "LobbyCharacterBase_v2_C",
+    "Name": "Default__LobbyCharacterBase_v2_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.LobbyCharacterBase_v2_C'",
+    "Properties": {
+      "EmoteComponent": {
+        "ObjectName": "TslEmoteComponent'Default__LobbyCharacterBase_v2_C:EmoteComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.13"
+      },
+      "WeaponAnimInfoComponent": {
+        "ObjectName": "WeaponAnimInfoComponent'Default__LobbyCharacterBase_v2_C:WeaponAnimInfo'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.14"
+      },
+      "CustomizableSkeletalComponent": {
+        "ObjectName": "TslCustomizableSkeletalComponent'Default__LobbyCharacterBase_v2_C:CustomizableSkeletalComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.12"
+      },
+      "AbilitySystemComponent": {
+        "ObjectName": "TslAbilitySystemComponent'Default__LobbyCharacterBase_v2_C:AbilitySystemComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.10"
+      },
+      "AttributeSet": {
+        "ObjectName": "TslAttributeSet'Default__LobbyCharacterBase_v2_C:AttributeSet'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.11"
+      },
+      "BuffComponent": {
+        "ObjectName": "BuffComponet'Default__LobbyCharacterBase_v2_C:BuffComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.2"
+      },
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'Default__LobbyCharacterBase_v2_C:CollisionCylinder'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.3"
+      },
+      "ProneCapsuleComponent": {
+        "ObjectName": "CapsuleComponent'Default__LobbyCharacterBase_v2_C:ProneCollisionCylinder'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.4"
+      },
+      "CharacterMovement": {
+        "ObjectName": "CharacterMovementComponent'Default__LobbyCharacterBase_v2_C:CharMoveComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.5"
+      },
+      "Mesh": {
+        "ObjectName": "SkeletalMeshComponent'Default__LobbyCharacterBase_v2_C:CharacterMesh0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.9"
+      },
+      "ReplicatedMovement": {
+        "RotationQuantizationLevel": "ERotatorQuantization::ShortComponents"
+      },
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'Default__LobbyCharacterBase_v2_C:CollisionCylinder'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.3"
+      }
+    }
+  },
+  {
+    "Type": "BuffComponet",
+    "Name": "BuffComp",
+    "Outer": "Default__LobbyCharacterBase_v2_C",
+    "Class": "UScriptClass'BuffComponet'"
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCylinder",
+    "Outer": "Default__LobbyCharacterBase_v2_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "CapsuleHalfHeight": 90.0,
+      "CapsuleRadius": 40.0,
+      "bGenerateOverlapEvents": true,
+      "IgnoreCollisionMaskOnSweep": [
+        70
+      ],
+      "BodyInstance": {
+        "bEnableGravity": false,
+        "MassInKgOverride": 146.27733,
+        "PhysMaterialOverride": {
+          "ObjectName": "PhysicalMaterial'PhysMat_Flesh'",
+          "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Flesh.0"
+        }
+      },
+      "BoundsScale": 1.2
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "ProneCollisionCylinder",
+    "Outer": "Default__LobbyCharacterBase_v2_C",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "BodyInstance": {
+        "MassInKgOverride": 55.054478
+      },
+      "bUseAttachParentBound": true,
+      "RelativeRotation": {
+        "Pitch": -90.0,
+        "Yaw": -1.8984375,
+        "Roll": 1.8985772
+      },
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__LobbyCharacterBase_v2_C:CollisionCylinder'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.3"
+      },
+      "RelativeLocation": {
+        "X": 5.0000014,
+        "Y": 1.2275266E-05,
+        "Z": -68.0
+      }
+    }
+  },
+  {
+    "Type": "CharacterMovementComponent",
+    "Name": "CharMoveComp",
+    "Outer": "Default__LobbyCharacterBase_v2_C",
+    "Class": "UScriptClass'CharacterMovementComponent'",
+    "Properties": {
+      "MaxStepHeight": 20.0,
+      "JumpZVelocity": 443.0,
+      "JumpOffJumpZFactor": 0.0,
+      "WalkableFloorAngle": 55.0,
+      "WalkableFloorZ": 0.57357645,
+      "GroundFriction": 6.0,
+      "MaxWalkSpeed": 175.0,
+      "MaxWalkSpeedCrouched": 135.0,
+      "MaxFlySpeed": 375.0,
+      "MaxCustomMovementSpeed": 500.0,
+      "MaxAcceleration": 250.0,
+      "BrakingFrictionFactor": 0.75,
+      "bUseSeparateBrakingFriction": true,
+      "BrakingDecelerationWalking": 1000.0,
+      "BrakingDecelerationSwimming": 200.0,
+      "AirControlBoostMultiplier": 10.0,
+      "AirControlBoostVelocityThreshold": 40.0,
+      "bCanWalkOffLedgesWhenCrouching": true,
+      "Mass": 80.0,
+      "PushForceFactor": 7500.0,
+      "NetworkSimulatedSmoothLocationTime": 0.2,
+      "NetworkSimulatedSmoothRotationTime": 0.06,
+      "ListenServerNetworkSimulatedSmoothLocationTime": 0.2,
+      "ListenServerNetworkSimulatedSmoothRotationTime": 0.06,
+      "bMaintainHorizontalGroundVelocity": false,
+      "bImpartBaseVelocityX": false,
+      "bImpartBaseVelocityY": false,
+      "bImpartBaseVelocityZ": false,
+      "bImpartBaseAngularVelocity": false,
+      "bIgnoreBaseRotation": true,
+      "NavAgentProps": {
+        "AgentRadius": 65.0,
+        "AgentHeight": 172.0,
+        "bCanCrouch": true
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_4",
+    "Outer": "LobbyCharacterBase_v2_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'LobbyCharacterBase_v2_C:SceneComponent_4'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.6"
+      },
+      "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0__57659476",
+    "Outer": "LobbyCharacterBase_v2_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'LobbyCharacterBase_v2_C:SimpleConstructionScript_0__57659476.SCS_Node_5'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.7"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CharacterMesh0",
+    "Outer": "Default__LobbyCharacterBase_v2_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'CharProxy_AnimBP_Lobby_C'",
+        "ObjectPath": "TslGame/Content/Animations/AnimBPs/CharProxy_AnimBP_Lobby.315"
+      },
+      "PhysicsAssetOverride": {
+        "ObjectName": "PhysicsAsset'Rig_Male_ItemBody_Physics_v2'",
+        "ObjectPath": "TslGame/Content/Characters/New_Pawn/Rig_Male_ItemBody_Physics_v2.0"
+      },
+      "bPerBoneMotionBlur": false,
+      "bLightAttachmentsAsGroup": true,
+      "BodyInstance": {
+        "MassInKgOverride": 180.38504,
+        "PhysMaterialOverride": {
+          "ObjectName": "PhysicalMaterial'PhysMat_Flesh'",
+          "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Flesh.0"
+        }
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "AttachParent": {
+        "ObjectName": "CapsuleComponent'Default__LobbyCharacterBase_v2_C:CollisionCylinder'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.3"
+      }
+    }
+  },
+  {
+    "Type": "TslAbilitySystemComponent",
+    "Name": "AbilitySystemComponent",
+    "Outer": "Default__LobbyCharacterBase_v2_C",
+    "Class": "UScriptClass'TslAbilitySystemComponent'"
+  },
+  {
+    "Type": "TslAttributeSet",
+    "Name": "AttributeSet",
+    "Outer": "Default__LobbyCharacterBase_v2_C",
+    "Class": "UScriptClass'TslAttributeSet'"
+  },
+  {
+    "Type": "TslCustomizableSkeletalComponent",
+    "Name": "CustomizableSkeletalComponent",
+    "Outer": "Default__LobbyCharacterBase_v2_C",
+    "Class": "UScriptClass'TslCustomizableSkeletalComponent'",
+    "Properties": {
+      "bUseAttachParentBound": true,
+      "AttachParent": {
+        "ObjectName": "SkeletalMeshComponent'Default__LobbyCharacterBase_v2_C:CharacterMesh0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/LobbyCharacterBase_v2.9"
+      }
+    }
+  },
+  {
+    "Type": "TslEmoteComponent",
+    "Name": "EmoteComponent",
+    "Outer": "Default__LobbyCharacterBase_v2_C",
+    "Class": "UScriptClass'TslEmoteComponent'"
+  },
+  {
+    "Type": "WeaponAnimInfoComponent",
+    "Name": "WeaponAnimInfo",
+    "Outer": "Default__LobbyCharacterBase_v2_C",
+    "Class": "UScriptClass'WeaponAnimInfoComponent'",
+    "Properties": {
+      "PrimaryComponentTick": {
+        "bAllowTickOnDedicatedServer": false
+      }
+    }
+  }
+]

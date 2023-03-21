@@ -3,10 +3,11 @@
     "Type": "StructProperty",
     "Name": "InterpVelocity",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": null,
     "PropertyFlags": 65541,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -14,13 +15,14 @@
     "Type": "StructProperty",
     "Name": "ActorLocLastTick",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBluezoneBomb_C:InterpVelocity",
+      "ObjectName": "StructProperty'ProjBluezoneBomb_C:InterpVelocity'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.0"
     },
     "PropertyFlags": 65541,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -28,8 +30,9 @@
     "Type": "FloatProperty",
     "Name": "ReleaseBuffer",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBluezoneBomb_C:ActorLocLastTick",
+      "ObjectName": "StructProperty'ProjBluezoneBomb_C:ActorLocLastTick'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.1"
     },
     "PropertyFlags": 65541
@@ -38,8 +41,9 @@
     "Type": "BoolProperty",
     "Name": "bSmokeSpawned",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBluezoneBomb_C:ReleaseBuffer",
+      "ObjectName": "FloatProperty'ProjBluezoneBomb_C:ReleaseBuffer'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.2"
     },
     "PropertyFlags": 65541,
@@ -50,8 +54,9 @@
     "Type": "FloatProperty",
     "Name": "HitTimeDelay",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBluezoneBomb_C:bSmokeSpawned",
+      "ObjectName": "BoolProperty'ProjBluezoneBomb_C:bSmokeSpawned'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.3"
     },
     "PropertyFlags": 65541
@@ -60,8 +65,9 @@
     "Type": "FloatProperty",
     "Name": "HitMinVelocity",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBluezoneBomb_C:HitTimeDelay",
+      "ObjectName": "FloatProperty'ProjBluezoneBomb_C:HitTimeDelay'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.4"
     },
     "PropertyFlags": 65541
@@ -70,8 +76,9 @@
     "Type": "FloatProperty",
     "Name": "HitImpactMax",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBluezoneBomb_C:HitMinVelocity",
+      "ObjectName": "FloatProperty'ProjBluezoneBomb_C:HitMinVelocity'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.5"
     },
     "PropertyFlags": 65541
@@ -80,8 +87,9 @@
     "Type": "FloatProperty",
     "Name": "HitImpactMin",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBluezoneBomb_C:HitImpactMax",
+      "ObjectName": "FloatProperty'ProjBluezoneBomb_C:HitImpactMax'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.6"
     },
     "PropertyFlags": 65541
@@ -90,8 +98,9 @@
     "Type": "FloatProperty",
     "Name": "HitTimer",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBluezoneBomb_C:HitImpactMin",
+      "ObjectName": "FloatProperty'ProjBluezoneBomb_C:HitImpactMin'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.7"
     },
     "PropertyFlags": 65541
@@ -100,13 +109,14 @@
     "Type": "ObjectProperty",
     "Name": "EndSmokeSound",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBluezoneBomb_C:HitTimer",
+      "ObjectName": "FloatProperty'ProjBluezoneBomb_C:HitTimer'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.8"
     },
     "PropertyFlags": 5,
     "PropertyClass": {
-      "ObjectName": "Class AkAudioEvent",
+      "ObjectName": "Class'AkAudioEvent'",
       "ObjectPath": "/Script/AkAudio"
     }
   },
@@ -114,13 +124,14 @@
     "Type": "ObjectProperty",
     "Name": "StartSmokeSound",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBluezoneBomb_C:EndSmokeSound",
+      "ObjectName": "ObjectProperty'ProjBluezoneBomb_C:EndSmokeSound'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.9"
     },
     "PropertyFlags": 5,
     "PropertyClass": {
-      "ObjectName": "Class AkAudioEvent",
+      "ObjectName": "Class'AkAudioEvent'",
       "ObjectPath": "/Script/AkAudio"
     }
   },
@@ -128,13 +139,14 @@
     "Type": "ObjectProperty",
     "Name": "TslWorldOffset",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBluezoneBomb_C:StartSmokeSound",
+      "ObjectName": "ObjectProperty'ProjBluezoneBomb_C:StartSmokeSound'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.10"
     },
     "PropertyFlags": 17179869188,
     "PropertyClass": {
-      "ObjectName": "Class TslWorldOffsetComponent",
+      "ObjectName": "Class'TslWorldOffsetComponent'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -142,9 +154,10 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Add_VectorVector_ReturnValue2",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'StructProperty'",
     "Next": null,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -152,12 +165,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Add_VectorVector_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_Add_VectorVector_ReturnValue2",
+      "ObjectName": "StructProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_Add_VectorVector_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.12"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -165,12 +179,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Multiply_VectorFloat_ReturnValue3",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_Add_VectorVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_Add_VectorVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.13"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -178,12 +193,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_VInterpTo_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_Multiply_VectorFloat_ReturnValue3",
+      "ObjectName": "StructProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_Multiply_VectorFloat_ReturnValue3'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.14"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -191,12 +207,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Multiply_VectorFloat_ReturnValue2",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_VInterpTo_ReturnValue",
+      "ObjectName": "StructProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_VInterpTo_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.15"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -204,12 +221,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Multiply_VectorFloat_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_Multiply_VectorFloat_ReturnValue2",
+      "ObjectName": "StructProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_Multiply_VectorFloat_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.16"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -217,8 +235,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_Lerp_ReturnValue2",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_Multiply_VectorFloat_ReturnValue",
+      "ObjectName": "StructProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_Multiply_VectorFloat_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.17"
     }
   },
@@ -226,8 +245,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_Lerp_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_Lerp_ReturnValue2",
+      "ObjectName": "FloatProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_Lerp_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.18"
     }
   },
@@ -235,8 +255,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_RandomFloat_ReturnValue2",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_Lerp_ReturnValue",
+      "ObjectName": "FloatProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_Lerp_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.19"
     }
   },
@@ -244,8 +265,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_RandomFloat_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_RandomFloat_ReturnValue2",
+      "ObjectName": "FloatProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_RandomFloat_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.20"
     }
   },
@@ -253,12 +275,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_GetForwardVector_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_RandomFloat_ReturnValue",
+      "ObjectName": "FloatProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_RandomFloat_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.21"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -266,8 +289,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsAnySimulatingPhysics_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_GetForwardVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_GetForwardVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.22"
     },
     "BoolSize": 1,
@@ -277,8 +301,9 @@
     "Type": "BoolProperty",
     "Name": "K2Node_ComponentBoundEvent_bWorldShift",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_IsAnySimulatingPhysics_ReturnValue",
+      "ObjectName": "BoolProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_IsAnySimulatingPhysics_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.23"
     },
     "BoolSize": 1,
@@ -288,13 +313,14 @@
     "Type": "StructProperty",
     "Name": "K2Node_ComponentBoundEvent_InOffset",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.K2Node_ComponentBoundEvent_bWorldShift",
+      "ObjectName": "BoolProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.K2Node_ComponentBoundEvent_bWorldShift'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.24"
     },
     "PropertyFlags": 2,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -302,8 +328,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_PostAkEvent_ReturnValue2",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.K2Node_ComponentBoundEvent_InOffset",
+      "ObjectName": "StructProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.K2Node_ComponentBoundEvent_InOffset'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.25"
     }
   },
@@ -311,17 +338,19 @@
     "Type": "IntProperty",
     "Name": "CallFunc_PostAkEvent_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_PostAkEvent_ReturnValue2",
+      "ObjectName": "IntProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_PostAkEvent_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.26"
     }
   },
   {
     "Type": "BoolProperty",
-    "Name": "Temp_bool_IsClosed_Variable",
+    "Name": "___bool_IsClosed_Variable",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_PostAkEvent_ReturnValue",
+      "ObjectName": "IntProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_PostAkEvent_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.27"
     },
     "BoolSize": 1,
@@ -331,8 +360,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsValid_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.Temp_bool_IsClosed_Variable",
+      "ObjectName": "BoolProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.___bool_IsClosed_Variable'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.28"
     },
     "BoolSize": 1,
@@ -342,8 +372,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsActive_ReturnValue2",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_IsValid_ReturnValue",
+      "ObjectName": "BoolProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_IsValid_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.29"
     },
     "BoolSize": 1,
@@ -351,10 +382,11 @@
   },
   {
     "Type": "BoolProperty",
-    "Name": "Temp_bool_Has_Been_Initd_Variable",
+    "Name": "___bool_Has_Been_Initd_Variable",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_IsActive_ReturnValue2",
+      "ObjectName": "BoolProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_IsActive_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.30"
     },
     "BoolSize": 1,
@@ -364,8 +396,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsActive_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.Temp_bool_Has_Been_Initd_Variable",
+      "ObjectName": "BoolProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.___bool_Has_Been_Initd_Variable'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.31"
     },
     "BoolSize": 1,
@@ -375,8 +408,9 @@
     "Type": "FloatProperty",
     "Name": "K2Node_Event_DeltaSeconds",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_IsActive_ReturnValue",
+      "ObjectName": "BoolProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_IsActive_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.32"
     }
   },
@@ -384,12 +418,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.K2Node_Event_DeltaSeconds",
+      "ObjectName": "FloatProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.K2Node_Event_DeltaSeconds'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.33"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct TimerHandle",
+      "ObjectName": "ScriptStruct'TimerHandle'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -397,12 +432,13 @@
     "Type": "DelegateProperty",
     "Name": "K2Node_CreateDelegate_OutputDelegate",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'DelegateProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_K2_SetTimerDelegate_ReturnValue",
+      "ObjectName": "StructProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_K2_SetTimerDelegate_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.34"
     },
     "SignatureFunction": {
-      "ObjectName": "DelegateFunction TimerDynamicDelegate__DelegateSignature",
+      "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -410,8 +446,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_HasAuthority_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "DelegateProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.K2Node_CreateDelegate_OutputDelegate",
+      "ObjectName": "DelegateProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.K2Node_CreateDelegate_OutputDelegate'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.35"
     },
     "BoolSize": 1,
@@ -421,8 +458,9 @@
     "Type": "IntProperty",
     "Name": "EntryPoint",
     "Outer": "ExecuteUbergraph_ProjBluezoneBomb",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_HasAuthority_ReturnValue",
+      "ObjectName": "BoolProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.CallFunc_HasAuthority_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.36"
     },
     "PropertyFlags": 128
@@ -431,13 +469,14 @@
     "Type": "Function",
     "Name": "ExecuteUbergraph_ProjBluezoneBomb",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBluezoneBomb_C:TslWorldOffset",
+      "ObjectName": "ObjectProperty'ProjBluezoneBomb_C:TslWorldOffset'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.11"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.EntryPoint",
+        "ObjectName": "IntProperty'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb.EntryPoint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.37"
       }
     ],
@@ -447,6 +486,7 @@
     "Type": "BoolProperty",
     "Name": "bWorldShift",
     "Outer": "BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "PropertyFlags": 128,
     "BoolSize": 1,
@@ -456,13 +496,14 @@
     "Type": "StructProperty",
     "Name": "InOffset",
     "Outer": "BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBluezoneBomb_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature.bWorldShift",
+      "ObjectName": "BoolProperty'ProjBluezoneBomb_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature.bWorldShift'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.39"
     },
     "PropertyFlags": 134218114,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -470,13 +511,14 @@
     "Type": "Function",
     "Name": "BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb",
+      "ObjectName": "Function'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.38"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjBluezoneBomb_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature.InOffset",
+        "ObjectName": "StructProperty'ProjBluezoneBomb_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature.InOffset'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.40"
       }
     ],
@@ -486,8 +528,9 @@
     "Type": "Function",
     "Name": "End",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjBluezoneBomb_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature",
+      "ObjectName": "Function'ProjBluezoneBomb_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.41"
     },
     "FunctionFlags": 201326592
@@ -496,6 +539,7 @@
     "Type": "FloatProperty",
     "Name": "DeltaSeconds",
     "Outer": "ReceiveTick",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": null,
     "PropertyFlags": 128
   },
@@ -503,17 +547,18 @@
     "Type": "Function",
     "Name": "ReceiveTick",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjBluezoneBomb_C:End",
+      "ObjectName": "Function'ProjBluezoneBomb_C:End'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.42"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:ReceiveTick",
+      "ObjectName": "Function'Actor:ReceiveTick'",
       "ObjectPath": "/Script/Engine"
     },
     "Children": [
       {
-        "ObjectName": "FloatProperty ProjBluezoneBomb_C:ReceiveTick.DeltaSeconds",
+        "ObjectName": "FloatProperty'ProjBluezoneBomb_C:ReceiveTick.DeltaSeconds'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.43"
       }
     ],
@@ -523,12 +568,13 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjBluezoneBomb_C:ReceiveTick",
+      "ObjectName": "Function'ProjBluezoneBomb_C:ReceiveTick'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.44"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 201459712
@@ -537,87 +583,90 @@
     "Type": "StructProperty",
     "Name": "UberGraphFrame",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "Function ProjBluezoneBomb_C:UserConstructionScript",
+      "ObjectName": "Function'ProjBluezoneBomb_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.45"
     },
     "PropertyFlags": 2105344,
     "Struct": {
-      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
       "ObjectPath": "/Script/Engine"
     }
   },
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "DynamicBindingObjects": [
         {
-          "ObjectName": "ComponentDelegateBinding ProjBluezoneBomb_C:ComponentDelegateBinding_2",
+          "ObjectName": "ComponentDelegateBinding'ProjBluezoneBomb_C:ComponentDelegateBinding_2'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.50"
         }
       ],
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjBluezoneBomb_C:SimpleConstructionScript_0__57659476",
+        "ObjectName": "SimpleConstructionScript'ProjBluezoneBomb_C:SimpleConstructionScript_0__57659476'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.56"
       },
       "UberGraphFramePointerProperty": {
-        "ObjectName": "StructProperty ProjBluezoneBomb_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjBluezoneBomb_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.46"
       },
       "UberGraphFunction": {
-        "ObjectName": "Function ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb",
+        "ObjectName": "Function'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.38"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslProjectile",
+      "ObjectName": "Class'TslProjectile'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjBluezoneBomb_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjBluezoneBomb_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.46"
       }
     ],
     "FuncMap": {
       "ExecuteUbergraph_ProjBluezoneBomb": {
-        "ObjectName": "Function ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb",
+        "ObjectName": "Function'ProjBluezoneBomb_C:ExecuteUbergraph_ProjBluezoneBomb'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.38"
       },
       "BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature": {
-        "ObjectName": "Function ProjBluezoneBomb_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature",
+        "ObjectName": "Function'ProjBluezoneBomb_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.41"
       },
       "End": {
-        "ObjectName": "Function ProjBluezoneBomb_C:End",
+        "ObjectName": "Function'ProjBluezoneBomb_C:End'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.42"
       },
       "ReceiveTick": {
-        "ObjectName": "Function ProjBluezoneBomb_C:ReceiveTick",
+        "ObjectName": "Function'ProjBluezoneBomb_C:ReceiveTick'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.44"
       },
       "UserConstructionScript": {
-        "ObjectName": "Function ProjBluezoneBomb_C:UserConstructionScript",
+        "ObjectName": "Function'ProjBluezoneBomb_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.45"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjBluezoneBomb_C Default__ProjBluezoneBomb_C",
+      "ObjectName": "ProjBluezoneBomb_C'Default__ProjBluezoneBomb_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.48"
     }
   },
   {
     "Type": "ProjBluezoneBomb_C",
     "Name": "Default__ProjBluezoneBomb_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.ProjBluezoneBomb_C'",
     "Properties": {
       "UberGraphFrame": {},
       "HitImpactMin": 300.0,
@@ -635,27 +684,27 @@
         "Z": 0.0
       },
       "MovementComp": {
-        "ObjectName": "TslProjectileMovementComponent Default__ProjBluezoneBomb_C:ProjectileComp",
+        "ObjectName": "TslProjectileMovementComponent'Default__ProjBluezoneBomb_C:ProjectileComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.60"
       },
       "CollisionComp": {
-        "ObjectName": "SphereComponent Default__ProjBluezoneBomb_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjBluezoneBomb_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.58"
       },
       "ParticleComp": {
-        "ObjectName": "ParticleSystemComponent Default__ProjBluezoneBomb_C:ParticleComp",
+        "ObjectName": "ParticleSystemComponent'Default__ProjBluezoneBomb_C:ParticleComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.51"
       },
       "MeshComp": {
-        "ObjectName": "StaticMeshComponent Default__ProjBluezoneBomb_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjBluezoneBomb_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.59"
       },
       "InterpolationTargetComp": {
-        "ObjectName": "SphereComponent Default__ProjBluezoneBomb_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjBluezoneBomb_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.57"
       },
       "ConstraintComp": {
-        "ObjectName": "PhysicsConstraintComponent Default__ProjBluezoneBomb_C:MeshConstraint",
+        "ObjectName": "PhysicsConstraintComponent'Default__ProjBluezoneBomb_C:MeshConstraint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.52"
       },
       "MeshInitialRotationRate": {
@@ -670,11 +719,11 @@
       "ExplosionInWater": false,
       "bUseVelocityStartTimer": true,
       "ImpactSound": {
-        "ObjectName": "AkAudioEvent HandBomb_Common_Impact",
+        "ObjectName": "AkAudioEvent'HandBomb_Common_Impact'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/HandBomb_Common/HandBomb_Common_Impact.0"
       },
       "AkComp": {
-        "ObjectName": "AkComponent Default__ProjBluezoneBomb_C:AkComp",
+        "ObjectName": "AkComponent'Default__ProjBluezoneBomb_C:AkComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.49"
       },
       "bPropagateEffectActor": true,
@@ -693,11 +742,11 @@
         ]
       },
       "ReplicatedEffectActor": {
-        "ObjectName": "BlueprintGeneratedClass Bluezonebomb_EffectActor_C",
+        "ObjectName": "BlueprintGeneratedClass'Bluezonebomb_EffectActor_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Bluezonebomb_EffectActor.0"
       },
       "RootComponent": {
-        "ObjectName": "SphereComponent Default__ProjBluezoneBomb_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjBluezoneBomb_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.58"
       }
     }
@@ -706,9 +755,10 @@
     "Type": "AkComponent",
     "Name": "AkComp",
     "Outer": "Default__ProjBluezoneBomb_C",
+    "Class": "UScriptClass'AkComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjBluezoneBomb_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjBluezoneBomb_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.58"
       }
     }
@@ -717,6 +767,7 @@
     "Type": "ComponentDelegateBinding",
     "Name": "ComponentDelegateBinding_2",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
     "Properties": {
       "ComponentDelegateBindings": [
         {
@@ -731,9 +782,10 @@
     "Type": "ParticleSystemComponent",
     "Name": "ParticleComp",
     "Outer": "Default__ProjBluezoneBomb_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "StaticMeshComponent Default__ProjBluezoneBomb_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjBluezoneBomb_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.59"
       }
     }
@@ -742,6 +794,7 @@
     "Type": "PhysicsConstraintComponent",
     "Name": "MeshConstraint",
     "Outer": "Default__ProjBluezoneBomb_C",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
     "Properties": {
       "ConstraintInstance": {
         "ProfileInstance": {
@@ -756,7 +809,7 @@
       },
       "bUseAttachParentBound": true,
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjBluezoneBomb_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjBluezoneBomb_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.57"
       }
     }
@@ -764,19 +817,21 @@
   {
     "Type": "SceneComponent",
     "Name": "SceneComponent_1",
-    "Outer": "ProjBluezoneBomb_C"
+    "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class TslWorldOffsetComponent",
+        "ObjectName": "Class'TslWorldOffsetComponent'",
         "ObjectPath": "/Script/TslGame"
       },
       "ComponentTemplate": {
-        "ObjectName": "TslWorldOffsetComponent ProjBluezoneBomb_C:TslWorldOffset_GEN_VARIABLE",
+        "ObjectName": "TslWorldOffsetComponent'ProjBluezoneBomb_C:TslWorldOffset_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.61"
       },
       "VariableGuid": "760FF482-460E1130-B69CD5B7-C35D864E",
@@ -787,13 +842,14 @@
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjBluezoneBomb_C:SceneComponent_1",
+        "ObjectName": "SceneComponent'ProjBluezoneBomb_C:SceneComponent_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.53"
       },
       "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
@@ -804,21 +860,22 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0__57659476",
     "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "RootNodes": [
         {
-          "ObjectName": "SCS_Node ProjBluezoneBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_0",
+          "ObjectName": "SCS_Node'ProjBluezoneBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_0'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.54"
         }
       ],
       "AllNodes": [
         {
-          "ObjectName": "SCS_Node ProjBluezoneBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_0",
+          "ObjectName": "SCS_Node'ProjBluezoneBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_0'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.54"
         }
       ],
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjBluezoneBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_1",
+        "ObjectName": "SCS_Node'ProjBluezoneBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.55"
       }
     }
@@ -827,9 +884,10 @@
     "Type": "SphereComponent",
     "Name": "InterpolationTarget",
     "Outer": "Default__ProjBluezoneBomb_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjBluezoneBomb_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjBluezoneBomb_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.58"
       }
     }
@@ -838,6 +896,7 @@
     "Type": "SphereComponent",
     "Name": "SphereComp",
     "Outer": "Default__ProjBluezoneBomb_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "SphereRadius": 4.2,
       "bReceivesDecals": false,
@@ -848,7 +907,7 @@
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "ProjBluezoneBomb_C Default__ProjBluezoneBomb_C",
+              "ObjectName": "ProjBluezoneBomb_C'Default__ProjBluezoneBomb_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.48"
             },
             "FunctionName": "OnHit"
@@ -861,14 +920,15 @@
     "Type": "StaticMeshComponent",
     "Name": "MeshComp",
     "Outer": "Default__ProjBluezoneBomb_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
     "Properties": {
       "StaticMesh": {
-        "ObjectName": "StaticMesh BluezoneGrenade",
+        "ObjectName": "StaticMesh'BluezoneGrenade'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BluezoneGrenade/BluezoneGrenade.1"
       },
       "OverrideMaterials": [
         {
-          "ObjectName": "MaterialInstanceConstant SM_Tiger_BluezoneGrenade_01_M",
+          "ObjectName": "MaterialInstanceConstant'SM_Tiger_BluezoneGrenade_01_M'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/BluezoneGrenade/SM_Tiger_BluezoneGrenade_01_M.0"
         }
       ],
@@ -883,29 +943,29 @@
           "Z": 0.0
         },
         "PhysMaterialOverride": {
-          "ObjectName": "PhysicalMaterial PhysMat_Grenade",
+          "ObjectName": "PhysicalMaterial'PhysMat_Grenade'",
           "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Grenade.0"
         }
       },
       "CanCharacterStepUpOn": "ECB_No",
-      "RelativeScale3D": {
-        "X": 1.414,
-        "Y": 1.414,
-        "Z": 1.414
-      },
       "RelativeRotation": {
         "Pitch": 90.0,
         "Yaw": 0.0,
         "Roll": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__ProjBluezoneBomb_C:InterpolationTarget'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.57"
       },
       "RelativeLocation": {
         "X": 4.2153218E-08,
         "Y": 0.0,
         "Z": 0.3
       },
-      "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjBluezoneBomb_C:InterpolationTarget",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBluezoneBomb.57"
+      "RelativeScale3D": {
+        "X": 1.414,
+        "Y": 1.414,
+        "Z": 1.414
       },
       "bCanEverAffectNavigation": false
     }
@@ -914,6 +974,7 @@
     "Type": "TslProjectileMovementComponent",
     "Name": "ProjectileComp",
     "Outer": "Default__ProjBluezoneBomb_C",
+    "Class": "UScriptClass'TslProjectileMovementComponent'",
     "Properties": {
       "SlidingFriction_Speed_In": {
         "X": 0.0,
@@ -936,6 +997,7 @@
   {
     "Type": "TslWorldOffsetComponent",
     "Name": "TslWorldOffset_GEN_VARIABLE",
-    "Outer": "ProjBluezoneBomb_C"
+    "Outer": "ProjBluezoneBomb_C",
+    "Class": "UScriptClass'TslWorldOffsetComponent'"
   }
 ]

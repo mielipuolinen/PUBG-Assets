@@ -3,26 +3,27 @@
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapSKS_C",
     "Super": "DefaultRifleSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapSKS_C:SimpleConstructionScript_0",
+        "ObjectName": "SimpleConstructionScript'WeapSKS_C:SimpleConstructionScript_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSKS.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectName": "BlueprintGeneratedClass'DefaultRifleSetting_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapSKS_C Default__WeapSKS_C",
+      "ObjectName": "WeapSKS_C'Default__WeapSKS_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSKS.1"
     }
   },
@@ -30,14 +31,15 @@
     "Type": "WeapSKS_C",
     "Name": "Default__WeapSKS_C",
     "Template": "Default__DefaultRifleSetting_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/WeapSKS.WeapSKS_C'",
     "Properties": {
       "TrailFX": null,
       "ImpactTemplate": {
-        "ObjectName": "BlueprintGeneratedClass GunImpact_Heavy_C",
+        "ObjectName": "BlueprintGeneratedClass'GunImpact_Heavy_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Heavy.4"
       },
       "WeaponTrajectoryData": {
-        "ObjectName": "WeaponTrajectoryData WeapSKS_WeaponTrajectoryData",
+        "ObjectName": "WeaponTrajectoryData'WeapSKS_WeaponTrajectoryData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapSKS_WeaponTrajectoryData.0"
       },
       "WeaponGunPostprocessSettings": {
@@ -50,11 +52,11 @@
         "DepthBlurBlackPoint": 60.0
       },
       "WeaponGunData": {
-        "ObjectName": "WeaponGunDataAsset WeapSKS_WeaponGunData",
+        "ObjectName": "WeaponGunDataAsset'WeapSKS_WeaponGunData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapSKS_WeaponGunData.0"
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_gun_SKS",
+        "ObjectName": "Texture2D'weapons_gun_SKS'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_SKS.0"
       },
       "WeaponIconRatio": 3.28,
@@ -68,7 +70,7 @@
         ],
         "AnimationKick": 1.2,
         "RecoilMontage": {
-          "ObjectName": "AnimMontage DMR_Recoil_762_SKS_Montage",
+          "ObjectName": "AnimMontage'DMR_Recoil_762_SKS_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Recoil/DMR_Recoil_762_SKS_Montage.0"
         },
         "WeaponEquipDuration": 0.2,
@@ -77,7 +79,7 @@
         "PhysicalBodyHitImpactPower": 20000.0
       },
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapSKS_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__WeapSKS_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSKS.6"
       },
       "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
@@ -158,45 +160,51 @@
           "AttachmentMeshAsset": "/Game/Weapon/Rifles/SKS/Meshes/SKS_mag_setting.SKS_mag_setting",
           "AttachmentMeshName": "MagazineDefault",
           "AttachmentTemplate": {
-            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectName": "Class'AsyncStaticMeshComponent'",
             "ObjectPath": "/Script/TslGame"
           }
         }
       ],
       "WeaponTag": "SKS",
       "MuzzleFX": {
-        "ObjectName": "ParticleSystem P_Muzzle_SKS",
+        "ObjectName": "ParticleSystem'P_Muzzle_SKS'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/DMR/P_Muzzle_SKS.92"
       },
-      "EquipAnimData": {
-        "EAccessorySlot::Slot_Secondary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
-          },
-          "PlayRate": 1.5
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_Secondary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_SecondarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.5
+          }
         },
-        "EAccessorySlot::Slot_SideArm": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_SideArm": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PistolSlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
         },
-        "EAccessorySlot::Slot_Primary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_Primary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PrimarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
         }
-      },
+      ],
       "WeaponAudioData": {
-        "ObjectName": "WeaponAudioData WeapSKS_WeaponAudioData",
+        "ObjectName": "WeaponAudioData'WeapSKS_WeaponAudioData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapSKS_WeaponAudioData.0"
       },
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapSKS_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapSKS_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSKS.2"
       }
     }
@@ -206,12 +214,13 @@
     "Name": "RootScene",
     "Outer": "Default__WeapSKS_C",
     "Template": "RootScene",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapSKS_C Default__WeapSKS_C",
+              "ObjectName": "WeapSKS_C'Default__WeapSKS_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSKS.1"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -223,19 +232,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapSKS_C"
+    "Outer": "WeapSKS_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapSKS_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapSKS_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSKS.3"
       },
       "VariableGuid": "4B1B0ABE-483B9FB5-B48D1D92-B9412BF2",
@@ -246,9 +257,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0",
     "Outer": "WeapSKS_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapSKS_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectName": "SCS_Node'WeapSKS_C:SimpleConstructionScript_0.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSKS.4"
       }
     }
@@ -258,20 +270,21 @@
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapSKS_C",
     "Template": "WeaponMesh3P",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "AnimClass": {
-        "ObjectName": "AnimBlueprintGeneratedClass ABP_SKS_RD_C",
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_SKS_RD_C'",
         "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/SKS/Redux/Weapon_RD/ABP_SKS_RD.27"
       },
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh SKS_setting",
+        "ObjectName": "SkeletalMesh'SKS_setting'",
         "ObjectPath": "TslGame/Content/Weapon/Rifles/SKS/Meshes/SKS_setting.0"
       },
       "BodyInstance": {
         "MassInKgOverride": 14.318548
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapSKS_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapSKS_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSKS.2"
       }
     }

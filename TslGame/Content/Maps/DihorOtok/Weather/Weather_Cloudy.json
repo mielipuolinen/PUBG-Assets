@@ -1,0 +1,3503 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Weather_Cloudy_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'LevelScriptActor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "ClassFlags": 8651284,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Weather_Cloudy_C'Default__Weather_Cloudy_C'",
+      "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.1"
+    }
+  },
+  {
+    "Type": "Weather_Cloudy_C",
+    "Name": "Default__Weather_Cloudy_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.Weather_Cloudy_C'"
+  },
+  {
+    "Type": "AbstractNavData",
+    "Name": "AbstractNavData-Default",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'AbstractNavData'",
+    "Properties": {
+      "bNetLoadOnClient": true
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "P_Raindrop_NoCollision_Dihor_BP_11",
+    "Template": "AkSound",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Cloudy:PersistentLevel.P_Raindrop_NoCollision_Dihor_BP_11.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.36"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "Ak",
+    "Outer": "TslGlobalSound_WeatherCloudy_Vikendi_181",
+    "Template": "Ak_GEN_VARIABLE",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 316630.0,
+        "Y": 340850.0,
+        "Z": -10.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "AtmosphericFog",
+    "Name": "AtmosphericFog",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'AtmosphericFog'",
+    "Properties": {
+      "AtmosphericFogComponent": {
+        "ObjectName": "AtmosphericFogComponent'Weather_Cloudy:PersistentLevel.AtmosphericFog.AtmosphericFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.6"
+      },
+      "RootComponent": {
+        "ObjectName": "AtmosphericFogComponent'Weather_Cloudy:PersistentLevel.AtmosphericFog.AtmosphericFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.6"
+      }
+    }
+  },
+  {
+    "Type": "AtmosphericFogComponent",
+    "Name": "AtmosphericFogComponent0",
+    "Outer": "AtmosphericFog",
+    "Class": "UScriptClass'AtmosphericFogComponent'",
+    "Properties": {
+      "DistanceScale": 32.0,
+      "StartDistance": 11000.0,
+      "HeightDensityLayers": [
+        {
+          "Height": 5000.0,
+          "Density": 1.0
+        },
+        {
+          "Height": 13000.0,
+          "Density": 0.02
+        }
+      ],
+      "DefaultBrightness": 5.0,
+      "DefaultLightColor": {
+        "B": 139,
+        "G": 139,
+        "R": 139,
+        "A": 255,
+        "Hex": "FF8B8B8B"
+      },
+      "bDisableSunDisk": true,
+      "PrecomputeParams": {
+        "DensityHeight": 0.75
+      },
+      "RelativeLocation": {
+        "X": 621903.0,
+        "Y": 303118.0,
+        "Z": 2490.0
+      }
+    }
+  },
+  {
+    "Type": "BluezoneOpacity_BP_C",
+    "Name": "BluezoneOpacity_BP_130",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BluezoneOpacity_BP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/BluezoneOpacity_BP.BluezoneOpacity_BP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.BluezoneOpacity_BP_130.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.39"
+      },
+      "Set BluezoneOpacity": 0.62,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.BluezoneOpacity_BP_130.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.39"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.BluezoneOpacity_BP_130.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.39"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_6",
+    "Outer": "BrushComponent0",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -25000000.0,
+                "Y": -1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": -1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": 1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": 1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": 1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": 1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": -1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": -1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -1048576.0,
+                "Z": -25000000.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -25000000.0,
+                "Y": -25000000.0,
+                "Z": -25000000.0
+              },
+              "Max": {
+                "X": 25000000.0,
+                "Y": 25000000.0,
+                "Z": 25000000.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "bGenerateMirroredCollision": false,
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "5A8374884E7077C73B2E6481CCD3339D",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 1254,
+        "SizeOnDisk": 1254,
+        "OffsetInFile": "0x139DDB"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent0",
+    "Outer": "LevelBounds_0",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 400000.0,
+        "Y": 400000.0,
+        "Z": -253566.0
+      },
+      "RelativeScale3D": {
+        "X": 16384000.0,
+        "Y": 16384000.0,
+        "Z": 16384000.0
+      }
+    }
+  },
+  {
+    "Type": "BP_QuantumClouds_C",
+    "Name": "BP_QuantumClouds10",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_QuantumClouds_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/QuantumMetaClouds/BP_QuantumClouds.BP_QuantumClouds_C'",
+    "Properties": {
+      "StaticMesh1": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds10.StaticMesh1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.48"
+      },
+      "Update": true,
+      "Cloud": "Clouds::NewEnumerator12",
+      "SunColor": {
+        "R": 1.0,
+        "G": 0.948081,
+        "B": 0.90683,
+        "A": 0.0,
+        "Hex": "FFFAF5"
+      },
+      "MID": {
+        "ObjectName": "MaterialInstanceDynamic'Weather_Cloudy:PersistentLevel.BP_QuantumClouds10.StaticMesh1.MaterialInstanceDynamic_6'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.26"
+      },
+      "AmbientColor": {
+        "R": 0.135,
+        "G": 0.129359,
+        "B": 0.115425,
+        "A": 0.0,
+        "Hex": "67655F"
+      },
+      "Cloud Thickness": 3.0,
+      "Cloud Density": 2.0,
+      "Cloud Opacity": 0.3,
+      "Cloud Scale": 250.0,
+      "CloudBrightness": 1.4,
+      "CloudAlpha": 0.92,
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds10.StaticMesh1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.48"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds10.StaticMesh1'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.48"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BP_QuantumClouds_C",
+    "Name": "BP_QuantumClouds2",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_QuantumClouds_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/QuantumMetaClouds/BP_QuantumClouds.BP_QuantumClouds_C'",
+    "Properties": {
+      "StaticMesh1": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds2.StaticMesh1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.49"
+      },
+      "Update": true,
+      "Cloud": "Clouds::NewEnumerator12",
+      "SunColor": {
+        "R": 1.0,
+        "G": 0.948081,
+        "B": 0.90683,
+        "A": 0.0,
+        "Hex": "FFFAF5"
+      },
+      "MID": {
+        "ObjectName": "MaterialInstanceDynamic'Weather_Cloudy:PersistentLevel.BP_QuantumClouds2.StaticMesh1.MaterialInstanceDynamic_2'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.27"
+      },
+      "AmbientColor": {
+        "R": 0.135,
+        "G": 0.129359,
+        "B": 0.115425,
+        "A": 0.0,
+        "Hex": "67655F"
+      },
+      "Cloud Thickness": 3.0,
+      "Cloud Density": 2.0,
+      "Cloud Opacity": 0.3,
+      "Cloud Scale": 250.0,
+      "CloudBrightness": 1.4,
+      "CloudAlpha": 0.6,
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds2.StaticMesh1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.49"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds2.StaticMesh1'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.49"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BP_QuantumClouds_C",
+    "Name": "BP_QuantumClouds4",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_QuantumClouds_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/QuantumMetaClouds/BP_QuantumClouds.BP_QuantumClouds_C'",
+    "Properties": {
+      "StaticMesh1": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds4.StaticMesh1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.50"
+      },
+      "Update": true,
+      "Cloud": "Clouds::NewEnumerator16",
+      "SunColor": {
+        "R": 1.0,
+        "G": 0.948081,
+        "B": 0.90683,
+        "A": 0.0,
+        "Hex": "FFFAF5"
+      },
+      "MID": {
+        "ObjectName": "MaterialInstanceDynamic'Weather_Cloudy:PersistentLevel.BP_QuantumClouds4.StaticMesh1.MaterialInstanceDynamic_3'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.28"
+      },
+      "AmbientColor": {
+        "R": 0.135,
+        "G": 0.129359,
+        "B": 0.115425,
+        "A": 0.0,
+        "Hex": "67655F"
+      },
+      "Cloud Thickness": 3.0,
+      "Cloud Density": 2.0,
+      "Cloud Opacity": 0.3,
+      "Cloud Scale": 250.0,
+      "CloudAlpha": 0.85,
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds4.StaticMesh1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.50"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds4.StaticMesh1'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.50"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BP_QuantumClouds_C",
+    "Name": "BP_QuantumClouds7",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_QuantumClouds_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/QuantumMetaClouds/BP_QuantumClouds.BP_QuantumClouds_C'",
+    "Properties": {
+      "StaticMesh1": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds7.StaticMesh1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.51"
+      },
+      "Update": true,
+      "Cloud": "Clouds::NewEnumerator12",
+      "SunColor": {
+        "R": 1.0,
+        "G": 0.948081,
+        "B": 0.90683,
+        "A": 0.0,
+        "Hex": "FFFAF5"
+      },
+      "MID": {
+        "ObjectName": "MaterialInstanceDynamic'Weather_Cloudy:PersistentLevel.BP_QuantumClouds7.StaticMesh1.MaterialInstanceDynamic_4'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.29"
+      },
+      "AmbientColor": {
+        "R": 0.135,
+        "G": 0.129359,
+        "B": 0.115425,
+        "A": 0.0,
+        "Hex": "67655F"
+      },
+      "Cloud Thickness": 3.0,
+      "Cloud Density": 2.0,
+      "Cloud Opacity": 0.3,
+      "Cloud Scale": 250.0,
+      "CloudBrightness": 1.4,
+      "CloudAlpha": 0.85,
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds7.StaticMesh1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.51"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds7.StaticMesh1'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.51"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BP_QuantumClouds_C",
+    "Name": "BP_QuantumClouds9",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_QuantumClouds_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/QuantumMetaClouds/BP_QuantumClouds.BP_QuantumClouds_C'",
+    "Properties": {
+      "StaticMesh1": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds9.StaticMesh1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.52"
+      },
+      "Update": true,
+      "Cloud": "Clouds::NewEnumerator16",
+      "SunColor": {
+        "R": 1.0,
+        "G": 0.948081,
+        "B": 0.90683,
+        "A": 0.0,
+        "Hex": "FFFAF5"
+      },
+      "MID": {
+        "ObjectName": "MaterialInstanceDynamic'Weather_Cloudy:PersistentLevel.BP_QuantumClouds9.StaticMesh1.MaterialInstanceDynamic_5'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.30"
+      },
+      "AmbientColor": {
+        "R": 0.135,
+        "G": 0.129359,
+        "B": 0.115425,
+        "A": 0.0,
+        "Hex": "67655F"
+      },
+      "Cloud Thickness": 3.0,
+      "Cloud Density": 2.0,
+      "Cloud Opacity": 0.3,
+      "Cloud Scale": 200.0,
+      "CloudAlpha": 0.85,
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds9.StaticMesh1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.52"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds9.StaticMesh1'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.52"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BP_QuantumClouds_C",
+    "Name": "BP_QuantumClouds_356",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_QuantumClouds_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/QuantumMetaClouds/BP_QuantumClouds.BP_QuantumClouds_C'",
+    "Properties": {
+      "StaticMesh1": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds_356.StaticMesh1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.53"
+      },
+      "Update": true,
+      "Cloud": "Clouds::NewEnumerator13",
+      "SunColor": {
+        "R": 1.0,
+        "G": 0.948081,
+        "B": 0.90683,
+        "A": 0.0,
+        "Hex": "FFFAF5"
+      },
+      "MID": {
+        "ObjectName": "MaterialInstanceDynamic'Weather_Cloudy:PersistentLevel.BP_QuantumClouds_356.StaticMesh1.MaterialInstanceDynamic_1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.31"
+      },
+      "AmbientColor": {
+        "R": 0.135,
+        "G": 0.129359,
+        "B": 0.115425,
+        "A": 0.0,
+        "Hex": "67655F"
+      },
+      "Cloud Thickness": 3.0,
+      "Cloud Density": 2.0,
+      "Cloud Opacity": 0.5,
+      "Cloud Scale": 250.0,
+      "CloudBrightness": 1.3,
+      "CloudAlpha": 0.8,
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds_356.StaticMesh1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.53"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_QuantumClouds_356.StaticMesh1'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.53"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BP_Sky_Sphere_Savage_01_C",
+    "Name": "BP_Sky_Sphere_Savage_01_82",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_Sky_Sphere_Savage_01_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Material/BP_Sky_Sphere_Savage_01.BP_Sky_Sphere_Savage_01_C'",
+    "Properties": {
+      "Sky Sphere mesh": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_Sky_Sphere_Savage_01_82.Sky Sphere mesh'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.54"
+      },
+      "Base": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.BP_Sky_Sphere_Savage_01_82.Base'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.40"
+      },
+      "Sky material": {
+        "ObjectName": "MaterialInstanceDynamic'Weather_Cloudy:PersistentLevel.BP_Sky_Sphere_Savage_01_82.Sky Sphere mesh.MaterialInstanceDynamic_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.32"
+      },
+      "Directional light actor": {
+        "ObjectName": "DirectionalLight'Weather_Cloudy:PersistentLevel.DirectionalLight_Sun'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.18"
+      },
+      "Colors determined by sun position": false,
+      "Sun height": 0.49999988,
+      "Sun brightness": 0.0,
+      "Horizon Falloff": 4.0,
+      "Horizon color": {
+        "R": 0.35059,
+        "G": 0.434818,
+        "B": 0.49,
+        "A": 1.0,
+        "Hex": "FFA0B0BA"
+      },
+      "SkyMat": {
+        "ObjectName": "MaterialInstanceConstant'M_Sky_Panning_Clouds_DihorOtok_09_Inst'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Sky_Panning_Clouds_DihorOtok_09_Inst.0"
+      },
+      "Use_Blending": 1.0,
+      "BlendRadius": 500000000.0,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.BP_Sky_Sphere_Savage_01_82.Base'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.40"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.BP_Sky_Sphere_Savage_01_82.Base'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.40"
+        },
+        {
+          "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.BP_Sky_Sphere_Savage_01_82.Sky Sphere mesh'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.54"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BrushComponent",
+    "Name": "BrushComponent0",
+    "Outer": "PostProcessVolume2",
+    "Class": "UScriptClass'BrushComponent'",
+    "Properties": {
+      "Brush": {
+        "ObjectName": "Model'Weather_Cloudy:PersistentLevel.PostProcessVolume2.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.34"
+      },
+      "BrushBodySetup": {
+        "ObjectName": "BodySetup'Weather_Cloudy:PersistentLevel.PostProcessVolume2.BrushComponent0.BodySetup_6'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.8"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 743484.06,
+        "Y": 636682.75,
+        "Z": -19744.75
+      }
+    }
+  },
+  {
+    "Type": "DirectionalLight",
+    "Name": "DirectionalLight_Sun",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'DirectionalLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "DirectionalLightComponent'Weather_Cloudy:PersistentLevel.DirectionalLight_Sun.LightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.19"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "DirectionalLightComponent'Weather_Cloudy:PersistentLevel.DirectionalLight_Sun.LightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.19"
+      }
+    }
+  },
+  {
+    "Type": "DirectionalLightComponent",
+    "Name": "LightComponent0",
+    "Outer": "DirectionalLight_Sun",
+    "Class": "UScriptClass'DirectionalLightComponent'",
+    "Properties": {
+      "OcclusionMaskDarkness": 0.3,
+      "OcclusionDepthRange": 5000.0,
+      "DynamicShadowDistanceMovableLight": 4000.0,
+      "CascadeDistributionExponent": 4.0,
+      "CascadeTransitionFraction": 0.3,
+      "DistanceFieldShadowDistance": 40000.0,
+      "TraceDistance": 5000.0,
+      "LightmassSettings": {
+        "LightSourceAngle": 1.5,
+        "ShadowExponent": 1.0
+      },
+      "bUsedAsAtmosphereSunLight": true,
+      "bUseGridShadow": true,
+      "GridShadowSplitSettings": [
+        {
+          "CellSize": 1000.0,
+          "MaxRadius": 3000.0
+        },
+        {
+          "CellSize": 5000.0,
+          "MaxRadius": 15000.0
+        },
+        {
+          "CellSize": 25000.0,
+          "MaxRadius": 75000.0
+        }
+      ],
+      "Temperature": 7000.0,
+      "bUseTemperature": true,
+      "LightFunctionMaterial": {
+        "ObjectName": "MaterialInstanceConstant'M__LF_CloudShadow_Inst_06_DO_Squall'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M__LF_CloudShadow_Inst_06_DO_Squall.0"
+      },
+      "LightFunctionScale": {
+        "X": 24000.0,
+        "Y": 24000.0,
+        "Z": 24000.0
+      },
+      "DisabledBrightness": 0.3,
+      "BloomScale": 0.005,
+      "BloomThreshold": 0.3,
+      "BloomTint": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "bUseRayTracedDistanceFieldShadows": true,
+      "LightGuid": "E164CD43-497BB08D-CD9EA29C-356A21F1",
+      "Intensity": 14.0,
+      "LightColor": {
+        "B": 184,
+        "G": 233,
+        "R": 255,
+        "A": 255,
+        "Hex": "FFFFE9B8"
+      },
+      "IndirectLightingIntensity": 0.0,
+      "VolumetricScatteringIntensity": 55.0,
+      "Mobility": "EComponentMobility::Movable",
+      "RelativeRotation": {
+        "Pitch": -45.0,
+        "Yaw": -11.0,
+        "Roll": 0.0
+      },
+      "RelativeLocation": {
+        "X": 752617.2,
+        "Y": 595246.94,
+        "Z": 3827.498
+      }
+    }
+  },
+  {
+    "Type": "ExponentialHeightFog",
+    "Name": "ExponentialHeightFog_1",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'ExponentialHeightFog'",
+    "Properties": {
+      "Component": {
+        "ObjectName": "ExponentialHeightFogComponent'Weather_Cloudy:PersistentLevel.ExponentialHeightFog_1.HeightFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.21"
+      },
+      "RootComponent": {
+        "ObjectName": "ExponentialHeightFogComponent'Weather_Cloudy:PersistentLevel.ExponentialHeightFog_1.HeightFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.21"
+      }
+    }
+  },
+  {
+    "Type": "ExponentialHeightFogComponent",
+    "Name": "HeightFogComponent0",
+    "Outer": "ExponentialHeightFog_1",
+    "Class": "UScriptClass'ExponentialHeightFogComponent'",
+    "Properties": {
+      "FogDensity": 0.0075,
+      "FogInscatteringColor": {
+        "R": 0.2805,
+        "G": 0.364792,
+        "B": 0.425,
+        "A": 1.0,
+        "Hex": "FF90A3AF"
+      },
+      "HeightDensityLayers": [
+        {
+          "Height": 5000.0,
+          "Density": 1.0
+        },
+        {
+          "Height": 100000.0,
+          "Density": 2.0
+        }
+      ],
+      "DirectionalInscatteringColor": {
+        "R": 1.0,
+        "G": 1.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FFFFFFFF"
+      },
+      "FogHeightFalloff": 0.15,
+      "FogMaxOpacity": 0.8,
+      "StartDistance": 2500.0,
+      "bEnableVolumetricFog": true,
+      "VolumetricFogScatteringDistribution": 0.15,
+      "VolumetricFogAlbedo": {
+        "B": 197,
+        "G": 195,
+        "R": 189,
+        "A": 255,
+        "Hex": "FFBDC3C5"
+      },
+      "VolumetricFogExtinctionScale": 0.55,
+      "VolumetricFogDistance": 2000.0,
+      "ExtendedFogStartDistance": 2500.0,
+      "ExtendedFogStartFalloffDistance": 15000.0,
+      "ExtendedHeight": 0.65,
+      "ExtendedFallOff": 0.04,
+      "ExtendedFogDensity": 45.0,
+      "UpDensity": 3.55,
+      "DownDensity": 5.0,
+      "bUseAtmosphereScattering": false,
+      "RelativeLocation": {
+        "X": 525444.0,
+        "Y": 240702.0,
+        "Z": 3000.0
+      }
+    }
+  },
+  {
+    "Type": "GodRay_Actor_BP_03_C",
+    "Name": "GodRay_Actor_BP_03_374",
+    "Outer": "PersistentLevel",
+    "Template": "Default__GodRay_Actor_BP_03_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/GodRay_Actor_BP_03.GodRay_Actor_BP_03_C'",
+    "Properties": {
+      "StaticMesh4": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.GodRay_Actor_BP_03_374.StaticMesh4'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.57"
+      },
+      "StaticMesh1": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.GodRay_Actor_BP_03_374.StaticMesh1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.56"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.GodRay_Actor_BP_03_374.StaticMesh'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.55"
+      },
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.GodRay_Actor_BP_03_374.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.41"
+      },
+      "Origin": {
+        "X": 408000.0,
+        "Y": 408000.0,
+        "Z": 100000.0
+      },
+      "Scale": 2500.0,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.GodRay_Actor_BP_03_374.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.41"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.GodRay_Actor_BP_03_374.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.41"
+        },
+        {
+          "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.GodRay_Actor_BP_03_374.StaticMesh'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.55"
+        },
+        {
+          "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.GodRay_Actor_BP_03_374.StaticMesh1'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.56"
+        },
+        {
+          "ObjectName": "StaticMeshComponent'Weather_Cloudy:PersistentLevel.GodRay_Actor_BP_03_374.StaticMesh4'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.57"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "IDCSettingsForDihorOtokSquallWeather_C",
+    "Name": "IDCSettingsForDihorOtokSquallWeather_42",
+    "Outer": "PersistentLevel",
+    "Template": "Default__IDCSettingsForDihorOtokSquallWeather_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/IDC_DihorOtok/IDCSettingsForDihorOtokSquallWeather.IDCSettingsForDihorOtokSquallWeather_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.IDCSettingsForDihorOtokSquallWeather_42.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.42"
+      },
+      "ConsoleCommands": [
+        "r.CGV.Fallback 0.665918 -0.036198 -0.543119 -0.028295 0.489544 -0.020322 -0.391681 -0.021322 0.377081 -0.009492 -0.292221 -0.014237 0.116611 -0.046941 0.009107 -0.035574 0.082353 -0.036318 -0.007416 -0.022191 0.060490 -0.030302 -0.022793 -0.013343 0.006190 0.011259 0.013969 0.000000",
+        "r.CGV.Intensity 1",
+        "r.CGV.FallbackIntensity 0.02",
+        "r.CGV.HairIntensity 0.5",
+        "r.CGV.Skinintensity 1",
+        "r.CGV.BaseIntensity 0.735",
+        "r.CGV.IndoorIntensity 2.75",
+        "r.CGV.OutdoorIntensity 0.75",
+        "r.CGV.IndoorSaturation 0.1",
+        "r.CGV.OutdoorSaturation 0.3",
+        "r.WindowLightIntensity 5",
+        "r.CGV.UseFullFallback 1",
+        "r.CGV.FullFallbackIntensity 0.945",
+        "r.CGV.FoliageIntensity 0.3",
+        "r.GIVolume.Enable 0"
+      ],
+      "ExecuteCommandsInEditor": true,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.IDCSettingsForDihorOtokSquallWeather_42.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.42"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.IDCSettingsForDihorOtokSquallWeather_42.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.42"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Outer": "Weather_Cloudy",
+    "Class": "UScriptClass'Level'",
+    "Properties": {
+      "LevelBuildDataId": "AD7025C1-44436D99-EB76F8BF-EA6D0BEF",
+      "LevelScriptActor": {
+        "ObjectName": "Weather_Cloudy_C'Weather_Cloudy:PersistentLevel.Weather_Cloudy_C_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.59"
+      },
+      "Model": {
+        "ObjectName": "Model'Weather_Cloudy:PersistentLevel.Model_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.33"
+      },
+      "WorldSettings": {
+        "ObjectName": "WorldSettings'Weather_Cloudy:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.62"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "WorldSettings'Weather_Cloudy:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.62"
+      },
+      null,
+      {
+        "ObjectName": "LevelBounds'Weather_Cloudy:PersistentLevel.LevelBounds_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.25"
+      },
+      {
+        "ObjectName": "DirectionalLight'Weather_Cloudy:PersistentLevel.DirectionalLight_Sun'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.18"
+      },
+      {
+        "ObjectName": "AtmosphericFog'Weather_Cloudy:PersistentLevel.AtmosphericFog'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.5"
+      },
+      {
+        "ObjectName": "ExponentialHeightFog'Weather_Cloudy:PersistentLevel.ExponentialHeightFog_1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.20"
+      },
+      {
+        "ObjectName": "SkyLight'Weather_Cloudy:PersistentLevel.SkyLight_6'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.45"
+      },
+      {
+        "ObjectName": "AbstractNavData'Weather_Cloudy:PersistentLevel.AbstractNavData-Default'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.2"
+      },
+      {
+        "ObjectName": "P_Raindrop_NoCollision_Dihor_BP_C'Weather_Cloudy:PersistentLevel.P_Raindrop_NoCollision_Dihor_BP_11'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.35"
+      },
+      {
+        "ObjectName": "BP_Sky_Sphere_Savage_01_C'Weather_Cloudy:PersistentLevel.BP_Sky_Sphere_Savage_01_82'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.16"
+      },
+      {
+        "ObjectName": "PostProcessVolume'Weather_Cloudy:PersistentLevel.PostProcessVolume2'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.38"
+      },
+      {
+        "ObjectName": "SnowEffect_C'Weather_Cloudy:PersistentLevel.SnowEffect_120'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.47"
+      },
+      {
+        "ObjectName": "IDCSettingsForDihorOtokSquallWeather_C'Weather_Cloudy:PersistentLevel.IDCSettingsForDihorOtokSquallWeather_42'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.23"
+      },
+      {
+        "ObjectName": "BluezoneOpacity_BP_C'Weather_Cloudy:PersistentLevel.BluezoneOpacity_BP_130'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.7"
+      },
+      {
+        "ObjectName": "BP_QuantumClouds_C'Weather_Cloudy:PersistentLevel.BP_QuantumClouds_356'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.15"
+      },
+      {
+        "ObjectName": "BP_QuantumClouds_C'Weather_Cloudy:PersistentLevel.BP_QuantumClouds2'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.11"
+      },
+      {
+        "ObjectName": "BP_QuantumClouds_C'Weather_Cloudy:PersistentLevel.BP_QuantumClouds4'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.12"
+      },
+      {
+        "ObjectName": "BP_QuantumClouds_C'Weather_Cloudy:PersistentLevel.BP_QuantumClouds7'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.13"
+      },
+      {
+        "ObjectName": "BP_QuantumClouds_C'Weather_Cloudy:PersistentLevel.BP_QuantumClouds9'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.14"
+      },
+      {
+        "ObjectName": "BP_QuantumClouds_C'Weather_Cloudy:PersistentLevel.BP_QuantumClouds10'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.10"
+      },
+      {
+        "ObjectName": "GodRay_Actor_BP_03_C'Weather_Cloudy:PersistentLevel.GodRay_Actor_BP_03_374'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.22"
+      },
+      {
+        "ObjectName": "TslGlobalSound_WeatherCloudy_Vikendi_C'Weather_Cloudy:PersistentLevel.TslGlobalSound_WeatherCloudy_Vikendi_181'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.58"
+      },
+      {
+        "ObjectName": "WeatherManagerBP_C'Weather_Cloudy:PersistentLevel.WeatherManagerBP_74'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.60"
+      },
+      {
+        "ObjectName": "Weather_Cloudy_C'Weather_Cloudy:PersistentLevel.Weather_Cloudy_C_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.59"
+      },
+      null
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/Maps/TslLobby",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'Weather_Cloudy:PersistentLevel.Model_0'",
+      "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.33"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": {
+      "ObjectName": "Weather_Cloudy_C'Weather_Cloudy:PersistentLevel.Weather_Cloudy_C_0'",
+      "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.59"
+    },
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "LevelBounds",
+    "Name": "LevelBounds_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelBounds'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Weather_Cloudy:PersistentLevel.LevelBounds_0.BoxComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.9"
+      }
+    }
+  },
+  {
+    "Type": "MaterialInstanceDynamic",
+    "Name": "MaterialInstanceDynamic_6",
+    "Outer": "StaticMesh1",
+    "Class": "UScriptClass'MaterialInstanceDynamic'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material'M_QuatumCloud_Master'",
+        "ObjectPath": "TslGame/Content/QuantumMetaClouds/Materials/M_QuatumCloud_Master.0"
+      },
+      "ScalarParameterValues": [
+        {
+          "ParameterName": "Contrast",
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudOpacity",
+          "ParameterValue": 0.3,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Intensity",
+          "ParameterValue": 1.4,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudAlpha",
+          "ParameterValue": 0.92,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterName": "CloudMask",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'QuantumCloud_3'",
+            "ObjectPath": "TslGame/Content/QuantumMetaClouds/Textures/QuantumCloud_3.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterName": "SunColor",
+          "ParameterValue": {
+            "R": 1.0,
+            "G": 0.948081,
+            "B": 0.90683,
+            "A": 0.0,
+            "Hex": "FFFAF5"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudColor",
+          "ParameterValue": {
+            "R": 0.27,
+            "G": 0.258718,
+            "B": 0.23085,
+            "A": 0.0,
+            "Hex": "8E8B84"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialInstanceDynamic",
+    "Name": "MaterialInstanceDynamic_2",
+    "Outer": "StaticMesh1",
+    "Class": "UScriptClass'MaterialInstanceDynamic'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material'M_QuatumCloud_Master'",
+        "ObjectPath": "TslGame/Content/QuantumMetaClouds/Materials/M_QuatumCloud_Master.0"
+      },
+      "ScalarParameterValues": [
+        {
+          "ParameterName": "Contrast",
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudOpacity",
+          "ParameterValue": 0.3,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Intensity",
+          "ParameterValue": 1.4,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudAlpha",
+          "ParameterValue": 0.6,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterName": "CloudMask",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'QuantumCloud_3'",
+            "ObjectPath": "TslGame/Content/QuantumMetaClouds/Textures/QuantumCloud_3.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterName": "SunColor",
+          "ParameterValue": {
+            "R": 1.0,
+            "G": 0.948081,
+            "B": 0.90683,
+            "A": 0.0,
+            "Hex": "FFFAF5"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudColor",
+          "ParameterValue": {
+            "R": 0.27,
+            "G": 0.258718,
+            "B": 0.23085,
+            "A": 0.0,
+            "Hex": "8E8B84"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialInstanceDynamic",
+    "Name": "MaterialInstanceDynamic_3",
+    "Outer": "StaticMesh1",
+    "Class": "UScriptClass'MaterialInstanceDynamic'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material'M_QuatumCloud_Master'",
+        "ObjectPath": "TslGame/Content/QuantumMetaClouds/Materials/M_QuatumCloud_Master.0"
+      },
+      "ScalarParameterValues": [
+        {
+          "ParameterName": "Contrast",
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudOpacity",
+          "ParameterValue": 0.3,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Intensity",
+          "ParameterValue": 1.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudAlpha",
+          "ParameterValue": 0.85,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterName": "CloudMask",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'QuantumCloud_13'",
+            "ObjectPath": "TslGame/Content/QuantumMetaClouds/Textures/QuantumCloud_13.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterName": "SunColor",
+          "ParameterValue": {
+            "R": 1.0,
+            "G": 0.948081,
+            "B": 0.90683,
+            "A": 0.0,
+            "Hex": "FFFAF5"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudColor",
+          "ParameterValue": {
+            "R": 0.27,
+            "G": 0.258718,
+            "B": 0.23085,
+            "A": 0.0,
+            "Hex": "8E8B84"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialInstanceDynamic",
+    "Name": "MaterialInstanceDynamic_4",
+    "Outer": "StaticMesh1",
+    "Class": "UScriptClass'MaterialInstanceDynamic'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material'M_QuatumCloud_Master'",
+        "ObjectPath": "TslGame/Content/QuantumMetaClouds/Materials/M_QuatumCloud_Master.0"
+      },
+      "ScalarParameterValues": [
+        {
+          "ParameterName": "Contrast",
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudOpacity",
+          "ParameterValue": 0.3,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Intensity",
+          "ParameterValue": 1.4,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudAlpha",
+          "ParameterValue": 0.85,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterName": "CloudMask",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'QuantumCloud_3'",
+            "ObjectPath": "TslGame/Content/QuantumMetaClouds/Textures/QuantumCloud_3.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterName": "SunColor",
+          "ParameterValue": {
+            "R": 1.0,
+            "G": 0.948081,
+            "B": 0.90683,
+            "A": 0.0,
+            "Hex": "FFFAF5"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudColor",
+          "ParameterValue": {
+            "R": 0.27,
+            "G": 0.258718,
+            "B": 0.23085,
+            "A": 0.0,
+            "Hex": "8E8B84"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialInstanceDynamic",
+    "Name": "MaterialInstanceDynamic_5",
+    "Outer": "StaticMesh1",
+    "Class": "UScriptClass'MaterialInstanceDynamic'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material'M_QuatumCloud_Master'",
+        "ObjectPath": "TslGame/Content/QuantumMetaClouds/Materials/M_QuatumCloud_Master.0"
+      },
+      "ScalarParameterValues": [
+        {
+          "ParameterName": "Contrast",
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudOpacity",
+          "ParameterValue": 0.3,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Intensity",
+          "ParameterValue": 1.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudAlpha",
+          "ParameterValue": 0.85,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterName": "CloudMask",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'QuantumCloud_13'",
+            "ObjectPath": "TslGame/Content/QuantumMetaClouds/Textures/QuantumCloud_13.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterName": "SunColor",
+          "ParameterValue": {
+            "R": 1.0,
+            "G": 0.948081,
+            "B": 0.90683,
+            "A": 0.0,
+            "Hex": "FFFAF5"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudColor",
+          "ParameterValue": {
+            "R": 0.27,
+            "G": 0.258718,
+            "B": 0.23085,
+            "A": 0.0,
+            "Hex": "8E8B84"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialInstanceDynamic",
+    "Name": "MaterialInstanceDynamic_1",
+    "Outer": "StaticMesh1",
+    "Class": "UScriptClass'MaterialInstanceDynamic'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material'M_QuatumCloud_Master'",
+        "ObjectPath": "TslGame/Content/QuantumMetaClouds/Materials/M_QuatumCloud_Master.0"
+      },
+      "ScalarParameterValues": [
+        {
+          "ParameterName": "Contrast",
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudOpacity",
+          "ParameterValue": 0.5,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Intensity",
+          "ParameterValue": 1.3,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudAlpha",
+          "ParameterValue": 0.8,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterName": "CloudMask",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'QuantumCloud_5'",
+            "ObjectPath": "TslGame/Content/QuantumMetaClouds/Textures/QuantumCloud_5.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterName": "SunColor",
+          "ParameterValue": {
+            "R": 1.0,
+            "G": 0.948081,
+            "B": 0.90683,
+            "A": 0.0,
+            "Hex": "FFFAF5"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "CloudColor",
+          "ParameterValue": {
+            "R": 0.27,
+            "G": 0.258718,
+            "B": 0.23085,
+            "A": 0.0,
+            "Hex": "8E8B84"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialInstanceDynamic",
+    "Name": "MaterialInstanceDynamic_0",
+    "Outer": "Sky Sphere mesh",
+    "Class": "UScriptClass'MaterialInstanceDynamic'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "MaterialInstanceConstant'M_Sky_Panning_Clouds_DihorOtok_09_Inst'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Sky_Panning_Clouds_DihorOtok_09_Inst.0"
+      },
+      "ScalarParameterValues": [
+        {
+          "ParameterName": "Horizon falloff",
+          "ParameterValue": 4.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Cloud speed",
+          "ParameterValue": 1.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Sun brightness",
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Sun height",
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Cloud opacity",
+          "ParameterValue": 0.7,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Stars brightness",
+          "ParameterValue": 0.1,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterName": "Light direction",
+          "ParameterValue": {
+            "R": 0.69411534,
+            "G": -0.13492256,
+            "B": -0.7071066,
+            "A": 1.0,
+            "Hex": "FFD90000"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Sun color",
+          "ParameterValue": {
+            "R": 1.0,
+            "G": 0.8148466,
+            "B": 0.47932017,
+            "A": 1.0,
+            "Hex": "FFFFE9B8"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Horizon color",
+          "ParameterValue": {
+            "R": 0.35059,
+            "G": 0.434818,
+            "B": 0.49,
+            "A": 1.0,
+            "Hex": "FFA0B0BA"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Zenith color",
+          "ParameterValue": {
+            "R": 0.034046,
+            "G": 0.109247,
+            "B": 0.295,
+            "A": 1.0,
+            "Hex": "FF335D94"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Overall color",
+          "ParameterValue": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Cloud color",
+          "ParameterValue": {
+            "R": 0.855778,
+            "G": 0.91902,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFEFF6FF"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "EEA5DBD6-47D5671B-94BEF89D-37D14C23",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_14",
+    "Outer": "PostProcessVolume2",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      "SphereRadius": 43301270.0
+    },
+    "Vectors": [
+      {
+        "X": -1.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1.0
+      },
+      {
+        "X": 1.0,
+        "Y": -0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": -1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      }
+    ],
+    "Points": [
+      {
+        "X": -25000000.0,
+        "Y": -25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": -25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": 25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": -25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": -25000000.0,
+        "Z": -25000000.0
+      }
+    ],
+    "Nodes": [
+      {
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 0,
+        "iSurf": 0,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 4,
+        "iSurf": 1,
+        "iVertexIndex": 4,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 2,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 8,
+        "iSurf": 2,
+        "iVertexIndex": 8,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 3,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 12,
+        "iSurf": 3,
+        "iVertexIndex": 12,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 4,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "iVertPool": 16,
+        "iSurf": 4,
+        "iVertexIndex": 16,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 5,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "iVertPool": 20,
+        "iSurf": 5,
+        "iVertexIndex": 20,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": -1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": 0,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      }
+    ],
+    "Surfs": [
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 0,
+        "vTextureU": 1,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 3,
+        "vNormal": 1,
+        "vTextureU": 3,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 5,
+        "vNormal": 3,
+        "vTextureU": 4,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 7,
+        "vNormal": 4,
+        "vTextureU": 0,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 2,
+        "vNormal": 5,
+        "vTextureU": 3,
+        "vTextureV": 1,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 2,
+        "vTextureU": 3,
+        "vTextureV": 4,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      }
+    ],
+    "NumSharedSides": 4,
+    "VertexBuffer": null,
+    "LightingGuid": "1D6B5385-4373E319-85445988-D5754193",
+    "LightmassSettings": [
+      {
+        "bUseTwoSidedLighting": false,
+        "bShadowIndirectOnly": false,
+        "bUseEmissiveForStaticLighting": false,
+        "bUseVertexNormalForHemisphereGather": false,
+        "EmissiveLightFalloffExponent": 8.0,
+        "EmissiveLightExplicitInfluenceRadius": 0.0,
+        "EmissiveBoost": 1.0,
+        "DiffuseBoost": 1.0,
+        "FullyOccludedSamplesFraction": 1.0
+      }
+    ]
+  },
+  {
+    "Type": "P_Raindrop_NoCollision_Dihor_BP_C",
+    "Name": "P_Raindrop_NoCollision_Dihor_BP_11",
+    "Outer": "PersistentLevel",
+    "Template": "Default__P_Raindrop_NoCollision_Dihor_BP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/P_Raindrop_NoCollision_Dihor_BP.P_Raindrop_NoCollision_Dihor_BP_C'",
+    "Properties": {
+      "RainInAircraft": {
+        "ObjectName": "ParticleSystemComponent'Weather_Cloudy:PersistentLevel.P_Raindrop_NoCollision_Dihor_BP_11.RainInAircraft'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.37"
+      },
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Weather_Cloudy:PersistentLevel.P_Raindrop_NoCollision_Dihor_BP_11.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.36"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Weather_Cloudy:PersistentLevel.P_Raindrop_NoCollision_Dihor_BP_11.AkSound'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.3"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Cloudy:PersistentLevel.P_Raindrop_NoCollision_Dihor_BP_11.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.36"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "ParticleSystemComponent'Weather_Cloudy:PersistentLevel.P_Raindrop_NoCollision_Dihor_BP_11.RainInAircraft'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.37"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "P_Raindrop_NoCollision_Dihor_BP_11",
+    "Template": "ParticleSystem",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_SnowDrop_01_02'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_SnowDrop_01_02.56"
+      },
+      "OldPosition": {
+        "X": -200530.0,
+        "Y": -50460.0,
+        "Z": -4005.0
+      },
+      "OnSystemFinished": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "P_Raindrop_NoCollision_Dihor_BP_C'Weather_Cloudy:PersistentLevel.P_Raindrop_NoCollision_Dihor_BP_11'",
+              "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.35"
+            },
+            "FunctionName": "OnParticleFinish"
+          }
+        ]
+      },
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": -200530.0,
+        "Y": -50460.0,
+        "Z": -4005.0
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "RainInAircraft",
+    "Outer": "P_Raindrop_NoCollision_Dihor_BP_11",
+    "Template": "RainInAircraft_GEN_VARIABLE",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Cloudy:PersistentLevel.P_Raindrop_NoCollision_Dihor_BP_11.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.36"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript"
+    }
+  },
+  {
+    "Type": "PostProcessVolume",
+    "Name": "PostProcessVolume2",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'PostProcessVolume'",
+    "Properties": {
+      "Settings": {
+        "bOverride_WhiteTemp": true,
+        "bOverride_ColorContrast": true,
+        "bOverride_FilmToeAmount": true,
+        "bOverride_FilmToe": true,
+        "bOverride_FilmShoulder": true,
+        "bOverride_AmbientCubemapIntensity": true,
+        "bOverride_BloomIntensity": true,
+        "bOverride_BloomThreshold": true,
+        "bOverride_Bloom1Tint": true,
+        "bOverride_Bloom1Size": true,
+        "bOverride_Bloom2Size": true,
+        "bOverride_Bloom2Tint": true,
+        "bOverride_Bloom3Tint": true,
+        "bOverride_Bloom3Size": true,
+        "bOverride_Bloom4Tint": true,
+        "bOverride_Bloom4Size": true,
+        "bOverride_Bloom5Tint": true,
+        "bOverride_Bloom5Size": true,
+        "bOverride_Bloom6Tint": true,
+        "bOverride_Bloom6Size": true,
+        "bOverride_BloomDirtMaskIntensity": true,
+        "bOverride_BloomDirtMaskTint": true,
+        "bOverride_BloomDirtMask": true,
+        "bOverride_TslBlurReticleBrightSceneVisibilityStartLuminance": true,
+        "bOverride_AutoExposureMethod": true,
+        "bOverride_AutoExposureMinBrightness": true,
+        "bOverride_AutoExposureMaxBrightness": true,
+        "bOverride_AutoExposureSpeedUp": true,
+        "bOverride_AutoExposureSpeedDown": true,
+        "bOverride_AutoExposureBias": true,
+        "bOverride_HistogramLogMin": true,
+        "bOverride_HistogramLogMax": true,
+        "bOverride_LensFlareIntensity": true,
+        "bOverride_LensFlareTint": true,
+        "bOverride_LensFlareBokehSize": true,
+        "bOverride_LensFlareThreshold": true,
+        "bOverride_AmbientOcclusionIntensity": true,
+        "bOverride_AmbientOcclusionRadius": true,
+        "bOverride_HBAOPowerExponent": true,
+        "bOverride_HBAORadius": true,
+        "bOverride_HBAOBias": true,
+        "bOverride_HBAODetailAO": true,
+        "bOverride_AmbientOcclusionPower": true,
+        "bOverride_AmbientOcclusionQuality": true,
+        "bOverride_AmbientOcclusionMipBlend": true,
+        "bOverride_AmbientOcclusionMipScale": true,
+        "bOverride_ColorGradingIntensity": true,
+        "bOverride_MotionBlurAmount": true,
+        "bOverride_MotionBlurMax": true,
+        "bOverride_ScreenSpaceReflectionIntensity": true,
+        "bOverride_ScreenSpaceReflectionQuality": true,
+        "bOverride_ScreenSpaceReflectionMaxRoughness": true,
+        "WhiteTemp": 6400.0,
+        "WhiteTint": 0.05,
+        "ColorSaturation": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.2,
+          "W": 1.0
+        },
+        "ColorContrast": {
+          "X": 0.975,
+          "Y": 0.975,
+          "Z": 0.975,
+          "W": 1.0
+        },
+        "ColorGain": {
+          "X": 1.05,
+          "Y": 1.05,
+          "Z": 1.05,
+          "W": 1.0
+        },
+        "ColorContrastShadows": {
+          "X": 0.92,
+          "Y": 0.92,
+          "Z": 0.92,
+          "W": 1.0
+        },
+        "ColorGammaShadows": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "ColorGammaMidtones": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "ColorContrastHighlights": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "ColorGammaHighlights": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "FilmSlope": 0.825,
+        "FilmToe": 0.68,
+        "FilmShoulder": 0.5,
+        "FilmBlackClip": 0.015,
+        "FilmWhitePoint": {
+          "R": 1.1,
+          "G": 1.035,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFFFF"
+        },
+        "FilmShadowTintBlend": 10.0,
+        "FilmShadowTintAmount": 10.0,
+        "FilmSaturation": 1.1,
+        "FilmChannelMixerGreen": {
+          "R": 0.0,
+          "G": 1.0,
+          "B": 0.12,
+          "A": 1.0,
+          "Hex": "FF00FF61"
+        },
+        "FilmChannelMixerBlue": {
+          "R": 0.0,
+          "G": 0.2,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FF007CFF"
+        },
+        "FilmContrast": 0.2,
+        "FilmToeAmount": 0.65,
+        "FilmHealAmount": 0.25,
+        "SceneColorTint": {
+          "R": 1.0,
+          "G": 1.04,
+          "B": 1.08,
+          "A": 1.0,
+          "Hex": "FFFFFFFF"
+        },
+        "SceneFringeIntensity": 0.1,
+        "BloomIntensity": 0.3,
+        "BloomThreshold": 1.0,
+        "Bloom1Size": 1.0,
+        "Bloom2Size": 4.0,
+        "Bloom3Size": 16.0,
+        "Bloom4Size": 32.0,
+        "Bloom5Size": 64.0,
+        "Bloom1Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom2Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom3Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom4Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom5Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom6Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "BloomDirtMask": {
+          "ObjectName": "Texture2D'T_Dirtmask_04'",
+          "ObjectPath": "TslGame/Content/Effects/Clets/Texture/T_Dirtmask_04.0"
+        },
+        "BloomDirtMaskIntensity": 3.0,
+        "BloomDirtMaskTint": {
+          "R": 0.895,
+          "G": 0.563938,
+          "B": 0.742422,
+          "A": 1.0,
+          "Hex": "FFF3C6E0"
+        },
+        "TslBlurIntensity": 1.0,
+        "TslBlurReticleBrightSceneVisibilityStartLuminance": 0.5,
+        "AmbientCubemapTint": {
+          "R": 0.73,
+          "G": 0.6497,
+          "B": 0.67305,
+          "A": 1.0,
+          "Hex": "FFDED3D6"
+        },
+        "AmbientCubemapIntensity": 0.15,
+        "AmbientCubemap": {
+          "ObjectName": "TextureCube'Vikendi_Squall_Cube'",
+          "ObjectPath": "TslGame/Content/Assets/World/HDRI/SkyCube_Vikendi/Vikendi_Squall_Cube.0"
+        },
+        "AutoExposureMethod": "AEM_Basic",
+        "AutoExposureLowPercent": 58.0,
+        "AutoExposureMinBrightness": 1.0,
+        "AutoExposureMaxBrightness": 1.2,
+        "AutoExposureSpeedUp": 10.0,
+        "AutoExposureSpeedDown": 10.0,
+        "AutoExposureBias": -0.5,
+        "HistogramLogMin": -5.0,
+        "HistogramLogMax": 1.5,
+        "LensFlareTint": {
+          "R": 0.681993,
+          "G": 0.832476,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFD8ECFF"
+        },
+        "LensFlareBokehSize": 8.0,
+        "LensFlareThreshold": 11.0,
+        "VignetteIntensity": 0.576147,
+        "GrainJitter": 1.0,
+        "GrainIntensity": 0.04,
+        "AmbientOcclusionIntensity": 0.75,
+        "AmbientOcclusionStaticFraction": 0.0,
+        "AmbientOcclusionRadius": 40.0,
+        "AmbientOcclusionQuality": 30.0,
+        "AmbientOcclusionMipBlend": 0.1,
+        "AmbientOcclusionMipScale": 1.0,
+        "IndirectLightingColor": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "ColorGradingIntensity": 0.0,
+        "ColorGradingLUT": {
+          "ObjectName": "Texture2D'LUT_Cine2'",
+          "ObjectPath": "TslGame/Content/ColorGradingPack/ColorGradingPackLUTs/LUT_Cine2.0"
+        },
+        "DepthOfFieldMethod": "DOFM_Gaussian",
+        "DepthOfFieldFstop": 2.990826,
+        "DepthOfFieldFocalDistance": 15000.0,
+        "DepthOfFieldDepthBlurRadius": 1.0,
+        "DepthOfFieldNearTransitionRegion": 1300.0,
+        "DepthOfFieldFarTransitionRegion": 35000.0,
+        "DepthOfFieldNearBlurSize": 0.0,
+        "DepthOfFieldFarBlurSize": 0.01,
+        "MotionBlurAmount": 0.2,
+        "MotionBlurMax": 1.0,
+        "ScreenSpaceReflectionMaxRoughness": 1.0,
+        "WeightedBlendables": {
+          "Array": [
+            {
+              "Weight": 1.0,
+              "Object": {
+                "ObjectName": "MaterialInstanceConstant'MI_SnowCamera_03'",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/MI_SnowCamera_03.0"
+              }
+            },
+            {
+              "Weight": -1.0,
+              "Object": null
+            }
+          ]
+        }
+      },
+      "BrushType": "Brush_Add",
+      "Brush": {
+        "ObjectName": "Model'Weather_Cloudy:PersistentLevel.PostProcessVolume2.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.34"
+      },
+      "BrushComponent": {
+        "ObjectName": "BrushComponent'Weather_Cloudy:PersistentLevel.PostProcessVolume2.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.17"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "bHidden": false,
+      "RootComponent": {
+        "ObjectName": "BrushComponent'Weather_Cloudy:PersistentLevel.PostProcessVolume2.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.17"
+      },
+      "Tags": [
+        "TslEffectPostProcessVolume"
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BluezoneOpacity_BP_130",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 424728.56,
+        "Y": 370274.03,
+        "Z": 4332.4653
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Base",
+    "Outer": "BP_Sky_Sphere_Savage_01_82",
+    "Template": "SceneComponent_1",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 400000.0,
+        "Y": 400000.0,
+        "Z": -253566.0
+      },
+      "RelativeScale3D": {
+        "X": 5.0,
+        "Y": 5.0,
+        "Z": 5.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeScale3D",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "GodRay_Actor_BP_03_374",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeRotation": {
+        "Pitch": -18.518063,
+        "Yaw": -5.3904753,
+        "Roll": -5.627455E-08
+      },
+      "RelativeLocation": {
+        "X": -7205552.0,
+        "Y": 1126413.5,
+        "Z": 2661457.0
+      },
+      "RelativeScale3D": {
+        "X": 2500.0,
+        "Y": 2500.0,
+        "Z": 2500.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeRotation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeScale3D",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "IDCSettingsForDihorOtokSquallWeather_42",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -188315.0,
+        "Y": -50391.0,
+        "Z": -4028.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "SnowEffect_120",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 146443.88,
+        "Y": 383789.2,
+        "Z": 31266.354
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "WeatherManagerBP_74",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 27480.0,
+        "Y": 11750.0,
+        "Z": 9830.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkyLight",
+    "Name": "SkyLight_6",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'SkyLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "SkyLightComponent'Weather_Cloudy:PersistentLevel.SkyLight_6.SkyLightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.46"
+      },
+      "RootComponent": {
+        "ObjectName": "SkyLightComponent'Weather_Cloudy:PersistentLevel.SkyLight_6.SkyLightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.46"
+      }
+    }
+  },
+  {
+    "Type": "SkyLightComponent",
+    "Name": "SkyLightComponent0",
+    "Outer": "SkyLight_6",
+    "Class": "UScriptClass'SkyLightComponent'",
+    "Properties": {
+      "SourceType": "SLS_SpecifiedCubemap",
+      "Cubemap": {
+        "ObjectName": "TextureCube'Vikendi_Clear_Cube_3'",
+        "ObjectPath": "TslGame/Content/Assets/World/HDRI/SkyCube_Vikendi/Vikendi_Clear_Cube_3.0"
+      },
+      "SourceCubemapAngle": 19.816515,
+      "CubemapResolution": 256,
+      "SkyDistanceThreshold": 20000.0,
+      "LowerHemisphereColor": {
+        "R": 0.2604,
+        "G": 0.43772,
+        "B": 0.496,
+        "A": 1.0,
+        "Hex": "FF8CB1BB"
+      },
+      "OcclusionMaxDistance": 500.0,
+      "Contrast": 0.7,
+      "MinOcclusion": 0.1,
+      "LightGuid": "A7733465-4C55972E-B6450DA4-DC9A3DBB",
+      "Intensity": 3.0,
+      "LightColor": {
+        "B": 168,
+        "G": 158,
+        "R": 125,
+        "A": 255,
+        "Hex": "FF7D9EA8"
+      },
+      "VolumetricScatteringIntensity": 75.0,
+      "Mobility": "EComponentMobility::Movable",
+      "RelativeLocation": {
+        "X": -487.0,
+        "Y": -705.0,
+        "Z": 483.0
+      }
+    }
+  },
+  {
+    "Type": "SnowEffect_C",
+    "Name": "SnowEffect_120",
+    "Outer": "PersistentLevel",
+    "Template": "Default__SnowEffect_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/SnowEffect.SnowEffect_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.SnowEffect_120.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.43"
+      },
+      "Grass_SnowAmount": 300.0,
+      "Grass_SnowAmount_Power": 0.675,
+      "PP_Control": 1.0,
+      "Noise01_Devide": 5000.0,
+      "Noise02_Devide": 2500.0,
+      "Noise03_Devide": 32.0,
+      "Noise_Value": 5.0,
+      "VolumefogExtinctionScale": 0.72,
+      "USE SnowCamera": true,
+      "Grass_SnowMaskB_Power": 12.0,
+      "Grass_SnowMaskB_Offset": 0.7,
+      "SmokeGrenade_Color": {
+        "R": 0.685,
+        "G": 0.615612,
+        "B": 0.587948,
+        "A": 1.0,
+        "Hex": "FFD8CECA"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.SnowEffect_120.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.43"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.SnowEffect_120.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.43"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh1",
+    "Outer": "BP_QuantumClouds10",
+    "Template": "StaticMeshComponent_7",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Mesh_QuantumMetaCloud_3'",
+        "ObjectPath": "TslGame/Content/QuantumMetaClouds/Meshes/Mesh_QuantumMetaCloud_3.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceDynamic'Weather_Cloudy:PersistentLevel.BP_QuantumClouds10.StaticMesh1.MaterialInstanceDynamic_6'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.26"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "RelativeRotation": {
+        "Pitch": -1.1106229,
+        "Yaw": 41.026585,
+        "Roll": 75.90535
+      },
+      "RelativeLocation": {
+        "X": 771512.3,
+        "Y": -385418.5,
+        "Z": 23467.32
+      },
+      "RelativeScale3D": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 750.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'StaticMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "StaticMesh",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'MeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "OverrideMaterials",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeRotation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeScale3D",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh1",
+    "Outer": "BP_QuantumClouds2",
+    "Template": "StaticMeshComponent_7",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Mesh_QuantumMetaCloud_3'",
+        "ObjectPath": "TslGame/Content/QuantumMetaClouds/Meshes/Mesh_QuantumMetaCloud_3.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceDynamic'Weather_Cloudy:PersistentLevel.BP_QuantumClouds2.StaticMesh1.MaterialInstanceDynamic_2'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.27"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "RelativeRotation": {
+        "Pitch": -1.1106229,
+        "Yaw": -8.97691,
+        "Roll": 75.90753
+      },
+      "RelativeLocation": {
+        "X": 440418.28,
+        "Y": -435069.88,
+        "Z": 44041.133
+      },
+      "RelativeScale3D": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 750.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'StaticMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "StaticMesh",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'MeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "OverrideMaterials",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeRotation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeScale3D",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh1",
+    "Outer": "BP_QuantumClouds4",
+    "Template": "StaticMeshComponent_7",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Mesh_QuantumMetaCloud_13'",
+        "ObjectPath": "TslGame/Content/QuantumMetaClouds/Meshes/Mesh_QuantumMetaCloud_13.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceDynamic'Weather_Cloudy:PersistentLevel.BP_QuantumClouds4.StaticMesh1.MaterialInstanceDynamic_3'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.28"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "RelativeRotation": {
+        "Pitch": -1.1106229,
+        "Yaw": -38.955177,
+        "Roll": 75.909195
+      },
+      "RelativeLocation": {
+        "X": 123667.945,
+        "Y": -331865.56,
+        "Z": 56664.047
+      },
+      "RelativeScale3D": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 750.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'StaticMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "StaticMesh",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'MeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "OverrideMaterials",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeRotation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeScale3D",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh1",
+    "Outer": "BP_QuantumClouds7",
+    "Template": "StaticMeshComponent_7",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Mesh_QuantumMetaCloud_3'",
+        "ObjectPath": "TslGame/Content/QuantumMetaClouds/Meshes/Mesh_QuantumMetaCloud_3.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceDynamic'Weather_Cloudy:PersistentLevel.BP_QuantumClouds7.StaticMesh1.MaterialInstanceDynamic_4'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.29"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "RelativeRotation": {
+        "Pitch": -1.1106229,
+        "Yaw": 51.039177,
+        "Roll": 75.90078
+      },
+      "RelativeLocation": {
+        "X": 997596.3,
+        "Y": -39173.02,
+        "Z": 37728.84
+      },
+      "RelativeScale3D": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 750.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'StaticMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "StaticMesh",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'MeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "OverrideMaterials",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeRotation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeScale3D",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh1",
+    "Outer": "BP_QuantumClouds9",
+    "Template": "StaticMeshComponent_7",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Mesh_QuantumMetaCloud_13'",
+        "ObjectPath": "TslGame/Content/QuantumMetaClouds/Meshes/Mesh_QuantumMetaCloud_13.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceDynamic'Weather_Cloudy:PersistentLevel.BP_QuantumClouds9.StaticMesh1.MaterialInstanceDynamic_5'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.30"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "RelativeRotation": {
+        "Pitch": -1.1106229,
+        "Yaw": -18.969366,
+        "Roll": 75.91482
+      },
+      "RelativeLocation": {
+        "X": 267787.9,
+        "Y": -323099.38,
+        "Z": 36369.0
+      },
+      "RelativeScale3D": {
+        "X": 200.0,
+        "Y": 200.0,
+        "Z": 600.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'StaticMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "StaticMesh",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'MeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "OverrideMaterials",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeRotation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeScale3D",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh1",
+    "Outer": "BP_QuantumClouds_356",
+    "Template": "StaticMeshComponent_7",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Mesh_QuantumMetaCloud_5'",
+        "ObjectPath": "TslGame/Content/QuantumMetaClouds/Meshes/Mesh_QuantumMetaCloud_5.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceDynamic'Weather_Cloudy:PersistentLevel.BP_QuantumClouds_356.StaticMesh1.MaterialInstanceDynamic_1'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.31"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "RelativeRotation": {
+        "Pitch": -8.838537,
+        "Yaw": -37.767746,
+        "Roll": 82.05736
+      },
+      "RelativeLocation": {
+        "X": -64333.406,
+        "Y": -230098.89,
+        "Z": -13132.625
+      },
+      "RelativeScale3D": {
+        "X": 250.0,
+        "Y": 250.0,
+        "Z": 750.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'StaticMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "StaticMesh",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'MeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "OverrideMaterials",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeRotation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeScale3D",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Sky Sphere mesh",
+    "Outer": "BP_Sky_Sphere_Savage_01_82",
+    "Template": "StaticMeshComponent_12",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceDynamic'Weather_Cloudy:PersistentLevel.BP_Sky_Sphere_Savage_01_82.Sky Sphere mesh.MaterialInstanceDynamic_0'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.32"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.BP_Sky_Sphere_Savage_01_82.Base'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.40"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'MeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "OverrideMaterials",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh",
+    "Outer": "GodRay_Actor_BP_03_374",
+    "Template": "StaticMesh_GEN_VARIABLE",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.GodRay_Actor_BP_03_374.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.41"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript"
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh1",
+    "Outer": "GodRay_Actor_BP_03_374",
+    "Template": "StaticMesh1_GEN_VARIABLE",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.GodRay_Actor_BP_03_374.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.41"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript"
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMesh4",
+    "Outer": "GodRay_Actor_BP_03_374",
+    "Template": "StaticMesh4_GEN_VARIABLE",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.GodRay_Actor_BP_03_374.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.41"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript"
+    }
+  },
+  {
+    "Type": "TslGlobalSound_WeatherCloudy_Vikendi_C",
+    "Name": "TslGlobalSound_WeatherCloudy_Vikendi_181",
+    "Outer": "PersistentLevel",
+    "Template": "Default__TslGlobalSound_WeatherCloudy_Vikendi_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Environment/TslGlobalSound_WeatherCloudy_Vikendi.TslGlobalSound_WeatherCloudy_Vikendi_C'",
+    "Properties": {
+      "Ak": {
+        "ObjectName": "AkComponent'Weather_Cloudy:PersistentLevel.TslGlobalSound_WeatherCloudy_Vikendi_181.Ak'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.4"
+      },
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Cloudy:PersistentLevel.TslGlobalSound_WeatherCloudy_Vikendi_181.Ak'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.4"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "AkComponent'Weather_Cloudy:PersistentLevel.TslGlobalSound_WeatherCloudy_Vikendi_181.Ak'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Weather_Cloudy_C",
+    "Name": "Weather_Cloudy_C_0",
+    "Outer": "PersistentLevel",
+    "Template": "Default__Weather_Cloudy_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.Weather_Cloudy_C'"
+  },
+  {
+    "Type": "WeatherManagerBP_C",
+    "Name": "WeatherManagerBP_74",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherManagerBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherManagerBP.WeatherManagerBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.WeatherManagerBP_74.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.44"
+      },
+      "LocalWeatherVolumes": [
+        {
+          "PostProcessVolume": {
+            "ObjectName": "PostProcessVolume'Weather_Cloudy:PersistentLevel.PostProcessVolume2'",
+            "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.38"
+          },
+          "LocalWeatherSetting": {
+            "FogDensity": 0.0095,
+            "FogColor": {
+              "R": 0.4719,
+              "G": 0.613709,
+              "B": 0.715,
+              "A": 1.0,
+              "Hex": "FFB7CEDC"
+            },
+            "FogStartDistance": 2500.0,
+            "VolFogExtinctionScale": 0.55,
+            "WeatherParticleSpawnScale": 0.66,
+            "bUseWetEffectWithSpawnScale": false,
+            "SoundScale": 0.0
+          }
+        }
+      ],
+      "LocalWeatherParticle": {
+        "ObjectName": "P_Raindrop_NoCollision_Dihor_BP_C'Weather_Cloudy:PersistentLevel.P_Raindrop_NoCollision_Dihor_BP_11'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.35"
+      },
+      "HeightFog": {
+        "ObjectName": "ExponentialHeightFog'Weather_Cloudy:PersistentLevel.ExponentialHeightFog_1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.20"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.WeatherManagerBP_74.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.44"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Cloudy:PersistentLevel.WeatherManagerBP_74.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.44"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "World",
+    "Name": "Weather_Cloudy",
+    "Class": "UScriptClass'World'",
+    "Properties": {
+      "DefaultPhysicsVolume": null
+    },
+    "PersistentLevel": {
+      "ObjectName": "Level'Weather_Cloudy:PersistentLevel'",
+      "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Cloudy.24"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  },
+  {
+    "Type": "WorldSettings",
+    "Name": "WorldSettings",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WorldSettings'"
+  }
+]

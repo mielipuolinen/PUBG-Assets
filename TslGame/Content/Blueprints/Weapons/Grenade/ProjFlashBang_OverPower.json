@@ -1,0 +1,1699 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "TinnitusSoundAks",
+    "Outer": "TinnitusSoundAks",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class'AkAudioEvent'",
+      "ObjectPath": "/Script/AkAudio"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DistancePower",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 65541,
+    "PropertyClass": {
+      "ObjectName": "Class'CurveFloat'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "AnglePower",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjFlashBang_OverPower_C:DistancePower'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.1"
+    },
+    "PropertyFlags": 65541,
+    "PropertyClass": {
+      "ObjectName": "Class'CurveFloat'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "MinPower",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjFlashBang_OverPower_C:AnglePower'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.2"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "TinnitusSoundAks",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'ArrayProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:MinPower'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.3"
+    },
+    "PropertyFlags": 5,
+    "Inner": {
+      "ObjectName": "ObjectProperty'ProjFlashBang_OverPower_C:TinnitusSoundAks.TinnitusSoundAks'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.0"
+    }
+  },
+  {
+    "Type": "ClassProperty",
+    "Name": "FlashbangEffectClass",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'ClassProperty'",
+    "Next": {
+      "ObjectName": "ArrayProperty'ProjFlashBang_OverPower_C:TinnitusSoundAks'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.4"
+    },
+    "PropertyFlags": 65541,
+    "PropertyClass": {
+      "ObjectName": "Class'Class'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "MetaClass": {
+      "ObjectName": "Class'TslPostProcessEffect'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "ExplodeLocation",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ClassProperty'ProjFlashBang_OverPower_C:FlashbangEffectClass'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.5"
+    },
+    "PropertyFlags": 65541,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LocalShooterCharacter",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:ExplodeLocation'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.6"
+    },
+    "PropertyFlags": 67589,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Flashbang",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjFlashBang_OverPower_C:LocalShooterCharacter'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.7"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'FlashbangComponent'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_Event_Radius",
+    "Outer": "ExecuteUbergraph_ProjFlashBang_OverPower",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_Impact",
+    "Outer": "ExecuteUbergraph_ProjFlashBang_OverPower",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:ExecuteUbergraph_ProjFlashBang_OverPower.K2Node_Event_Radius'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.9"
+    },
+    "PropertyFlags": 549755813890,
+    "Struct": {
+      "ObjectName": "ScriptStruct'HitResult'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_Rotation",
+    "Outer": "ExecuteUbergraph_ProjFlashBang_OverPower",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:ExecuteUbergraph_ProjFlashBang_OverPower.K2Node_Event_Impact'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.10"
+    },
+    "PropertyFlags": 2,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Rotator'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_Event_Location",
+    "Outer": "ExecuteUbergraph_ProjFlashBang_OverPower",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:ExecuteUbergraph_ProjFlashBang_OverPower.K2Node_Event_Rotation'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.11"
+    },
+    "PropertyFlags": 2,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ProjFlashBang_OverPower",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:ExecuteUbergraph_ProjFlashBang_OverPower.K2Node_Event_Location'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.12"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ProjFlashBang_OverPower",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjFlashBang_OverPower_C:Flashbang'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.8"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'ProjFlashBang_OverPower_C:ExecuteUbergraph_ProjFlashBang_OverPower.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.13"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Radius",
+    "Outer": "ExplodeBP",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Impact",
+    "Outer": "ExplodeBP",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:ExplodeBP.Radius'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.15"
+    },
+    "PropertyFlags": 549890032002,
+    "Struct": {
+      "ObjectName": "ScriptStruct'HitResult'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Rotation",
+    "Outer": "ExplodeBP",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:ExplodeBP.Impact'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.16"
+    },
+    "PropertyFlags": 134218114,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Rotator'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Location",
+    "Outer": "ExplodeBP",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:ExplodeBP.Rotation'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.17"
+    },
+    "PropertyFlags": 134218114,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ExplodeBP",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjFlashBang_OverPower_C:ExecuteUbergraph_ProjFlashBang_OverPower'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.14"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'TslProjectile:ExplodeBP'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:ExplodeBP.Location'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.18"
+      }
+    ],
+    "FunctionFlags": 138938368
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjFlashBang_OverPower_C:ExplodeBP'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.19"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_PostEventAtLocation_ReturnValue",
+    "Outer": "PlayTinnitusSound",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": null
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "PlayTinnitusSound",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "IntProperty'ProjFlashBang_OverPower_C:PlayTinnitusSound.CallFunc_PostEventAtLocation_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.21"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'AkAudioEvent'",
+      "ObjectPath": "/Script/AkAudio"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Array_IsValidIndex_ReturnValue",
+    "Outer": "PlayTinnitusSound",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjFlashBang_OverPower_C:PlayTinnitusSound.CallFunc_Array_Get_Item'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.22"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Index",
+    "Outer": "PlayTinnitusSound",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjFlashBang_OverPower_C:PlayTinnitusSound.CallFunc_Array_IsValidIndex_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.23"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "PlayTinnitusSound",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjFlashBang_OverPower_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.20"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'ProjFlashBang_OverPower_C:PlayTinnitusSound.Index'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.24"
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "K2Node_MakeArray_Array",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PostProcessEffectParameter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_FinishSpawningActor_ReturnValue",
+    "Outer": "SpawnFlashBangEffect",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class'TslPostProcessEffect'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValidClass_ReturnValue",
+    "Outer": "SpawnFlashBangEffect",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjFlashBang_OverPower_C:SpawnFlashBangEffect.CallFunc_FinishSpawningActor_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.27"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+    "Outer": "SpawnFlashBangEffect",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjFlashBang_OverPower_C:SpawnFlashBangEffect.CallFunc_IsValidClass_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.28"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "SpawnFlashBangEffect",
+    "Class": "UScriptClass'ArrayProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjFlashBang_OverPower_C:SpawnFlashBangEffect.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.29"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:SpawnFlashBangEffect.K2Node_MakeArray_Array.K2Node_MakeArray_Array'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.26"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeStruct_PostProcessEffectParameter",
+    "Outer": "SpawnFlashBangEffect",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ArrayProperty'ProjFlashBang_OverPower_C:SpawnFlashBangEffect.K2Node_MakeArray_Array'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.30"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'PostProcessEffectParameter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeTransform_ReturnValue",
+    "Outer": "SpawnFlashBangEffect",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:SpawnFlashBangEffect.K2Node_MakeStruct_PostProcessEffectParameter'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.31"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Transform'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "FlashBangDistance",
+    "Outer": "SpawnFlashBangEffect",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:SpawnFlashBangEffect.CallFunc_MakeTransform_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.32"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnFlashBangEffect",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjFlashBang_OverPower_C:PlayTinnitusSound'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.25"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:SpawnFlashBangEffect.FlashBangDistance'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.33"
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_FinishSpawningActor_ReturnValue",
+    "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass'BP_FlashBangCaptureActor_v2_C'",
+      "ObjectPath": "TslGame/Content/Effects/tooner/BP_FlashBangCaptureActor_v2.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+    "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjFlashBang_OverPower_C:SpawnFlashBangCaputeEffect.CallFunc_FinishSpawningActor_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.35"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeTransform_ReturnValue",
+    "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjFlashBang_OverPower_C:SpawnFlashBangCaputeEffect.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.36"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Transform'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetCameraLocation_ReturnValue",
+    "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:SpawnFlashBangCaputeEffect.CallFunc_MakeTransform_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.37"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetCameraRotation_ReturnValue",
+    "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:SpawnFlashBangCaputeEffect.CallFunc_GetCameraLocation_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.38"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Rotator'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue",
+    "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:SpawnFlashBangCaputeEffect.CallFunc_GetCameraRotation_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.39"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetPlayerCameraManager_ReturnValue",
+    "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjFlashBang_OverPower_C:SpawnFlashBangCaputeEffect.CallFunc_IsValid_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.40"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PlayerCameraManager'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetActiveCamera_ReturnValue",
+    "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjFlashBang_OverPower_C:SpawnFlashBangCaputeEffect.CallFunc_GetPlayerCameraManager_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.41"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'CameraComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjFlashBang_OverPower_C:SpawnFlashBangCaputeEffect.CallFunc_GetActiveCamera_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.42"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Character",
+    "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjFlashBang_OverPower_C:SpawnFlashBangCaputeEffect.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.43"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeStruct_PostProcessSettings",
+    "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjFlashBang_OverPower_C:SpawnFlashBangCaputeEffect.K2Node_DynamicCast_AsTsl_Character'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.44"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'PostProcessSettings'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ShooterCharacter",
+    "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:SpawnFlashBangCaputeEffect.K2Node_MakeStruct_PostProcessSettings'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.45"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Character'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "SpawnFlashBangCaputeEffect",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjFlashBang_OverPower_C:SpawnFlashBangEffect'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.34"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'ProjFlashBang_OverPower_C:SpawnFlashBangCaputeEffect.ShooterCharacter'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.46"
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_FloatFloat_ReturnValue4",
+    "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_FloatFloat_ReturnValue3",
+    "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjFlashBang_OverPower_C:GetTinnitusSoundIndex.CallFunc_Less_FloatFloat_ReturnValue4'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.48"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_FloatFloat_ReturnValue2",
+    "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjFlashBang_OverPower_C:GetTinnitusSoundIndex.CallFunc_Less_FloatFloat_ReturnValue3'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.49"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_FloatFloat_ReturnValue",
+    "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjFlashBang_OverPower_C:GetTinnitusSoundIndex.CallFunc_Less_FloatFloat_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.50"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_VSize_ReturnValue",
+    "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjFlashBang_OverPower_C:GetTinnitusSoundIndex.CallFunc_Less_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.51"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+    "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:GetTinnitusSoundIndex.CallFunc_VSize_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.52"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakTransform_Scale",
+    "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetTinnitusSoundIndex.CallFunc_Subtract_VectorVector_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.53"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakTransform_Rotation",
+    "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetTinnitusSoundIndex.CallFunc_BreakTransform_Scale'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.54"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Rotator'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakTransform_Location",
+    "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetTinnitusSoundIndex.CallFunc_BreakTransform_Rotation'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.55"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetSocketTransform_ReturnValue",
+    "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetTinnitusSoundIndex.CallFunc_BreakTransform_Location'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.56"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Transform'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "Index",
+    "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetTinnitusSoundIndex.CallFunc_GetSocketTransform_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.57"
+    },
+    "PropertyFlags": 384
+  },
+  {
+    "Type": "Function",
+    "Name": "GetTinnitusSoundIndex",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjFlashBang_OverPower_C:SpawnFlashBangCaputeEffect'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.47"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'ProjFlashBang_OverPower_C:GetTinnitusSoundIndex.Index'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.58"
+      }
+    ],
+    "FunctionFlags": 482476032
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Abs_ReturnValue",
+    "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_DegAcos_ReturnValue",
+    "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:GetCameraToFlashBangAngle.CallFunc_Abs_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.60"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Dot_VectorVector_ReturnValue",
+    "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:GetCameraToFlashBangAngle.CallFunc_DegAcos_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.61"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Normal_ReturnValue",
+    "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:GetCameraToFlashBangAngle.CallFunc_Dot_VectorVector_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.62"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_NegateVector_ReturnValue",
+    "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetCameraToFlashBangAngle.CallFunc_Normal_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.63"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetForwardVector_ReturnValue",
+    "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetCameraToFlashBangAngle.CallFunc_NegateVector_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.64"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+    "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetCameraToFlashBangAngle.CallFunc_GetForwardVector_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.65"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakTransform_Scale",
+    "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetCameraToFlashBangAngle.CallFunc_Subtract_VectorVector_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.66"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakTransform_Rotation",
+    "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetCameraToFlashBangAngle.CallFunc_BreakTransform_Scale'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.67"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Rotator'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakTransform_Location",
+    "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetCameraToFlashBangAngle.CallFunc_BreakTransform_Rotation'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.68"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetSocketTransform_ReturnValue",
+    "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetCameraToFlashBangAngle.CallFunc_BreakTransform_Location'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.69"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Transform'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Angle",
+    "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetCameraToFlashBangAngle.CallFunc_GetSocketTransform_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.70"
+    },
+    "PropertyFlags": 384
+  },
+  {
+    "Type": "Function",
+    "Name": "GetCameraToFlashBangAngle",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjFlashBang_OverPower_C:GetTinnitusSoundIndex'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.59"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:GetCameraToFlashBangAngle.Angle'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.71"
+      }
+    ],
+    "FunctionFlags": 482476032
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_FClamp_ReturnValue",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_FClamp_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.73"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetFloatValue_ReturnValue2",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_Multiply_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.74"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Abs_ReturnValue",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_GetFloatValue_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.75"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_DegAcos_ReturnValue",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_Abs_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.76"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Dot_VectorVector_ReturnValue",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_DegAcos_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.77"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetFloatValue_ReturnValue",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_Dot_VectorVector_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.78"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Normal_ReturnValue",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_GetFloatValue_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.79"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_VSize_ReturnValue",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_Normal_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.80"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_NegateVector_ReturnValue",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_VSize_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.81"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetForwardVector_ReturnValue",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_NegateVector_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.82"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_GetForwardVector_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.83"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakTransform_Scale",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_Subtract_VectorVector_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.84"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakTransform_Rotation",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_BreakTransform_Scale'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.85"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Rotator'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakTransform_Location",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_BreakTransform_Rotation'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.86"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetSocketTransform_ReturnValue",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_BreakTransform_Location'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.87"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Transform'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "FlashBangDistance",
+    "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.CallFunc_GetSocketTransform_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.88"
+    },
+    "PropertyFlags": 384
+  },
+  {
+    "Type": "Function",
+    "Name": "GetFlashBangDistance",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjFlashBang_OverPower_C:GetCameraToFlashBangAngle'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.72"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty'ProjFlashBang_OverPower_C:GetFlashBangDistance.FlashBangDistance'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.89"
+      }
+    ],
+    "FunctionFlags": 482476032
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'ProjFlashBang_OverPower_C:GetFlashBangDistance'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.90"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'ProjFlashBang_OverPower_C:SimpleConstructionScript_0__57659476'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.101"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.91"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'ProjFlashBang_OverPower_C:ExecuteUbergraph_ProjFlashBang_OverPower'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.14"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslProjectile'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'ProjFlashBang_OverPower_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.91"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ProjFlashBang_OverPower": {
+        "ObjectName": "Function'ProjFlashBang_OverPower_C:ExecuteUbergraph_ProjFlashBang_OverPower'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.14"
+      },
+      "ExplodeBP": {
+        "ObjectName": "Function'ProjFlashBang_OverPower_C:ExplodeBP'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.19"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'ProjFlashBang_OverPower_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.20"
+      },
+      "PlayTinnitusSound": {
+        "ObjectName": "Function'ProjFlashBang_OverPower_C:PlayTinnitusSound'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.25"
+      },
+      "SpawnFlashBangEffect": {
+        "ObjectName": "Function'ProjFlashBang_OverPower_C:SpawnFlashBangEffect'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.34"
+      },
+      "SpawnFlashBangCaputeEffect": {
+        "ObjectName": "Function'ProjFlashBang_OverPower_C:SpawnFlashBangCaputeEffect'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.47"
+      },
+      "GetTinnitusSoundIndex": {
+        "ObjectName": "Function'ProjFlashBang_OverPower_C:GetTinnitusSoundIndex'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.59"
+      },
+      "GetCameraToFlashBangAngle": {
+        "ObjectName": "Function'ProjFlashBang_OverPower_C:GetCameraToFlashBangAngle'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.72"
+      },
+      "GetFlashBangDistance": {
+        "ObjectName": "Function'ProjFlashBang_OverPower_C:GetFlashBangDistance'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.90"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ProjFlashBang_OverPower_C'Default__ProjFlashBang_OverPower_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.93"
+    }
+  },
+  {
+    "Type": "ProjFlashBang_OverPower_C",
+    "Name": "Default__ProjFlashBang_OverPower_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.ProjFlashBang_OverPower_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ExplodeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "FlashbangEffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'M_Flashbang_Blind_01_BP_C'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Flashbang_Blind_01_BP.23"
+      },
+      "TinnitusSoundAks": [
+        {
+          "ObjectName": "AkAudioEvent'Flare_Fx_Lv1'",
+          "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv1.0"
+        },
+        {
+          "ObjectName": "AkAudioEvent'Flare_Fx_Lv2'",
+          "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv2.0"
+        },
+        {
+          "ObjectName": "AkAudioEvent'Flare_Fx_Lv3'",
+          "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv3.0"
+        },
+        {
+          "ObjectName": "AkAudioEvent'Flare_Fx_Lv4'",
+          "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv4.0"
+        },
+        {
+          "ObjectName": "AkAudioEvent'Flare_Fx_Lv5'",
+          "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv5.0"
+        }
+      ],
+      "MinPower": 0.07,
+      "MovementComp": {
+        "ObjectName": "TslProjectileMovementComponent'Default__ProjFlashBang_OverPower_C:ProjectileComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.105"
+      },
+      "CollisionComp": {
+        "ObjectName": "SphereComponent'Default__ProjFlashBang_OverPower_C:SphereComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.103"
+      },
+      "ParticleComp": {
+        "ObjectName": "ParticleSystemComponent'Default__ProjFlashBang_OverPower_C:ParticleComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.96"
+      },
+      "MeshComp": {
+        "ObjectName": "StaticMeshComponent'Default__ProjFlashBang_OverPower_C:MeshComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.104"
+      },
+      "InterpolationTargetComp": {
+        "ObjectName": "SphereComponent'Default__ProjFlashBang_OverPower_C:InterpolationTarget'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.102"
+      },
+      "ConstraintComp": {
+        "ObjectName": "PhysicsConstraintComponent'Default__ProjFlashBang_OverPower_C:MeshConstraint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.97"
+      },
+      "MeshInitialRotationRate": {
+        "X": 0.0,
+        "Y": 0.6,
+        "Z": 0.2
+      },
+      "ExplosionTracer": {
+        "StandingTraceTargets": [
+          {
+            "X": 0.0,
+            "Y": 0.0
+          }
+        ],
+        "CrouchTraceTargets": [
+          {
+            "X": 0.0,
+            "Y": 0.85
+          },
+          {
+            "X": 0.7,
+            "Y": 0.5
+          },
+          {
+            "X": -0.7,
+            "Y": 0.5
+          }
+        ],
+        "ProneTraceTargets": [
+          {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          {
+            "X": 0.0,
+            "Y": 0.4,
+            "Z": 0.7
+          },
+          {
+            "X": 0.7,
+            "Y": 0.8,
+            "Z": 0.0
+          },
+          {
+            "X": -0.7,
+            "Y": 0.8,
+            "Z": 0.0
+          }
+        ]
+      },
+      "ProjectileParticleClass": "EProjectileParticleClass::PPC_Flash",
+      "ExplosionTemplate": {
+        "ObjectName": "BlueprintGeneratedClass'ProjFlashBang_Explosion_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_Explosion.0"
+      },
+      "ExplosionTemplateInAir": {
+        "ObjectName": "BlueprintGeneratedClass'ProjFlashBang_Explosion_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_Explosion.0"
+      },
+      "ExplosionTemplateInWater": {
+        "ObjectName": "BlueprintGeneratedClass'ProjFlashBang_Explosion_Underwater_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_Explosion_Underwater.0"
+      },
+      "bUseManualAudioEffectTrigger": true,
+      "EffectData": {
+        "ObjectName": "TslExplosionEffectData'FlashExplosionEffectData'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/FlashExplosionEffectData.0"
+      },
+      "ImpactSound": {
+        "ObjectName": "AkAudioEvent'HandBomb_Common_Impact'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/HandBomb_Common/HandBomb_Common_Impact.0"
+      },
+      "AkComp": {
+        "ObjectName": "AkComponent'Default__ProjFlashBang_OverPower_C:AkComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.94"
+      },
+      "bChangeFuseTimerOnImpact": true,
+      "PostImpactExplosionTimer": 0.7,
+      "ProjectileConfig": {
+        "ExplosionDamage": 0,
+        "ExplosionRadius": 2000.0,
+        "IgniteFuelInRadius": 50.0,
+        "DamageType": null
+      },
+      "RootComponent": {
+        "ObjectName": "SphereComponent'Default__ProjFlashBang_OverPower_C:SphereComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.103"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkComp",
+    "Outer": "Default__ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__ProjFlashBang_OverPower_C:SphereComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.103"
+      }
+    }
+  },
+  {
+    "Type": "FlashbangComponent",
+    "Name": "Flashbang_GEN_VARIABLE",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'FlashbangComponent'",
+    "Properties": {
+      "Tracer": {
+        "bEnabled": true,
+        "StandingTraceTargets": [
+          {
+            "X": 0.0,
+            "Y": 0.85
+          },
+          {
+            "X": 0.7,
+            "Y": 0.5
+          },
+          {
+            "X": -0.7,
+            "Y": 0.5
+          }
+        ],
+        "CrouchTraceTargets": [
+          {
+            "X": 0.0,
+            "Y": 0.85
+          },
+          {
+            "X": 0.7,
+            "Y": 0.5
+          },
+          {
+            "X": -0.7,
+            "Y": 0.5
+          }
+        ],
+        "ProneTraceTargets": [
+          {
+            "X": 0.0,
+            "Y": 0.4,
+            "Z": 0.7
+          },
+          {
+            "X": 0.7,
+            "Y": 0.8,
+            "Z": 0.0
+          },
+          {
+            "X": -0.7,
+            "Y": 0.8,
+            "Z": 0.0
+          }
+        ]
+      },
+      "SphereQueryObjects": [
+        244
+      ],
+      "BlockQueryObjects": [
+        144,
+        0,
+        0
+      ],
+      "DebuffClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_FlashbangDebuff_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Buffs/BP_FlashbangDebuff.2"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleComp",
+    "Outer": "Default__ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent'Default__ProjFlashBang_OverPower_C:MeshComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.104"
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "MeshConstraint",
+    "Outer": "Default__ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__ProjFlashBang_OverPower_C:InterpolationTarget'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.102"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_1",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'FlashbangComponent'",
+        "ObjectPath": "/Script/TslGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "FlashbangComponent'ProjFlashBang_OverPower_C:Flashbang_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.95"
+      },
+      "VariableGuid": "9FFF256E-46188C28-573787BF-95A19FB2",
+      "InternalVariableName": "Flashbang"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'ProjFlashBang_OverPower_C:SceneComponent_1'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.98"
+      },
+      "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0__57659476",
+    "Outer": "ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'ProjFlashBang_OverPower_C:SimpleConstructionScript_0__57659476.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.99"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'ProjFlashBang_OverPower_C:SimpleConstructionScript_0__57659476.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.99"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'ProjFlashBang_OverPower_C:SimpleConstructionScript_0__57659476.SCS_Node_1'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.100"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "InterpolationTarget",
+    "Outer": "Default__ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__ProjFlashBang_OverPower_C:SphereComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.103"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "SphereRadius": 4.0,
+      "BodyInstance": {
+        "MassInKgOverride": 0.61551815
+      },
+      "OnComponentHit": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "ProjFlashBang_OverPower_C'Default__ProjFlashBang_OverPower_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.93"
+            },
+            "FunctionName": "OnHit"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "MeshComp",
+    "Outer": "Default__ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Summerland_Rock_Handheld_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Summerland/Rocks/Meshes/SM_Summerland_Rock_Handheld_01.1"
+      },
+      "BodyInstance": {
+        "AngularDamping": 1.0
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__ProjFlashBang_OverPower_C:InterpolationTarget'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_OverPower.102"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -8.0
+      },
+      "RelativeScale3D": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
+      }
+    }
+  },
+  {
+    "Type": "TslProjectileMovementComponent",
+    "Name": "ProjectileComp",
+    "Outer": "Default__ProjFlashBang_OverPower_C",
+    "Class": "UScriptClass'TslProjectileMovementComponent'",
+    "Properties": {
+      "SlidingFriction_Speed_In": {
+        "X": 0.0,
+        "Y": 300.0
+      },
+      "SlidingFriction_Speed_Out": {
+        "X": 1.4,
+        "Y": 0.7
+      },
+      "UnderwaterDrag": 3.0,
+      "UnderwaterBouyancy": -400.0,
+      "bUseSlidingFriction": true,
+      "bAffectedUnderwater": true,
+      "InitialSpeed": 1300.0,
+      "MaxSpeed": 4000.0,
+      "bShouldBounce": true,
+      "bInitialVelocityInLocalSpace": false,
+      "Friction": 0.8
+    }
+  }
+]

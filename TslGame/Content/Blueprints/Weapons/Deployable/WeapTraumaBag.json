@@ -2,42 +2,49 @@
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapTraumaBag_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapTraumaBag_C:SimpleConstructionScript_0",
+        "ObjectName": "SimpleConstructionScript'WeapTraumaBag_C:SimpleConstructionScript_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTraumaBag.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslWeapon_TraumaBag",
+      "ObjectName": "Class'TslWeapon_TraumaBag'",
       "ObjectPath": "/Script/TslGame"
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapTraumaBag_C Default__WeapTraumaBag_C",
+      "ObjectName": "WeapTraumaBag_C'Default__WeapTraumaBag_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTraumaBag.1"
     }
   },
   {
     "Type": "WeapTraumaBag_C",
     "Name": "Default__WeapTraumaBag_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Deployable/WeapTraumaBag.WeapTraumaBag_C'",
     "Properties": {
       "MedKitItemName": "Item_Heal_MedKit_C",
       "FirstAidKitItemName": "Item_Heal_FirstAid_C",
       "BandageItemName": "Item_Heal_Bandage_C",
+      "VehicleFppOffset": {
+        "X": 30.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
       "WeaponSoftRolesData": {
-        "ObjectName": "WeaponSoftRolesData WeapTraumaBag_WeaponSoftRolesData",
+        "ObjectName": "WeaponSoftRolesData'WeapTraumaBag_WeaponSoftRolesData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapTraumaBag_WeaponSoftRolesData.0"
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_gun_traumabag",
+        "ObjectName": "Texture2D'weapons_gun_traumabag'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_traumabag.0"
       },
       "WeaponIconRatio": 2.44,
@@ -117,45 +124,50 @@
         }
       },
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapTraumaBag_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__WeapTraumaBag_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTraumaBag.6"
       },
       "AnimWeaponType": "EAnimWeaponType::Throwable",
       "WeaponAnim": {
         "PickUp": {
-          "ObjectName": "AnimMontage MOB1_M1_Glean_Montage",
+          "ObjectName": "AnimMontage'MOB1_M1_Glean_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Mobility/MOB1_M1_Glean_Montage.0"
         }
       },
       "ProneRollAnim": {
         "RollLeft": {
-          "ObjectName": "AnimMontage MOB1_M1_ProneRoll_L_Loop_IP_Montage",
+          "ObjectName": "AnimMontage'MOB1_M1_ProneRoll_L_Loop_IP_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Mobility/MOB1_M1_ProneRoll_L_Loop_IP_Montage.0"
         },
         "RollRight": {
-          "ObjectName": "AnimMontage MOB1_M1_ProneRoll_R_Loop_IP_Montage",
+          "ObjectName": "AnimMontage'MOB1_M1_ProneRoll_R_Loop_IP_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Mobility/MOB1_M1_ProneRoll_R_Loop_IP_Montage.0"
         }
       },
-      "EquipAnimData": {
-        "EAccessorySlot::Slot_Secondary": {
-          "Montage": {
-            "ObjectName": "AnimMontage TraumaBag_Combat_Stand_SecondarySlot_Montage",
-            "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TraumaBag/Equip_Unequip/Secondary/TraumaBag_Combat_Stand_SecondarySlot_Montage.0"
-          },
-          "PlayRate": 1.0
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_Secondary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'TraumaBag_Combat_Stand_SecondarySlot_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TraumaBag/Equip_Unequip/Secondary/TraumaBag_Combat_Stand_SecondarySlot_Montage.0"
+            },
+            "PlayRate": 1.0
+          }
         },
-        "EAccessorySlot::Slot_Primary": {
-          "Montage": {
-            "ObjectName": "AnimMontage TraumaBag_Combat_Stand_PrimarySlot_Montage",
-            "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TraumaBag/Equip_Unequip/Primary/TraumaBag_Combat_Stand_PrimarySlot_Montage.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_Primary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'TraumaBag_Combat_Stand_PrimarySlot_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TraumaBag/Equip_Unequip/Primary/TraumaBag_Combat_Stand_PrimarySlot_Montage.0"
+            },
+            "PlayRate": 1.0
+          }
         }
-      },
+      ],
       "HipDuration": 0.1,
+      "bNeedSleepWeaponMesh": false,
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapTraumaBag_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapTraumaBag_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTraumaBag.2"
       }
     }
@@ -164,12 +176,13 @@
     "Type": "SceneComponent",
     "Name": "RootScene",
     "Outer": "Default__WeapTraumaBag_C",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapTraumaBag_C Default__WeapTraumaBag_C",
+              "ObjectName": "WeapTraumaBag_C'Default__WeapTraumaBag_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTraumaBag.1"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -181,19 +194,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapTraumaBag_C"
+    "Outer": "WeapTraumaBag_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapTraumaBag_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapTraumaBag_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTraumaBag.3"
       },
       "VariableGuid": "5819FDFE-471BB583-B38ACEBC-8A5C72B2",
@@ -204,9 +219,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0",
     "Outer": "WeapTraumaBag_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapTraumaBag_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectName": "SCS_Node'WeapTraumaBag_C:SimpleConstructionScript_0.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTraumaBag.4"
       }
     }
@@ -215,17 +231,18 @@
     "Type": "WeaponMeshComponent",
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapTraumaBag_C",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "AnimClass": {
-        "ObjectName": "AnimBlueprintGeneratedClass ABP_Weapon_TraumaBag_C",
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_Weapon_TraumaBag_C'",
         "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TraumaBag/Weapon/ABP_Weapon_TraumaBag.36"
       },
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh SK_Trauma_Bag",
+        "ObjectName": "SkeletalMesh'SK_Trauma_Bag'",
         "ObjectPath": "TslGame/Content/Weapon/TraumaBag/Meshes/SK_Trauma_Bag.0"
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapTraumaBag_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapTraumaBag_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTraumaBag.2"
       }
     }

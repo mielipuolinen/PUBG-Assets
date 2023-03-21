@@ -1,0 +1,194 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "CastableVehicleRepairKitItemTable",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "ScriptStruct'ItemTableRowCastableVehicleRepairKit'",
+        "ObjectPath": "/Script/TslGame"
+      }
+    },
+    "Rows": {
+      "0": {
+        "RepairAmount": 500.0,
+        "bCanUseInWater": false,
+        "CastConfig": {
+          "CastName": {
+            "Namespace": "NS_ItemLegacy",
+            "Key": "K_GD_0788",
+            "SourceString": "M_ItemLegacy_0788",
+            "LocalizedString": "Repairing Vehicle"
+          },
+          "CastTime": 10.0,
+          "CastPriority": "ECastPriority::High",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 3.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::VehicleRepair",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "CastableItemType": "ECastableItemType::Medkit",
+        "bConsumeBeforeCasting": false,
+        "Buffs": [],
+        "bStackable": true,
+        "bUsable": true,
+        "bIsConsumable": true,
+        "bSetStackMaterialParameter": false,
+        "bDisableSpawnInGame": false,
+        "StackCount": 1,
+        "DefaultStackCount": 1,
+        "ItemName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "K_WDU_01"
+        },
+        "ItemCategory": {
+          "TableId": "/Game/Item/Weapon/NS_WEAPONCATEGORY.NS_WEAPONCATEGORY",
+          "Key": "K_LPU_09"
+        },
+        "ItemDetailedName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "K_WDU_01"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemDescriptions.ST_Item_Usable_ItemDescriptions",
+          "Key": "K_WDU_01"
+        },
+        "ItemMaxInteractableDistance": 0.0,
+        "StackCountMax": 100,
+        "SpacePerItem": 15.0,
+        "DroppedMesh": "/Game/Assets/Boost_Item/RepairKit/RepairKit_Vehicle_Drop.RepairKit_Vehicle_Drop",
+        "DroppedMeshScale": 0.75,
+        "bDropAsProjectile": false,
+        "bThermalScopeInteractive": false,
+        "ThermalItemType": "EThermalItemType::CountOrNone",
+        "ProjectileConfig": "",
+        "Icon": "/Game/UI/item/special/icon_Special_RepairKit_Vehicle.icon_Special_RepairKit_Vehicle",
+        "ToolTipIcon": "/Game/UI/item/special/icon_Special_RepairKit_Vehicle.icon_Special_RepairKit_Vehicle",
+        "IconSizeRatio": 1.0,
+        "ToolTipIconSizeRatio": 1.0,
+        "DropSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_MedKit.Play_UI_Item_Equip_Usable_MedKit",
+        "DropAnimation": "None",
+        "PickUpSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_MedKit.Play_UI_Item_Equip_Usable_MedKit",
+        "PickUpAnimationOverride": "EPickupAnimType::None",
+        "InventoryPutSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_MedKit.Play_UI_Item_Equip_Usable_MedKit",
+        "SortPriority": 997,
+        "Category": "EItemCategory::Use",
+        "SubCategory": "Repair",
+        "bIsToy": false,
+        "bIsLobbyItem": false,
+        "LobbyItemID": 0,
+        "LobbyItemDesc": {
+          "bCashSellable": false,
+          "bPointSellable": false,
+          "bMarketable": false,
+          "bPointRefundable": false,
+          "XboxConsumableId": "",
+          "Tier": "ELobbyItemTier::Basic",
+          "Category": "ELobbyItemCategory::Belt",
+          "Description": {
+            "CultureInvariantString": null
+          },
+          "bTradeUpResult": false,
+          "bTradeUpMaterial": false,
+          "Platforms": [],
+          "CashSellingPrice": 0.0,
+          "PointSellingType": "ELobbyItemPointSellingType::Normal",
+          "PointSellingPrice": 0,
+          "PointRefundingPrice": 0
+        },
+        "bIsLobbyWeapon": false,
+        "LobbyWeaponID": 0,
+        "LobbyWeaponInstance": "",
+        "bVested": false,
+        "bDropVolatility": false,
+        "bCanDropItem": true,
+        "Note": "",
+        "AIFullValue": 0,
+        "ItemSubType": 0,
+        "ItemID": "Vehicle_Repair_Kit_C",
+        "ItemClass": {
+          "ObjectName": "Class'VehicleRepairKitItem'",
+          "ObjectPath": "/Script/TslGame"
+        },
+        "CastableImplementClass": null,
+        "DestructionBehavior": null
+      }
+    }
+  }
+]

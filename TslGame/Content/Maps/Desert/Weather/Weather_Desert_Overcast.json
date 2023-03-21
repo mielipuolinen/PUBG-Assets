@@ -1,0 +1,2419 @@
+[
+  {
+    "Type": "AbstractNavData",
+    "Name": "AbstractNavData-Default",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'AbstractNavData'",
+    "Properties": {
+      "bNetLoadOnClient": true
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "WeatherAkComponent",
+    "Outer": "GlobalWeatherSoundBP_Foggy",
+    "Template": "WeatherAkComponent",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 110830.0,
+        "Y": 139830.0,
+        "Z": 2580.0
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "WeatherAkComponent",
+    "Outer": "GlobalWeatherSoundBP_Rain",
+    "Template": "WeatherAkComponent",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 110830.0,
+        "Y": 139830.0,
+        "Z": 2580.0
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "Ak",
+    "Outer": "TslGlobalSound_WeatherClear_95",
+    "Template": "Ak_GEN_VARIABLE",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1000.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Weather_Rain_Particle_BP",
+    "Template": "AkSound",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Desert_Overcast:PersistentLevel.Weather_Rain_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.25"
+      }
+    }
+  },
+  {
+    "Type": "BluezoneOpacity_BP_C",
+    "Name": "BluezoneOpacity_BP_126",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BluezoneOpacity_BP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/BluezoneOpacity_BP.BluezoneOpacity_BP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.BluezoneOpacity_BP_126.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.27"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.BluezoneOpacity_BP_126.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.27"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.BluezoneOpacity_BP_126.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.27"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_6",
+    "Outer": "BrushComponent0",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -25000000.0,
+                "Y": -1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": -1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": 1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": 1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": 1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": 1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": -1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": -1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -1048576.0,
+                "Z": -25000000.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -25000000.0,
+                "Y": -25000000.0,
+                "Z": -25000000.0
+              },
+              "Max": {
+                "X": 25000000.0,
+                "Y": 25000000.0,
+                "Z": 25000000.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "bGenerateMirroredCollision": false,
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "479A454A4B8DC9A92B6C3FB36E80D9FA",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 1254,
+        "SizeOnDisk": 1254,
+        "OffsetInFile": "0x133BE"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent0",
+    "Outer": "LevelBounds_0",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 400000.0,
+        "Y": 400000.0,
+        "Z": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 16384000.0,
+        "Y": 16384000.0,
+        "Z": 16384000.0
+      }
+    }
+  },
+  {
+    "Type": "BP_Sky_Sphere_Desert_04_C",
+    "Name": "BP_Sky_Sphere_Desert_04_94",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_Sky_Sphere_Desert_04_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Material/BP_Sky_Sphere_Desert_04.BP_Sky_Sphere_Desert_04_C'",
+    "Properties": {
+      "Sky Sphere mesh": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Overcast:PersistentLevel.BP_Sky_Sphere_Desert_04_94.Sky Sphere mesh'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.41"
+      },
+      "Base": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.BP_Sky_Sphere_Desert_04_94.Base'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.28"
+      },
+      "Sky material": {
+        "ObjectName": "MaterialInstanceDynamic'Weather_Desert_Overcast:PersistentLevel.BP_Sky_Sphere_Desert_04_94.Sky Sphere mesh.MaterialInstanceDynamic_0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.22"
+      },
+      "Directional light actor": {
+        "ObjectName": "DirectionalLight'Weather_Desert_Overcast:PersistentLevel.DirectionalLight_Sun'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.11"
+      },
+      "Colors determined by sun position": false,
+      "Sun height": 0.49999988,
+      "Sun brightness": 0.0,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.BP_Sky_Sphere_Desert_04_94.Base'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.28"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.BP_Sky_Sphere_Desert_04_94.Base'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.28"
+        },
+        {
+          "ObjectName": "StaticMeshComponent'Weather_Desert_Overcast:PersistentLevel.BP_Sky_Sphere_Desert_04_94.Sky Sphere mesh'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.41"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BrushComponent",
+    "Name": "BrushComponent0",
+    "Outer": "PostProcessVolume",
+    "Class": "UScriptClass'BrushComponent'",
+    "Properties": {
+      "Brush": {
+        "ObjectName": "Model'Weather_Desert_Overcast:PersistentLevel.PostProcessVolume.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.24"
+      },
+      "BrushBodySetup": {
+        "ObjectName": "BodySetup'Weather_Desert_Overcast:PersistentLevel.PostProcessVolume.BrushComponent0.BodySetup_6'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.6"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 743484.0,
+        "Y": 623332.5,
+        "Z": -19744.75
+      }
+    }
+  },
+  {
+    "Type": "CustomFogControllerBP_C",
+    "Name": "CustomFogControllerBP_92",
+    "Outer": "PersistentLevel",
+    "Template": "Default__CustomFogControllerBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/CustomFogControllerBP.CustomFogControllerBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.CustomFogControllerBP_92.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.29"
+      },
+      "bAutoStart": false,
+      "IntervalMax": 200.0,
+      "FogStartDistanceMin": 500.0,
+      "FogStartDistanceMax": 1500.0,
+      "FogFalloffMin": 15000.0,
+      "FogFalloffMax": 45000.0,
+      "FogDensityMin": 0.75,
+      "FogDensityMax": 1.85,
+      "HeightFalloffCurve": {
+        "ObjectName": "CurveFloat'CustomFogHeightFallOffCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/CustomFogHeightFallOffCurve.0"
+      },
+      "HeightDensityCurve": {
+        "ObjectName": "CurveFloat'CustomFogHeightDensityCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/CustomFogHeightDensityCurve.0"
+      },
+      "HeightHeightCurve": {
+        "ObjectName": "CurveFloat'CustomFogHeightHeightCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/CustomFogHeightHeightCurve.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.CustomFogControllerBP_92.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.29"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.CustomFogControllerBP_92.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.29"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "DirectionalLight",
+    "Name": "DirectionalLight_Sun",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'DirectionalLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "DirectionalLightComponent'Weather_Desert_Overcast:PersistentLevel.DirectionalLight_Sun.LightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.12"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "DirectionalLightComponent'Weather_Desert_Overcast:PersistentLevel.DirectionalLight_Sun.LightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.12"
+      }
+    }
+  },
+  {
+    "Type": "DirectionalLightComponent",
+    "Name": "LightComponent0",
+    "Outer": "DirectionalLight_Sun",
+    "Class": "UScriptClass'DirectionalLightComponent'",
+    "Properties": {
+      "bEnableLightShaftOcclusion": true,
+      "OcclusionDepthRange": 5000.0,
+      "DynamicShadowDistanceMovableLight": 4000.0,
+      "CascadeDistributionExponent": 4.0,
+      "CascadeTransitionFraction": 0.3,
+      "DistanceFieldShadowDistance": 40000.0,
+      "TraceDistance": 5000.0,
+      "LightmassSettings": {
+        "LightSourceAngle": 1.5,
+        "ShadowExponent": 1.0
+      },
+      "bUsedAsAtmosphereSunLight": true,
+      "bUseGridShadow": true,
+      "GridShadowSplitSettings": [
+        {
+          "CellSize": 1000.0,
+          "MaxRadius": 3000.0
+        },
+        {
+          "CellSize": 5000.0,
+          "MaxRadius": 15000.0
+        },
+        {
+          "CellSize": 25000.0,
+          "MaxRadius": 75000.0
+        }
+      ],
+      "Temperature": 6000.0,
+      "bUseTemperature": true,
+      "LightFunctionMaterial": {
+        "ObjectName": "MaterialInstanceConstant'M__LF_CloudShadow_Inst'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M__LF_CloudShadow_Inst.0"
+      },
+      "LightFunctionScale": {
+        "X": 12048.0,
+        "Y": 12048.0,
+        "Z": 12048.0
+      },
+      "DisabledBrightness": 0.85,
+      "bEnableLightShaftBloom": true,
+      "BloomScale": 0.001,
+      "BloomThreshold": 0.3,
+      "BloomTint": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "bUseRayTracedDistanceFieldShadows": true,
+      "LightGuid": "08DA5D1E-40F040AE-00B301AB-D226FA35",
+      "Intensity": 3.0,
+      "LightColor": {
+        "B": 181,
+        "G": 181,
+        "R": 181,
+        "A": 255,
+        "Hex": "FFB5B5B5"
+      },
+      "Mobility": "EComponentMobility::Movable",
+      "RelativeRotation": {
+        "Pitch": -45.0,
+        "Yaw": -17.338043,
+        "Roll": -0.0010070801
+      },
+      "RelativeLocation": {
+        "X": 320397.56,
+        "Y": 345224.1,
+        "Z": 14541.248
+      }
+    }
+  },
+  {
+    "Type": "DynamicWeatherBP_C",
+    "Name": "DynamicWeather_Fog",
+    "Outer": "PersistentLevel",
+    "Template": "Default__DynamicWeatherBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/DynamicWeatherBP.DynamicWeatherBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.DynamicWeather_Fog.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.30"
+      },
+      "FogController": {
+        "ObjectName": "CustomFogControllerBP_C'Weather_Desert_Overcast:PersistentLevel.CustomFogControllerBP_92'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.10"
+      },
+      "GlobalSound": {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Desert_Overcast:PersistentLevel.GlobalWeatherSoundBP_Foggy'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.17"
+      },
+      "ClientTickInterval_Transition": 0.1,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.DynamicWeather_Fog.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.30"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.DynamicWeather_Fog.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.30"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "DynamicWeatherBP_C",
+    "Name": "DynamicWeather_Rain",
+    "Outer": "PersistentLevel",
+    "Template": "Default__DynamicWeatherBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/DynamicWeatherBP.DynamicWeatherBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.DynamicWeather_Rain.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.31"
+      },
+      "WeatherParticle": {
+        "ObjectName": "WeatherParticleBP_C'Weather_Desert_Overcast:PersistentLevel.Weather_Rain_Particle_BP'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.47"
+      },
+      "SpawnScaleCurve": {
+        "ObjectName": "CurveFloat'RainScaleCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/RainScaleCurve.0"
+      },
+      "bUseWetEffect": true,
+      "bUsePPEffect": true,
+      "GlobalSound": {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Desert_Overcast:PersistentLevel.GlobalWeatherSoundBP_Rain'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.18"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.DynamicWeather_Rain.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.31"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.DynamicWeather_Rain.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.31"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ExponentialHeightFog",
+    "Name": "ExponentialHeightFog_5",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'ExponentialHeightFog'",
+    "Properties": {
+      "Component": {
+        "ObjectName": "ExponentialHeightFogComponent'Weather_Desert_Overcast:PersistentLevel.ExponentialHeightFog_5.HeightFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.16"
+      },
+      "RootComponent": {
+        "ObjectName": "ExponentialHeightFogComponent'Weather_Desert_Overcast:PersistentLevel.ExponentialHeightFog_5.HeightFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.16"
+      }
+    }
+  },
+  {
+    "Type": "ExponentialHeightFogComponent",
+    "Name": "HeightFogComponent0",
+    "Outer": "ExponentialHeightFog_5",
+    "Class": "UScriptClass'ExponentialHeightFogComponent'",
+    "Properties": {
+      "FogDensity": 0.0125,
+      "FogInscatteringColor": {
+        "R": 0.652,
+        "G": 0.8,
+        "B": 0.782425,
+        "A": 1.0,
+        "Hex": "FFD3E8E5"
+      },
+      "HeightDensityLayers": [
+        {
+          "Height": 5000.0,
+          "Density": 1.0
+        },
+        {
+          "Height": 150000.0,
+          "Density": 1.5
+        }
+      ],
+      "FogHeightFalloff": 0.075,
+      "bEnableVolumetricFog": true,
+      "VolumetricFogDistance": 10000.0,
+      "bUseExtendedFog": true,
+      "ExtendedFogStartDistance": 1500.0,
+      "ExtendedFogStartFalloffDistance": 45000.0,
+      "ExtendedHeight": 40000.0,
+      "ExtendedFallOff": 4.0,
+      "ExtendedFogDensity": 1.6,
+      "UpDensity": 0.7,
+      "DownDensity": 1.0,
+      "RelativeLocation": {
+        "X": 621903.0,
+        "Y": 303118.0,
+        "Z": 2490.0
+      }
+    }
+  },
+  {
+    "Type": "GlobalWeatherSoundBP_C",
+    "Name": "GlobalWeatherSoundBP_Foggy",
+    "Outer": "PersistentLevel",
+    "Template": "Default__GlobalWeatherSoundBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/GlobalWeatherSoundBP.GlobalWeatherSoundBP_C'",
+    "Properties": {
+      "AkEvent_Play": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Foggy_Savage'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Foggy_Savage.0"
+      },
+      "AkEvent_Stop": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Foggy_Savage_Stop'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Foggy_Savage_Stop.0"
+      },
+      "ParamRTPCName": "WeatherBlendingValue_Fog",
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Desert_Overcast:PersistentLevel.GlobalWeatherSoundBP_Foggy.WeatherAkComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.1"
+      }
+    }
+  },
+  {
+    "Type": "GlobalWeatherSoundBP_C",
+    "Name": "GlobalWeatherSoundBP_Rain",
+    "Outer": "PersistentLevel",
+    "Template": "Default__GlobalWeatherSoundBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/GlobalWeatherSoundBP.GlobalWeatherSoundBP_C'",
+    "Properties": {
+      "AkEvent_Play": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Rain_Miramar'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Rain_Miramar.0"
+      },
+      "AkEvent_Stop": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Rain_Miramar_Stop'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Rain_Miramar_Stop.0"
+      },
+      "ParamRTPCName": "WeatherBlendingValue_Rain",
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Desert_Overcast:PersistentLevel.GlobalWeatherSoundBP_Rain.WeatherAkComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.2"
+      }
+    }
+  },
+  {
+    "Type": "IDCSettingsForDesertOvercastWeather_C",
+    "Name": "IDCSettingsForDesertOvercastWeather_74",
+    "Outer": "PersistentLevel",
+    "Template": "Default__IDCSettingsForDesertOvercastWeather_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/IDC_Desert/IDCSettingsForDesertOvercastWeather.IDCSettingsForDesertOvercastWeather_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.IDCSettingsForDesertOvercastWeather_74.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.32"
+      },
+      "ConsoleCommands": [
+        "r.CGV.Fallback 0.501885 0.023671 -0.451213 -0.035228 0.352097 0.017882 -0.301062 -0.013282 0.240940 0.001869 -0.187845 -0.003953 0.097923 -0.054091 0.059559 -0.010519 0.069699 -0.041085 0.013485 -0.021177 0.042449 -0.020363 -0.022477 -0.020498 -0.101214 -0.086255 -0.070035 0.000000",
+        "r.CGV.Intensity 0.9",
+        "r.CGV.FallbackIntensity 0.12",
+        "r.CGV.Hairintensity 0.5",
+        "r.CGV.Skinintensity 1",
+        "r.CGV.BaseIntensity 0.5",
+        "r.CGV.IndoorIntensity 1.75",
+        "r.CGV.OutdoorIntensity 0.25",
+        "r.CGV.IndoorSaturation 0.15",
+        "r.CGV.OutdoorSaturation 1",
+        "r.WindowLightIntensity 0.65",
+        "r.CGV.UseFullFallback 1",
+        "r.CGV.FullFallbackIntensity 1"
+      ],
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.IDCSettingsForDesertOvercastWeather_74.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.32"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.IDCSettingsForDesertOvercastWeather_74.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.32"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Outer": "Weather_Desert_Overcast",
+    "Class": "UScriptClass'Level'",
+    "Properties": {
+      "LevelBuildDataId": "9F553BDF-462A9F62-F2757E9C-F7465BB0",
+      "Model": {
+        "ObjectName": "Model'Weather_Desert_Overcast:PersistentLevel.Model_0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.23"
+      },
+      "WorldSettings": {
+        "ObjectName": "WorldSettings'Weather_Desert_Overcast:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.51"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "WorldSettings'Weather_Desert_Overcast:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.51"
+      },
+      null,
+      {
+        "ObjectName": "LevelBounds'Weather_Desert_Overcast:PersistentLevel.LevelBounds_0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.21"
+      },
+      {
+        "ObjectName": "DirectionalLight'Weather_Desert_Overcast:PersistentLevel.DirectionalLight_Sun'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.11"
+      },
+      {
+        "ObjectName": "PostProcessVolume'Weather_Desert_Overcast:PersistentLevel.PostProcessVolume'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.26"
+      },
+      {
+        "ObjectName": "SkyLight'Weather_Desert_Overcast:PersistentLevel.SkyLight'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.36"
+      },
+      {
+        "ObjectName": "TslGlobalSound_WeatherClear_C'Weather_Desert_Overcast:PersistentLevel.TslGlobalSound_WeatherClear_95'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.45"
+      },
+      {
+        "ObjectName": "ExponentialHeightFog'Weather_Desert_Overcast:PersistentLevel.ExponentialHeightFog_5'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.15"
+      },
+      {
+        "ObjectName": "AbstractNavData'Weather_Desert_Overcast:PersistentLevel.AbstractNavData-Default'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.0"
+      },
+      {
+        "ObjectName": "BP_Sky_Sphere_Desert_04_C'Weather_Desert_Overcast:PersistentLevel.BP_Sky_Sphere_Desert_04_94'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.8"
+      },
+      {
+        "ObjectName": "IDCSettingsForDesertOvercastWeather_C'Weather_Desert_Overcast:PersistentLevel.IDCSettingsForDesertOvercastWeather_74'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.19"
+      },
+      {
+        "ObjectName": "BluezoneOpacity_BP_C'Weather_Desert_Overcast:PersistentLevel.BluezoneOpacity_BP_126'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.5"
+      },
+      {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Desert_Overcast:PersistentLevel.GlobalWeatherSoundBP_Foggy'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.17"
+      },
+      {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Desert_Overcast:PersistentLevel.GlobalWeatherSoundBP_Rain'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.18"
+      },
+      {
+        "ObjectName": "WeatherParticleBP_C'Weather_Desert_Overcast:PersistentLevel.Weather_Rain_Particle_BP'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.47"
+      },
+      {
+        "ObjectName": "StaticMeshActor'Weather_Desert_Overcast:PersistentLevel.SM_MERGED_VistaMountainDesert_a3'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.38"
+      },
+      {
+        "ObjectName": "StaticMeshActor'Weather_Desert_Overcast:PersistentLevel.SM_MERGED_VistaMountainDesert_b3'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.39"
+      },
+      {
+        "ObjectName": "StaticMeshActor'Weather_Desert_Overcast:PersistentLevel.SM_MERGED_VistaMountainDesert_c3'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.40"
+      },
+      {
+        "ObjectName": "WeatherManagerBP_C'Weather_Desert_Overcast:PersistentLevel.WeatherManagerBP_54'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.46"
+      },
+      {
+        "ObjectName": "DynamicWeatherBP_C'Weather_Desert_Overcast:PersistentLevel.DynamicWeather_Fog'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.13"
+      },
+      {
+        "ObjectName": "WetEffectBP_C'Weather_Desert_Overcast:PersistentLevel.WetEffectBP_80'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.49"
+      },
+      {
+        "ObjectName": "WeatherPPControllerBP_C'Weather_Desert_Overcast:PersistentLevel.WeatherPPControllerBP_78'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.48"
+      },
+      {
+        "ObjectName": "DynamicWeatherBP_C'Weather_Desert_Overcast:PersistentLevel.DynamicWeather_Rain'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.14"
+      },
+      {
+        "ObjectName": "CustomFogControllerBP_C'Weather_Desert_Overcast:PersistentLevel.CustomFogControllerBP_92'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.10"
+      },
+      null
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/Maps/TslLobby",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'Weather_Desert_Overcast:PersistentLevel.Model_0'",
+      "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.23"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": null,
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "LevelBounds",
+    "Name": "LevelBounds_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelBounds'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Weather_Desert_Overcast:PersistentLevel.LevelBounds_0.BoxComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.7"
+      }
+    }
+  },
+  {
+    "Type": "MaterialInstanceDynamic",
+    "Name": "MaterialInstanceDynamic_0",
+    "Outer": "Sky Sphere mesh",
+    "Class": "UScriptClass'MaterialInstanceDynamic'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "MaterialInstanceConstant'M_Sky_Panning_Clouds_Desert_03_Inst'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Sky_Panning_Clouds_Desert_03_Inst.0"
+      },
+      "ScalarParameterValues": [
+        {
+          "ParameterName": "Horizon falloff",
+          "ParameterValue": 3.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Cloud speed",
+          "ParameterValue": 1.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Sun brightness",
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Sun height",
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Cloud opacity",
+          "ParameterValue": 0.7,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Stars brightness",
+          "ParameterValue": 0.1,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterName": "Light direction",
+          "ParameterValue": {
+            "R": 0.6749782,
+            "G": -0.21072416,
+            "B": -0.7071066,
+            "A": 1.0,
+            "Hex": "FFD70000"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Sun color",
+          "ParameterValue": {
+            "R": 0.462077,
+            "G": 0.462077,
+            "B": 0.462077,
+            "A": 1.0,
+            "Hex": "FFB5B5B5"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Horizon color",
+          "ParameterValue": {
+            "R": 1.979559,
+            "G": 2.586644,
+            "B": 3.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Zenith color",
+          "ParameterValue": {
+            "R": 0.034046,
+            "G": 0.109247,
+            "B": 0.295,
+            "A": 1.0,
+            "Hex": "FF335D94"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Overall color",
+          "ParameterValue": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Cloud color",
+          "ParameterValue": {
+            "R": 0.855778,
+            "G": 0.91902,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFEFF6FF"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "54049D47-4EE7E873-CF4A3C91-0CB906D2",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_14",
+    "Outer": "PostProcessVolume",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      "SphereRadius": 43301270.0
+    },
+    "Vectors": [
+      {
+        "X": -1.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1.0
+      },
+      {
+        "X": 1.0,
+        "Y": -0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": -1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      }
+    ],
+    "Points": [
+      {
+        "X": -25000000.0,
+        "Y": -25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": -25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": 25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": -25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": -25000000.0,
+        "Z": -25000000.0
+      }
+    ],
+    "Nodes": [
+      {
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 0,
+        "iSurf": 0,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 4,
+        "iSurf": 1,
+        "iVertexIndex": 4,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 2,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 8,
+        "iSurf": 2,
+        "iVertexIndex": 8,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 3,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 12,
+        "iSurf": 3,
+        "iVertexIndex": 12,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 4,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "iVertPool": 16,
+        "iSurf": 4,
+        "iVertexIndex": 16,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 5,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "iVertPool": 20,
+        "iSurf": 5,
+        "iVertexIndex": 20,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": -1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": 0,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      }
+    ],
+    "Surfs": [
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 0,
+        "vTextureU": 1,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 3,
+        "vNormal": 1,
+        "vTextureU": 3,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 5,
+        "vNormal": 3,
+        "vTextureU": 4,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 7,
+        "vNormal": 4,
+        "vTextureU": 0,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 2,
+        "vNormal": 5,
+        "vTextureU": 3,
+        "vTextureV": 1,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 2,
+        "vTextureU": 3,
+        "vTextureV": 4,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      }
+    ],
+    "NumSharedSides": 4,
+    "VertexBuffer": null,
+    "LightingGuid": "74083F82-428AA1BA-9980EB9B-549F8398",
+    "LightmassSettings": [
+      {
+        "bUseTwoSidedLighting": false,
+        "bShadowIndirectOnly": false,
+        "bUseEmissiveForStaticLighting": false,
+        "bUseVertexNormalForHemisphereGather": false,
+        "EmissiveLightFalloffExponent": 8.0,
+        "EmissiveLightExplicitInfluenceRadius": 0.0,
+        "EmissiveBoost": 1.0,
+        "DiffuseBoost": 1.0,
+        "FullyOccludedSamplesFraction": 1.0
+      }
+    ]
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "Weather_Rain_Particle_BP",
+    "Template": "ParticleSystem",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_Weather_Baltic_LightRain'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_Weather_Baltic_LightRain.59"
+      },
+      "OldPosition": {
+        "X": -420680.0,
+        "Y": -697560.0,
+        "Z": 2330.0
+      },
+      "OnSystemFinished": {
+        "InvocationList": []
+      },
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": -420680.0,
+        "Y": -697560.0,
+        "Z": 2330.0
+      }
+    }
+  },
+  {
+    "Type": "PostProcessVolume",
+    "Name": "PostProcessVolume",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'PostProcessVolume'",
+    "Properties": {
+      "Settings": {
+        "bOverride_ColorContrast": true,
+        "bOverride_FilmToeAmount": true,
+        "bOverride_FilmSlope": true,
+        "bOverride_FilmToe": true,
+        "bOverride_FilmShoulder": true,
+        "bOverride_BloomIntensity": true,
+        "bOverride_BloomThreshold": true,
+        "bOverride_Bloom1Tint": true,
+        "bOverride_Bloom1Size": true,
+        "bOverride_Bloom2Size": true,
+        "bOverride_Bloom2Tint": true,
+        "bOverride_Bloom3Tint": true,
+        "bOverride_Bloom3Size": true,
+        "bOverride_Bloom4Tint": true,
+        "bOverride_Bloom4Size": true,
+        "bOverride_Bloom5Tint": true,
+        "bOverride_Bloom5Size": true,
+        "bOverride_Bloom6Tint": true,
+        "bOverride_Bloom6Size": true,
+        "bOverride_AutoExposureMethod": true,
+        "bOverride_AutoExposureMinBrightness": true,
+        "bOverride_AutoExposureMaxBrightness": true,
+        "bOverride_AutoExposureSpeedUp": true,
+        "bOverride_AutoExposureSpeedDown": true,
+        "bOverride_AutoExposureBias": true,
+        "bOverride_HistogramLogMin": true,
+        "bOverride_HistogramLogMax": true,
+        "bOverride_HBAOPowerExponent": true,
+        "bOverride_HBAORadius": true,
+        "bOverride_HBAOMaxViewDepth": true,
+        "bOverride_AmbientOcclusionPower": true,
+        "bOverride_AmbientOcclusionQuality": true,
+        "bOverride_AmbientOcclusionMipBlend": true,
+        "bOverride_AmbientOcclusionMipScale": true,
+        "ColorContrast": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "FilmSlope": 0.9,
+        "FilmToe": 0.565,
+        "FilmShoulder": 0.8,
+        "FilmShadowTintBlend": 10.0,
+        "FilmShadowTintAmount": 10.0,
+        "FilmChannelMixerGreen": {
+          "R": 0.0,
+          "G": 1.0,
+          "B": 0.12,
+          "A": 1.0,
+          "Hex": "FF00FF61"
+        },
+        "FilmChannelMixerBlue": {
+          "R": 0.0,
+          "G": 0.2,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FF007CFF"
+        },
+        "FilmToeAmount": 0.65,
+        "FilmHealAmount": 0.25,
+        "BloomIntensity": 0.5,
+        "Bloom1Size": 2.0,
+        "Bloom2Size": 4.0,
+        "Bloom3Size": 8.0,
+        "Bloom4Size": 16.0,
+        "Bloom5Size": 32.0,
+        "Bloom1Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom2Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom3Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom4Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom5Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom6Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "AutoExposureLowPercent": 58.0,
+        "AutoExposureMinBrightness": 1.0,
+        "AutoExposureSpeedUp": 5.0,
+        "AutoExposureSpeedDown": 3.0,
+        "AutoExposureBias": -0.5,
+        "HistogramLogMin": -5.5,
+        "HistogramLogMax": 1.5,
+        "HBAOPowerExponent": 2.25,
+        "HBAORadius": 1.35,
+        "HBAOMaxViewDepth": 30000.0,
+        "DepthOfFieldFstop": 2.990826,
+        "DepthOfFieldDepthBlurRadius": 1.0
+      },
+      "bUnbound": true,
+      "BrushType": "Brush_Add",
+      "Brush": {
+        "ObjectName": "Model'Weather_Desert_Overcast:PersistentLevel.PostProcessVolume.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.24"
+      },
+      "BrushComponent": {
+        "ObjectName": "BrushComponent'Weather_Desert_Overcast:PersistentLevel.PostProcessVolume.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.9"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "bHidden": false,
+      "RootComponent": {
+        "ObjectName": "BrushComponent'Weather_Desert_Overcast:PersistentLevel.PostProcessVolume.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.9"
+      },
+      "Tags": [
+        "TslEffectPostProcessVolume"
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BluezoneOpacity_BP_126",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 520631.6,
+        "Y": 678733.4,
+        "Z": 8641.168
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Base",
+    "Outer": "BP_Sky_Sphere_Desert_04_94",
+    "Template": "SceneComponent_1",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 400000.0,
+        "Y": 400000.0,
+        "Z": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 5.0,
+        "Y": 5.0,
+        "Z": 5.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeScale3D",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "CustomFogControllerBP_92",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 365530.0,
+        "Y": 291130.0,
+        "Z": -130.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "DynamicWeather_Fog",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 145480.0,
+        "Y": 151390.0,
+        "Z": 2330.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "DynamicWeather_Rain",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 145860.0,
+        "Y": 151560.0,
+        "Z": 2330.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "IDCSettingsForDesertOvercastWeather_74",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -4347.0,
+        "Y": 68635.0,
+        "Z": 29344.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "WeatherManagerBP_54",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "WeatherPPControllerBP_78",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 151350.0,
+        "Y": 154880.0,
+        "Z": 2550.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "WetEffectBP_80",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 530660.0,
+        "Y": 458730.0,
+        "Z": 270.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkyLight",
+    "Name": "SkyLight",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'SkyLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "SkyLightComponent'Weather_Desert_Overcast:PersistentLevel.SkyLight.SkyLightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.37"
+      },
+      "RootComponent": {
+        "ObjectName": "SkyLightComponent'Weather_Desert_Overcast:PersistentLevel.SkyLight.SkyLightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.37"
+      }
+    }
+  },
+  {
+    "Type": "SkyLightComponent",
+    "Name": "SkyLightComponent0",
+    "Outer": "SkyLight",
+    "Class": "UScriptClass'SkyLightComponent'",
+    "Properties": {
+      "SourceType": "SLS_SpecifiedCubemap",
+      "Cubemap": {
+        "ObjectName": "TextureCube'T_Cubemap_Desert_Global_Overcast'",
+        "ObjectPath": "TslGame/Content/Assets/Lighting/Cubemaps/Desert/T_Cubemap_Desert_Global_Overcast.0"
+      },
+      "LowerHemisphereColor": {
+        "R": 0.2,
+        "G": 0.2,
+        "B": 0.2,
+        "A": 1.0,
+        "Hex": "FF7C7C7C"
+      },
+      "OcclusionMaxDistance": 500.0,
+      "Contrast": 0.7,
+      "MinOcclusion": 0.2,
+      "OcclusionTint": {
+        "B": 16,
+        "G": 16,
+        "R": 16,
+        "A": 255,
+        "Hex": "FF101010"
+      },
+      "LightGuid": "397B09D6-40888D93-066948B0-F9531EC6",
+      "Intensity": 0.65,
+      "Mobility": "EComponentMobility::Movable",
+      "RelativeLocation": {
+        "X": -487.0,
+        "Y": -705.0,
+        "Z": 483.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshActor",
+    "Name": "SM_MERGED_VistaMountainDesert_a3",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'StaticMeshActor'",
+    "Properties": {
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Overcast:PersistentLevel.SM_MERGED_VistaMountainDesert_a3.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.42"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Overcast:PersistentLevel.SM_MERGED_VistaMountainDesert_a3.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.42"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshActor",
+    "Name": "SM_MERGED_VistaMountainDesert_b3",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'StaticMeshActor'",
+    "Properties": {
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Overcast:PersistentLevel.SM_MERGED_VistaMountainDesert_b3.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.43"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Overcast:PersistentLevel.SM_MERGED_VistaMountainDesert_b3.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.43"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshActor",
+    "Name": "SM_MERGED_VistaMountainDesert_c3",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'StaticMeshActor'",
+    "Properties": {
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Overcast:PersistentLevel.SM_MERGED_VistaMountainDesert_c3.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.44"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Overcast:PersistentLevel.SM_MERGED_VistaMountainDesert_c3.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.44"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Sky Sphere mesh",
+    "Outer": "BP_Sky_Sphere_Desert_04_94",
+    "Template": "StaticMeshComponent_12",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceDynamic'Weather_Desert_Overcast:PersistentLevel.BP_Sky_Sphere_Desert_04_94.Sky Sphere mesh.MaterialInstanceDynamic_0'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.22"
+        }
+      ],
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.BP_Sky_Sphere_Desert_04_94.Base'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.28"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'MeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "OverrideMaterials",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent0",
+    "Outer": "SM_MERGED_VistaMountainDesert_a3",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_MERGED_VistaMountainDesert_a'",
+        "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/SM_MERGED_VistaMountainDesert_a.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Desert_mountain_01_FakeShadowA_Dusk'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/Dusk/M_Desert_mountain_01_FakeShadowA_Dusk.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Desert_hills_01_FakeShadowA_Dusk'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/Dusk/M_Desert_hills_01_FakeShadowA_Dusk.0"
+        }
+      ],
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision"
+      },
+      "RelativeLocation": {
+        "X": -224048.95,
+        "Y": 136139.66,
+        "Z": 37590.805
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent0",
+    "Outer": "SM_MERGED_VistaMountainDesert_b3",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_MERGED_VistaMountainDesert_b'",
+        "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/SM_MERGED_VistaMountainDesert_b.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Desert_mountain_01_FakeShadowB_Dusk'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/Dusk/M_Desert_mountain_01_FakeShadowB_Dusk.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Desert_hills_01_FakeShadowB_Dusk'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/Dusk/M_Desert_hills_01_FakeShadowB_Dusk.0"
+        }
+      ],
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision"
+      },
+      "RelativeLocation": {
+        "X": -422572.16,
+        "Y": -205164.2,
+        "Z": 17580.557
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent0",
+    "Outer": "SM_MERGED_VistaMountainDesert_c3",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_MERGED_VistaMountainDesert_c'",
+        "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/SM_MERGED_VistaMountainDesert_c.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Desert_hills_01_FakeShadowC_Dusk'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/Dusk/M_Desert_hills_01_FakeShadowC_Dusk.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Desert_mountain_01_FakeShadowC_Dusk'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/Dusk/M_Desert_mountain_01_FakeShadowC_Dusk.0"
+        }
+      ],
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision"
+      },
+      "RelativeLocation": {
+        "X": 1137107.8,
+        "Y": -68338.81,
+        "Z": 29223.793
+      }
+    }
+  },
+  {
+    "Type": "TslGlobalSound_WeatherClear_C",
+    "Name": "TslGlobalSound_WeatherClear_95",
+    "Outer": "PersistentLevel",
+    "Template": "Default__TslGlobalSound_WeatherClear_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Environment/TslGlobalSound_WeatherClear.TslGlobalSound_WeatherClear_C'",
+    "Properties": {
+      "Ak": {
+        "ObjectName": "AkComponent'Weather_Desert_Overcast:PersistentLevel.TslGlobalSound_WeatherClear_95.Ak'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.3"
+      },
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Desert_Overcast:PersistentLevel.TslGlobalSound_WeatherClear_95.Ak'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.3"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "AkComponent'Weather_Desert_Overcast:PersistentLevel.TslGlobalSound_WeatherClear_95.Ak'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "WeatherManagerBP_C",
+    "Name": "WeatherManagerBP_54",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherManagerBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherManagerBP.WeatherManagerBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.WeatherManagerBP_54.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.33"
+      },
+      "StartTimeMin": 60.0,
+      "StartTimeMax": 300.0,
+      "DurationTimeMin": 180.0,
+      "DurationTimeMax": 450.0,
+      "WetEffect": {
+        "ObjectName": "WetEffectBP_C'Weather_Desert_Overcast:PersistentLevel.WetEffectBP_80'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.49"
+      },
+      "PPEffect": {
+        "ObjectName": "WeatherPPControllerBP_C'Weather_Desert_Overcast:PersistentLevel.WeatherPPControllerBP_78'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.48"
+      },
+      "DynamicWeathers": [
+        {
+          "WeatherName": "",
+          "DynamicWeather": null,
+          "Weight": 3.5,
+          "DirectionalLightIntensity": 1.0,
+          "DirectionalLightTemperature": 7200.0,
+          "DirectionalLightVolumetricScattering": 1.0,
+          "SkyLightIntensity": 0.65,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": false,
+          "OverrideDurationTimeMin": 30.0,
+          "OverrideDurationTimeMax": 60.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        },
+        {
+          "WeatherName": "",
+          "DynamicWeather": {
+            "ObjectName": "DynamicWeatherBP_C'Weather_Desert_Overcast:PersistentLevel.DynamicWeather_Rain'",
+            "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.14"
+          },
+          "Weight": 1.0,
+          "DirectionalLightIntensity": 1.0,
+          "DirectionalLightTemperature": 7200.0,
+          "DirectionalLightVolumetricScattering": 1.0,
+          "SkyLightIntensity": 0.65,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": false,
+          "OverrideDurationTimeMin": 15.0,
+          "OverrideDurationTimeMax": 15.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        },
+        {
+          "WeatherName": "Fog",
+          "DynamicWeather": {
+            "ObjectName": "DynamicWeatherBP_C'Weather_Desert_Overcast:PersistentLevel.DynamicWeather_Fog'",
+            "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.13"
+          },
+          "Weight": 1.0,
+          "DirectionalLightIntensity": 1.0,
+          "DirectionalLightTemperature": 7200.0,
+          "DirectionalLightVolumetricScattering": 1.0,
+          "SkyLightIntensity": 0.65,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": false,
+          "OverrideDurationTimeMin": 15.0,
+          "OverrideDurationTimeMax": 15.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        }
+      ],
+      "CustomOrder": [
+        0,
+        2,
+        1
+      ],
+      "bShowDebugDynamicWeather": true,
+      "LocalWeatherVolumes": [
+        {
+          "PostProcessVolume": null,
+          "LocalWeatherSetting": {
+            "FogDensity": 0.008,
+            "FogColor": {
+              "R": 0.715,
+              "G": 0.715,
+              "B": 0.715,
+              "A": 1.0,
+              "Hex": "FFDCDCDC"
+            },
+            "FogStartDistance": 18000.0,
+            "VolFogExtinctionScale": 0.4,
+            "WeatherParticleSpawnScale": 0.0,
+            "bUseWetEffectWithSpawnScale": false,
+            "SoundScale": 0.0
+          }
+        }
+      ],
+      "ServerTickInterval": 0.25,
+      "ClientTickInterval": 0.025,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.WeatherManagerBP_54.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.33"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.WeatherManagerBP_54.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.33"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "WeatherParticleBP_C",
+    "Name": "Weather_Rain_Particle_BP",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherParticleBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherParticleBP.WeatherParticleBP_C'",
+    "Properties": {
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Weather_Desert_Overcast:PersistentLevel.Weather_Rain_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.25"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Weather_Desert_Overcast:PersistentLevel.Weather_Rain_Particle_BP.AkSound'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.4"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Desert_Overcast:PersistentLevel.Weather_Rain_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.25"
+      }
+    }
+  },
+  {
+    "Type": "WeatherPPControllerBP_C",
+    "Name": "WeatherPPControllerBP_78",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherPPControllerBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherPPControllerBP.WeatherPPControllerBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.WeatherPPControllerBP_78.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.34"
+      },
+      "WeatherSystem_MPC": {
+        "ObjectName": "MaterialParameterCollection'MPC_WeatherSystem'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/MPC_WeatherSystem.0"
+      },
+      "PPVolume": {
+        "ObjectName": "PostProcessVolume'Weather_Desert_Overcast:PersistentLevel.PostProcessVolume'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.26"
+      },
+      "PPMaterial": {
+        "ObjectName": "MaterialInstanceConstant'M_RainCamera_New_Inst'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_RainCamera_New_Inst.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.WeatherPPControllerBP_78.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.34"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.WeatherPPControllerBP_78.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.34"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "WetEffectBP_C",
+    "Name": "WetEffectBP_80",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WetEffectBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WetEffectBP.WetEffectBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.WetEffectBP_80.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.35"
+      },
+      "RainMPC": {
+        "ObjectName": "MaterialParameterCollection'Rain_Parameter'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/Rain_Parameter.0"
+      },
+      "bSetRRange": true,
+      "RMin": 0.21,
+      "WetGroundCurve": {
+        "ObjectName": "CurveFloat'WetGroundCurve_Miramar'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/WetGroundCurve_Miramar.0"
+      },
+      "WetVehicleCurve": {
+        "ObjectName": "CurveFloat'WetVehicleCurve_Miramar'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/WetVehicleCurve_Miramar.0"
+      },
+      "WetNormalCurve": {
+        "ObjectName": "CurveFloat'WetNormalCurve_Miramar'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/WetNormalCurve_Miramar.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.WetEffectBP_80.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.35"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Desert_Overcast:PersistentLevel.WetEffectBP_80.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.35"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "World",
+    "Name": "Weather_Desert_Overcast",
+    "Class": "UScriptClass'World'",
+    "Properties": {
+      "DefaultPhysicsVolume": null
+    },
+    "PersistentLevel": {
+      "ObjectName": "Level'Weather_Desert_Overcast:PersistentLevel'",
+      "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Overcast.20"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  },
+  {
+    "Type": "WorldSettings",
+    "Name": "WorldSettings",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WorldSettings'"
+  }
+]

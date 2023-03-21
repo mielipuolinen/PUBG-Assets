@@ -3,10 +3,11 @@
     "Type": "ObjectProperty",
     "Name": "Underwater_Explosion_VFX",
     "Outer": "ProjGrenade_Explosion_Underwater_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyFlags": 65541,
     "PropertyClass": {
-      "ObjectName": "Class ParticleSystem",
+      "ObjectName": "Class'ParticleSystem'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -14,13 +15,14 @@
     "Type": "ObjectProperty",
     "Name": "P_Grenade_Water",
     "Outer": "ProjGrenade_Explosion_Underwater_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjGrenade_Explosion_Underwater_C:Underwater_Explosion_VFX",
+      "ObjectName": "ObjectProperty'ProjGrenade_Explosion_Underwater_C:Underwater_Explosion_VFX'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.0"
     },
     "PropertyFlags": 17179869188,
     "PropertyClass": {
-      "ObjectName": "Class ParticleSystemComponent",
+      "ObjectName": "Class'ParticleSystemComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -28,6 +30,7 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_BooleanAND_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "BoolSize": 1,
     "bIsNativeBool": true
@@ -36,8 +39,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Greater_FloatFloat_ReturnValue2",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_BooleanAND_ReturnValue",
+      "ObjectName": "BoolProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_BooleanAND_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.2"
     },
     "BoolSize": 1,
@@ -47,8 +51,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Less_FloatFloat_ReturnValue2",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_Greater_FloatFloat_ReturnValue2",
+      "ObjectName": "BoolProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_Greater_FloatFloat_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.3"
     },
     "BoolSize": 1,
@@ -58,8 +63,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_Less_FloatFloat_ReturnValue2",
+      "ObjectName": "BoolProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_Less_FloatFloat_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.4"
     },
     "BoolSize": 1,
@@ -69,8 +75,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Less_FloatFloat_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_Greater_FloatFloat_ReturnValue",
+      "ObjectName": "BoolProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_Greater_FloatFloat_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.5"
     },
     "BoolSize": 1,
@@ -80,8 +87,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_Abs_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_Less_FloatFloat_ReturnValue",
+      "ObjectName": "BoolProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_Less_FloatFloat_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.6"
     }
   },
@@ -89,8 +97,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_Subtract_FloatFloat_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_Abs_ReturnValue",
+      "ObjectName": "FloatProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_Abs_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.7"
     }
   },
@@ -98,13 +107,14 @@
     "Type": "StructProperty",
     "Name": "CallFunc_K2_SetWorldLocation_SweepHitResult",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_Subtract_FloatFloat_ReturnValue",
+      "ObjectName": "FloatProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_Subtract_FloatFloat_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.8"
     },
     "PropertyFlags": 549755813888,
     "Struct": {
-      "ObjectName": "ScriptStruct HitResult",
+      "ObjectName": "ScriptStruct'HitResult'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -112,12 +122,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_MakeVector_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_K2_SetWorldLocation_SweepHitResult",
+      "ObjectName": "StructProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_K2_SetWorldLocation_SweepHitResult'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.9"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -125,8 +136,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsValid_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_MakeVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_MakeVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.10"
     },
     "BoolSize": 1,
@@ -136,8 +148,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_GetWaterSurfaceHeight_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_IsValid_ReturnValue",
+      "ObjectName": "BoolProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_IsValid_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.11"
     }
   },
@@ -145,8 +158,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_BreakVector_Z",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_GetWaterSurfaceHeight_ReturnValue",
+      "ObjectName": "FloatProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_GetWaterSurfaceHeight_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.12"
     }
   },
@@ -154,8 +168,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_BreakVector_Y",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_BreakVector_Z",
+      "ObjectName": "FloatProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_BreakVector_Z'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.13"
     }
   },
@@ -163,8 +178,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_BreakVector_X",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_BreakVector_Y",
+      "ObjectName": "FloatProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_BreakVector_Y'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.14"
     }
   },
@@ -172,12 +188,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetWaterVolumeAtLocation_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_BreakVector_X",
+      "ObjectName": "FloatProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_BreakVector_X'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.15"
     },
     "PropertyClass": {
-      "ObjectName": "Class PhysicsVolume",
+      "ObjectName": "Class'PhysicsVolume'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -185,12 +202,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_GetWaterVolumeAtLocation_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_GetWaterVolumeAtLocation_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.16"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -198,13 +216,14 @@
     "Type": "StructProperty",
     "Name": "CallFunc_K2_SetWorldRotation_SweepHitResult",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_K2_GetActorLocation_ReturnValue",
+      "ObjectName": "StructProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_K2_GetActorLocation_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.17"
     },
     "PropertyFlags": 549755813888,
     "Struct": {
-      "ObjectName": "ScriptStruct HitResult",
+      "ObjectName": "ScriptStruct'HitResult'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -212,17 +231,18 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjGrenade_Explosion_Underwater_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjGrenade_Explosion_Underwater_C:P_Grenade_Water",
+      "ObjectName": "ObjectProperty'ProjGrenade_Explosion_Underwater_C:P_Grenade_Water'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.1"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_K2_SetWorldRotation_SweepHitResult",
+        "ObjectName": "StructProperty'ProjGrenade_Explosion_Underwater_C:UserConstructionScript.CallFunc_K2_SetWorldRotation_SweepHitResult'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.18"
       }
     ],
@@ -231,62 +251,64 @@
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjGrenade_Explosion_Underwater_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjGrenade_Explosion_Underwater_C:SimpleConstructionScript_1__EFD9F313",
+        "ObjectName": "SimpleConstructionScript'ProjGrenade_Explosion_Underwater_C:SimpleConstructionScript_1__EFD9F313'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.27"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslExplosionEffect",
+      "ObjectName": "Class'TslExplosionEffect'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "Function ProjGrenade_Explosion_Underwater_C:UserConstructionScript",
+        "ObjectName": "Function'ProjGrenade_Explosion_Underwater_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.19"
       }
     ],
     "FuncMap": {
       "UserConstructionScript": {
-        "ObjectName": "Function ProjGrenade_Explosion_Underwater_C:UserConstructionScript",
+        "ObjectName": "Function'ProjGrenade_Explosion_Underwater_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.19"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjGrenade_Explosion_Underwater_C Default__ProjGrenade_Explosion_Underwater_C",
+      "ObjectName": "ProjGrenade_Explosion_Underwater_C'Default__ProjGrenade_Explosion_Underwater_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.21"
     }
   },
   {
     "Type": "ProjGrenade_Explosion_Underwater_C",
     "Name": "Default__ProjGrenade_Explosion_Underwater_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.ProjGrenade_Explosion_Underwater_C'",
     "Properties": {
       "Underwater_Explosion_VFX": {
-        "ObjectName": "ParticleSystem P_Grenade_UnderWater",
+        "ObjectName": "ParticleSystem'P_Grenade_UnderWater'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_Grenade_UnderWater.58"
       },
       "ExplosionLight": {
-        "ObjectName": "PointLightComponent Default__ProjGrenade_Explosion_Underwater_C:ExplosionLight",
+        "ObjectName": "PointLightComponent'Default__ProjGrenade_Explosion_Underwater_C:ExplosionLight'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.23"
       },
       "ExplosionLightFadeOut": 10.0,
       "ExplosionSound": {
-        "ObjectName": "AkAudioEvent Grenade_Explosion",
+        "ObjectName": "AkAudioEvent'Grenade_Explosion'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Grenade/Grenade_Explosion.0"
       },
       "DecalEffectDataSet": {
         "DefaultDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -305,7 +327,7 @@
       },
       "DecalSpawnDelayTime": 0.1,
       "RootComponent": {
-        "ObjectName": "PointLightComponent Default__ProjGrenade_Explosion_Underwater_C:ExplosionLight",
+        "ObjectName": "PointLightComponent'Default__ProjGrenade_Explosion_Underwater_C:ExplosionLight'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.23"
       }
     }
@@ -314,9 +336,10 @@
     "Type": "ParticleSystemComponent",
     "Name": "P_Grenade_Water_GEN_VARIABLE",
     "Outer": "ProjGrenade_Explosion_Underwater_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
     "Properties": {
       "Template": {
-        "ObjectName": "ParticleSystem P_Grenade_Water",
+        "ObjectName": "ParticleSystem'P_Grenade_Water'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_Grenade_Water.227"
       },
       "bDecalChannelValid": true
@@ -326,6 +349,7 @@
     "Type": "PointLightComponent",
     "Name": "ExplosionLight",
     "Outer": "Default__ProjGrenade_Explosion_Underwater_C",
+    "Class": "UScriptClass'PointLightComponent'",
     "Properties": {
       "AttenuationRadius": 1024.0,
       "LightGuid": "D975C31E-4DFC75AD-DAEF418E-59C024EE",
@@ -342,19 +366,21 @@
   {
     "Type": "SceneComponent",
     "Name": "SceneComponent_0",
-    "Outer": "ProjGrenade_Explosion_Underwater_C"
+    "Outer": "ProjGrenade_Explosion_Underwater_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_1__EFD9F313",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjGrenade_Explosion_Underwater_C:SceneComponent_0",
+        "ObjectName": "SceneComponent'ProjGrenade_Explosion_Underwater_C:SceneComponent_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.24"
       },
       "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
@@ -365,13 +391,14 @@
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_1__EFD9F313",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class ParticleSystemComponent",
+        "ObjectName": "Class'ParticleSystemComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "ParticleSystemComponent ProjGrenade_Explosion_Underwater_C:P_Grenade_Water_GEN_VARIABLE",
+        "ObjectName": "ParticleSystemComponent'ProjGrenade_Explosion_Underwater_C:P_Grenade_Water_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.22"
       },
       "ParentComponentOrVariableName": "ExplosionLight",
@@ -384,21 +411,22 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_1__EFD9F313",
     "Outer": "ProjGrenade_Explosion_Underwater_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "RootNodes": [
         {
-          "ObjectName": "SCS_Node ProjGrenade_Explosion_Underwater_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_1",
+          "ObjectName": "SCS_Node'ProjGrenade_Explosion_Underwater_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_1'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.26"
         }
       ],
       "AllNodes": [
         {
-          "ObjectName": "SCS_Node ProjGrenade_Explosion_Underwater_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_1",
+          "ObjectName": "SCS_Node'ProjGrenade_Explosion_Underwater_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_1'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.26"
         }
       ],
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjGrenade_Explosion_Underwater_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_0",
+        "ObjectName": "SCS_Node'ProjGrenade_Explosion_Underwater_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.25"
       }
     }

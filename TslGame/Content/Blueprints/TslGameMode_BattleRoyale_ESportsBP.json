@@ -1,0 +1,434 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "TslGameMode_BattleRoyale_ESportsBP_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "TslGameMode_BattleRoyale_ESportsBP_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'TslGameMode_BattleRoyale_ESportsBP_C:DefaultSceneRoot'",
+      "ObjectPath": "TslGame/Content/Blueprints/TslGameMode_BattleRoyale_ESportsBP.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "TslGameMode_BattleRoyale_ESportsBP_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'TslGameMode_BattleRoyale_ESportsBP_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/TslGameMode_BattleRoyale_ESportsBP.7"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'TslGameMode_BattleRoyale_ESportsBP_C:InheritableComponentHandler'",
+        "ObjectPath": "TslGame/Content/Blueprints/TslGameMode_BattleRoyale_ESportsBP.4"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslESportsGameMode'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'TslGameMode_BattleRoyale_ESportsBP_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/TslGameMode_BattleRoyale_ESportsBP.1"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function'TslGameMode_BattleRoyale_ESportsBP_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/TslGameMode_BattleRoyale_ESportsBP.1"
+      }
+    },
+    "ClassFlags": 8651292,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "TslGameMode_BattleRoyale_ESportsBP_C'Default__TslGameMode_BattleRoyale_ESportsBP_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/TslGameMode_BattleRoyale_ESportsBP.3"
+    }
+  },
+  {
+    "Type": "TslGameMode_BattleRoyale_ESportsBP_C",
+    "Name": "Default__TslGameMode_BattleRoyale_ESportsBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/TslGameMode_BattleRoyale_ESportsBP.TslGameMode_BattleRoyale_ESportsBP_C'",
+    "Properties": {
+      "MalePawnClass": {
+        "ObjectName": "BlueprintGeneratedClass'PlayerMale_A_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/PlayerMale_A.0"
+      },
+      "PerfBotPlayerControllerClass": null,
+      "ModeControllerClass": null,
+      "AdditionalModeControllerClasses": null,
+      "InitialItemDonatorClass": null,
+      "MatchPreparerClasses": [
+        {
+          "Type": "EMatchStartType::Normal",
+          "Class": {
+            "ObjectName": "BlueprintGeneratedClass'NormalMatchPreparer_Default_C'",
+            "ObjectPath": "TslGame/Content/Blueprints/MatchPreparer/NormalMatchPreparer_Default.0"
+          }
+        },
+        {
+          "Type": "EMatchStartType::Airborne",
+          "Class": {
+            "ObjectName": "BlueprintGeneratedClass'ESportsAirborneMatchPreparer_Default_C'",
+            "ObjectPath": "TslGame/Content/Blueprints/MatchPreparer/ESportsAirborneMatchPreparer_Default.0"
+          }
+        }
+      ],
+      "SpawnKitClass": null,
+      "PostMatchWaitingTime": 600,
+      "bShouldSpawnAtStartSpot": true,
+      "bUseCeremonyState": false,
+      "TeamSize": 2,
+      "LobbyBallsToSpawnPerStartLocation": 2,
+      "LobbyBallManagerClass": {
+        "ObjectName": "BlueprintGeneratedClass'LobbyBallManager_C'",
+        "ObjectPath": "TslGame/Content/Weapon/Grenades/Football/LobbyBallManager.1"
+      },
+      "LimitCustomStringParameters": [
+        {
+          "CustomStringParameter": "MultiplierBlueZone",
+          "MinLimit": 1.0,
+          "MaxLimit": 5.0
+        },
+        {
+          "CustomStringParameter": "MultiplierCarePackage",
+          "MinLimit": 0.0,
+          "MaxLimit": 5.0
+        },
+        {
+          "CustomStringParameter": "MultiplierRedZone",
+          "MinLimit": 0.0,
+          "MaxLimit": 5.0
+        },
+        {
+          "CustomStringParameter": "ReviveCastingTime",
+          "MinLimit": 1.0,
+          "MaxLimit": 20.0
+        },
+        {
+          "CustomStringParameter": "MultiplierPunchDamage",
+          "MinLimit": 0.0,
+          "MaxLimit": 2.0
+        },
+        {
+          "CustomStringParameter": "MultiplierGroggyDamagePerSecond",
+          "MinLimit": 0.1,
+          "MaxLimit": 2.0
+        },
+        {
+          "CustomStringParameter": "ThingSpawnGroupRatio",
+          "MinLimit": 0.0,
+          "MaxLimit": 1.0
+        },
+        {
+          "CustomStringParameter": "GeneralItemSpawnValueCategory",
+          "MinLimit": 0.0,
+          "MaxLimit": 3.0
+        },
+        {
+          "CustomStringParameter": "ItemSpawnCategory",
+          "MinLimit": 0.0,
+          "MaxLimit": 3.0
+        },
+        {
+          "CustomStringParameter": "MultiplierZombieToZombieDamage",
+          "MinLimit": 0.0,
+          "MaxLimit": 2.0
+        },
+        {
+          "CustomStringParameter": "BlueZoneCentralizationFactor",
+          "MinLimit": -1.0,
+          "MaxLimit": 1.0
+        },
+        {
+          "CustomStringParameter": "Phase1.WarningDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase1.ReleaseDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase1.GasDamagePerSecond",
+          "MinLimit": 0.0,
+          "MaxLimit": 100.0
+        },
+        {
+          "CustomStringParameter": "Phase1.RadiusRate",
+          "MinLimit": 0.0,
+          "MaxLimit": 1.0
+        },
+        {
+          "CustomStringParameter": "Phase2.WarningDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase2.ReleaseDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase2.GasDamagePerSecond",
+          "MinLimit": 0.0,
+          "MaxLimit": 100.0
+        },
+        {
+          "CustomStringParameter": "Phase2.RadiusRate",
+          "MinLimit": 0.0,
+          "MaxLimit": 1.0
+        },
+        {
+          "CustomStringParameter": "Phase3.WarningDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase3.ReleaseDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase3.GasDamagePerSecond",
+          "MinLimit": 0.0,
+          "MaxLimit": 100.0
+        },
+        {
+          "CustomStringParameter": "Phase3.RadiusRate",
+          "MinLimit": 0.0,
+          "MaxLimit": 1.0
+        },
+        {
+          "CustomStringParameter": "Phase4.WarningDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase4.ReleaseDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase4.GasDamagePerSecond",
+          "MinLimit": 0.0,
+          "MaxLimit": 100.0
+        },
+        {
+          "CustomStringParameter": "Phase4.RadiusRate",
+          "MinLimit": 0.0,
+          "MaxLimit": 1.0
+        },
+        {
+          "CustomStringParameter": "Phase5.WarningDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase5.ReleaseDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase5.GasDamagePerSecond",
+          "MinLimit": 0.0,
+          "MaxLimit": 100.0
+        },
+        {
+          "CustomStringParameter": "Phase5.RadiusRate",
+          "MinLimit": 0.0,
+          "MaxLimit": 1.0
+        },
+        {
+          "CustomStringParameter": "Phase6.WarningDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase6.ReleaseDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase6.GasDamagePerSecond",
+          "MinLimit": 0.0,
+          "MaxLimit": 100.0
+        },
+        {
+          "CustomStringParameter": "Phase6.RadiusRate",
+          "MinLimit": 0.0,
+          "MaxLimit": 1.0
+        },
+        {
+          "CustomStringParameter": "Phase7.WarningDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase7.ReleaseDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase7.GasDamagePerSecond",
+          "MinLimit": 0.0,
+          "MaxLimit": 100.0
+        },
+        {
+          "CustomStringParameter": "Phase7.RadiusRate",
+          "MinLimit": 0.0,
+          "MaxLimit": 1.0
+        },
+        {
+          "CustomStringParameter": "Phase8.WarningDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase8.ReleaseDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase8.GasDamagePerSecond",
+          "MinLimit": 0.0,
+          "MaxLimit": 100.0
+        },
+        {
+          "CustomStringParameter": "Phase8.RadiusRate",
+          "MinLimit": 0.0,
+          "MaxLimit": 1.0
+        },
+        {
+          "CustomStringParameter": "Phase9.WarningDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase9.ReleaseDuration",
+          "MinLimit": 0.0,
+          "MaxLimit": 1000.0
+        },
+        {
+          "CustomStringParameter": "Phase9.GasDamagePerSecond",
+          "MinLimit": 0.0,
+          "MaxLimit": 100.0
+        },
+        {
+          "CustomStringParameter": "Phase9.RadiusRate",
+          "MinLimit": 0.0,
+          "MaxLimit": 1.0
+        }
+      ],
+      "RedZoneCustomOption": {
+        "bIsActive": false
+      },
+      "ServerMaxTickRate": 60,
+      "ItemSpawnProcessorClass": null,
+      "ThingSpawnProcessorClass": null,
+      "JukeBoxSpawnProcessorClass": null,
+      "InteractionSupplySpawnProcessorClass": null,
+      "BasicBeltItemIDForNoBelt": "Item_Belt_D_01_C",
+      "CustomCarepackageRulesComponentClass": null,
+      "ModePresetClass": null,
+      "MinRespawnDelay": 0.1,
+      "GameStateClass": {
+        "ObjectName": "Class'TslEsportsGameState'",
+        "ObjectPath": "/Script/TslGame"
+      },
+      "PlayerControllerClass": {
+        "ObjectName": "Class'TslPlayerController_ESports'",
+        "ObjectPath": "/Script/TslGame"
+      },
+      "PlayerStateClass": {
+        "ObjectName": "Class'TslBattleRoyalePlayerState'",
+        "ObjectPath": "/Script/TslGame"
+      },
+      "HUDClass": null,
+      "DefaultPawnClass": {
+        "ObjectName": "BlueprintGeneratedClass'PlayerFemale_A_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Pawns/PlayerFemale_A.0"
+      },
+      "SpectatorClass": null
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "TslGameMode_BattleRoyale_ESportsBP_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "TslGameMode_BattleRoyale_ESportsBP_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'TslGameMode_BattleRoyale_ESportsBP_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/TslGameMode_BattleRoyale_ESportsBP.5"
+      },
+      "VariableGuid": "8407F4B6-4911F281-AA51C489-A6947529",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "TslGameMode_BattleRoyale_ESportsBP_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'TslGameMode_BattleRoyale_ESportsBP_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/TslGameMode_BattleRoyale_ESportsBP.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'TslGameMode_BattleRoyale_ESportsBP_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/TslGameMode_BattleRoyale_ESportsBP.6"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'TslGameMode_BattleRoyale_ESportsBP_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/TslGameMode_BattleRoyale_ESportsBP.6"
+      }
+    }
+  }
+]

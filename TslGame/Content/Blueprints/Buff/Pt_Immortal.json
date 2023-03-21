@@ -1,0 +1,108 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Pt_Immortal_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Pt_Immortal_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Pt_Immortal.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslServerParticle'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Pt_Immortal_C'Default__Pt_Immortal_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Pt_Immortal.1"
+    }
+  },
+  {
+    "Type": "Pt_Immortal_C",
+    "Name": "Default__Pt_Immortal_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Buff/Pt_Immortal.Pt_Immortal_C'",
+    "Properties": {
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Default__Pt_Immortal_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Pt_Immortal.3"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Default__Pt_Immortal_C:AkSound'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Pt_Immortal.2"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Default__Pt_Immortal_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Pt_Immortal.3"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Default__Pt_Immortal_C",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Default__Pt_Immortal_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Pt_Immortal.3"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "Default__Pt_Immortal_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_Immortal'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.38"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Pt_Immortal_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Pt_Immortal_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Pt_Immortal.4"
+      },
+      "VariableGuid": "4B213934-435FC86F-CD5242A2-86967E72",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Pt_Immortal_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Pt_Immortal_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Pt_Immortal.5"
+      }
+    }
+  }
+]

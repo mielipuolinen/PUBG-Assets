@@ -2,8 +2,10 @@
   {
     "Type": "Material",
     "Name": "M_C4_Blink",
+    "Class": "UScriptClass'Material'",
     "Properties": {
       "BaseColor": {
+        "Expression": null,
         "OutputIndex": 0,
         "InputName": "",
         "Mask": 1,
@@ -22,6 +24,7 @@
         }
       },
       "EmissiveColor": {
+        "Expression": null,
         "OutputIndex": 0,
         "InputName": "",
         "Mask": 1,
@@ -40,6 +43,7 @@
         }
       },
       "Opacity": {
+        "Expression": null,
         "OutputIndex": 0,
         "InputName": "",
         "Mask": 0,
@@ -54,6 +58,7 @@
       "BlendMode": "BLEND_Translucent",
       "ShadingModel": "MSM_Unlit",
       "WorldPositionOffset": {
+        "Expression": null,
         "OutputIndex": 0,
         "InputName": "",
         "Mask": 0,
@@ -78,7 +83,7 @@
         null,
         null,
         {
-          "ObjectName": "MaterialExpressionMaterialFunctionCall M_C4_Blink:MaterialExpressionMaterialFunctionCall_0",
+          "ObjectName": "MaterialExpressionMaterialFunctionCall'M_C4_Blink:MaterialExpressionMaterialFunctionCall_0'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_C4_Blink.1"
         },
         null,
@@ -88,14 +93,14 @@
         {
           "StateId": "235C8133-44D704CA-0297108A-59B9F710",
           "Function": {
-            "ObjectName": "MaterialFunction RadialGradientExponential",
+            "ObjectName": "MaterialFunction'RadialGradientExponential'",
             "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.2"
           }
         },
         {
           "StateId": "42FB52C9-4B6E464D-2D6CB2B5-E6A65899",
           "Function": {
-            "ObjectName": "MaterialFunction ExponentialDensity",
+            "ObjectName": "MaterialFunction'ExponentialDensity'",
             "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Density/ExponentialDensity.0"
           }
         }
@@ -108,15 +113,17 @@
     "Type": "MaterialExpressionMaterialFunctionCall",
     "Name": "MaterialExpressionMaterialFunctionCall_0",
     "Outer": "M_C4_Blink",
+    "Class": "UScriptClass'MaterialExpressionMaterialFunctionCall'",
     "Properties": {
       "MaterialFunction": {
-        "ObjectName": "MaterialFunction RadialGradientExponential",
+        "ObjectName": "MaterialFunction'RadialGradientExponential'",
         "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/RadialGradientExponential.2"
       },
       "FunctionInputs": [
         {
           "ExpressionInputId": "D38E6C0F-499293F6-CC65C0AE-55AE0D4E",
           "Input": {
+            "Expression": null,
             "OutputIndex": -1,
             "InputName": "UVs",
             "Mask": 0,
@@ -130,6 +137,7 @@
         {
           "ExpressionInputId": "2997555B-436C7354-59B9D695-B58F219E",
           "Input": {
+            "Expression": null,
             "OutputIndex": -1,
             "InputName": "CenterPosition",
             "Mask": 0,
@@ -143,6 +151,7 @@
         {
           "ExpressionInputId": "B330351C-4B254660-CCDCA592-3C8F3F26",
           "Input": {
+            "Expression": null,
             "OutputIndex": -1,
             "InputName": "Radius",
             "Mask": 0,
@@ -156,6 +165,7 @@
         {
           "ExpressionInputId": "2B61E834-449DAE3B-C4D079B9-53B5DE0E",
           "Input": {
+            "Expression": null,
             "OutputIndex": 0,
             "InputName": "Density",
             "Mask": 0,
@@ -169,6 +179,7 @@
         {
           "ExpressionInputId": "7D5AC525-4448D12A-92351AA3-6BEED90A",
           "Input": {
+            "Expression": null,
             "OutputIndex": -1,
             "InputName": "Invert Density",
             "Mask": 0,
@@ -194,7 +205,7 @@
         }
       ],
       "Material": {
-        "ObjectName": "Material M_C4_Blink",
+        "ObjectName": "Material'M_C4_Blink'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/M_C4_Blink.0"
       },
       "Outputs": [

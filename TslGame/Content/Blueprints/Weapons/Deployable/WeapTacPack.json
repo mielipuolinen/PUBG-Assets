@@ -2,40 +2,47 @@
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapTacPack_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapTacPack_C:SimpleConstructionScript_0",
+        "ObjectName": "SimpleConstructionScript'WeapTacPack_C:SimpleConstructionScript_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslWeapon_TacPack",
+      "ObjectName": "Class'TslWeapon_TacPack'",
       "ObjectPath": "/Script/TslGame"
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapTacPack_C Default__WeapTacPack_C",
+      "ObjectName": "WeapTacPack_C'Default__WeapTacPack_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.1"
     }
   },
   {
     "Type": "WeapTacPack_C",
     "Name": "Default__WeapTacPack_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.WeapTacPack_C'",
     "Properties": {
       "SlotCapacity": 60.0,
+      "VehicleFppOffset": {
+        "X": 30.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
       "WeaponSoftRolesData": {
-        "ObjectName": "WeaponSoftRolesData WeapTacPack_WeaponSoftRolesData",
+        "ObjectName": "WeaponSoftRolesData'WeapTacPack_WeaponSoftRolesData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapTacPack_WeaponSoftRolesData.0"
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_Tac_Pack",
+        "ObjectName": "Texture2D'weapons_Tac_Pack'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_Tac_Pack.0"
       },
       "WeaponIconRatio": 2.76,
@@ -96,50 +103,55 @@
           }
         }
       },
+      "bForceIdleInVehicle": true,
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapTacPack_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__WeapTacPack_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.6"
       },
       "AnimWeaponType": "EAnimWeaponType::Throwable",
       "WeaponAnim": {
         "PickUp": {
-          "ObjectName": "AnimMontage MOB1_M1_Glean_Montage",
+          "ObjectName": "AnimMontage'MOB1_M1_Glean_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Mobility/MOB1_M1_Glean_Montage.0"
         }
       },
       "ProneRollAnim": {
         "RollLeft": {
-          "ObjectName": "AnimMontage MOB1_M1_ProneRoll_L_Loop_IP_Montage",
+          "ObjectName": "AnimMontage'MOB1_M1_ProneRoll_L_Loop_IP_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Mobility/MOB1_M1_ProneRoll_L_Loop_IP_Montage.0"
         },
         "RollRight": {
-          "ObjectName": "AnimMontage MOB1_M1_ProneRoll_R_Loop_IP_Montage",
+          "ObjectName": "AnimMontage'MOB1_M1_ProneRoll_R_Loop_IP_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Mobility/MOB1_M1_ProneRoll_R_Loop_IP_Montage.0"
         }
       },
-      "EquipAnimData": {
-        "EAccessorySlot::Slot_Secondary": {
-          "Montage": {
-            "ObjectName": "AnimMontage TacPack_Combat_Stand_SecondarySlot_Montage",
-            "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TacPack/TacPack_Combat_Stand_SecondarySlot_Montage.0"
-          },
-          "PlayRate": 1.0
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_Secondary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'TacPack_Combat_Stand_SecondarySlot_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TacPack/TacPack_Combat_Stand_SecondarySlot_Montage.0"
+            },
+            "PlayRate": 1.0
+          }
         },
-        "EAccessorySlot::Slot_Primary": {
-          "Montage": {
-            "ObjectName": "AnimMontage TacPack_Combat_Stand_PrimarySlot_Montage",
-            "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TacPack/TacPack_Combat_Stand_PrimarySlot_Montage.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_Primary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'TacPack_Combat_Stand_PrimarySlot_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/TacPack/TacPack_Combat_Stand_PrimarySlot_Montage.0"
+            },
+            "PlayRate": 1.0
+          }
         }
-      },
+      ],
       "HipDuration": 0.1,
       "WeaponAudioData": {
-        "ObjectName": "WeaponAudioData WeapTacPack_WeaponAudioData",
+        "ObjectName": "WeaponAudioData'WeapTacPack_WeaponAudioData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapTacPack_WeaponAudioData.0"
       },
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapTacPack_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapTacPack_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.2"
       }
     }
@@ -148,12 +160,13 @@
     "Type": "SceneComponent",
     "Name": "RootScene",
     "Outer": "Default__WeapTacPack_C",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapTacPack_C Default__WeapTacPack_C",
+              "ObjectName": "WeapTacPack_C'Default__WeapTacPack_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.1"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -165,19 +178,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapTacPack_C"
+    "Outer": "WeapTacPack_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapTacPack_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapTacPack_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.3"
       },
       "VariableGuid": "5819FDFE-471BB583-B38ACEBC-8A5C72B2",
@@ -188,9 +203,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0",
     "Outer": "WeapTacPack_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapTacPack_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectName": "SCS_Node'WeapTacPack_C:SimpleConstructionScript_0.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.4"
       }
     }
@@ -199,13 +215,14 @@
     "Type": "WeaponMeshComponent",
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapTacPack_C",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh SK_Tac_Pack",
+        "ObjectName": "SkeletalMesh'SK_Tac_Pack'",
         "ObjectPath": "TslGame/Content/Item/TacPack/Meshes/SK_Tac_Pack.0"
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapTacPack_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapTacPack_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Deployable/WeapTacPack.2"
       }
     }

@@ -1,0 +1,394 @@
+[
+  {
+    "Type": "FloatProperty",
+    "Name": "FinalSpreadFactor",
+    "Outer": "Buff_ADSHoldingBreathCooldown_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "Buff_ADSHoldingBreathCooldown_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_ADSHoldingBreathCooldown_C:FinalSpreadFactor'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.0"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetTslPlayerController_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_ADSHoldingBreathCooldown",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class'TslPlayerController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess3",
+    "Outer": "ExecuteUbergraph_Buff_ADSHoldingBreathCooldown",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown.CallFunc_GetTslPlayerController_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.2"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsPlayer_Pawn_V_2",
+    "Outer": "ExecuteUbergraph_Buff_ADSHoldingBreathCooldown",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown.K2Node_DynamicCast_bSuccess3'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.3"
+    },
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass'PlayerPawn_v2_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/PlayerPawn_v2.749"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess2",
+    "Outer": "ExecuteUbergraph_Buff_ADSHoldingBreathCooldown",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown.K2Node_DynamicCast_AsPlayer_Pawn_V_2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.4"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Character2",
+    "Outer": "ExecuteUbergraph_Buff_ADSHoldingBreathCooldown",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown.K2Node_DynamicCast_bSuccess2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.5"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetTslPlayerController_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_ADSHoldingBreathCooldown",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown.K2Node_DynamicCast_AsTsl_Character2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.6"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslPlayerController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetOwnerPawn_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_ADSHoldingBreathCooldown",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown.CallFunc_GetTslPlayerController_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.7"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Pawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_Buff_ADSHoldingBreathCooldown",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown.CallFunc_GetOwnerPawn_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.8"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Character",
+    "Outer": "ExecuteUbergraph_Buff_ADSHoldingBreathCooldown",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.9"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_Event_bCanceled",
+    "Outer": "ExecuteUbergraph_Buff_ADSHoldingBreathCooldown",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown.K2Node_DynamicCast_AsTsl_Character'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.10"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetOwnerPawn_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_ADSHoldingBreathCooldown",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown.K2Node_Event_bCanceled'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.11"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Pawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Buff_ADSHoldingBreathCooldown",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown.CallFunc_GetOwnerPawn_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.12"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Buff_ADSHoldingBreathCooldown",
+    "Outer": "Buff_ADSHoldingBreathCooldown_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_ADSHoldingBreathCooldown_C:DefaultSceneRoot'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.13"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "StartBuffBlueprint",
+    "Outer": "Buff_ADSHoldingBreathCooldown_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.14"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'TslBuff:StartBuffBlueprint'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "bCanceled",
+    "Outer": "StopBuffBlueprint",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "Function",
+    "Name": "StopBuffBlueprint",
+    "Outer": "Buff_ADSHoldingBreathCooldown_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_ADSHoldingBreathCooldown_C:StartBuffBlueprint'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.15"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'TslBuff:StopBuffBlueprint'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty'Buff_ADSHoldingBreathCooldown_C:StopBuffBlueprint.bCanceled'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.16"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "Buff_ADSHoldingBreathCooldown_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_ADSHoldingBreathCooldown_C:StopBuffBlueprint'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.17"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Buff_ADSHoldingBreathCooldown_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Buff_ADSHoldingBreathCooldown_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.18"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_ADSHoldingBreathCooldown_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Buff_ADSHoldingBreathCooldown_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.24"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Buff_ADSHoldingBreathCooldown_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.19"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.14"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslBuff'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Buff_ADSHoldingBreathCooldown_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.19"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Buff_ADSHoldingBreathCooldown": {
+        "ObjectName": "Function'Buff_ADSHoldingBreathCooldown_C:ExecuteUbergraph_Buff_ADSHoldingBreathCooldown'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.14"
+      },
+      "StartBuffBlueprint": {
+        "ObjectName": "Function'Buff_ADSHoldingBreathCooldown_C:StartBuffBlueprint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.15"
+      },
+      "StopBuffBlueprint": {
+        "ObjectName": "Function'Buff_ADSHoldingBreathCooldown_C:StopBuffBlueprint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.17"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'Buff_ADSHoldingBreathCooldown_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.18"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_ADSHoldingBreathCooldown_C'Default__Buff_ADSHoldingBreathCooldown_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.21"
+    }
+  },
+  {
+    "Type": "Buff_ADSHoldingBreathCooldown_C",
+    "Name": "Default__Buff_ADSHoldingBreathCooldown_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.Buff_ADSHoldingBreathCooldown_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "FinalSpreadFactor": 0.1,
+      "OverlapId": "ADSHoldingBreathCooldown",
+      "OverlapSolveMethod": "EBuffOverlapSolveMethod::RestartTimer",
+      "BuffTickInterval": 0.0,
+      "BuffTickFirstDelay": 0.0,
+      "BuffDuration": 5.0,
+      "IsDebuff": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Buff_ADSHoldingBreathCooldown_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Buff_ADSHoldingBreathCooldown_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.22"
+      },
+      "VariableGuid": "57191945-479B082D-946179B9-A532E1D6",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Buff_ADSHoldingBreathCooldown_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Buff_ADSHoldingBreathCooldown_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.23"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Buff_ADSHoldingBreathCooldown_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.23"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Buff_ADSHoldingBreathCooldown_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_ADSHoldingBreathCooldown.23"
+      }
+    }
+  }
+]

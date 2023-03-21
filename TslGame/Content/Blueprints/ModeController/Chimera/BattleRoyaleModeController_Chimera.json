@@ -1,0 +1,335 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BattleRoyaleModeController_Chimera_C",
+    "Super": "BattleRoyaleModeController_Def_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BattleRoyaleModeController_Chimera_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Chimera/BattleRoyaleModeController_Chimera.7"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BattleRoyaleModeController_Def_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_Def.7"
+    },
+    "ClassFlags": 8651284,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BattleRoyaleModeController_Chimera_C'Default__BattleRoyaleModeController_Chimera_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Chimera/BattleRoyaleModeController_Chimera.1"
+    }
+  },
+  {
+    "Type": "BattleRoyaleModeController_Chimera_C",
+    "Name": "Default__BattleRoyaleModeController_Chimera_C",
+    "Template": "Default__BattleRoyaleModeController_Def_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Chimera/BattleRoyaleModeController_Chimera.BattleRoyaleModeController_Chimera_C'",
+    "Properties": {
+      "BattleRoyalePoisonGasDataArray": [
+        {
+          "StartDelay": 90.0,
+          "WarningDuration": 120.0,
+          "ReleaseDuration": 240.0,
+          "RadiusRate": 0.5,
+          "RandomRadiusRate": 0.1,
+          "PoisonGasDamagePerSecond": 0.4,
+          "SpreadRatio": 0.5,
+          "DamageMagnifierForDistance": 2.0,
+          "DamageMagnifier": 1.0,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 120.0,
+          "ReleaseDuration": 120.0,
+          "RadiusRate": 0.7,
+          "RandomRadiusRate": 0.0,
+          "PoisonGasDamagePerSecond": 0.6,
+          "SpreadRatio": 0.45,
+          "DamageMagnifierForDistance": 4.0,
+          "DamageMagnifier": 1.666667,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 30,
+          "FastWarningDuration": 40.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 90.0,
+          "ReleaseDuration": 120.0,
+          "RadiusRate": 0.6,
+          "RandomRadiusRate": 0.0,
+          "PoisonGasDamagePerSecond": 0.8,
+          "SpreadRatio": 0.4,
+          "DamageMagnifierForDistance": 5.0,
+          "DamageMagnifier": 1.5625,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 18,
+          "FastWarningDuration": 40.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 60.0,
+          "ReleaseDuration": 120.0,
+          "RadiusRate": 0.5,
+          "RandomRadiusRate": 0.0,
+          "PoisonGasDamagePerSecond": 1.0,
+          "SpreadRatio": 0.5,
+          "DamageMagnifierForDistance": 2.15,
+          "DamageMagnifier": 1.5,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 10,
+          "FastWarningDuration": 30.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 45.0,
+          "ReleaseDuration": 60.0,
+          "RadiusRate": 0.5,
+          "RandomRadiusRate": 0.0,
+          "PoisonGasDamagePerSecond": 3.0,
+          "SpreadRatio": 0.55,
+          "DamageMagnifierForDistance": 3.6,
+          "DamageMagnifier": 4.666667,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 3,
+          "FastWarningDuration": 20.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 45.0,
+          "ReleaseDuration": 60.0,
+          "RadiusRate": 0.5,
+          "RandomRadiusRate": 0.0,
+          "PoisonGasDamagePerSecond": 5.0,
+          "SpreadRatio": 0.6,
+          "DamageMagnifierForDistance": 2.65,
+          "DamageMagnifier": 2.8,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 3,
+          "FastWarningDuration": 20.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 45.0,
+          "ReleaseDuration": 40.0,
+          "RadiusRate": 0.5,
+          "RandomRadiusRate": 0.0,
+          "PoisonGasDamagePerSecond": 7.0,
+          "SpreadRatio": 0.6,
+          "DamageMagnifierForDistance": 2.0,
+          "DamageMagnifier": 2.0,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 45.0,
+          "ReleaseDuration": 40.0,
+          "RadiusRate": 0.5,
+          "RandomRadiusRate": 0.2,
+          "PoisonGasDamagePerSecond": 9.0,
+          "SpreadRatio": 0.65,
+          "DamageMagnifierForDistance": 2.0,
+          "DamageMagnifier": 2.0,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 30.0,
+          "ReleaseDuration": 60.0,
+          "RadiusRate": 0.001,
+          "RandomRadiusRate": 1.0,
+          "PoisonGasDamagePerSecond": 16.0,
+          "SpreadRatio": 100.0,
+          "DamageMagnifierForDistance": 1000.0,
+          "DamageMagnifier": 1.0,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        }
+      ],
+      "BattleRoyaleZoneTypeCheckTime": 600.0,
+      "PoisonWarningTime": [
+        120.0,
+        60.0,
+        40.0,
+        30.0,
+        20.0,
+        10.0,
+        5.0
+      ],
+      "WaterVolumeRayEndMultiplier": 1.5,
+      "BattleRoyalePlayerFenceData": {
+        "Damage": 25.0,
+        "DamagingStartTime": 4.0,
+        "FenceColor": {
+          "B": 255,
+          "G": 255,
+          "R": 255,
+          "A": 0,
+          "Hex": "FFFFFF"
+        },
+        "bUsePlayerFence": true,
+        "bUseOutsideDamage": true
+      },
+      "PathFollowingComponent": {
+        "ObjectName": "PathFollowingComponent'Default__BattleRoyaleModeController_Chimera_C:PathFollowingComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Chimera/BattleRoyaleModeController_Chimera.2"
+      },
+      "ActionsComp": {
+        "ObjectName": "PawnActionsComponent'Default__BattleRoyaleModeController_Chimera_C:ActionsComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Chimera/BattleRoyaleModeController_Chimera.3"
+      },
+      "TransformComponent": {
+        "ObjectName": "SceneComponent'Default__BattleRoyaleModeController_Chimera_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Chimera/BattleRoyaleModeController_Chimera.5"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BattleRoyaleModeController_Chimera_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Chimera/BattleRoyaleModeController_Chimera.5"
+      }
+    }
+  },
+  {
+    "Type": "PathFollowingComponent",
+    "Name": "PathFollowingComponent",
+    "Outer": "Default__BattleRoyaleModeController_Chimera_C",
+    "Template": "PathFollowingComponent",
+    "Class": "UScriptClass'PathFollowingComponent'"
+  },
+  {
+    "Type": "PawnActionsComponent",
+    "Name": "ActionsComp",
+    "Outer": "Default__BattleRoyaleModeController_Chimera_C",
+    "Template": "ActionsComp",
+    "Class": "UScriptClass'PawnActionsComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BattleRoyaleModeController_Chimera_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "TransformComponent0",
+    "Outer": "Default__BattleRoyaleModeController_Chimera_C",
+    "Template": "TransformComponent0",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BattleRoyaleModeController_Chimera_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Chimera/BattleRoyaleModeController_Chimera.4"
+      },
+      "VariableGuid": "0EA93DAE-46F64938-180028B3-5519DDC4",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BattleRoyaleModeController_Chimera_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BattleRoyaleModeController_Chimera_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Chimera/BattleRoyaleModeController_Chimera.6"
+      }
+    }
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "P_Carepackage_Light_Flaregun_C",
+    "Super": "P_Carepackage_Light_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'P_Carepackage_Light_Flaregun_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Light_Flaregun.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'P_Carepackage_Light_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Light.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "P_Carepackage_Light_Flaregun_C'Default__P_Carepackage_Light_Flaregun_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Light_Flaregun.1"
+    }
+  },
+  {
+    "Type": "P_Carepackage_Light_Flaregun_C",
+    "Name": "Default__P_Carepackage_Light_Flaregun_C",
+    "Template": "Default__P_Carepackage_Light_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/P_Carepackage_Light_Flaregun.P_Carepackage_Light_Flaregun_C'",
+    "Properties": {
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Default__P_Carepackage_Light_Flaregun_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Light_Flaregun.3"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Default__P_Carepackage_Light_Flaregun_C:AkSound'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Light_Flaregun.2"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Default__P_Carepackage_Light_Flaregun_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Light_Flaregun.3"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Default__P_Carepackage_Light_Flaregun_C",
+    "Template": "AkSound",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Default__P_Carepackage_Light_Flaregun_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Light_Flaregun.3"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "Default__P_Carepackage_Light_Flaregun_C",
+    "Template": "ParticleSystem",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_CarePackage_Flaregun_Light'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_CarePackage_Flaregun_Light.15"
+      },
+      "OnSystemFinished": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "P_Carepackage_Light_Flaregun_C'Default__P_Carepackage_Light_Flaregun_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Light_Flaregun.1"
+            },
+            "FunctionName": "OnParticleFinish"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "P_Carepackage_Light_Flaregun_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'P_Carepackage_Light_Flaregun_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Light_Flaregun.4"
+      },
+      "VariableGuid": "C1B875B6-4DEF8D98-2D19DBBE-483D4657",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "P_Carepackage_Light_Flaregun_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'P_Carepackage_Light_Flaregun_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Light_Flaregun.5"
+      }
+    }
+  }
+]

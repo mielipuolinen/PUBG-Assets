@@ -1,0 +1,103 @@
+[
+  {
+    "Type": "VaultingData",
+    "Name": "DA_Vault120_Narrow",
+    "Class": "UScriptClass'VaultingData'",
+    "Properties": {
+      "MoveRequirements": {
+        "RowRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 9
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": 14
+          }
+        },
+        "IsVault": "EVaultRequirementType::VaultReqType_True",
+        "IsNarrow": "EVaultRequirementType::VaultReqType_True"
+      },
+      "VaultAnimType": "EVaultAnimType::Vault120_Narrow",
+      "LocationStartNormalScale": 140.0,
+      "LocationStartZOffset": -120.0,
+      "LocationEndNormalScale": -186.0,
+      "LocationEndZOffset": -210.0,
+      "PreApexSpeedScale": 0.55,
+      "PostApexSpeedScale": 0.65,
+      "AnimBlendInTime": 0.16,
+      "AnimBlendOutTime": 0.4,
+      "ApexAdditiveStartTime": 0.45,
+      "ApexAdditiveEndTime": 0.7,
+      "StartCutoffByDistance_InMap": {
+        "X": 40.0,
+        "Y": 200.0
+      },
+      "StartCutoffByDistance_OutMap": {
+        "X": 0.02,
+        "Y": 0.0
+      },
+      "StartCutoffBySpeed_InMap": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "StartCutoffBySpeed_OutMap": {
+        "X": 0.0,
+        "Y": 0.01
+      },
+      "PlayrateBySpeed_InMap_PreApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PreApex": {
+        "X": 1.0,
+        "Y": 1.65
+      },
+      "PlayrateBySpeed_InMap_PostApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PostApex": {
+        "X": 1.0,
+        "Y": 1.05
+      },
+      "AnimationSequence": {
+        "ObjectName": "AnimSequence'Unarmed_Vaulting_Jump_120_Narrow'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Unarmed_Vaulting_Jump_120_Narrow.7"
+      },
+      "AnimationSequence_Rifle": {
+        "ObjectName": "AnimSequence'Unarmed_Vaulting_Jump_Rifle_120_Narrow'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Unarmed_Vaulting_Jump_Rifle_120_Narrow.7"
+      },
+      "AnimationCurve": {
+        "ObjectName": "CurveFloat'C_Vault_120_Narrow'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Curves/C_Vault_120_Narrow.0"
+      },
+      "CharLocationInterpSpeedInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "CharLocationInterpSpeedOutMap": {
+        "X": 2.0,
+        "Y": 3.0
+      },
+      "TimerProgressionByDistanceInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "TimerProgressionByDistanceOutMap": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "TimerProgressionVTimerMax": 0.05,
+      "VaultEndTimerNormal": 1.0,
+      "VaultEndTimerFall": 0.8,
+      "CharacterPostVaultVelocityScalar": 0.8,
+      "bCanVaultWithWeapon": true,
+      "PostVaultTimerProgressionScale": 1.0,
+      "bUseMappedVTimerDampening": true,
+      "MappedDampeningScalar": 0.1,
+      "MappedDampeningVTimerMax": 0.1
+    }
+  }
+]

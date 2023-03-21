@@ -1,0 +1,1129 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "TimerHandle",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "PropertyFlags": 65541,
+    "Struct": {
+      "ObjectName": "ScriptStruct'TimerHandle'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "InterpVelocity",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:TimerHandle'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.0"
+    },
+    "PropertyFlags": 65541,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "ActorLocLastTick",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:InterpVelocity'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.1"
+    },
+    "PropertyFlags": 65541,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "ReleaseBuffer",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:ActorLocLastTick'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.2"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "bSmokeSpawned",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjSmokeBomb_OverPower_C:ReleaseBuffer'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.3"
+    },
+    "PropertyFlags": 65541,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "HitTimeDelay",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjSmokeBomb_OverPower_C:bSmokeSpawned'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.4"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "HitMinVelocity",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjSmokeBomb_OverPower_C:HitTimeDelay'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.5"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "HitImpactMax",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjSmokeBomb_OverPower_C:HitMinVelocity'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.6"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "HitImpactMin",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjSmokeBomb_OverPower_C:HitImpactMax'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.7"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "HitTimer",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjSmokeBomb_OverPower_C:HitImpactMin'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.8"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "EndSmokeSound",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjSmokeBomb_OverPower_C:HitTimer'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.9"
+    },
+    "PropertyFlags": 5,
+    "PropertyClass": {
+      "ObjectName": "Class'AkAudioEvent'",
+      "ObjectPath": "/Script/AkAudio"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "StartSmokeSound",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_OverPower_C:EndSmokeSound'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.10"
+    },
+    "PropertyFlags": 5,
+    "PropertyClass": {
+      "ObjectName": "Class'AkAudioEvent'",
+      "ObjectPath": "/Script/AkAudio"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "TslWorldOffset",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_OverPower_C:StartSmokeSound'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.11"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'TslWorldOffsetComponent'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Add_VectorVector_ReturnValue2",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Add_VectorVector_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_Add_VectorVector_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.13"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Multiply_VectorFloat_ReturnValue3",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_Add_VectorVector_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.14"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_VInterpTo_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_Multiply_VectorFloat_ReturnValue3'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.15"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Multiply_VectorFloat_ReturnValue2",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_VInterpTo_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.16"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Multiply_VectorFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_Multiply_VectorFloat_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.17"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Lerp_ReturnValue2",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_Multiply_VectorFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.18"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Lerp_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_Lerp_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.19"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_RandomFloat_ReturnValue2",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_Lerp_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.20"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_RandomFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_RandomFloat_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.21"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetForwardVector_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_RandomFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.22"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsAnySimulatingPhysics_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_GetForwardVector_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.23"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_ComponentBoundEvent_bWorldShift",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_IsAnySimulatingPhysics_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.24"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_ComponentBoundEvent_InOffset",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.K2Node_ComponentBoundEvent_bWorldShift'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.25"
+    },
+    "PropertyFlags": 2,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_PostAkEvent_ReturnValue2",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.K2Node_ComponentBoundEvent_InOffset'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.26"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_PostAkEvent_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "IntProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_PostAkEvent_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.27"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "___bool_IsClosed_Variable",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "IntProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_PostAkEvent_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.28"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.___bool_IsClosed_Variable'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.29"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsActive_ReturnValue2",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_IsValid_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.30"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "___bool_Has_Been_Initd_Variable",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_IsActive_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.31"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsActive_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.___bool_Has_Been_Initd_Variable'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.32"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_Event_DeltaSeconds",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_IsActive_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.33"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue2",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.K2Node_Event_DeltaSeconds'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.34"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'TimerHandle'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_K2_SetTimerDelegate_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.35"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'TimerHandle'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "DelegateProperty",
+    "Name": "K2Node_CreateDelegate_OutputDelegate",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'DelegateProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_K2_SetTimerDelegate_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.36"
+    },
+    "SignatureFunction": {
+      "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_HasAuthority_ReturnValue",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "DelegateProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.K2Node_CreateDelegate_OutputDelegate'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.37"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "K2Node_Event_EndPlayReason",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'ByteProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.CallFunc_HasAuthority_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.38"
+    },
+    "Enum": {
+      "ObjectName": "Enum'EEndPlayReason'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ByteProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.K2Node_Event_EndPlayReason'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.39"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_ProjSmokeBomb_OverPower",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_OverPower_C:TslWorldOffset'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.12"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.40"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "EndPlayReason",
+    "Outer": "ReceiveEndPlay",
+    "Class": "UScriptClass'ByteProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "Enum": {
+      "ObjectName": "Enum'EEndPlayReason'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveEndPlay",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.41"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveEndPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "ByteProperty'ProjSmokeBomb_OverPower_C:ReceiveEndPlay.EndPlayReason'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.42"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjSmokeBomb_OverPower_C:ReceiveEndPlay'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.43"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "OnDeployStarted_BP",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjSmokeBomb_OverPower_C:ReceiveBeginPlay'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.44"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'TslProjectile:OnDeployStarted_BP'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "bWorldShift",
+    "Outer": "BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "InOffset",
+    "Outer": "BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'ProjSmokeBomb_OverPower_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature.bWorldShift'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.46"
+    },
+    "PropertyFlags": 134218114,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjSmokeBomb_OverPower_C:OnDeployStarted_BP'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.45"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature.InOffset'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.47"
+      }
+    ],
+    "FunctionFlags": 138412032
+  },
+  {
+    "Type": "Function",
+    "Name": "End",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjSmokeBomb_OverPower_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.48"
+    },
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "DeltaSeconds",
+    "Outer": "ReceiveTick",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjSmokeBomb_OverPower_C:End'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.49"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveTick'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty'ProjSmokeBomb_OverPower_C:ReceiveTick.DeltaSeconds'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.50"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'ProjSmokeBomb_OverPower_C:ReceiveTick'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.51"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'ProjSmokeBomb_OverPower_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.52"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'ProjSmokeBomb_OverPower_C:ComponentDelegateBinding_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.57"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'ProjSmokeBomb_OverPower_C:SimpleConstructionScript_0__57659476'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.63"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.53"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.41"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslProjectile'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'ProjSmokeBomb_OverPower_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.53"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_ProjSmokeBomb_OverPower": {
+        "ObjectName": "Function'ProjSmokeBomb_OverPower_C:ExecuteUbergraph_ProjSmokeBomb_OverPower'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.41"
+      },
+      "ReceiveEndPlay": {
+        "ObjectName": "Function'ProjSmokeBomb_OverPower_C:ReceiveEndPlay'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.43"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'ProjSmokeBomb_OverPower_C:ReceiveBeginPlay'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.44"
+      },
+      "OnDeployStarted_BP": {
+        "ObjectName": "Function'ProjSmokeBomb_OverPower_C:OnDeployStarted_BP'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.45"
+      },
+      "BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature": {
+        "ObjectName": "Function'ProjSmokeBomb_OverPower_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.48"
+      },
+      "End": {
+        "ObjectName": "Function'ProjSmokeBomb_OverPower_C:End'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.49"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'ProjSmokeBomb_OverPower_C:ReceiveTick'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.51"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'ProjSmokeBomb_OverPower_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.52"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "ProjSmokeBomb_OverPower_C'Default__ProjSmokeBomb_OverPower_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.55"
+    }
+  },
+  {
+    "Type": "ProjSmokeBomb_OverPower_C",
+    "Name": "Default__ProjSmokeBomb_OverPower_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.ProjSmokeBomb_OverPower_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "StartSmokeSound": {
+        "ObjectName": "AkAudioEvent'SmokeBomb_Explosion'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/SmokeBomb/SmokeBomb_Explosion.0"
+      },
+      "EndSmokeSound": {
+        "ObjectName": "AkAudioEvent'SmokeBomb_Explosion_Stop'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/SmokeBomb/SmokeBomb_Explosion_Stop.0"
+      },
+      "HitImpactMin": 300.0,
+      "HitImpactMax": 1500.0,
+      "HitMinVelocity": 50.0,
+      "HitTimeDelay": 0.2,
+      "ActorLocLastTick": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "InterpVelocity": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "TimerHandle": {
+        "Handle": 0
+      },
+      "MovementComp": {
+        "ObjectName": "TslProjectileMovementComponent'Default__ProjSmokeBomb_OverPower_C:ProjectileComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.67"
+      },
+      "CollisionComp": {
+        "ObjectName": "SphereComponent'Default__ProjSmokeBomb_OverPower_C:SphereComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.65"
+      },
+      "ParticleComp": {
+        "ObjectName": "ParticleSystemComponent'Default__ProjSmokeBomb_OverPower_C:ParticleComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.58"
+      },
+      "MeshComp": {
+        "ObjectName": "StaticMeshComponent'Default__ProjSmokeBomb_OverPower_C:MeshComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.66"
+      },
+      "InterpolationTargetComp": {
+        "ObjectName": "SphereComponent'Default__ProjSmokeBomb_OverPower_C:InterpolationTarget'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.64"
+      },
+      "ConstraintComp": {
+        "ObjectName": "PhysicsConstraintComponent'Default__ProjSmokeBomb_OverPower_C:MeshConstraint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.59"
+      },
+      "MeshInitialRotationRate": {
+        "X": 0.0,
+        "Y": 0.8,
+        "Z": -0.2
+      },
+      "ProjectileParticleClass": "EProjectileParticleClass::PPC_Smoke",
+      "ParticleToMeshAttachPointName": "ParticlePoint",
+      "ExplosionRotationType": "EProjectileExplosionRotationType::ProjectileUpVector",
+      "HideMeshAtExplosion": false,
+      "bUseVelocityStartTimer": true,
+      "ImpactSound": {
+        "ObjectName": "AkAudioEvent'HandBomb_Common_Impact'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/HandBomb_Common/HandBomb_Common_Impact.0"
+      },
+      "AkComp": {
+        "ObjectName": "AkComponent'Default__ProjSmokeBomb_OverPower_C:AkComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.56"
+      },
+      "bPropagateEffectActor": true,
+      "VelocityCheckTimerTick": 0.1,
+      "ProjectileConfig": {
+        "ProjectileLife": 60.0,
+        "ExplosionDamage": 0,
+        "ExplosionRadius": 0.0,
+        "DamageType": null,
+        "bExplodeOnDamage": true,
+        "ExplodeFromDamageTypes": [
+          "EDamageTypeCategory::Damage_Explosion_BlackZone"
+        ],
+        "DestroyFromDamageTypes": [
+          "EDamageTypeCategory::Damage_Explosion_BlackZone"
+        ]
+      },
+      "ReplicatedEffectActor": {
+        "ObjectName": "BlueprintGeneratedClass'BP_SmokePropagationHost_v2_C'",
+        "ObjectPath": "TslGame/Content/Export_Marek/NewSmoke/BP_SmokePropagationHost_v2.30"
+      },
+      "RootComponent": {
+        "ObjectName": "SphereComponent'Default__ProjSmokeBomb_OverPower_C:SphereComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.65"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkComp",
+    "Outer": "Default__ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__ProjSmokeBomb_OverPower_C:SphereComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.65"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_2",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "TslWorldOffset",
+          "DelegatePropertyName": "OnApplyWorldOffset",
+          "FunctionNameToBind": "BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleComp",
+    "Outer": "Default__ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_SmokeGrenadeTrail'",
+        "ObjectPath": "TslGame/Content/Export_Marek/NewSmoke/P_SmokeGrenadeTrail.22"
+      },
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent'Default__ProjSmokeBomb_OverPower_C:MeshComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.66"
+      }
+    }
+  },
+  {
+    "Type": "PhysicsConstraintComponent",
+    "Name": "MeshConstraint",
+    "Outer": "Default__ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
+    "Properties": {
+      "ConstraintInstance": {
+        "ProfileInstance": {
+          "LinearLimit": {
+            "Stiffness": 100.0,
+            "Damping": 10.0
+          },
+          "AngularDrive": {
+            "AngularDriveMode": "EAngularDriveMode::TwistAndSwing"
+          }
+        }
+      },
+      "bUseAttachParentBound": true,
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__ProjSmokeBomb_OverPower_C:InterpolationTarget'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.64"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_1",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'TslWorldOffsetComponent'",
+        "ObjectPath": "/Script/TslGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TslWorldOffsetComponent'ProjSmokeBomb_OverPower_C:TslWorldOffset_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.68"
+      },
+      "VariableGuid": "760FF482-460E1130-B69CD5B7-C35D864E",
+      "InternalVariableName": "TslWorldOffset"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'ProjSmokeBomb_OverPower_C:SceneComponent_1'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.60"
+      },
+      "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0__57659476",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'ProjSmokeBomb_OverPower_C:SimpleConstructionScript_0__57659476.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.61"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'ProjSmokeBomb_OverPower_C:SimpleConstructionScript_0__57659476.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.61"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'ProjSmokeBomb_OverPower_C:SimpleConstructionScript_0__57659476.SCS_Node_1'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.62"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "InterpolationTarget",
+    "Outer": "Default__ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__ProjSmokeBomb_OverPower_C:SphereComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.65"
+      }
+    }
+  },
+  {
+    "Type": "SphereComponent",
+    "Name": "SphereComp",
+    "Outer": "Default__ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'SphereComponent'",
+    "Properties": {
+      "SphereRadius": 4.2,
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "MassInKgOverride": 0.01
+      },
+      "OnComponentHit": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "ProjSmokeBomb_OverPower_C'Default__ProjSmokeBomb_OverPower_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.55"
+            },
+            "FunctionName": "OnHit"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "MeshComp",
+    "Outer": "Default__ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_SnowBall'",
+        "ObjectPath": "TslGame/Content/Weapon/Grenades/SnowBall/SM_SnowBall.1"
+      },
+      "bUseAsOccluder": false,
+      "bReceivesDecals": false,
+      "BodyInstance": {
+        "bOverrideMaxDepenetrationVelocity": true,
+        "AngularDamping": 1.0,
+        "COMNudge": {
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "PhysMaterialOverride": {
+          "ObjectName": "PhysicalMaterial'PhysMat_Grenade'",
+          "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Grenade.0"
+        }
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "RelativeRotation": {
+        "Pitch": 90.0,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__ProjSmokeBomb_OverPower_C:InterpolationTarget'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_OverPower.64"
+      },
+      "RelativeLocation": {
+        "X": 4.2153218E-08,
+        "Y": 0.0,
+        "Z": 0.3
+      },
+      "RelativeScale3D": {
+        "X": 1.414,
+        "Y": 1.414,
+        "Z": 1.414
+      },
+      "bCanEverAffectNavigation": false
+    }
+  },
+  {
+    "Type": "TslProjectileMovementComponent",
+    "Name": "ProjectileComp",
+    "Outer": "Default__ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'TslProjectileMovementComponent'",
+    "Properties": {
+      "SlidingFriction_Speed_In": {
+        "X": 0.0,
+        "Y": 300.0
+      },
+      "SlidingFriction_Speed_Out": {
+        "X": 1.8,
+        "Y": 0.8
+      },
+      "bUseSlidingFriction": true,
+      "InitialSpeed": 1300.0,
+      "MaxSpeed": 4000.0,
+      "bShouldBounce": true,
+      "bInitialVelocityInLocalSpace": false,
+      "Bounciness": 0.5,
+      "Friction": 0.62,
+      "BounceVelocityStopSimulatingThreshold": 7.0
+    }
+  },
+  {
+    "Type": "TslWorldOffsetComponent",
+    "Name": "TslWorldOffset_GEN_VARIABLE",
+    "Outer": "ProjSmokeBomb_OverPower_C",
+    "Class": "UScriptClass'TslWorldOffsetComponent'"
+  }
+]

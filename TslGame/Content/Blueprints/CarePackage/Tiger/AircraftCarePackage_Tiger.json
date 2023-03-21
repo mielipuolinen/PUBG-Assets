@@ -1,0 +1,326 @@
+[
+  {
+    "Type": "FloatProperty",
+    "Name": "Sound_CurrentValue",
+    "Outer": "AircraftCarePackage_Tiger_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Sound_TargetValue",
+    "Outer": "AircraftCarePackage_Tiger_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'AircraftCarePackage_Tiger_C:Sound_CurrentValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.0"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Sound_InterptTime",
+    "Outer": "AircraftCarePackage_Tiger_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'AircraftCarePackage_Tiger_C:Sound_TargetValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.1"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ProjectileMovement",
+    "Outer": "AircraftCarePackage_Tiger_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'AircraftCarePackage_Tiger_C:Sound_InterptTime'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.2"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'ProjectileMovementComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "P_AircraftRotor",
+    "Outer": "AircraftCarePackage_Tiger_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'AircraftCarePackage_Tiger_C:ProjectileMovement'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.3"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'ParticleSystemComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "AircraftCarePackage_Tiger_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'AircraftCarePackage_Tiger_C:P_AircraftRotor'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.4"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "AircraftCarePackage_Tiger_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'AircraftCarePackage_Tiger_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.14"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'AircraftMultiCarePackage'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'AircraftCarePackage_Tiger_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.5"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function'AircraftCarePackage_Tiger_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.5"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "AircraftCarePackage_Tiger_C'Default__AircraftCarePackage_Tiger_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.7"
+    }
+  },
+  {
+    "Type": "AircraftCarePackage_Tiger_C",
+    "Name": "Default__AircraftCarePackage_Tiger_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.AircraftCarePackage_Tiger_C'",
+    "Properties": {
+      "Sound_InterptTime": 0.2,
+      "Sound_TargetValue": 1.0,
+      "MultiCarepackageSettings": [
+        {
+          "ItemSpawnerClass": {
+            "ObjectName": "BlueprintGeneratedClass'SmallCarePackageItemSpawner_Tiger_C'",
+            "ObjectPath": "TslGame/Content/Blueprints/Spawn/Tiger/SmallCarePackageItemSpawner_Tiger.0"
+          },
+          "CarePackageItemClass": {
+            "ObjectName": "BlueprintGeneratedClass'Carapackage_SmallPackage_C'",
+            "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Carapackage_SmallPackage.21"
+          },
+          "SpawnPercent": 100.0
+        }
+      ],
+      "CarePackageItemSpawnerClass": {
+        "ObjectName": "BlueprintGeneratedClass'CarePackageItemSpawner_Tiger_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Spawn/Tiger/CarePackageItemSpawner_Tiger.0"
+      },
+      "CarePackageItemClass": {
+        "ObjectName": "BlueprintGeneratedClass'Carapackage_RedBox_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_RedBox.21"
+      },
+      "DropCarePackageTableData": [
+        {
+          "DropCount": 1,
+          "DropPercent": 100.0,
+          "OverrideCarePackageItemSpawnerClass": null
+        },
+        {
+          "DropCount": 2,
+          "DropPercent": 10.0,
+          "OverrideCarePackageItemSpawnerClass": null
+        },
+        {
+          "DropCount": 3,
+          "DropPercent": 1.0,
+          "OverrideCarePackageItemSpawnerClass": null
+        }
+      ],
+      "MeshComponent": {
+        "ObjectName": "StaticMeshComponent'Default__AircraftCarePackage_Tiger_C:StaticMeshComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.16"
+      },
+      "MovementComponent": {
+        "ObjectName": "TslAircraftVehicleMovement'Default__AircraftCarePackage_Tiger_C:MovementComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.17"
+      },
+      "SplineComponent": {
+        "ObjectName": "SplineComponent'Default__AircraftCarePackage_Tiger_C:SplineComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.15"
+      },
+      "TotalFlyingTime": 90.0,
+      "FlyingSound": {
+        "ObjectName": "AkAudioEvent'CarePackage_Aircraft'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Directing/CarePackage_Aircraft.0"
+      },
+      "bNetLoadOnClient": false,
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Default__AircraftCarePackage_Tiger_C:StaticMeshComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.16"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "P_AircraftRotor_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Tiger_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_AircraftRotor'",
+        "ObjectPath": "TslGame/Content/Export_Marek/P_AircraftRotor.35"
+      },
+      "bDecalChannelValid": true
+    }
+  },
+  {
+    "Type": "ProjectileMovementComponent",
+    "Name": "ProjectileMovement_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Tiger_C",
+    "Class": "UScriptClass'ProjectileMovementComponent'",
+    "Properties": {
+      "ProjectileGravityScale": 0.0,
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Tiger_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'AircraftCarePackage_Tiger_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.10"
+      },
+      "VariableGuid": "63A1072C-42C0D1A3-45B806A9-1515583B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ParticleSystemComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent'AircraftCarePackage_Tiger_C:P_AircraftRotor_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.8"
+      },
+      "ParentComponentOrVariableName": "StaticMeshComponent",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "8AC46B43-48664EE4-C0F4439C-4447CB86",
+      "InternalVariableName": "P_AircraftRotor"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ProjectileMovementComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ProjectileMovementComponent'AircraftCarePackage_Tiger_C:ProjectileMovement_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.9"
+      },
+      "VariableGuid": "F8BD991C-40264A76-3519FF9D-B843F456",
+      "InternalVariableName": "ProjectileMovement"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "AircraftCarePackage_Tiger_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Tiger_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.13"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Tiger_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.12"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Tiger_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.13"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Tiger_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.12"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'AircraftCarePackage_Tiger_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/AircraftCarePackage_Tiger.11"
+      }
+    }
+  },
+  {
+    "Type": "SplineComponent",
+    "Name": "SplineComponent",
+    "Outer": "Default__AircraftCarePackage_Tiger_C",
+    "Class": "UScriptClass'SplineComponent'"
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent",
+    "Outer": "Default__AircraftCarePackage_Tiger_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'C130_Care_Set'",
+        "ObjectPath": "TslGame/Content/Vehicles/Aircraft/C130_Care_Set.1"
+      }
+    }
+  },
+  {
+    "Type": "TslAircraftVehicleMovement",
+    "Name": "MovementComponent",
+    "Outer": "Default__AircraftCarePackage_Tiger_C",
+    "Class": "UScriptClass'TslAircraftVehicleMovement'"
+  }
+]

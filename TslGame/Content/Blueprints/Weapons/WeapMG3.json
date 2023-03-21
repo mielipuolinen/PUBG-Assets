@@ -3,14 +3,16 @@
     "Type": "IntProperty",
     "Name": "CallFunc_SelectInt_ReturnValue",
     "Outer": "ExecuteUbergraph_WeapMG3",
+    "Class": "UScriptClass'IntProperty'",
     "Next": null
   },
   {
     "Type": "BoolProperty",
     "Name": "CallFunc_BooleanOR_ReturnValue",
     "Outer": "ExecuteUbergraph_WeapMG3",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "IntProperty WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_SelectInt_ReturnValue",
+      "ObjectName": "IntProperty'WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_SelectInt_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.0"
     },
     "BoolSize": 1,
@@ -20,8 +22,9 @@
     "Type": "FloatProperty",
     "Name": "K2Node_Event_DeltaSeconds",
     "Outer": "ExecuteUbergraph_WeapMG3",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "BoolProperty WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_BooleanOR_ReturnValue",
+      "ObjectName": "BoolProperty'WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_BooleanOR_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.1"
     }
   },
@@ -29,8 +32,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_BooleanAND_ReturnValue",
     "Outer": "ExecuteUbergraph_WeapMG3",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "FloatProperty WeapMG3_C:ExecuteUbergraph_WeapMG3.K2Node_Event_DeltaSeconds",
+      "ObjectName": "FloatProperty'WeapMG3_C:ExecuteUbergraph_WeapMG3.K2Node_Event_DeltaSeconds'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.2"
     },
     "BoolSize": 1,
@@ -40,8 +44,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
     "Outer": "ExecuteUbergraph_WeapMG3",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_BooleanAND_ReturnValue",
+      "ObjectName": "BoolProperty'WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_BooleanAND_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.3"
     },
     "BoolSize": 1,
@@ -51,8 +56,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsProning_ReturnValue",
     "Outer": "ExecuteUbergraph_WeapMG3",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_Greater_FloatFloat_ReturnValue",
+      "ObjectName": "BoolProperty'WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_Greater_FloatFloat_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.4"
     },
     "BoolSize": 1,
@@ -62,8 +68,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_GetWeaponGunCollisionAlpha_ReturnValue",
     "Outer": "ExecuteUbergraph_WeapMG3",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "BoolProperty WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_IsProning_ReturnValue",
+      "ObjectName": "BoolProperty'WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_IsProning_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.5"
     }
   },
@@ -71,8 +78,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsMoving_ReturnValue",
     "Outer": "ExecuteUbergraph_WeapMG3",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "FloatProperty WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_GetWeaponGunCollisionAlpha_ReturnValue",
+      "ObjectName": "FloatProperty'WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_GetWeaponGunCollisionAlpha_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.6"
     },
     "BoolSize": 1,
@@ -82,12 +90,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetPawnOwner_ReturnValue",
     "Outer": "ExecuteUbergraph_WeapMG3",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "BoolProperty WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_IsMoving_ReturnValue",
+      "ObjectName": "BoolProperty'WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_IsMoving_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.7"
     },
     "PropertyClass": {
-      "ObjectName": "Class TslCharacter",
+      "ObjectName": "Class'TslCharacter'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -95,8 +104,9 @@
     "Type": "IntProperty",
     "Name": "EntryPoint",
     "Outer": "ExecuteUbergraph_WeapMG3",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_GetPawnOwner_ReturnValue",
+      "ObjectName": "ObjectProperty'WeapMG3_C:ExecuteUbergraph_WeapMG3.CallFunc_GetPawnOwner_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.8"
     },
     "PropertyFlags": 128
@@ -105,10 +115,11 @@
     "Type": "Function",
     "Name": "ExecuteUbergraph_WeapMG3",
     "Outer": "WeapMG3_C",
+    "Class": "UScriptClass'Function'",
     "Next": null,
     "Children": [
       {
-        "ObjectName": "IntProperty WeapMG3_C:ExecuteUbergraph_WeapMG3.EntryPoint",
+        "ObjectName": "IntProperty'WeapMG3_C:ExecuteUbergraph_WeapMG3.EntryPoint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.9"
       }
     ],
@@ -118,6 +129,7 @@
     "Type": "FloatProperty",
     "Name": "DeltaSeconds",
     "Outer": "ReceiveTick",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": null,
     "PropertyFlags": 128
   },
@@ -125,17 +137,18 @@
     "Type": "Function",
     "Name": "ReceiveTick",
     "Outer": "WeapMG3_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function WeapMG3_C:ExecuteUbergraph_WeapMG3",
+      "ObjectName": "Function'WeapMG3_C:ExecuteUbergraph_WeapMG3'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.10"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:ReceiveTick",
+      "ObjectName": "Function'Actor:ReceiveTick'",
       "ObjectPath": "/Script/Engine"
     },
     "Children": [
       {
-        "ObjectName": "FloatProperty WeapMG3_C:ReceiveTick.DeltaSeconds",
+        "ObjectName": "FloatProperty'WeapMG3_C:ReceiveTick.DeltaSeconds'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.11"
       }
     ],
@@ -145,12 +158,13 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "WeapMG3_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function WeapMG3_C:ReceiveTick",
+      "ObjectName": "Function'WeapMG3_C:ReceiveTick'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.12"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 201459712
@@ -159,13 +173,14 @@
     "Type": "StructProperty",
     "Name": "UberGraphFrame",
     "Outer": "WeapMG3_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "Function WeapMG3_C:UserConstructionScript",
+      "ObjectName": "Function'WeapMG3_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.13"
     },
     "PropertyFlags": 2105344,
     "Struct": {
-      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -173,54 +188,55 @@
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapMG3_C",
     "Super": "DefaultRifleSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapMG3_C:SimpleConstructionScript_1",
+        "ObjectName": "SimpleConstructionScript'WeapMG3_C:SimpleConstructionScript_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.20"
       },
       "UberGraphFramePointerProperty": {
-        "ObjectName": "StructProperty WeapMG3_C:UberGraphFrame",
+        "ObjectName": "StructProperty'WeapMG3_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.14"
       },
       "UberGraphFunction": {
-        "ObjectName": "Function WeapMG3_C:ExecuteUbergraph_WeapMG3",
+        "ObjectName": "Function'WeapMG3_C:ExecuteUbergraph_WeapMG3'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.10"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectName": "BlueprintGeneratedClass'DefaultRifleSetting_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty WeapMG3_C:UberGraphFrame",
+        "ObjectName": "StructProperty'WeapMG3_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.14"
       }
     ],
     "FuncMap": {
       "ExecuteUbergraph_WeapMG3": {
-        "ObjectName": "Function WeapMG3_C:ExecuteUbergraph_WeapMG3",
+        "ObjectName": "Function'WeapMG3_C:ExecuteUbergraph_WeapMG3'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.10"
       },
       "ReceiveTick": {
-        "ObjectName": "Function WeapMG3_C:ReceiveTick",
+        "ObjectName": "Function'WeapMG3_C:ReceiveTick'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.12"
       },
       "UserConstructionScript": {
-        "ObjectName": "Function WeapMG3_C:UserConstructionScript",
+        "ObjectName": "Function'WeapMG3_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.13"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapMG3_C Default__WeapMG3_C",
+      "ObjectName": "WeapMG3_C'Default__WeapMG3_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.16"
     }
   },
@@ -228,11 +244,12 @@
     "Type": "WeapMG3_C",
     "Name": "Default__WeapMG3_C",
     "Template": "Default__DefaultRifleSetting_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/WeapMG3.WeapMG3_C'",
     "Properties": {
       "UberGraphFrame": {},
       "TrailFX": null,
       "WeaponTrajectoryData": {
-        "ObjectName": "WeaponTrajectoryData WeapMG3_WeaponTrajectoryData",
+        "ObjectName": "WeaponTrajectoryData'WeapMG3_WeaponTrajectoryData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapMG3_WeaponTrajectoryData.0"
       },
       "WeaponGunPostprocessSettings": {
@@ -245,11 +262,11 @@
         "DepthBlurBlackPoint": 50.0
       },
       "WeaponGunData": {
-        "ObjectName": "WeaponGunDataAsset WeapMG3_WeaponGunData",
+        "ObjectName": "WeaponGunDataAsset'WeapMG3_WeaponGunData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapMG3_WeaponGunData.0"
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_gun_MG3",
+        "ObjectName": "Texture2D'weapons_gun_MG3'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_MG3.0"
       },
       "WeaponIconRatio": 3.88,
@@ -281,19 +298,19 @@
         ],
         "AnimationKick": 1.1,
         "RecoilMontage": {
-          "ObjectName": "AnimMontage Rifle_Recoil_556_M249_Montage",
+          "ObjectName": "AnimMontage'Rifle_Recoil_556_M249_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Recoil/Rifle_Recoil_556_M249_Montage.0"
         },
         "WeaponEquipDuration": 0.2,
         "WeaponUnequipDuration": 0.4,
         "PhysicalBodyHitImpactPower": 10000.0,
         "WeaponStaticMesh": {
-          "ObjectName": "StaticMesh SM_MG3_Drop",
+          "ObjectName": "StaticMesh'SM_MG3_Drop'",
           "ObjectPath": "TslGame/Content/Weapon/Rifles/MG3/Meshes/SM_MG3_Drop.1"
         }
       },
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapMG3_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__WeapMG3_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.21"
       },
       "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
@@ -338,45 +355,52 @@
           "AttachmentMeshAsset": "/Game/Weapon/Rifles/MG3/Meshes/SM_MG3_Mag.SM_MG3_Mag",
           "AttachmentMeshName": "MagazineDefault",
           "AttachmentTemplate": {
-            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectName": "Class'AsyncStaticMeshComponent'",
             "ObjectPath": "/Script/TslGame"
           }
         }
       ],
       "WeaponTag": "MG3",
       "MuzzleFX": {
-        "ObjectName": "ParticleSystem P_Muzzle_MG3",
+        "ObjectName": "ParticleSystem'P_Muzzle_MG3'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Other/P_Muzzle_MG3.142"
       },
-      "EquipAnimData": {
-        "EAccessorySlot::Slot_Secondary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
-          },
-          "PlayRate": 1.5
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_Secondary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_SecondarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.5
+          }
         },
-        "EAccessorySlot::Slot_SideArm": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_SideArm": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PistolSlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
         },
-        "EAccessorySlot::Slot_Primary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_Primary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PrimarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
         }
-      },
+      ],
+      "bNeedSleepWeaponMesh": false,
       "WeaponAudioData": {
-        "ObjectName": "WeaponAudioData WeapMG3_WeaponAudioData",
+        "ObjectName": "WeaponAudioData'WeapMG3_WeaponAudioData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapMG3_WeaponAudioData.0"
       },
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapMG3_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapMG3_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.17"
       }
     }
@@ -386,12 +410,13 @@
     "Name": "RootScene",
     "Outer": "Default__WeapMG3_C",
     "Template": "RootScene",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapMG3_C Default__WeapMG3_C",
+              "ObjectName": "WeapMG3_C'Default__WeapMG3_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.16"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -403,19 +428,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapMG3_C"
+    "Outer": "WeapMG3_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapMG3_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapMG3_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.18"
       },
       "VariableGuid": "D6F634D4-4DBF99D6-59773C9A-370D8B0F",
@@ -426,9 +453,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_1",
     "Outer": "WeapMG3_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapMG3_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectName": "SCS_Node'WeapMG3_C:SimpleConstructionScript_1.SCS_Node_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.19"
       }
     }
@@ -438,20 +466,21 @@
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapMG3_C",
     "Template": "WeaponMesh3P",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "AnimClass": {
-        "ObjectName": "AnimBlueprintGeneratedClass ABP_MG3_RD_C",
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_MG3_RD_C'",
         "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/MG3/Redux/Weapon_RD/ABP_MG3_RD.54"
       },
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh SK_MG3_set",
+        "ObjectName": "SkeletalMesh'SK_MG3_set'",
         "ObjectPath": "TslGame/Content/Weapon/Rifles/MG3/Meshes/SK_MG3_set.0"
       },
       "BodyInstance": {
         "MassInKgOverride": 0.0
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapMG3_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapMG3_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapMG3.17"
       }
     }

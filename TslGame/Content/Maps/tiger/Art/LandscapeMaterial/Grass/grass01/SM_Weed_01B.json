@@ -1,0 +1,348 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "SM_Weed_01B",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -20.22743,
+                "Y": 6.2725716,
+                "Z": 5.897572
+              },
+              {
+                "X": -20.22743,
+                "Y": -15.522568,
+                "Z": 5.8975706
+              },
+              {
+                "X": -20.22743,
+                "Y": -15.52257,
+                "Z": 3.477429
+              },
+              {
+                "X": -20.22743,
+                "Y": 6.2725754,
+                "Z": 3.477431
+              },
+              {
+                "X": 9.0274105,
+                "Y": 24.597584,
+                "Z": 8.902412
+              },
+              {
+                "X": -1.9024181,
+                "Y": 24.597584,
+                "Z": 8.902412
+              },
+              {
+                "X": -1.9024181,
+                "Y": 24.597584,
+                "Z": 3.0975802
+              },
+              {
+                "X": 9.027412,
+                "Y": 24.597584,
+                "Z": 3.0975797
+              },
+              {
+                "X": -5.4955606,
+                "Y": 12.875001,
+                "Z": 20.629442
+              },
+              {
+                "X": 2.6205559,
+                "Y": 12.875001,
+                "Z": 20.629442
+              },
+              {
+                "X": 2.625,
+                "Y": -3.245556,
+                "Z": 20.629442
+              },
+              {
+                "X": -5.4955616,
+                "Y": -3.2455547,
+                "Z": 20.629442
+              },
+              {
+                "X": -15.924082,
+                "Y": 10.575921,
+                "Z": -0.82591814
+              },
+              {
+                "X": -15.924086,
+                "Y": -19.17408,
+                "Z": -0.82591814
+              },
+              {
+                "X": 12.95085,
+                "Y": -19.174078,
+                "Z": -0.8259197
+              },
+              {
+                "X": 18.92408,
+                "Y": -13.20085,
+                "Z": -0.82591856
+              },
+              {
+                "X": 18.92408,
+                "Y": 14.700911,
+                "Z": -0.82591814
+              },
+              {
+                "X": 12.950907,
+                "Y": 20.674086,
+                "Z": -0.82591814
+              },
+              {
+                "X": -5.82592,
+                "Y": 20.674084,
+                "Z": -0.82591814
+              },
+              {
+                "X": 11.687494,
+                "Y": 21.9375,
+                "Z": 11.562502
+              },
+              {
+                "X": -9.562504,
+                "Y": 16.9375,
+                "Z": 16.5625
+              },
+              {
+                "X": -16.25001,
+                "Y": -19.499987,
+                "Z": -0.4999899
+              },
+              {
+                "X": -13.812515,
+                "Y": -21.937483,
+                "Z": 1.9375083
+              },
+              {
+                "X": 10.187515,
+                "Y": -21.937485,
+                "Z": 1.9375119
+              },
+              {
+                "X": 15.749999,
+                "Y": -16.375002,
+                "Z": 7.500005
+              },
+              {
+                "X": -19.0,
+                "Y": -16.749996,
+                "Z": 7.125003
+              },
+              {
+                "X": 21.499998,
+                "Y": 12.124991,
+                "Z": 1.7499993
+              },
+              {
+                "X": 21.5,
+                "Y": -10.624926,
+                "Z": 1.75
+              },
+              {
+                "X": -16.188051,
+                "Y": -19.561949,
+                "Z": -0.5619514
+              },
+              {
+                "X": -5.7660303,
+                "Y": 20.73397,
+                "Z": -0.7660315
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -20.22743,
+                "Y": -21.937485,
+                "Z": -0.8259197
+              },
+              "Max": {
+                "X": 21.5,
+                "Y": 24.597584,
+                "Z": 20.629442
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "0669E8914DC64C1E0C41289A9D526EC2",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 10407,
+        "SizeOnDisk": 10407,
+        "OffsetInFile": "0x7879"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "SM_Weed_01B",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "MI_Weed_01A",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 32.643944,
+            "LocalUVDensities": 58.692757,
+            "LocalUVDensities": 58.674267,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 58.674267,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.6266098,
+          "Y": 1.3525944,
+          "Z": 9.901762
+        },
+        "BoxExtent": {
+          "X": 20.754044,
+          "Y": 23.144981,
+          "Z": 10.62768
+        },
+        "SphereRadius": 27.48615
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'SM_Weed_01B:BodySetup_0'",
+      "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/grass01/SM_Weed_01B.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "3F7825F3-4CDD5D6C-F43C9DBA-D0468098",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 222,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 271,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 272
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 3,
+            "NumVertices": 272,
+            "Strides": 20,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 272
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.6266098,
+          "Y": 1.3525944,
+          "Z": 9.901762
+        },
+        "BoxExtent": {
+          "X": 20.754044,
+          "Y": 23.144981,
+          "Z": 10.62768
+        },
+        "SphereRadius": 27.48615
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

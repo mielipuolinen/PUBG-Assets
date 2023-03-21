@@ -1,0 +1,263 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapFamasG2_C",
+    "Super": "DefaultRifleSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'WeapFamasG2_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFamasG2.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'DefaultRifleSetting_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapFamasG2_C'Default__WeapFamasG2_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFamasG2.1"
+    }
+  },
+  {
+    "Type": "WeapFamasG2_C",
+    "Name": "Default__WeapFamasG2_C",
+    "Template": "Default__DefaultRifleSetting_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/WeapFamasG2.WeapFamasG2_C'",
+    "Properties": {
+      "TrailFX": null,
+      "WeaponTrajectoryData": {
+        "ObjectName": "WeaponTrajectoryData'WeapFamasG2_WeaponTrajectoryData'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapFamasG2_WeaponTrajectoryData.0"
+      },
+      "WeaponGunData": {
+        "ObjectName": "WeaponGunDataAsset'WeapFamasG2_WeaponGunData'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapFamasG2_WeaponGunData.0"
+      },
+      "WeaponIcon": {
+        "ObjectName": "Texture2D'weapons_gun_FAMASG2'",
+        "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_FAMASG2.0"
+      },
+      "WeaponIconRatio": 2.48,
+      "WeaponConfig": {
+        "TargetingFOV": 70.0,
+        "WeaponClass": "EWeaponClass::Class_Rifle",
+        "IronSightZeroingDistances": [
+          100.0,
+          200.0,
+          300.0,
+          400.0
+        ],
+        "RecoilMontage": {
+          "ObjectName": "AnimMontage'Rifle_Recoil_556_Bullpup_Montage'",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Recoil/Rifle_Recoil_556_Bullpup_Montage.0"
+        },
+        "WeaponEquipDuration": 0.2,
+        "WeaponUnequipDuration": 0.4
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent'Default__WeapFamasG2_C:WeaponMesh3P'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFamasG2.6"
+      },
+      "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
+      "AttachmentPositionData": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+          "AttachmentPoint": "Upper_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "UpperSmall",
+              "AttachmentPoint": "Upper_Small"
+            },
+            {
+              "AttachmentTag": "UpperDefault",
+              "AttachmentPoint": "Upper_Default"
+            },
+            {
+              "AttachmentTag": "UpperReddot",
+              "AttachmentPoint": "Upper_Reddot"
+            },
+            {
+              "AttachmentTag": "UpperHolo",
+              "AttachmentPoint": "Upper_Small"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+          "AttachmentPoint": "Muzzle_Default",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "MuzzleLarge",
+              "AttachmentPoint": "Muzzle_Default"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+          "AttachmentPoint": "Upper_Angled",
+          "AttachmentPointByTag": [
+            {
+              "AttachmentTag": "RMR",
+              "AttachmentPoint": "Upper_Angled"
+            }
+          ]
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentPoint": "Magazine_Default",
+          "AttachmentPointByTag": []
+        }
+      ],
+      "DefaultAttachedItemAssets": [
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Magazine",
+          "AttachmentTag": "MagazineDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/FAMASG2/Meshes/FAMASG2_MAG.FAMASG2_MAG",
+          "AttachmentMeshName": "MagazineDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class'AsyncStaticMeshComponent'",
+            "ObjectPath": "/Script/TslGame"
+          }
+        },
+        {
+          "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+          "AttachmentTag": "MuzzleDefault",
+          "AttachmentMeshAsset": "/Game/Weapon/Rifles/FAMASG2/Meshes/SM_FAMASG2_Muzzle.SM_FAMASG2_Muzzle",
+          "AttachmentMeshName": "MuzzleDefault",
+          "AttachmentTemplate": {
+            "ObjectName": "Class'AsyncStaticMeshComponent'",
+            "ObjectPath": "/Script/TslGame"
+          }
+        }
+      ],
+      "WeaponTag": "FamasG2",
+      "MuzzleFX": {
+        "ObjectName": "ParticleSystem'P_Muzzle_FAMASG2'",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Rifle/P_Muzzle_FAMASG2.98"
+      },
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_Secondary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_SecondarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.5
+          }
+        },
+        {
+          "EAccessorySlot::Slot_SideArm": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PistolSlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
+        },
+        {
+          "EAccessorySlot::Slot_Primary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PrimarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
+        }
+      ],
+      "WeaponAudioData": {
+        "ObjectName": "WeaponAudioData'WeapFamasG2_WeaponAudioData'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapFamasG2_WeaponAudioData.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__WeapFamasG2_C:RootScene'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFamasG2.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapFamasG2_C",
+    "Template": "RootScene",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapFamasG2_C'Default__WeapFamasG2_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFamasG2.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapFamasG2_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'WeapFamasG2_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFamasG2.3"
+      },
+      "VariableGuid": "07D58AAE-4DB7359B-4F57CABC-152A872E",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapFamasG2_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'WeapFamasG2_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFamasG2.4"
+      }
+    }
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapFamasG2_C",
+    "Template": "WeaponMesh3P",
+    "Class": "UScriptClass'WeaponMeshComponent'",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_Weapon_FamasG2_C'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/FamasG2/Weapon/ABP_Weapon_FamasG2.32"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_FAMASG2'",
+        "ObjectPath": "TslGame/Content/Weapon/Rifles/FAMASG2/Meshes/SK_FAMASG2.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__WeapFamasG2_C:RootScene'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapFamasG2.2"
+      }
+    }
+  }
+]

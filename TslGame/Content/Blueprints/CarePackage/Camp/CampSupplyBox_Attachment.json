@@ -1,0 +1,154 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "CampSupplyBox_Attachment_C",
+    "Super": "CampSupplyBox_BP_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'CampSupplyBox_Attachment_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_Attachment.7"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'CampSupplyBox_BP_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_BP.0"
+    },
+    "ClassFlags": 8651284,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "CampSupplyBox_Attachment_C'Default__CampSupplyBox_Attachment_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_Attachment.1"
+    }
+  },
+  {
+    "Type": "CampSupplyBox_Attachment_C",
+    "Name": "Default__CampSupplyBox_Attachment_C",
+    "Template": "Default__CampSupplyBox_BP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_Attachment.CampSupplyBox_Attachment_C'",
+    "Properties": {
+      "GroupTag": "Attachment",
+      "PackageMesh": "/Game/Assets/World/Vikendi/Props/Meshes/Unique/LabCamp/SM_VK_Lab_Camp_Box_B.SM_VK_Lab_Camp_Box_B",
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__CampSupplyBox_Attachment_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_Attachment.3"
+      },
+      "InteractionComponent": {
+        "ObjectName": "OnceInteractionComponent'Default__CampSupplyBox_Attachment_C:InteractionComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_Attachment.4"
+      },
+      "DropStaticMesh": {
+        "ObjectName": "AsyncStaticMeshComponent'Default__CampSupplyBox_Attachment_C:DropStaticMesh'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_Attachment.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__CampSupplyBox_Attachment_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_Attachment.3"
+      },
+      "OnDestroyed": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "CampSupplyBox_Attachment_C'Default__CampSupplyBox_Attachment_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_Attachment.1"
+            },
+            "FunctionName": "OnDestroy"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "AsyncStaticMeshComponent",
+    "Name": "DropStaticMesh",
+    "Outer": "Default__CampSupplyBox_Attachment_C",
+    "Template": "DropStaticMesh",
+    "Class": "UScriptClass'AsyncStaticMeshComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__CampSupplyBox_Attachment_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_Attachment.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent",
+    "Outer": "Default__CampSupplyBox_Attachment_C",
+    "Template": "BoxComponent",
+    "Class": "UScriptClass'BoxComponent'"
+  },
+  {
+    "Type": "OnceInteractionComponent",
+    "Name": "InteractionComponent",
+    "Outer": "Default__CampSupplyBox_Attachment_C",
+    "Template": "InteractionComponent",
+    "Class": "UScriptClass'OnceInteractionComponent'",
+    "Properties": {
+      "OnInteractBy": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "CampSupplyBox_Attachment_C'Default__CampSupplyBox_Attachment_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_Attachment.1"
+            },
+            "FunctionName": "ServerOnInteractBy"
+          }
+        ]
+      },
+      "ClientOnInteractBy": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "CampSupplyBox_Attachment_C'Default__CampSupplyBox_Attachment_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_Attachment.1"
+            },
+            "FunctionName": "ClientOnInteractBy"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "CampSupplyBox_Attachment_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'CampSupplyBox_Attachment_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_Attachment.5"
+      },
+      "VariableGuid": "1FA2DAE4-444785A1-11BD12AB-8561AF74",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "CampSupplyBox_Attachment_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'CampSupplyBox_Attachment_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_Attachment.6"
+      }
+    }
+  }
+]

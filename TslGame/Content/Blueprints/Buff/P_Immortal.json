@@ -1,0 +1,2478 @@
+[
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_0",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "RequiredDistributionSpawnRate",
+    "Outer": "ParticleModuleRequired_2",
+    "Class": "UScriptClass'DistributionFloatConstant'"
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_0",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_2",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_3",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionFloatConstant",
+    "Name": "BurstScaleDistribution",
+    "Outer": "ParticleModuleSpawn_4",
+    "Class": "UScriptClass'DistributionFloatConstant'",
+    "Properties": {
+      "Constant": 1.0
+    }
+  },
+  {
+    "Type": "DistributionVectorConstantCurve",
+    "Name": "DistributionVectorConstantCurve_0",
+    "Outer": "ParticleModuleSizeMultiplyLife_0",
+    "Class": "UScriptClass'DistributionVectorConstantCurve'",
+    "Properties": {
+      "ConstantCurve": {
+        "Points": [
+          {
+            "InVal": 0.0,
+            "OutVal": {
+              "X": 1.0,
+              "Y": 0.3,
+              "Z": 1.0
+            },
+            "ArriveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "LeaveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "InterpMode": "CIM_Linear"
+          },
+          {
+            "InVal": 1.0,
+            "OutVal": {
+              "X": 1.0,
+              "Y": 4.0,
+              "Z": 1.0
+            },
+            "ArriveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "LeaveTangent": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0
+            },
+            "InterpMode": "CIM_Linear"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_0",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_Immortal:ParticleModuleRequired_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.20"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_Immortal:ParticleModuleLifetime_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.13"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_Immortal:ParticleModuleSize_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.24"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_Immortal:ParticleModuleVelocity_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.34"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_Immortal:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.11"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveCylinder'P_Immortal:ParticleModuleLocationPrimitiveCylinder_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.15"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_Immortal:ParticleModuleSizeMultiplyLife_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.26"
+        },
+        {
+          "ObjectName": "ParticleModulePivotOffset'P_Immortal:ParticleModulePivotOffset_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.18"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu'P_Immortal:ParticleModuleTypeDataGpu_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.33"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_Immortal:ParticleModuleSpawn_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.28"
+      },
+      "PeakActiveParticles": 747
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_3",
+    "Outer": "ParticleSpriteEmitter_0",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "Level": 1,
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_Immortal:ParticleModuleRequired_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.20"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_Immortal:ParticleModuleLifetime_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.13"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_Immortal:ParticleModuleSize_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.24"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_Immortal:ParticleModuleVelocity_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.34"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_Immortal:ParticleModuleColorOverLife_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.11"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveCylinder'P_Immortal:ParticleModuleLocationPrimitiveCylinder_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.15"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_Immortal:ParticleModuleSizeMultiplyLife_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.26"
+        },
+        {
+          "ObjectName": "ParticleModulePivotOffset'P_Immortal:ParticleModulePivotOffset_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.18"
+        }
+      ],
+      "TypeDataModule": {
+        "ObjectName": "ParticleModuleTypeDataGpu'P_Immortal:ParticleModuleTypeDataGpu_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.33"
+      },
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_Immortal:ParticleModuleSpawn_3'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.30"
+      },
+      "PeakActiveParticles": 2
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_2",
+    "Outer": "ParticleSpriteEmitter_2",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_Immortal:ParticleModuleRequired_2'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.21"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_Immortal:ParticleModuleLifetime_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.14"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_Immortal:ParticleModuleSize_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.25"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_Immortal:ParticleModuleVelocity_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.35"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_Immortal:ParticleModuleColorOverLife_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.12"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveCylinder'P_Immortal:ParticleModuleLocationPrimitiveCylinder_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.16"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_Immortal:ParticleModuleSizeMultiplyLife_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.27"
+        },
+        {
+          "ObjectName": "ParticleModulePivotOffset'P_Immortal:ParticleModulePivotOffset_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.19"
+        },
+        {
+          "ObjectName": "ParticleModuleSubUV'P_Immortal:ParticleModuleSubUV_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.32"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_Immortal:ParticleModuleRotation_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.22"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate'P_Immortal:ParticleModuleRotationRate_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.23"
+        },
+        {
+          "ObjectName": "ParticleModuleOrbit'P_Immortal:ParticleModuleOrbit_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.17"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_Immortal:ParticleModuleSpawn_2'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.29"
+      },
+      "PeakActiveParticles": 65
+    }
+  },
+  {
+    "Type": "ParticleLODLevel",
+    "Name": "ParticleLODLevel_4",
+    "Outer": "ParticleSpriteEmitter_2",
+    "Class": "UScriptClass'ParticleLODLevel'",
+    "Properties": {
+      "Level": 1,
+      "RequiredModule": {
+        "ObjectName": "ParticleModuleRequired'P_Immortal:ParticleModuleRequired_2'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.21"
+      },
+      "Modules": [
+        {
+          "ObjectName": "ParticleModuleLifetime'P_Immortal:ParticleModuleLifetime_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.14"
+        },
+        {
+          "ObjectName": "ParticleModuleSize'P_Immortal:ParticleModuleSize_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.25"
+        },
+        {
+          "ObjectName": "ParticleModuleVelocity'P_Immortal:ParticleModuleVelocity_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.35"
+        },
+        {
+          "ObjectName": "ParticleModuleColorOverLife'P_Immortal:ParticleModuleColorOverLife_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.12"
+        },
+        {
+          "ObjectName": "ParticleModuleLocationPrimitiveCylinder'P_Immortal:ParticleModuleLocationPrimitiveCylinder_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.16"
+        },
+        {
+          "ObjectName": "ParticleModuleSizeMultiplyLife'P_Immortal:ParticleModuleSizeMultiplyLife_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.27"
+        },
+        {
+          "ObjectName": "ParticleModulePivotOffset'P_Immortal:ParticleModulePivotOffset_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.19"
+        },
+        {
+          "ObjectName": "ParticleModuleSubUV'P_Immortal:ParticleModuleSubUV_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.32"
+        },
+        {
+          "ObjectName": "ParticleModuleRotation'P_Immortal:ParticleModuleRotation_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.22"
+        },
+        {
+          "ObjectName": "ParticleModuleRotationRate'P_Immortal:ParticleModuleRotationRate_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.23"
+        },
+        {
+          "ObjectName": "ParticleModuleOrbit'P_Immortal:ParticleModuleOrbit_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.17"
+        }
+      ],
+      "SpawnModule": {
+        "ObjectName": "ParticleModuleSpawn'P_Immortal:ParticleModuleSpawn_4'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.31"
+      },
+      "PeakActiveParticles": 2
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "MinValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3,
+          "Values": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1,
+          "TimeScale": 1.0,
+          "Values": [
+            1.0,
+            0.0
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleColorOverLife",
+    "Name": "ParticleModuleColorOverLife_2",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleColorOverLife'",
+    "Properties": {
+      "ColorOverLife": {
+        "MinValue": 2.0,
+        "MaxValue": 22.0,
+        "MinValueVec": {
+          "X": 22.0,
+          "Y": 2.0,
+          "Z": 5.0
+        },
+        "MaxValueVec": {
+          "X": 22.0,
+          "Y": 2.0,
+          "Z": 5.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3,
+          "Values": [
+            22.0,
+            2.0,
+            5.0
+          ]
+        }
+      },
+      "AlphaOverLife": {
+        "MaxValue": 25.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 128,
+          "EntryStride": 1,
+          "TimeScale": 127.0,
+          "Values": [
+            0.0,
+            0.3087915,
+            1.1786625,
+            2.5248578,
+            4.262622,
+            6.3071995,
+            8.573837,
+            10.977777,
+            13.434265,
+            15.858546,
+            18.165865,
+            20.271467,
+            22.090597,
+            23.538498,
+            24.530415,
+            24.981594,
+            24.996548,
+            24.981596,
+            24.955011,
+            24.917013,
+            24.867811,
+            24.807625,
+            24.736668,
+            24.655151,
+            24.563295,
+            24.461311,
+            24.349417,
+            24.227825,
+            24.096752,
+            23.956411,
+            23.807018,
+            23.648787,
+            23.481936,
+            23.306675,
+            23.123222,
+            22.931793,
+            22.732601,
+            22.52586,
+            22.311787,
+            22.090595,
+            21.862501,
+            21.62772,
+            21.386463,
+            21.13895,
+            20.885393,
+            20.626009,
+            20.36101,
+            20.090612,
+            19.815031,
+            19.534483,
+            19.249176,
+            18.959335,
+            18.665167,
+            18.366892,
+            18.064722,
+            17.758873,
+            17.449558,
+            17.136997,
+            16.821398,
+            16.502981,
+            16.181957,
+            15.858544,
+            15.532959,
+            15.20541,
+            14.87612,
+            14.5453,
+            14.21316,
+            13.879924,
+            13.545799,
+            13.211006,
+            12.875756,
+            12.540266,
+            12.204751,
+            11.869419,
+            11.534498,
+            11.200194,
+            10.866726,
+            10.534305,
+            10.203144,
+            9.8734665,
+            9.545481,
+            9.219406,
+            8.8954525,
+            8.573836,
+            8.254775,
+            7.9384804,
+            7.6251717,
+            7.315056,
+            7.008354,
+            6.7052827,
+            6.4060507,
+            6.11088,
+            5.8199778,
+            5.533564,
+            5.2518563,
+            4.975061,
+            4.7034025,
+            4.437089,
+            4.1763363,
+            3.9213612,
+            3.6723762,
+            3.4296021,
+            3.193246,
+            2.963525,
+            2.7406602,
+            2.5248556,
+            2.3163378,
+            2.1153183,
+            1.9220024,
+            1.7366171,
+            1.5593678,
+            1.390481,
+            1.2301594,
+            1.0786295,
+            0.9360939,
+            0.80277324,
+            0.67888796,
+            0.5646467,
+            0.46026707,
+            0.3659606,
+            0.2819419,
+            0.2084285,
+            0.14564395,
+            0.09377897,
+            0.053074956,
+            0.02373159,
+            0.005969405,
+            0.0
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 0.13,
+        "MaxValue": 0.3,
+        "Distribution": null,
+        "Table": {
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1,
+          "Values": [
+            0.13,
+            0.3
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleLifetime",
+    "Name": "ParticleModuleLifetime_2",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleLifetime'",
+    "Properties": {
+      "Lifetime": {
+        "MinValue": 1.4,
+        "MaxValue": 0.5,
+        "Distribution": null,
+        "Table": {
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1,
+          "Values": [
+            1.4,
+            0.5
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveCylinder",
+    "Name": "ParticleModuleLocationPrimitiveCylinder_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleLocationPrimitiveCylinder'",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 55.0,
+        "MaxValue": 55.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            55.0
+          ]
+        }
+      },
+      "StartHeight": {
+        "MinValue": 15.0,
+        "MaxValue": 15.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            15.0
+          ]
+        }
+      },
+      "SurfaceOnly": true,
+      "Velocity": true,
+      "VelocityScale": {
+        "MinValue": 3.0,
+        "MaxValue": 5.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1,
+          "Values": [
+            3.0,
+            5.0
+          ]
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3,
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleLocationPrimitiveCylinder",
+    "Name": "ParticleModuleLocationPrimitiveCylinder_1",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleLocationPrimitiveCylinder'",
+    "Properties": {
+      "StartRadius": {
+        "MinValue": 45.0,
+        "MaxValue": 45.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            45.0
+          ]
+        }
+      },
+      "StartHeight": {
+        "MinValue": 8.0,
+        "MaxValue": 8.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            8.0
+          ]
+        }
+      },
+      "SurfaceOnly": true,
+      "Velocity": true,
+      "VelocityScale": {
+        "MinValue": 1.55,
+        "MaxValue": 1.55,
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            1.55
+          ]
+        }
+      },
+      "StartLocation": {
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 3,
+          "Values": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleOrbit",
+    "Name": "ParticleModuleOrbit_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleOrbit'",
+    "Properties": {
+      "OffsetAmount": {
+        "MinValue": -12.0,
+        "MaxValue": 12.0,
+        "MinValueVec": {
+          "X": -12.0,
+          "Y": -12.0,
+          "Z": -12.0
+        },
+        "MaxValueVec": {
+          "X": 12.0,
+          "Y": 12.0,
+          "Z": 12.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "Values": [
+            -12.0,
+            -12.0,
+            -12.0,
+            12.0,
+            12.0,
+            12.0
+          ]
+        }
+      },
+      "RotationAmount": {
+        "MaxValue": 1.0,
+        "MaxValueVec": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "Values": [
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      },
+      "RotationRateAmount": {
+        "MinValue": -0.14,
+        "MaxValue": 0.14,
+        "MinValueVec": {
+          "X": -0.14,
+          "Y": -0.14,
+          "Z": -0.14
+        },
+        "MaxValueVec": {
+          "X": 0.14,
+          "Y": 0.14,
+          "Z": 0.14
+        },
+        "Distribution": null,
+        "Table": {
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "Values": [
+            -0.14,
+            -0.14,
+            -0.14,
+            0.14,
+            0.14,
+            0.14
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModulePivotOffset",
+    "Name": "ParticleModulePivotOffset_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModulePivotOffset'",
+    "Properties": {
+      "PivotOffset": {
+        "X": 0.0,
+        "Y": -0.25
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModulePivotOffset",
+    "Name": "ParticleModulePivotOffset_1",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModulePivotOffset'",
+    "Properties": {
+      "PivotOffset": {
+        "X": 0.0,
+        "Y": -0.25
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "Material'M_Glow'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Glow.0"
+      },
+      "ScreenAlignment": "PSA_Velocity",
+      "bUseLocalSpace": true,
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Immortal:ParticleModuleRequired_0.RequiredDistributionSpawnRate'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.0"
+        }
+      },
+      "RandomImageTime": 1.0,
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleRequired",
+    "Name": "ParticleModuleRequired_2",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleRequired'",
+    "Properties": {
+      "Material": {
+        "ObjectName": "Material'M_Fire_03'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Fire_03.0"
+      },
+      "bUseLocalSpace": true,
+      "bUseLegacyEmitterTime": false,
+      "SpawnRate": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Immortal:ParticleModuleRequired_2.RequiredDistributionSpawnRate'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.1"
+        }
+      },
+      "InterpolationMethod": "PSUVIM_Linear_Blend",
+      "SubImages_Horizontal": 8,
+      "SubImages_Vertical": 4,
+      "RandomImageTime": 1.0,
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleRotation",
+    "Name": "ParticleModuleRotation_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleRotation'",
+    "Properties": {
+      "StartRotation": {
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1,
+          "Values": [
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleRotationRate",
+    "Name": "ParticleModuleRotationRate_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleRotationRate'",
+    "Properties": {
+      "StartRotationRate": {
+        "MinValue": 0.2,
+        "MaxValue": -0.2,
+        "Distribution": null,
+        "Table": {
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 2,
+          "SubEntryStride": 1,
+          "Values": [
+            0.2,
+            -0.2
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 0.77,
+        "MaxValue": 55.0,
+        "MinValueVec": {
+          "X": 0.77,
+          "Y": 15.0,
+          "Z": 25.0
+        },
+        "MaxValueVec": {
+          "X": 2.5,
+          "Y": 55.0,
+          "Z": 25.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "Values": [
+            0.77,
+            15.0,
+            25.0,
+            2.5,
+            55.0,
+            25.0
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleSize",
+    "Name": "ParticleModuleSize_2",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleSize'",
+    "Properties": {
+      "StartSize": {
+        "MinValue": 24.0,
+        "MaxValue": 75.0,
+        "MinValueVec": {
+          "X": 24.0,
+          "Y": 55.0,
+          "Z": 25.0
+        },
+        "MaxValueVec": {
+          "X": 44.0,
+          "Y": 75.0,
+          "Z": 25.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "Values": [
+            24.0,
+            55.0,
+            25.0,
+            44.0,
+            75.0,
+            25.0
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "Distribution": {
+          "ObjectName": "DistributionVectorConstantCurve'P_Immortal:ParticleModuleSizeMultiplyLife_0.DistributionVectorConstantCurve_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.6"
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleSizeMultiplyLife",
+    "Name": "ParticleModuleSizeMultiplyLife_1",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleSizeMultiplyLife'",
+    "Properties": {
+      "LifeMultiplier": {
+        "MinValue": 0.77,
+        "MaxValue": 2.55,
+        "MinValueVec": {
+          "X": 0.77,
+          "Y": 1.0,
+          "Z": 1.0
+        },
+        "MaxValueVec": {
+          "X": 2.55,
+          "Y": 2.45,
+          "Z": 1.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 8,
+          "EntryStride": 3,
+          "TimeScale": 6.9999995,
+          "Values": [
+            0.77,
+            1.0,
+            1.0,
+            0.8686294,
+            1.0803442,
+            1.0,
+            1.1229151,
+            1.287487,
+            1.0,
+            1.4705948,
+            1.5707093,
+            1.0,
+            1.8494054,
+            1.879291,
+            1.0,
+            2.197085,
+            2.162513,
+            1.0,
+            2.4513705,
+            2.369656,
+            1.0,
+            2.55,
+            2.45,
+            1.0
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 2250.0,
+        "MaxValue": 2250.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            2250.0
+          ]
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            1.0
+          ]
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Immortal:ParticleModuleSpawn_0.BurstScaleDistribution'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.2"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_2",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "MinValue": 55.0,
+        "MaxValue": 55.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            55.0
+          ]
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            1.0
+          ]
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Immortal:ParticleModuleSpawn_2.BurstScaleDistribution'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.3"
+        }
+      },
+      "LODValidity": 1
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_3",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            0.0
+          ]
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            1.0
+          ]
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Immortal:ParticleModuleSpawn_3.BurstScaleDistribution'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.4"
+        }
+      },
+      "LODValidity": 2
+    }
+  },
+  {
+    "Type": "ParticleModuleSpawn",
+    "Name": "ParticleModuleSpawn_4",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleSpawn'",
+    "Properties": {
+      "Rate": {
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            0.0
+          ]
+        }
+      },
+      "RateScale": {
+        "MinValue": 1.0,
+        "MaxValue": 1.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            1.0
+          ]
+        }
+      },
+      "BurstScale": {
+        "Distribution": {
+          "ObjectName": "DistributionFloatConstant'P_Immortal:ParticleModuleSpawn_4.BurstScaleDistribution'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.5"
+        }
+      },
+      "LODValidity": 2
+    }
+  },
+  {
+    "Type": "ParticleModuleSubUV",
+    "Name": "ParticleModuleSubUV_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleSubUV'",
+    "Properties": {
+      "SubImageIndex": {
+        "MaxValue": 31.0,
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 2,
+          "EntryStride": 1,
+          "TimeScale": 1.0,
+          "Values": [
+            0.0,
+            31.0
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleTypeDataGpu",
+    "Name": "ParticleModuleTypeDataGpu_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleTypeDataGpu'",
+    "Properties": {
+      "EmitterInfo": {
+        "RequiredModule": {
+          "ObjectName": "ParticleModuleRequired'P_Immortal:ParticleModuleRequired_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.20"
+        },
+        "SpawnModule": {
+          "ObjectName": "ParticleModuleSpawn'P_Immortal:ParticleModuleSpawn_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.28"
+        },
+        "SpawnModules": [
+          {
+            "ObjectName": "ParticleModuleRequired'P_Immortal:ParticleModuleRequired_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.20"
+          },
+          {
+            "ObjectName": "ParticleModuleLifetime'P_Immortal:ParticleModuleLifetime_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.13"
+          },
+          {
+            "ObjectName": "ParticleModuleSize'P_Immortal:ParticleModuleSize_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.24"
+          },
+          {
+            "ObjectName": "ParticleModuleVelocity'P_Immortal:ParticleModuleVelocity_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.34"
+          },
+          {
+            "ObjectName": "ParticleModuleLocationPrimitiveCylinder'P_Immortal:ParticleModuleLocationPrimitiveCylinder_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.15"
+          }
+        ],
+        "InvMaxSize": {
+          "X": 0.018181818,
+          "Y": 0.018181818
+        },
+        "InvRotationRateScale": 3.3333333,
+        "MaxLifetime": 0.3,
+        "MaxParticleCount": 747,
+        "ScreenAlignment": "PSA_Velocity"
+      },
+      "ResourceData": {
+        "QuantizedColorSamples": [
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 50,
+            "Hex": "32000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 101,
+            "Hex": "65000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 151,
+            "Hex": "97000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 202,
+            "Hex": "CA000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 252,
+            "Hex": "FC000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 254,
+            "Hex": "FE000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 252,
+            "Hex": "FC000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 250,
+            "Hex": "FA000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 248,
+            "Hex": "F8000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 246,
+            "Hex": "F6000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 244,
+            "Hex": "F4000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 242,
+            "Hex": "F2000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 240,
+            "Hex": "F0000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 238,
+            "Hex": "EE000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 236,
+            "Hex": "EC000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 233,
+            "Hex": "E9000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 231,
+            "Hex": "E7000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 229,
+            "Hex": "E5000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 227,
+            "Hex": "E3000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 225,
+            "Hex": "E1000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 223,
+            "Hex": "DF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 221,
+            "Hex": "DD000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 219,
+            "Hex": "DB000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 217,
+            "Hex": "D9000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 214,
+            "Hex": "D6000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 212,
+            "Hex": "D4000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 210,
+            "Hex": "D2000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 208,
+            "Hex": "D0000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 206,
+            "Hex": "CE000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 204,
+            "Hex": "CC000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 202,
+            "Hex": "CA000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 200,
+            "Hex": "C8000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 198,
+            "Hex": "C6000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 195,
+            "Hex": "C3000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 193,
+            "Hex": "C1000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 191,
+            "Hex": "BF000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 189,
+            "Hex": "BD000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 187,
+            "Hex": "BB000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 185,
+            "Hex": "B9000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 183,
+            "Hex": "B7000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 181,
+            "Hex": "B5000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 179,
+            "Hex": "B3000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 177,
+            "Hex": "B1000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 174,
+            "Hex": "AE000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 172,
+            "Hex": "AC000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 170,
+            "Hex": "AA000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 168,
+            "Hex": "A8000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 166,
+            "Hex": "A6000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 164,
+            "Hex": "A4000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 162,
+            "Hex": "A2000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 160,
+            "Hex": "A0000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 158,
+            "Hex": "9E000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 155,
+            "Hex": "9B000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 153,
+            "Hex": "99000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 151,
+            "Hex": "97000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 149,
+            "Hex": "95000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 147,
+            "Hex": "93000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 145,
+            "Hex": "91000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 143,
+            "Hex": "8F000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 141,
+            "Hex": "8D000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 139,
+            "Hex": "8B000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 136,
+            "Hex": "88000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 134,
+            "Hex": "86000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 132,
+            "Hex": "84000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 130,
+            "Hex": "82000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 128,
+            "Hex": "80000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 126,
+            "Hex": "7E000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 124,
+            "Hex": "7C000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 122,
+            "Hex": "7A000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 120,
+            "Hex": "78000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 118,
+            "Hex": "76000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 115,
+            "Hex": "73000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 113,
+            "Hex": "71000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 111,
+            "Hex": "6F000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 109,
+            "Hex": "6D000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 107,
+            "Hex": "6B000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 105,
+            "Hex": "69000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 103,
+            "Hex": "67000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 101,
+            "Hex": "65000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 99,
+            "Hex": "63000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 96,
+            "Hex": "60000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 94,
+            "Hex": "5E000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 92,
+            "Hex": "5C000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 90,
+            "Hex": "5A000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 88,
+            "Hex": "58000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 86,
+            "Hex": "56000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 84,
+            "Hex": "54000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 82,
+            "Hex": "52000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 80,
+            "Hex": "50000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 77,
+            "Hex": "4D000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 75,
+            "Hex": "4B000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 73,
+            "Hex": "49000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 71,
+            "Hex": "47000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 69,
+            "Hex": "45000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 67,
+            "Hex": "43000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 65,
+            "Hex": "41000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 63,
+            "Hex": "3F000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 61,
+            "Hex": "3D000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 59,
+            "Hex": "3B000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 56,
+            "Hex": "38000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 54,
+            "Hex": "36000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 52,
+            "Hex": "34000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 50,
+            "Hex": "32000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 48,
+            "Hex": "30000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 46,
+            "Hex": "2E000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 44,
+            "Hex": "2C000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 42,
+            "Hex": "2A000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 40,
+            "Hex": "28000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 37,
+            "Hex": "25000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 35,
+            "Hex": "23000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 33,
+            "Hex": "21000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 31,
+            "Hex": "1F000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 29,
+            "Hex": "1D000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 27,
+            "Hex": "1B000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 25,
+            "Hex": "19000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 23,
+            "Hex": "17000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 21,
+            "Hex": "15000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 18,
+            "Hex": "12000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 16,
+            "Hex": "10000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 14,
+            "Hex": "0E000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 12,
+            "Hex": "0C000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 10,
+            "Hex": "0A000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 8,
+            "Hex": "08000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 6,
+            "Hex": "06000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 4,
+            "Hex": "04000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 2,
+            "Hex": "02000000"
+          },
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          }
+        ],
+        "QuantizedMiscSamples": [
+          {
+            "B": 0,
+            "G": 0,
+            "R": 0,
+            "A": 0,
+            "Hex": "000000"
+          },
+          {
+            "B": 0,
+            "G": 255,
+            "R": 0,
+            "A": 0,
+            "Hex": "00FF00"
+          }
+        ],
+        "ColorScale": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0,
+          "W": 14.886811
+        },
+        "ColorBias": {
+          "X": 88.0,
+          "Y": 45.0,
+          "Z": 5.0,
+          "W": 0.0
+        },
+        "MiscScale": {
+          "X": 0.0,
+          "Y": 203.5,
+          "Z": 0.0,
+          "W": 0.0
+        },
+        "MiscBias": {
+          "X": 55.0,
+          "Y": 16.5,
+          "Z": 0.0,
+          "W": 0.0
+        },
+        "SimulationAttrCurveBias": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 0.0,
+          "W": 1.0
+        },
+        "SubImageSize": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "SizeBySpeed": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0,
+          "W": 1.0
+        },
+        "PerParticleVectorFieldBias": 1.0,
+        "CollisionRadiusScale": 0.5,
+        "CollisionRandomDistribution": 1.0,
+        "OneMinusFriction": 1.0,
+        "RotationRateScale": 0.3,
+        "ScreenAlignment": "PSA_Velocity",
+        "PivotOffset": {
+          "X": -0.5,
+          "Y": -0.75
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -35.0,
+        "MaxValue": 355.0,
+        "MinValueVec": {
+          "X": -35.0,
+          "Y": -35.0,
+          "Z": 145.0
+        },
+        "MaxValueVec": {
+          "X": 35.0,
+          "Y": 35.0,
+          "Z": 355.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "Values": [
+            -35.0,
+            -35.0,
+            145.0,
+            35.0,
+            35.0,
+            355.0
+          ]
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            0.0
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleModuleVelocity",
+    "Name": "ParticleModuleVelocity_2",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleModuleVelocity'",
+    "Properties": {
+      "StartVelocity": {
+        "MinValue": -15.0,
+        "MaxValue": 45.0,
+        "MinValueVec": {
+          "X": -15.0,
+          "Y": -15.0,
+          "Z": 22.0
+        },
+        "MaxValueVec": {
+          "X": 15.0,
+          "Y": 15.0,
+          "Z": 45.0
+        },
+        "Distribution": null,
+        "Table": {
+          "Op": 2,
+          "EntryCount": 1,
+          "EntryStride": 6,
+          "SubEntryStride": 3,
+          "Values": [
+            -15.0,
+            -15.0,
+            22.0,
+            15.0,
+            15.0,
+            45.0
+          ]
+        }
+      },
+      "StartVelocityRadial": {
+        "Distribution": null,
+        "Table": {
+          "Op": 1,
+          "EntryCount": 1,
+          "EntryStride": 1,
+          "Values": [
+            0.0
+          ]
+        }
+      },
+      "LODValidity": 3
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_0",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "EmitterName": "Immortal",
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_Immortal:ParticleSpriteEmitter_0.ParticleLODLevel_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.7"
+        },
+        {
+          "ObjectName": "ParticleLODLevel'P_Immortal:ParticleSpriteEmitter_0.ParticleLODLevel_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ParticleSpriteEmitter",
+    "Name": "ParticleSpriteEmitter_2",
+    "Outer": "P_Immortal",
+    "Class": "UScriptClass'ParticleSpriteEmitter'",
+    "Properties": {
+      "EmitterName": "ImmortalFlame",
+      "LODLevels": [
+        {
+          "ObjectName": "ParticleLODLevel'P_Immortal:ParticleSpriteEmitter_2.ParticleLODLevel_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.9"
+        },
+        {
+          "ObjectName": "ParticleLODLevel'P_Immortal:ParticleSpriteEmitter_2.ParticleLODLevel_4'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ParticleSystem",
+    "Name": "P_Immortal",
+    "Class": "UScriptClass'ParticleSystem'",
+    "Properties": {
+      "WarmupTime": 5.0,
+      "Emitters": [
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_Immortal:ParticleSpriteEmitter_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.36"
+        },
+        {
+          "ObjectName": "ParticleSpriteEmitter'P_Immortal:ParticleSpriteEmitter_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/P_Immortal.37"
+        }
+      ],
+      "CurveEdSetup": null,
+      "LODDistances": [
+        0.0,
+        65000.0
+      ],
+      "bRegenerateLODDuplicate": true,
+      "LODSettings": [
+        {},
+        {}
+      ],
+      "bUseFixedRelativeBoundingBox": true,
+      "FixedRelativeBoundingBox": {
+        "Min": {
+          "X": -1500.0,
+          "Y": -1500.0,
+          "Z": -1500.0
+        },
+        "Max": {
+          "X": 1500.0,
+          "Y": 1500.0,
+          "Z": 1500.0
+        },
+        "IsValid": 1
+      },
+      "bShouldResetPeakCounts": true,
+      "CustomOcclusionBounds": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 1
+      }
+    }
+  }
+]

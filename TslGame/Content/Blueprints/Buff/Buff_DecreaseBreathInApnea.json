@@ -1,0 +1,559 @@
+[
+  {
+    "Type": "ClassProperty",
+    "Name": "DamageType",
+    "Outer": "Buff_DecreaseBreathInApnea_C",
+    "Class": "UScriptClass'ClassProperty'",
+    "Next": null,
+    "PropertyFlags": 5,
+    "PropertyClass": {
+      "ObjectName": "Class'Class'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "MetaClass": {
+      "ObjectName": "Class'DamageType'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "HealthPerTick",
+    "Outer": "Buff_DecreaseBreathInApnea_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "ClassProperty'Buff_DecreaseBreathInApnea_C:DamageType'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.0"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "Buff_DecreaseBreathInApnea_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_DecreaseBreathInApnea_C:HealthPerTick'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.1"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "UnderlyingType",
+    "Outer": "CallFunc_GetBreathType_ReturnValue",
+    "Class": "UScriptClass'ByteProperty'",
+    "Next": null,
+    "Enum": null
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInApnea",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetBreath_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInApnea",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_DecreaseBreathInApnea_C:ExecuteUbergraph_Buff_DecreaseBreathInApnea.CallFunc_Greater_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.4"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInApnea",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_DecreaseBreathInApnea_C:ExecuteUbergraph_Buff_DecreaseBreathInApnea.CallFunc_GetBreath_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.5"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetCharacter_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInApnea",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_DecreaseBreathInApnea_C:ExecuteUbergraph_Buff_DecreaseBreathInApnea.CallFunc_IsValid_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.6"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OtherCharacter",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInApnea",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInApnea_C:ExecuteUbergraph_Buff_DecreaseBreathInApnea.CallFunc_GetCharacter_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.7"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "EnumProperty",
+    "Name": "CallFunc_GetBreathType_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInApnea",
+    "Class": "UScriptClass'EnumProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInApnea_C:ExecuteUbergraph_Buff_DecreaseBreathInApnea.K2Node_Event_OtherCharacter'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.8"
+    },
+    "Enum": {
+      "ObjectName": "Enum'EBreathType'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "UnderlyingProp": {
+      "ObjectName": "ByteProperty'Buff_DecreaseBreathInApnea_C:ExecuteUbergraph_Buff_DecreaseBreathInApnea.CallFunc_GetBreathType_ReturnValue.UnderlyingType'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.3"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInApnea",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "EnumProperty'Buff_DecreaseBreathInApnea_C:ExecuteUbergraph_Buff_DecreaseBreathInApnea.CallFunc_GetBreathType_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.9"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Buff_DecreaseBreathInApnea",
+    "Outer": "Buff_DecreaseBreathInApnea_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInApnea_C:DefaultSceneRoot'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.2"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Buff_DecreaseBreathInApnea_C:ExecuteUbergraph_Buff_DecreaseBreathInApnea.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.10"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OtherCharacter",
+    "Outer": "TickBuff",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "TickBuff",
+    "Outer": "Buff_DecreaseBreathInApnea_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_DecreaseBreathInApnea_C:ExecuteUbergraph_Buff_DecreaseBreathInApnea'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.11"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'TslBuff:TickBuff'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Buff_DecreaseBreathInApnea_C:TickBuff.OtherCharacter'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.12"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "UnderlyingType",
+    "Outer": "CallFunc_GetBreathType_ReturnValue",
+    "Class": "UScriptClass'ByteProperty'",
+    "Next": null,
+    "Enum": null
+  },
+  {
+    "Type": "StrProperty",
+    "Name": "CallFunc_Conv_FloatToString_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'StrProperty'",
+    "Next": null
+  },
+  {
+    "Type": "StrProperty",
+    "Name": "CallFunc_Conv_BoolToString_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'StrProperty'",
+    "Next": {
+      "ObjectName": "StrProperty'Buff_DecreaseBreathInApnea_C:UserConstructionScript.CallFunc_Conv_FloatToString_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.15"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetBreath_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "StrProperty'Buff_DecreaseBreathInApnea_C:UserConstructionScript.CallFunc_Conv_BoolToString_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.16"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsGroggying_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_DecreaseBreathInApnea_C:UserConstructionScript.CallFunc_GetBreath_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.17"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetCharacter_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_DecreaseBreathInApnea_C:UserConstructionScript.CallFunc_IsGroggying_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.18"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "EnumProperty",
+    "Name": "CallFunc_GetBreathType_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'EnumProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInApnea_C:UserConstructionScript.CallFunc_GetCharacter_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.19"
+    },
+    "Enum": {
+      "ObjectName": "Enum'EBreathType'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "UnderlyingProp": {
+      "ObjectName": "ByteProperty'Buff_DecreaseBreathInApnea_C:UserConstructionScript.CallFunc_GetBreathType_ReturnValue.UnderlyingType'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.14"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "Buff_DecreaseBreathInApnea_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_DecreaseBreathInApnea_C:TickBuff'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.13"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "EnumProperty'Buff_DecreaseBreathInApnea_C:UserConstructionScript.CallFunc_GetBreathType_ReturnValue'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.20"
+      }
+    ],
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_ApplyDamage_ReturnValue",
+    "Outer": "DecreaseHealth",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Not_PreBool_ReturnValue",
+    "Outer": "DecreaseHealth",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_DecreaseBreathInApnea_C:DecreaseHealth.CallFunc_ApplyDamage_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.22"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsDying_ReturnValue",
+    "Outer": "DecreaseHealth",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_DecreaseBreathInApnea_C:DecreaseHealth.CallFunc_Not_PreBool_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.23"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue2",
+    "Outer": "DecreaseHealth",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_DecreaseBreathInApnea_C:DecreaseHealth.CallFunc_IsDying_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.24"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue",
+    "Outer": "DecreaseHealth",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_DecreaseBreathInApnea_C:DecreaseHealth.CallFunc_IsValid_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.25"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetController_ReturnValue",
+    "Outer": "DecreaseHealth",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_DecreaseBreathInApnea_C:DecreaseHealth.CallFunc_IsValid_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.26"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Controller'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetBuffComponent_ReturnValue",
+    "Outer": "DecreaseHealth",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInApnea_C:DecreaseHealth.CallFunc_GetController_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.27"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'BuffComponet'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetCharacter_ReturnValue",
+    "Outer": "DecreaseHealth",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInApnea_C:DecreaseHealth.CallFunc_GetBuffComponent_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.28"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Character",
+    "Outer": "DecreaseHealth",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInApnea_C:DecreaseHealth.CallFunc_GetCharacter_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.29"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "DecreaseHealth",
+    "Outer": "Buff_DecreaseBreathInApnea_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_DecreaseBreathInApnea_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.21"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Buff_DecreaseBreathInApnea_C:DecreaseHealth.Character'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.30"
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Buff_DecreaseBreathInApnea_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Buff_DecreaseBreathInApnea_C:DecreaseHealth'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.31"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_DecreaseBreathInApnea_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Buff_DecreaseBreathInApnea_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.37"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Buff_DecreaseBreathInApnea_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.32"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Buff_DecreaseBreathInApnea_C:ExecuteUbergraph_Buff_DecreaseBreathInApnea'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.11"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'CharacterBreathBuff'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Buff_DecreaseBreathInApnea_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.32"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Buff_DecreaseBreathInApnea": {
+        "ObjectName": "Function'Buff_DecreaseBreathInApnea_C:ExecuteUbergraph_Buff_DecreaseBreathInApnea'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.11"
+      },
+      "TickBuff": {
+        "ObjectName": "Function'Buff_DecreaseBreathInApnea_C:TickBuff'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.13"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'Buff_DecreaseBreathInApnea_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.21"
+      },
+      "DecreaseHealth": {
+        "ObjectName": "Function'Buff_DecreaseBreathInApnea_C:DecreaseHealth'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.31"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_DecreaseBreathInApnea_C'Default__Buff_DecreaseBreathInApnea_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.34"
+    }
+  },
+  {
+    "Type": "Buff_DecreaseBreathInApnea_C",
+    "Name": "Default__Buff_DecreaseBreathInApnea_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.Buff_DecreaseBreathInApnea_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "HealthPerTick": 10.0,
+      "DamageType": {
+        "ObjectName": "BlueprintGeneratedClass'DmgType_Drown_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Drown.0"
+      },
+      "BreathPerTick": 5.0,
+      "OverlapId": "Buff_DecreaseBreathInApnea",
+      "BuffTickFirstDelay": 1.0,
+      "Infinite": true,
+      "IsDebuff": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Buff_DecreaseBreathInApnea_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Buff_DecreaseBreathInApnea_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.35"
+      },
+      "VariableGuid": "8249D64E-47623C0A-5C65F590-40CC94F3",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Buff_DecreaseBreathInApnea_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Buff_DecreaseBreathInApnea_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.36"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Buff_DecreaseBreathInApnea_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.36"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Buff_DecreaseBreathInApnea_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInApnea.36"
+      }
+    }
+  }
+]

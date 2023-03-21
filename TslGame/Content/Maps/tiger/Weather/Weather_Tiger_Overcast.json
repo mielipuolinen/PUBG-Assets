@@ -1,0 +1,2606 @@
+[
+  {
+    "Type": "AkComponent",
+    "Name": "WeatherAkComponent",
+    "Outer": "GlobalWeatherSoundBP_Foggy_1",
+    "Template": "WeatherAkComponent",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 110830.0,
+        "Y": 139830.0,
+        "Z": 2580.0
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "WeatherAkComponent",
+    "Outer": "GlobalWeatherSoundBP_Hail_4",
+    "Template": "WeatherAkComponent",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 110830.0,
+        "Y": 139830.0,
+        "Z": 2580.0
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "WeatherAkComponent",
+    "Outer": "GlobalWeatherSoundBP_HeavyRain_3",
+    "Template": "WeatherAkComponent",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 110830.0,
+        "Y": 139830.0,
+        "Z": 2580.0
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "WeatherAkComponent",
+    "Outer": "GlobalWeatherSoundBP_LightRain_2",
+    "Template": "WeatherAkComponent",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 110830.0,
+        "Y": 139830.0,
+        "Z": 2580.0
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "WeatherAkComponent",
+    "Outer": "GlobalWeatherSoundBP_Wind_0",
+    "Template": "WeatherAkComponent",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 110830.0,
+        "Y": 139830.0,
+        "Z": 2580.0
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Weather_Hail_Particle_BP_3",
+    "Template": "AkSound",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Hail_Particle_BP_3.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.33"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Weather_Heavyrain_Particle_BP_2",
+    "Template": "AkSound",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Heavyrain_Particle_BP_2.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.34"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Weather_Lightrain_Particle_BP_1",
+    "Template": "AkSound",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Lightrain_Particle_BP_1.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.35"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Weather_Wind_Particle_BP_0",
+    "Template": "AkSound",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Wind_Particle_BP_0.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.36"
+      }
+    }
+  },
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_6",
+    "Outer": "BrushComponent0",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -25000000.0,
+                "Y": -1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": -1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": 1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": 1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": 1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": 1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": -1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": -1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -1048576.0,
+                "Z": -25000000.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -25000000.0,
+                "Y": -25000000.0,
+                "Z": -25000000.0
+              },
+              "Max": {
+                "X": 25000000.0,
+                "Y": 25000000.0,
+                "Z": 25000000.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "bGenerateMirroredCollision": false,
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "A7E418D64B38091DFDE3D29D75F21427",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 1254,
+        "SizeOnDisk": 1254,
+        "OffsetInFile": "0x13498"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent0",
+    "Outer": "LevelBounds_0",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 403639.0,
+        "Y": 409737.0,
+        "Z": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 20480000.0,
+        "Y": 20480000.0,
+        "Z": 20480000.0
+      }
+    }
+  },
+  {
+    "Type": "BrushComponent",
+    "Name": "BrushComponent0",
+    "Outer": "PostProcessVolume",
+    "Class": "UScriptClass'BrushComponent'",
+    "Properties": {
+      "Brush": {
+        "ObjectName": "Model'Weather_Tiger_Overcast:PersistentLevel.PostProcessVolume.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.32"
+      },
+      "BrushBodySetup": {
+        "ObjectName": "BodySetup'Weather_Tiger_Overcast:PersistentLevel.PostProcessVolume.BrushComponent0.BodySetup_6'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.9"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 743484.0,
+        "Y": 623332.5,
+        "Z": -19744.75
+      }
+    }
+  },
+  {
+    "Type": "CustomFogControllerBP_C",
+    "Name": "CustomFogControllerBP_150",
+    "Outer": "PersistentLevel",
+    "Template": "Default__CustomFogControllerBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/CustomFogControllerBP.CustomFogControllerBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.CustomFogControllerBP_150.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.38"
+      },
+      "IntervalMin": 60.0,
+      "IntervalMax": 200.0,
+      "FogStartDistanceMin": 400.0,
+      "FogStartDistanceMax": 1000.0,
+      "FogFalloffMin": 15000.0,
+      "FogDensityMin": 1.0,
+      "FogDensityMax": 2.0,
+      "FallingEndHeight": 25000.0,
+      "HeightFalloffCurve": {
+        "ObjectName": "CurveFloat'CustomFogHeightFallOffCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/CustomFogHeightFallOffCurve.0"
+      },
+      "HeightDensityCurve": {
+        "ObjectName": "CurveFloat'CustomFogHeightDensityCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/CustomFogHeightDensityCurve.0"
+      },
+      "HeightHeightCurve": {
+        "ObjectName": "CurveFloat'CustomFogHeightHeightCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/CustomFogHeightHeightCurve.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.CustomFogControllerBP_150.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.38"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.CustomFogControllerBP_150.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.38"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "DirectionalLight",
+    "Name": "DirectionalLight_Sun_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'DirectionalLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "DirectionalLightComponent'Weather_Tiger_Overcast:PersistentLevel.DirectionalLight_Sun_0.LightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.14"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "DirectionalLightComponent'Weather_Tiger_Overcast:PersistentLevel.DirectionalLight_Sun_0.LightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.14"
+      }
+    }
+  },
+  {
+    "Type": "DirectionalLightComponent",
+    "Name": "LightComponent0",
+    "Outer": "DirectionalLight_Sun_0",
+    "Class": "UScriptClass'DirectionalLightComponent'",
+    "Properties": {
+      "OcclusionDepthRange": 5000.0,
+      "DynamicShadowDistanceMovableLight": 4000.0,
+      "CascadeDistributionExponent": 4.0,
+      "CascadeTransitionFraction": 0.3,
+      "DistanceFieldShadowDistance": 40000.0,
+      "TraceDistance": 5000.0,
+      "LightmassSettings": {
+        "LightSourceAngle": 1.5,
+        "ShadowExponent": 1.0
+      },
+      "ModulatedShadowColor": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 255,
+        "Hex": "FFFFFFFF"
+      },
+      "bUsedAsAtmosphereSunLight": true,
+      "bUseGridShadow": true,
+      "GridShadowSplitSettings": [
+        {
+          "CellSize": 1000.0,
+          "MaxRadius": 3000.0
+        },
+        {
+          "CellSize": 5000.0,
+          "MaxRadius": 15000.0
+        },
+        {
+          "CellSize": 25000.0,
+          "MaxRadius": 75000.0
+        }
+      ],
+      "Temperature": 4250.0,
+      "bUseTemperature": true,
+      "LightFunctionScale": {
+        "X": 111000.0,
+        "Y": 111000.01,
+        "Z": 111000.01
+      },
+      "BloomScale": 10.0,
+      "BloomTint": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "bUseRayTracedDistanceFieldShadows": true,
+      "LightGuid": "89E436DD-47FEC81A-1337F2B6-B59AD9D1",
+      "Intensity": 6.0,
+      "LightColor": {
+        "B": 149,
+        "G": 149,
+        "R": 149,
+        "A": 255,
+        "Hex": "FF959595"
+      },
+      "Mobility": "EComponentMobility::Movable",
+      "RelativeRotation": {
+        "Pitch": -26.120104,
+        "Yaw": 5.1549344,
+        "Roll": 4.3360662
+      },
+      "RelativeLocation": {
+        "X": 455194.1,
+        "Y": 240795.3,
+        "Z": 2988.2961
+      }
+    }
+  },
+  {
+    "Type": "DynamicWeatherBP_C",
+    "Name": "DynamicWeather_Fog_91",
+    "Outer": "PersistentLevel",
+    "Template": "Default__DynamicWeatherBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/DynamicWeatherBP.DynamicWeatherBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Fog_91.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.39"
+      },
+      "FogController": {
+        "ObjectName": "CustomFogControllerBP_C'Weather_Tiger_Overcast:PersistentLevel.CustomFogControllerBP_150'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.12"
+      },
+      "GlobalSound": {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_Foggy_1'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.22"
+      },
+      "ClientTickInterval_Transition": 0.1,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Fog_91.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.39"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Fog_91.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.39"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "DynamicWeatherBP_C",
+    "Name": "DynamicWeather_Hail_94",
+    "Outer": "PersistentLevel",
+    "Template": "Default__DynamicWeatherBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/DynamicWeatherBP.DynamicWeatherBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Hail_94.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.40"
+      },
+      "WeatherParticle": {
+        "ObjectName": "WeatherParticleBP_C'Weather_Tiger_Overcast:PersistentLevel.Weather_Hail_Particle_BP_3'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.54"
+      },
+      "SpawnScaleCurve": {
+        "ObjectName": "CurveFloat'HailScaleCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/HailScaleCurve.0"
+      },
+      "GlobalSound": {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_Hail_4'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.23"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Hail_94.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.40"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Hail_94.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.40"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "DynamicWeatherBP_C",
+    "Name": "DynamicWeather_HeavyRain_93",
+    "Outer": "PersistentLevel",
+    "Template": "Default__DynamicWeatherBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/DynamicWeatherBP.DynamicWeatherBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_HeavyRain_93.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.41"
+      },
+      "WeatherParticle": {
+        "ObjectName": "WeatherParticleBP_C'Weather_Tiger_Overcast:PersistentLevel.Weather_Heavyrain_Particle_BP_2'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.55"
+      },
+      "SpawnScaleCurve": {
+        "ObjectName": "CurveFloat'RainScaleCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/RainScaleCurve.0"
+      },
+      "bUseWetEffect": true,
+      "bUsePPEffect": true,
+      "bUseLightning": true,
+      "GlobalSound": {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_HeavyRain_3'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.24"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_HeavyRain_93.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.41"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_HeavyRain_93.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.41"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "DynamicWeatherBP_C",
+    "Name": "DynamicWeather_LightRain_92",
+    "Outer": "PersistentLevel",
+    "Template": "Default__DynamicWeatherBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/DynamicWeatherBP.DynamicWeatherBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_LightRain_92.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.42"
+      },
+      "WeatherParticle": {
+        "ObjectName": "WeatherParticleBP_C'Weather_Tiger_Overcast:PersistentLevel.Weather_Lightrain_Particle_BP_1'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.56"
+      },
+      "SpawnScaleCurve": {
+        "ObjectName": "CurveFloat'RainScaleCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/RainScaleCurve.0"
+      },
+      "bUseWetEffect": true,
+      "bUsePPEffect": true,
+      "GlobalSound": {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_LightRain_2'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.25"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_LightRain_92.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.42"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_LightRain_92.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.42"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "DynamicWeatherBP_C",
+    "Name": "DynamicWeather_Wind_90",
+    "Outer": "PersistentLevel",
+    "Template": "Default__DynamicWeatherBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/DynamicWeatherBP.DynamicWeatherBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Wind_90.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.43"
+      },
+      "WeatherParticle": {
+        "ObjectName": "WeatherParticleBP_C'Weather_Tiger_Overcast:PersistentLevel.Weather_Wind_Particle_BP_0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.57"
+      },
+      "SpawnScaleCurve": {
+        "ObjectName": "CurveFloat'RainScaleCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/RainScaleCurve.0"
+      },
+      "GlobalSound": {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_Wind_0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.26"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Wind_90.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.43"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Wind_90.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.43"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ExponentialHeightFog",
+    "Name": "ExponentialHeightFog_5",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'ExponentialHeightFog'",
+    "Properties": {
+      "Component": {
+        "ObjectName": "ExponentialHeightFogComponent'Weather_Tiger_Overcast:PersistentLevel.ExponentialHeightFog_5.HeightFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.21"
+      },
+      "RootComponent": {
+        "ObjectName": "ExponentialHeightFogComponent'Weather_Tiger_Overcast:PersistentLevel.ExponentialHeightFog_5.HeightFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.21"
+      }
+    }
+  },
+  {
+    "Type": "ExponentialHeightFogComponent",
+    "Name": "HeightFogComponent0",
+    "Outer": "ExponentialHeightFog_5",
+    "Class": "UScriptClass'ExponentialHeightFogComponent'",
+    "Properties": {
+      "FogDensity": 0.01,
+      "FogInscatteringColor": {
+        "R": 0.6468,
+        "G": 0.753763,
+        "B": 0.77,
+        "A": 255.0,
+        "Hex": "FFD3E1E4"
+      },
+      "HeightDensityLayers": [
+        {
+          "Height": 5000.0,
+          "Density": 1.0
+        },
+        {
+          "Height": 150000.0,
+          "Density": 0.5
+        }
+      ],
+      "DirectionalInscatteringColor": {
+        "R": 0.86,
+        "G": 0.745644,
+        "B": 0.4214,
+        "A": 1.0,
+        "Hex": "FFEFE0AE"
+      },
+      "FogHeightFalloff": 0.065,
+      "VolumetricFogScatteringDistribution": 0.75,
+      "VolumetricFogAlbedo": {
+        "B": 230,
+        "G": 230,
+        "R": 234,
+        "A": 255,
+        "Hex": "FFEAE6E6"
+      },
+      "VolumetricFogDistance": 10000.0,
+      "ExtendedFogStartDistance": 1000.0,
+      "ExtendedFogStartFalloffDistance": 25000.0,
+      "ExtendedHeight": 25500.0,
+      "ExtendedFallOff": 1.0,
+      "ExtendedFogDensity": 2.0,
+      "UpDensity": 1.0,
+      "DownDensity": 2.0,
+      "bUseAtmosphereScattering": false,
+      "RelativeLocation": {
+        "X": 621903.0,
+        "Y": 303118.0,
+        "Z": 3000.0
+      }
+    }
+  },
+  {
+    "Type": "GlobalWeatherSoundBP_C",
+    "Name": "GlobalWeatherSoundBP_Foggy_1",
+    "Outer": "PersistentLevel",
+    "Template": "Default__GlobalWeatherSoundBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/GlobalWeatherSoundBP.GlobalWeatherSoundBP_C'",
+    "Properties": {
+      "AkEvent_Play": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Foggy_Savage'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Foggy_Savage.0"
+      },
+      "AkEvent_Stop": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Foggy_Savage_Stop'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Foggy_Savage_Stop.0"
+      },
+      "ParamRTPCName": "WeatherBlendingValue_Fog",
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_Foggy_1.WeatherAkComponent'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.0"
+      }
+    }
+  },
+  {
+    "Type": "GlobalWeatherSoundBP_C",
+    "Name": "GlobalWeatherSoundBP_Hail_4",
+    "Outer": "PersistentLevel",
+    "Template": "Default__GlobalWeatherSoundBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/GlobalWeatherSoundBP.GlobalWeatherSoundBP_C'",
+    "Properties": {
+      "AkEvent_Play": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Wind_Hail_Erangel_Remaster'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Wind_Hail_Erangel_Remaster.0"
+      },
+      "AkEvent_Stop": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Wind_Hail_Erangel_Remaster_Stop'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Wind_Hail_Erangel_Remaster_Stop.0"
+      },
+      "ParamRTPCName": "WeatherBlendingValue_Hail",
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_Hail_4.WeatherAkComponent'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.1"
+      }
+    }
+  },
+  {
+    "Type": "GlobalWeatherSoundBP_C",
+    "Name": "GlobalWeatherSoundBP_HeavyRain_3",
+    "Outer": "PersistentLevel",
+    "Template": "Default__GlobalWeatherSoundBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/GlobalWeatherSoundBP.GlobalWeatherSoundBP_C'",
+    "Properties": {
+      "AkEvent_Play": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Rain_Savage'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Rain_Savage.0"
+      },
+      "AkEvent_Stop": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Rain_Savage_Stop'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Rain_Savage_Stop.0"
+      },
+      "ParamRTPCName": "WeatherBlendingValue_Rain",
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_HeavyRain_3.WeatherAkComponent'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.2"
+      }
+    }
+  },
+  {
+    "Type": "GlobalWeatherSoundBP_C",
+    "Name": "GlobalWeatherSoundBP_LightRain_2",
+    "Outer": "PersistentLevel",
+    "Template": "Default__GlobalWeatherSoundBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/GlobalWeatherSoundBP.GlobalWeatherSoundBP_C'",
+    "Properties": {
+      "AkEvent_Play": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Rain_Light_Erengel_Remaster'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Rain_Light_Erengel_Remaster.0"
+      },
+      "AkEvent_Stop": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Rain_Light_Erengel_Remaster_Stop'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Rain_Light_Erengel_Remaster_Stop.0"
+      },
+      "ParamRTPCName": "WeatherBlendingValue_LightRain",
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_LightRain_2.WeatherAkComponent'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.3"
+      }
+    }
+  },
+  {
+    "Type": "GlobalWeatherSoundBP_C",
+    "Name": "GlobalWeatherSoundBP_Wind_0",
+    "Outer": "PersistentLevel",
+    "Template": "Default__GlobalWeatherSoundBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/GlobalWeatherSoundBP.GlobalWeatherSoundBP_C'",
+    "Properties": {
+      "AkEvent_Play": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Wind_Gale_Erangel_Remaster'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Wind_Gale_Erangel_Remaster.0"
+      },
+      "AkEvent_Stop": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Wind_Gale_Erangel_Remaster_Stop'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Wind_Gale_Erangel_Remaster_Stop.0"
+      },
+      "ParamRTPCName": "WeatherBlendingValue_Wind",
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_Wind_0.WeatherAkComponent'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.4"
+      }
+    }
+  },
+  {
+    "Type": "IDCSettingsForDihorOtokClearWeather_C",
+    "Name": "IDCSettingsForTigerOvercast",
+    "Outer": "PersistentLevel",
+    "Template": "Default__IDCSettingsForDihorOtokClearWeather_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/IDC_DihorOtok/IDCSettingsForDihorOtokClearWeather.IDCSettingsForDihorOtokClearWeather_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.IDCSettingsForTigerOvercast.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.44"
+      },
+      "ConsoleCommands": [
+        "r.CGV.Fallback 0.334710 0.094216 -0.269714 -0.008018 0.260979 0.072405 -0.211327 -0.007172 0.214882 0.055859 -0.176884 -0.007689 0.061821 -0.116015 -0.048355 -0.058586 0.047291 -0.089008 -0.034988 -0.043716 0.037771 -0.066462 -0.020986 -0.031075 -0.040459 -0.031513 -0.025552 0.000000",
+        "r.CGV.Intensity 1",
+        "r.CGV.FallbackIntensity 0.2",
+        "r.CGV.Hairintensity 0.5",
+        "r.CGV.Skinintensity 1",
+        "r.CGV.BaseIntensity 0.5",
+        "r.CGV.IndoorIntensity 1.05",
+        "r.CGV.OutdoorIntensity 0",
+        "r.CGV.IndoorSaturation 0.1",
+        "r.CGV.OutdoorSaturation 0.5",
+        "r.WindowLightIntensity 1",
+        "r.CGV.UseFullFallback 1",
+        "r.CGV.FullFallbackIntensity 0.8",
+        "r.GIVolume.Enable 0"
+      ],
+      "ExecuteCommandsInEditor": true,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.IDCSettingsForTigerOvercast.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.44"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.IDCSettingsForTigerOvercast.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.44"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Outer": "Weather_Tiger_Overcast",
+    "Class": "UScriptClass'Level'",
+    "Properties": {
+      "LevelBuildDataId": "AE6B0870-48F3FD00-F9F4A996-5A157233",
+      "Model": {
+        "ObjectName": "Model'Weather_Tiger_Overcast:PersistentLevel.Model_0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.31"
+      },
+      "WorldSettings": {
+        "ObjectName": "WorldSettings'Weather_Tiger_Overcast:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.63"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "WorldSettings'Weather_Tiger_Overcast:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.63"
+      },
+      null,
+      {
+        "ObjectName": "LevelBounds'Weather_Tiger_Overcast:PersistentLevel.LevelBounds_0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.29"
+      },
+      {
+        "ObjectName": "PostProcessVolume'Weather_Tiger_Overcast:PersistentLevel.PostProcessVolume'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.37"
+      },
+      {
+        "ObjectName": "SkyLight'Weather_Tiger_Overcast:PersistentLevel.SkyLight'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.49"
+      },
+      {
+        "ObjectName": "ExponentialHeightFog'Weather_Tiger_Overcast:PersistentLevel.ExponentialHeightFog_5'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.20"
+      },
+      {
+        "ObjectName": "WeatherParticleBP_C'Weather_Tiger_Overcast:PersistentLevel.Weather_Wind_Particle_BP_0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.57"
+      },
+      {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_Wind_0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.26"
+      },
+      {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_Foggy_1'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.22"
+      },
+      {
+        "ObjectName": "WeatherParticleBP_C'Weather_Tiger_Overcast:PersistentLevel.Weather_Lightrain_Particle_BP_1'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.56"
+      },
+      {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_LightRain_2'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.25"
+      },
+      {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_HeavyRain_3'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.24"
+      },
+      {
+        "ObjectName": "WeatherParticleBP_C'Weather_Tiger_Overcast:PersistentLevel.Weather_Heavyrain_Particle_BP_2'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.55"
+      },
+      {
+        "ObjectName": "WeatherParticleBP_C'Weather_Tiger_Overcast:PersistentLevel.Weather_Hail_Particle_BP_3'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.54"
+      },
+      {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Tiger_Overcast:PersistentLevel.GlobalWeatherSoundBP_Hail_4'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.23"
+      },
+      {
+        "ObjectName": "WindDirectionalSource'Weather_Tiger_Overcast:PersistentLevel.WindDirectionalSource'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.60"
+      },
+      {
+        "ObjectName": "StaticMeshActor'Weather_Tiger_Overcast:PersistentLevel.SM_SkySphere'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.51"
+      },
+      {
+        "ObjectName": "DirectionalLight'Weather_Tiger_Overcast:PersistentLevel.DirectionalLight_Sun_0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.13"
+      },
+      {
+        "ObjectName": "IDCSettingsForDihorOtokClearWeather_C'Weather_Tiger_Overcast:PersistentLevel.IDCSettingsForTigerOvercast'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.27"
+      },
+      {
+        "ObjectName": "WeatherManagerBP_C'Weather_Tiger_Overcast:PersistentLevel.WeatherManagerBP_18'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.53"
+      },
+      {
+        "ObjectName": "DynamicWeatherBP_C'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Wind_90'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.19"
+      },
+      {
+        "ObjectName": "CustomFogControllerBP_C'Weather_Tiger_Overcast:PersistentLevel.CustomFogControllerBP_150'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.12"
+      },
+      {
+        "ObjectName": "DynamicWeatherBP_C'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Fog_91'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.15"
+      },
+      {
+        "ObjectName": "WetEffectBP_C'Weather_Tiger_Overcast:PersistentLevel.WetEffectBP_80'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.59"
+      },
+      {
+        "ObjectName": "WeatherPPControllerBP_C'Weather_Tiger_Overcast:PersistentLevel.WeatherPPControllerBP_18'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.58"
+      },
+      {
+        "ObjectName": "DynamicWeatherBP_C'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_LightRain_92'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.18"
+      },
+      {
+        "ObjectName": "DynamicWeatherBP_C'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_HeavyRain_93'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.17"
+      },
+      {
+        "ObjectName": "DynamicWeatherBP_C'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Hail_94'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.16"
+      },
+      {
+        "ObjectName": "LightningController_C'Weather_Tiger_Overcast:PersistentLevel.LightningController_104'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.30"
+      },
+      null
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/Maps/lobby/Seasonpass/TslLobby_Seasonpass20_1021_main",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'Weather_Tiger_Overcast:PersistentLevel.Model_0'",
+      "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.31"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": null,
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "LevelBounds",
+    "Name": "LevelBounds_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelBounds'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Weather_Tiger_Overcast:PersistentLevel.LevelBounds_0.BoxComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.10"
+      }
+    }
+  },
+  {
+    "Type": "LightningController_C",
+    "Name": "LightningController_104",
+    "Outer": "PersistentLevel",
+    "Template": "Default__LightningController_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/LightningController.LightningController_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.LightningController_104.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.45"
+      },
+      "EffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'P_rain_Lightning_Baltic_C'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_rain_Lightning_Baltic.0"
+      },
+      "AkThunderSound": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Thunder_OneShot'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Thunder_OneShot.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.LightningController_104.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.45"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.LightningController_104.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.45"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "A8D1ABF9-41D4A1D9-6C893992-1BCE906C",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_14",
+    "Outer": "PostProcessVolume",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      "SphereRadius": 43301270.0
+    },
+    "Vectors": [
+      {
+        "X": -1.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1.0
+      },
+      {
+        "X": 1.0,
+        "Y": -0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": -1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      }
+    ],
+    "Points": [
+      {
+        "X": -25000000.0,
+        "Y": -25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": -25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": 25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": -25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": -25000000.0,
+        "Z": -25000000.0
+      }
+    ],
+    "Nodes": [
+      {
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 0,
+        "iSurf": 0,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 4,
+        "iSurf": 1,
+        "iVertexIndex": 4,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 2,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 8,
+        "iSurf": 2,
+        "iVertexIndex": 8,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 3,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 12,
+        "iSurf": 3,
+        "iVertexIndex": 12,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 4,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "iVertPool": 16,
+        "iSurf": 4,
+        "iVertexIndex": 16,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 5,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "iVertPool": 20,
+        "iSurf": 5,
+        "iVertexIndex": 20,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": -1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": 0,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      }
+    ],
+    "Surfs": [
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 0,
+        "vTextureU": 1,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 3,
+        "vNormal": 1,
+        "vTextureU": 3,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 5,
+        "vNormal": 3,
+        "vTextureU": 4,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 7,
+        "vNormal": 4,
+        "vTextureU": 0,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 2,
+        "vNormal": 5,
+        "vTextureU": 3,
+        "vTextureV": 1,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 2,
+        "vTextureU": 3,
+        "vTextureV": 4,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      }
+    ],
+    "NumSharedSides": 4,
+    "VertexBuffer": null,
+    "LightingGuid": "CE209C42-4EB13CC3-065531B6-6E45DB0C",
+    "LightmassSettings": [
+      {
+        "bUseTwoSidedLighting": false,
+        "bShadowIndirectOnly": false,
+        "bUseEmissiveForStaticLighting": false,
+        "bUseVertexNormalForHemisphereGather": false,
+        "EmissiveLightFalloffExponent": 8.0,
+        "EmissiveLightExplicitInfluenceRadius": 0.0,
+        "EmissiveBoost": 1.0,
+        "DiffuseBoost": 1.0,
+        "FullyOccludedSamplesFraction": 1.0
+      }
+    ]
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "Weather_Hail_Particle_BP_3",
+    "Template": "ParticleSystem",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_Haildrop'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_Haildrop.65"
+      },
+      "OldPosition": {
+        "X": -422400.0,
+        "Y": -697130.0,
+        "Z": 2330.0
+      },
+      "OnSystemFinished": {
+        "InvocationList": []
+      },
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": -422400.0,
+        "Y": -697130.0,
+        "Z": 2330.0
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "Weather_Heavyrain_Particle_BP_2",
+    "Template": "ParticleSystem",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_Weather_Baltic_HeavyRain'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_Weather_Baltic_HeavyRain.59"
+      },
+      "OldPosition": {
+        "X": -420680.0,
+        "Y": -697560.0,
+        "Z": 2330.0
+      },
+      "OnSystemFinished": {
+        "InvocationList": []
+      },
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": -420680.0,
+        "Y": -697560.0,
+        "Z": 2330.0
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "Weather_Lightrain_Particle_BP_1",
+    "Template": "ParticleSystem",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_Weather_Baltic_LightRain'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_Weather_Baltic_LightRain.59"
+      },
+      "OldPosition": {
+        "X": -422400.0,
+        "Y": -697560.0,
+        "Z": 2330.0
+      },
+      "OnSystemFinished": {
+        "InvocationList": []
+      },
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": -422400.0,
+        "Y": -697560.0,
+        "Z": 2330.0
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "Weather_Wind_Particle_BP_0",
+    "Template": "ParticleSystem",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_Weather_Baltic_Wind'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_Weather_Baltic_Wind.65"
+      },
+      "OldPosition": {
+        "X": -422400.0,
+        "Y": -697130.0,
+        "Z": 2330.0
+      },
+      "OnSystemFinished": {
+        "InvocationList": []
+      },
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": -422400.0,
+        "Y": -697130.0,
+        "Z": 2330.0
+      }
+    }
+  },
+  {
+    "Type": "PostProcessVolume",
+    "Name": "PostProcessVolume",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'PostProcessVolume'",
+    "Properties": {
+      "Settings": {
+        "bOverride_WhiteTemp": true,
+        "bOverride_ColorGain": true,
+        "bOverride_FilmToeAmount": true,
+        "bOverride_FilmShoulder": true,
+        "bOverride_BloomIntensity": true,
+        "bOverride_Bloom1Size": true,
+        "bOverride_Bloom2Size": true,
+        "bOverride_Bloom3Size": true,
+        "bOverride_Bloom4Size": true,
+        "bOverride_Bloom5Size": true,
+        "bOverride_Bloom6Size": true,
+        "bOverride_AutoExposureMethod": true,
+        "bOverride_AutoExposureMinBrightness": true,
+        "bOverride_AutoExposureMaxBrightness": true,
+        "bOverride_AutoExposureSpeedUp": true,
+        "bOverride_AutoExposureSpeedDown": true,
+        "bOverride_AutoExposureBias": true,
+        "bOverride_AmbientOcclusionPower": true,
+        "bOverride_AmbientOcclusionQuality": true,
+        "bOverride_AmbientOcclusionMipBlend": true,
+        "bOverride_AmbientOcclusionMipScale": true,
+        "WhiteTemp": 5750.0,
+        "ColorGain": {
+          "X": 1.0,
+          "Y": 1.049999,
+          "Z": 1.15,
+          "W": 1.0
+        },
+        "ColorContrastShadows": {
+          "X": 0.95,
+          "Y": 0.95,
+          "Z": 0.95,
+          "W": 1.0
+        },
+        "ColorGammaShadows": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "ColorSaturationMidtones": {
+          "X": 0.925,
+          "Y": 0.925,
+          "Z": 0.925,
+          "W": 1.0
+        },
+        "ColorContrastMidtones": {
+          "X": 0.9,
+          "Y": 0.9,
+          "Z": 0.9,
+          "W": 1.0
+        },
+        "ColorContrastHighlights": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "FilmShoulder": 0.5,
+        "FilmShadowTintBlend": 10.0,
+        "FilmShadowTintAmount": 10.0,
+        "FilmSaturation": 1.1,
+        "FilmChannelMixerGreen": {
+          "R": 0.0,
+          "G": 1.0,
+          "B": 0.12,
+          "A": 1.0,
+          "Hex": "FF00FF61"
+        },
+        "FilmChannelMixerBlue": {
+          "R": 0.0,
+          "G": 0.2,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FF007CFF"
+        },
+        "FilmContrast": 0.2,
+        "FilmToeAmount": 0.65,
+        "FilmHealAmount": 0.25,
+        "SceneColorTint": {
+          "R": 0.945,
+          "G": 0.851614,
+          "B": 0.880307,
+          "A": 1.0,
+          "Hex": "FFF9EEF2"
+        },
+        "BloomIntensity": 0.3,
+        "Bloom1Size": 1.0,
+        "Bloom2Size": 2.0,
+        "Bloom3Size": 4.0,
+        "Bloom4Size": 8.0,
+        "Bloom5Size": 16.0,
+        "Bloom6Size": 32.0,
+        "AutoExposureMethod": "AEM_Basic",
+        "AutoExposureLowPercent": 58.0,
+        "AutoExposureMinBrightness": 1.0,
+        "AutoExposureMaxBrightness": 1.2,
+        "AutoExposureSpeedUp": 5.0,
+        "AutoExposureSpeedDown": 3.0,
+        "AutoExposureBias": 0.1,
+        "DepthOfFieldFstop": 2.990826,
+        "DepthOfFieldDepthBlurRadius": 1.0
+      },
+      "BrushType": "Brush_Add",
+      "Brush": {
+        "ObjectName": "Model'Weather_Tiger_Overcast:PersistentLevel.PostProcessVolume.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.32"
+      },
+      "BrushComponent": {
+        "ObjectName": "BrushComponent'Weather_Tiger_Overcast:PersistentLevel.PostProcessVolume.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.11"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "bHidden": false,
+      "RootComponent": {
+        "ObjectName": "BrushComponent'Weather_Tiger_Overcast:PersistentLevel.PostProcessVolume.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.11"
+      },
+      "Tags": [
+        "TslEffectPostProcessVolume"
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "CustomFogControllerBP_150",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -1986370.0,
+        "Y": -9577300.0,
+        "Z": -130.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "DynamicWeather_Fog_91",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 145480.0,
+        "Y": 151390.0,
+        "Z": 2330.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "DynamicWeather_Hail_94",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -125087.0,
+        "Y": 151560.0,
+        "Z": 2330.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "DynamicWeather_HeavyRain_93",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 145860.0,
+        "Y": 151560.0,
+        "Z": 2330.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "DynamicWeather_LightRain_92",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 145860.0,
+        "Y": 151560.0,
+        "Z": 2330.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "DynamicWeather_Wind_90",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 145860.0,
+        "Y": 151560.0,
+        "Z": 2330.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "IDCSettingsForTigerOvercast",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 10324.156,
+        "Z": 0.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "LightningController_104",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 530466.0,
+        "Y": 458506.1,
+        "Z": 61.843872
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "WeatherManagerBP_18",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "WeatherPPControllerBP_18",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 151350.0,
+        "Y": 154880.0,
+        "Z": 2550.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "WetEffectBP_80",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 530660.0,
+        "Y": 458730.0,
+        "Z": 270.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkyLight",
+    "Name": "SkyLight",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'SkyLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "SkyLightComponent'Weather_Tiger_Overcast:PersistentLevel.SkyLight.SkyLightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.50"
+      },
+      "RootComponent": {
+        "ObjectName": "SkyLightComponent'Weather_Tiger_Overcast:PersistentLevel.SkyLight.SkyLightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.50"
+      }
+    }
+  },
+  {
+    "Type": "SkyLightComponent",
+    "Name": "SkyLightComponent0",
+    "Outer": "SkyLight",
+    "Class": "UScriptClass'SkyLightComponent'",
+    "Properties": {
+      "SourceType": "SLS_SpecifiedCubemap",
+      "Cubemap": {
+        "ObjectName": "TextureCube'T_Cubemap_Tiger_Global_Overcast'",
+        "ObjectPath": "TslGame/Content/Assets/Lighting/Cubemaps/Tiger/T_Cubemap_Tiger_Global_Overcast.0"
+      },
+      "LowerHemisphereColor": {
+        "R": 0.09,
+        "G": 0.078161,
+        "B": 0.052783,
+        "A": 1.0,
+        "Hex": "FF544F41"
+      },
+      "OcclusionMaxDistance": 500.0,
+      "Contrast": 0.7,
+      "MinOcclusion": 0.2,
+      "OcclusionTint": {
+        "B": 14,
+        "G": 14,
+        "R": 14,
+        "A": 255,
+        "Hex": "FF0E0E0E"
+      },
+      "LightGuid": "DCD95552-4BE2790C-24527EB9-31A2531E",
+      "Intensity": 1.5,
+      "Mobility": "EComponentMobility::Movable",
+      "RelativeLocation": {
+        "X": -487.0,
+        "Y": -705.0,
+        "Z": 483.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshActor",
+    "Name": "SM_SkySphere",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'StaticMeshActor'",
+    "Properties": {
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Tiger_Overcast:PersistentLevel.SM_SkySphere.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.52"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Tiger_Overcast:PersistentLevel.SM_SkySphere.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.52"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent0",
+    "Outer": "SM_SkySphere",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_SkySphere'",
+        "ObjectPath": "Engine/Content/EngineSky/SM_SkySphere.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_Sky_Tiger_Overcast'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/Skies/Tiger/MI_Sky_Tiger_Overcast.0"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 403638.7,
+        "Y": 409737.38,
+        "Z": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 2500.0,
+        "Y": 2500.0,
+        "Z": 2500.0
+      }
+    }
+  },
+  {
+    "Type": "WeatherManagerBP_C",
+    "Name": "WeatherManagerBP_18",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherManagerBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherManagerBP.WeatherManagerBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.WeatherManagerBP_18.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.46"
+      },
+      "StartTimeMin": 60.0,
+      "StartTimeMax": 300.0,
+      "DurationTimeMin": 120.0,
+      "DurationTimeMax": 300.0,
+      "WetEffect": {
+        "ObjectName": "WetEffectBP_C'Weather_Tiger_Overcast:PersistentLevel.WetEffectBP_80'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.59"
+      },
+      "PPEffect": {
+        "ObjectName": "WeatherPPControllerBP_C'Weather_Tiger_Overcast:PersistentLevel.WeatherPPControllerBP_18'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.58"
+      },
+      "DynamicWeathers": [
+        {
+          "WeatherName": "Overcast",
+          "DynamicWeather": null,
+          "Weight": 5.0,
+          "DirectionalLightIntensity": 4.0,
+          "DirectionalLightTemperature": 6500.0,
+          "DirectionalLightVolumetricScattering": 55.0,
+          "SkyLightIntensity": 1.45,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": false,
+          "OverrideDurationTimeMin": 30.0,
+          "OverrideDurationTimeMax": 60.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        },
+        {
+          "WeatherName": "Wind",
+          "DynamicWeather": {
+            "ObjectName": "DynamicWeatherBP_C'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Wind_90'",
+            "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.19"
+          },
+          "Weight": 3.0,
+          "DirectionalLightIntensity": 4.0,
+          "DirectionalLightTemperature": 6600.0,
+          "DirectionalLightVolumetricScattering": 55.0,
+          "SkyLightIntensity": 1.4,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": false,
+          "OverrideDurationTimeMin": 15.0,
+          "OverrideDurationTimeMax": 15.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        },
+        {
+          "WeatherName": "Hail",
+          "DynamicWeather": {
+            "ObjectName": "DynamicWeatherBP_C'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Hail_94'",
+            "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.16"
+          },
+          "Weight": 2.0,
+          "DirectionalLightIntensity": 3.0,
+          "DirectionalLightTemperature": 6500.0,
+          "DirectionalLightVolumetricScattering": 55.0,
+          "SkyLightIntensity": 1.2,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": true,
+          "OverrideDurationTimeMin": 20.0,
+          "OverrideDurationTimeMax": 35.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        },
+        {
+          "WeatherName": "LightRain",
+          "DynamicWeather": {
+            "ObjectName": "DynamicWeatherBP_C'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_LightRain_92'",
+            "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.18"
+          },
+          "Weight": 3.0,
+          "DirectionalLightIntensity": 2.0,
+          "DirectionalLightTemperature": 6700.0,
+          "DirectionalLightVolumetricScattering": 55.0,
+          "SkyLightIntensity": 1.4,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": false,
+          "OverrideDurationTimeMin": 15.0,
+          "OverrideDurationTimeMax": 15.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        },
+        {
+          "WeatherName": "HeavyRain",
+          "DynamicWeather": {
+            "ObjectName": "DynamicWeatherBP_C'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_HeavyRain_93'",
+            "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.17"
+          },
+          "Weight": 2.5,
+          "DirectionalLightIntensity": 2.0,
+          "DirectionalLightTemperature": 6800.0,
+          "DirectionalLightVolumetricScattering": 55.0,
+          "SkyLightIntensity": 1.2,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": false,
+          "OverrideDurationTimeMin": 15.0,
+          "OverrideDurationTimeMax": 15.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        },
+        {
+          "WeatherName": "Fog",
+          "DynamicWeather": {
+            "ObjectName": "DynamicWeatherBP_C'Weather_Tiger_Overcast:PersistentLevel.DynamicWeather_Fog_91'",
+            "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.15"
+          },
+          "Weight": 2.0,
+          "DirectionalLightIntensity": 3.0,
+          "DirectionalLightTemperature": 6500.0,
+          "DirectionalLightVolumetricScattering": 155.0,
+          "SkyLightIntensity": 1.3,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": false,
+          "OverrideDurationTimeMin": 15.0,
+          "OverrideDurationTimeMax": 15.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        }
+      ],
+      "CustomOrder": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "bShowDebugDynamicWeather": true,
+      "LocalWeatherVolumes": [
+        {
+          "PostProcessVolume": {
+            "ObjectName": "PostProcessVolume'Weather_Tiger_Overcast:PersistentLevel.PostProcessVolume'",
+            "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.37"
+          },
+          "LocalWeatherSetting": {
+            "FogDensity": 0.008,
+            "FogColor": {
+              "R": 0.715,
+              "G": 0.715,
+              "B": 0.715,
+              "A": 1.0,
+              "Hex": "FFDCDCDC"
+            },
+            "FogStartDistance": 18000.0,
+            "VolFogExtinctionScale": 0.4,
+            "WeatherParticleSpawnScale": 0.0,
+            "bUseWetEffectWithSpawnScale": false,
+            "SoundScale": 0.0
+          }
+        }
+      ],
+      "HeightFog": {
+        "ObjectName": "ExponentialHeightFog'Weather_Tiger_Overcast:PersistentLevel.ExponentialHeightFog_5'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.20"
+      },
+      "ServerTickInterval": 0.25,
+      "ClientTickInterval": 0.025,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.WeatherManagerBP_18.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.46"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.WeatherManagerBP_18.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.46"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "WeatherParticleBP_C",
+    "Name": "Weather_Hail_Particle_BP_3",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherParticleBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherParticleBP.WeatherParticleBP_C'",
+    "Properties": {
+      "bMakeSplash": true,
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Hail_Particle_BP_3.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.33"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Hail_Particle_BP_3.AkSound'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.5"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Hail_Particle_BP_3.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.33"
+      }
+    }
+  },
+  {
+    "Type": "WeatherParticleBP_C",
+    "Name": "Weather_Heavyrain_Particle_BP_2",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherParticleBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherParticleBP.WeatherParticleBP_C'",
+    "Properties": {
+      "bMakeSplash": true,
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Heavyrain_Particle_BP_2.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.34"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Heavyrain_Particle_BP_2.AkSound'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.6"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Heavyrain_Particle_BP_2.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.34"
+      }
+    }
+  },
+  {
+    "Type": "WeatherParticleBP_C",
+    "Name": "Weather_Lightrain_Particle_BP_1",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherParticleBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherParticleBP.WeatherParticleBP_C'",
+    "Properties": {
+      "bMakeSplash": true,
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Lightrain_Particle_BP_1.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.35"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Lightrain_Particle_BP_1.AkSound'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Lightrain_Particle_BP_1.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.35"
+      }
+    }
+  },
+  {
+    "Type": "WeatherParticleBP_C",
+    "Name": "Weather_Wind_Particle_BP_0",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherParticleBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherParticleBP.WeatherParticleBP_C'",
+    "Properties": {
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Wind_Particle_BP_0.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.36"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Wind_Particle_BP_0.AkSound'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.8"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Tiger_Overcast:PersistentLevel.Weather_Wind_Particle_BP_0.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.36"
+      }
+    }
+  },
+  {
+    "Type": "WeatherPPControllerBP_C",
+    "Name": "WeatherPPControllerBP_18",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherPPControllerBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherPPControllerBP.WeatherPPControllerBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.WeatherPPControllerBP_18.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.47"
+      },
+      "WeatherSystem_MPC": {
+        "ObjectName": "MaterialParameterCollection'MPC_WeatherSystem'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/MPC_WeatherSystem.0"
+      },
+      "PPVolume": {
+        "ObjectName": "PostProcessVolume'Weather_Tiger_Overcast:PersistentLevel.PostProcessVolume'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.37"
+      },
+      "PPMaterial": {
+        "ObjectName": "MaterialInstanceConstant'M_RainCamera_New_Inst'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_RainCamera_New_Inst.0"
+      },
+      "bShowDebug_PP": true,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.WeatherPPControllerBP_18.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.47"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.WeatherPPControllerBP_18.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.47"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "WetEffectBP_C",
+    "Name": "WetEffectBP_80",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WetEffectBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WetEffectBP.WetEffectBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.WetEffectBP_80.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.48"
+      },
+      "RainMPC": {
+        "ObjectName": "MaterialParameterCollection'Rain_Parameter'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/Rain_Parameter.0"
+      },
+      "WetGroundCurve": {
+        "ObjectName": "CurveFloat'WetGroundCurve_Erangel'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/WetGroundCurve_Erangel.0"
+      },
+      "WetVehicleCurve": {
+        "ObjectName": "CurveFloat'WetVehicleCurve_Erangel'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/WetVehicleCurve_Erangel.0"
+      },
+      "WetNormalCurve": {
+        "ObjectName": "CurveFloat'WetNormalCurve_Erangel'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/WetNormalCurve_Erangel.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.WetEffectBP_80.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.48"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Tiger_Overcast:PersistentLevel.WetEffectBP_80.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.48"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "WindDirectionalSource",
+    "Name": "WindDirectionalSource",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WindDirectionalSource'",
+    "Properties": {
+      "Component": {
+        "ObjectName": "WindDirectionalSourceComponent'Weather_Tiger_Overcast:PersistentLevel.WindDirectionalSource.WindDirectionalSourceComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.61"
+      },
+      "RootComponent": {
+        "ObjectName": "WindDirectionalSourceComponent'Weather_Tiger_Overcast:PersistentLevel.WindDirectionalSource.WindDirectionalSourceComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.61"
+      }
+    }
+  },
+  {
+    "Type": "WindDirectionalSourceComponent",
+    "Name": "WindDirectionalSourceComponent0",
+    "Outer": "WindDirectionalSource",
+    "Class": "UScriptClass'WindDirectionalSourceComponent'",
+    "Properties": {
+      "Strength": 0.4,
+      "Speed": 0.2,
+      "RelativeLocation": {
+        "X": 276267.53,
+        "Y": 563121.44,
+        "Z": 1601.6832
+      }
+    }
+  },
+  {
+    "Type": "World",
+    "Name": "Weather_Tiger_Overcast",
+    "Class": "UScriptClass'World'",
+    "Properties": {
+      "DefaultPhysicsVolume": null
+    },
+    "PersistentLevel": {
+      "ObjectName": "Level'Weather_Tiger_Overcast:PersistentLevel'",
+      "ObjectPath": "TslGame/Content/Maps/tiger/Weather/Weather_Tiger_Overcast.28"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  },
+  {
+    "Type": "WorldSettings",
+    "Name": "WorldSettings",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WorldSettings'"
+  }
+]

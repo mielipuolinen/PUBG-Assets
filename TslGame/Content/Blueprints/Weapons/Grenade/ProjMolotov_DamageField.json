@@ -3,6 +3,7 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsForKoreanRating_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "BoolSize": 1,
     "bIsNativeBool": true
@@ -11,8 +12,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsForChineseLicensing_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjMolotov_DamageField_C:UserConstructionScript.CallFunc_IsForKoreanRating_ReturnValue",
+      "ObjectName": "BoolProperty'ProjMolotov_DamageField_C:UserConstructionScript.CallFunc_IsForKoreanRating_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.0"
     },
     "BoolSize": 1,
@@ -22,14 +24,15 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjMolotov_DamageField_C",
+    "Class": "UScriptClass'Function'",
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "Children": [
       {
-        "ObjectName": "BoolProperty ProjMolotov_DamageField_C:UserConstructionScript.CallFunc_IsForChineseLicensing_ReturnValue",
+        "ObjectName": "BoolProperty'ProjMolotov_DamageField_C:UserConstructionScript.CallFunc_IsForChineseLicensing_ReturnValue'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.1"
       }
     ],
@@ -38,69 +41,71 @@
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjMolotov_DamageField_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjMolotov_DamageField_C:SimpleConstructionScript_0",
+        "ObjectName": "SimpleConstructionScript'ProjMolotov_DamageField_C:SimpleConstructionScript_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.7"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslDamageField",
+      "ObjectName": "Class'TslDamageField'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "Function ProjMolotov_DamageField_C:UserConstructionScript",
+        "ObjectName": "Function'ProjMolotov_DamageField_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.2"
       }
     ],
     "FuncMap": {
       "UserConstructionScript": {
-        "ObjectName": "Function ProjMolotov_DamageField_C:UserConstructionScript",
+        "ObjectName": "Function'ProjMolotov_DamageField_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.2"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjMolotov_DamageField_C Default__ProjMolotov_DamageField_C",
+      "ObjectName": "ProjMolotov_DamageField_C'Default__ProjMolotov_DamageField_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.4"
     }
   },
   {
     "Type": "ProjMolotov_DamageField_C",
     "Name": "Default__ProjMolotov_DamageField_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.ProjMolotov_DamageField_C'",
     "Properties": {
       "DamageRadius": 70.0,
       "DamageFieldFX": {
-        "ObjectName": "ParticleSystem P_Molotov_Fire_Optimized",
+        "ObjectName": "ParticleSystem'P_Molotov_Fire_Optimized'",
         "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Molotov_Fire_Optimized.157"
       },
       "DamageFieldType": "EDamageFieldType::DirectTick",
       "DamageType": {
-        "ObjectName": "BlueprintGeneratedClass DmgType_Molotov_C",
+        "ObjectName": "BlueprintGeneratedClass'DmgType_Molotov_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Molotov.0"
       },
       "DebuffTemplate": {
-        "ObjectName": "BlueprintGeneratedClass Buff_FireDOT_C",
+        "ObjectName": "BlueprintGeneratedClass'Buff_FireDOT_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.31"
       },
       "SphereCollision": {
-        "ObjectName": "SphereComponent Default__ProjMolotov_DamageField_C:SphereCollision",
+        "ObjectName": "SphereComponent'Default__ProjMolotov_DamageField_C:SphereCollision'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.8"
       },
       "SimpleCollision": {
-        "ObjectName": "TslSimpleCollisionReceiver Default__ProjMolotov_DamageField_C:SimpleCollision",
+        "ObjectName": "TslSimpleCollisionReceiver'Default__ProjMolotov_DamageField_C:SimpleCollision'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.9"
       },
       "RootComponent": {
-        "ObjectName": "SphereComponent Default__ProjMolotov_DamageField_C:SphereCollision",
+        "ObjectName": "SphereComponent'Default__ProjMolotov_DamageField_C:SphereCollision'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.8"
       }
     }
@@ -108,19 +113,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "ProjMolotov_DamageField_C"
+    "Outer": "ProjMolotov_DamageField_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjMolotov_DamageField_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'ProjMolotov_DamageField_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.5"
       },
       "VariableGuid": "9DD632BC-4EEA668E-886FE49A-9E67B3CF",
@@ -131,9 +138,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0",
     "Outer": "ProjMolotov_DamageField_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjMolotov_DamageField_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectName": "SCS_Node'ProjMolotov_DamageField_C:SimpleConstructionScript_0.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.6"
       }
     }
@@ -142,12 +150,13 @@
     "Type": "SphereComponent",
     "Name": "SphereCollision",
     "Outer": "Default__ProjMolotov_DamageField_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "OnComponentBeginOverlap": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "ProjMolotov_DamageField_C Default__ProjMolotov_DamageField_C",
+              "ObjectName": "ProjMolotov_DamageField_C'Default__ProjMolotov_DamageField_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.4"
             },
             "FunctionName": "OverlapStart"
@@ -158,7 +167,7 @@
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "ProjMolotov_DamageField_C Default__ProjMolotov_DamageField_C",
+              "ObjectName": "ProjMolotov_DamageField_C'Default__ProjMolotov_DamageField_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.4"
             },
             "FunctionName": "OverlapEnd"
@@ -171,9 +180,10 @@
     "Type": "TslSimpleCollisionReceiver",
     "Name": "SimpleCollision",
     "Outer": "Default__ProjMolotov_DamageField_C",
+    "Class": "UScriptClass'TslSimpleCollisionReceiver'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjMolotov_DamageField_C:SphereCollision",
+        "ObjectName": "SphereComponent'Default__ProjMolotov_DamageField_C:SphereCollision'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.8"
       }
     }

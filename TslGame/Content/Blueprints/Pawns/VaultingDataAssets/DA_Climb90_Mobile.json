@@ -1,0 +1,107 @@
+[
+  {
+    "Type": "VaultingData",
+    "Name": "DA_Climb90_Mobile",
+    "Class": "UScriptClass'VaultingData'",
+    "Properties": {
+      "MoveRequirements": {
+        "RowRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 5
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": 9
+          }
+        },
+        "SpeedRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 350.0
+          }
+        },
+        "IsClimb": "EVaultRequirementType::VaultReqType_True"
+      },
+      "VaultAnimType": "EVaultAnimType::Climb90_Mobile",
+      "LocationStartNormalScale": 90.0,
+      "LocationStartZOffset": -90.0,
+      "LocationEndNormalScale": -30.0,
+      "bIsClimb": true,
+      "PreApexSpeedScale": 1.1,
+      "PostApexSpeedScale": 1.0,
+      "AnimBlendInTime": 0.16,
+      "AnimBlendOutTime": 0.55,
+      "ApexAdditiveStartTime": 0.2,
+      "ApexAdditiveEndTime": 0.7,
+      "StartCutoffByDistance_InMap": {
+        "X": 40.0,
+        "Y": 200.0
+      },
+      "StartCutoffByDistance_OutMap": {
+        "X": 0.01,
+        "Y": 0.0
+      },
+      "StartCutoffBySpeed_InMap": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "StartCutoffBySpeed_OutMap": {
+        "X": 0.0,
+        "Y": 0.025
+      },
+      "PlayrateBySpeed_InMap_PreApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PreApex": {
+        "X": 1.0,
+        "Y": 1.25
+      },
+      "PlayrateBySpeed_InMap_PostApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PostApex": {
+        "X": 1.0,
+        "Y": 1.3
+      },
+      "AnimationSequence": {
+        "ObjectName": "AnimSequence'Unarmed_Vaulting_Climb_90'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Unarmed_Vaulting_Climb_90.3"
+      },
+      "AnimationSequence_Rifle": {
+        "ObjectName": "AnimSequence'Unarmed_Vaulting_Climb_Rifle_90'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Unarmed_Vaulting_Climb_Rifle_90.3"
+      },
+      "AnimationCurve": {
+        "ObjectName": "CurveFloat'C_Climb_90_Mobile'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Curves/C_Climb_90_Mobile.0"
+      },
+      "CharLocationInterpSpeedInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "CharLocationInterpSpeedOutMap": {
+        "X": 3.0,
+        "Y": 5.0
+      },
+      "TimerProgressionByDistanceInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "TimerProgressionByDistanceOutMap": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "TimerProgressionVTimerMax": 0.05,
+      "VaultEndTimerNormal": 1.0,
+      "VaultEndTimerFall": 0.8,
+      "bCanVaultWithWeapon": true,
+      "PostVaultTimerProgressionScale": 0.83,
+      "bUseMappedVTimerDampening": true,
+      "MappedDampeningScalar": 0.1,
+      "MappedDampeningVTimerMax": 0.1
+    }
+  }
+]

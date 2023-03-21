@@ -1,0 +1,107 @@
+[
+  {
+    "Type": "VaultingData",
+    "Name": "DA_Vault90_Slide2",
+    "Class": "UScriptClass'VaultingData'",
+    "Properties": {
+      "MoveRequirements": {
+        "RowRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 5
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": 9
+          }
+        },
+        "SpeedRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 350.0
+          }
+        },
+        "IsVault": "EVaultRequirementType::VaultReqType_True",
+        "IsSlide": "EVaultRequirementType::VaultReqType_True",
+        "IsNarrow": "EVaultRequirementType::VaultReqType_Any"
+      },
+      "VaultAnimType": "EVaultAnimType::Vault90_Slide",
+      "LocationStartNormalScale": 150.0,
+      "LocationStartZOffset": -90.0,
+      "LocationEndNormalScale": -150.0,
+      "LocationEndZOffset": -120.0,
+      "bIsSlide": true,
+      "PreApexSpeedScale": 0.6,
+      "PostApexSpeedScale": 0.45,
+      "AnimBlendInTime": 0.16,
+      "AnimBlendOutTime": 0.4,
+      "ApexAdditiveStartTime": 0.5,
+      "ApexAdditiveEndTime": 0.66,
+      "StartCutoffByDistance_InMap": {
+        "X": 40.0,
+        "Y": 200.0
+      },
+      "StartCutoffByDistance_OutMap": {
+        "X": 0.03,
+        "Y": 0.0
+      },
+      "StartCutoffBySpeed_InMap": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "StartCutoffBySpeed_OutMap": {
+        "X": 0.0,
+        "Y": 0.02
+      },
+      "PlayrateBySpeed_InMap_PreApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PreApex": {
+        "X": 1.0,
+        "Y": 1.65
+      },
+      "PlayrateBySpeed_InMap_PostApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PostApex": {
+        "X": 1.0,
+        "Y": 1.35
+      },
+      "AnimationSequence": {
+        "ObjectName": "AnimSequence'Unarmed_Vaulting_Jump_90_Slide'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Unarmed_Vaulting_Jump_90_Slide.8"
+      },
+      "AnimationCurve": {
+        "ObjectName": "CurveFloat'C_Vault_90_Slide'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Curves/C_Vault_90_Slide.0"
+      },
+      "CharLocationInterpSpeedInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "CharLocationInterpSpeedOutMap": {
+        "X": 2.0,
+        "Y": 3.0
+      },
+      "TimerProgressionByDistanceInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "TimerProgressionByDistanceOutMap": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "TimerProgressionVTimerMax": 0.05,
+      "VaultEndTimerNormal": 1.0,
+      "VaultEndTimerFall": 0.8,
+      "CharacterPostVaultVelocityScalar": 0.8,
+      "bCanVaultWithWeapon": true,
+      "PostVaultTimerProgressionScale": 1.0,
+      "bUseMappedVTimerDampening": true,
+      "MappedDampeningScalar": 0.3,
+      "MappedDampeningVTimerMax": 0.1
+    }
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "Type": "TslReactionData",
+    "Name": "DA_BulletproofShield_Castable",
+    "Class": "UScriptClass'TslReactionData'",
+    "Properties": {
+      "DestroyDelay": 5.0,
+      "VehicleReactionData": {
+        "ReactionType": "EReactionType::Reaction_Physics"
+      },
+      "RadialDamageReactionData": {
+        "ReactionType": "EReactionType::Reaction_Physics",
+        "ReactionForceFactor": 2000.0,
+        "ReactionMinDamage": 200.0
+      },
+      "PointDamageReactionData": {
+        "ReactionType": "EReactionType::Reaction_Destructible",
+        "ReactionForceFactor": 1.0,
+        "ReactionMinDamage": 1800.0,
+        "DamageAccumulateTimeout": 0.0
+      },
+      "DestructibleReactionSoundAk": {
+        "ObjectName": "AkAudioEvent'Weapon_Mortar_Explosion_Normal'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/Mortar/Weapon_Mortar_Explosion_Normal.0"
+      }
+    }
+  }
+]

@@ -1,0 +1,3555 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "CastableHealOverTimeItemTable",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "ScriptStruct'ItemTableRowCastableHealOverTime'",
+        "ObjectPath": "/Script/TslGame"
+      }
+    },
+    "Rows": {
+      "0": {
+        "HealOverTimeBuffClass": "/Game/Blueprints/FBR/Buff/Buff_HealOverTime_super_FBR1.Buff_HealOverTime_super_FBR1_C",
+        "HealTeammateWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "HealSelfWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "bCanUseInWater": false,
+        "CastConfig": {
+          "CastName": {
+            "TableId": "/Game/Item/Usable/NS_Item_Usable_CastNames.NS_Item_Usable_CastNames",
+            "Key": "K_GDU_04"
+          },
+          "CastTime": 2.0,
+          "CastPriority": "ECastPriority::Normal",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": true,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 1000.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": true,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::EnergyDrink",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "CastableItemType": "ECastableItemType::EnergyDrink",
+        "bConsumeBeforeCasting": false,
+        "Buffs": [],
+        "bStackable": true,
+        "bUsable": true,
+        "bIsConsumable": true,
+        "bSetStackMaterialParameter": false,
+        "bDisableSpawnInGame": false,
+        "StackCount": 1,
+        "DefaultStackCount": 1,
+        "ItemName": {
+          "TableId": "/Game/Item/Usable/NS_Item_Usable_ItemNames.NS_Item_Usable_ItemNames",
+          "Key": "K_GDU_00"
+        },
+        "ItemCategory": {
+          "TableId": "/Game/Item/Weapon/NS_WEAPONCATEGORY.NS_WEAPONCATEGORY",
+          "Key": "K_LPU_10"
+        },
+        "ItemDetailedName": {
+          "TableId": "/Game/Item/Usable/NS_Item_Usable_ItemNames.NS_Item_Usable_ItemNames",
+          "Key": "K_GDU_00"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/Item/Usable/NS_Item_Usable_ItemDescriptions.NS_Item_Usable_ItemDescriptions",
+          "Key": "K_GDU_00"
+        },
+        "ItemMaxInteractableDistance": 0.0,
+        "StackCountMax": 100,
+        "SpacePerItem": 0.1,
+        "DroppedMesh": "/Game/Assets/Boost_Item/Super_Drink/SM_Super_Drink_Drop.SM_Super_Drink_Drop",
+        "DroppedMeshScale": 1.5,
+        "bDropAsProjectile": false,
+        "bThermalScopeInteractive": false,
+        "ThermalItemType": "EThermalItemType::CountOrNone",
+        "ProjectileConfig": "/Game/Blueprints/ItemThrow/DA_Item_Heal_Bandage_Projectile.DA_Item_Heal_Bandage_Projectile",
+        "Icon": "/Game/UI/item/boost/icon_Boost_Super_Drink.icon_Boost_Super_Drink",
+        "ToolTipIcon": "/Game/UI/item/boost/icon_Boost_Super_Drink.icon_Boost_Super_Drink",
+        "IconSizeRatio": 1.0,
+        "ToolTipIconSizeRatio": 1.0,
+        "DropSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "DropAnimation": "None",
+        "PickUpSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "PickUpAnimationOverride": "EPickupAnimType::None",
+        "InventoryPutSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "SortPriority": 997,
+        "Category": "EItemCategory::Use",
+        "SubCategory": "Heal",
+        "bIsToy": false,
+        "bIsLobbyItem": false,
+        "LobbyItemID": 0,
+        "LobbyItemDesc": {
+          "bCashSellable": false,
+          "bPointSellable": false,
+          "bMarketable": false,
+          "bPointRefundable": false,
+          "XboxConsumableId": "",
+          "Tier": "ELobbyItemTier::Basic",
+          "Category": "ELobbyItemCategory::Belt",
+          "Description": {
+            "CultureInvariantString": null
+          },
+          "bTradeUpResult": false,
+          "bTradeUpMaterial": false,
+          "Platforms": [],
+          "CashSellingPrice": 0.0,
+          "PointSellingType": "ELobbyItemPointSellingType::Normal",
+          "PointSellingPrice": 0,
+          "PointRefundingPrice": 0
+        },
+        "bIsLobbyWeapon": false,
+        "LobbyWeaponID": 0,
+        "LobbyWeaponInstance": "",
+        "bVested": false,
+        "bDropVolatility": false,
+        "bCanDropItem": true,
+        "Note": "",
+        "AIFullValue": 0,
+        "ItemSubType": 601,
+        "ItemID": "Item_Boost_SuperDrink_C",
+        "ItemClass": {
+          "ObjectName": "Class'HealOverTimeItem'",
+          "ObjectPath": "/Script/TslGame"
+        },
+        "CastableImplementClass": null,
+        "DestructionBehavior": null
+      },
+      "1": {
+        "HealOverTimeBuffClass": "/Game/Blueprints/Buff/Buff_HealOverTime.Buff_HealOverTime_C",
+        "HealTeammateWithTraumaBagCastConfig": {
+          "CastName": {
+            "Namespace": "NS_ItemLegacy",
+            "Key": "K_GD_0786",
+            "SourceString": "M_ItemLegacy_0786",
+            "LocalizedString": "Bandaging Wounds"
+          },
+          "CastTime": 3.0,
+          "CastPriority": "ECastPriority::Normal",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 300.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 1000.0,
+          "CastWalkSpeedModifier": 2.0,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": true,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::Bandage",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "HealSelfWithTraumaBagCastConfig": {
+          "CastName": {
+            "Namespace": "NS_ItemLegacy",
+            "Key": "K_GD_0786",
+            "SourceString": "M_ItemLegacy_0786",
+            "LocalizedString": "Bandaging Wounds"
+          },
+          "CastTime": 3.0,
+          "CastPriority": "ECastPriority::Normal",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": true,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 1000.0,
+          "CastWalkSpeedModifier": 2.0,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": true,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::Bandage",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "bCanUseInWater": false,
+        "CastConfig": {
+          "CastName": {
+            "Namespace": "NS_ItemLegacy",
+            "Key": "K_GD_0786",
+            "SourceString": "M_ItemLegacy_0786",
+            "LocalizedString": "Bandaging Wounds"
+          },
+          "CastTime": 4.0,
+          "CastPriority": "ECastPriority::Normal",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 300.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": true,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 1000.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": true,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::Bandage",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "CastableItemType": "ECastableItemType::Bandage",
+        "bConsumeBeforeCasting": false,
+        "Buffs": [],
+        "bStackable": true,
+        "bUsable": true,
+        "bIsConsumable": true,
+        "bSetStackMaterialParameter": false,
+        "bDisableSpawnInGame": false,
+        "StackCount": 5,
+        "DefaultStackCount": 5,
+        "ItemName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_Bandage"
+        },
+        "ItemCategory": {
+          "TableId": "/Game/Item/Weapon/NS_WEAPONCATEGORY.NS_WEAPONCATEGORY",
+          "Key": "K_LPU_10"
+        },
+        "ItemDetailedName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_Bandage"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemDescriptions.ST_Item_Usable_ItemDescriptions",
+          "Key": "Item_Heal_Bandage"
+        },
+        "ItemMaxInteractableDistance": 0.0,
+        "StackCountMax": 100,
+        "SpacePerItem": 2.0,
+        "DroppedMesh": "/Game/Assets/ThirdParty/FirstAidKit/Models/SM_emergencyBangadeBig_01.SM_emergencyBangadeBig_01",
+        "DroppedMeshScale": 2.5,
+        "bDropAsProjectile": false,
+        "bThermalScopeInteractive": false,
+        "ThermalItemType": "EThermalItemType::CountOrNone",
+        "ProjectileConfig": "/Game/Blueprints/ItemThrow/DA_Item_Heal_Bandage_Projectile.DA_Item_Heal_Bandage_Projectile",
+        "Icon": "/Game/UI/item/health/icon_Heal_Bandage.icon_Heal_Bandage",
+        "ToolTipIcon": "/Game/UI/item/health/icon_Heal_FirstAid.icon_Heal_FirstAid",
+        "IconSizeRatio": 1.0,
+        "ToolTipIconSizeRatio": 1.0,
+        "DropSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "DropAnimation": "None",
+        "PickUpSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "PickUpAnimationOverride": "EPickupAnimType::None",
+        "InventoryPutSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "SortPriority": 997,
+        "Category": "EItemCategory::Use",
+        "SubCategory": "Heal",
+        "bIsToy": false,
+        "bIsLobbyItem": false,
+        "LobbyItemID": 0,
+        "LobbyItemDesc": {
+          "bCashSellable": false,
+          "bPointSellable": false,
+          "bMarketable": false,
+          "bPointRefundable": false,
+          "XboxConsumableId": "",
+          "Tier": "ELobbyItemTier::Basic",
+          "Category": "ELobbyItemCategory::Belt",
+          "Description": {
+            "CultureInvariantString": null
+          },
+          "bTradeUpResult": false,
+          "bTradeUpMaterial": false,
+          "Platforms": [],
+          "CashSellingPrice": 0.0,
+          "PointSellingType": "ELobbyItemPointSellingType::Normal",
+          "PointSellingPrice": 0,
+          "PointRefundingPrice": 0
+        },
+        "bIsLobbyWeapon": false,
+        "LobbyWeaponID": 0,
+        "LobbyWeaponInstance": "",
+        "bVested": false,
+        "bDropVolatility": false,
+        "bCanDropItem": true,
+        "Note": "",
+        "AIFullValue": 0,
+        "ItemSubType": 601,
+        "ItemID": "Item_Heal_Bandage_C",
+        "ItemClass": {
+          "ObjectName": "Class'HealOverTimeItem'",
+          "ObjectPath": "/Script/TslGame"
+        },
+        "CastableImplementClass": null,
+        "DestructionBehavior": null
+      },
+      "2": {
+        "HealOverTimeBuffClass": "/Game/Blueprints/Buff/Buff_HealOverTime_FirstAid.Buff_HealOverTime_FirstAid_C",
+        "HealTeammateWithTraumaBagCastConfig": {
+          "CastName": {
+            "Namespace": "NS_ItemLegacy",
+            "Key": "K_GD_0787",
+            "SourceString": "M_ItemLegacy_0787",
+            "LocalizedString": "Using First Aid Kit"
+          },
+          "CastTime": 3.0,
+          "CastPriority": "ECastPriority::Normal",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 300.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 2.0,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::Bandage",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "HealSelfWithTraumaBagCastConfig": {
+          "CastName": {
+            "Namespace": "NS_ItemLegacy",
+            "Key": "K_GD_0787",
+            "SourceString": "M_ItemLegacy_0787",
+            "LocalizedString": "Using First Aid Kit"
+          },
+          "CastTime": 3.0,
+          "CastPriority": "ECastPriority::Normal",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 1000.0,
+          "CastWalkSpeedModifier": 2.0,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::Bandage",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "bCanUseInWater": false,
+        "CastConfig": {
+          "CastName": {
+            "Namespace": "NS_ItemLegacy",
+            "Key": "K_GD_0787",
+            "SourceString": "M_ItemLegacy_0787",
+            "LocalizedString": "Using First Aid Kit"
+          },
+          "CastTime": 5.9,
+          "CastPriority": "ECastPriority::High",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 300.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 1000.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::FirstAid",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "CastableItemType": "ECastableItemType::FirstAid",
+        "bConsumeBeforeCasting": false,
+        "Buffs": [],
+        "bStackable": true,
+        "bUsable": true,
+        "bIsConsumable": true,
+        "bSetStackMaterialParameter": false,
+        "bDisableSpawnInGame": false,
+        "StackCount": 1,
+        "DefaultStackCount": 1,
+        "ItemName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_FirstAid"
+        },
+        "ItemCategory": {
+          "TableId": "/Game/Item/Weapon/NS_WEAPONCATEGORY.NS_WEAPONCATEGORY",
+          "Key": "K_LPU_10"
+        },
+        "ItemDetailedName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_FirstAid"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemDescriptions.ST_Item_Usable_ItemDescriptions",
+          "Key": "Item_Heal_FirstAid"
+        },
+        "ItemMaxInteractableDistance": 0.0,
+        "StackCountMax": 100,
+        "SpacePerItem": 10.0,
+        "DroppedMesh": "/Game/Assets/ThirdParty/FirstAidKit/Models/SM_FirstAidPackMilitary_01.SM_FirstAidPackMilitary_01",
+        "DroppedMeshScale": 2.5,
+        "bDropAsProjectile": false,
+        "bThermalScopeInteractive": false,
+        "ThermalItemType": "EThermalItemType::CountOrNone",
+        "ProjectileConfig": "/Game/Blueprints/ItemThrow/DA_Item_Heal_FirstAid_Projectile.DA_Item_Heal_FirstAid_Projectile",
+        "Icon": "/Game/UI/item/health/icon_Heal_FirstAid.icon_Heal_FirstAid",
+        "ToolTipIcon": "/Game/UI/item/health/icon_Heal_FirstAid.icon_Heal_FirstAid",
+        "IconSizeRatio": 1.0,
+        "ToolTipIconSizeRatio": 1.0,
+        "DropSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "DropAnimation": "None",
+        "PickUpSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "PickUpAnimationOverride": "EPickupAnimType::None",
+        "InventoryPutSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "SortPriority": 998,
+        "Category": "EItemCategory::Use",
+        "SubCategory": "Heal",
+        "bIsToy": false,
+        "bIsLobbyItem": false,
+        "LobbyItemID": 0,
+        "LobbyItemDesc": {
+          "bCashSellable": false,
+          "bPointSellable": false,
+          "bMarketable": false,
+          "bPointRefundable": false,
+          "XboxConsumableId": "",
+          "Tier": "ELobbyItemTier::Basic",
+          "Category": "ELobbyItemCategory::Belt",
+          "Description": {
+            "CultureInvariantString": null
+          },
+          "bTradeUpResult": false,
+          "bTradeUpMaterial": false,
+          "Platforms": [],
+          "CashSellingPrice": 0.0,
+          "PointSellingType": "ELobbyItemPointSellingType::Normal",
+          "PointSellingPrice": 0,
+          "PointRefundingPrice": 0
+        },
+        "bIsLobbyWeapon": false,
+        "LobbyWeaponID": 0,
+        "LobbyWeaponInstance": "",
+        "bVested": false,
+        "bDropVolatility": false,
+        "bCanDropItem": true,
+        "Note": "",
+        "AIFullValue": 0,
+        "ItemSubType": 601,
+        "ItemID": "Item_Heal_FirstAid_C",
+        "ItemClass": {
+          "ObjectName": "Class'HealOverTimeItem'",
+          "ObjectPath": "/Script/TslGame"
+        },
+        "CastableImplementClass": null,
+        "DestructionBehavior": null
+      },
+      "3": {
+        "HealOverTimeBuffClass": "/Game/Blueprints/Buff/Buff_HealOverTime_Child1.Buff_HealOverTime_Child1_C",
+        "HealTeammateWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "HealSelfWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "bCanUseInWater": false,
+        "CastConfig": {
+          "CastName": {
+            "Namespace": "NS_ItemLegacy",
+            "Key": "K_GD_0786",
+            "SourceString": "M_ItemLegacy_0786",
+            "LocalizedString": "Bandaging Wounds"
+          },
+          "CastTime": 3.0,
+          "CastPriority": "ECastPriority::Normal",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": true,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 1000.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": true,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::FirstAid",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "CastableItemType": "ECastableItemType::FirstAid",
+        "bConsumeBeforeCasting": false,
+        "Buffs": [],
+        "bStackable": true,
+        "bUsable": true,
+        "bIsConsumable": true,
+        "bSetStackMaterialParameter": false,
+        "bDisableSpawnInGame": false,
+        "StackCount": 2,
+        "DefaultStackCount": 2,
+        "ItemName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_Bandage"
+        },
+        "ItemCategory": {
+          "TableId": "/Game/Item/Weapon/NS_WEAPONCATEGORY.NS_WEAPONCATEGORY",
+          "Key": "K_LPU_10"
+        },
+        "ItemDetailedName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_Bandage"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemDescriptions.ST_Item_Usable_ItemDescriptions",
+          "Key": "Item_Heal_Bandage"
+        },
+        "ItemMaxInteractableDistance": 0.0,
+        "StackCountMax": 100,
+        "SpacePerItem": 7.0,
+        "DroppedMesh": "/Game/Assets/ThirdParty/FirstAidKit/Models/SM_FirstAidPack.SM_FirstAidPack",
+        "DroppedMeshScale": 2.5,
+        "bDropAsProjectile": false,
+        "bThermalScopeInteractive": false,
+        "ThermalItemType": "EThermalItemType::CountOrNone",
+        "ProjectileConfig": "/Game/Blueprints/ItemThrow/DA_Item_Heal_Bandage_Projectile.DA_Item_Heal_Bandage_Projectile",
+        "Icon": "/Game/UI/item/boost/icon_Boost_EnergyDrink.icon_Boost_EnergyDrink",
+        "ToolTipIcon": "/Game/UI/item/health/icon_Heal_FirstAid.icon_Heal_FirstAid",
+        "IconSizeRatio": 1.0,
+        "ToolTipIconSizeRatio": 1.0,
+        "DropSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "DropAnimation": "None",
+        "PickUpSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "PickUpAnimationOverride": "EPickupAnimType::None",
+        "InventoryPutSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "SortPriority": 997,
+        "Category": "EItemCategory::Use",
+        "SubCategory": "Heal",
+        "bIsToy": false,
+        "bIsLobbyItem": false,
+        "LobbyItemID": 0,
+        "LobbyItemDesc": {
+          "bCashSellable": false,
+          "bPointSellable": false,
+          "bMarketable": false,
+          "bPointRefundable": false,
+          "XboxConsumableId": "",
+          "Tier": "ELobbyItemTier::Basic",
+          "Category": "ELobbyItemCategory::Belt",
+          "Description": {
+            "CultureInvariantString": null
+          },
+          "bTradeUpResult": false,
+          "bTradeUpMaterial": false,
+          "Platforms": [],
+          "CashSellingPrice": 0.0,
+          "PointSellingType": "ELobbyItemPointSellingType::Normal",
+          "PointSellingPrice": 0,
+          "PointRefundingPrice": 0
+        },
+        "bIsLobbyWeapon": false,
+        "LobbyWeaponID": 0,
+        "LobbyWeaponInstance": "",
+        "bVested": false,
+        "bDropVolatility": false,
+        "bCanDropItem": true,
+        "Note": "",
+        "AIFullValue": 0,
+        "ItemSubType": 601,
+        "ItemID": "Item_Light_Heal_MedKit_C",
+        "ItemClass": {
+          "ObjectName": "Class'HealOverTimeItem'",
+          "ObjectPath": "/Script/TslGame"
+        },
+        "CastableImplementClass": null,
+        "DestructionBehavior": null
+      },
+      "4": {
+        "HealOverTimeBuffClass": "/Game/Blueprints/FBR/Buff/Buff_HealOverTime_Bandage_FBR.Buff_HealOverTime_Bandage_FBR_C",
+        "HealTeammateWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "HealSelfWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "bCanUseInWater": false,
+        "CastConfig": {
+          "CastName": {
+            "Namespace": "[54605BCB4E2C1CD40DB4D99268F343C8]",
+            "Key": "ECA662F24E14D6A8AAA6B6A00BEEEC3C",
+            "SourceString": "Bandaging Wounds",
+            "LocalizedString": "Bandaging Wounds"
+          },
+          "CastTime": 4.0,
+          "CastPriority": "ECastPriority::Normal",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": true,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 1000.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": true,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::Bandage",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "CastableItemType": "ECastableItemType::Bandage",
+        "bConsumeBeforeCasting": false,
+        "Buffs": [],
+        "bStackable": true,
+        "bUsable": true,
+        "bIsConsumable": true,
+        "bSetStackMaterialParameter": false,
+        "bDisableSpawnInGame": false,
+        "StackCount": 5,
+        "DefaultStackCount": 5,
+        "ItemName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_Bandage"
+        },
+        "ItemCategory": {
+          "TableId": "/Game/Item/Weapon/NS_WEAPONCATEGORY.NS_WEAPONCATEGORY",
+          "Key": "K_LPU_10"
+        },
+        "ItemDetailedName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_Bandage"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/StringTables/Mode/FBR/NS_Item_FBR_Heal_Descriptions.NS_Item_FBR_Heal_Descriptions",
+          "Key": "K_GDU_01"
+        },
+        "ItemMaxInteractableDistance": 0.0,
+        "StackCountMax": 100,
+        "SpacePerItem": 0.1,
+        "DroppedMesh": "/Game/Assets/ThirdParty/FirstAidKit/Models/SM_emergencyBangadeBig_01.SM_emergencyBangadeBig_01",
+        "DroppedMeshScale": 2.5,
+        "bDropAsProjectile": false,
+        "bThermalScopeInteractive": false,
+        "ThermalItemType": "EThermalItemType::CountOrNone",
+        "ProjectileConfig": "/Game/Blueprints/ItemThrow/DA_Item_Heal_Bandage_Projectile.DA_Item_Heal_Bandage_Projectile",
+        "Icon": "/Game/UI/item/health/icon_Heal_Bandage.icon_Heal_Bandage",
+        "ToolTipIcon": "/Game/UI/item/health/icon_Heal_FirstAid.icon_Heal_FirstAid",
+        "IconSizeRatio": 1.0,
+        "ToolTipIconSizeRatio": 1.0,
+        "DropSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "DropAnimation": "None",
+        "PickUpSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "PickUpAnimationOverride": "EPickupAnimType::None",
+        "InventoryPutSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "SortPriority": 997,
+        "Category": "EItemCategory::Use",
+        "SubCategory": "Heal",
+        "bIsToy": false,
+        "bIsLobbyItem": false,
+        "LobbyItemID": 0,
+        "LobbyItemDesc": {
+          "bCashSellable": false,
+          "bPointSellable": false,
+          "bMarketable": false,
+          "bPointRefundable": false,
+          "XboxConsumableId": "",
+          "Tier": "ELobbyItemTier::Basic",
+          "Category": "ELobbyItemCategory::Belt",
+          "Description": {
+            "CultureInvariantString": null
+          },
+          "bTradeUpResult": false,
+          "bTradeUpMaterial": false,
+          "Platforms": [],
+          "CashSellingPrice": 0.0,
+          "PointSellingType": "ELobbyItemPointSellingType::Normal",
+          "PointSellingPrice": 0,
+          "PointRefundingPrice": 0
+        },
+        "bIsLobbyWeapon": false,
+        "LobbyWeaponID": 0,
+        "LobbyWeaponInstance": "",
+        "bVested": false,
+        "bDropVolatility": false,
+        "bCanDropItem": true,
+        "Note": "",
+        "AIFullValue": 0,
+        "ItemSubType": 601,
+        "ItemID": "Item_Heal_Bandage_FBR_C",
+        "ItemClass": {
+          "ObjectName": "Class'HealOverTimeItem'",
+          "ObjectPath": "/Script/TslGame"
+        },
+        "CastableImplementClass": null,
+        "DestructionBehavior": null
+      },
+      "6": {
+        "HealOverTimeBuffClass": "/Game/Blueprints/FBR/Buff/Buff_HealOverTime_FirstAid_FBR.Buff_HealOverTime_FirstAid_FBR_C",
+        "HealTeammateWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "HealSelfWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "bCanUseInWater": false,
+        "CastConfig": {
+          "CastName": {
+            "Namespace": "[54605BCB4E2C1CD40DB4D99268F343C8]",
+            "Key": "CD71C5C34192C3341C883F80C688C831",
+            "SourceString": "Using First Aid Kit",
+            "LocalizedString": "Using First Aid Kit"
+          },
+          "CastTime": 5.9,
+          "CastPriority": "ECastPriority::High",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 1000.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::FirstAid",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "CastableItemType": "ECastableItemType::FirstAid",
+        "bConsumeBeforeCasting": false,
+        "Buffs": [],
+        "bStackable": true,
+        "bUsable": true,
+        "bIsConsumable": true,
+        "bSetStackMaterialParameter": false,
+        "bDisableSpawnInGame": false,
+        "StackCount": 1,
+        "DefaultStackCount": 1,
+        "ItemName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_FirstAid"
+        },
+        "ItemCategory": {
+          "TableId": "/Game/Item/Weapon/NS_WEAPONCATEGORY.NS_WEAPONCATEGORY",
+          "Key": "K_LPU_10"
+        },
+        "ItemDetailedName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_FirstAid"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/StringTables/Mode/FBR/NS_Item_FBR_Heal_Descriptions.NS_Item_FBR_Heal_Descriptions",
+          "Key": "K_GDU_02"
+        },
+        "ItemMaxInteractableDistance": 0.0,
+        "StackCountMax": 100,
+        "SpacePerItem": 0.1,
+        "DroppedMesh": "/Game/Assets/ThirdParty/FirstAidKit/Models/SM_FirstAidPackMilitary_01.SM_FirstAidPackMilitary_01",
+        "DroppedMeshScale": 2.5,
+        "bDropAsProjectile": false,
+        "bThermalScopeInteractive": false,
+        "ThermalItemType": "EThermalItemType::CountOrNone",
+        "ProjectileConfig": "/Game/Blueprints/ItemThrow/DA_Item_Heal_FirstAid_Projectile.DA_Item_Heal_FirstAid_Projectile",
+        "Icon": "/Game/UI/item/health/icon_Heal_FirstAid.icon_Heal_FirstAid",
+        "ToolTipIcon": "/Game/UI/item/health/icon_Heal_FirstAid.icon_Heal_FirstAid",
+        "IconSizeRatio": 1.0,
+        "ToolTipIconSizeRatio": 1.0,
+        "DropSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "DropAnimation": "None",
+        "PickUpSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "PickUpAnimationOverride": "EPickupAnimType::None",
+        "InventoryPutSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "SortPriority": 998,
+        "Category": "EItemCategory::Use",
+        "SubCategory": "Heal",
+        "bIsToy": false,
+        "bIsLobbyItem": false,
+        "LobbyItemID": 0,
+        "LobbyItemDesc": {
+          "bCashSellable": false,
+          "bPointSellable": false,
+          "bMarketable": false,
+          "bPointRefundable": false,
+          "XboxConsumableId": "",
+          "Tier": "ELobbyItemTier::Basic",
+          "Category": "ELobbyItemCategory::Belt",
+          "Description": {
+            "CultureInvariantString": null
+          },
+          "bTradeUpResult": false,
+          "bTradeUpMaterial": false,
+          "Platforms": [],
+          "CashSellingPrice": 0.0,
+          "PointSellingType": "ELobbyItemPointSellingType::Normal",
+          "PointSellingPrice": 0,
+          "PointRefundingPrice": 0
+        },
+        "bIsLobbyWeapon": false,
+        "LobbyWeaponID": 0,
+        "LobbyWeaponInstance": "",
+        "bVested": false,
+        "bDropVolatility": false,
+        "bCanDropItem": true,
+        "Note": "",
+        "AIFullValue": 0,
+        "ItemSubType": 601,
+        "ItemID": "Item_Heal_FirstAid_FBR_C",
+        "ItemClass": {
+          "ObjectName": "Class'HealOverTimeItem'",
+          "ObjectPath": "/Script/TslGame"
+        },
+        "CastableImplementClass": null,
+        "DestructionBehavior": null
+      },
+      "7": {
+        "HealOverTimeBuffClass": "/Game/Blueprints/Buff/Buff_HealOverTime_FirstAid.Buff_HealOverTime_FirstAid_C",
+        "HealTeammateWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "HealSelfWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "bCanUseInWater": false,
+        "CastConfig": {
+          "CastName": {
+            "Namespace": "NS_ItemLegacy",
+            "Key": "K_GD_0787",
+            "SourceString": "M_ItemLegacy_0787",
+            "LocalizedString": "Using First Aid Kit"
+          },
+          "CastTime": 3.0,
+          "CastPriority": "ECastPriority::High",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 1000.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::FirstAid",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "CastableItemType": "ECastableItemType::FirstAid",
+        "bConsumeBeforeCasting": false,
+        "Buffs": [],
+        "bStackable": true,
+        "bUsable": true,
+        "bIsConsumable": true,
+        "bSetStackMaterialParameter": false,
+        "bDisableSpawnInGame": false,
+        "StackCount": 1,
+        "DefaultStackCount": 1,
+        "ItemName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_FirstAid"
+        },
+        "ItemCategory": {
+          "TableId": "/Game/Item/Weapon/NS_WEAPONCATEGORY.NS_WEAPONCATEGORY",
+          "Key": "K_LPU_10"
+        },
+        "ItemDetailedName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_FirstAid"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemDescriptions.ST_Item_Usable_ItemDescriptions",
+          "Key": "Item_Heal_FirstAid"
+        },
+        "ItemMaxInteractableDistance": 0.0,
+        "StackCountMax": 100,
+        "SpacePerItem": 10.0,
+        "DroppedMesh": "/Game/Assets/ThirdParty/FirstAidKit/Models/SM_FirstAidPackMilitary_01.SM_FirstAidPackMilitary_01",
+        "DroppedMeshScale": 2.5,
+        "bDropAsProjectile": false,
+        "bThermalScopeInteractive": false,
+        "ThermalItemType": "EThermalItemType::CountOrNone",
+        "ProjectileConfig": "/Game/Blueprints/ItemThrow/DA_Item_Heal_FirstAid_Projectile.DA_Item_Heal_FirstAid_Projectile",
+        "Icon": "/Game/UI/item/health/icon_Heal_FirstAid.icon_Heal_FirstAid",
+        "ToolTipIcon": "/Game/UI/item/health/icon_Heal_FirstAid.icon_Heal_FirstAid",
+        "IconSizeRatio": 1.0,
+        "ToolTipIconSizeRatio": 1.0,
+        "DropSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "DropAnimation": "None",
+        "PickUpSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "PickUpAnimationOverride": "EPickupAnimType::None",
+        "InventoryPutSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "SortPriority": 998,
+        "Category": "EItemCategory::Use",
+        "SubCategory": "Heal",
+        "bIsToy": false,
+        "bIsLobbyItem": false,
+        "LobbyItemID": 0,
+        "LobbyItemDesc": {
+          "bCashSellable": false,
+          "bPointSellable": false,
+          "bMarketable": false,
+          "bPointRefundable": false,
+          "XboxConsumableId": "",
+          "Tier": "ELobbyItemTier::Basic",
+          "Category": "ELobbyItemCategory::Belt",
+          "Description": {
+            "CultureInvariantString": null
+          },
+          "bTradeUpResult": false,
+          "bTradeUpMaterial": false,
+          "Platforms": [],
+          "CashSellingPrice": 0.0,
+          "PointSellingType": "ELobbyItemPointSellingType::Normal",
+          "PointSellingPrice": 0,
+          "PointRefundingPrice": 0
+        },
+        "bIsLobbyWeapon": false,
+        "LobbyWeaponID": 0,
+        "LobbyWeaponInstance": "",
+        "bVested": false,
+        "bDropVolatility": false,
+        "bCanDropItem": true,
+        "Note": "",
+        "AIFullValue": 0,
+        "ItemSubType": 601,
+        "ItemID": "Item_Heal_FirstAid_ZD_C",
+        "ItemClass": {
+          "ObjectName": "Class'HealOverTimeItem'",
+          "ObjectPath": "/Script/TslGame"
+        },
+        "CastableImplementClass": null,
+        "DestructionBehavior": null
+      },
+      "8": {
+        "HealOverTimeBuffClass": "/Game/Blueprints/FBR/Buff/Buff_HealOverTime_FirstAid_FBR.Buff_HealOverTime_FirstAid_FBR_C",
+        "HealTeammateWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "HealSelfWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "bCanUseInWater": false,
+        "CastConfig": {
+          "CastName": {
+            "Namespace": "[54605BCB4E2C1CD40DB4D99268F343C8]",
+            "Key": "CD71C5C34192C3341C883F80C688C831",
+            "SourceString": "Using First Aid Kit",
+            "LocalizedString": "Using First Aid Kit"
+          },
+          "CastTime": 5.9,
+          "CastPriority": "ECastPriority::High",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 1000.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::FirstAid",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "CastableItemType": "ECastableItemType::FirstAid",
+        "bConsumeBeforeCasting": false,
+        "Buffs": [],
+        "bStackable": true,
+        "bUsable": true,
+        "bIsConsumable": true,
+        "bSetStackMaterialParameter": false,
+        "bDisableSpawnInGame": false,
+        "StackCount": 1,
+        "DefaultStackCount": 1,
+        "ItemName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_FirstAid"
+        },
+        "ItemCategory": {
+          "TableId": "/Game/Item/Weapon/NS_WEAPONCATEGORY.NS_WEAPONCATEGORY",
+          "Key": "K_LPU_10"
+        },
+        "ItemDetailedName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_FirstAid"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/StringTables/Mode/FBR/NS_Item_FBR_Heal_Descriptions.NS_Item_FBR_Heal_Descriptions",
+          "Key": "K_GDU_02"
+        },
+        "ItemMaxInteractableDistance": 0.0,
+        "StackCountMax": 100,
+        "SpacePerItem": 0.1,
+        "DroppedMesh": "/Game/Assets/ThirdParty/FirstAidKit/Models/SM_FirstAidPackMilitary_01.SM_FirstAidPackMilitary_01",
+        "DroppedMeshScale": 2.5,
+        "bDropAsProjectile": false,
+        "bThermalScopeInteractive": false,
+        "ThermalItemType": "EThermalItemType::CountOrNone",
+        "ProjectileConfig": "/Game/Blueprints/ItemThrow/DA_Item_Heal_FirstAid_Projectile.DA_Item_Heal_FirstAid_Projectile",
+        "Icon": "/Game/Blueprints/FBR/Item/icon_Heal_FirstAid_2.icon_Heal_FirstAid_2",
+        "ToolTipIcon": "/Game/Blueprints/FBR/Item/icon_Heal_FirstAid_2.icon_Heal_FirstAid_2",
+        "IconSizeRatio": 1.0,
+        "ToolTipIconSizeRatio": 1.0,
+        "DropSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "DropAnimation": "None",
+        "PickUpSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "PickUpAnimationOverride": "EPickupAnimType::None",
+        "InventoryPutSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "SortPriority": 998,
+        "Category": "EItemCategory::Use",
+        "SubCategory": "Heal",
+        "bIsToy": false,
+        "bIsLobbyItem": false,
+        "LobbyItemID": 0,
+        "LobbyItemDesc": {
+          "bCashSellable": false,
+          "bPointSellable": false,
+          "bMarketable": false,
+          "bPointRefundable": false,
+          "XboxConsumableId": "",
+          "Tier": "ELobbyItemTier::Basic",
+          "Category": "ELobbyItemCategory::Belt",
+          "Description": {
+            "CultureInvariantString": null
+          },
+          "bTradeUpResult": false,
+          "bTradeUpMaterial": false,
+          "Platforms": [],
+          "CashSellingPrice": 0.0,
+          "PointSellingType": "ELobbyItemPointSellingType::Normal",
+          "PointSellingPrice": 0,
+          "PointRefundingPrice": 0
+        },
+        "bIsLobbyWeapon": false,
+        "LobbyWeaponID": 0,
+        "LobbyWeaponInstance": "",
+        "bVested": false,
+        "bDropVolatility": false,
+        "bCanDropItem": true,
+        "Note": "",
+        "AIFullValue": 0,
+        "ItemSubType": 601,
+        "ItemID": "Item_Heal_FirstAid_FBR2021_C",
+        "ItemClass": {
+          "ObjectName": "Class'HealOverTimeItem'",
+          "ObjectPath": "/Script/TslGame"
+        },
+        "CastableImplementClass": null,
+        "DestructionBehavior": null
+      },
+      "9": {
+        "HealOverTimeBuffClass": "/Game/Blueprints/FBR/Buff/Buff_HealOverTime_Bandage_FBR.Buff_HealOverTime_Bandage_FBR_C",
+        "HealTeammateWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "HealSelfWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "bCanUseInWater": false,
+        "CastConfig": {
+          "CastName": {
+            "Namespace": "[54605BCB4E2C1CD40DB4D99268F343C8]",
+            "Key": "ECA662F24E14D6A8AAA6B6A00BEEEC3C",
+            "SourceString": "Bandaging Wounds",
+            "LocalizedString": "Bandaging Wounds"
+          },
+          "CastTime": 4.0,
+          "CastPriority": "ECastPriority::Normal",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": true,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 1000.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": true,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::Bandage",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "CastableItemType": "ECastableItemType::Bandage",
+        "bConsumeBeforeCasting": false,
+        "Buffs": [],
+        "bStackable": true,
+        "bUsable": true,
+        "bIsConsumable": true,
+        "bSetStackMaterialParameter": false,
+        "bDisableSpawnInGame": false,
+        "StackCount": 5,
+        "DefaultStackCount": 5,
+        "ItemName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_Bandage"
+        },
+        "ItemCategory": {
+          "TableId": "/Game/Item/Weapon/NS_WEAPONCATEGORY.NS_WEAPONCATEGORY",
+          "Key": "K_LPU_10"
+        },
+        "ItemDetailedName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_Bandage"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/StringTables/Mode/FBR/NS_Item_FBR_Heal_Descriptions.NS_Item_FBR_Heal_Descriptions",
+          "Key": "K_GDU_01"
+        },
+        "ItemMaxInteractableDistance": 0.0,
+        "StackCountMax": 100,
+        "SpacePerItem": 0.1,
+        "DroppedMesh": "/Game/Assets/ThirdParty/FirstAidKit/Models/SM_emergencyBangadeBig_01.SM_emergencyBangadeBig_01",
+        "DroppedMeshScale": 2.5,
+        "bDropAsProjectile": false,
+        "bThermalScopeInteractive": false,
+        "ThermalItemType": "EThermalItemType::CountOrNone",
+        "ProjectileConfig": "/Game/Blueprints/ItemThrow/DA_Item_Heal_Bandage_Projectile.DA_Item_Heal_Bandage_Projectile",
+        "Icon": "/Game/Blueprints/FBR/Item/icon_Heal_Bandage_2.icon_Heal_Bandage_2",
+        "ToolTipIcon": "/Game/Blueprints/FBR/Item/icon_Heal_Bandage_2.icon_Heal_Bandage_2",
+        "IconSizeRatio": 1.0,
+        "ToolTipIconSizeRatio": 1.0,
+        "DropSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "DropAnimation": "None",
+        "PickUpSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "PickUpAnimationOverride": "EPickupAnimType::None",
+        "InventoryPutSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_Bandage.Play_UI_Item_Equip_Usable_Bandage",
+        "SortPriority": 997,
+        "Category": "EItemCategory::Use",
+        "SubCategory": "Heal",
+        "bIsToy": false,
+        "bIsLobbyItem": false,
+        "LobbyItemID": 0,
+        "LobbyItemDesc": {
+          "bCashSellable": false,
+          "bPointSellable": false,
+          "bMarketable": false,
+          "bPointRefundable": false,
+          "XboxConsumableId": "",
+          "Tier": "ELobbyItemTier::Basic",
+          "Category": "ELobbyItemCategory::Belt",
+          "Description": {
+            "CultureInvariantString": null
+          },
+          "bTradeUpResult": false,
+          "bTradeUpMaterial": false,
+          "Platforms": [],
+          "CashSellingPrice": 0.0,
+          "PointSellingType": "ELobbyItemPointSellingType::Normal",
+          "PointSellingPrice": 0,
+          "PointRefundingPrice": 0
+        },
+        "bIsLobbyWeapon": false,
+        "LobbyWeaponID": 0,
+        "LobbyWeaponInstance": "",
+        "bVested": false,
+        "bDropVolatility": false,
+        "bCanDropItem": true,
+        "Note": "",
+        "AIFullValue": 0,
+        "ItemSubType": 601,
+        "ItemID": "Item_Heal_Bandage_FBR2021_C",
+        "ItemClass": {
+          "ObjectName": "Class'HealOverTimeItem'",
+          "ObjectPath": "/Script/TslGame"
+        },
+        "CastableImplementClass": null,
+        "DestructionBehavior": null
+      },
+      "10": {
+        "HealOverTimeBuffClass": "/Game/Blueprints/Buff/Buff_HealOverTime_FirstAid.Buff_HealOverTime_FirstAid_C",
+        "HealTeammateWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "HealSelfWithTraumaBagCastConfig": {
+          "CastName": {
+            "CultureInvariantString": null
+          },
+          "CastTime": 0.0,
+          "CastPriority": "ECastPriority::None",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 0.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 100.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::None",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "bCanUseInWater": false,
+        "CastConfig": {
+          "CastName": {
+            "Namespace": "NS_ItemLegacy",
+            "Key": "K_GD_0787",
+            "SourceString": "M_ItemLegacy_0787",
+            "LocalizedString": "Using First Aid Kit"
+          },
+          "CastTime": 3.9,
+          "CastPriority": "ECastPriority::High",
+          "CastLevel": "ECastLevel::NoRestriction",
+          "bIgnoreCastDistanceLimitation": true,
+          "CastMaxDistance": 100.0,
+          "CastMaxDistanceMultiplierOnServer": 5.0,
+          "CasterAndCastObjectMaxDistance": 300.0,
+          "CasterAndCastObjectMaxDistanceMultiplierOnServer": 5.0,
+          "bCanCastInsideMovingVehicle": false,
+          "MaxLinAcceleration": 0.0,
+          "CastMaxSpeed": 1000.0,
+          "CastWalkSpeedModifier": 0.7,
+          "bNeedUnarm": true,
+          "bRecastsOnFinish": false,
+          "bForceStance": false,
+          "bSkipRestoreCharacterStance": false,
+          "bLockRotation": false,
+          "bCanCancelCasting": true,
+          "bCheckCastableConditionInProgress": false,
+          "bCancleWhenSprint": true,
+          "CastAnim": "ECastAnim::FirstAid",
+          "CancelBlockDuration": 0.0,
+          "CastAnimPlayRate": 1.0,
+          "IsPermanentCasting": false,
+          "CustomCastAnim": {
+            "StartAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "LoopAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            },
+            "EndAnim": {
+              "AnimSequence": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProne": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              },
+              "AnimSequenceProneFPP": {
+                "Sequence": null,
+                "PlayRate": 1.0
+              }
+            }
+          },
+          "Stance": "STANCE_None",
+          "InteractionTag": "None"
+        },
+        "CastableItemType": "ECastableItemType::FirstAid",
+        "bConsumeBeforeCasting": false,
+        "Buffs": [],
+        "bStackable": true,
+        "bUsable": true,
+        "bIsConsumable": true,
+        "bSetStackMaterialParameter": false,
+        "bDisableSpawnInGame": false,
+        "StackCount": 1,
+        "DefaultStackCount": 1,
+        "ItemName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_FirstAid"
+        },
+        "ItemCategory": {
+          "TableId": "/Game/Item/Weapon/NS_WEAPONCATEGORY.NS_WEAPONCATEGORY",
+          "Key": "K_LPU_10"
+        },
+        "ItemDetailedName": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemNames.ST_Item_Usable_ItemNames",
+          "Key": "ItemName_Heal_FirstAid"
+        },
+        "ItemDescription": {
+          "TableId": "/Game/Item/Usable/ST_Item_Usable_ItemDescriptions.ST_Item_Usable_ItemDescriptions",
+          "Key": "Item_Heal_FirstAid"
+        },
+        "ItemMaxInteractableDistance": 0.0,
+        "StackCountMax": 100,
+        "SpacePerItem": 10.0,
+        "DroppedMesh": "/Game/Assets/ThirdParty/FirstAidKit/Models/SM_FirstAidPackMilitary_01.SM_FirstAidPackMilitary_01",
+        "DroppedMeshScale": 2.5,
+        "bDropAsProjectile": false,
+        "bThermalScopeInteractive": false,
+        "ThermalItemType": "EThermalItemType::CountOrNone",
+        "ProjectileConfig": "/Game/Blueprints/ItemThrow/DA_Item_Heal_FirstAid_Projectile.DA_Item_Heal_FirstAid_Projectile",
+        "Icon": "/Game/UI/item/health/icon_Heal_FirstAid.icon_Heal_FirstAid",
+        "ToolTipIcon": "/Game/UI/item/health/icon_Heal_FirstAid.icon_Heal_FirstAid",
+        "IconSizeRatio": 1.0,
+        "ToolTipIconSizeRatio": 1.0,
+        "DropSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "DropAnimation": "None",
+        "PickUpSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "PickUpAnimationOverride": "EPickupAnimType::None",
+        "InventoryPutSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Equip_Usable/Play_UI_Item_Equip_Usable_FirstAid.Play_UI_Item_Equip_Usable_FirstAid",
+        "SortPriority": 998,
+        "Category": "EItemCategory::Use",
+        "SubCategory": "Heal",
+        "bIsToy": false,
+        "bIsLobbyItem": false,
+        "LobbyItemID": 0,
+        "LobbyItemDesc": {
+          "bCashSellable": false,
+          "bPointSellable": false,
+          "bMarketable": false,
+          "bPointRefundable": false,
+          "XboxConsumableId": "",
+          "Tier": "ELobbyItemTier::Basic",
+          "Category": "ELobbyItemCategory::Belt",
+          "Description": {
+            "CultureInvariantString": null
+          },
+          "bTradeUpResult": false,
+          "bTradeUpMaterial": false,
+          "Platforms": [],
+          "CashSellingPrice": 0.0,
+          "PointSellingType": "ELobbyItemPointSellingType::Normal",
+          "PointSellingPrice": 0,
+          "PointRefundingPrice": 0
+        },
+        "bIsLobbyWeapon": false,
+        "LobbyWeaponID": 0,
+        "LobbyWeaponInstance": "",
+        "bVested": false,
+        "bDropVolatility": false,
+        "bCanDropItem": true,
+        "Note": "",
+        "AIFullValue": 0,
+        "ItemSubType": 601,
+        "ItemID": "OP_Item_Heal_FirstAid_C",
+        "ItemClass": {
+          "ObjectName": "Class'HealOverTimeItem'",
+          "ObjectPath": "/Script/TslGame"
+        },
+        "CastableImplementClass": null,
+        "DestructionBehavior": null
+      }
+    }
+  }
+]

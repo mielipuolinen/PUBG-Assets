@@ -2,14 +2,15 @@
   {
     "Type": "WeaponGunDataAsset",
     "Name": "WeapMk47Mutant_WeaponGunData",
+    "Class": "UScriptClass'WeaponGunDataAsset'",
     "Properties": {
       "WeaponGunConfig": {
         "AmmoItemID": "Item_Ammo_762mm_C",
         "TracerClass": {
-          "ObjectName": "ParticleSystem P_Tracer_Mini14",
+          "ObjectName": "ParticleSystem'P_Tracer_Mini14'",
           "ObjectPath": "TslGame/Content/Export_Marek/Tracer/P_Tracer_Mini14.10"
         },
-        "TimeBetweenShots": 0.1,
+        "TimeBetweenShots": 0.075,
         "AttachmentTagData": [
           {
             "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
@@ -52,6 +53,7 @@
           }
         ],
         "bUseTimeBetweenBursts": true,
+        "TimeBetweenBursts": 0.075,
         "NoAnimReloadDuration": 3.1,
         "FiringModes": [
           "EFiringMode::Normal",
@@ -81,50 +83,50 @@
       },
       "WeaponAnimConfig": {
         "CharacterGripBlendspace": {
-          "ObjectName": "BlendSpace1D Weapon_Mk47_Grip_RD",
+          "ObjectName": "BlendSpace1D'Weapon_Mk47_Grip_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Weapon_Mk47_Grip_RD.0"
         },
         "CharacterLHGripBlendspace": {
-          "ObjectName": "BlendSpace Weapon_Mk47_LH_Grip_RD",
+          "ObjectName": "BlendSpace'Weapon_Mk47_LH_Grip_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Weapon_Mk47_LH_Grip_RD.0"
         },
         "CharacterFireSelector": {
-          "ObjectName": "AnimMontage Character_Weapon_Mk47_Firemode_Montage_RD",
+          "ObjectName": "AnimMontage'Character_Weapon_Mk47_Firemode_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Character_Weapon_Mk47_Firemode_Montage_RD.0"
         },
         "CharacterReloadTactical": {
-          "ObjectName": "AnimMontage Character_Weapon_Mk47_Reload_Tactical_Montage_RD",
+          "ObjectName": "AnimMontage'Character_Weapon_Mk47_Reload_Tactical_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Character_Weapon_Mk47_Reload_Tactical_Montage_RD.0"
         },
         "CharacterReloadCharge": {
-          "ObjectName": "AnimMontage Character_Weapon_Mk47_Reload_Charge_Montage_RD",
+          "ObjectName": "AnimMontage'Character_Weapon_Mk47_Reload_Charge_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Character_Weapon_Mk47_Reload_Charge_Montage_RD.0"
         },
         "WeaponReloadTactical": {
-          "ObjectName": "AnimMontage Weapon_Mk47_Reload_Tactical_FPP_Montage_RD",
+          "ObjectName": "AnimMontage'Weapon_Mk47_Reload_Tactical_FPP_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Weapon_RD/Weapon_Mk47_Reload_Tactical_FPP_Montage_RD.0"
         },
         "WeaponReloadCharge": {
-          "ObjectName": "AnimMontage Weapon_Mk47_Reload_Charge_FPP_Montage_RD",
+          "ObjectName": "AnimMontage'Weapon_Mk47_Reload_Charge_FPP_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Mutant/Redux/Weapon_RD/Weapon_Mk47_Reload_Charge_FPP_Montage_RD.0"
         },
         "WeaponInspectMontage": {
-          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectName": "AnimMontage'Rifle_Combat_FPP_Inspect_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
         },
         "ReloadDurationTactical": 2.7,
         "ReloadDurationCharge": 3.35,
         "ReloadDurationMagOut": 0.4,
         "ShotCameraShake": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_762_Mutant_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_Rifle_762_Mutant_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_762_Mutant.0"
         },
         "ShotCameraShakeIronsight": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_762_Mutant_Ironsight_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_Rifle_762_Mutant_Ironsight_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_762_Mutant_Ironsight.0"
         },
         "ShotCameraShakeADS": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_762_Mutant_ADS_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_Rifle_762_Mutant_ADS_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_762_Mutant_ADS.0"
         },
         "RecoilKickADS": 0.9,

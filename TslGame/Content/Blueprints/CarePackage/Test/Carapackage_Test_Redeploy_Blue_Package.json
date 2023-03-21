@@ -1,0 +1,772 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "ExplosionBlocker",
+    "Outer": "Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'BoxComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "P_CrateLand",
+    "Outer": "Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Test_Redeploy_Blue_Package_C:ExplosionBlocker'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.0"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'ParticleSystemComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Contains_ReturnValue",
+    "Outer": "ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StrProperty",
+    "Name": "CallFunc_GetObjectName_ReturnValue",
+    "Outer": "ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package",
+    "Class": "UScriptClass'StrProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Carapackage_Test_Redeploy_Blue_Package_C:ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package.CallFunc_Contains_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.2"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_ComponentBoundEvent_Hit",
+    "Outer": "ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StrProperty'Carapackage_Test_Redeploy_Blue_Package_C:ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package.CallFunc_GetObjectName_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.3"
+    },
+    "PropertyFlags": 549755813890,
+    "Struct": {
+      "ObjectName": "ScriptStruct'HitResult'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_ComponentBoundEvent_NormalImpulse",
+    "Outer": "ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Test_Redeploy_Blue_Package_C:ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package.K2Node_ComponentBoundEvent_Hit'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.4"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_ComponentBoundEvent_OtherComp",
+    "Outer": "ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Test_Redeploy_Blue_Package_C:ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package.K2Node_ComponentBoundEvent_NormalImpulse'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.5"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PrimitiveComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_ComponentBoundEvent_OtherActor",
+    "Outer": "ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Test_Redeploy_Blue_Package_C:ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package.K2Node_ComponentBoundEvent_OtherComp'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.6"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_ComponentBoundEvent_HitComponent",
+    "Outer": "ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Test_Redeploy_Blue_Package_C:ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package.K2Node_ComponentBoundEvent_OtherActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.7"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PrimitiveComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "___bool_IsClosed_Variable",
+    "Outer": "ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Test_Redeploy_Blue_Package_C:ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package.K2Node_ComponentBoundEvent_HitComponent'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.8"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "___bool_Has_Been_Initd_Variable",
+    "Outer": "ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Carapackage_Test_Redeploy_Blue_Package_C:ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package.___bool_IsClosed_Variable'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.9"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Carapackage_Test_Redeploy_Blue_Package_C:ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package.___bool_Has_Been_Initd_Variable'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.10"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package",
+    "Outer": "Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Test_Redeploy_Blue_Package_C:P_CrateLand'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Carapackage_Test_Redeploy_Blue_Package_C:ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.11"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Hit",
+    "Outer": "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "PropertyFlags": 549890032002,
+    "Struct": {
+      "ObjectName": "ScriptStruct'HitResult'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "NormalImpulse",
+    "Outer": "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Test_Redeploy_Blue_Package_C:BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature.Hit'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.13"
+    },
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OtherComp",
+    "Outer": "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Test_Redeploy_Blue_Package_C:BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature.NormalImpulse'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.14"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'PrimitiveComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OtherActor",
+    "Outer": "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Test_Redeploy_Blue_Package_C:BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature.OtherComp'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.15"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "HitComponent",
+    "Outer": "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Test_Redeploy_Blue_Package_C:BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature.OtherActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.16"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'PrimitiveComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature",
+    "Outer": "Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Carapackage_Test_Redeploy_Blue_Package_C:ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.12"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Carapackage_Test_Redeploy_Blue_Package_C:BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature.HitComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.17"
+      }
+    ],
+    "FunctionFlags": 138412032
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Carapackage_Test_Redeploy_Blue_Package_C:BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.18"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Carapackage_Test_Redeploy_Blue_Package_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.19"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'Carapackage_Test_Redeploy_Blue_Package_C:ComponentDelegateBinding_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.28"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Carapackage_Test_Redeploy_Blue_Package_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.35"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Carapackage_Test_Redeploy_Blue_Package_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.20"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Carapackage_Test_Redeploy_Blue_Package_C:ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.12"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'MultiCarePackageItem'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Carapackage_Test_Redeploy_Blue_Package_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.20"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package": {
+        "ObjectName": "Function'Carapackage_Test_Redeploy_Blue_Package_C:ExecuteUbergraph_Carapackage_Test_Redeploy_Blue_Package'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.12"
+      },
+      "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature": {
+        "ObjectName": "Function'Carapackage_Test_Redeploy_Blue_Package_C:BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.18"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'Carapackage_Test_Redeploy_Blue_Package_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.19"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Carapackage_Test_Redeploy_Blue_Package_C'Default__Carapackage_Test_Redeploy_Blue_Package_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.22"
+    }
+  },
+  {
+    "Type": "Carapackage_Test_Redeploy_Blue_Package_C",
+    "Name": "Default__Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.Carapackage_Test_Redeploy_Blue_Package_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ParachuteClass": {
+        "ObjectName": "BlueprintGeneratedClass'Parachute_SmallPackage_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.3"
+      },
+      "VisualStaticMesh": {
+        "ObjectName": "AsyncStaticMeshComponent'Default__Carapackage_Test_Redeploy_Blue_Package_C:VisualStaticMesh'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.24"
+      },
+      "VisualPackageMesh": "/Game/Assets/World/Vikendi/Props/Meshes/Unique/LabCamp/SM_VK_Lab_Camp_Box_B.SM_VK_Lab_Camp_Box_B",
+      "LimitFallSpeed": 500.0,
+      "SmokeSocket": "Smoke",
+      "SmokeAirSocket": "Smoke_Air",
+      "LightSocket": "Light",
+      "ParachuteSocket": "ParachutSocket",
+      "LandSoundAk": {
+        "ObjectName": "AkAudioEvent'CarePackage_Landig'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/UI/Alarm/CarePackage_Landig.0"
+      },
+      "MovementComponent": {
+        "ObjectName": "SimpleInterpolationMovement'Default__Carapackage_Test_Redeploy_Blue_Package_C:MovementComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.36"
+      },
+      "BuoyancyForceComponent": {
+        "ObjectName": "BuoyancyForceComponent'Default__Carapackage_Test_Redeploy_Blue_Package_C:BuoyancyForceComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.27"
+      },
+      "PackageName": {
+        "TableId": "/Game/StringTables/World/NS_NEGLECTEDSTRINGS.NS_NEGLECTEDSTRINGS",
+        "Key": "K_LPU_02"
+      },
+      "PackageIcon": {
+        "ObjectName": "Texture2D'BagIcon'",
+        "ObjectPath": "TslGame/Content/EditorAssets/Texture/BagIcon.0"
+      },
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_Test_Redeploy_Blue_Package_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.26"
+      },
+      "InteractionComponent": {
+        "ObjectName": "OnceInteractionComponent'Default__Carapackage_Test_Redeploy_Blue_Package_C:InteractionComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.29"
+      },
+      "DropStaticMesh": {
+        "ObjectName": "AsyncStaticMeshComponent'Default__Carapackage_Test_Redeploy_Blue_Package_C:DropStaticMesh'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.23"
+      },
+      "SortPriority": 7,
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_Test_Redeploy_Blue_Package_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.26"
+      },
+      "OnDestroyed": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "Carapackage_Test_Redeploy_Blue_Package_C'Default__Carapackage_Test_Redeploy_Blue_Package_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.22"
+            },
+            "FunctionName": "OnDestroy"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "AsyncStaticMeshComponent",
+    "Name": "DropStaticMesh",
+    "Outer": "Default__Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'AsyncStaticMeshComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_Test_Redeploy_Blue_Package_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.26"
+      }
+    }
+  },
+  {
+    "Type": "AsyncStaticMeshComponent",
+    "Name": "VisualStaticMesh",
+    "Outer": "Default__Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'AsyncStaticMeshComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_Test_Redeploy_Blue_Package_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.26"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ExplosionBlocker_GEN_VARIABLE",
+    "Outer": "Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 90.0,
+        "Y": 50.0,
+        "Z": 50.0
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Grenade",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "InteractiveObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CrosshairImpact",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bUseCCD": true,
+        "AngularDamping": 100.0,
+        "PhysMaterialOverride": {
+          "ObjectName": "PhysicalMaterial'PM_Carepackage'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/PM_Carepackage.0"
+        }
+      },
+      "bShouldUpdatePhysicsVolume": true,
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 0.9,
+        "Z": 1.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent",
+    "Outer": "Default__Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 90.0,
+        "Y": 50.0,
+        "Z": 50.0
+      },
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Weapon",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "AngularDamping": 100.0,
+        "PhysMaterialOverride": {
+          "ObjectName": "PhysicalMaterial'PM_Carepackage'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/PM_Carepackage.0"
+        }
+      },
+      "PhysicsVolumeChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "SimpleInterpolationMovement'Default__Carapackage_Test_Redeploy_Blue_Package_C:MovementComponent'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.36"
+            },
+            "FunctionName": "PhysicsVolumeChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BuoyancyForceComponent",
+    "Name": "BuoyancyForceComponent",
+    "Outer": "Default__Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'BuoyancyForceComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_Test_Redeploy_Blue_Package_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.26"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_2",
+    "Outer": "Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "BoxComponent",
+          "DelegatePropertyName": "OnComponentHit",
+          "FunctionNameToBind": "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "OnceInteractionComponent",
+    "Name": "InteractionComponent",
+    "Outer": "Default__Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'OnceInteractionComponent'",
+    "Properties": {
+      "InteractionVerb": {
+        "TableId": "/Game/StringTables/World/NS_NEGLECTEDSTRINGS.NS_NEGLECTEDSTRINGS",
+        "Key": "K_LPU_03"
+      },
+      "InteractiveObjectName": {
+        "TableId": "/Game/StringTables/World/NS_NEGLECTEDSTRINGS.NS_NEGLECTEDSTRINGS",
+        "Key": "K_LPU_02"
+      },
+      "CastConfig": {
+        "CastName": {
+          "Namespace": "",
+          "Key": "K_CLEANKEY_364",
+          "SourceString": "OPEN Care Package",
+          "LocalizedString": "OPEN Care Package"
+        },
+        "CastLevel": "ECastLevel::Restriction"
+      },
+      "OnInteractBy": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "Carapackage_Test_Redeploy_Blue_Package_C'Default__Carapackage_Test_Redeploy_Blue_Package_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.22"
+            },
+            "FunctionName": "ServerOnInteractBy"
+          }
+        ]
+      },
+      "ClientOnInteractBy": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "Carapackage_Test_Redeploy_Blue_Package_C'Default__Carapackage_Test_Redeploy_Blue_Package_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.22"
+            },
+            "FunctionName": "ClientOnInteractBy"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "P_CrateLand_GEN_VARIABLE",
+    "Outer": "Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_CrateLand'",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_CrateLand.20"
+      },
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -1.5E-05,
+        "Z": -79.39629
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Carapackage_Test_Redeploy_Blue_Package_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.31"
+      },
+      "VariableGuid": "EA35F677-4ACFD209-C8D4F89C-AE1A9828",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'Carapackage_Test_Redeploy_Blue_Package_C:ExplosionBlocker_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.25"
+      },
+      "ParentComponentOrVariableName": "BoxComponent",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "CC75E46A-4758DB27-365F06B5-2D4B8AFB",
+      "InternalVariableName": "ExplosionBlocker"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ParticleSystemComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent'Carapackage_Test_Redeploy_Blue_Package_C:P_CrateLand_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.30"
+      },
+      "ParentComponentOrVariableName": "BoxComponent",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "546EBD33-48E3B805-CC361E9D-FB9705BD",
+      "InternalVariableName": "P_CrateLand"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Carapackage_Test_Redeploy_Blue_Package_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.33"
+        },
+        {
+          "ObjectName": "SCS_Node'Carapackage_Test_Redeploy_Blue_Package_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.34"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Carapackage_Test_Redeploy_Blue_Package_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.33"
+        },
+        {
+          "ObjectName": "SCS_Node'Carapackage_Test_Redeploy_Blue_Package_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.34"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Carapackage_Test_Redeploy_Blue_Package_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Test/Carapackage_Test_Redeploy_Blue_Package.32"
+      }
+    }
+  },
+  {
+    "Type": "SimpleInterpolationMovement",
+    "Name": "MovementComponent",
+    "Outer": "Default__Carapackage_Test_Redeploy_Blue_Package_C",
+    "Class": "UScriptClass'SimpleInterpolationMovement'",
+    "Properties": {
+      "bUseOnlyYawRotation": false
+    }
+  }
+]

@@ -1,0 +1,87 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_HealOverTime_Child1_C",
+    "Super": "Buff_HealOverTime_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Buff_HealOverTime_Child1_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime_Child1.5"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Buff_HealOverTime_Child1_C:InheritableComponentHandler'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime_Child1.2"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'Buff_HealOverTime_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime.2"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_HealOverTime_Child1_C'Default__Buff_HealOverTime_Child1_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime_Child1.1"
+    }
+  },
+  {
+    "Type": "Buff_HealOverTime_Child1_C",
+    "Name": "Default__Buff_HealOverTime_Child1_C",
+    "Template": "Default__Buff_HealOverTime_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Buff/Buff_HealOverTime_Child1.Buff_HealOverTime_Child1_C'",
+    "Properties": {
+      "HealPerTick": 50.0,
+      "HealLimit": 100.0,
+      "BuffDuration": 0.5
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Buff_HealOverTime_Child1_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Buff_HealOverTime_Child1_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Buff_HealOverTime_Child1_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime_Child1.3"
+      },
+      "VariableGuid": "4C79B094-47E82142-EAA5CE89-3222CF42",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Buff_HealOverTime_Child1_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Buff_HealOverTime_Child1_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime_Child1.4"
+      }
+    }
+  }
+]

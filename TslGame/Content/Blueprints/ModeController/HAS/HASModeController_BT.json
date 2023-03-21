@@ -1,0 +1,155 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "HASModeController_BT",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Sequence'HASModeController_BT:BTComposite_Sequence_4'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.2"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'BattleRoyaleModeController_BB'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_BB.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_2",
+    "Outer": "HASModeController_BT",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_FinishMatch'HASModeController_BT:BTTask_FinishMatch_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.5"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'HASModeController_BT:BTTask_Wait_1'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.6"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Loop'HASModeController_BT:BTDecorator_Loop_1'",
+              "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.3"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'HASModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'HASModeController_BT:BTComposite_Sequence_4'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.2"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_4",
+    "Outer": "HASModeController_BT",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_CheckFinish'HASModeController_BT:BTTask_CheckFinish_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.4"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'HASModeController_BT:BTComposite_Sequence_2'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.1"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'HASModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.0"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Loop",
+    "Name": "BTDecorator_Loop_1",
+    "Outer": "HASModeController_BT",
+    "Class": "UScriptClass'BTDecorator_Loop'",
+    "Properties": {
+      "bInfiniteLoop": true,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'HASModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'HASModeController_BT:BTComposite_Sequence_2'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_CheckFinish",
+    "Name": "BTTask_CheckFinish_0",
+    "Outer": "HASModeController_BT",
+    "Class": "UScriptClass'BTTask_CheckFinish'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'HASModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'HASModeController_BT:BTComposite_Sequence_4'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.2"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_FinishMatch",
+    "Name": "BTTask_FinishMatch_0",
+    "Outer": "HASModeController_BT",
+    "Class": "UScriptClass'BTTask_FinishMatch'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'HASModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'HASModeController_BT:BTComposite_Sequence_2'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_1",
+    "Outer": "HASModeController_BT",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'HASModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'HASModeController_BT:BTComposite_Sequence_2'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.1"
+      }
+    }
+  }
+]

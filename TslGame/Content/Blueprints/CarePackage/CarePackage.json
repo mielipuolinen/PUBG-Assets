@@ -1,0 +1,422 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CarePackage",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 92.65625,
+                "Y": 75.70537,
+                "Z": 17.656248
+              },
+              {
+                "X": 92.65626,
+                "Y": -70.69113,
+                "Z": 17.656254
+              },
+              {
+                "X": 92.65626,
+                "Y": -70.71874,
+                "Z": 134.87773
+              },
+              {
+                "X": 92.6564,
+                "Y": 75.70522,
+                "Z": 134.8776
+              },
+              {
+                "X": -93.44699,
+                "Y": -73.81775,
+                "Z": 18.447
+              },
+              {
+                "X": -93.44698,
+                "Y": 68.30302,
+                "Z": 18.48241
+              },
+              {
+                "X": -93.44699,
+                "Y": 68.34154,
+                "Z": 134.053
+              },
+              {
+                "X": -93.44699,
+                "Y": -73.817764,
+                "Z": 134.053
+              },
+              {
+                "X": -67.28853,
+                "Y": 94.5,
+                "Z": 19.5
+              },
+              {
+                "X": 73.86162,
+                "Y": 94.5,
+                "Z": 19.5
+              },
+              {
+                "X": 73.86162,
+                "Y": 94.5,
+                "Z": 132.875
+              },
+              {
+                "X": -67.26054,
+                "Y": 94.48946,
+                "Z": 132.91518
+              },
+              {
+                "X": 67.444885,
+                "Y": -95.930115,
+                "Z": 20.94841
+              },
+              {
+                "X": -71.33464,
+                "Y": -95.930115,
+                "Z": 20.94841
+              },
+              {
+                "X": -71.33374,
+                "Y": -95.93101,
+                "Z": 132.44398
+              },
+              {
+                "X": 67.41089,
+                "Y": -95.9365,
+                "Z": 132.43849
+              },
+              {
+                "X": -74.52693,
+                "Y": 74.43155,
+                "Z": 152.97305
+              },
+              {
+                "X": 74.52695,
+                "Y": 74.43157,
+                "Z": 152.97305
+              },
+              {
+                "X": 74.560936,
+                "Y": -75.40195,
+                "Z": 152.97305
+              },
+              {
+                "X": -74.52693,
+                "Y": -75.35628,
+                "Z": 152.97305
+              },
+              {
+                "X": -74.912704,
+                "Y": -74.89441,
+                "Z": -0.08728091
+              },
+              {
+                "X": 74.91272,
+                "Y": -74.894424,
+                "Z": -0.08728536
+              },
+              {
+                "X": 74.87729,
+                "Y": 74.91272,
+                "Z": -0.08728545
+              },
+              {
+                "X": -74.87729,
+                "Y": 74.91272,
+                "Z": -0.08728085
+              },
+              {
+                "X": 84.2285,
+                "Y": 84.13312,
+                "Z": 143.2715
+              },
+              {
+                "X": -80.94195,
+                "Y": 80.84657,
+                "Z": 146.55803
+              },
+              {
+                "X": 81.682846,
+                "Y": -81.66456,
+                "Z": 6.682844
+              },
+              {
+                "X": -83.64152,
+                "Y": -83.62323,
+                "Z": 8.641532
+              },
+              {
+                "X": -80.88358,
+                "Y": 80.86642,
+                "Z": 5.9189987
+              },
+              {
+                "X": 84.1631,
+                "Y": 84.19853,
+                "Z": 9.1985235
+              },
+              {
+                "X": -83.2177,
+                "Y": -84.04704,
+                "Z": 144.28229
+              },
+              {
+                "X": 81.25903,
+                "Y": -82.08836,
+                "Z": 146.24097
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -93.44699,
+                "Y": -95.9365,
+                "Z": -0.08728545
+              },
+              "Max": {
+                "X": 92.6564,
+                "Y": 94.5,
+                "Z": 152.97305
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "8831A1654F04B71BE7F73295BC9C37E3",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 116067,
+        "SizeOnDisk": 116067,
+        "OffsetInFile": "0x45BF6"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CarePackage",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "MI_CarePackage",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 413.85986,
+            "LocalUVDensities": 604.9129,
+            "LocalUVDensities": 597.0356,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 597.0356,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "Sockets": [
+        {
+          "ObjectName": "StaticMeshSocket'CarePackage:StaticMeshSocket_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackage.2"
+        },
+        {
+          "ObjectName": "StaticMeshSocket'CarePackage:StaticMeshSocket_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackage.3"
+        },
+        {
+          "ObjectName": "StaticMeshSocket'CarePackage:StaticMeshSocket_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackage.4"
+        },
+        {
+          "ObjectName": "StaticMeshSocket'CarePackage:StaticMeshSocket_5'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackage.5"
+        }
+      ],
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -0.40003967,
+          "Y": -0.7203293,
+          "Z": 76.44288
+        },
+        "BoxExtent": {
+          "X": 92.95645,
+          "Y": 95.10979,
+          "Z": 76.43017
+        },
+        "SphereRadius": 131.18108
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'CarePackage:BodySetup_0'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePackage.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "D74617F6-4548247E-DD464387-F5AFD679",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 3848,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 4231,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 4232
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 3,
+            "NumVertices": 4232,
+            "Strides": 20,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -0.40003967,
+          "Y": -0.7203293,
+          "Z": 76.44288
+        },
+        "BoxExtent": {
+          "X": 92.95645,
+          "Y": 95.10979,
+          "Z": 76.43017
+        },
+        "SphereRadius": 131.18108
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_0",
+    "Outer": "CarePackage",
+    "Class": "UScriptClass'StaticMeshSocket'",
+    "Properties": {
+      "SocketName": "Smoke"
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_1",
+    "Outer": "CarePackage",
+    "Class": "UScriptClass'StaticMeshSocket'",
+    "Properties": {
+      "SocketName": "Light"
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_3",
+    "Outer": "CarePackage",
+    "Class": "UScriptClass'StaticMeshSocket'",
+    "Properties": {
+      "SocketName": "Smoke_Air",
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0010223389,
+        "Z": 144.14346
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_5",
+    "Outer": "CarePackage",
+    "Class": "UScriptClass'StaticMeshSocket'",
+    "Properties": {
+      "SocketName": "ParachutSocket",
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 145.47148
+      }
+    }
+  }
+]

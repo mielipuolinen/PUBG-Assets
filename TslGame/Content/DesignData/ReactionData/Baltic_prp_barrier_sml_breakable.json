@@ -1,0 +1,30 @@
+[
+  {
+    "Type": "TslReactionData",
+    "Name": "Baltic_prp_barrier_sml_breakable",
+    "Class": "UScriptClass'TslReactionData'",
+    "Properties": {
+      "DestroyDelay": 3.0,
+      "VehicleReactionData": {
+        "ReactionType": "EReactionType::Reaction_Destructible",
+        "ReactionForceFactor": 3.0,
+        "ReactionMinSpeed": 1065.0
+      },
+      "RadialDamageReactionData": {
+        "ReactionType": "EReactionType::Reaction_Destructible",
+        "ReactionForceFactor": 8000.0,
+        "ReactionMinDamage": 80.0
+      },
+      "PointDamageReactionData": {
+        "ReactionType": "EReactionType::Reaction_Destructible",
+        "ReactionForceFactor": 1000.0,
+        "ReactionMinDamage": 100.0,
+        "DamageAccumulateTimeout": 1.0
+      },
+      "DestructibleReactionSoundAk": {
+        "ObjectName": "AkAudioEvent'Exterior_Object_Destroy_WoodFence02'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Object/Exterior_Object_Destroy_WoodFence02.0"
+      }
+    }
+  }
+]

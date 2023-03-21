@@ -3,26 +3,27 @@
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapSawnoff_C",
     "Super": "DefaultPistolSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapSawnoff_C:SimpleConstructionScript_1",
+        "ObjectName": "SimpleConstructionScript'WeapSawnoff_C:SimpleConstructionScript_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSawnOff.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "BlueprintGeneratedClass DefaultPistolSetting_C",
+      "ObjectName": "BlueprintGeneratedClass'DefaultPistolSetting_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultPistolSetting.0"
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapSawnoff_C Default__WeapSawnoff_C",
+      "ObjectName": "WeapSawnoff_C'Default__WeapSawnoff_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSawnOff.1"
     }
   },
@@ -30,13 +31,14 @@
     "Type": "WeapSawnoff_C",
     "Name": "Default__WeapSawnoff_C",
     "Template": "Default__DefaultPistolSetting_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/WeapSawnOff.WeapSawnoff_C'",
     "Properties": {
       "ImpactTemplate": {
-        "ObjectName": "BlueprintGeneratedClass GunImpact_Med_Shotgun_C",
+        "ObjectName": "BlueprintGeneratedClass'GunImpact_Med_Shotgun_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med_Shotgun.4"
       },
       "WeaponTrajectoryData": {
-        "ObjectName": "WeaponTrajectoryData WeapSawnoff_WeaponTrajectoryData",
+        "ObjectName": "WeaponTrajectoryData'WeapSawnoff_WeaponTrajectoryData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapSawnoff_WeaponTrajectoryData.0"
       },
       "WeaponGunPostprocessSettings": {
@@ -48,11 +50,11 @@
         "DepthBlurBlackPoint": 30.0
       },
       "WeaponGunData": {
-        "ObjectName": "WeaponGunDataAsset WeapSawnoff_WeaponGunData",
+        "ObjectName": "WeaponGunDataAsset'WeapSawnoff_WeaponGunData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapSawnoff_WeaponGunData.0"
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_gun__Sawedoff",
+        "ObjectName": "Texture2D'weapons_gun__Sawedoff'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun__Sawedoff.0"
       },
       "WeaponIconRatio": 1.76,
@@ -77,7 +79,7 @@
         ],
         "AnimationKick": 0.9,
         "RecoilMontage": {
-          "ObjectName": "AnimMontage Rifle_Recoil_Rhino_Montage",
+          "ObjectName": "AnimMontage'Rifle_Recoil_Rhino_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Rhino/Recoil/Rifle_Recoil_Rhino_Montage.0"
         },
         "WeaponEquipDuration": 0.2,
@@ -86,7 +88,7 @@
       "WeaponHand": "EWeaponHand::Right",
       "bCanArmAsDriver": true,
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapSawnoff_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__WeapSawnoff_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSawnOff.6"
       },
       "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
@@ -104,29 +106,31 @@
       ],
       "WeaponTag": "Sawnoff",
       "MuzzleFX": {
-        "ObjectName": "ParticleSystem P_Muzzle_Sawnoff",
+        "ObjectName": "ParticleSystem'P_Muzzle_Sawnoff'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Shotgun/P_Muzzle_Sawnoff.92"
       },
       "FireForceFeedback": {
-        "ObjectName": "TslForceFeedbackEffect TslFFE_Fire",
+        "ObjectName": "TslForceFeedbackEffect'TslFFE_Fire'",
         "ObjectPath": "TslGame/Content/Effects/ForceFeedback/TslFFE_Fire.0"
       },
-      "EquipAnimData": {
-        "EAccessorySlot::Slot_SideArm": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
-          },
-          "PlayRate": 1.5
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_SideArm": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PistolSlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+            },
+            "PlayRate": 1.5
+          }
         }
-      },
+      ],
       "HipDuration": 1.875,
       "WeaponAudioData": {
-        "ObjectName": "WeaponAudioData WeapSawnoff_WeaponAudioData",
+        "ObjectName": "WeaponAudioData'WeapSawnoff_WeaponAudioData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapSawnoff_WeaponAudioData.0"
       },
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapSawnoff_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapSawnoff_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSawnOff.2"
       }
     }
@@ -136,12 +140,13 @@
     "Name": "RootScene",
     "Outer": "Default__WeapSawnoff_C",
     "Template": "RootScene",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapSawnoff_C Default__WeapSawnoff_C",
+              "ObjectName": "WeapSawnoff_C'Default__WeapSawnoff_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSawnOff.1"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -153,19 +158,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapSawnoff_C"
+    "Outer": "WeapSawnoff_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapSawnoff_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapSawnoff_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSawnOff.3"
       },
       "VariableGuid": "BDA1A7CC-4A9E5D50-F8948EBC-0B1B6578",
@@ -176,9 +183,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_1",
     "Outer": "WeapSawnoff_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapSawnoff_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectName": "SCS_Node'WeapSawnoff_C:SimpleConstructionScript_1.SCS_Node_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSawnOff.4"
       }
     }
@@ -188,20 +196,21 @@
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapSawnoff_C",
     "Template": "WeaponMesh3P",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "AnimClass": {
-        "ObjectName": "AnimBlueprintGeneratedClass ABP_Sawnoff_RD_C",
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_Sawnoff_RD_C'",
         "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/SawedOff/Redux/Weapon_RD/ABP_Sawnoff_RD.42"
       },
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh SK_Sawedoff",
+        "ObjectName": "SkeletalMesh'SK_Sawedoff'",
         "ObjectPath": "TslGame/Content/Weapon/Pistols/Sawedoff/Mesh/SK_Sawedoff.0"
       },
       "BodyInstance": {
         "MassInKgOverride": 100.0
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapSawnoff_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapSawnoff_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapSawnOff.2"
       }
     }

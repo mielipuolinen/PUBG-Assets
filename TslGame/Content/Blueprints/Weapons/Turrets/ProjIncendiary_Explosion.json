@@ -3,6 +3,7 @@
     "Type": "ByteProperty",
     "Name": "UnderlyingType",
     "Outer": "CallFunc_BranchOnPlatformGroup_PlatformGroupBranch",
+    "Class": "UScriptClass'ByteProperty'",
     "Next": null,
     "Enum": null
   },
@@ -10,6 +11,7 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsForKoreanRating_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "BoolSize": 1,
     "bIsNativeBool": true
@@ -18,8 +20,9 @@
     "Type": "BoolProperty",
     "Name": "K2Node_SwitchEnum_CmpSuccess",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_Explosion_C:UserConstructionScript.CallFunc_IsForKoreanRating_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_Explosion_C:UserConstructionScript.CallFunc_IsForKoreanRating_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.1"
     },
     "BoolSize": 1,
@@ -29,8 +32,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsForChineseLicensing_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_Explosion_C:UserConstructionScript.K2Node_SwitchEnum_CmpSuccess",
+      "ObjectName": "BoolProperty'ProjIncendiary_Explosion_C:UserConstructionScript.K2Node_SwitchEnum_CmpSuccess'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.2"
     },
     "BoolSize": 1,
@@ -40,16 +44,17 @@
     "Type": "EnumProperty",
     "Name": "CallFunc_BranchOnPlatformGroup_PlatformGroupBranch",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'EnumProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_Explosion_C:UserConstructionScript.CallFunc_IsForChineseLicensing_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_Explosion_C:UserConstructionScript.CallFunc_IsForChineseLicensing_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.3"
     },
     "Enum": {
-      "ObjectName": "Enum ETslPlatformGroupBranch_BPOnly",
+      "ObjectName": "Enum'ETslPlatformGroupBranch_BPOnly'",
       "ObjectPath": "/Script/TslGame"
     },
     "UnderlyingProp": {
-      "ObjectName": "ByteProperty ProjIncendiary_Explosion_C:UserConstructionScript.CallFunc_BranchOnPlatformGroup_PlatformGroupBranch.UnderlyingType",
+      "ObjectName": "ByteProperty'ProjIncendiary_Explosion_C:UserConstructionScript.CallFunc_BranchOnPlatformGroup_PlatformGroupBranch.UnderlyingType'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.0"
     }
   },
@@ -57,14 +62,15 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjIncendiary_Explosion_C",
+    "Class": "UScriptClass'Function'",
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "Children": [
       {
-        "ObjectName": "EnumProperty ProjIncendiary_Explosion_C:UserConstructionScript.CallFunc_BranchOnPlatformGroup_PlatformGroupBranch",
+        "ObjectName": "EnumProperty'ProjIncendiary_Explosion_C:UserConstructionScript.CallFunc_BranchOnPlatformGroup_PlatformGroupBranch'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.4"
       }
     ],
@@ -73,59 +79,61 @@
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjIncendiary_Explosion_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjIncendiary_Explosion_C:SimpleConstructionScript_1__EFD9F313",
+        "ObjectName": "SimpleConstructionScript'ProjIncendiary_Explosion_C:SimpleConstructionScript_1__EFD9F313'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.11"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslExplosionEffect",
+      "ObjectName": "Class'TslExplosionEffect'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "Function ProjIncendiary_Explosion_C:UserConstructionScript",
+        "ObjectName": "Function'ProjIncendiary_Explosion_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.5"
       }
     ],
     "FuncMap": {
       "UserConstructionScript": {
-        "ObjectName": "Function ProjIncendiary_Explosion_C:UserConstructionScript",
+        "ObjectName": "Function'ProjIncendiary_Explosion_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.5"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjIncendiary_Explosion_C Default__ProjIncendiary_Explosion_C",
+      "ObjectName": "ProjIncendiary_Explosion_C'Default__ProjIncendiary_Explosion_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.7"
     }
   },
   {
     "Type": "ProjIncendiary_Explosion_C",
     "Name": "Default__ProjIncendiary_Explosion_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.ProjIncendiary_Explosion_C'",
     "Properties": {
       "ExplosionFX": {
-        "ObjectName": "ParticleSystem P_Incendiary_Explosion",
+        "ObjectName": "ParticleSystem'P_Incendiary_Explosion'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_Incendiary_Explosion.147"
       },
       "ExplosionLight": {
-        "ObjectName": "PointLightComponent Default__ProjIncendiary_Explosion_C:ExplosionLight",
+        "ObjectName": "PointLightComponent'Default__ProjIncendiary_Explosion_C:ExplosionLight'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.8"
       },
       "ExplosionSound": {
-        "ObjectName": "AkAudioEvent Weapons_KillTruck_Launcher_Explosion",
+        "ObjectName": "AkAudioEvent'Weapons_KillTruck_Launcher_Explosion'",
         "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/KillTruck/Weapons_KillTruck_Launcher_Explosion.0"
       },
       "RootComponent": {
-        "ObjectName": "PointLightComponent Default__ProjIncendiary_Explosion_C:ExplosionLight",
+        "ObjectName": "PointLightComponent'Default__ProjIncendiary_Explosion_C:ExplosionLight'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.8"
       }
     }
@@ -134,6 +142,7 @@
     "Type": "PointLightComponent",
     "Name": "ExplosionLight",
     "Outer": "Default__ProjIncendiary_Explosion_C",
+    "Class": "UScriptClass'PointLightComponent'",
     "Properties": {
       "AttenuationRadius": 1024.0,
       "LightGuid": "65BEFC86-495AC8B3-41C106A0-F8872BE0",
@@ -143,19 +152,21 @@
   {
     "Type": "SceneComponent",
     "Name": "SceneComponent_0",
-    "Outer": "ProjIncendiary_Explosion_C"
+    "Outer": "ProjIncendiary_Explosion_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_1__EFD9F313",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjIncendiary_Explosion_C:SceneComponent_0",
+        "ObjectName": "SceneComponent'ProjIncendiary_Explosion_C:SceneComponent_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.9"
       },
       "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
@@ -166,9 +177,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_1__EFD9F313",
     "Outer": "ProjIncendiary_Explosion_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjIncendiary_Explosion_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_0",
+        "ObjectName": "SCS_Node'ProjIncendiary_Explosion_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.10"
       }
     }

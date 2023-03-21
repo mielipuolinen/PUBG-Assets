@@ -1,0 +1,133 @@
+[
+  {
+    "Type": "Material",
+    "Name": "M_Flatten_Doors",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "BaseColor": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSample_0",
+        "UseConstant": false,
+        "Constant": {
+          "B": 128,
+          "G": 128,
+          "R": 128,
+          "A": 255,
+          "Hex": "FF808080"
+        }
+      },
+      "Metallic": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_0",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "Specular": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_1",
+        "UseConstant": false,
+        "Constant": 0.5
+      },
+      "Roughness": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_2",
+        "UseConstant": false,
+        "Constant": 0.5
+      },
+      "Normal": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSample_1",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "bTangentSpaceNormal": false,
+      "Expressions": [
+        {
+          "ObjectName": "MaterialExpressionTextureSample'M_Flatten_Doors:MaterialExpressionTextureSample_0'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/DoorHLOD/M_Flatten_Doors.1"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample'M_Flatten_Doors:MaterialExpressionTextureSample_1'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/DoorHLOD/M_Flatten_Doors.2"
+        },
+        null,
+        null,
+        null
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "10414D65-487A823F-9F5755B3-CF9727B7"
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_0",
+    "Outer": "M_Flatten_Doors",
+    "Class": "UScriptClass'MaterialExpressionTextureSample'",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D'T_Flatten_Doors_D'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/DoorHLOD/T_Flatten_Doors_D.0"
+      },
+      "Material": {
+        "ObjectName": "Material'M_Flatten_Doors'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/DoorHLOD/M_Flatten_Doors.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_1",
+    "Outer": "M_Flatten_Doors",
+    "Class": "UScriptClass'MaterialExpressionTextureSample'",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D'T_Flatten_Doors_N'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/DoorHLOD/T_Flatten_Doors_N.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material'M_Flatten_Doors'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/DoorHLOD/M_Flatten_Doors.0"
+      }
+    }
+  }
+]

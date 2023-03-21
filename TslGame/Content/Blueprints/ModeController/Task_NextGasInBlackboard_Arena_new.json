@@ -1,0 +1,141 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OwnerActor",
+    "Outer": "ExecuteUbergraph_Task_NextGasInBlackboard_Arena_new",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Task_NextGasInBlackboard_Arena_new",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_NextGasInBlackboard_Arena_new_C:ExecuteUbergraph_Task_NextGasInBlackboard_Arena_new.K2Node_Event_OwnerActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard_Arena_new.0"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Task_NextGasInBlackboard_Arena_new",
+    "Outer": "Task_NextGasInBlackboard_Arena_new_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Task_NextGasInBlackboard_Arena_new_C:ExecuteUbergraph_Task_NextGasInBlackboard_Arena_new.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard_Arena_new.1"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OwnerActor",
+    "Outer": "ReceiveExecute",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveExecute",
+    "Outer": "Task_NextGasInBlackboard_Arena_new_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Task_NextGasInBlackboard_Arena_new_C:ExecuteUbergraph_Task_NextGasInBlackboard_Arena_new'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard_Arena_new.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BTTask_BlueprintBase:ReceiveExecute'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Task_NextGasInBlackboard_Arena_new_C:ReceiveExecute.OwnerActor'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard_Arena_new.3"
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Task_NextGasInBlackboard_Arena_new_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Task_NextGasInBlackboard_Arena_new_C:ReceiveExecute'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard_Arena_new.4"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Task_NextGasInBlackboard_Arena_new_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Task_NextGasInBlackboard_Arena_new_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard_Arena_new.5"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Task_NextGasInBlackboard_Arena_new_C:ExecuteUbergraph_Task_NextGasInBlackboard_Arena_new'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard_Arena_new.2"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslArenaTaskNextGasInBlackboard'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Task_NextGasInBlackboard_Arena_new_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard_Arena_new.5"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Task_NextGasInBlackboard_Arena_new": {
+        "ObjectName": "Function'Task_NextGasInBlackboard_Arena_new_C:ExecuteUbergraph_Task_NextGasInBlackboard_Arena_new'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard_Arena_new.2"
+      },
+      "ReceiveExecute": {
+        "ObjectName": "Function'Task_NextGasInBlackboard_Arena_new_C:ReceiveExecute'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard_Arena_new.4"
+      }
+    },
+    "ClassFlags": 262160,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Task_NextGasInBlackboard_Arena_new_C'Default__Task_NextGasInBlackboard_Arena_new_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard_Arena_new.7"
+    }
+  },
+  {
+    "Type": "Task_NextGasInBlackboard_Arena_new_C",
+    "Name": "Default__Task_NextGasInBlackboard_Arena_new_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard_Arena_new.Task_NextGasInBlackboard_Arena_new_C'",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]

@@ -2,6 +2,7 @@
   {
     "Type": "WeaponAttachmentDataAsset",
     "Name": "DA_2xScope",
+    "Class": "UScriptClass'WeaponAttachmentDataAsset'",
     "Properties": {
       "AttachmentData": {
         "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
@@ -11,7 +12,7 @@
         "MagnificationFOV": 40.0,
         "ReticleBrightnessConfig": {
           "ReticleBrightnessSettingsCurve": {
-            "ObjectName": "CurveVector C_Aimpoint2XReticleBrightnessLevels",
+            "ObjectName": "CurveVector'C_Aimpoint2XReticleBrightnessLevels'",
             "ObjectPath": "TslGame/Content/Weapon/Accessories/Aimpoint2X/C_Aimpoint2XReticleBrightnessLevels.0"
           },
           "ReticleBrightnessParamX": "Brightness",
@@ -22,7 +23,7 @@
           100.0
         ],
         "ScopePostprocessData": {
-          "ObjectName": "ReticlePostprocessData Sight_Aimpoint_PostprocessData",
+          "ObjectName": "ReticlePostprocessData'Sight_Aimpoint_PostprocessData'",
           "ObjectPath": "TslGame/Content/Item/Attachment/AttachmentDataAssets/Sight_Aimpoint_PostprocessData.0"
         },
         "ADSSpeedMultiplier": 1.1,
@@ -47,7 +48,7 @@
             "MagnificationFOV": 40.0,
             "ReticleBrightnessConfig": {
               "ReticleBrightnessSettingsCurve": {
-                "ObjectName": "CurveVector C_Aimpoint2XReticleBrightnessLevels",
+                "ObjectName": "CurveVector'C_Aimpoint2XReticleBrightnessLevels'",
                 "ObjectPath": "TslGame/Content/Weapon/Accessories/Aimpoint2X/C_Aimpoint2XReticleBrightnessLevels.0"
               },
               "ReticleBrightnessParamX": "Brightness",
@@ -58,10 +59,10 @@
               100.0,
               100.0
             ],
-            "ReticleMaterialOverrides": {},
-            "ReticleSettingsOverrides": {},
+            "ReticleMaterialOverrides": [],
+            "ReticleSettingsOverrides": [],
             "ScopePostprocessData": {
-              "ObjectName": "ReticlePostprocessData Sight_Aimpoint_PostprocessData",
+              "ObjectName": "ReticlePostprocessData'Sight_Aimpoint_PostprocessData'",
               "ObjectPath": "TslGame/Content/Item/Attachment/AttachmentDataAssets/Sight_Aimpoint_PostprocessData.0"
             },
             "AmmoPerClip": 0,
@@ -91,7 +92,7 @@
             "CharacterReloadCharge": null,
             "WeaponReloadCharge": null,
             "bUsePelletGridOverride": false,
-            "PelletGridOverride": {},
+            "PelletGridOverride": [],
             "StabilitySpeedScalar": 1.0,
             "StabilityMinForceAdditive": 0.0,
             "RecoilEarlyExitScale": 0.0,
@@ -125,6 +126,7 @@
                 "Y": 150.0
               }
             },
+            "bThermalTemperatureInteractive": false,
             "bBlocksGameplayTracers": false
           },
           "AttachmentTemplate": null
@@ -134,7 +136,7 @@
       "AttachmentMeshName": "2xScope",
       "AttachmentMeshAsset": "/Game/Weapon/Accessories/New/Sight/New/Aimpoint2X_Setting.Aimpoint2X_Setting",
       "AttachmentTemplate": {
-        "ObjectName": "Class AsyncStaticMeshComponent",
+        "ObjectName": "Class'AsyncStaticMeshComponent'",
         "ObjectPath": "/Script/TslGame"
       }
     }

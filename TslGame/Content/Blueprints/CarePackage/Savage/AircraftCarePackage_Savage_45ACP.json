@@ -1,0 +1,324 @@
+[
+  {
+    "Type": "FloatProperty",
+    "Name": "Sound_CurrentValue",
+    "Outer": "AircraftCarePackage_Savage_45ACP_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Sound_TargetValue",
+    "Outer": "AircraftCarePackage_Savage_45ACP_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'AircraftCarePackage_Savage_45ACP_C:Sound_CurrentValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.0"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Sound_InterptTime",
+    "Outer": "AircraftCarePackage_Savage_45ACP_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'AircraftCarePackage_Savage_45ACP_C:Sound_TargetValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.1"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ProjectileMovement",
+    "Outer": "AircraftCarePackage_Savage_45ACP_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'AircraftCarePackage_Savage_45ACP_C:Sound_InterptTime'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.2"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'ProjectileMovementComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "P_AircraftRotor",
+    "Outer": "AircraftCarePackage_Savage_45ACP_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'AircraftCarePackage_Savage_45ACP_C:ProjectileMovement'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.3"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'ParticleSystemComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "AircraftCarePackage_Savage_45ACP_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'AircraftCarePackage_Savage_45ACP_C:P_AircraftRotor'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.4"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "AircraftCarePackage_Savage_45ACP_C",
+    "Super": "BP_AircraftCarepackage_Base_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'AircraftCarePackage_Savage_45ACP_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.14"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_AircraftCarepackage_Base_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/BP_AircraftCarepackage_Base.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'AircraftCarePackage_Savage_45ACP_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.5"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function'AircraftCarePackage_Savage_45ACP_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.5"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "AircraftCarePackage_Savage_45ACP_C'Default__AircraftCarePackage_Savage_45ACP_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.7"
+    }
+  },
+  {
+    "Type": "AircraftCarePackage_Savage_45ACP_C",
+    "Name": "Default__AircraftCarePackage_Savage_45ACP_C",
+    "Template": "Default__BP_AircraftCarepackage_Base_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.AircraftCarePackage_Savage_45ACP_C'",
+    "Properties": {
+      "Sound_InterptTime": 0.2,
+      "Sound_TargetValue": 1.0,
+      "CarePackageItemSpawnerClass": {
+        "ObjectName": "BlueprintGeneratedClass'CarePackageItemSpawner_Sanhok_Event45ACP_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Spawn/Sanhok/Sanhok_Event/CarePackageItemSpawner_Sanhok_Event45ACP.0"
+      },
+      "CarePackageItemClass": {
+        "ObjectName": "BlueprintGeneratedClass'Carapackage_RedBox_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_RedBox.21"
+      },
+      "DropCarePackageTableData": [
+        {
+          "DropCount": 1,
+          "DropPercent": 100.0,
+          "OverrideCarePackageItemSpawnerClass": null
+        },
+        {
+          "DropCount": 2,
+          "DropPercent": 50.0,
+          "OverrideCarePackageItemSpawnerClass": null
+        },
+        {
+          "DropCount": 3,
+          "DropPercent": 10.0,
+          "OverrideCarePackageItemSpawnerClass": null
+        },
+        {
+          "DropCount": 4,
+          "DropPercent": 5.0,
+          "OverrideCarePackageItemSpawnerClass": null
+        },
+        {
+          "DropCount": 5,
+          "DropPercent": 1.0,
+          "OverrideCarePackageItemSpawnerClass": null
+        }
+      ],
+      "MeshComponent": {
+        "ObjectName": "StaticMeshComponent'Default__AircraftCarePackage_Savage_45ACP_C:StaticMeshComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.16"
+      },
+      "MovementComponent": {
+        "ObjectName": "TslAircraftVehicleMovement'Default__AircraftCarePackage_Savage_45ACP_C:MovementComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.17"
+      },
+      "SplineComponent": {
+        "ObjectName": "SplineComponent'Default__AircraftCarePackage_Savage_45ACP_C:SplineComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.15"
+      },
+      "TotalFlyingTime": 90.0,
+      "bNetLoadOnClient": false,
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Default__AircraftCarePackage_Savage_45ACP_C:StaticMeshComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.16"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "P_AircraftRotor_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Savage_45ACP_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_AircraftRotor'",
+        "ObjectPath": "TslGame/Content/Export_Marek/P_AircraftRotor.35"
+      },
+      "bDecalChannelValid": true
+    }
+  },
+  {
+    "Type": "ProjectileMovementComponent",
+    "Name": "ProjectileMovement_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Savage_45ACP_C",
+    "Class": "UScriptClass'ProjectileMovementComponent'",
+    "Properties": {
+      "ProjectileGravityScale": 0.0,
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Savage_45ACP_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'AircraftCarePackage_Savage_45ACP_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.10"
+      },
+      "VariableGuid": "63A1072C-42C0D1A3-45B806A9-1515583B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ParticleSystemComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent'AircraftCarePackage_Savage_45ACP_C:P_AircraftRotor_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.8"
+      },
+      "ParentComponentOrVariableName": "StaticMeshComponent",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "8AC46B43-48664EE4-C0F4439C-4447CB86",
+      "InternalVariableName": "P_AircraftRotor"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ProjectileMovementComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ProjectileMovementComponent'AircraftCarePackage_Savage_45ACP_C:ProjectileMovement_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.9"
+      },
+      "VariableGuid": "F8BD991C-40264A76-3519FF9D-B843F456",
+      "InternalVariableName": "ProjectileMovement"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "AircraftCarePackage_Savage_45ACP_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Savage_45ACP_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.13"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Savage_45ACP_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.12"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Savage_45ACP_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.13"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Savage_45ACP_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.12"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'AircraftCarePackage_Savage_45ACP_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Savage/AircraftCarePackage_Savage_45ACP.11"
+      }
+    }
+  },
+  {
+    "Type": "SplineComponent",
+    "Name": "SplineComponent",
+    "Outer": "Default__AircraftCarePackage_Savage_45ACP_C",
+    "Template": "SplineComponent",
+    "Class": "UScriptClass'SplineComponent'"
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent",
+    "Outer": "Default__AircraftCarePackage_Savage_45ACP_C",
+    "Template": "StaticMeshComponent",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'C130_Care_Set'",
+        "ObjectPath": "TslGame/Content/Vehicles/Aircraft/C130_Care_Set.1"
+      }
+    }
+  },
+  {
+    "Type": "TslAircraftVehicleMovement",
+    "Name": "MovementComponent",
+    "Outer": "Default__AircraftCarePackage_Savage_45ACP_C",
+    "Template": "MovementComponent",
+    "Class": "UScriptClass'TslAircraftVehicleMovement'"
+  }
+]

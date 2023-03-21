@@ -3,10 +3,11 @@
     "Type": "ObjectProperty",
     "Name": "Tinnitus_Direct",
     "Outer": "ProjGrenade_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyFlags": 65541,
     "PropertyClass": {
-      "ObjectName": "Class AkAudioEvent",
+      "ObjectName": "Class'AkAudioEvent'",
       "ObjectPath": "/Script/AkAudio"
     }
   },
@@ -14,13 +15,14 @@
     "Type": "ObjectProperty",
     "Name": "Tinnitus_Proximity",
     "Outer": "ProjGrenade_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjGrenade_C:Tinnitus_Direct",
+      "ObjectName": "ObjectProperty'ProjGrenade_C:Tinnitus_Direct'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.0"
     },
     "PropertyFlags": 65541,
     "PropertyClass": {
-      "ObjectName": "Class AkAudioEvent",
+      "ObjectName": "Class'AkAudioEvent'",
       "ObjectPath": "/Script/AkAudio"
     }
   },
@@ -28,13 +30,14 @@
     "Type": "ObjectProperty",
     "Name": "LocalShooterCharacter",
     "Outer": "ProjGrenade_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjGrenade_C:Tinnitus_Proximity",
+      "ObjectName": "ObjectProperty'ProjGrenade_C:Tinnitus_Proximity'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.1"
     },
     "PropertyFlags": 67589,
     "PropertyClass": {
-      "ObjectName": "Class TslCharacter",
+      "ObjectName": "Class'TslCharacter'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -42,13 +45,14 @@
     "Type": "StructProperty",
     "Name": "ExplodeLocation",
     "Outer": "ProjGrenade_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjGrenade_C:LocalShooterCharacter",
+      "ObjectName": "ObjectProperty'ProjGrenade_C:LocalShooterCharacter'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.2"
     },
     "PropertyFlags": 65541,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -56,19 +60,21 @@
     "Type": "FloatProperty",
     "Name": "K2Node_Event_Radius",
     "Outer": "ExecuteUbergraph_ProjGrenade",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": null
   },
   {
     "Type": "StructProperty",
     "Name": "K2Node_Event_Impact",
     "Outer": "ExecuteUbergraph_ProjGrenade",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjGrenade_C:ExecuteUbergraph_ProjGrenade.K2Node_Event_Radius",
+      "ObjectName": "FloatProperty'ProjGrenade_C:ExecuteUbergraph_ProjGrenade.K2Node_Event_Radius'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.4"
     },
     "PropertyFlags": 549755813890,
     "Struct": {
-      "ObjectName": "ScriptStruct HitResult",
+      "ObjectName": "ScriptStruct'HitResult'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -76,13 +82,14 @@
     "Type": "StructProperty",
     "Name": "K2Node_Event_Rotation",
     "Outer": "ExecuteUbergraph_ProjGrenade",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjGrenade_C:ExecuteUbergraph_ProjGrenade.K2Node_Event_Impact",
+      "ObjectName": "StructProperty'ProjGrenade_C:ExecuteUbergraph_ProjGrenade.K2Node_Event_Impact'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.5"
     },
     "PropertyFlags": 2,
     "Struct": {
-      "ObjectName": "ScriptStruct Rotator",
+      "ObjectName": "ScriptStruct'Rotator'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -90,13 +97,14 @@
     "Type": "StructProperty",
     "Name": "K2Node_Event_Location",
     "Outer": "ExecuteUbergraph_ProjGrenade",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjGrenade_C:ExecuteUbergraph_ProjGrenade.K2Node_Event_Rotation",
+      "ObjectName": "StructProperty'ProjGrenade_C:ExecuteUbergraph_ProjGrenade.K2Node_Event_Rotation'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.6"
     },
     "PropertyFlags": 2,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -104,8 +112,9 @@
     "Type": "IntProperty",
     "Name": "EntryPoint",
     "Outer": "ExecuteUbergraph_ProjGrenade",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjGrenade_C:ExecuteUbergraph_ProjGrenade.K2Node_Event_Location",
+      "ObjectName": "StructProperty'ProjGrenade_C:ExecuteUbergraph_ProjGrenade.K2Node_Event_Location'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.7"
     },
     "PropertyFlags": 128
@@ -114,13 +123,14 @@
     "Type": "Function",
     "Name": "ExecuteUbergraph_ProjGrenade",
     "Outer": "ProjGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "StructProperty ProjGrenade_C:ExplodeLocation",
+      "ObjectName": "StructProperty'ProjGrenade_C:ExplodeLocation'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.3"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty ProjGrenade_C:ExecuteUbergraph_ProjGrenade.EntryPoint",
+        "ObjectName": "IntProperty'ProjGrenade_C:ExecuteUbergraph_ProjGrenade.EntryPoint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.8"
       }
     ],
@@ -130,6 +140,7 @@
     "Type": "FloatProperty",
     "Name": "Radius",
     "Outer": "ExplodeBP",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": null,
     "PropertyFlags": 128
   },
@@ -137,13 +148,14 @@
     "Type": "StructProperty",
     "Name": "Impact",
     "Outer": "ExplodeBP",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjGrenade_C:ExplodeBP.Radius",
+      "ObjectName": "FloatProperty'ProjGrenade_C:ExplodeBP.Radius'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.10"
     },
     "PropertyFlags": 549890032002,
     "Struct": {
-      "ObjectName": "ScriptStruct HitResult",
+      "ObjectName": "ScriptStruct'HitResult'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -151,13 +163,14 @@
     "Type": "StructProperty",
     "Name": "Rotation",
     "Outer": "ExplodeBP",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjGrenade_C:ExplodeBP.Impact",
+      "ObjectName": "StructProperty'ProjGrenade_C:ExplodeBP.Impact'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.11"
     },
     "PropertyFlags": 134218114,
     "Struct": {
-      "ObjectName": "ScriptStruct Rotator",
+      "ObjectName": "ScriptStruct'Rotator'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -165,13 +178,14 @@
     "Type": "StructProperty",
     "Name": "Location",
     "Outer": "ExplodeBP",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjGrenade_C:ExplodeBP.Rotation",
+      "ObjectName": "StructProperty'ProjGrenade_C:ExplodeBP.Rotation'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.12"
     },
     "PropertyFlags": 134218114,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -179,17 +193,18 @@
     "Type": "Function",
     "Name": "ExplodeBP",
     "Outer": "ProjGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjGrenade_C:ExecuteUbergraph_ProjGrenade",
+      "ObjectName": "Function'ProjGrenade_C:ExecuteUbergraph_ProjGrenade'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.9"
     },
     "SuperStruct": {
-      "ObjectName": "Function TslProjectile:ExplodeBP",
+      "ObjectName": "Function'TslProjectile:ExplodeBP'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjGrenade_C:ExplodeBP.Location",
+        "ObjectName": "StructProperty'ProjGrenade_C:ExplodeBP.Location'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.13"
       }
     ],
@@ -199,12 +214,13 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjGrenade_C:ExplodeBP",
+      "ObjectName": "Function'ProjGrenade_C:ExplodeBP'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.14"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 201459712
@@ -213,73 +229,76 @@
     "Type": "StructProperty",
     "Name": "UberGraphFrame",
     "Outer": "ProjGrenade_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "Function ProjGrenade_C:UserConstructionScript",
+      "ObjectName": "Function'ProjGrenade_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.15"
     },
     "PropertyFlags": 2105344,
     "Struct": {
-      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
       "ObjectPath": "/Script/Engine"
     }
   },
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjGrenade_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjGrenade_C:SimpleConstructionScript_0__57659476",
+        "ObjectName": "SimpleConstructionScript'ProjGrenade_C:SimpleConstructionScript_0__57659476'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.24"
       },
       "UberGraphFramePointerProperty": {
-        "ObjectName": "StructProperty ProjGrenade_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjGrenade_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.16"
       },
       "UberGraphFunction": {
-        "ObjectName": "Function ProjGrenade_C:ExecuteUbergraph_ProjGrenade",
+        "ObjectName": "Function'ProjGrenade_C:ExecuteUbergraph_ProjGrenade'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.9"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslProjectile",
+      "ObjectName": "Class'TslProjectile'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjGrenade_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjGrenade_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.16"
       }
     ],
     "FuncMap": {
       "ExecuteUbergraph_ProjGrenade": {
-        "ObjectName": "Function ProjGrenade_C:ExecuteUbergraph_ProjGrenade",
+        "ObjectName": "Function'ProjGrenade_C:ExecuteUbergraph_ProjGrenade'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.9"
       },
       "ExplodeBP": {
-        "ObjectName": "Function ProjGrenade_C:ExplodeBP",
+        "ObjectName": "Function'ProjGrenade_C:ExplodeBP'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.14"
       },
       "UserConstructionScript": {
-        "ObjectName": "Function ProjGrenade_C:UserConstructionScript",
+        "ObjectName": "Function'ProjGrenade_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.15"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjGrenade_C Default__ProjGrenade_C",
+      "ObjectName": "ProjGrenade_C'Default__ProjGrenade_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.18"
     }
   },
   {
     "Type": "ProjGrenade_C",
     "Name": "Default__ProjGrenade_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.ProjGrenade_C'",
     "Properties": {
       "UberGraphFrame": {},
       "ExplodeLocation": {
@@ -288,35 +307,35 @@
         "Z": 0.0
       },
       "Tinnitus_Proximity": {
-        "ObjectName": "AkAudioEvent Tinnitus_Fx_Frag_Proximity",
+        "ObjectName": "AkAudioEvent'Tinnitus_Fx_Frag_Proximity'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Tinnitus_Fx_Frag_Proximity.0"
       },
       "Tinnitus_Direct": {
-        "ObjectName": "AkAudioEvent Tinnitus_Fx_Frag_Direct",
+        "ObjectName": "AkAudioEvent'Tinnitus_Fx_Frag_Direct'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Tinnitus_Fx_Frag_Direct.0"
       },
       "MovementComp": {
-        "ObjectName": "TslProjectileMovementComponent Default__ProjGrenade_C:ProjectileComp",
+        "ObjectName": "TslProjectileMovementComponent'Default__ProjGrenade_C:ProjectileComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.28"
       },
       "CollisionComp": {
-        "ObjectName": "SphereComponent Default__ProjGrenade_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjGrenade_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.26"
       },
       "ParticleComp": {
-        "ObjectName": "ParticleSystemComponent Default__ProjGrenade_C:ParticleComp",
+        "ObjectName": "ParticleSystemComponent'Default__ProjGrenade_C:ParticleComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.20"
       },
       "MeshComp": {
-        "ObjectName": "StaticMeshComponent Default__ProjGrenade_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjGrenade_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.27"
       },
       "InterpolationTargetComp": {
-        "ObjectName": "SphereComponent Default__ProjGrenade_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjGrenade_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.25"
       },
       "ConstraintComp": {
-        "ObjectName": "PhysicsConstraintComponent Default__ProjGrenade_C:MeshConstraint",
+        "ObjectName": "PhysicsConstraintComponent'Default__ProjGrenade_C:MeshConstraint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.21"
       },
       "MeshInitialRotationRate": {
@@ -329,27 +348,27 @@
       },
       "ProjectileParticleClass": "EProjectileParticleClass::PPC_Frag",
       "ExplosionTemplate": {
-        "ObjectName": "BlueprintGeneratedClass ProjGrenade_Explosion_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjGrenade_Explosion_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.34"
       },
       "ExplosionTemplateInAir": {
-        "ObjectName": "BlueprintGeneratedClass ProjGrenade_ExplosionInAir_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjGrenade_ExplosionInAir_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_ExplosionInAir.0"
       },
       "ExplosionTemplateInWater": {
-        "ObjectName": "BlueprintGeneratedClass ProjGrenade_Explosion_Underwater_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjGrenade_Explosion_Underwater_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.20"
       },
       "EffectData": {
-        "ObjectName": "TslExplosionEffectData FragExplosionEffectData",
+        "ObjectName": "TslExplosionEffectData'FragExplosionEffectData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/FragExplosionEffectData.0"
       },
       "ImpactSound": {
-        "ObjectName": "AkAudioEvent HandBomb_Common_Impact",
+        "ObjectName": "AkAudioEvent'HandBomb_Common_Impact'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/HandBomb_Common/HandBomb_Common_Impact.0"
       },
       "AkComp": {
-        "ObjectName": "AkComponent Default__ProjGrenade_C:AkComp",
+        "ObjectName": "AkComponent'Default__ProjGrenade_C:AkComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.19"
       },
       "ProjectileConfig": {
@@ -357,16 +376,16 @@
         "ExplosionRadius": 1000.0,
         "IgniteFuelInRadius": 400.0,
         "DamageCurve": {
-          "ObjectName": "CurveFloat FragGrenadeDamageCurve",
+          "ObjectName": "CurveFloat'FragGrenadeDamageCurve'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/FragGrenadeDamageCurve.0"
         },
         "DamageType": {
-          "ObjectName": "BlueprintGeneratedClass DmgTypeExplosion_Grenade_C",
+          "ObjectName": "BlueprintGeneratedClass'DmgTypeExplosion_Grenade_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgTypeExplosion_Grenade.0"
         }
       },
       "RootComponent": {
-        "ObjectName": "SphereComponent Default__ProjGrenade_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjGrenade_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.26"
       }
     }
@@ -375,9 +394,10 @@
     "Type": "AkComponent",
     "Name": "AkComp",
     "Outer": "Default__ProjGrenade_C",
+    "Class": "UScriptClass'AkComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjGrenade_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjGrenade_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.26"
       }
     }
@@ -386,9 +406,10 @@
     "Type": "ParticleSystemComponent",
     "Name": "ParticleComp",
     "Outer": "Default__ProjGrenade_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "StaticMeshComponent Default__ProjGrenade_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjGrenade_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.27"
       }
     }
@@ -397,9 +418,10 @@
     "Type": "PhysicsConstraintComponent",
     "Name": "MeshConstraint",
     "Outer": "Default__ProjGrenade_C",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjGrenade_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjGrenade_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.25"
       }
     }
@@ -407,19 +429,21 @@
   {
     "Type": "SceneComponent",
     "Name": "SceneComponent_1",
-    "Outer": "ProjGrenade_C"
+    "Outer": "ProjGrenade_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjGrenade_C:SceneComponent_1",
+        "ObjectName": "SceneComponent'ProjGrenade_C:SceneComponent_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.22"
       },
       "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
@@ -430,9 +454,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0__57659476",
     "Outer": "ProjGrenade_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjGrenade_C:SimpleConstructionScript_0__57659476.SCS_Node_1",
+        "ObjectName": "SCS_Node'ProjGrenade_C:SimpleConstructionScript_0__57659476.SCS_Node_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.23"
       }
     }
@@ -441,9 +466,10 @@
     "Type": "SphereComponent",
     "Name": "InterpolationTarget",
     "Outer": "Default__ProjGrenade_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjGrenade_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjGrenade_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.26"
       }
     }
@@ -452,6 +478,7 @@
     "Type": "SphereComponent",
     "Name": "SphereComp",
     "Outer": "Default__ProjGrenade_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "SphereRadius": 4.0,
       "BodyInstance": {
@@ -462,7 +489,7 @@
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "ProjGrenade_C Default__ProjGrenade_C",
+              "ObjectName": "ProjGrenade_C'Default__ProjGrenade_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.18"
             },
             "FunctionName": "OnHit"
@@ -475,9 +502,10 @@
     "Type": "StaticMeshComponent",
     "Name": "MeshComp",
     "Outer": "Default__ProjGrenade_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
     "Properties": {
       "StaticMesh": {
-        "ObjectName": "StaticMesh M67_01_Projectile",
+        "ObjectName": "StaticMesh'M67_01_Projectile'",
         "ObjectPath": "TslGame/Content/Weapon/Grenades/M67_Frag/M67_01_Projectile.1"
       },
       "bReceivesDecals": false,
@@ -485,18 +513,18 @@
         "bUseCCD": true,
         "AngularDamping": 1.0,
         "PhysMaterialOverride": {
-          "ObjectName": "PhysicalMaterial PhysMat_Grenade",
+          "ObjectName": "PhysicalMaterial'PhysMat_Grenade'",
           "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Grenade.0"
         }
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__ProjGrenade_C:InterpolationTarget'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.25"
       },
       "RelativeScale3D": {
         "X": 1.4,
         "Y": 1.4,
         "Z": 1.4
-      },
-      "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjGrenade_C:InterpolationTarget",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.25"
       }
     }
   },
@@ -504,6 +532,7 @@
     "Type": "TslProjectileMovementComponent",
     "Name": "ProjectileComp",
     "Outer": "Default__ProjGrenade_C",
+    "Class": "UScriptClass'TslProjectileMovementComponent'",
     "Properties": {
       "SlidingFriction_Speed_In": {
         "X": 0.0,

@@ -1,0 +1,407 @@
+[
+  {
+    "Type": "FloatProperty",
+    "Name": "TotalTime",
+    "Outer": "Task_CarePackageFinishCheck_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanOR_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanAND_ReturnValue3",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_BooleanOR_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.1"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanAND_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_BooleanAND_ReturnValue3'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.2"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_BooleanAND_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.3"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanAND_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_LessEqual_IntInt_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.4"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsMatchInProgressBP_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_BooleanAND_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.5"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetGameState_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_IsMatchInProgressBP_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.6"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslGameState'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Not_PreBool_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_GetGameState_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.7"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsPlayInEditor_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_Not_PreBool_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.8"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsMatchInProgressBP_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_IsPlayInEditor_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.9"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_GreaterEqual_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_IsMatchInProgressBP_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.10"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_GreaterEqual_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.11"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetGameState_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_IsValid_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.12"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslGameState'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Not_PreBool_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_GetGameState_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.13"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsPreventFinishMatch_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_Not_PreBool_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.14"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Add_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_IsPreventFinishMatch_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.15"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetGameMode_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_Add_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.16"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslGameMode'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.CallFunc_GetGameMode_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.17"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsCare_Package_Controller",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.18"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'CarePackageController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_Event_DeltaSeconds",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.K2Node_DynamicCast_AsCare_Package_Controller'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.19"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OwnerActor",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.K2Node_Event_DeltaSeconds'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.20"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.K2Node_Event_OwnerActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.21"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Task_CarePackageFinishCheck",
+    "Outer": "Task_CarePackageFinishCheck_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_CarePackageFinishCheck_C:TotalTime'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.22"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "DeltaSeconds",
+    "Outer": "ReceiveTick",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OwnerActor",
+    "Outer": "ReceiveTick",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_CarePackageFinishCheck_C:ReceiveTick.DeltaSeconds'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.24"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "Task_CarePackageFinishCheck_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.23"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BTTask_BlueprintBase:ReceiveTick'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Task_CarePackageFinishCheck_C:ReceiveTick.OwnerActor'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.25"
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Task_CarePackageFinishCheck_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Task_CarePackageFinishCheck_C:ReceiveTick'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.26"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Task_CarePackageFinishCheck_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Task_CarePackageFinishCheck_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.27"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.23"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_BlueprintBase'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Task_CarePackageFinishCheck_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.27"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Task_CarePackageFinishCheck": {
+        "ObjectName": "Function'Task_CarePackageFinishCheck_C:ExecuteUbergraph_Task_CarePackageFinishCheck'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.23"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'Task_CarePackageFinishCheck_C:ReceiveTick'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.26"
+      }
+    },
+    "ClassFlags": 262160,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Task_CarePackageFinishCheck_C'Default__Task_CarePackageFinishCheck_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.29"
+    }
+  },
+  {
+    "Type": "Task_CarePackageFinishCheck_C",
+    "Name": "Default__Task_CarePackageFinishCheck_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Task_CarePackageFinishCheck.Task_CarePackageFinishCheck_C'",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]

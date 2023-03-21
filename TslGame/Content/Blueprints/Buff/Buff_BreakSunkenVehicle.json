@@ -1,0 +1,382 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "Buff_BreakSunkenVehicle_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OtherCharacter",
+    "Outer": "ExecuteUbergraph_Buff_BreakSunkenVehicle",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsBroken_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_BreakSunkenVehicle",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_BreakSunkenVehicle_C:ExecuteUbergraph_Buff_BreakSunkenVehicle.K2Node_Event_OtherCharacter'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.1"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsBroken_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_BreakSunkenVehicle",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_BreakSunkenVehicle_C:ExecuteUbergraph_Buff_BreakSunkenVehicle.CallFunc_IsBroken_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.2"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_BreakSunkenVehicle",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_BreakSunkenVehicle_C:ExecuteUbergraph_Buff_BreakSunkenVehicle.CallFunc_IsBroken_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.3"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_BreakSunkenVehicle",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_BreakSunkenVehicle_C:ExecuteUbergraph_Buff_BreakSunkenVehicle.CallFunc_IsValid_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.4"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetVehicleCommonComponent_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_BreakSunkenVehicle",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_BreakSunkenVehicle_C:ExecuteUbergraph_Buff_BreakSunkenVehicle.CallFunc_IsValid_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.5"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslVehicleCommonComponent'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetOwnerPawn_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_BreakSunkenVehicle",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_BreakSunkenVehicle_C:ExecuteUbergraph_Buff_BreakSunkenVehicle.CallFunc_GetVehicleCommonComponent_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.6"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Pawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetVehicleCommonComponent_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_BreakSunkenVehicle",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_BreakSunkenVehicle_C:ExecuteUbergraph_Buff_BreakSunkenVehicle.CallFunc_GetOwnerPawn_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.7"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslVehicleCommonComponent'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_Event_bCanceled",
+    "Outer": "ExecuteUbergraph_Buff_BreakSunkenVehicle",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_BreakSunkenVehicle_C:ExecuteUbergraph_Buff_BreakSunkenVehicle.CallFunc_GetVehicleCommonComponent_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.8"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetOwnerPawn_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_BreakSunkenVehicle",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_BreakSunkenVehicle_C:ExecuteUbergraph_Buff_BreakSunkenVehicle.K2Node_Event_bCanceled'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.9"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Pawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Buff_BreakSunkenVehicle",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_BreakSunkenVehicle_C:ExecuteUbergraph_Buff_BreakSunkenVehicle.CallFunc_GetOwnerPawn_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.10"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Buff_BreakSunkenVehicle",
+    "Outer": "Buff_BreakSunkenVehicle_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_BreakSunkenVehicle_C:DefaultSceneRoot'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Buff_BreakSunkenVehicle_C:ExecuteUbergraph_Buff_BreakSunkenVehicle.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.11"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "bCanceled",
+    "Outer": "StopBuffBlueprint",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "Function",
+    "Name": "StopBuffBlueprint",
+    "Outer": "Buff_BreakSunkenVehicle_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_BreakSunkenVehicle_C:ExecuteUbergraph_Buff_BreakSunkenVehicle'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.12"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'TslBuff:StopBuffBlueprint'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty'Buff_BreakSunkenVehicle_C:StopBuffBlueprint.bCanceled'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.13"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OtherCharacter",
+    "Outer": "TickBuff",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "TickBuff",
+    "Outer": "Buff_BreakSunkenVehicle_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_BreakSunkenVehicle_C:StopBuffBlueprint'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.14"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'TslBuff:TickBuff'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Buff_BreakSunkenVehicle_C:TickBuff.OtherCharacter'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.15"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "Buff_BreakSunkenVehicle_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_BreakSunkenVehicle_C:TickBuff'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.16"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Buff_BreakSunkenVehicle_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Buff_BreakSunkenVehicle_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.17"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_BreakSunkenVehicle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Buff_BreakSunkenVehicle_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.23"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Buff_BreakSunkenVehicle_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.18"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Buff_BreakSunkenVehicle_C:ExecuteUbergraph_Buff_BreakSunkenVehicle'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.12"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslBuff'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Buff_BreakSunkenVehicle_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.18"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Buff_BreakSunkenVehicle": {
+        "ObjectName": "Function'Buff_BreakSunkenVehicle_C:ExecuteUbergraph_Buff_BreakSunkenVehicle'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.12"
+      },
+      "StopBuffBlueprint": {
+        "ObjectName": "Function'Buff_BreakSunkenVehicle_C:StopBuffBlueprint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.14"
+      },
+      "TickBuff": {
+        "ObjectName": "Function'Buff_BreakSunkenVehicle_C:TickBuff'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.16"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'Buff_BreakSunkenVehicle_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.17"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_BreakSunkenVehicle_C'Default__Buff_BreakSunkenVehicle_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.20"
+    }
+  },
+  {
+    "Type": "Buff_BreakSunkenVehicle_C",
+    "Name": "Default__Buff_BreakSunkenVehicle_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.Buff_BreakSunkenVehicle_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "OverlapId": "Buff_BreakSunkenVehicle",
+      "BuffTickInterval": 10.0,
+      "BuffDuration": 5.0,
+      "Infinite": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Buff_BreakSunkenVehicle_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Buff_BreakSunkenVehicle_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.21"
+      },
+      "VariableGuid": "68EC0347-44B32CBD-F3AED7A7-BB0FCB29",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Buff_BreakSunkenVehicle_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Buff_BreakSunkenVehicle_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.22"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Buff_BreakSunkenVehicle_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.22"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Buff_BreakSunkenVehicle_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_BreakSunkenVehicle.22"
+      }
+    }
+  }
+]

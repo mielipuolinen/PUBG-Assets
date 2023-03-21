@@ -1,0 +1,45 @@
+[
+  {
+    "Type": "TslReactionData",
+    "Name": "Tiger_Broken_Pot",
+    "Class": "UScriptClass'TslReactionData'",
+    "Properties": {
+      "DestroyDelay": 2.0,
+      "VehicleReactionData": {
+        "ReactionType": "EReactionType::Reaction_Destructible",
+        "ReactionMinSpeed": 1000.0
+      },
+      "RadialDamageReactionData": {
+        "ReactionType": "EReactionType::Reaction_Destructible",
+        "ReactionForceFactor": 10000.0,
+        "ReactionMinDamage": 40.0
+      },
+      "PointDamageReactionData": {
+        "ReactionType": "EReactionType::Reaction_Destructible",
+        "ReactionForceFactor": 2500.0,
+        "DamageAccumulateTimeout": 5.0,
+        "DamageDataByCategory": [
+          {
+            "DamageType": "EDamageTypeCategory::Damage_Melee",
+            "DamageFactor": 1.8,
+            "DamageAccumulateTimeout": 5.0
+          },
+          {
+            "DamageType": "EDamageTypeCategory::Damage_MeleeThrow",
+            "DamageFactor": 2.2,
+            "DamageAccumulateTimeout": 5.0
+          },
+          {
+            "DamageType": "EDamageTypeCategory::Damage_Punch",
+            "DamageFactor": 1.5,
+            "DamageAccumulateTimeout": 5.0
+          }
+        ]
+      },
+      "DestructibleReactionSoundAk": {
+        "ObjectName": "AkAudioEvent'Exterior_Object_Destroy_Pot'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Object/Exterior_Object_Destroy_Pot.0"
+      }
+    }
+  }
+]

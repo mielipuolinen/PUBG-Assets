@@ -1,0 +1,183 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_BulletproofShield_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_BulletproofShield_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/BulletproofShield/BP_BulletproofShield.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslBulletproofShield'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_BulletproofShield_C'Default__BP_BulletproofShield_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/BulletproofShield/BP_BulletproofShield.1"
+    }
+  },
+  {
+    "Type": "BP_BulletproofShield_C",
+    "Name": "Default__BP_BulletproofShield_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/BulletproofShield/BP_BulletproofShield.BP_BulletproofShield_C'",
+    "Properties": {
+      "ReactionData": {
+        "ObjectName": "TslReactionData'DA_BulletproofShield_Castable'",
+        "ObjectPath": "TslGame/Content/Blueprints/BulletproofShield/DA_BulletproofShield_Castable.0"
+      },
+      "ReactionPhysics": {
+        "ObjectName": "PhysicsAsset'SK_Bulletproof_shield_PhysicsAsset_Box'",
+        "ObjectPath": "TslGame/Content/Weapon/Bulletproof_shield/Meshes/SK_Bulletproof_shield_PhysicsAsset_Box.0"
+      },
+      "DurabilityStateMaterials": [
+        {
+          "EBulletproofShieldDurabilityState::Normal": {
+            "ObjectName": "MaterialInstanceConstant'MI_Bulletproof_shield'",
+            "ObjectPath": "TslGame/Content/Weapon/Bulletproof_shield/Materials/MI_Bulletproof_shield.0"
+          }
+        },
+        {
+          "EBulletproofShieldDurabilityState::Damaged": {
+            "ObjectName": "MaterialInstanceConstant'MI_Bulletproof_shield_damaged01'",
+            "ObjectPath": "TslGame/Content/Weapon/Bulletproof_shield/Materials/MI_Bulletproof_shield_damaged01.0"
+          }
+        },
+        {
+          "EBulletproofShieldDurabilityState::DamagedSeverely": {
+            "ObjectName": "MaterialInstanceConstant'MI_Bulletproof_shield_damaged02'",
+            "ObjectPath": "TslGame/Content/Weapon/Bulletproof_shield/Materials/MI_Bulletproof_shield_damaged02.0"
+          }
+        }
+      ],
+      "DropItemInteractionComponent": {
+        "ObjectName": "BulletproofShieldInteractionComponent'Default__BP_BulletproofShield_C:DropItemInteractionComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/BulletproofShield/BP_BulletproofShield.2"
+      },
+      "MeshComponent": {
+        "ObjectName": "SkeletalMeshComponent'Default__BP_BulletproofShield_C:BulletproofShieldMesh'",
+        "ObjectPath": "TslGame/Content/Blueprints/BulletproofShield/BP_BulletproofShield.7"
+      },
+      "InstallFxClassPtr": "/Game/Effects/Clets/Particles/Weapons/BulletShield/P_BulletShieldInstall_BP.P_BulletShieldInstall_BP_C",
+      "DestroyedFxClassPtr": "/Game/Effects/Clets/Particles/Weapons/BulletShield/P_BulletShieldDestroy_Bp.P_BulletShieldDestroy_BP_C",
+      "InstallFxClass": {
+        "ObjectName": "BlueprintGeneratedClass'P_BulletShieldInstall_BP_C'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/BulletShield/P_BulletShieldInstall_BP.0"
+      },
+      "DestroyedFxClass": {
+        "ObjectName": "BlueprintGeneratedClass'P_BulletShieldDestroy_BP_C'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/BulletShield/P_BulletShieldDestroy_Bp.0"
+      },
+      "AbilitySystemComponent": {
+        "ObjectName": "TslAbilitySystemComponent'Default__BP_BulletproofShield_C:AbilitySystemComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/BulletproofShield/BP_BulletproofShield.8"
+      },
+      "AttributeSet": {
+        "ObjectName": "TslAttributeSet'Default__BP_BulletproofShield_C:AttributeSet'",
+        "ObjectPath": "TslGame/Content/Blueprints/BulletproofShield/BP_BulletproofShield.9"
+      },
+      "bReplicates": true,
+      "NetUpdateFrequency": 5.0,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BP_BulletproofShield_C:RootScene'",
+        "ObjectPath": "TslGame/Content/Blueprints/BulletproofShield/BP_BulletproofShield.4"
+      },
+      "NetPriority": 3.0
+    }
+  },
+  {
+    "Type": "BulletproofShieldInteractionComponent",
+    "Name": "DropItemInteractionComponent",
+    "Outer": "Default__BP_BulletproofShield_C",
+    "Class": "UScriptClass'BulletproofShieldInteractionComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_BulletproofShield_C:RootScene'",
+        "ObjectPath": "TslGame/Content/Blueprints/BulletproofShield/BP_BulletproofShield.4"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_BulletproofShield_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__BP_BulletproofShield_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_BulletproofShield_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/BulletproofShield/BP_BulletproofShield.3"
+      },
+      "VariableGuid": "1C7275E0-4E947FC6-213E2DA4-3D5CDF47",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_BulletproofShield_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_BulletproofShield_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/BulletproofShield/BP_BulletproofShield.5"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "BulletproofShieldMesh",
+    "Outer": "Default__BP_BulletproofShield_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Properties": {
+      "AnimClass": {
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_BulletproofShield_C'",
+        "ObjectPath": "TslGame/Content/Weapon/Bulletproof_shield/Meshes/ABP_BulletproofShield.46"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Bulletproof_shield'",
+        "ObjectPath": "TslGame/Content/Weapon/Bulletproof_shield/Meshes/SK_Bulletproof_shield.0"
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__BP_BulletproofShield_C:RootScene'",
+        "ObjectPath": "TslGame/Content/Blueprints/BulletproofShield/BP_BulletproofShield.4"
+      }
+    }
+  },
+  {
+    "Type": "TslAbilitySystemComponent",
+    "Name": "AbilitySystemComponent",
+    "Outer": "Default__BP_BulletproofShield_C",
+    "Class": "UScriptClass'TslAbilitySystemComponent'"
+  },
+  {
+    "Type": "TslAttributeSet",
+    "Name": "AttributeSet",
+    "Outer": "Default__BP_BulletproofShield_C",
+    "Class": "UScriptClass'TslAttributeSet'"
+  }
+]

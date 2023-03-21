@@ -1,0 +1,261 @@
+[
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent0",
+    "Outer": "LevelBounds_0",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 526708.1,
+        "Y": -248272.47,
+        "Z": 39733.32
+      },
+      "RelativeScale3D": {
+        "X": 1996910.2,
+        "Y": 1844176.0,
+        "Z": 192304.14
+      }
+    }
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Outer": "Vista",
+    "Class": "UScriptClass'Level'",
+    "Properties": {
+      "LevelBuildDataId": "9944D503-4E40F725-E7FC88A9-68CA923D",
+      "Model": {
+        "ObjectName": "Model'Vista:PersistentLevel.Model_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Vista.3"
+      },
+      "WorldSettings": {
+        "ObjectName": "WorldSettings'Vista:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Vista.8"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "WorldSettings'Vista:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Vista.8"
+      },
+      null,
+      {
+        "ObjectName": "LevelBounds'Vista:PersistentLevel.LevelBounds_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Vista.2"
+      },
+      {
+        "ObjectName": "TslStaticContainer'Vista:PersistentLevel.Vista_StaticActor_1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Vista.6"
+      },
+      null
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/Maps/lobby/Seasonpass/TslLobby_Seasonpass20_0422_main",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'Vista:PersistentLevel.Model_0'",
+      "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Vista.3"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": null,
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "LevelBounds",
+    "Name": "LevelBounds_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelBounds'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Vista:PersistentLevel.LevelBounds_0.BoxComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Vista.0"
+      }
+    }
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "79B611CB-47964902-3F0CBBA1-1A21DBD1",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent_0",
+    "Outer": "Vista_StaticActor_1",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "Mobility": "EComponentMobility::Static"
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "SM_MERGED_SnowVista03_0",
+    "Outer": "Vista_StaticActor_1",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_MERGED_SnowVista03'",
+        "ObjectPath": "TslGame/Content/Assets/World/Common/Exterior/DihorOtok/SM_MERGED_SnowVista03.1"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -7.601722,
+        "Roll": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Vista:PersistentLevel.Vista_StaticActor_1.SceneComponent_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Vista.4"
+      },
+      "RelativeLocation": {
+        "X": 127585.16,
+        "Y": -474269.25,
+        "Z": -30074.098
+      },
+      "CreationMethod": "EComponentCreationMethod::Instance"
+    }
+  },
+  {
+    "Type": "TslStaticContainer",
+    "Name": "Vista_StaticActor_1",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'TslStaticContainer'",
+    "Properties": {
+      "InstanceComponents": [
+        {
+          "ObjectName": "StaticMeshComponent'Vista:PersistentLevel.Vista_StaticActor_1.SM_MERGED_SnowVista03_0'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Vista.5"
+        }
+      ],
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Vista:PersistentLevel.Vista_StaticActor_1.SceneComponent_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Vista.4"
+      }
+    }
+  },
+  {
+    "Type": "World",
+    "Name": "Vista",
+    "Class": "UScriptClass'World'",
+    "Properties": {
+      "DefaultPhysicsVolume": null
+    },
+    "PersistentLevel": {
+      "ObjectName": "Level'Vista:PersistentLevel'",
+      "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Vista.1"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  },
+  {
+    "Type": "WorldSettings",
+    "Name": "WorldSettings",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WorldSettings'"
+  }
+]

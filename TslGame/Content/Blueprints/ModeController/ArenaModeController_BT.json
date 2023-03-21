@@ -1,0 +1,342 @@
+[
+  {
+    "Type": "BehaviorTree",
+    "Name": "ArenaModeController_BT",
+    "Class": "UScriptClass'BehaviorTree'",
+    "Properties": {
+      "RootNode": {
+        "ObjectName": "BTComposite_Sequence'ArenaModeController_BT:BTComposite_Sequence_4'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.3"
+      },
+      "BlackboardAsset": {
+        "ObjectName": "BlackboardData'ArenaModeController_BB'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BB.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_1",
+    "Outer": "ArenaModeController_BT",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "Task_FinishMatch_Arena_C'ArenaModeController_BT:Task_FinishMatch_Arena_C_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.10"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_Wait'ArenaModeController_BT:BTTask_Wait_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.6"
+          },
+          "Decorators": [
+            {
+              "ObjectName": "BTDecorator_Loop'ArenaModeController_BT:BTDecorator_Loop_0'",
+              "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.5"
+            }
+          ],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'ArenaModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'ArenaModeController_BT:BTComposite_Sequence_4'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.3"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_3",
+    "Outer": "ArenaModeController_BT",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "Task_NextGasInBlackboard_Arena_new_C'ArenaModeController_BT:Task_NextGasInBlackboard_Arena_new_C_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.13"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "BTTask_WaitBlackboardTime'ArenaModeController_BT:BTTask_WaitBlackboardTime_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.7"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "Task_GasWarning_Arena_C'ArenaModeController_BT:Task_GasWarning_Arena_C_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.12"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "Task_GasRelease_Arena_C'ArenaModeController_BT:Task_GasRelease_Arena_C_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.11"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "Services": [
+        {
+          "ObjectName": "Service_PoisonDamage_Arena_C'ArenaModeController_BT:Service_PoisonDamage_Arena_C_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.8"
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'ArenaModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'ArenaModeController_BT:BTComposite_SimpleParallel_2'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.4"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_Sequence",
+    "Name": "BTComposite_Sequence_4",
+    "Outer": "ArenaModeController_BT",
+    "Class": "UScriptClass'BTComposite_Sequence'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_SimpleParallel'ArenaModeController_BT:BTComposite_SimpleParallel_2'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.4"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'ArenaModeController_BT:BTComposite_Sequence_1'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.1"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'ArenaModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.0"
+      }
+    }
+  },
+  {
+    "Type": "BTComposite_SimpleParallel",
+    "Name": "BTComposite_SimpleParallel_2",
+    "Outer": "ArenaModeController_BT",
+    "Class": "UScriptClass'BTComposite_SimpleParallel'",
+    "Properties": {
+      "Children": [
+        {
+          "ChildComposite": null,
+          "ChildTask": {
+            "ObjectName": "Task_CheckFinish_Arena_C'ArenaModeController_BT:Task_CheckFinish_Arena_C_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.9"
+          },
+          "Decorators": [],
+          "DecoratorOps": []
+        },
+        {
+          "ChildComposite": {
+            "ObjectName": "BTComposite_Sequence'ArenaModeController_BT:BTComposite_Sequence_3'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.2"
+          },
+          "ChildTask": null,
+          "Decorators": [],
+          "DecoratorOps": []
+        }
+      ],
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'ArenaModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'ArenaModeController_BT:BTComposite_Sequence_4'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.3"
+      }
+    }
+  },
+  {
+    "Type": "BTDecorator_Loop",
+    "Name": "BTDecorator_Loop_0",
+    "Outer": "ArenaModeController_BT",
+    "Class": "UScriptClass'BTDecorator_Loop'",
+    "Properties": {
+      "bInfiniteLoop": true,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'ArenaModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'ArenaModeController_BT:BTComposite_Sequence_1'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_Wait",
+    "Name": "BTTask_Wait_0",
+    "Outer": "ArenaModeController_BT",
+    "Class": "UScriptClass'BTTask_Wait'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'ArenaModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'ArenaModeController_BT:BTComposite_Sequence_1'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.1"
+      }
+    }
+  },
+  {
+    "Type": "BTTask_WaitBlackboardTime",
+    "Name": "BTTask_WaitBlackboardTime_0",
+    "Outer": "ArenaModeController_BT",
+    "Class": "UScriptClass'BTTask_WaitBlackboardTime'",
+    "Properties": {
+      "BlackboardKey": {
+        "SelectedKeyName": "StartDelay"
+      },
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'ArenaModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'ArenaModeController_BT:BTComposite_Sequence_3'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.2"
+      }
+    }
+  },
+  {
+    "Type": "Service_PoisonDamage_Arena_C",
+    "Name": "Service_PoisonDamage_Arena_C_0",
+    "Outer": "ArenaModeController_BT",
+    "Template": "Default__Service_PoisonDamage_Arena_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.Service_PoisonDamage_Arena_C'",
+    "Properties": {
+      "Interval": 0.1,
+      "RandomDeviation": 0.0,
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'ArenaModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'ArenaModeController_BT:BTComposite_Sequence_3'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.2"
+      }
+    }
+  },
+  {
+    "Type": "Task_CheckFinish_Arena_C",
+    "Name": "Task_CheckFinish_Arena_C_0",
+    "Outer": "ArenaModeController_BT",
+    "Template": "Default__Task_CheckFinish_Arena_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Task_CheckFinish_Arena.Task_CheckFinish_Arena_C'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'ArenaModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_SimpleParallel'ArenaModeController_BT:BTComposite_SimpleParallel_2'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.4"
+      }
+    }
+  },
+  {
+    "Type": "Task_FinishMatch_Arena_C",
+    "Name": "Task_FinishMatch_Arena_C_0",
+    "Outer": "ArenaModeController_BT",
+    "Template": "Default__Task_FinishMatch_Arena_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Task_FinishMatch_Arena.Task_FinishMatch_Arena_C'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'ArenaModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'ArenaModeController_BT:BTComposite_Sequence_1'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.1"
+      }
+    }
+  },
+  {
+    "Type": "Task_GasRelease_Arena_C",
+    "Name": "Task_GasRelease_Arena_C_0",
+    "Outer": "ArenaModeController_BT",
+    "Template": "Default__Task_GasRelease_Arena_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.Task_GasRelease_Arena_C'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'ArenaModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'ArenaModeController_BT:BTComposite_Sequence_3'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.2"
+      }
+    }
+  },
+  {
+    "Type": "Task_GasWarning_Arena_C",
+    "Name": "Task_GasWarning_Arena_C_0",
+    "Outer": "ArenaModeController_BT",
+    "Template": "Default__Task_GasWarning_Arena_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.Task_GasWarning_Arena_C'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'ArenaModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'ArenaModeController_BT:BTComposite_Sequence_3'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.2"
+      }
+    }
+  },
+  {
+    "Type": "Task_NextGasInBlackboard_Arena_new_C",
+    "Name": "Task_NextGasInBlackboard_Arena_new_C_0",
+    "Outer": "ArenaModeController_BT",
+    "Template": "Default__Task_NextGasInBlackboard_Arena_new_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard_Arena_new.Task_NextGasInBlackboard_Arena_new_C'",
+    "Properties": {
+      "TreeAsset": {
+        "ObjectName": "BehaviorTree'ArenaModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.0"
+      },
+      "ParentNode": {
+        "ObjectName": "BTComposite_Sequence'ArenaModeController_BT:BTComposite_Sequence_3'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BT.2"
+      }
+    }
+  }
+]

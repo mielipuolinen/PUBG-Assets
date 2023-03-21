@@ -1,0 +1,522 @@
+[
+  {
+    "Type": "Material",
+    "Name": "TriplanarRocks",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "BaseColor": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionAdd_13",
+        "UseConstant": false,
+        "Constant": {
+          "B": 128,
+          "G": 128,
+          "R": 128,
+          "A": 255,
+          "Hex": "FF808080"
+        }
+      },
+      "Roughness": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_9",
+        "UseConstant": false,
+        "Constant": 0.5
+      },
+      "Normal": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionNormalize_0",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "EditorX": 864,
+      "EditorY": 144,
+      "Expressions": [
+        {
+          "ObjectName": "MaterialExpressionTextureSample'TriplanarRocks:MaterialExpressionTextureSample_16'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.8"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample'TriplanarRocks:MaterialExpressionTextureSample_17'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.9"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'TriplanarRocks:MaterialExpressionScalarParameter_27'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.3"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureObject'TriplanarRocks:MaterialExpressionTextureObject_1'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.6"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureObject'TriplanarRocks:MaterialExpressionTextureObject_2'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.7"
+        },
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall'TriplanarRocks:MaterialExpressionMaterialFunctionCall_1'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.1"
+        },
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall'TriplanarRocks:MaterialExpressionMaterialFunctionCall_2'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.2"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'TriplanarRocks:MaterialExpressionScalarParameter_37'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.4"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'TriplanarRocks:MaterialExpressionScalarParameter_43'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.5"
+        }
+      ],
+      "MaterialFunctionInfos": [
+        {
+          "StateId": "D5CA2D12-4E0F81E4-F1402084-F8E5BE9D",
+          "Function": {
+            "ObjectName": "MaterialFunction'TriplanarTextureSampler'",
+            "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarTextureSampler.4"
+          }
+        },
+        {
+          "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+          "Function": {
+            "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+          }
+        },
+        {
+          "StateId": "D5CA2D12-4E0F81E4-F1402084-F8E5BE9D",
+          "Function": {
+            "ObjectName": "MaterialFunction'TriplanarTextureSampler'",
+            "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarTextureSampler.4"
+          }
+        },
+        {
+          "StateId": "5B938C50-440B6892-955AD79F-CD1A8337",
+          "Function": {
+            "ObjectName": "MaterialFunction'BreakOutFloat3Components'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/BreakOutFloat3Components.0"
+          }
+        }
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "37F1DE04-48F9F79F-05627E90-7BFB3C78",
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "desert_cliff_01"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "desert_cliff_03_n"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "Rock_00_Red_BaseColorRoughness"
+        },
+        {
+          "SamplingScale": 0.25,
+          "UVChannelIndex": 0,
+          "TextureName": "Rock_00_Red_NormalCavity"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_1",
+    "Outer": "TriplanarRocks",
+    "Class": "UScriptClass'MaterialExpressionMaterialFunctionCall'",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction'TriplanarTextureSampler'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarTextureSampler.4"
+      },
+      "FunctionInputs": [
+        {
+          "ExpressionInputId": "0D5205FD-47A6F59E-23B8F3BF-5139D782",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "VertexNormalWS",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionVertexNormalWS_1"
+          }
+        },
+        {
+          "ExpressionInputId": "0169CDC0-4EACB491-32C55EBB-FA405841",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "WorldPosition",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionMultiply_4"
+          }
+        },
+        {
+          "ExpressionInputId": "87CD8B9F-41CE3832-E159E5B3-3F4920B6",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": -1,
+            "InputName": "BlendOffset",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "None"
+          }
+        },
+        {
+          "ExpressionInputId": "9499FAF9-47E8DB93-11517981-9238BA7E",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "InputTexture",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionTextureObject_2"
+          }
+        },
+        {
+          "ExpressionInputId": "C2DCDB54-4DAA29AF-98362AB9-4FC5CB11",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": -1,
+            "InputName": "OptionalTopInputTexture",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "None"
+          }
+        }
+      ],
+      "FunctionOutputs": [
+        {
+          "ExpressionOutputId": "7341B867-4C08A7E2-7292AF8D-327CF792",
+          "Output": {
+            "OutputName": "Result",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        }
+      ],
+      "Material": {
+        "ObjectName": "Material'TriplanarRocks'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.0"
+      },
+      "Outputs": [
+        {
+          "OutputName": "Result",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_2",
+    "Outer": "TriplanarRocks",
+    "Class": "UScriptClass'MaterialExpressionMaterialFunctionCall'",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction'TriplanarTextureSampler'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarTextureSampler.4"
+      },
+      "FunctionInputs": [
+        {
+          "ExpressionInputId": "0D5205FD-47A6F59E-23B8F3BF-5139D782",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "VertexNormalWS",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionPixelNormalWS_0"
+          }
+        },
+        {
+          "ExpressionInputId": "0169CDC0-4EACB491-32C55EBB-FA405841",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "WorldPosition",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionMultiply_4"
+          }
+        },
+        {
+          "ExpressionInputId": "87CD8B9F-41CE3832-E159E5B3-3F4920B6",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": -1,
+            "InputName": "BlendOffset",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "None"
+          }
+        },
+        {
+          "ExpressionInputId": "9499FAF9-47E8DB93-11517981-9238BA7E",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "InputTexture",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionTextureObject_1"
+          }
+        },
+        {
+          "ExpressionInputId": "C2DCDB54-4DAA29AF-98362AB9-4FC5CB11",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": -1,
+            "InputName": "OptionalTopInputTexture",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "None"
+          }
+        }
+      ],
+      "FunctionOutputs": [
+        {
+          "ExpressionOutputId": "7341B867-4C08A7E2-7292AF8D-327CF792",
+          "Output": {
+            "OutputName": "Result",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        }
+      ],
+      "Material": {
+        "ObjectName": "Material'TriplanarRocks'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.0"
+      },
+      "Outputs": [
+        {
+          "OutputName": "Result",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_27",
+    "Outer": "TriplanarRocks",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.7,
+      "ParameterName": "Rock_00_Red Tiling",
+      "ExpressionGUID": "FB14AC97-4E334ED0-F2FF1CAA-33A50759",
+      "Group": "UVTilingPerMaterial",
+      "Material": {
+        "ObjectName": "Material'TriplanarRocks'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_37",
+    "Outer": "TriplanarRocks",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 20000.0,
+      "SliderMin": 1000.0,
+      "SliderMax": 20000.0,
+      "ParameterName": "Fade Range",
+      "ExpressionGUID": "73B86D8B-4818BC3D-C864D088-F9AC66E4",
+      "Group": "Middle Detail",
+      "Material": {
+        "ObjectName": "Material'TriplanarRocks'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_43",
+    "Outer": "TriplanarRocks",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 20000.0,
+      "SliderMin": 1000.0,
+      "SliderMax": 20000.0,
+      "ParameterName": "StartFade",
+      "ExpressionGUID": "BFAB67DD-4F8DBB4D-6F5F67BE-36DA4000",
+      "Group": "Middle Detail",
+      "Material": {
+        "ObjectName": "Material'TriplanarRocks'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureObject",
+    "Name": "MaterialExpressionTextureObject_1",
+    "Outer": "TriplanarRocks",
+    "Class": "UScriptClass'MaterialExpressionTextureObject'",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D'Rock_00_Red_BaseColorRoughness'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/Textures/Rock_00_Red_BaseColorRoughness.0"
+      },
+      "Material": {
+        "ObjectName": "Material'TriplanarRocks'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureObject",
+    "Name": "MaterialExpressionTextureObject_2",
+    "Outer": "TriplanarRocks",
+    "Class": "UScriptClass'MaterialExpressionTextureObject'",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D'Rock_00_Red_NormalCavity'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/Textures/Rock_00_Red_NormalCavity.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material'TriplanarRocks'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_16",
+    "Outer": "TriplanarRocks",
+    "Class": "UScriptClass'MaterialExpressionTextureSample'",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D'desert_cliff_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Rocks/Textures/desert_cliff_01.0"
+      },
+      "Material": {
+        "ObjectName": "Material'TriplanarRocks'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_17",
+    "Outer": "TriplanarRocks",
+    "Class": "UScriptClass'MaterialExpressionTextureSample'",
+    "Properties": {
+      "Texture": {
+        "ObjectName": "Texture2D'desert_cliff_03_n'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Rocks/Textures/desert_cliff_03_n.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material'TriplanarRocks'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/LandscapeMaterial/TriplanarRocks.0"
+      }
+    }
+  }
+]

@@ -2,64 +2,62 @@
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapBlueChipDetector_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapBlueChipDetector_C:SimpleConstructionScript_0",
+        "ObjectName": "SimpleConstructionScript'WeapBlueChipDetector_C:SimpleConstructionScript_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslWeapon_BlueChipDetector",
+      "ObjectName": "Class'TslWeapon_BlueChipDetector'",
       "ObjectPath": "/Script/TslGame"
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapBlueChipDetector_C Default__WeapBlueChipDetector_C",
+      "ObjectName": "WeapBlueChipDetector_C'Default__WeapBlueChipDetector_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.1"
     }
   },
   {
     "Type": "WeapBlueChipDetector_C",
     "Name": "Default__WeapBlueChipDetector_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.WeapBlueChipDetector_C'",
     "Properties": {
       "WeaponWidget": {
-        "ObjectName": "WidgetComponent Default__WeapBlueChipDetector_C:WeaponWidget",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.7"
+        "ObjectName": "WidgetComponent'Default__WeapBlueChipDetector_C:WeaponWidget'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.8"
       },
-      "ScanningRadiusMeters": 100.0,
-      "MaxScannedPlayers": 12,
-      "ScanningIntervalSeconds": 5.0,
-      "ValidAuxilaryIconRequestors": 2,
-      "ScanIconColorCurve": {
-        "ObjectName": "CurveLinearColor WeapBlueChipDetectorIconColorCurve",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/BlueChipDetector/WeapBlueChipDetectorIconColorCurve.0"
+      "DetectorComp": {
+        "ObjectName": "TslBlueChipDetectorComponent'Default__WeapBlueChipDetector_C:DetectorComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.6"
       },
       "ADSSound": {
-        "ObjectName": "AkAudioEvent Weapon_BlueChipDetector_ADS",
+        "ObjectName": "AkAudioEvent'Weapon_BlueChipDetector_ADS'",
         "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/BlueChipDetector/Weapon_BlueChipDetector_ADS.0"
       },
       "ScanPulseSound": {
-        "ObjectName": "AkAudioEvent Weapon_BlueChipDetector_Scan",
+        "ObjectName": "AkAudioEvent'Weapon_BlueChipDetector_Scan'",
         "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/BlueChipDetector/Weapon_BlueChipDetector_Scan.0"
       },
       "EnemiesDetectedSound": {
-        "ObjectName": "AkAudioEvent Weapon_BlueChipDetector_Enemy",
+        "ObjectName": "AkAudioEvent'Weapon_BlueChipDetector_Enemy'",
         "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/BlueChipDetector/Weapon_BlueChipDetector_Enemy.0"
       },
       "EnemiesDetectedSoundDelaySeconds": 0.1,
       "WeaponSoftRolesData": {
-        "ObjectName": "WeaponSoftRolesData WeapBlueChipDetector_WeaponSoftRolesData",
+        "ObjectName": "WeaponSoftRolesData'WeapBlueChipDetector_WeaponSoftRolesData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapBlueChipDetector_WeaponSoftRolesData.0"
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_Blue_Chip_Detector",
+        "ObjectName": "Texture2D'weapons_Blue_Chip_Detector'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_Blue_Chip_Detector.0"
       },
       "WeaponIconRatio": 1.24,
@@ -140,29 +138,33 @@
         }
       },
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapBlueChipDetector_C:WeaponMesh3P",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.6"
+        "ObjectName": "WeaponMeshComponent'Default__WeapBlueChipDetector_C:WeaponMesh3P'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.7"
       },
       "AnimWeaponType": "EAnimWeaponType::Throwable",
-      "EquipAnimData": {
-        "EAccessorySlot::Slot_Primary": {
-          "Montage": {
-            "ObjectName": "AnimMontage BlueChip_Combat_Stand_PrimarySlot_Montage",
-            "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/BlueChip/BlueChip_Combat_Stand_PrimarySlot_Montage.0"
-          },
-          "PlayRate": 1.0
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_Primary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'BlueChip_Combat_Stand_PrimarySlot_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/BlueChip/BlueChip_Combat_Stand_PrimarySlot_Montage.0"
+            },
+            "PlayRate": 1.0
+          }
         },
-        "EAccessorySlot::Slot_Secondary": {
-          "Montage": {
-            "ObjectName": "AnimMontage BlueChip_Combat_Stand_SecondarySlot_Montage",
-            "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/BlueChip/BlueChip_Combat_Stand_SecondarySlot_Montage.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_Secondary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'BlueChip_Combat_Stand_SecondarySlot_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/PUBG/SoftRoles/BlueChip/BlueChip_Combat_Stand_SecondarySlot_Montage.0"
+            },
+            "PlayRate": 1.0
+          }
         }
-      },
+      ],
       "bAllowPingsWhileTargeting": false,
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapBlueChipDetector_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapBlueChipDetector_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.2"
       }
     }
@@ -171,12 +173,13 @@
     "Type": "SceneComponent",
     "Name": "RootScene",
     "Outer": "Default__WeapBlueChipDetector_C",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapBlueChipDetector_C Default__WeapBlueChipDetector_C",
+              "ObjectName": "WeapBlueChipDetector_C'Default__WeapBlueChipDetector_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.1"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -188,19 +191,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapBlueChipDetector_C"
+    "Outer": "WeapBlueChipDetector_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapBlueChipDetector_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapBlueChipDetector_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.3"
       },
       "VariableGuid": "32ADC416-48EC8971-6720E188-0A9A558A",
@@ -211,10 +216,27 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0",
     "Outer": "WeapBlueChipDetector_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapBlueChipDetector_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectName": "SCS_Node'WeapBlueChipDetector_C:SimpleConstructionScript_0.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.4"
+      }
+    }
+  },
+  {
+    "Type": "TslBlueChipDetectorComponent",
+    "Name": "DetectorComponent",
+    "Outer": "Default__WeapBlueChipDetector_C",
+    "Class": "UScriptClass'TslBlueChipDetectorComponent'",
+    "Properties": {
+      "ScanningRadiusMeters": 100.0,
+      "MaxScannedPlayers": 12,
+      "ScanningIntervalSeconds": 5.0,
+      "ValidAuxilaryIconRequestors": 2,
+      "ScanIconColorCurve": {
+        "ObjectName": "CurveLinearColor'WeapBlueChipDetectorIconColorCurve'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/BlueChipDetector/WeapBlueChipDetectorIconColorCurve.0"
       }
     }
   },
@@ -222,13 +244,14 @@
     "Type": "WeaponMeshComponent",
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapBlueChipDetector_C",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh SK_Blue_Chip_Detector",
+        "ObjectName": "SkeletalMesh'SK_Blue_Chip_Detector'",
         "ObjectPath": "TslGame/Content/Item/Blue_Chip_Detector/Meshes/SK_Blue_Chip_Detector.0"
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapBlueChipDetector_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapBlueChipDetector_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.2"
       }
     }
@@ -237,9 +260,10 @@
     "Type": "WidgetComponent",
     "Name": "WeaponWidget",
     "Outer": "Default__WeapBlueChipDetector_C",
+    "Class": "UScriptClass'WidgetComponent'",
     "Properties": {
       "WidgetClass": {
-        "ObjectName": "WidgetBlueprintGeneratedClass WeapBlueChipDetectorWidget_C",
+        "ObjectName": "WidgetBlueprintGeneratedClass'WeapBlueChipDetectorWidget_C'",
         "ObjectPath": "TslGame/Content/Blueprints/UI/BlueChipDetector/WeapBlueChipDetectorWidget.23"
       },
       "DrawSize": {
@@ -268,24 +292,24 @@
         "CollisionEnabled": "ECollisionEnabled::NoCollision",
         "ObjectType": "ECC_WorldStatic"
       },
-      "RelativeScale3D": {
-        "X": 1.0,
-        "Y": 0.021,
-        "Z": 0.0215
-      },
       "RelativeRotation": {
         "Pitch": 90.0,
         "Yaw": 0.0,
         "Roll": -90.0
+      },
+      "AttachParent": {
+        "ObjectName": "WeaponMeshComponent'Default__WeapBlueChipDetector_C:WeaponMesh3P'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.7"
       },
       "RelativeLocation": {
         "X": -0.6415084,
         "Y": 0.043926,
         "Z": 0.96
       },
-      "AttachParent": {
-        "ObjectName": "WeaponMeshComponent Default__WeapBlueChipDetector_C:WeaponMesh3P",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.6"
+      "RelativeScale3D": {
+        "X": 1.0,
+        "Y": 0.021,
+        "Z": 0.0215
       }
     }
   }

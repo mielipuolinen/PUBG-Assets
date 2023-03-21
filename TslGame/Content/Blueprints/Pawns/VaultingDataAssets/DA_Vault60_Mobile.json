@@ -1,0 +1,109 @@
+[
+  {
+    "Type": "VaultingData",
+    "Name": "DA_Vault60_Mobile",
+    "Class": "UScriptClass'VaultingData'",
+    "Properties": {
+      "MoveRequirements": {
+        "RowRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 1
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": 5
+          }
+        },
+        "SpeedRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 350.0
+          }
+        },
+        "IsVault": "EVaultRequirementType::VaultReqType_True"
+      },
+      "VaultAnimType": "EVaultAnimType::Vault60_Mobile",
+      "LocationStartNormalScale": 40.0,
+      "LocationStartZOffset": -60.0,
+      "LocationEndNormalScale": -130.0,
+      "LocationEndZOffset": -170.0,
+      "PreApexSpeedScale": 1.2,
+      "PostApexSpeedScale": 0.7,
+      "AnimBlendInTime": 0.16,
+      "AnimBlendOutTime": 0.28,
+      "ApexAdditiveStartTime": 0.5,
+      "ApexAdditiveEndTime": 0.75,
+      "StartCutoffByDistance_InMap": {
+        "X": 40.0,
+        "Y": 200.0
+      },
+      "StartCutoffBySpeed_InMap": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "StartCutoffBySpeed_OutMap": {
+        "X": 0.0,
+        "Y": 0.02
+      },
+      "PlayrateBySpeed_InMap_PreApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PreApex": {
+        "X": 1.0,
+        "Y": 2.3
+      },
+      "PlayrateBySpeed_InMap_PostApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PostApex": {
+        "X": 1.0,
+        "Y": 1.5
+      },
+      "AnimationSequence": {
+        "ObjectName": "AnimSequence'Unarmed_Vaulting_Jump_60'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Unarmed_Vaulting_Jump_60.3"
+      },
+      "AnimationSequence_Rifle": {
+        "ObjectName": "AnimSequence'Unarmed_Vaulting_Jump_Rifle_60'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Unarmed_Vaulting_Jump_Rifle_60.3"
+      },
+      "AnimationCurve": {
+        "ObjectName": "CurveFloat'C_Vault_60_Mobile'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Curves/C_Vault_60_Mobile.0"
+      },
+      "CharLocationInterpSpeedInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "CharLocationInterpSpeedOutMap": {
+        "X": 3.5,
+        "Y": 3.0
+      },
+      "TimerProgressionByDistanceInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "TimerProgressionByDistanceOutMap": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "TimerProgressionVTimerMax": 0.08,
+      "VaultEndTimerNormal": 1.0,
+      "VaultEndTimerFall": 0.8,
+      "CharacterPostVaultVelocityScalar": 1.0,
+      "CharacterPostVaultVelocityScalarVector": {
+        "X": 0.8,
+        "Y": 0.8,
+        "Z": 1.0
+      },
+      "bCanVaultWithWeapon": true,
+      "PostVaultTimerProgressionScale": 1.0,
+      "bUseMappedVTimerDampening": true,
+      "MappedDampeningScalar": 0.1,
+      "MappedDampeningVTimerMax": 0.1
+    }
+  }
+]

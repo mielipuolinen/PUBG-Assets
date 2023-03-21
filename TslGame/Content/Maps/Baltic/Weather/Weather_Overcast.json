@@ -1,0 +1,3135 @@
+[
+  {
+    "Type": "AkComponent",
+    "Name": "WeatherAkComponent",
+    "Outer": "GlobalWeatherSoundBP_Foggy",
+    "Template": "WeatherAkComponent",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 110830.0,
+        "Y": 139830.0,
+        "Z": 2580.0
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "WeatherAkComponent",
+    "Outer": "GlobalWeatherSoundBP_Hail",
+    "Template": "WeatherAkComponent",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 110830.0,
+        "Y": 139830.0,
+        "Z": 2580.0
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "WeatherAkComponent",
+    "Outer": "GlobalWeatherSoundBP_HeavyRain",
+    "Template": "WeatherAkComponent",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 110830.0,
+        "Y": 139830.0,
+        "Z": 2580.0
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "WeatherAkComponent",
+    "Outer": "GlobalWeatherSoundBP_LightRain",
+    "Template": "WeatherAkComponent",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 110830.0,
+        "Y": 139830.0,
+        "Z": 2580.0
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "WeatherAkComponent",
+    "Outer": "GlobalWeatherSoundBP_Wind",
+    "Template": "WeatherAkComponent",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 110830.0,
+        "Y": 139830.0,
+        "Z": 2580.0
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "Ak",
+    "Outer": "TslGlobalSound_WeatherClear_95",
+    "Template": "Ak_GEN_VARIABLE",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1000.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Weather_Hail_Particle_BP",
+    "Template": "AkSound",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Overcast:PersistentLevel.Weather_Hail_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.39"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Weather_Heavyrain_Particle_BP",
+    "Template": "AkSound",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Overcast:PersistentLevel.Weather_Heavyrain_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.40"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Weather_Lightrain_Particle_BP",
+    "Template": "AkSound",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Overcast:PersistentLevel.Weather_Lightrain_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.41"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Weather_Wind_Particle_BP",
+    "Template": "AkSound",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Overcast:PersistentLevel.Weather_Wind_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.42"
+      }
+    }
+  },
+  {
+    "Type": "AtmosphericFog",
+    "Name": "AtmosphericFog",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'AtmosphericFog'",
+    "Properties": {
+      "AtmosphericFogComponent": {
+        "ObjectName": "AtmosphericFogComponent'Weather_Overcast:PersistentLevel.AtmosphericFog.AtmosphericFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.11"
+      },
+      "RootComponent": {
+        "ObjectName": "AtmosphericFogComponent'Weather_Overcast:PersistentLevel.AtmosphericFog.AtmosphericFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.11"
+      }
+    }
+  },
+  {
+    "Type": "AtmosphericFogComponent",
+    "Name": "AtmosphericFogComponent0",
+    "Outer": "AtmosphericFog",
+    "Class": "UScriptClass'AtmosphericFogComponent'",
+    "Properties": {
+      "SunMultiplier": 3.0,
+      "DistanceScale": 32.0,
+      "AltitudeScale": 0.1,
+      "DistanceOffset": -5.0,
+      "StartDistance": 11000.0,
+      "SunDiscScale": 3.0,
+      "HeightDensityLayers": [
+        {
+          "Height": 5000.0,
+          "Density": 1.0
+        },
+        {
+          "Height": 12000.0,
+          "Density": 0.4
+        },
+        {
+          "Height": 100000.0,
+          "Density": 0.2
+        }
+      ],
+      "PrecomputeParams": {
+        "DensityHeight": 0.3
+      },
+      "RelativeLocation": {
+        "X": 621903.0,
+        "Y": 303118.0,
+        "Z": 42490.0
+      }
+    }
+  },
+  {
+    "Type": "BluezoneOpacity_BP_C",
+    "Name": "BluezoneOpacity_BP_130",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BluezoneOpacity_BP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/BluezoneOpacity_BP.BluezoneOpacity_BP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.BluezoneOpacity_BP_130.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.44"
+      },
+      "Set BluezoneOpacity": 0.55,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.BluezoneOpacity_BP_130.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.44"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.BluezoneOpacity_BP_130.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.44"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_6",
+    "Outer": "BrushComponent0",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -25000000.0,
+                "Y": -1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": -1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": 1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": 1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": 1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": 1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": -1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": -1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -1048576.0,
+                "Z": -25000000.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -25000000.0,
+                "Y": -25000000.0,
+                "Z": -25000000.0
+              },
+              "Max": {
+                "X": 25000000.0,
+                "Y": 25000000.0,
+                "Z": 25000000.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "bGenerateMirroredCollision": false,
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "479A454A4B8DC9A92B6C3FB36E80D9FA",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 1254,
+        "SizeOnDisk": 1254,
+        "OffsetInFile": "0x13A33A"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent0",
+    "Outer": "LevelBounds_0",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 397759.25,
+        "Y": -492714.0,
+        "Z": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 16384000.0,
+        "Y": 18169428.0,
+        "Z": 16384000.0
+      }
+    }
+  },
+  {
+    "Type": "BP_Sky_Sphere_Baltic_01_C",
+    "Name": "BP_Sky_Sphere_Baltic_01_14",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_Sky_Sphere_Baltic_01_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Material/BP_Sky_Sphere_Baltic_01.BP_Sky_Sphere_Baltic_01_C'",
+    "Properties": {
+      "Sky Sphere mesh": {
+        "ObjectName": "StaticMeshComponent'Weather_Overcast:PersistentLevel.BP_Sky_Sphere_Baltic_01_14.Sky Sphere mesh'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.59"
+      },
+      "Base": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.BP_Sky_Sphere_Baltic_01_14.Base'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.45"
+      },
+      "Sky material": {
+        "ObjectName": "MaterialInstanceDynamic'Weather_Overcast:PersistentLevel.BP_Sky_Sphere_Baltic_01_14.Sky Sphere mesh.MaterialInstanceDynamic_0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.36"
+      },
+      "Directional light actor": {
+        "ObjectName": "DirectionalLight'Weather_Overcast:PersistentLevel.DirectionalLight_Sun'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.18"
+      },
+      "Sun height": 0.2666666,
+      "Horizon color": {
+        "R": 0.6588,
+        "G": 0.691965,
+        "B": 0.72,
+        "A": 1.0,
+        "Hex": "FFD4D9DD"
+      },
+      "SkyMat": {
+        "ObjectName": "MaterialInstanceConstant'M_Sky_Panning_Clouds_Baltic_04'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Sky_Panning_Clouds_Baltic_04.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.BP_Sky_Sphere_Baltic_01_14.Base'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.45"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.BP_Sky_Sphere_Baltic_01_14.Base'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.45"
+        },
+        {
+          "ObjectName": "StaticMeshComponent'Weather_Overcast:PersistentLevel.BP_Sky_Sphere_Baltic_01_14.Sky Sphere mesh'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.59"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BrushComponent",
+    "Name": "BrushComponent0",
+    "Outer": "PostProcessVolume",
+    "Class": "UScriptClass'BrushComponent'",
+    "Properties": {
+      "Brush": {
+        "ObjectName": "Model'Weather_Overcast:PersistentLevel.PostProcessVolume.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.38"
+      },
+      "BrushBodySetup": {
+        "ObjectName": "BodySetup'Weather_Overcast:PersistentLevel.PostProcessVolume.BrushComponent0.BodySetup_6'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.13"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 743484.0,
+        "Y": 623332.5,
+        "Z": -19744.75
+      }
+    }
+  },
+  {
+    "Type": "CustomFogControllerBP_C",
+    "Name": "CustomFogControllerBP_150",
+    "Outer": "PersistentLevel",
+    "Template": "Default__CustomFogControllerBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/CustomFogControllerBP.CustomFogControllerBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.CustomFogControllerBP_150.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.46"
+      },
+      "IntervalMin": 60.0,
+      "IntervalMax": 200.0,
+      "FogStartDistanceMin": 400.0,
+      "FogStartDistanceMax": 1000.0,
+      "FogFalloffMin": 15000.0,
+      "FogDensityMin": 1.0,
+      "FogDensityMax": 2.0,
+      "FallingEndHeight": 25000.0,
+      "HeightFalloffCurve": {
+        "ObjectName": "CurveFloat'CustomFogHeightFallOffCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/CustomFogHeightFallOffCurve.0"
+      },
+      "HeightDensityCurve": {
+        "ObjectName": "CurveFloat'CustomFogHeightDensityCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/CustomFogHeightDensityCurve.0"
+      },
+      "HeightHeightCurve": {
+        "ObjectName": "CurveFloat'CustomFogHeightHeightCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/CustomFogHeightHeightCurve.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.CustomFogControllerBP_150.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.46"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.CustomFogControllerBP_150.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.46"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "DirectionalLight",
+    "Name": "DirectionalLight_Sun",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'DirectionalLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "DirectionalLightComponent'Weather_Overcast:PersistentLevel.DirectionalLight_Sun.LightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.19"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "DirectionalLightComponent'Weather_Overcast:PersistentLevel.DirectionalLight_Sun.LightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.19"
+      }
+    }
+  },
+  {
+    "Type": "DirectionalLightComponent",
+    "Name": "LightComponent0",
+    "Outer": "DirectionalLight_Sun",
+    "Class": "UScriptClass'DirectionalLightComponent'",
+    "Properties": {
+      "OcclusionDepthRange": 5000.0,
+      "DynamicShadowDistanceMovableLight": 4000.0,
+      "CascadeDistributionExponent": 4.0,
+      "CascadeTransitionFraction": 0.3,
+      "DistanceFieldShadowDistance": 40000.0,
+      "TraceDistance": 5000.0,
+      "LightmassSettings": {
+        "LightSourceAngle": 1.5,
+        "ShadowExponent": 1.0
+      },
+      "ModulatedShadowColor": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 255,
+        "Hex": "FFFFFFFF"
+      },
+      "bUsedAsAtmosphereSunLight": true,
+      "bUseGridShadow": true,
+      "GridShadowSplitSettings": [
+        {
+          "CellSize": 1000.0,
+          "MaxRadius": 3000.0
+        },
+        {
+          "CellSize": 5000.0,
+          "MaxRadius": 15000.0
+        },
+        {
+          "CellSize": 25000.0,
+          "MaxRadius": 75000.0
+        }
+      ],
+      "bUseTemperature": true,
+      "LightFunctionMaterial": {
+        "ObjectName": "MaterialInstanceConstant'M__LF_CloudShadow_Inst_03'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M__LF_CloudShadow_Inst_03.0"
+      },
+      "LightFunctionScale": {
+        "X": 91000.0,
+        "Y": 91000.01,
+        "Z": 91000.01
+      },
+      "BloomScale": 0.001,
+      "BloomThreshold": 0.3,
+      "BloomTint": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "bUseRayTracedDistanceFieldShadows": true,
+      "LightGuid": "E3A53305-4B5D3133-F9599DA4-237AD47D",
+      "Intensity": 4.0,
+      "LightColor": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "VolumetricScatteringIntensity": 55.0,
+      "Mobility": "EComponentMobility::Movable",
+      "RelativeRotation": {
+        "Pitch": -24.0,
+        "Yaw": 9.0,
+        "Roll": 359.0
+      },
+      "RelativeLocation": {
+        "X": 752617.2,
+        "Y": 595246.94,
+        "Z": 3827.498
+      }
+    }
+  },
+  {
+    "Type": "DynamicWeatherBP_C",
+    "Name": "DynamicWeather_Fog",
+    "Outer": "PersistentLevel",
+    "Template": "Default__DynamicWeatherBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/DynamicWeatherBP.DynamicWeatherBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_Fog.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.47"
+      },
+      "FogController": {
+        "ObjectName": "CustomFogControllerBP_C'Weather_Overcast:PersistentLevel.CustomFogControllerBP_150'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.17"
+      },
+      "GlobalSound": {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_Foggy'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.27"
+      },
+      "ClientTickInterval_Transition": 0.1,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_Fog.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.47"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_Fog.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.47"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "DynamicWeatherBP_C",
+    "Name": "DynamicWeather_Hail",
+    "Outer": "PersistentLevel",
+    "Template": "Default__DynamicWeatherBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/DynamicWeatherBP.DynamicWeatherBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_Hail.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.48"
+      },
+      "WeatherParticle": {
+        "ObjectName": "WeatherParticleBP_C'Weather_Overcast:PersistentLevel.Weather_Hail_Particle_BP'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.62"
+      },
+      "SpawnScaleCurve": {
+        "ObjectName": "CurveFloat'HailScaleCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/HailScaleCurve.0"
+      },
+      "GlobalSound": {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_Hail'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.28"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_Hail.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.48"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_Hail.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.48"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "DynamicWeatherBP_C",
+    "Name": "DynamicWeather_HeavyRain",
+    "Outer": "PersistentLevel",
+    "Template": "Default__DynamicWeatherBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/DynamicWeatherBP.DynamicWeatherBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_HeavyRain.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.49"
+      },
+      "WeatherParticle": {
+        "ObjectName": "WeatherParticleBP_C'Weather_Overcast:PersistentLevel.Weather_Heavyrain_Particle_BP'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.63"
+      },
+      "SpawnScaleCurve": {
+        "ObjectName": "CurveFloat'RainScaleCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/RainScaleCurve.0"
+      },
+      "bUseWetEffect": true,
+      "bUsePPEffect": true,
+      "bUseLightning": true,
+      "GlobalSound": {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_HeavyRain'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.29"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_HeavyRain.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.49"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_HeavyRain.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.49"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "DynamicWeatherBP_C",
+    "Name": "DynamicWeather_LightRain",
+    "Outer": "PersistentLevel",
+    "Template": "Default__DynamicWeatherBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/DynamicWeatherBP.DynamicWeatherBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_LightRain.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.50"
+      },
+      "WeatherParticle": {
+        "ObjectName": "WeatherParticleBP_C'Weather_Overcast:PersistentLevel.Weather_Lightrain_Particle_BP'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.64"
+      },
+      "SpawnScaleCurve": {
+        "ObjectName": "CurveFloat'RainScaleCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/RainScaleCurve.0"
+      },
+      "bUseWetEffect": true,
+      "bUsePPEffect": true,
+      "GlobalSound": {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_LightRain'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.30"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_LightRain.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.50"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_LightRain.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.50"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "DynamicWeatherBP_C",
+    "Name": "DynamicWeather_Wind",
+    "Outer": "PersistentLevel",
+    "Template": "Default__DynamicWeatherBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/DynamicWeatherBP.DynamicWeatherBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_Wind.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.51"
+      },
+      "WeatherParticle": {
+        "ObjectName": "WeatherParticleBP_C'Weather_Overcast:PersistentLevel.Weather_Wind_Particle_BP'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.65"
+      },
+      "SpawnScaleCurve": {
+        "ObjectName": "CurveFloat'RainScaleCurve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/RainScaleCurve.0"
+      },
+      "GlobalSound": {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_Wind'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.31"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_Wind.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.51"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.DynamicWeather_Wind.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.51"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ExponentialHeightFog",
+    "Name": "ExponentialHeightFog_5",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'ExponentialHeightFog'",
+    "Properties": {
+      "Component": {
+        "ObjectName": "ExponentialHeightFogComponent'Weather_Overcast:PersistentLevel.ExponentialHeightFog_5.HeightFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.26"
+      },
+      "RootComponent": {
+        "ObjectName": "ExponentialHeightFogComponent'Weather_Overcast:PersistentLevel.ExponentialHeightFog_5.HeightFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.26"
+      }
+    }
+  },
+  {
+    "Type": "ExponentialHeightFogComponent",
+    "Name": "HeightFogComponent0",
+    "Outer": "ExponentialHeightFog_5",
+    "Class": "UScriptClass'ExponentialHeightFogComponent'",
+    "Properties": {
+      "FogDensity": 0.005,
+      "FogInscatteringColor": {
+        "R": 0.572026,
+        "G": 0.595973,
+        "B": 0.615,
+        "A": 1.0,
+        "Hex": "FFC7CBCE"
+      },
+      "HeightDensityLayers": [
+        {
+          "Height": 5000.0,
+          "Density": 1.0
+        },
+        {
+          "Height": 150000.0,
+          "Density": 1.0
+        }
+      ],
+      "FogHeightFalloff": 0.08,
+      "StartDistance": 500.0,
+      "VolumetricFogScatteringDistribution": 0.14,
+      "VolumetricFogAlbedo": {
+        "B": 230,
+        "G": 230,
+        "R": 234,
+        "A": 255,
+        "Hex": "FFEAE6E6"
+      },
+      "VolumetricFogExtinctionScale": 0.4,
+      "bUseExtendedFog": true,
+      "ExtendedFogStartDistance": 1000.0,
+      "ExtendedFogStartFalloffDistance": 25000.0,
+      "ExtendedHeight": 25500.0,
+      "ExtendedFallOff": 1.0,
+      "ExtendedFogDensity": 2.0,
+      "UpDensity": 1.0,
+      "DownDensity": 2.0,
+      "bUseAtmosphereScattering": false,
+      "RelativeLocation": {
+        "X": 621903.0,
+        "Y": 303118.0,
+        "Z": 3000.0
+      }
+    }
+  },
+  {
+    "Type": "GlobalWeatherSoundBP_C",
+    "Name": "GlobalWeatherSoundBP_Foggy",
+    "Outer": "PersistentLevel",
+    "Template": "Default__GlobalWeatherSoundBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/GlobalWeatherSoundBP.GlobalWeatherSoundBP_C'",
+    "Properties": {
+      "AkEvent_Play": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Foggy_Savage'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Foggy_Savage.0"
+      },
+      "AkEvent_Stop": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Foggy_Savage_Stop'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Foggy_Savage_Stop.0"
+      },
+      "ParamRTPCName": "WeatherBlendingValue_Fog",
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_Foggy.WeatherAkComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.0"
+      }
+    }
+  },
+  {
+    "Type": "GlobalWeatherSoundBP_C",
+    "Name": "GlobalWeatherSoundBP_Hail",
+    "Outer": "PersistentLevel",
+    "Template": "Default__GlobalWeatherSoundBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/GlobalWeatherSoundBP.GlobalWeatherSoundBP_C'",
+    "Properties": {
+      "AkEvent_Play": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Wind_Hail_Erangel_Remaster'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Wind_Hail_Erangel_Remaster.0"
+      },
+      "AkEvent_Stop": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Wind_Hail_Erangel_Remaster_Stop'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Wind_Hail_Erangel_Remaster_Stop.0"
+      },
+      "ParamRTPCName": "WeatherBlendingValue_Hail",
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_Hail.WeatherAkComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.1"
+      }
+    }
+  },
+  {
+    "Type": "GlobalWeatherSoundBP_C",
+    "Name": "GlobalWeatherSoundBP_HeavyRain",
+    "Outer": "PersistentLevel",
+    "Template": "Default__GlobalWeatherSoundBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/GlobalWeatherSoundBP.GlobalWeatherSoundBP_C'",
+    "Properties": {
+      "AkEvent_Play": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Rain_Savage'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Rain_Savage.0"
+      },
+      "AkEvent_Stop": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Rain_Savage_Stop'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Rain_Savage_Stop.0"
+      },
+      "ParamRTPCName": "WeatherBlendingValue_Rain",
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_HeavyRain.WeatherAkComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.2"
+      }
+    }
+  },
+  {
+    "Type": "GlobalWeatherSoundBP_C",
+    "Name": "GlobalWeatherSoundBP_LightRain",
+    "Outer": "PersistentLevel",
+    "Template": "Default__GlobalWeatherSoundBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/GlobalWeatherSoundBP.GlobalWeatherSoundBP_C'",
+    "Properties": {
+      "AkEvent_Play": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Rain_Light_Erengel_Remaster'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Rain_Light_Erengel_Remaster.0"
+      },
+      "AkEvent_Stop": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Rain_Light_Erengel_Remaster_Stop'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Rain_Light_Erengel_Remaster_Stop.0"
+      },
+      "ParamRTPCName": "WeatherBlendingValue_LightRain",
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_LightRain.WeatherAkComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.3"
+      }
+    }
+  },
+  {
+    "Type": "GlobalWeatherSoundBP_C",
+    "Name": "GlobalWeatherSoundBP_Wind",
+    "Outer": "PersistentLevel",
+    "Template": "Default__GlobalWeatherSoundBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/GlobalWeatherSoundBP.GlobalWeatherSoundBP_C'",
+    "Properties": {
+      "AkEvent_Play": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Wind_Gale_Erangel_Remaster'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Wind_Gale_Erangel_Remaster.0"
+      },
+      "AkEvent_Stop": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Dynamic_Wind_Gale_Erangel_Remaster_Stop'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Dynamic_Wind_Gale_Erangel_Remaster_Stop.0"
+      },
+      "ParamRTPCName": "WeatherBlendingValue_Wind",
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_Wind.WeatherAkComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.4"
+      }
+    }
+  },
+  {
+    "Type": "IDCSettingsForDihorOtokClearWeather_C",
+    "Name": "IDCSettingsForDihorOtokClearWeather_26",
+    "Outer": "PersistentLevel",
+    "Template": "Default__IDCSettingsForDihorOtokClearWeather_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/IDC_DihorOtok/IDCSettingsForDihorOtokClearWeather.IDCSettingsForDihorOtokClearWeather_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.IDCSettingsForDihorOtokClearWeather_26.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.52"
+      },
+      "ConsoleCommands": [
+        "r.CGV.Fallback 0.334710 0.094216 -0.269714 -0.008018 0.260979 0.072405 -0.211327 -0.007172 0.214882 0.055859 -0.176884 -0.007689 0.061821 -0.116015 -0.048355 -0.058586 0.047291 -0.089008 -0.034988 -0.043716 0.037771 -0.066462 -0.020986 -0.031075 -0.040459 -0.031513 -0.025552 0.000000",
+        "r.CGV.Intensity 1",
+        "r.CGV.FallbackIntensity 0.2",
+        "r.CGV.Hairintensity 0.5",
+        "r.CGV.Skinintensity 1",
+        "r.CGV.BaseIntensity 0.5",
+        "r.CGV.IndoorIntensity 1.2",
+        "r.CGV.OutdoorIntensity 1",
+        "r.CGV.IndoorSaturation 0.12",
+        "r.CGV.OutdoorSaturation 0.5",
+        "r.WindowLightIntensity 1",
+        "r.CGV.UseFullFallback 1",
+        "r.CGV.FullFallbackIntensity 0.7",
+        "r.IndoorVolume.Enable 0",
+        "r.GIVolume.Enable 0"
+      ],
+      "ExecuteCommandsInEditor": true,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.IDCSettingsForDihorOtokClearWeather_26.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.52"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.IDCSettingsForDihorOtokClearWeather_26.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.52"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Outer": "Weather_Overcast",
+    "Class": "UScriptClass'Level'",
+    "Properties": {
+      "LevelBuildDataId": "9F553BDF-462A9F62-F2757E9C-F7465BB0",
+      "Model": {
+        "ObjectName": "Model'Weather_Overcast:PersistentLevel.Model_0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.37"
+      },
+      "WorldSettings": {
+        "ObjectName": "WorldSettings'Weather_Overcast:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.71"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "WorldSettings'Weather_Overcast:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.71"
+      },
+      null,
+      {
+        "ObjectName": "DirectionalLight'Weather_Overcast:PersistentLevel.DirectionalLight_Sun'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.18"
+      },
+      {
+        "ObjectName": "AtmosphericFog'Weather_Overcast:PersistentLevel.AtmosphericFog'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.10"
+      },
+      {
+        "ObjectName": "PostProcessVolume'Weather_Overcast:PersistentLevel.PostProcessVolume'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.43"
+      },
+      {
+        "ObjectName": "SkyLight'Weather_Overcast:PersistentLevel.SkyLight'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.57"
+      },
+      {
+        "ObjectName": "ExponentialHeightFog'Weather_Overcast:PersistentLevel.ExponentialHeightFog_5'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.25"
+      },
+      {
+        "ObjectName": "LevelBounds'Weather_Overcast:PersistentLevel.LevelBounds_0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.34"
+      },
+      {
+        "ObjectName": "IDCSettingsForDihorOtokClearWeather_C'Weather_Overcast:PersistentLevel.IDCSettingsForDihorOtokClearWeather_26'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.32"
+      },
+      {
+        "ObjectName": "BluezoneOpacity_BP_C'Weather_Overcast:PersistentLevel.BluezoneOpacity_BP_130'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.12"
+      },
+      {
+        "ObjectName": "WeatherParticleBP_C'Weather_Overcast:PersistentLevel.Weather_Wind_Particle_BP'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.65"
+      },
+      {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_Wind'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.31"
+      },
+      {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_Foggy'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.27"
+      },
+      {
+        "ObjectName": "WeatherParticleBP_C'Weather_Overcast:PersistentLevel.Weather_Lightrain_Particle_BP'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.64"
+      },
+      {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_LightRain'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.30"
+      },
+      {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_HeavyRain'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.29"
+      },
+      {
+        "ObjectName": "WeatherParticleBP_C'Weather_Overcast:PersistentLevel.Weather_Heavyrain_Particle_BP'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.63"
+      },
+      {
+        "ObjectName": "WeatherParticleBP_C'Weather_Overcast:PersistentLevel.Weather_Hail_Particle_BP'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.62"
+      },
+      {
+        "ObjectName": "GlobalWeatherSoundBP_C'Weather_Overcast:PersistentLevel.GlobalWeatherSoundBP_Hail'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.28"
+      },
+      {
+        "ObjectName": "WindDirectionalSource'Weather_Overcast:PersistentLevel.WindDirectionalSource_1'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.68"
+      },
+      {
+        "ObjectName": "TslGlobalSound_WeatherClear_C'Weather_Overcast:PersistentLevel.TslGlobalSound_WeatherClear_95'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.60"
+      },
+      {
+        "ObjectName": "BP_Sky_Sphere_Baltic_01_C'Weather_Overcast:PersistentLevel.BP_Sky_Sphere_Baltic_01_14'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.15"
+      },
+      {
+        "ObjectName": "WeatherManagerBP_C'Weather_Overcast:PersistentLevel.WeatherManagerBP_54'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.61"
+      },
+      {
+        "ObjectName": "DynamicWeatherBP_C'Weather_Overcast:PersistentLevel.DynamicWeather_Wind'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.24"
+      },
+      {
+        "ObjectName": "CustomFogControllerBP_C'Weather_Overcast:PersistentLevel.CustomFogControllerBP_150'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.17"
+      },
+      {
+        "ObjectName": "DynamicWeatherBP_C'Weather_Overcast:PersistentLevel.DynamicWeather_Fog'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.20"
+      },
+      {
+        "ObjectName": "WetEffectBP_C'Weather_Overcast:PersistentLevel.WetEffectBP_80'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.67"
+      },
+      {
+        "ObjectName": "LightningController_C'Weather_Overcast:PersistentLevel.LightningController_174'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.35"
+      },
+      {
+        "ObjectName": "WeatherPPControllerBP_C'Weather_Overcast:PersistentLevel.WeatherPPControllerBP_78'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.66"
+      },
+      {
+        "ObjectName": "DynamicWeatherBP_C'Weather_Overcast:PersistentLevel.DynamicWeather_LightRain'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.23"
+      },
+      {
+        "ObjectName": "DynamicWeatherBP_C'Weather_Overcast:PersistentLevel.DynamicWeather_HeavyRain'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.22"
+      },
+      {
+        "ObjectName": "DynamicWeatherBP_C'Weather_Overcast:PersistentLevel.DynamicWeather_Hail'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.21"
+      },
+      null
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/Maps/TslLobby",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'Weather_Overcast:PersistentLevel.Model_0'",
+      "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.37"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": null,
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "LevelBounds",
+    "Name": "LevelBounds_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelBounds'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Weather_Overcast:PersistentLevel.LevelBounds_0.BoxComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.14"
+      }
+    }
+  },
+  {
+    "Type": "LightningController_C",
+    "Name": "LightningController_174",
+    "Outer": "PersistentLevel",
+    "Template": "Default__LightningController_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/LightningController.LightningController_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.LightningController_174.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.53"
+      },
+      "EffectClass": {
+        "ObjectName": "BlueprintGeneratedClass'P_rain_Lightning_Baltic_C'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_rain_Lightning_Baltic.0"
+      },
+      "AkThunderSound": {
+        "ObjectName": "AkAudioEvent'Ambience2D_Thunder_OneShot'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Ambience2D/Ambience2D_Thunder_OneShot.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.LightningController_174.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.53"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.LightningController_174.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.53"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialInstanceDynamic",
+    "Name": "MaterialInstanceDynamic_0",
+    "Outer": "Sky Sphere mesh",
+    "Class": "UScriptClass'MaterialInstanceDynamic'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "MaterialInstanceConstant'M_Sky_Panning_Clouds_Baltic_04'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Sky_Panning_Clouds_Baltic_04.0"
+      },
+      "ScalarParameterValues": [
+        {
+          "ParameterName": "Horizon falloff",
+          "ParameterValue": 15.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Cloud speed",
+          "ParameterValue": 1.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Sun brightness",
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Sun height",
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Cloud opacity",
+          "ParameterValue": 0.7,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Stars brightness",
+          "ParameterValue": 0.1,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "VectorParameterValues": [
+        {
+          "ParameterName": "Light direction",
+          "ParameterValue": {
+            "R": 0.9022982,
+            "G": 0.14291015,
+            "B": -0.40673652,
+            "A": 1.0,
+            "Hex": "FFF46900"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Sun color",
+          "ParameterValue": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 0.0,
+            "Hex": "FFFFFF"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Horizon color",
+          "ParameterValue": {
+            "R": 0.6588,
+            "G": 0.691965,
+            "B": 0.72,
+            "A": 1.0,
+            "Hex": "FFD4D9DD"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Zenith color",
+          "ParameterValue": {
+            "R": 0.034046,
+            "G": 0.109247,
+            "B": 0.295,
+            "A": 1.0,
+            "Hex": "FF335D94"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Overall color",
+          "ParameterValue": {
+            "R": 1.0,
+            "G": 1.0,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFFFFFFF"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Cloud color",
+          "ParameterValue": {
+            "R": 0.855778,
+            "G": 0.91902,
+            "B": 1.0,
+            "A": 1.0,
+            "Hex": "FFEFF6FF"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "AB9ED533-4D928D6C-B596B188-74171229",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_14",
+    "Outer": "PostProcessVolume",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      "SphereRadius": 43301270.0
+    },
+    "Vectors": [
+      {
+        "X": -1.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1.0
+      },
+      {
+        "X": 1.0,
+        "Y": -0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": -1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      }
+    ],
+    "Points": [
+      {
+        "X": -25000000.0,
+        "Y": -25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": -25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": 25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": -25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": -25000000.0,
+        "Z": -25000000.0
+      }
+    ],
+    "Nodes": [
+      {
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 0,
+        "iSurf": 0,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 4,
+        "iSurf": 1,
+        "iVertexIndex": 4,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 2,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 8,
+        "iSurf": 2,
+        "iVertexIndex": 8,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 3,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 12,
+        "iSurf": 3,
+        "iVertexIndex": 12,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 4,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "iVertPool": 16,
+        "iSurf": 4,
+        "iVertexIndex": 16,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 5,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "iVertPool": 20,
+        "iSurf": 5,
+        "iVertexIndex": 20,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": -1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": 0,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      }
+    ],
+    "Surfs": [
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 0,
+        "vTextureU": 1,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 3,
+        "vNormal": 1,
+        "vTextureU": 3,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 5,
+        "vNormal": 3,
+        "vTextureU": 4,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 7,
+        "vNormal": 4,
+        "vTextureU": 0,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 2,
+        "vNormal": 5,
+        "vTextureU": 3,
+        "vTextureV": 1,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 2,
+        "vTextureU": 3,
+        "vTextureV": 4,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      }
+    ],
+    "NumSharedSides": 4,
+    "VertexBuffer": null,
+    "LightingGuid": "14A37925-493AF758-579A45A8-5BD541E0",
+    "LightmassSettings": [
+      {
+        "bUseTwoSidedLighting": false,
+        "bShadowIndirectOnly": false,
+        "bUseEmissiveForStaticLighting": false,
+        "bUseVertexNormalForHemisphereGather": false,
+        "EmissiveLightFalloffExponent": 8.0,
+        "EmissiveLightExplicitInfluenceRadius": 0.0,
+        "EmissiveBoost": 1.0,
+        "DiffuseBoost": 1.0,
+        "FullyOccludedSamplesFraction": 1.0
+      }
+    ]
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "Weather_Hail_Particle_BP",
+    "Template": "ParticleSystem",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_Haildrop'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_Haildrop.65"
+      },
+      "OldPosition": {
+        "X": -422400.0,
+        "Y": -697130.0,
+        "Z": 2330.0
+      },
+      "OnSystemFinished": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeatherParticleBP_C'Weather_Overcast:PersistentLevel.Weather_Hail_Particle_BP'",
+              "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.62"
+            },
+            "FunctionName": "OnParticleFinish"
+          }
+        ]
+      },
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": -422400.0,
+        "Y": -697130.0,
+        "Z": 2330.0
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "Weather_Heavyrain_Particle_BP",
+    "Template": "ParticleSystem",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_Weather_Baltic_HeavyRain'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_Weather_Baltic_HeavyRain.59"
+      },
+      "OldPosition": {
+        "X": -420680.0,
+        "Y": -697560.0,
+        "Z": 2330.0
+      },
+      "OnSystemFinished": {
+        "InvocationList": []
+      },
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": -420680.0,
+        "Y": -697560.0,
+        "Z": 2330.0
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "Weather_Lightrain_Particle_BP",
+    "Template": "ParticleSystem",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_Weather_Baltic_LightRain'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_Weather_Baltic_LightRain.59"
+      },
+      "OldPosition": {
+        "X": -422400.0,
+        "Y": -697560.0,
+        "Z": 2330.0
+      },
+      "OnSystemFinished": {
+        "InvocationList": []
+      },
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": -422400.0,
+        "Y": -697560.0,
+        "Z": 2330.0
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "Weather_Wind_Particle_BP",
+    "Template": "ParticleSystem",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_Weather_Baltic_Wind'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_Weather_Baltic_Wind.65"
+      },
+      "OldPosition": {
+        "X": -422400.0,
+        "Y": -697130.0,
+        "Z": 2330.0
+      },
+      "OnSystemFinished": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeatherParticleBP_C'Weather_Overcast:PersistentLevel.Weather_Wind_Particle_BP'",
+              "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.65"
+            },
+            "FunctionName": "OnParticleFinish"
+          }
+        ]
+      },
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": -422400.0,
+        "Y": -697130.0,
+        "Z": 2330.0
+      }
+    }
+  },
+  {
+    "Type": "PostProcessVolume",
+    "Name": "PostProcessVolume",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'PostProcessVolume'",
+    "Properties": {
+      "Settings": {
+        "bOverride_WhiteTemp": true,
+        "bOverride_FilmToeAmount": true,
+        "bOverride_FilmSlope": true,
+        "bOverride_FilmToe": true,
+        "bOverride_FilmShoulder": true,
+        "bOverride_FilmBlackClip": true,
+        "bOverride_FilmWhiteClip": true,
+        "bOverride_AmbientCubemapTint": true,
+        "bOverride_AmbientCubemapIntensity": true,
+        "bOverride_BloomIntensity": true,
+        "bOverride_BloomThreshold": true,
+        "bOverride_Bloom1Tint": true,
+        "bOverride_Bloom1Size": true,
+        "bOverride_Bloom2Size": true,
+        "bOverride_Bloom2Tint": true,
+        "bOverride_Bloom3Tint": true,
+        "bOverride_Bloom3Size": true,
+        "bOverride_Bloom4Tint": true,
+        "bOverride_Bloom4Size": true,
+        "bOverride_Bloom5Tint": true,
+        "bOverride_Bloom5Size": true,
+        "bOverride_Bloom6Tint": true,
+        "bOverride_Bloom6Size": true,
+        "bOverride_BloomDirtMaskIntensity": true,
+        "bOverride_BloomDirtMaskTint": true,
+        "bOverride_BloomDirtMask": true,
+        "bOverride_AutoExposureMethod": true,
+        "bOverride_AutoExposureMinBrightness": true,
+        "bOverride_AutoExposureMaxBrightness": true,
+        "bOverride_AutoExposureSpeedUp": true,
+        "bOverride_AutoExposureSpeedDown": true,
+        "bOverride_AutoExposureBias": true,
+        "bOverride_HistogramLogMin": true,
+        "bOverride_HistogramLogMax": true,
+        "bOverride_LensFlareIntensity": true,
+        "bOverride_LensFlareTint": true,
+        "bOverride_LensFlareBokehSize": true,
+        "bOverride_LensFlareThreshold": true,
+        "bOverride_AmbientOcclusionIntensity": true,
+        "bOverride_AmbientOcclusionRadius": true,
+        "bOverride_HBAOPowerExponent": true,
+        "bOverride_HBAORadius": true,
+        "bOverride_HBAOBias": true,
+        "bOverride_HBAODetailAO": true,
+        "bOverride_AmbientOcclusionPower": true,
+        "bOverride_AmbientOcclusionQuality": true,
+        "bOverride_AmbientOcclusionMipBlend": true,
+        "bOverride_AmbientOcclusionMipScale": true,
+        "bOverride_MotionBlurAmount": true,
+        "bOverride_MotionBlurMax": true,
+        "bOverride_ScreenSpaceReflectionIntensity": true,
+        "bOverride_ScreenSpaceReflectionQuality": true,
+        "bOverride_ScreenSpaceReflectionMaxRoughness": true,
+        "WhiteTemp": 6300.0,
+        "ColorSaturation": {
+          "X": 1.0,
+          "Y": 1.0,
+          "Z": 1.2,
+          "W": 1.0
+        },
+        "ColorGain": {
+          "X": 1.2,
+          "Y": 1.2,
+          "Z": 1.2,
+          "W": 1.0
+        },
+        "ColorContrastShadows": {
+          "X": 0.92,
+          "Y": 0.92,
+          "Z": 0.92,
+          "W": 1.0
+        },
+        "ColorGammaShadows": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "ColorGammaMidtones": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "ColorContrastHighlights": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "ColorGammaHighlights": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "FilmSlope": 1.0,
+        "FilmToe": 0.57,
+        "FilmShoulder": 0.2,
+        "FilmBlackClip": 0.002,
+        "FilmWhiteClip": 0.02,
+        "FilmWhitePoint": {
+          "R": 1.1,
+          "G": 1.035,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FFFFFFFF"
+        },
+        "FilmShadowTintBlend": 10.0,
+        "FilmShadowTintAmount": 10.0,
+        "FilmSaturation": 1.1,
+        "FilmChannelMixerGreen": {
+          "R": 0.0,
+          "G": 1.0,
+          "B": 0.12,
+          "A": 1.0,
+          "Hex": "FF00FF61"
+        },
+        "FilmChannelMixerBlue": {
+          "R": 0.0,
+          "G": 0.2,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FF007CFF"
+        },
+        "FilmContrast": 0.2,
+        "FilmToeAmount": 0.65,
+        "FilmHealAmount": 0.25,
+        "SceneColorTint": {
+          "R": 0.945,
+          "G": 0.851614,
+          "B": 0.880307,
+          "A": 1.0,
+          "Hex": "FFF9EEF2"
+        },
+        "BloomIntensity": 0.3,
+        "BloomThreshold": 1.0,
+        "Bloom1Size": 1.0,
+        "Bloom2Size": 4.0,
+        "Bloom3Size": 16.0,
+        "Bloom4Size": 32.0,
+        "Bloom5Size": 64.0,
+        "Bloom1Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom2Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom3Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom4Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom5Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom6Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "BloomDirtMask": {
+          "ObjectName": "Texture2D'T_Dirtmask_05'",
+          "ObjectPath": "TslGame/Content/Effects/Clets/Texture/T_Dirtmask_05.0"
+        },
+        "BloomDirtMaskIntensity": 5.0,
+        "BloomDirtMaskTint": {
+          "R": 0.895,
+          "G": 0.699219,
+          "B": 0.699219,
+          "A": 1.0,
+          "Hex": "FFF3DADA"
+        },
+        "TslBlurIntensity": 1.0,
+        "AmbientCubemapTint": {
+          "R": 0.309476,
+          "G": 0.31,
+          "B": 0.276754,
+          "A": 1.0,
+          "Hex": "FF979790"
+        },
+        "AmbientCubemapIntensity": 0.1,
+        "AmbientCubemap": {
+          "ObjectName": "TextureCube'Baltic_Clear_Cube'",
+          "ObjectPath": "TslGame/Content/Assets/World/HDRI/Skycube_Baltic/Baltic_Clear_Cube.0"
+        },
+        "AutoExposureMethod": "AEM_Basic",
+        "AutoExposureLowPercent": 58.0,
+        "AutoExposureMinBrightness": 0.9,
+        "AutoExposureMaxBrightness": 1.0,
+        "AutoExposureSpeedUp": 10.0,
+        "AutoExposureSpeedDown": 10.0,
+        "AutoExposureBias": 0.05,
+        "HistogramLogMin": -5.0,
+        "HistogramLogMax": 1.5,
+        "LensFlareIntensity": 2.0,
+        "LensFlareTint": {
+          "R": 1.0,
+          "G": 0.906859,
+          "B": 0.768712,
+          "A": 1.0,
+          "Hex": "FFFFF5E3"
+        },
+        "LensFlareBokehSize": 10.165139,
+        "LensFlareThreshold": 0.977982,
+        "VignetteIntensity": 0.576147,
+        "GrainJitter": 1.0,
+        "GrainIntensity": 0.04,
+        "AmbientOcclusionIntensity": 0.75,
+        "AmbientOcclusionStaticFraction": 0.0,
+        "AmbientOcclusionRadius": 40.0,
+        "AmbientOcclusionQuality": 30.0,
+        "AmbientOcclusionMipBlend": 0.1,
+        "AmbientOcclusionMipScale": 1.0,
+        "IndirectLightingColor": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "ColorGradingIntensity": 0.0,
+        "DepthOfFieldMethod": "DOFM_Gaussian",
+        "DepthOfFieldFstop": 2.990826,
+        "DepthOfFieldDepthBlurRadius": 1.0,
+        "MotionBlurAmount": 0.2,
+        "MotionBlurMax": 1.0,
+        "ScreenSpaceReflectionMaxRoughness": 1.0
+      },
+      "BrushType": "Brush_Add",
+      "Brush": {
+        "ObjectName": "Model'Weather_Overcast:PersistentLevel.PostProcessVolume.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.38"
+      },
+      "BrushComponent": {
+        "ObjectName": "BrushComponent'Weather_Overcast:PersistentLevel.PostProcessVolume.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.16"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "bHidden": false,
+      "RootComponent": {
+        "ObjectName": "BrushComponent'Weather_Overcast:PersistentLevel.PostProcessVolume.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.16"
+      },
+      "Tags": [
+        "TslEffectPostProcessVolume"
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BluezoneOpacity_BP_130",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 424728.56,
+        "Y": 370274.03,
+        "Z": 4332.4653
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Base",
+    "Outer": "BP_Sky_Sphere_Baltic_01_14",
+    "Template": "SceneComponent_1",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 397759.47,
+        "Y": 400000.0,
+        "Z": 0.0
+      },
+      "RelativeScale3D": {
+        "X": 5.0,
+        "Y": 5.0,
+        "Z": 5.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeScale3D",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "CustomFogControllerBP_150",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -1986370.0,
+        "Y": -9577300.0,
+        "Z": -130.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "DynamicWeather_Fog",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 145480.0,
+        "Y": 151390.0,
+        "Z": 2330.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "DynamicWeather_Hail",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 145860.0,
+        "Y": 151560.0,
+        "Z": 2330.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "DynamicWeather_HeavyRain",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 145860.0,
+        "Y": 151560.0,
+        "Z": 2330.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "DynamicWeather_LightRain",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 145860.0,
+        "Y": 151560.0,
+        "Z": 2330.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "DynamicWeather_Wind",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 145860.0,
+        "Y": 151560.0,
+        "Z": 2330.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "IDCSettingsForDihorOtokClearWeather_26",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 10324.156,
+        "Z": 0.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "LightningController_174",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 530390.0,
+        "Y": 459020.0,
+        "Z": 140.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "WeatherManagerBP_54",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript"
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "WeatherPPControllerBP_78",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 151350.0,
+        "Y": 154880.0,
+        "Z": 2550.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "WetEffectBP_80",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 530660.0,
+        "Y": 458730.0,
+        "Z": 270.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkyLight",
+    "Name": "SkyLight",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'SkyLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "SkyLightComponent'Weather_Overcast:PersistentLevel.SkyLight.SkyLightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.58"
+      },
+      "RootComponent": {
+        "ObjectName": "SkyLightComponent'Weather_Overcast:PersistentLevel.SkyLight.SkyLightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.58"
+      }
+    }
+  },
+  {
+    "Type": "SkyLightComponent",
+    "Name": "SkyLightComponent0",
+    "Outer": "SkyLight",
+    "Class": "UScriptClass'SkyLightComponent'",
+    "Properties": {
+      "SourceType": "SLS_SpecifiedCubemap",
+      "Cubemap": {
+        "ObjectName": "TextureCube'Vikendi_Squall_Cube'",
+        "ObjectPath": "TslGame/Content/Assets/World/HDRI/SkyCube_Vikendi/Vikendi_Squall_Cube.0"
+      },
+      "bLowerHemisphereIsBlack": false,
+      "LowerHemisphereColor": {
+        "R": 0.02,
+        "G": 0.02,
+        "B": 0.02,
+        "A": 1.0,
+        "Hex": "FF262626"
+      },
+      "OcclusionMaxDistance": 500.0,
+      "Contrast": 0.7,
+      "MinOcclusion": 0.2,
+      "OcclusionTint": {
+        "B": 14,
+        "G": 14,
+        "R": 14,
+        "A": 255,
+        "Hex": "FF0E0E0E"
+      },
+      "LightGuid": "397B09D6-40888D93-066948B0-F9531EC6",
+      "Intensity": 1.45,
+      "LightColor": {
+        "B": 243,
+        "G": 226,
+        "R": 227,
+        "A": 255,
+        "Hex": "FFE3E2F3"
+      },
+      "VolumetricScatteringIntensity": 70.0,
+      "Mobility": "EComponentMobility::Movable",
+      "RelativeLocation": {
+        "X": -487.0,
+        "Y": -705.0,
+        "Z": 483.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Sky Sphere mesh",
+    "Outer": "BP_Sky_Sphere_Baltic_01_14",
+    "Template": "StaticMeshComponent_12",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceDynamic'Weather_Overcast:PersistentLevel.BP_Sky_Sphere_Baltic_01_14.Sky Sphere mesh.MaterialInstanceDynamic_0'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.36"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.BP_Sky_Sphere_Baltic_01_14.Base'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.45"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'MeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "OverrideMaterials",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "TslGlobalSound_WeatherClear_C",
+    "Name": "TslGlobalSound_WeatherClear_95",
+    "Outer": "PersistentLevel",
+    "Template": "Default__TslGlobalSound_WeatherClear_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Environment/TslGlobalSound_WeatherClear.TslGlobalSound_WeatherClear_C'",
+    "Properties": {
+      "Ak": {
+        "ObjectName": "AkComponent'Weather_Overcast:PersistentLevel.TslGlobalSound_WeatherClear_95.Ak'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.5"
+      },
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Overcast:PersistentLevel.TslGlobalSound_WeatherClear_95.Ak'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.5"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "AkComponent'Weather_Overcast:PersistentLevel.TslGlobalSound_WeatherClear_95.Ak'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.5"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "WeatherManagerBP_C",
+    "Name": "WeatherManagerBP_54",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherManagerBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherManagerBP.WeatherManagerBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.WeatherManagerBP_54.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.54"
+      },
+      "StartTimeMin": 60.0,
+      "StartTimeMax": 300.0,
+      "DurationTimeMin": 120.0,
+      "DurationTimeMax": 300.0,
+      "WetEffect": {
+        "ObjectName": "WetEffectBP_C'Weather_Overcast:PersistentLevel.WetEffectBP_80'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.67"
+      },
+      "LightningEffect": {
+        "ObjectName": "LightningController_C'Weather_Overcast:PersistentLevel.LightningController_174'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.35"
+      },
+      "PPEffect": {
+        "ObjectName": "WeatherPPControllerBP_C'Weather_Overcast:PersistentLevel.WeatherPPControllerBP_78'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.66"
+      },
+      "DynamicWeathers": [
+        {
+          "WeatherName": "Overcast",
+          "DynamicWeather": null,
+          "Weight": 5.0,
+          "DirectionalLightIntensity": 4.0,
+          "DirectionalLightTemperature": 6500.0,
+          "DirectionalLightVolumetricScattering": 55.0,
+          "SkyLightIntensity": 1.45,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": false,
+          "OverrideDurationTimeMin": 30.0,
+          "OverrideDurationTimeMax": 60.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        },
+        {
+          "WeatherName": "Wind",
+          "DynamicWeather": {
+            "ObjectName": "DynamicWeatherBP_C'Weather_Overcast:PersistentLevel.DynamicWeather_Wind'",
+            "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.24"
+          },
+          "Weight": 3.0,
+          "DirectionalLightIntensity": 4.0,
+          "DirectionalLightTemperature": 6600.0,
+          "DirectionalLightVolumetricScattering": 55.0,
+          "SkyLightIntensity": 1.4,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": false,
+          "OverrideDurationTimeMin": 15.0,
+          "OverrideDurationTimeMax": 15.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        },
+        {
+          "WeatherName": "Hail",
+          "DynamicWeather": {
+            "ObjectName": "DynamicWeatherBP_C'Weather_Overcast:PersistentLevel.DynamicWeather_Hail'",
+            "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.21"
+          },
+          "Weight": 2.0,
+          "DirectionalLightIntensity": 3.0,
+          "DirectionalLightTemperature": 6500.0,
+          "DirectionalLightVolumetricScattering": 55.0,
+          "SkyLightIntensity": 1.2,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": true,
+          "OverrideDurationTimeMin": 20.0,
+          "OverrideDurationTimeMax": 35.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        },
+        {
+          "WeatherName": "LightRain",
+          "DynamicWeather": {
+            "ObjectName": "DynamicWeatherBP_C'Weather_Overcast:PersistentLevel.DynamicWeather_LightRain'",
+            "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.23"
+          },
+          "Weight": 3.0,
+          "DirectionalLightIntensity": 2.0,
+          "DirectionalLightTemperature": 6700.0,
+          "DirectionalLightVolumetricScattering": 55.0,
+          "SkyLightIntensity": 1.4,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": false,
+          "OverrideDurationTimeMin": 15.0,
+          "OverrideDurationTimeMax": 15.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        },
+        {
+          "WeatherName": "HeavyRain",
+          "DynamicWeather": {
+            "ObjectName": "DynamicWeatherBP_C'Weather_Overcast:PersistentLevel.DynamicWeather_HeavyRain'",
+            "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.22"
+          },
+          "Weight": 2.5,
+          "DirectionalLightIntensity": 2.0,
+          "DirectionalLightTemperature": 6800.0,
+          "DirectionalLightVolumetricScattering": 55.0,
+          "SkyLightIntensity": 1.2,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": false,
+          "OverrideDurationTimeMin": 15.0,
+          "OverrideDurationTimeMax": 15.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        },
+        {
+          "WeatherName": "Fog",
+          "DynamicWeather": {
+            "ObjectName": "DynamicWeatherBP_C'Weather_Overcast:PersistentLevel.DynamicWeather_Fog'",
+            "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.20"
+          },
+          "Weight": 2.0,
+          "DirectionalLightIntensity": 3.0,
+          "DirectionalLightTemperature": 6500.0,
+          "DirectionalLightVolumetricScattering": 155.0,
+          "SkyLightIntensity": 1.3,
+          "SkyLightCubemap": null,
+          "SkyLightCubemapAngle": 0.0,
+          "SkyLightCubemapResolution": 0.0,
+          "bUseBlendSkyBox": false,
+          "bRefreshLightSetting": false,
+          "bOverrideDurationTime": false,
+          "OverrideDurationTimeMin": 15.0,
+          "OverrideDurationTimeMax": 15.0,
+          "bUseDistanceDepthBlur": false,
+          "DepthBlurIntensity": 0.0,
+          "DepthBlurCurveAsset": null,
+          "bClearFootprints": false
+        }
+      ],
+      "CustomOrder": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "bShowDebugDynamicWeather": true,
+      "LocalWeatherVolumes": [
+        {
+          "PostProcessVolume": {
+            "ObjectName": "PostProcessVolume'Weather_Overcast:PersistentLevel.PostProcessVolume'",
+            "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.43"
+          },
+          "LocalWeatherSetting": {
+            "FogDensity": 0.008,
+            "FogColor": {
+              "R": 0.715,
+              "G": 0.715,
+              "B": 0.715,
+              "A": 1.0,
+              "Hex": "FFDCDCDC"
+            },
+            "FogStartDistance": 18000.0,
+            "VolFogExtinctionScale": 0.4,
+            "WeatherParticleSpawnScale": 0.0,
+            "bUseWetEffectWithSpawnScale": false,
+            "SoundScale": 0.0
+          }
+        }
+      ],
+      "HeightFog": {
+        "ObjectName": "ExponentialHeightFog'Weather_Overcast:PersistentLevel.ExponentialHeightFog_5'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.25"
+      },
+      "ServerTickInterval": 0.25,
+      "ClientTickInterval": 0.025,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.WeatherManagerBP_54.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.54"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.WeatherManagerBP_54.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.54"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "WeatherParticleBP_C",
+    "Name": "Weather_Hail_Particle_BP",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherParticleBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherParticleBP.WeatherParticleBP_C'",
+    "Properties": {
+      "bMakeSplash": true,
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Weather_Overcast:PersistentLevel.Weather_Hail_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.39"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Weather_Overcast:PersistentLevel.Weather_Hail_Particle_BP.AkSound'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.6"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Overcast:PersistentLevel.Weather_Hail_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.39"
+      }
+    }
+  },
+  {
+    "Type": "WeatherParticleBP_C",
+    "Name": "Weather_Heavyrain_Particle_BP",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherParticleBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherParticleBP.WeatherParticleBP_C'",
+    "Properties": {
+      "bMakeSplash": true,
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Weather_Overcast:PersistentLevel.Weather_Heavyrain_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.40"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Weather_Overcast:PersistentLevel.Weather_Heavyrain_Particle_BP.AkSound'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.7"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Overcast:PersistentLevel.Weather_Heavyrain_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.40"
+      }
+    }
+  },
+  {
+    "Type": "WeatherParticleBP_C",
+    "Name": "Weather_Lightrain_Particle_BP",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherParticleBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherParticleBP.WeatherParticleBP_C'",
+    "Properties": {
+      "bMakeSplash": true,
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Weather_Overcast:PersistentLevel.Weather_Lightrain_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.41"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Weather_Overcast:PersistentLevel.Weather_Lightrain_Particle_BP.AkSound'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.8"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Overcast:PersistentLevel.Weather_Lightrain_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.41"
+      }
+    }
+  },
+  {
+    "Type": "WeatherParticleBP_C",
+    "Name": "Weather_Wind_Particle_BP",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherParticleBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherParticleBP.WeatherParticleBP_C'",
+    "Properties": {
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Weather_Overcast:PersistentLevel.Weather_Wind_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.42"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Weather_Overcast:PersistentLevel.Weather_Wind_Particle_BP.AkSound'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.9"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Overcast:PersistentLevel.Weather_Wind_Particle_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.42"
+      }
+    }
+  },
+  {
+    "Type": "WeatherPPControllerBP_C",
+    "Name": "WeatherPPControllerBP_78",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WeatherPPControllerBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WeatherPPControllerBP.WeatherPPControllerBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.WeatherPPControllerBP_78.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.55"
+      },
+      "WeatherSystem_MPC": {
+        "ObjectName": "MaterialParameterCollection'MPC_WeatherSystem'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/MPC_WeatherSystem.0"
+      },
+      "PPVolume": {
+        "ObjectName": "PostProcessVolume'Weather_Overcast:PersistentLevel.PostProcessVolume'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.43"
+      },
+      "PPMaterial": {
+        "ObjectName": "MaterialInstanceConstant'M_RainCamera_New_Inst'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_RainCamera_New_Inst.0"
+      },
+      "bShowDebug_PP": true,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.WeatherPPControllerBP_78.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.55"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.WeatherPPControllerBP_78.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.55"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "WetEffectBP_C",
+    "Name": "WetEffectBP_80",
+    "Outer": "PersistentLevel",
+    "Template": "Default__WetEffectBP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/WetEffectBP.WetEffectBP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.WetEffectBP_80.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.56"
+      },
+      "RainMPC": {
+        "ObjectName": "MaterialParameterCollection'Rain_Parameter'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/Rain_Parameter.0"
+      },
+      "WetGroundCurve": {
+        "ObjectName": "CurveFloat'WetGroundCurve_Erangel'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/WetGroundCurve_Erangel.0"
+      },
+      "WetVehicleCurve": {
+        "ObjectName": "CurveFloat'WetVehicleCurve_Erangel'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/WetVehicleCurve_Erangel.0"
+      },
+      "WetNormalCurve": {
+        "ObjectName": "CurveFloat'WetNormalCurve_Erangel'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/WetNormalCurve_Erangel.0"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.WetEffectBP_80.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.56"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Overcast:PersistentLevel.WetEffectBP_80.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.56"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "WindDirectionalSource",
+    "Name": "WindDirectionalSource_1",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WindDirectionalSource'",
+    "Properties": {
+      "Component": {
+        "ObjectName": "WindDirectionalSourceComponent'Weather_Overcast:PersistentLevel.WindDirectionalSource_1.WindDirectionalSourceComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.69"
+      },
+      "RootComponent": {
+        "ObjectName": "WindDirectionalSourceComponent'Weather_Overcast:PersistentLevel.WindDirectionalSource_1.WindDirectionalSourceComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.69"
+      }
+    }
+  },
+  {
+    "Type": "WindDirectionalSourceComponent",
+    "Name": "WindDirectionalSourceComponent0",
+    "Outer": "WindDirectionalSource_1",
+    "Class": "UScriptClass'WindDirectionalSourceComponent'",
+    "Properties": {
+      "Strength": 0.4,
+      "Speed": 0.2,
+      "RelativeLocation": {
+        "X": 276267.53,
+        "Y": 563121.44,
+        "Z": 1601.6832
+      }
+    }
+  },
+  {
+    "Type": "World",
+    "Name": "Weather_Overcast",
+    "Class": "UScriptClass'World'",
+    "Properties": {
+      "DefaultPhysicsVolume": null
+    },
+    "PersistentLevel": {
+      "ObjectName": "Level'Weather_Overcast:PersistentLevel'",
+      "ObjectPath": "TslGame/Content/Maps/Baltic/Weather/Weather_Overcast.33"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  },
+  {
+    "Type": "WorldSettings",
+    "Name": "WorldSettings",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WorldSettings'"
+  }
+]

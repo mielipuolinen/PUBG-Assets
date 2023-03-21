@@ -1,0 +1,511 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Greater_FloatFloat_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetWaterSurfaceHeight_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_Greater_FloatFloat_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetPhysicsVolume_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_GetWaterSurfaceHeight_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.1"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PhysicsVolume'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OtherCharacter",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_GetPhysicsVolume_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.2"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetMovementComponent_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.K2Node_Event_OtherCharacter'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.3"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PawnMovementComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Z2",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_GetMovementComponent_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.4"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Y2",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_BreakVector_Z2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.5"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_X2",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_BreakVector_Y2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.6"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetSocketLocation_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_BreakVector_X2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.7"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_GetSocketLocation_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.8"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Z",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_Greater_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.9"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Y",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_BreakVector_Z'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.10"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_X",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_BreakVector_Y'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.11"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetWaterSurfaceHeight_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_BreakVector_X'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.12"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetBuffComponent_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_GetWaterSurfaceHeight_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.13"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'BuffComponet'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetSocketLocation_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_GetBuffComponent_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.14"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetPhysicsVolume_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_GetSocketLocation_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.15"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PhysicsVolume'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetMovementComponent_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_GetPhysicsVolume_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.16"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PawnMovementComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess2",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_GetMovementComponent_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.17"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Character",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.K2Node_DynamicCast_bSuccess2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.18"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetBuffComponent_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.K2Node_DynamicCast_AsTsl_Character'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.19"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'BuffComponet'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetOwnerPawn_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_GetBuffComponent_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.20"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Pawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_GetOwnerPawn_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.21"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Drone",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.22"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslDrone'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetOwnerPawn_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.K2Node_DynamicCast_AsTsl_Drone'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.23"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Pawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Buff_FireDOT",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.CallFunc_GetOwnerPawn_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.24"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Buff_FireDOT",
+    "Outer": "Buff_FireDOT_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.25"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OtherCharacter",
+    "Outer": "TickBuff",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "TickBuff",
+    "Outer": "Buff_FireDOT_C",
+    "Super": "TickBuff",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.26"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Buff_DamageOverTime_C:TickBuff'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.17"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Buff_FireDOT_C:TickBuff.OtherCharacter'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.27"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "Buff_FireDOT_C",
+    "Super": "UserConstructionScript",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_FireDOT_C:TickBuff'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.28"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Buff_DamageOverTime_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.18"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Buff_FireDOT_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Buff_FireDOT_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.29"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_FireDOT_C",
+    "Super": "Buff_DamageOverTime_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Buff_FireDOT_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.35"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Buff_FireDOT_C:InheritableComponentHandler'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.33"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Buff_FireDOT_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.30"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.26"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'Buff_DamageOverTime_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.20"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Buff_FireDOT_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.30"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Buff_FireDOT": {
+        "ObjectName": "Function'Buff_FireDOT_C:ExecuteUbergraph_Buff_FireDOT'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.26"
+      },
+      "TickBuff": {
+        "ObjectName": "Function'Buff_FireDOT_C:TickBuff'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.28"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'Buff_FireDOT_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.29"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_FireDOT_C'Default__Buff_FireDOT_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.32"
+    }
+  },
+  {
+    "Type": "Buff_FireDOT_C",
+    "Name": "Default__Buff_FireDOT_C",
+    "Template": "Default__Buff_DamageOverTime_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Buff/Buff_FireDOT.Buff_FireDOT_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BaseDamage": 4.0,
+      "DamageType": {
+        "ObjectName": "BlueprintGeneratedClass'DmgType_Molotov_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Molotov.0"
+      },
+      "OverlapId": "Buff_FireDOT",
+      "AttachSocket": "coat_b_01",
+      "AttachServerPaticleClass": {
+        "ObjectName": "BlueprintGeneratedClass'P_FireDOT_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_FireDOT.3"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Buff_FireDOT_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "VariableGuid": "EDA7BA43-4FAB09E6-152CCBA3-093A0DEF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Buff_FireDOT_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Buff_FireDOT_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_FireDOT.34"
+      }
+    }
+  }
+]

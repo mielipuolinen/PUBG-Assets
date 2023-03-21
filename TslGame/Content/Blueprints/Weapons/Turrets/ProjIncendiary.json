@@ -3,9 +3,10 @@
     "Type": "ObjectProperty",
     "Name": "SpreadCompArray",
     "Outer": "SpreadCompArray",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyClass": {
-      "ObjectName": "Class SphereComponent",
+      "ObjectName": "Class'SphereComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -13,6 +14,7 @@
     "Type": "IntProperty",
     "Name": "MaxMaterialAdditiveCount",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'IntProperty'",
     "Next": null,
     "PropertyFlags": 65541
   },
@@ -20,8 +22,9 @@
     "Type": "IntProperty",
     "Name": "MaterialAdditiveInstanceCount",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:MaxMaterialAdditiveCount",
+      "ObjectName": "IntProperty'ProjIncendiary_C:MaxMaterialAdditiveCount'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.1"
     },
     "PropertyFlags": 65541
@@ -30,8 +33,9 @@
     "Type": "IntProperty",
     "Name": "InstanceCountMax",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:MaterialAdditiveInstanceCount",
+      "ObjectName": "IntProperty'ProjIncendiary_C:MaterialAdditiveInstanceCount'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.2"
     },
     "PropertyFlags": 65541
@@ -40,8 +44,9 @@
     "Type": "IntProperty",
     "Name": "ActorSpawnerIndex",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:InstanceCountMax",
+      "ObjectName": "IntProperty'ProjIncendiary_C:InstanceCountMax'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.3"
     },
     "PropertyFlags": 65541
@@ -50,8 +55,9 @@
     "Type": "FloatProperty",
     "Name": "SpreadLenZ",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:ActorSpawnerIndex",
+      "ObjectName": "IntProperty'ProjIncendiary_C:ActorSpawnerIndex'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.4"
     },
     "PropertyFlags": 65541
@@ -60,8 +66,9 @@
     "Type": "FloatProperty",
     "Name": "SpreadLenXY",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjIncendiary_C:SpreadLenZ",
+      "ObjectName": "FloatProperty'ProjIncendiary_C:SpreadLenZ'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.5"
     },
     "PropertyFlags": 65541
@@ -70,8 +77,9 @@
     "Type": "IntProperty",
     "Name": "StepsPerTick",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjIncendiary_C:SpreadLenXY",
+      "ObjectName": "FloatProperty'ProjIncendiary_C:SpreadLenXY'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.6"
     },
     "PropertyFlags": 65541
@@ -80,8 +88,9 @@
     "Type": "IntProperty",
     "Name": "DirectionIndex",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:StepsPerTick",
+      "ObjectName": "IntProperty'ProjIncendiary_C:StepsPerTick'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.7"
     },
     "PropertyFlags": 65541
@@ -90,8 +99,9 @@
     "Type": "IntProperty",
     "Name": "SpreadIndex",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:DirectionIndex",
+      "ObjectName": "IntProperty'ProjIncendiary_C:DirectionIndex'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.8"
     },
     "PropertyFlags": 65541
@@ -100,13 +110,14 @@
     "Type": "ArrayProperty",
     "Name": "SpreadCompArray",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'ArrayProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:SpreadIndex",
+      "ObjectName": "IntProperty'ProjIncendiary_C:SpreadIndex'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.9"
     },
     "PropertyFlags": 65541,
     "Inner": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:SpreadCompArray.SpreadCompArray",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:SpreadCompArray.SpreadCompArray'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.0"
     }
   },
@@ -114,13 +125,14 @@
     "Type": "ObjectProperty",
     "Name": "PotatoCapsule",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ArrayProperty ProjIncendiary_C:SpreadCompArray",
+      "ObjectName": "ArrayProperty'ProjIncendiary_C:SpreadCompArray'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.10"
     },
     "PropertyFlags": 17179869188,
     "PropertyClass": {
-      "ObjectName": "Class CapsuleComponent",
+      "ObjectName": "Class'CapsuleComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -128,13 +140,14 @@
     "Type": "ObjectProperty",
     "Name": "ParticleSystem",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:PotatoCapsule",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:PotatoCapsule'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.11"
     },
     "PropertyFlags": 17179869188,
     "PropertyClass": {
-      "ObjectName": "Class ParticleSystemComponent",
+      "ObjectName": "Class'ParticleSystemComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -142,6 +155,7 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsForKoreanRating_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "BoolSize": 1,
     "bIsNativeBool": true
@@ -150,8 +164,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsForChineseLicensing_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:UserConstructionScript.CallFunc_IsForKoreanRating_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:UserConstructionScript.CallFunc_IsForKoreanRating_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.13"
     },
     "BoolSize": 1,
@@ -161,17 +176,18 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:ParticleSystem",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:ParticleSystem'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.12"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "Children": [
       {
-        "ObjectName": "BoolProperty ProjIncendiary_C:UserConstructionScript.CallFunc_IsForChineseLicensing_ReturnValue",
+        "ObjectName": "BoolProperty'ProjIncendiary_C:UserConstructionScript.CallFunc_IsForChineseLicensing_ReturnValue'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.14"
       }
     ],
@@ -179,11 +195,12 @@
   },
   {
     "Type": "ObjectProperty",
-    "Name": "Temp_object_Variable",
-    "Outer": "Temp_object_Variable",
+    "Name": "___object_Variable",
+    "Outer": "___object_Variable",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -191,9 +208,10 @@
     "Type": "ByteProperty",
     "Name": "K2Node_MakeArray_Array",
     "Outer": "K2Node_MakeArray_Array",
+    "Class": "UScriptClass'ByteProperty'",
     "Next": null,
     "Enum": {
-      "ObjectName": "Enum EObjectTypeQuery",
+      "ObjectName": "Enum'EObjectTypeQuery'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -201,9 +219,10 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_SphereOverlapComponents_OutComponents",
     "Outer": "CallFunc_SphereOverlapComponents_OutComponents",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyClass": {
-      "ObjectName": "Class PrimitiveComponent",
+      "ObjectName": "Class'PrimitiveComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -211,6 +230,7 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Not_PreBool_ReturnValue",
     "Outer": "AddSphereColl",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "BoolSize": 1,
     "bIsNativeBool": true
@@ -219,13 +239,14 @@
     "Type": "StructProperty",
     "Name": "CallFunc_K2_SetWorldTransform_SweepHitResult",
     "Outer": "AddSphereColl",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:AddSphereColl.CallFunc_Not_PreBool_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:AddSphereColl.CallFunc_Not_PreBool_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.19"
     },
     "PropertyFlags": 549755813888,
     "Struct": {
-      "ObjectName": "ScriptStruct HitResult",
+      "ObjectName": "ScriptStruct'HitResult'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -233,8 +254,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_SphereOverlapComponents_ReturnValue",
     "Outer": "AddSphereColl",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:AddSphereColl.CallFunc_K2_SetWorldTransform_SweepHitResult",
+      "ObjectName": "StructProperty'ProjIncendiary_C:AddSphereColl.CallFunc_K2_SetWorldTransform_SweepHitResult'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.20"
     },
     "BoolSize": 1,
@@ -244,13 +266,14 @@
     "Type": "ArrayProperty",
     "Name": "CallFunc_SphereOverlapComponents_OutComponents",
     "Outer": "AddSphereColl",
+    "Class": "UScriptClass'ArrayProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:AddSphereColl.CallFunc_SphereOverlapComponents_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:AddSphereColl.CallFunc_SphereOverlapComponents_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.21"
     },
     "PropertyFlags": 134217728,
     "Inner": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:AddSphereColl.CallFunc_SphereOverlapComponents_OutComponents.CallFunc_SphereOverlapComponents_OutComponents",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:AddSphereColl.CallFunc_SphereOverlapComponents_OutComponents.CallFunc_SphereOverlapComponents_OutComponents'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.18"
     }
   },
@@ -258,8 +281,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_Array_Add_ReturnValue",
     "Outer": "AddSphereColl",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "ArrayProperty ProjIncendiary_C:AddSphereColl.CallFunc_SphereOverlapComponents_OutComponents",
+      "ObjectName": "ArrayProperty'ProjIncendiary_C:AddSphereColl.CallFunc_SphereOverlapComponents_OutComponents'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.22"
     }
   },
@@ -267,13 +291,14 @@
     "Type": "ArrayProperty",
     "Name": "K2Node_MakeArray_Array",
     "Outer": "AddSphereColl",
+    "Class": "UScriptClass'ArrayProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:AddSphereColl.CallFunc_Array_Add_ReturnValue",
+      "ObjectName": "IntProperty'ProjIncendiary_C:AddSphereColl.CallFunc_Array_Add_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.23"
     },
     "PropertyFlags": 134217730,
     "Inner": {
-      "ObjectName": "ByteProperty ProjIncendiary_C:AddSphereColl.K2Node_MakeArray_Array.K2Node_MakeArray_Array",
+      "ObjectName": "ByteProperty'ProjIncendiary_C:AddSphereColl.K2Node_MakeArray_Array.K2Node_MakeArray_Array'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.17"
     }
   },
@@ -281,12 +306,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_AddComponent_ReturnValue",
     "Outer": "AddSphereColl",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ArrayProperty ProjIncendiary_C:AddSphereColl.K2Node_MakeArray_Array",
+      "ObjectName": "ArrayProperty'ProjIncendiary_C:AddSphereColl.K2Node_MakeArray_Array'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.24"
     },
     "PropertyClass": {
-      "ObjectName": "Class SphereComponent",
+      "ObjectName": "Class'SphereComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -294,12 +320,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_MakeTransform_ReturnValue2",
     "Outer": "AddSphereColl",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:AddSphereColl.CallFunc_AddComponent_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:AddSphereColl.CallFunc_AddComponent_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.25"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Transform",
+      "ObjectName": "ScriptStruct'Transform'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -307,26 +334,28 @@
     "Type": "StructProperty",
     "Name": "CallFunc_MakeTransform_ReturnValue",
     "Outer": "AddSphereColl",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:AddSphereColl.CallFunc_MakeTransform_ReturnValue2",
+      "ObjectName": "StructProperty'ProjIncendiary_C:AddSphereColl.CallFunc_MakeTransform_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.26"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Transform",
+      "ObjectName": "ScriptStruct'Transform'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
   {
     "Type": "ArrayProperty",
-    "Name": "Temp_object_Variable",
+    "Name": "___object_Variable",
     "Outer": "AddSphereColl",
+    "Class": "UScriptClass'ArrayProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:AddSphereColl.CallFunc_MakeTransform_ReturnValue",
+      "ObjectName": "StructProperty'ProjIncendiary_C:AddSphereColl.CallFunc_MakeTransform_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.27"
     },
     "PropertyFlags": 134217730,
     "Inner": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:AddSphereColl.Temp_object_Variable.Temp_object_Variable",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:AddSphereColl.___object_Variable.___object_Variable'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.16"
     }
   },
@@ -334,13 +363,14 @@
     "Type": "StructProperty",
     "Name": "Loc",
     "Outer": "AddSphereColl",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ArrayProperty ProjIncendiary_C:AddSphereColl.Temp_object_Variable",
+      "ObjectName": "ArrayProperty'ProjIncendiary_C:AddSphereColl.___object_Variable'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.28"
     },
     "PropertyFlags": 128,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -348,13 +378,14 @@
     "Type": "Function",
     "Name": "AddSphereColl",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjIncendiary_C:UserConstructionScript",
+      "ObjectName": "Function'ProjIncendiary_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.15"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjIncendiary_C:AddSphereColl.Loc",
+        "ObjectName": "StructProperty'ProjIncendiary_C:AddSphereColl.Loc'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.29"
       }
     ],
@@ -362,11 +393,12 @@
   },
   {
     "Type": "ObjectProperty",
-    "Name": "Temp_object_Variable",
-    "Outer": "Temp_object_Variable",
+    "Name": "___object_Variable",
+    "Outer": "___object_Variable",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -374,9 +406,10 @@
     "Type": "ByteProperty",
     "Name": "K2Node_MakeArray_Array",
     "Outer": "K2Node_MakeArray_Array",
+    "Class": "UScriptClass'ByteProperty'",
     "Next": null,
     "Enum": {
-      "ObjectName": "Enum EObjectTypeQuery",
+      "ObjectName": "Enum'EObjectTypeQuery'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -384,19 +417,21 @@
     "Type": "ByteProperty",
     "Name": "K2Node_MakeArray_Array2",
     "Outer": "K2Node_MakeArray_Array2",
+    "Class": "UScriptClass'ByteProperty'",
     "Next": null,
     "Enum": {
-      "ObjectName": "Enum EObjectTypeQuery",
+      "ObjectName": "Enum'EObjectTypeQuery'",
       "ObjectPath": "/Script/Engine"
     }
   },
   {
     "Type": "ObjectProperty",
-    "Name": "Temp_object_Variable2",
-    "Outer": "Temp_object_Variable2",
+    "Name": "___object_Variable2",
+    "Outer": "___object_Variable2",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -404,9 +439,10 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Add_VectorVector_ReturnValue5",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": null,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -414,8 +450,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_BooleanAND_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue5",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue5'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.35"
     },
     "BoolSize": 1,
@@ -425,8 +462,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_EqualEqual_ByteByte_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_BooleanAND_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_BooleanAND_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.36"
     },
     "BoolSize": 1,
@@ -436,8 +474,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_GreaterEqual_FloatFloat_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_EqualEqual_ByteByte_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_EqualEqual_ByteByte_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.37"
     },
     "BoolSize": 1,
@@ -447,8 +486,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_BreakVector_Z",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_GreaterEqual_FloatFloat_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_GreaterEqual_FloatFloat_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.38"
     }
   },
@@ -456,8 +496,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_BreakVector_Y",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjIncendiary_C:TickSpread.CallFunc_BreakVector_Z",
+      "ObjectName": "FloatProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakVector_Z'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.39"
     }
   },
@@ -465,8 +506,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_BreakVector_X",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjIncendiary_C:TickSpread.CallFunc_BreakVector_Y",
+      "ObjectName": "FloatProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakVector_Y'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.40"
     }
   },
@@ -474,12 +516,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_TraceEnd2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjIncendiary_C:TickSpread.CallFunc_BreakVector_X",
+      "ObjectName": "FloatProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakVector_X'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.41"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -487,12 +530,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_TraceStart2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_TraceEnd2",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_TraceEnd2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.42"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -500,8 +544,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_BreakHitResult_FaceIndex2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_TraceStart2",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_TraceStart2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.43"
     }
   },
@@ -509,8 +554,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_BreakHitResult_HitItem2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_FaceIndex2",
+      "ObjectName": "IntProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_FaceIndex2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.44"
     }
   },
@@ -518,8 +564,9 @@
     "Type": "NameProperty",
     "Name": "CallFunc_BreakHitResult_HitBoneName2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'NameProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitItem2",
+      "ObjectName": "IntProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitItem2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.45"
     }
   },
@@ -527,12 +574,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_BreakHitResult_HitComponent2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "NameProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitBoneName2",
+      "ObjectName": "NameProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitBoneName2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.46"
     },
     "PropertyClass": {
-      "ObjectName": "Class PrimitiveComponent",
+      "ObjectName": "Class'PrimitiveComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -540,12 +588,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_BreakHitResult_HitActor2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitComponent2",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitComponent2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.47"
     },
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -553,12 +602,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_BreakHitResult_PhysMat2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitActor2",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitActor2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.48"
     },
     "PropertyClass": {
-      "ObjectName": "Class PhysicalMaterial",
+      "ObjectName": "Class'PhysicalMaterial'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -566,12 +616,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_ImpactNormal2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_PhysMat2",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_PhysMat2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.49"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -579,12 +630,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_Normal2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_ImpactNormal2",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_ImpactNormal2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.50"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -592,12 +644,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_ImpactPoint2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_Normal2",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_Normal2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.51"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -605,12 +658,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_Location2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_ImpactPoint2",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_ImpactPoint2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.52"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -618,8 +672,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_BreakHitResult_Time2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_Location2",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_Location2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.53"
     }
   },
@@ -627,8 +682,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_BreakHitResult_bInitialOverlap2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_Time2",
+      "ObjectName": "FloatProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_Time2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.54"
     },
     "BoolSize": 1,
@@ -638,8 +694,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_BreakHitResult_bBlockingHit2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_bInitialOverlap2",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_bInitialOverlap2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.55"
     },
     "BoolSize": 1,
@@ -649,8 +706,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_LineTraceSingleForObjects_ReturnValue2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_bBlockingHit2",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_bBlockingHit2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.56"
     },
     "BoolSize": 1,
@@ -660,13 +718,14 @@
     "Type": "StructProperty",
     "Name": "CallFunc_LineTraceSingleForObjects_OutHit2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_LineTraceSingleForObjects_ReturnValue2",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_LineTraceSingleForObjects_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.57"
     },
     "PropertyFlags": 549755813888,
     "Struct": {
-      "ObjectName": "ScriptStruct HitResult",
+      "ObjectName": "ScriptStruct'HitResult'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -674,8 +733,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Not_PreBool_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_LineTraceSingleForObjects_OutHit2",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_LineTraceSingleForObjects_OutHit2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.58"
     },
     "BoolSize": 1,
@@ -685,12 +745,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Add_VectorVector_ReturnValue4",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_Not_PreBool_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_Not_PreBool_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.59"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -698,12 +759,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_VLerp_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue4",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue4'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.60"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -711,8 +773,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Array_IsValidIndex_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_VLerp_ReturnValue",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_VLerp_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.61"
     },
     "BoolSize": 1,
@@ -722,12 +785,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_TraceEnd",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_Array_IsValidIndex_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_Array_IsValidIndex_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.62"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -735,12 +799,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_TraceStart",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_TraceEnd",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_TraceEnd'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.63"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -748,8 +813,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_BreakHitResult_FaceIndex",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_TraceStart",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_TraceStart'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.64"
     }
   },
@@ -757,8 +823,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_BreakHitResult_HitItem",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_FaceIndex",
+      "ObjectName": "IntProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_FaceIndex'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.65"
     }
   },
@@ -766,8 +833,9 @@
     "Type": "NameProperty",
     "Name": "CallFunc_BreakHitResult_HitBoneName",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'NameProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitItem",
+      "ObjectName": "IntProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitItem'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.66"
     }
   },
@@ -775,12 +843,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_BreakHitResult_HitComponent",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "NameProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitBoneName",
+      "ObjectName": "NameProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitBoneName'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.67"
     },
     "PropertyClass": {
-      "ObjectName": "Class PrimitiveComponent",
+      "ObjectName": "Class'PrimitiveComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -788,12 +857,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_BreakHitResult_HitActor",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitComponent",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitComponent'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.68"
     },
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -801,12 +871,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_BreakHitResult_PhysMat",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitActor",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_HitActor'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.69"
     },
     "PropertyClass": {
-      "ObjectName": "Class PhysicalMaterial",
+      "ObjectName": "Class'PhysicalMaterial'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -814,12 +885,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_ImpactNormal",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_PhysMat",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_PhysMat'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.70"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -827,12 +899,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_Normal",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_ImpactNormal",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_ImpactNormal'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.71"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -840,12 +913,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_ImpactPoint",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_Normal",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_Normal'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.72"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -853,12 +927,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_Location",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_ImpactPoint",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_ImpactPoint'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.73"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -866,8 +941,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_BreakHitResult_Time",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_Location",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_Location'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.74"
     }
   },
@@ -875,8 +951,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_BreakHitResult_bInitialOverlap",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_Time",
+      "ObjectName": "FloatProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_Time'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.75"
     },
     "BoolSize": 1,
@@ -886,8 +963,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_BreakHitResult_bBlockingHit",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_bInitialOverlap",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_bInitialOverlap'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.76"
     },
     "BoolSize": 1,
@@ -897,8 +975,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_LineTraceSingleForObjects_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_bBlockingHit",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_BreakHitResult_bBlockingHit'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.77"
     },
     "BoolSize": 1,
@@ -908,13 +987,14 @@
     "Type": "StructProperty",
     "Name": "CallFunc_LineTraceSingleForObjects_OutHit",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_LineTraceSingleForObjects_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_LineTraceSingleForObjects_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.78"
     },
     "PropertyFlags": 549755813888,
     "Struct": {
-      "ObjectName": "ScriptStruct HitResult",
+      "ObjectName": "ScriptStruct'HitResult'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -922,12 +1002,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Add_VectorVector_ReturnValue3",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_LineTraceSingleForObjects_OutHit",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_LineTraceSingleForObjects_OutHit'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.79"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -935,12 +1016,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Add_VectorVector_ReturnValue2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue3",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue3'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.80"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -948,8 +1030,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue2",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.81"
     },
     "BoolSize": 1,
@@ -959,12 +1042,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Add_VectorVector_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_LessEqual_IntInt_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_LessEqual_IntInt_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.82"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -972,12 +1056,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_K2_GetComponentLocation_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_Add_VectorVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.83"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -985,12 +1070,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_Array_Get_Item",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_K2_GetComponentLocation_ReturnValue",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_K2_GetComponentLocation_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.84"
     },
     "PropertyClass": {
-      "ObjectName": "Class SphereComponent",
+      "ObjectName": "Class'SphereComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -998,12 +1084,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Multiply_VectorFloat_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:TickSpread.CallFunc_Array_Get_Item",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:TickSpread.CallFunc_Array_Get_Item'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.85"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -1011,26 +1098,28 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Conv_RotatorToVector_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_Multiply_VectorFloat_ReturnValue",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_Multiply_VectorFloat_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.86"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
   {
     "Type": "ArrayProperty",
-    "Name": "Temp_object_Variable2",
+    "Name": "___object_Variable2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'ArrayProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_Conv_RotatorToVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_Conv_RotatorToVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.87"
     },
     "PropertyFlags": 134217730,
     "Inner": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:TickSpread.Temp_object_Variable2.Temp_object_Variable2",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:TickSpread.___object_Variable2.___object_Variable2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.34"
     }
   },
@@ -1038,12 +1127,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_MakeRotator_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ArrayProperty ProjIncendiary_C:TickSpread.Temp_object_Variable2",
+      "ObjectName": "ArrayProperty'ProjIncendiary_C:TickSpread.___object_Variable2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.88"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Rotator",
+      "ObjectName": "ScriptStruct'Rotator'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -1051,8 +1141,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_Multiply_IntFloat_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_MakeRotator_ReturnValue",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_MakeRotator_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.89"
     }
   },
@@ -1060,13 +1151,14 @@
     "Type": "ArrayProperty",
     "Name": "K2Node_MakeArray_Array2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'ArrayProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjIncendiary_C:TickSpread.CallFunc_Multiply_IntFloat_ReturnValue",
+      "ObjectName": "FloatProperty'ProjIncendiary_C:TickSpread.CallFunc_Multiply_IntFloat_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.90"
     },
     "PropertyFlags": 134217730,
     "Inner": {
-      "ObjectName": "ByteProperty ProjIncendiary_C:TickSpread.K2Node_MakeArray_Array2.K2Node_MakeArray_Array2",
+      "ObjectName": "ByteProperty'ProjIncendiary_C:TickSpread.K2Node_MakeArray_Array2.K2Node_MakeArray_Array2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.33"
     }
   },
@@ -1074,12 +1166,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_MakeVector_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ArrayProperty ProjIncendiary_C:TickSpread.K2Node_MakeArray_Array2",
+      "ObjectName": "ArrayProperty'ProjIncendiary_C:TickSpread.K2Node_MakeArray_Array2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.91"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -1087,8 +1180,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_Add_IntInt_ReturnValue6",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickSpread.CallFunc_MakeVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickSpread.CallFunc_MakeVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.92"
     }
   },
@@ -1096,13 +1190,14 @@
     "Type": "ArrayProperty",
     "Name": "K2Node_MakeArray_Array",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'ArrayProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:TickSpread.CallFunc_Add_IntInt_ReturnValue6",
+      "ObjectName": "IntProperty'ProjIncendiary_C:TickSpread.CallFunc_Add_IntInt_ReturnValue6'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.93"
     },
     "PropertyFlags": 134217730,
     "Inner": {
-      "ObjectName": "ByteProperty ProjIncendiary_C:TickSpread.K2Node_MakeArray_Array.K2Node_MakeArray_Array",
+      "ObjectName": "ByteProperty'ProjIncendiary_C:TickSpread.K2Node_MakeArray_Array.K2Node_MakeArray_Array'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.32"
     }
   },
@@ -1110,8 +1205,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_Add_IntInt_ReturnValue5",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "ArrayProperty ProjIncendiary_C:TickSpread.K2Node_MakeArray_Array",
+      "ObjectName": "ArrayProperty'ProjIncendiary_C:TickSpread.K2Node_MakeArray_Array'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.94"
     }
   },
@@ -1119,8 +1215,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_GreaterEqual_IntInt_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:TickSpread.CallFunc_Add_IntInt_ReturnValue5",
+      "ObjectName": "IntProperty'ProjIncendiary_C:TickSpread.CallFunc_Add_IntInt_ReturnValue5'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.95"
     },
     "BoolSize": 1,
@@ -1130,8 +1227,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_Add_IntInt_ReturnValue4",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_GreaterEqual_IntInt_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_GreaterEqual_IntInt_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.96"
     }
   },
@@ -1139,8 +1237,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_Add_IntInt_ReturnValue3",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:TickSpread.CallFunc_Add_IntInt_ReturnValue4",
+      "ObjectName": "IntProperty'ProjIncendiary_C:TickSpread.CallFunc_Add_IntInt_ReturnValue4'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.97"
     }
   },
@@ -1148,8 +1247,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_HasAuthority_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:TickSpread.CallFunc_Add_IntInt_ReturnValue3",
+      "ObjectName": "IntProperty'ProjIncendiary_C:TickSpread.CallFunc_Add_IntInt_ReturnValue3'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.98"
     },
     "BoolSize": 1,
@@ -1157,15 +1257,16 @@
   },
   {
     "Type": "ArrayProperty",
-    "Name": "Temp_object_Variable",
+    "Name": "___object_Variable",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'ArrayProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_HasAuthority_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_HasAuthority_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.99"
     },
     "PropertyFlags": 134217730,
     "Inner": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:TickSpread.Temp_object_Variable.Temp_object_Variable",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:TickSpread.___object_Variable.___object_Variable'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.31"
     }
   },
@@ -1173,8 +1274,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Less_IntInt_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "ArrayProperty ProjIncendiary_C:TickSpread.Temp_object_Variable",
+      "ObjectName": "ArrayProperty'ProjIncendiary_C:TickSpread.___object_Variable'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.100"
     },
     "BoolSize": 1,
@@ -1184,8 +1286,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_Clamp_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickSpread.CallFunc_Less_IntInt_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickSpread.CallFunc_Less_IntInt_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.101"
     }
   },
@@ -1193,8 +1296,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_Add_IntInt_ReturnValue2",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:TickSpread.CallFunc_Clamp_ReturnValue",
+      "ObjectName": "IntProperty'ProjIncendiary_C:TickSpread.CallFunc_Clamp_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.102"
     }
   },
@@ -1202,8 +1306,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_Add_IntInt_ReturnValue",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:TickSpread.CallFunc_Add_IntInt_ReturnValue2",
+      "ObjectName": "IntProperty'ProjIncendiary_C:TickSpread.CallFunc_Add_IntInt_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.103"
     }
   },
@@ -1211,8 +1316,9 @@
     "Type": "IntProperty",
     "Name": "LocalTicker",
     "Outer": "TickSpread",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:TickSpread.CallFunc_Add_IntInt_ReturnValue",
+      "ObjectName": "IntProperty'ProjIncendiary_C:TickSpread.CallFunc_Add_IntInt_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.104"
     },
     "PropertyFlags": 1
@@ -1221,13 +1327,14 @@
     "Type": "Function",
     "Name": "TickSpread",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjIncendiary_C:AddSphereColl",
+      "ObjectName": "Function'ProjIncendiary_C:AddSphereColl'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.30"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty ProjIncendiary_C:TickSpread.LocalTicker",
+        "ObjectName": "IntProperty'ProjIncendiary_C:TickSpread.LocalTicker'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.105"
       }
     ],
@@ -1237,9 +1344,10 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_FinishSpawningActor_ReturnValue",
     "Outer": "TickActorSpawner",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyClass": {
-      "ObjectName": "BlueprintGeneratedClass ProjMolotov_DamageField_C",
+      "ObjectName": "BlueprintGeneratedClass'ProjMolotov_DamageField_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov_DamageField.3"
     }
   },
@@ -1247,12 +1355,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
     "Outer": "TickActorSpawner",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:TickActorSpawner.CallFunc_FinishSpawningActor_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:TickActorSpawner.CallFunc_FinishSpawningActor_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.107"
     },
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -1260,12 +1369,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_K2_GetComponentToWorld_ReturnValue",
     "Outer": "TickActorSpawner",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:TickActorSpawner.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:TickActorSpawner.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.108"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Transform",
+      "ObjectName": "ScriptStruct'Transform'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -1273,12 +1383,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_Array_Get_Item",
     "Outer": "TickActorSpawner",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjIncendiary_C:TickActorSpawner.CallFunc_K2_GetComponentToWorld_ReturnValue",
+      "ObjectName": "StructProperty'ProjIncendiary_C:TickActorSpawner.CallFunc_K2_GetComponentToWorld_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.109"
     },
     "PropertyClass": {
-      "ObjectName": "Class SphereComponent",
+      "ObjectName": "Class'SphereComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -1286,8 +1397,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Array_IsValidIndex_ReturnValue",
     "Outer": "TickActorSpawner",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjIncendiary_C:TickActorSpawner.CallFunc_Array_Get_Item",
+      "ObjectName": "ObjectProperty'ProjIncendiary_C:TickActorSpawner.CallFunc_Array_Get_Item'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.110"
     },
     "BoolSize": 1,
@@ -1297,8 +1409,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_Add_IntInt_ReturnValue",
     "Outer": "TickActorSpawner",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjIncendiary_C:TickActorSpawner.CallFunc_Array_IsValidIndex_ReturnValue",
+      "ObjectName": "BoolProperty'ProjIncendiary_C:TickActorSpawner.CallFunc_Array_IsValidIndex_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.111"
     }
   },
@@ -1306,8 +1419,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_HasAuthority_ReturnValue",
     "Outer": "TickActorSpawner",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjIncendiary_C:TickActorSpawner.CallFunc_Add_IntInt_ReturnValue",
+      "ObjectName": "IntProperty'ProjIncendiary_C:TickActorSpawner.CallFunc_Add_IntInt_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.112"
     },
     "BoolSize": 1,
@@ -1317,13 +1431,14 @@
     "Type": "Function",
     "Name": "TickActorSpawner",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjIncendiary_C:TickSpread",
+      "ObjectName": "Function'ProjIncendiary_C:TickSpread'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.106"
     },
     "Children": [
       {
-        "ObjectName": "BoolProperty ProjIncendiary_C:TickActorSpawner.CallFunc_HasAuthority_ReturnValue",
+        "ObjectName": "BoolProperty'ProjIncendiary_C:TickActorSpawner.CallFunc_HasAuthority_ReturnValue'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.113"
       }
     ],
@@ -1333,8 +1448,9 @@
     "Type": "Function",
     "Name": "DisableParticle",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjIncendiary_C:TickActorSpawner",
+      "ObjectName": "Function'ProjIncendiary_C:TickActorSpawner'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.114"
     },
     "FunctionFlags": 201457664
@@ -1342,66 +1458,68 @@
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjIncendiary_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "ComponentTemplates": [
         {
-          "ObjectName": "SphereComponent ProjIncendiary_C:NODE_AddSphereComponent-2",
+          "ObjectName": "SphereComponent'ProjIncendiary_C:NODE_AddSphereComponent-2'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.130"
         }
       ],
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjIncendiary_C:SimpleConstructionScript_0",
+        "ObjectName": "SimpleConstructionScript'ProjIncendiary_C:SimpleConstructionScript_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.127"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslProjectileMolotov",
+      "ObjectName": "Class'TslProjectileMolotov'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "Function ProjIncendiary_C:DisableParticle",
+        "ObjectName": "Function'ProjIncendiary_C:DisableParticle'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.115"
       }
     ],
     "FuncMap": {
       "UserConstructionScript": {
-        "ObjectName": "Function ProjIncendiary_C:UserConstructionScript",
+        "ObjectName": "Function'ProjIncendiary_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.15"
       },
       "AddSphereColl": {
-        "ObjectName": "Function ProjIncendiary_C:AddSphereColl",
+        "ObjectName": "Function'ProjIncendiary_C:AddSphereColl'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.30"
       },
       "TickSpread": {
-        "ObjectName": "Function ProjIncendiary_C:TickSpread",
+        "ObjectName": "Function'ProjIncendiary_C:TickSpread'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.106"
       },
       "TickActorSpawner": {
-        "ObjectName": "Function ProjIncendiary_C:TickActorSpawner",
+        "ObjectName": "Function'ProjIncendiary_C:TickActorSpawner'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.114"
       },
       "DisableParticle": {
-        "ObjectName": "Function ProjIncendiary_C:DisableParticle",
+        "ObjectName": "Function'ProjIncendiary_C:DisableParticle'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.115"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjIncendiary_C Default__ProjIncendiary_C",
+      "ObjectName": "ProjIncendiary_C'Default__ProjIncendiary_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.117"
     }
   },
   {
     "Type": "ProjIncendiary_C",
     "Name": "Default__ProjIncendiary_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.ProjIncendiary_C'",
     "Properties": {
       "StepsPerTick": 1,
       "SpreadLenXY": 175.0,
@@ -1412,43 +1530,43 @@
       "FireTrailSocketName": "0",
       "SimulationTickTime": 0.2,
       "EffectControllerClass": {
-        "ObjectName": "BlueprintGeneratedClass BP_FireEffectController_Incendiary_C",
+        "ObjectName": "BlueprintGeneratedClass'BP_FireEffectController_Incendiary_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/BP_FireEffectController_Incendiary.0"
       },
       "DamageFieldContainerTemplate": {
-        "ObjectName": "BlueprintGeneratedClass ProjIncendiary_DamageFieldContainer_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjIncendiary_DamageFieldContainer_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageFieldContainer.2"
       },
       "DamageFieldContainerInWallTemplate": {
-        "ObjectName": "BlueprintGeneratedClass ProjIncendiary_DamageFieldContainerInWall_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjIncendiary_DamageFieldContainerInWall_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_DamageFieldContainerInWall.2"
       },
       "DirectDebuff": {
-        "ObjectName": "BlueprintGeneratedClass BP_IncendiaryDebuff_C",
+        "ObjectName": "BlueprintGeneratedClass'BP_IncendiaryDebuff_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Buff/BP_IncendiaryDebuff.2"
       },
       "MovementComp": {
-        "ObjectName": "TslProjectileMovementComponent Default__ProjIncendiary_C:ProjectileComp",
+        "ObjectName": "TslProjectileMovementComponent'Default__ProjIncendiary_C:ProjectileComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.132"
       },
       "CollisionComp": {
-        "ObjectName": "SphereComponent Default__ProjIncendiary_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjIncendiary_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.129"
       },
       "ParticleComp": {
-        "ObjectName": "ParticleSystemComponent Default__ProjIncendiary_C:ParticleComp",
+        "ObjectName": "ParticleSystemComponent'Default__ProjIncendiary_C:ParticleComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.120"
       },
       "MeshComp": {
-        "ObjectName": "StaticMeshComponent Default__ProjIncendiary_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjIncendiary_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.131"
       },
       "InterpolationTargetComp": {
-        "ObjectName": "SphereComponent Default__ProjIncendiary_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjIncendiary_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.128"
       },
       "ConstraintComp": {
-        "ObjectName": "PhysicsConstraintComponent Default__ProjIncendiary_C:MeshConstraint",
+        "ObjectName": "PhysicsConstraintComponent'Default__ProjIncendiary_C:MeshConstraint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.122"
       },
       "MeshInitialRotationRate": {
@@ -1460,19 +1578,19 @@
       "ExplosionStartType": "EProjectileExplosionStartType::Impact",
       "ExplosionInWater": false,
       "ExplosionTemplate": {
-        "ObjectName": "BlueprintGeneratedClass ProjIncendiary_Explosion_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjIncendiary_Explosion_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.6"
       },
       "ExplosionTemplateInAir": {
-        "ObjectName": "BlueprintGeneratedClass ProjIncendiary_ExplosionInAir_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjIncendiary_ExplosionInAir_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_ExplosionInAir.6"
       },
       "ExplosionTemplateDestroyedWall": {
-        "ObjectName": "BlueprintGeneratedClass ProjIncendiary_Explosion_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjIncendiary_Explosion_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary_Explosion.6"
       },
       "AkComp": {
-        "ObjectName": "AkComponent Default__ProjIncendiary_C:AkComp",
+        "ObjectName": "AkComponent'Default__ProjIncendiary_C:AkComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.118"
       },
       "PostExplodeLifetime": 5.0,
@@ -1481,17 +1599,17 @@
         "ExplosionDamage": 20,
         "ExplosionRadius": 100.0,
         "DamageType": {
-          "ObjectName": "BlueprintGeneratedClass DmgType_KillTruckTurret_C",
+          "ObjectName": "BlueprintGeneratedClass'DmgType_KillTruckTurret_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_KillTruckTurret.0"
         },
         "bExplodeOnBreachable": true
       },
-      "RootComponent": {
-        "ObjectName": "SphereComponent Default__ProjIncendiary_C:SphereComp",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.129"
-      },
       "PrimaryActorTick": {
         "bAllowTickOnDedicatedServer": true
+      },
+      "RootComponent": {
+        "ObjectName": "SphereComponent'Default__ProjIncendiary_C:SphereComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.129"
       }
     }
   },
@@ -1499,9 +1617,10 @@
     "Type": "AkComponent",
     "Name": "AkComp",
     "Outer": "Default__ProjIncendiary_C",
+    "Class": "UScriptClass'AkComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjIncendiary_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjIncendiary_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.129"
       }
     }
@@ -1510,6 +1629,7 @@
     "Type": "CapsuleComponent",
     "Name": "PotatoCapsule_GEN_VARIABLE",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'CapsuleComponent'",
     "Properties": {
       "CapsuleHalfHeight": 22.0,
       "CapsuleRadius": 8.0,
@@ -1584,13 +1704,14 @@
     "Type": "ParticleSystemComponent",
     "Name": "ParticleComp",
     "Outer": "Default__ProjIncendiary_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
     "Properties": {
       "Template": {
-        "ObjectName": "ParticleSystem P_MolotovBottleFlame",
+        "ObjectName": "ParticleSystem'P_MolotovBottleFlame'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_MolotovBottleFlame.89"
       },
       "AttachParent": {
-        "ObjectName": "StaticMeshComponent Default__ProjIncendiary_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjIncendiary_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.131"
       },
       "bAutoActivate": true
@@ -1600,9 +1721,10 @@
     "Type": "ParticleSystemComponent",
     "Name": "ParticleSystem_GEN_VARIABLE",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
     "Properties": {
       "Template": {
-        "ObjectName": "ParticleSystem P_FlareTail",
+        "ObjectName": "ParticleSystem'P_FlareTail'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_FlareTail.19"
       },
       "bAutoManageAttachment": true,
@@ -1618,9 +1740,10 @@
     "Type": "PhysicsConstraintComponent",
     "Name": "MeshConstraint",
     "Outer": "Default__ProjIncendiary_C",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjIncendiary_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjIncendiary_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.128"
       }
     }
@@ -1628,19 +1751,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "ProjIncendiary_C"
+    "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjIncendiary_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'ProjIncendiary_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.123"
       },
       "VariableGuid": "04C2B595-45B6CBB2-91C0F58E-32CCDD40",
@@ -1651,13 +1776,14 @@
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class ParticleSystemComponent",
+        "ObjectName": "Class'ParticleSystemComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "ParticleSystemComponent ProjIncendiary_C:ParticleSystem_GEN_VARIABLE",
+        "ObjectName": "ParticleSystemComponent'ProjIncendiary_C:ParticleSystem_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.121"
       },
       "ParentComponentOrVariableName": "MeshComp",
@@ -1670,13 +1796,14 @@
     "Type": "SCS_Node",
     "Name": "SCS_Node_3",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class CapsuleComponent",
+        "ObjectName": "Class'CapsuleComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "CapsuleComponent ProjIncendiary_C:PotatoCapsule_GEN_VARIABLE",
+        "ObjectName": "CapsuleComponent'ProjIncendiary_C:PotatoCapsule_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.119"
       },
       "ParentComponentOrVariableName": "MeshComp",
@@ -1689,29 +1816,30 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "RootNodes": [
         {
-          "ObjectName": "SCS_Node ProjIncendiary_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectName": "SCS_Node'ProjIncendiary_C:SimpleConstructionScript_0.SCS_Node_3'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.126"
         },
         {
-          "ObjectName": "SCS_Node ProjIncendiary_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectName": "SCS_Node'ProjIncendiary_C:SimpleConstructionScript_0.SCS_Node_1'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.125"
         }
       ],
       "AllNodes": [
         {
-          "ObjectName": "SCS_Node ProjIncendiary_C:SimpleConstructionScript_0.SCS_Node_3",
+          "ObjectName": "SCS_Node'ProjIncendiary_C:SimpleConstructionScript_0.SCS_Node_3'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.126"
         },
         {
-          "ObjectName": "SCS_Node ProjIncendiary_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectName": "SCS_Node'ProjIncendiary_C:SimpleConstructionScript_0.SCS_Node_1'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.125"
         }
       ],
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjIncendiary_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectName": "SCS_Node'ProjIncendiary_C:SimpleConstructionScript_0.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.124"
       }
     }
@@ -1720,9 +1848,10 @@
     "Type": "SphereComponent",
     "Name": "InterpolationTarget",
     "Outer": "Default__ProjIncendiary_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjIncendiary_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjIncendiary_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.129"
       }
     }
@@ -1731,12 +1860,13 @@
     "Type": "SphereComponent",
     "Name": "SphereComp",
     "Outer": "Default__ProjIncendiary_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "OnComponentHit": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "ProjIncendiary_C Default__ProjIncendiary_C",
+              "ObjectName": "ProjIncendiary_C'Default__ProjIncendiary_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.117"
             },
             "FunctionName": "OnHit"
@@ -1749,6 +1879,7 @@
     "Type": "SphereComponent",
     "Name": "NODE_AddSphereComponent-2",
     "Outer": "ProjIncendiary_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "bReceivesDecals": false,
       "bDecalChannelValid": true
@@ -1758,13 +1889,14 @@
     "Type": "StaticMeshComponent",
     "Name": "MeshComp",
     "Outer": "Default__ProjIncendiary_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
     "Properties": {
       "StaticMesh": {
-        "ObjectName": "StaticMesh SM_SnowBall",
+        "ObjectName": "StaticMesh'SM_SnowBall'",
         "ObjectPath": "TslGame/Content/Weapon/Grenades/SnowBall/SM_SnowBall.1"
       },
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjIncendiary_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjIncendiary_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Turrets/ProjIncendiary.128"
       }
     }
@@ -1773,6 +1905,7 @@
     "Type": "TslProjectileMovementComponent",
     "Name": "ProjectileComp",
     "Outer": "Default__ProjIncendiary_C",
+    "Class": "UScriptClass'TslProjectileMovementComponent'",
     "Properties": {
       "InitialSpeed": 6000.0,
       "MaxSpeed": 6000.0,

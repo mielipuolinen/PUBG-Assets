@@ -1,0 +1,115 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "HASModeController_C",
+    "Super": "BattleRoyaleModeController_Def_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'HASModeController_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController.7"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BattleRoyaleModeController_Def_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_Def.7"
+    },
+    "ClassFlags": 8651284,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "HASModeController_C'Default__HASModeController_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController.1"
+    }
+  },
+  {
+    "Type": "HASModeController_C",
+    "Name": "Default__HASModeController_C",
+    "Template": "Default__BattleRoyaleModeController_Def_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/HAS/HASModeController.HASModeController_C'",
+    "Properties": {
+      "BTAsset": {
+        "ObjectName": "BehaviorTree'HASModeController_BT'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController_BT.0"
+      },
+      "PathFollowingComponent": {
+        "ObjectName": "PathFollowingComponent'Default__HASModeController_C:PathFollowingComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController.2"
+      },
+      "ActionsComp": {
+        "ObjectName": "PawnActionsComponent'Default__HASModeController_C:ActionsComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController.3"
+      },
+      "TransformComponent": {
+        "ObjectName": "SceneComponent'Default__HASModeController_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController.4"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__HASModeController_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController.4"
+      }
+    }
+  },
+  {
+    "Type": "PathFollowingComponent",
+    "Name": "PathFollowingComponent",
+    "Outer": "Default__HASModeController_C",
+    "Template": "PathFollowingComponent",
+    "Class": "UScriptClass'PathFollowingComponent'"
+  },
+  {
+    "Type": "PawnActionsComponent",
+    "Name": "ActionsComp",
+    "Outer": "Default__HASModeController_C",
+    "Template": "ActionsComp",
+    "Class": "UScriptClass'PawnActionsComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "TransformComponent0",
+    "Outer": "Default__HASModeController_C",
+    "Template": "TransformComponent0",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "HASModeController_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'HASModeController_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController.5"
+      },
+      "VariableGuid": "BB43E515-46B631D2-2EF2D183-86E650E5",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "HASModeController_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'HASModeController_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/HAS/HASModeController.6"
+      }
+    }
+  }
+]

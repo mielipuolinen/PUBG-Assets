@@ -3,10 +3,11 @@
     "Type": "StructProperty",
     "Name": "NewVar_0",
     "Outer": "ProjGrenade_Explosion_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": null,
     "PropertyFlags": 65541,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -14,8 +15,9 @@
     "Type": "BoolProperty",
     "Name": "bRotateSelfToWorld",
     "Outer": "ProjGrenade_Explosion_C",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjGrenade_Explosion_C:NewVar_0",
+      "ObjectName": "StructProperty'ProjGrenade_Explosion_C:NewVar_0'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.0"
     },
     "PropertyFlags": 65541,
@@ -26,22 +28,24 @@
     "Type": "StructProperty",
     "Name": "SurfaceVFX",
     "Outer": "ProjGrenade_Explosion_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjGrenade_Explosion_C:bRotateSelfToWorld",
+      "ObjectName": "BoolProperty'ProjGrenade_Explosion_C:bRotateSelfToWorld'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.1"
     },
     "PropertyFlags": 65541,
     "Struct": {
-      "ObjectName": "UserDefinedStruct VFX_Surface",
-      "ObjectPath": "TslGame/Content/Assets/Effects/Blueprints/VFX_Surface.7"
+      "ObjectName": "UserDefinedStruct'VFX_Surface'",
+      "ObjectPath": "TslGame/Content/Assets/Effects/Blueprints/VFX_Surface.3"
     }
   },
   {
     "Type": "BoolProperty",
     "Name": "bEnableSurfaceSwitch",
     "Outer": "ProjGrenade_Explosion_C",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjGrenade_Explosion_C:SurfaceVFX",
+      "ObjectName": "StructProperty'ProjGrenade_Explosion_C:SurfaceVFX'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.2"
     },
     "PropertyFlags": 65541,
@@ -52,23 +56,25 @@
     "Type": "ObjectProperty",
     "Name": "K2Node_CustomEvent_NewParam",
     "Outer": "ExecuteUbergraph_ProjGrenade_Explosion",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyClass": {
-      "ObjectName": "BlueprintGeneratedClass ExplosionEffectsActor_C",
+      "ObjectName": "BlueprintGeneratedClass'ExplosionEffectsActor_C'",
       "ObjectPath": "TslGame/Content/Blueprints/BlackZoneController/ExplosionEffectsActor.277"
     }
   },
   {
     "Type": "ObjectProperty",
-    "Name": "Temp_object_Variable",
+    "Name": "___object_Variable",
     "Outer": "ExecuteUbergraph_ProjGrenade_Explosion",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjGrenade_Explosion_C:ExecuteUbergraph_ProjGrenade_Explosion.K2Node_CustomEvent_NewParam",
+      "ObjectName": "ObjectProperty'ProjGrenade_Explosion_C:ExecuteUbergraph_ProjGrenade_Explosion.K2Node_CustomEvent_NewParam'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.4"
     },
     "PropertyFlags": 2,
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -76,8 +82,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsValid_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjGrenade_Explosion",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjGrenade_Explosion_C:ExecuteUbergraph_ProjGrenade_Explosion.Temp_object_Variable",
+      "ObjectName": "ObjectProperty'ProjGrenade_Explosion_C:ExecuteUbergraph_ProjGrenade_Explosion.___object_Variable'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.5"
     },
     "BoolSize": 1,
@@ -87,8 +94,9 @@
     "Type": "IntProperty",
     "Name": "EntryPoint",
     "Outer": "ExecuteUbergraph_ProjGrenade_Explosion",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjGrenade_Explosion_C:ExecuteUbergraph_ProjGrenade_Explosion.CallFunc_IsValid_ReturnValue",
+      "ObjectName": "BoolProperty'ProjGrenade_Explosion_C:ExecuteUbergraph_ProjGrenade_Explosion.CallFunc_IsValid_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.6"
     },
     "PropertyFlags": 128
@@ -97,13 +105,14 @@
     "Type": "Function",
     "Name": "ExecuteUbergraph_ProjGrenade_Explosion",
     "Outer": "ProjGrenade_Explosion_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "BoolProperty ProjGrenade_Explosion_C:bEnableSurfaceSwitch",
+      "ObjectName": "BoolProperty'ProjGrenade_Explosion_C:bEnableSurfaceSwitch'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.3"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty ProjGrenade_Explosion_C:ExecuteUbergraph_ProjGrenade_Explosion.EntryPoint",
+        "ObjectName": "IntProperty'ProjGrenade_Explosion_C:ExecuteUbergraph_ProjGrenade_Explosion.EntryPoint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.7"
       }
     ],
@@ -113,10 +122,11 @@
     "Type": "ObjectProperty",
     "Name": "NewParam",
     "Outer": "AddToSort",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyFlags": 128,
     "PropertyClass": {
-      "ObjectName": "BlueprintGeneratedClass ExplosionEffectsActor_C",
+      "ObjectName": "BlueprintGeneratedClass'ExplosionEffectsActor_C'",
       "ObjectPath": "TslGame/Content/Blueprints/BlackZoneController/ExplosionEffectsActor.277"
     }
   },
@@ -124,13 +134,14 @@
     "Type": "Function",
     "Name": "AddToSort",
     "Outer": "ProjGrenade_Explosion_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjGrenade_Explosion_C:ExecuteUbergraph_ProjGrenade_Explosion",
+      "ObjectName": "Function'ProjGrenade_Explosion_C:ExecuteUbergraph_ProjGrenade_Explosion'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.8"
     },
     "Children": [
       {
-        "ObjectName": "ObjectProperty ProjGrenade_Explosion_C:AddToSort.NewParam",
+        "ObjectName": "ObjectProperty'ProjGrenade_Explosion_C:AddToSort.NewParam'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.9"
       }
     ],
@@ -140,9 +151,10 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetAllActorsOfClass_OutActors",
     "Outer": "CallFunc_GetAllActorsOfClass_OutActors",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyClass": {
-      "ObjectName": "BlueprintGeneratedClass ExplosionEffectsActor_C",
+      "ObjectName": "BlueprintGeneratedClass'ExplosionEffectsActor_C'",
       "ObjectPath": "TslGame/Content/Blueprints/BlackZoneController/ExplosionEffectsActor.277"
     }
   },
@@ -150,6 +162,7 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsValid_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "BoolSize": 1,
     "bIsNativeBool": true
@@ -158,12 +171,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetDestructibleSurfaceManager_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjGrenade_Explosion_C:UserConstructionScript.CallFunc_IsValid_ReturnValue",
+      "ObjectName": "BoolProperty'ProjGrenade_Explosion_C:UserConstructionScript.CallFunc_IsValid_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.12"
     },
     "PropertyClass": {
-      "ObjectName": "Class TslDestructibleSurfaceManager",
+      "ObjectName": "Class'TslDestructibleSurfaceManager'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -171,12 +185,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_Array_Get_Item",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjGrenade_Explosion_C:UserConstructionScript.CallFunc_GetDestructibleSurfaceManager_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjGrenade_Explosion_C:UserConstructionScript.CallFunc_GetDestructibleSurfaceManager_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.13"
     },
     "PropertyClass": {
-      "ObjectName": "BlueprintGeneratedClass ExplosionEffectsActor_C",
+      "ObjectName": "BlueprintGeneratedClass'ExplosionEffectsActor_C'",
       "ObjectPath": "TslGame/Content/Blueprints/BlackZoneController/ExplosionEffectsActor.277"
     }
   },
@@ -184,12 +199,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetTslGameState_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjGrenade_Explosion_C:UserConstructionScript.CallFunc_Array_Get_Item",
+      "ObjectName": "ObjectProperty'ProjGrenade_Explosion_C:UserConstructionScript.CallFunc_Array_Get_Item'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.14"
     },
     "PropertyClass": {
-      "ObjectName": "Class TslGameState",
+      "ObjectName": "Class'TslGameState'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -197,13 +213,14 @@
     "Type": "ArrayProperty",
     "Name": "CallFunc_GetAllActorsOfClass_OutActors",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'ArrayProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjGrenade_Explosion_C:UserConstructionScript.CallFunc_GetTslGameState_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjGrenade_Explosion_C:UserConstructionScript.CallFunc_GetTslGameState_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.15"
     },
     "PropertyFlags": 134217728,
     "Inner": {
-      "ObjectName": "ObjectProperty ProjGrenade_Explosion_C:UserConstructionScript.CallFunc_GetAllActorsOfClass_OutActors.CallFunc_GetAllActorsOfClass_OutActors",
+      "ObjectName": "ObjectProperty'ProjGrenade_Explosion_C:UserConstructionScript.CallFunc_GetAllActorsOfClass_OutActors.CallFunc_GetAllActorsOfClass_OutActors'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.11"
     }
   },
@@ -211,17 +228,18 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjGrenade_Explosion_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjGrenade_Explosion_C:AddToSort",
+      "ObjectName": "Function'ProjGrenade_Explosion_C:AddToSort'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.10"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "Children": [
       {
-        "ObjectName": "ArrayProperty ProjGrenade_Explosion_C:UserConstructionScript.CallFunc_GetAllActorsOfClass_OutActors",
+        "ObjectName": "ArrayProperty'ProjGrenade_Explosion_C:UserConstructionScript.CallFunc_GetAllActorsOfClass_OutActors'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.16"
       }
     ],
@@ -231,6 +249,7 @@
     "Type": "BoolProperty",
     "Name": "K2Node_SwitchEnum_CmpSuccess",
     "Outer": "SwitchBasedOnSurface",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "BoolSize": 1,
     "bIsNativeBool": true
@@ -239,12 +258,13 @@
     "Type": "ByteProperty",
     "Name": "CallFunc_GetPhysicalSurfaceFromRay_ReturnValue",
     "Outer": "SwitchBasedOnSurface",
+    "Class": "UScriptClass'ByteProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjGrenade_Explosion_C:SwitchBasedOnSurface.K2Node_SwitchEnum_CmpSuccess",
+      "ObjectName": "BoolProperty'ProjGrenade_Explosion_C:SwitchBasedOnSurface.K2Node_SwitchEnum_CmpSuccess'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.18"
     },
     "Enum": {
-      "ObjectName": "Enum EPhysicalSurface",
+      "ObjectName": "Enum'EPhysicalSurface'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -252,8 +272,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_K2_SetActorLocation_ReturnValue",
     "Outer": "SwitchBasedOnSurface",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "ByteProperty ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_GetPhysicalSurfaceFromRay_ReturnValue",
+      "ObjectName": "ByteProperty'ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_GetPhysicalSurfaceFromRay_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.19"
     },
     "BoolSize": 1,
@@ -263,13 +284,14 @@
     "Type": "StructProperty",
     "Name": "CallFunc_K2_SetActorLocation_SweepHitResult",
     "Outer": "SwitchBasedOnSurface",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_K2_SetActorLocation_ReturnValue",
+      "ObjectName": "BoolProperty'ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_K2_SetActorLocation_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.20"
     },
     "PropertyFlags": 549755813888,
     "Struct": {
-      "ObjectName": "ScriptStruct HitResult",
+      "ObjectName": "ScriptStruct'HitResult'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -277,12 +299,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_MakeVector_ReturnValue",
     "Outer": "SwitchBasedOnSurface",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_K2_SetActorLocation_SweepHitResult",
+      "ObjectName": "StructProperty'ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_K2_SetActorLocation_SweepHitResult'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.21"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -290,8 +313,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_GetWaterSurfaceHeight_ReturnValue",
     "Outer": "SwitchBasedOnSurface",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_MakeVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_MakeVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.22"
     }
   },
@@ -299,8 +323,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsValid_ReturnValue",
     "Outer": "SwitchBasedOnSurface",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_GetWaterSurfaceHeight_ReturnValue",
+      "ObjectName": "FloatProperty'ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_GetWaterSurfaceHeight_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.23"
     },
     "BoolSize": 1,
@@ -310,8 +335,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_K2_SetActorRotation_ReturnValue2",
     "Outer": "SwitchBasedOnSurface",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_IsValid_ReturnValue",
+      "ObjectName": "BoolProperty'ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_IsValid_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.24"
     },
     "BoolSize": 1,
@@ -321,12 +347,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetWaterVolumeAtLocation_ReturnValue",
     "Outer": "SwitchBasedOnSurface",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_K2_SetActorRotation_ReturnValue2",
+      "ObjectName": "BoolProperty'ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_K2_SetActorRotation_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.25"
     },
     "PropertyClass": {
-      "ObjectName": "Class PhysicsVolume",
+      "ObjectName": "Class'PhysicsVolume'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -334,8 +361,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_BreakVector_Z",
     "Outer": "SwitchBasedOnSurface",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_GetWaterVolumeAtLocation_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_GetWaterVolumeAtLocation_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.26"
     }
   },
@@ -343,8 +371,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_BreakVector_Y",
     "Outer": "SwitchBasedOnSurface",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_BreakVector_Z",
+      "ObjectName": "FloatProperty'ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_BreakVector_Z'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.27"
     }
   },
@@ -352,8 +381,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_BreakVector_X",
     "Outer": "SwitchBasedOnSurface",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_BreakVector_Y",
+      "ObjectName": "FloatProperty'ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_BreakVector_Y'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.28"
     }
   },
@@ -361,12 +391,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
     "Outer": "SwitchBasedOnSurface",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_BreakVector_X",
+      "ObjectName": "FloatProperty'ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_BreakVector_X'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.29"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -374,8 +405,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_K2_SetActorRotation_ReturnValue",
     "Outer": "SwitchBasedOnSurface",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_K2_GetActorLocation_ReturnValue",
+      "ObjectName": "StructProperty'ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_K2_GetActorLocation_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.30"
     },
     "BoolSize": 1,
@@ -385,13 +417,14 @@
     "Type": "Function",
     "Name": "SwitchBasedOnSurface",
     "Outer": "ProjGrenade_Explosion_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjGrenade_Explosion_C:UserConstructionScript",
+      "ObjectName": "Function'ProjGrenade_Explosion_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.17"
     },
     "Children": [
       {
-        "ObjectName": "BoolProperty ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_K2_SetActorRotation_ReturnValue",
+        "ObjectName": "BoolProperty'ProjGrenade_Explosion_C:SwitchBasedOnSurface.CallFunc_K2_SetActorRotation_ReturnValue'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.31"
       }
     ],
@@ -401,119 +434,122 @@
     "Type": "StructProperty",
     "Name": "UberGraphFrame",
     "Outer": "ProjGrenade_Explosion_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "Function ProjGrenade_Explosion_C:SwitchBasedOnSurface",
+      "ObjectName": "Function'ProjGrenade_Explosion_C:SwitchBasedOnSurface'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.32"
     },
     "PropertyFlags": 2105344,
     "Struct": {
-      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
       "ObjectPath": "/Script/Engine"
     }
   },
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjGrenade_Explosion_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjGrenade_Explosion_C:SimpleConstructionScript_1__EFD9F313",
+        "ObjectName": "SimpleConstructionScript'ProjGrenade_Explosion_C:SimpleConstructionScript_1__EFD9F313'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.39"
       },
       "UberGraphFramePointerProperty": {
-        "ObjectName": "StructProperty ProjGrenade_Explosion_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjGrenade_Explosion_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.33"
       },
       "UberGraphFunction": {
-        "ObjectName": "Function ProjGrenade_Explosion_C:ExecuteUbergraph_ProjGrenade_Explosion",
+        "ObjectName": "Function'ProjGrenade_Explosion_C:ExecuteUbergraph_ProjGrenade_Explosion'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.8"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslExplosionEffect",
+      "ObjectName": "Class'TslExplosionEffect'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjGrenade_Explosion_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjGrenade_Explosion_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.33"
       }
     ],
     "FuncMap": {
       "ExecuteUbergraph_ProjGrenade_Explosion": {
-        "ObjectName": "Function ProjGrenade_Explosion_C:ExecuteUbergraph_ProjGrenade_Explosion",
+        "ObjectName": "Function'ProjGrenade_Explosion_C:ExecuteUbergraph_ProjGrenade_Explosion'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.8"
       },
       "AddToSort": {
-        "ObjectName": "Function ProjGrenade_Explosion_C:AddToSort",
+        "ObjectName": "Function'ProjGrenade_Explosion_C:AddToSort'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.10"
       },
       "UserConstructionScript": {
-        "ObjectName": "Function ProjGrenade_Explosion_C:UserConstructionScript",
+        "ObjectName": "Function'ProjGrenade_Explosion_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.17"
       },
       "SwitchBasedOnSurface": {
-        "ObjectName": "Function ProjGrenade_Explosion_C:SwitchBasedOnSurface",
+        "ObjectName": "Function'ProjGrenade_Explosion_C:SwitchBasedOnSurface'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.32"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjGrenade_Explosion_C Default__ProjGrenade_Explosion_C",
+      "ObjectName": "ProjGrenade_Explosion_C'Default__ProjGrenade_Explosion_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.35"
     }
   },
   {
     "Type": "ProjGrenade_Explosion_C",
     "Name": "Default__ProjGrenade_Explosion_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.ProjGrenade_Explosion_C'",
     "Properties": {
       "UberGraphFrame": {},
       "bEnableSurfaceSwitch": true,
       "SurfaceVFX": {
         "Dirt_9_22C0D96E44DF482867F6B5A758D93194": {
-          "ObjectName": "ParticleSystem P_Grenade_Dirt",
+          "ObjectName": "ParticleSystem'P_Grenade_Dirt'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/Grenade/P_Grenade_Dirt.236"
         },
         "Water_11_C8AEBF3B4FA685F844D1C89F64774DC2": {
-          "ObjectName": "ParticleSystem P_Grenade_Water",
+          "ObjectName": "ParticleSystem'P_Grenade_Water'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_Grenade_Water.227"
         },
         "Grass_17_A084AF664A15FC8AB2937795EA3E749F": {
-          "ObjectName": "ParticleSystem P_Grenade_Grass",
+          "ObjectName": "ParticleSystem'P_Grenade_Grass'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/Grenade/P_Grenade_Grass.254"
         },
         "Sand_18_B1EC5DC24262C9ADED3CE79E713A17C8": {
-          "ObjectName": "ParticleSystem P_Grenade_Sand",
+          "ObjectName": "ParticleSystem'P_Grenade_Sand'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/Grenade/P_Grenade_Sand.203"
         },
         "Mud_19_88910E8F4D224894AC9F57883C103F0A": {
-          "ObjectName": "ParticleSystem P_Grenade_Mud",
+          "ObjectName": "ParticleSystem'P_Grenade_Mud'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/Grenade/P_Grenade_Mud.227"
         },
         "Snow_20_74BEFD734212A31EB8E55BA8E284270B": {
-          "ObjectName": "ParticleSystem P_Grenade_Snow",
+          "ObjectName": "ParticleSystem'P_Grenade_Snow'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/Grenade/P_Grenade_Snow.185"
         },
         "Ice_21_CE62A9674193FD0BCA47C78CCCE61D24": {
-          "ObjectName": "ParticleSystem P_Grenade_Ice",
+          "ObjectName": "ParticleSystem'P_Grenade_Ice'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/Grenade/P_Grenade_Ice.181"
         },
         "Default_24_F06A36C84B96E7216125AB80C34DC272": {
-          "ObjectName": "ParticleSystem P_Grenade_Default",
+          "ObjectName": "ParticleSystem'P_Grenade_Default'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_Grenade_Default.176"
         },
         "Reed_28_736057AF4686F8F2013CAF97E6BDC34F": {
-          "ObjectName": "ParticleSystem P_Grenade_Reed",
+          "ObjectName": "ParticleSystem'P_Grenade_Reed'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/Grenade/P_Grenade_Reed.254"
         },
         "Maple_30_03C797FA4E620D5CBA738C9F3CBBF19C": {
-          "ObjectName": "ParticleSystem P_Grenade_Maple",
+          "ObjectName": "ParticleSystem'P_Grenade_Maple'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/Grenade/P_Grenade_Maple.254"
         }
       },
@@ -524,18 +560,18 @@
         "Z": 0.0
       },
       "ExplosionLight": {
-        "ObjectName": "PointLightComponent Default__ProjGrenade_Explosion_C:ExplosionLight",
+        "ObjectName": "PointLightComponent'Default__ProjGrenade_Explosion_C:ExplosionLight'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.36"
       },
       "ExplosionLightFadeOut": 10.0,
       "ExplosionSound": {
-        "ObjectName": "AkAudioEvent Grenade_Explosion",
+        "ObjectName": "AkAudioEvent'Grenade_Explosion'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Grenade/Grenade_Explosion.0"
       },
       "DecalEffectDataSet": {
         "DefaultDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -553,7 +589,7 @@
         },
         "ConcreteDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -571,7 +607,7 @@
         },
         "RockDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -589,7 +625,7 @@
         },
         "DirtDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -607,7 +643,7 @@
         },
         "MetalDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -625,7 +661,7 @@
         },
         "WoodDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -643,7 +679,7 @@
         },
         "GrassDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -661,7 +697,7 @@
         },
         "MudDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -679,7 +715,7 @@
         },
         "SnowDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -697,7 +733,7 @@
         },
         "IceDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -717,7 +753,7 @@
       },
       "DecalSpawnDelayTime": 0.1,
       "RootComponent": {
-        "ObjectName": "PointLightComponent Default__ProjGrenade_Explosion_C:ExplosionLight",
+        "ObjectName": "PointLightComponent'Default__ProjGrenade_Explosion_C:ExplosionLight'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.36"
       }
     }
@@ -726,6 +762,7 @@
     "Type": "PointLightComponent",
     "Name": "ExplosionLight",
     "Outer": "Default__ProjGrenade_Explosion_C",
+    "Class": "UScriptClass'PointLightComponent'",
     "Properties": {
       "AttenuationRadius": 1024.0,
       "Intensity": 3.1415927
@@ -734,19 +771,21 @@
   {
     "Type": "SceneComponent",
     "Name": "SceneComponent_0",
-    "Outer": "ProjGrenade_Explosion_C"
+    "Outer": "ProjGrenade_Explosion_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_1__EFD9F313",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjGrenade_Explosion_C:SceneComponent_0",
+        "ObjectName": "SceneComponent'ProjGrenade_Explosion_C:SceneComponent_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.37"
       },
       "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
@@ -757,9 +796,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_1__EFD9F313",
     "Outer": "ProjGrenade_Explosion_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjGrenade_Explosion_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_0",
+        "ObjectName": "SCS_Node'ProjGrenade_Explosion_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion.38"
       }
     }

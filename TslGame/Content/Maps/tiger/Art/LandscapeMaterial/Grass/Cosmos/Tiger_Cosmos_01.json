@@ -1,0 +1,163 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "Tiger_Cosmos_01",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "42A0FB2443A733892669439341D8E246"
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "Tiger_Cosmos_01",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "M_Grass_Cosmos01_Inst",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 110.62309,
+            "LocalUVDensities": 6437.3955,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 1.8261421
+          }
+        }
+      ],
+      "LightmapUVDensity": 6437.3955,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -12.020531,
+          "Y": -7.290352,
+          "Z": 45.318665
+        },
+        "BoxExtent": {
+          "X": 114.41636,
+          "Y": 117.97537,
+          "Z": 69.71214
+        },
+        "SphereRadius": 134.59854
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'Tiger_Cosmos_01:BodySetup_0'",
+      "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Cosmos/Tiger_Cosmos_01.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "01FA897C-41F9F7FC-FA72FDBF-978B8A7A",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 363,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 459,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 460
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 8,
+            "NumVertices": 460,
+            "Strides": 40,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 460
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 181,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 310,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 26.017763,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 311
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 8,
+            "NumVertices": 311,
+            "Strides": 40,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 4,
+            "NumVertices": 311
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -12.020531,
+          "Y": -7.290352,
+          "Z": 45.318665
+        },
+        "BoxExtent": {
+          "X": 114.41636,
+          "Y": 117.97537,
+          "Z": 69.71214
+        },
+        "SphereRadius": 134.59854
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

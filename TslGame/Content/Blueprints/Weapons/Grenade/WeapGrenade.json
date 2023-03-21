@@ -3,26 +3,27 @@
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapGrenade_C",
     "Super": "DefaultGrenadeSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapGrenade_C:SimpleConstructionScript_1",
+        "ObjectName": "SimpleConstructionScript'WeapGrenade_C:SimpleConstructionScript_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapGrenade.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "BlueprintGeneratedClass DefaultGrenadeSetting_C",
+      "ObjectName": "BlueprintGeneratedClass'DefaultGrenadeSetting_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.0"
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapGrenade_C Default__WeapGrenade_C",
+      "ObjectName": "WeapGrenade_C'Default__WeapGrenade_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapGrenade.1"
     }
   },
@@ -30,18 +31,19 @@
     "Type": "WeapGrenade_C",
     "Name": "Default__WeapGrenade_C",
     "Template": "Default__DefaultGrenadeSetting_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/WeapGrenade.WeapGrenade_C'",
     "Properties": {
       "ThrowableConfig": {
         "ProjectileClass": {
-          "ObjectName": "BlueprintGeneratedClass ProjGrenade_C",
+          "ObjectName": "BlueprintGeneratedClass'ProjGrenade_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.17"
         },
         "CookingEffectClass": {
-          "ObjectName": "BlueprintGeneratedClass P_Grenade_Start_BP_C",
+          "ObjectName": "BlueprintGeneratedClass'P_Grenade_Start_BP_C'",
           "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Grenade_Start_BP.5"
         },
         "Ring": {
-          "ObjectName": "BlueprintGeneratedClass BP_GrenadeRing_C",
+          "ObjectName": "BlueprintGeneratedClass'BP_GrenadeRing_C'",
           "ObjectPath": "TslGame/Content/Weapon/Grenades/BP_GrenadeRing.3"
         },
         "FireDelay": 0.4,
@@ -50,7 +52,7 @@
         "bShowCookingTimer": true
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_frag_m67",
+        "ObjectName": "Texture2D'weapons_frag_m67'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_frag_m67.0"
       },
       "WeaponIconRatio": 0.56,
@@ -61,15 +63,15 @@
         "WeaponReadyDuration": 1.0
       },
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapGrenade_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__WeapGrenade_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapGrenade.6"
       },
       "WeaponAudioData": {
-        "ObjectName": "WeaponAudioData WeapGrenade_WeaponAudioData",
+        "ObjectName": "WeaponAudioData'WeapGrenade_WeaponAudioData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DataAssets/WeapGrenade_WeaponAudioData.0"
       },
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapGrenade_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapGrenade_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapGrenade.2"
       }
     }
@@ -79,12 +81,13 @@
     "Name": "RootScene",
     "Outer": "Default__WeapGrenade_C",
     "Template": "RootScene",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapGrenade_C Default__WeapGrenade_C",
+              "ObjectName": "WeapGrenade_C'Default__WeapGrenade_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapGrenade.1"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -96,19 +99,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapGrenade_C"
+    "Outer": "WeapGrenade_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapGrenade_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapGrenade_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapGrenade.3"
       },
       "VariableGuid": "028EC49A-48E4171F-BF4E70B7-59BAFBFD",
@@ -119,9 +124,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_1",
     "Outer": "WeapGrenade_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapGrenade_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectName": "SCS_Node'WeapGrenade_C:SimpleConstructionScript_1.SCS_Node_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapGrenade.4"
       }
     }
@@ -131,9 +137,10 @@
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapGrenade_C",
     "Template": "WeaponMesh3P",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh M67_setting",
+        "ObjectName": "SkeletalMesh'M67_setting'",
         "ObjectPath": "TslGame/Content/Weapon/Grenades/M67_Frag/M67_setting.0"
       },
       "RelativeRotation": {
@@ -142,7 +149,7 @@
         "Roll": 0.0
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapGrenade_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapGrenade_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapGrenade.2"
       }
     }

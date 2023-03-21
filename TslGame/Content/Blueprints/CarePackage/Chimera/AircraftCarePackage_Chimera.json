@@ -1,0 +1,744 @@
+[
+  {
+    "Type": "FloatProperty",
+    "Name": "Sound_CurrentValue",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Sound_TargetValue",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'AircraftCarePackage_Chimera_C:Sound_CurrentValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.0"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Sound_InterptTime",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'AircraftCarePackage_Chimera_C:Sound_TargetValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.1"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ProjectileMovement",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'AircraftCarePackage_Chimera_C:Sound_InterptTime'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.2"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'ProjectileMovementComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Helicopter",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'AircraftCarePackage_Chimera_C:ProjectileMovement'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.3"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'StaticMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ParticleSystem",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'AircraftCarePackage_Chimera_C:Helicopter'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.4"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'ParticleSystemComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Container_rope",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'AircraftCarePackage_Chimera_C:ParticleSystem'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.5"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'StaticMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Container",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'AircraftCarePackage_Chimera_C:Container_rope'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.6"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'StaticMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LeftEngineExplosion",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'AircraftCarePackage_Chimera_C:Container'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.7"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RightEngineExplosion",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'AircraftCarePackage_Chimera_C:LeftEngineExplosion'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.8"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "LeftEngineSmoke",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'AircraftCarePackage_Chimera_C:RightEngineExplosion'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.9"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "RightEngineSmoke",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'AircraftCarePackage_Chimera_C:LeftEngineSmoke'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.10"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'AircraftCarePackage_Chimera_C:RightEngineSmoke'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.11"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.32"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslHelicopterCarePackage'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'AircraftCarePackage_Chimera_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.12"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function'AircraftCarePackage_Chimera_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.12"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "AircraftCarePackage_Chimera_C'Default__AircraftCarePackage_Chimera_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.14"
+    }
+  },
+  {
+    "Type": "AircraftCarePackage_Chimera_C",
+    "Name": "Default__AircraftCarePackage_Chimera_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.AircraftCarePackage_Chimera_C'",
+    "Properties": {
+      "Sound_InterptTime": 0.2,
+      "Sound_TargetValue": 1.0,
+      "Health": 1800.0,
+      "HealthMax": 1800.0,
+      "HelicopterVelocityMultiplierAfterDropPackage": 2.0,
+      "CarepackageVelocityMultiplier": 0.2,
+      "SmokeFxClassPtr": "/Game/Assets/Effects/ParticleSystem/Vehicle/P_Damaged_Helicopter_BP.P_Damaged_Helicopter_BP_C",
+      "ExplosionFxClassPtr": "/Game/Assets/Effects/ParticleSystem/Vehicle/P_Explosion_Helicopter_BP.P_Explosion_Helicopter_BP_C",
+      "CarePackageItemSpawnerClass": {
+        "ObjectName": "BlueprintGeneratedClass'CarePackageItemSpawner_Chimera_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Spawn/Chimera/CarePackageItemSpawner_Chimera.0"
+      },
+      "CarePackageItemClass": {
+        "ObjectName": "BlueprintGeneratedClass'Carepackage_Container_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.22"
+      },
+      "DropCarePackageTableData": [
+        {
+          "DropCount": 1,
+          "DropPercent": 100.0,
+          "OverrideCarePackageItemSpawnerClass": null
+        }
+      ],
+      "MeshComponent": {
+        "ObjectName": "StaticMeshComponent'Default__AircraftCarePackage_Chimera_C:StaticMeshComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.37"
+      },
+      "MovementComponent": {
+        "ObjectName": "TslAircraftVehicleMovement'Default__AircraftCarePackage_Chimera_C:MovementComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.38"
+      },
+      "SplineComponent": {
+        "ObjectName": "SplineComponent'Default__AircraftCarePackage_Chimera_C:SplineComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.33"
+      },
+      "TotalFlyingTime": 240.0,
+      "FlyingSound": {
+        "ObjectName": "AkAudioEvent'Vehicle_Helicopter_Loop'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Vehicles/Helicopter/Vehicle_Helicopter_Loop.0"
+      },
+      "FlyingSoundNameOfMap": "Karakin",
+      "bCanBeDamaged": true,
+      "bNetLoadOnClient": false,
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Default__AircraftCarePackage_Chimera_C:StaticMeshComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.37"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_HeliRotor'",
+        "ObjectPath": "TslGame/Content/Export_Marek/P_HeliRotor.19"
+      },
+      "bDecalChannelValid": true,
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": -90.0,
+        "Roll": 10.0
+      }
+    }
+  },
+  {
+    "Type": "ProjectileMovementComponent",
+    "Name": "ProjectileMovement_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'ProjectileMovementComponent'",
+    "Properties": {
+      "ProjectileGravityScale": 0.0,
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftEngineExplosion_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -581.34534,
+        "Y": -146.31891,
+        "Z": 359.30316
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "LeftEngineSmoke_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -582.3574,
+        "Y": -146.31891,
+        "Z": 349.1286
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightEngineExplosion_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -583.5245,
+        "Y": 135.93114,
+        "Z": 344.14606
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RightEngineSmoke_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -581.6294,
+        "Y": 135.93114,
+        "Z": 354.19385
+      },
+      "bAutoActivate": true
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'AircraftCarePackage_Chimera_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.17"
+      },
+      "VariableGuid": "63A1072C-42C0D1A3-45B806A9-1515583B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_10",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'AircraftCarePackage_Chimera_C:RightEngineSmoke_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.21"
+      },
+      "VariableGuid": "329B94F5-4241361A-4B0B3380-8AFDCF4F",
+      "InternalVariableName": "RightEngineSmoke"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_11",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'AircraftCarePackage_Chimera_C:LeftEngineExplosion_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.18"
+      },
+      "VariableGuid": "AA1DB87F-42A8B19D-AF1E149C-43DE1468",
+      "InternalVariableName": "LeftEngineExplosion"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_12",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'AircraftCarePackage_Chimera_C:RightEngineExplosion_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.20"
+      },
+      "VariableGuid": "0CBFC35A-4F51DE1A-A8DF0488-D2A8FAD7",
+      "InternalVariableName": "RightEngineExplosion"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ProjectileMovementComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ProjectileMovementComponent'AircraftCarePackage_Chimera_C:ProjectileMovement_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.16"
+      },
+      "VariableGuid": "F8BD991C-40264A76-3519FF9D-B843F456",
+      "InternalVariableName": "ProjectileMovement"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_4",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'AircraftCarePackage_Chimera_C:Helicopter_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.36"
+      },
+      "ParentComponentOrVariableName": "StaticMeshComponent",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.28"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.29"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.24"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.25"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.31"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.23"
+        }
+      ],
+      "VariableGuid": "BDFC7C16-46029DF0-75829BA7-1B5A5403",
+      "InternalVariableName": "Helicopter"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_5",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ParticleSystemComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent'AircraftCarePackage_Chimera_C:ParticleSystem_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.15"
+      },
+      "VariableGuid": "52CDC80A-41984B64-1397AF9E-25F936D6",
+      "InternalVariableName": "ParticleSystem"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_6",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'AircraftCarePackage_Chimera_C:Container_rope_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.35"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.30"
+        }
+      ],
+      "VariableGuid": "A64893E8-49D083E7-3B5C6895-502BF7DF",
+      "InternalVariableName": "Container_rope"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_7",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'StaticMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "StaticMeshComponent'AircraftCarePackage_Chimera_C:Container_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.34"
+      },
+      "VariableGuid": "BDC4FB6B-41E0848B-0E23289D-5F13ACA7",
+      "InternalVariableName": "Container"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_9",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'AircraftCarePackage_Chimera_C:LeftEngineSmoke_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.19"
+      },
+      "VariableGuid": "E50CA838-4A484A62-1F60A5AC-E71E18D0",
+      "InternalVariableName": "LeftEngineSmoke"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.26"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.27"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.26"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_4'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.27"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_5'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.28"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_6'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.29"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_7'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.30"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_11'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.24"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_12'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.25"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_9'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.31"
+        },
+        {
+          "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_10'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.23"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'AircraftCarePackage_Chimera_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/AircraftCarePackage_Chimera.22"
+      }
+    }
+  },
+  {
+    "Type": "SplineComponent",
+    "Name": "SplineComponent",
+    "Outer": "Default__AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'SplineComponent'"
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Container_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_CarePackage_Container_Chimera'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/SM_CarePackage_Container_Chimera.1"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.00008,
+        "Roll": 2.5186844E-06
+      },
+      "RelativeLocation": {
+        "X": 0.0023076113,
+        "Y": 0.005155816,
+        "Z": -522.87585
+      },
+      "bReplicates": true
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Container_rope_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Container_rope'",
+        "ObjectPath": "TslGame/Content/Vehicles/Helicopter/Container_rope.1"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "RelativeRotation": {
+        "Pitch": 0.0,
+        "Yaw": 90.000046,
+        "Roll": -5.000061
+      },
+      "RelativeLocation": {
+        "X": -94.90412,
+        "Y": 0.015594389,
+        "Z": 53.133575
+      },
+      "bReplicates": true
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "Helicopter_GEN_VARIABLE",
+    "Outer": "AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_Helicopter_CarePackage_01_Body1'",
+        "ObjectPath": "TslGame/Content/Vehicles/Helicopter/SM_Helicopter_CarePackage_01_Body1.1"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeRotation": {
+        "Pitch": -5.0000057,
+        "Yaw": 0.0,
+        "Roll": 0.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent",
+    "Outer": "Default__AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'StaticMeshComponent'"
+  },
+  {
+    "Type": "TslAircraftVehicleMovement",
+    "Name": "MovementComponent",
+    "Outer": "Default__AircraftCarePackage_Chimera_C",
+    "Class": "UScriptClass'TslAircraftVehicleMovement'"
+  }
+]

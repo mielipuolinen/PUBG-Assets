@@ -1,0 +1,153 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "WeapBlueChipDetector_Mounted_C",
+    "Super": "WeapBlueChipDetector_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'WeapBlueChipDetector_Mounted_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector_Mounted.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'WeapBlueChipDetector_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector.0"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "WeapBlueChipDetector_Mounted_C'Default__WeapBlueChipDetector_Mounted_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector_Mounted.1"
+    }
+  },
+  {
+    "Type": "WeapBlueChipDetector_Mounted_C",
+    "Name": "Default__WeapBlueChipDetector_Mounted_C",
+    "Template": "Default__WeapBlueChipDetector_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector_Mounted.WeapBlueChipDetector_Mounted_C'",
+    "Properties": {
+      "WeaponWidget": {
+        "ObjectName": "WidgetComponent'Default__WeapBlueChipDetector_Mounted_C:WeaponWidget'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector_Mounted.8"
+      },
+      "DetectorComp": {
+        "ObjectName": "TslBlueChipDetectorComponent'Default__WeapBlueChipDetector_Mounted_C:DetectorComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector_Mounted.6"
+      },
+      "Mesh3P": {
+        "ObjectName": "WeaponMeshComponent'Default__WeapBlueChipDetector_Mounted_C:WeaponMesh3P'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector_Mounted.7"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__WeapBlueChipDetector_Mounted_C:RootScene'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector_Mounted.2"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootScene",
+    "Outer": "Default__WeapBlueChipDetector_Mounted_C",
+    "Template": "RootScene",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "AttachmentChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "WeapBlueChipDetector_Mounted_C'Default__WeapBlueChipDetector_Mounted_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector_Mounted.1"
+            },
+            "FunctionName": "OnAttachmentChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "WeapBlueChipDetector_Mounted_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'WeapBlueChipDetector_Mounted_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector_Mounted.3"
+      },
+      "VariableGuid": "E76C3086-4E509E4B-68385DAE-954DFDEC",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "WeapBlueChipDetector_Mounted_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'WeapBlueChipDetector_Mounted_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector_Mounted.4"
+      }
+    }
+  },
+  {
+    "Type": "TslBlueChipDetectorComponent",
+    "Name": "DetectorComponent",
+    "Outer": "Default__WeapBlueChipDetector_Mounted_C",
+    "Template": "DetectorComponent",
+    "Class": "UScriptClass'TslBlueChipDetectorComponent'"
+  },
+  {
+    "Type": "WeaponMeshComponent",
+    "Name": "WeaponMesh3P",
+    "Outer": "Default__WeapBlueChipDetector_Mounted_C",
+    "Template": "WeaponMesh3P",
+    "Class": "UScriptClass'WeaponMeshComponent'",
+    "Properties": {
+      "RelativeRotation": {
+        "Pitch": -0.00016392453,
+        "Yaw": 90.000206,
+        "Roll": 89.999794
+      },
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Default__WeapBlueChipDetector_Mounted_C:RootScene'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector_Mounted.2"
+      },
+      "RelativeScale3D": {
+        "X": 15.0,
+        "Y": 15.0,
+        "Z": 15.0
+      }
+    }
+  },
+  {
+    "Type": "WidgetComponent",
+    "Name": "WeaponWidget",
+    "Outer": "Default__WeapBlueChipDetector_Mounted_C",
+    "Template": "WeaponWidget",
+    "Class": "UScriptClass'WidgetComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "WeaponMeshComponent'Default__WeapBlueChipDetector_Mounted_C:WeaponMesh3P'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBlueChipDetector_Mounted.7"
+      }
+    }
+  }
+]

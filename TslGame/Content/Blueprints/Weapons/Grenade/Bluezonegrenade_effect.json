@@ -3,6 +3,7 @@
     "Type": "BodySetup",
     "Name": "BodySetup_0",
     "Outer": "Bluezonegrenade_effect",
+    "Class": "UScriptClass'BodySetup'",
     "Properties": {
       "DefaultInstance": {
         "CollisionProfileName": "BlockAll",
@@ -44,7 +45,7 @@
     "BodySetupGuid": "03C98FAB432EE9B01DD562A332E47B2D",
     "CookedFormatData": {
       "PhysXPC": {
-        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
         "ElementCount": 27241,
         "SizeOnDisk": 27241,
         "OffsetInFile": "0xE174"
@@ -54,6 +55,7 @@
   {
     "Type": "StaticMesh",
     "Name": "Bluezonegrenade_effect",
+    "Class": "UScriptClass'StaticMesh'",
     "Properties": {
       "StaticMaterials": [
         {
@@ -85,7 +87,7 @@
       }
     },
     "BodySetup": {
-      "ObjectName": "BodySetup Bluezonegrenade_effect:BodySetup_0",
+      "ObjectName": "BodySetup'Bluezonegrenade_effect:BodySetup_0'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Bluezonegrenade_effect.0"
     },
     "NavCollision": null,

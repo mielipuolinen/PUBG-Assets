@@ -1,0 +1,1868 @@
+[
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent0",
+    "Outer": "LevelBounds_1",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_0",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 24435,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_0.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.30"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'desert_bush_CreosoteBush04'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Bush/Desert/desert_bush_CreosoteBush04.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bHasPerInstanceHitProxies": true,
+      "bAffectDynamicIndirectLighting": false,
+      "bAffectDistanceFieldLighting": false,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_1",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 28942,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_1.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.31"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'desert_bush_MurphysAgave01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Bush/Desert/desert_bush_MurphysAgave01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bHasPerInstanceHitProxies": true,
+      "bAffectDynamicIndirectLighting": false,
+      "bAffectDistanceFieldLighting": false,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_10",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 5703,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_10.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.32"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'PinyonTree8'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/DesertNew/Trees/Pinyon/PinyonTree8.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_12",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 10612,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_12.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.33"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Rock03_new'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Rocks/Rock03_new.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_13",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 21132,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_13.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.34"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'desert_bush_CreosoteBush03'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Bush/Desert/desert_bush_CreosoteBush03.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bHasPerInstanceHitProxies": true,
+      "bAffectDynamicIndirectLighting": false,
+      "bAffectDistanceFieldLighting": false,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_15",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 28959,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_15.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.35"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'desert_bush_CreosoteBush01_remake'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Bush/Desert/desert_bush_CreosoteBush01_remake.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bHasPerInstanceHitProxies": true,
+      "bAffectDynamicIndirectLighting": false,
+      "bAffectDistanceFieldLighting": false,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_17",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 22258,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_17.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.36"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Dry_3'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/DesertNew/Trees/Dry/Dry_3.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_18",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 7540,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_18.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.37"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Desert_Cover_Rock_Combine_2'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Rocks/Desert_Cover_Rock_Combine_2.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_2",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 8971,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_2.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.38"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'desert_bush_Sarcobatus01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Bush/Desert/desert_bush_Sarcobatus01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bHasPerInstanceHitProxies": true,
+      "bAffectDynamicIndirectLighting": false,
+      "bAffectDistanceFieldLighting": false,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_20",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 14205,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_20.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.39"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Dry'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/DesertNew/Trees/Dry/Dry.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "DecalChannel": "EDecalChannel::Channel0",
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_22",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 26702,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_22.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.40"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Cypress_3'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/DesertNew/Trees/ArizonaCypress/Cypress/Cypress_3.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "DecalChannel": "EDecalChannel::Channel0",
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_23",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 17845,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_23.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.41"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Cypress'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/DesertNew/Trees/ArizonaCypress/Cypress/Cypress.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "DecalChannel": "EDecalChannel::Channel0",
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_27",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 16947,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_27.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.42"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'OrganPipeCactus_BRO_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Tree/Desert/OrganPipeCactus_BRO_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_29",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 15831,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_29.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.43"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'PinyonTree7'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/DesertNew/Trees/Pinyon/PinyonTree7.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_3",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 11610,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_3.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.44"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'OcotilloPlant_BRO_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Tree/Desert/OcotilloPlant_BRO_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bHasPerInstanceHitProxies": true,
+      "bAffectDynamicIndirectLighting": false,
+      "bAffectDistanceFieldLighting": false,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_31",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 17318,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_31.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.45"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Saguaro_BRO_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Tree/Desert/Saguaro_BRO_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_4",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 23078,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_4.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.46"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'PinyonTree7'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/DesertNew/Trees/Pinyon/PinyonTree7.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_42",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 23846,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_42.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.47"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Dry_2'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/DesertNew/Trees/Dry/Dry_2.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bAffectDynamicIndirectLighting": false,
+      "bAffectDistanceFieldLighting": false,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_46",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "OcclusionLayerNumNodes": 16,
+      "InstancingRandomSeed": 23956,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_46.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.48"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'desert_bush_Brittlebush01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Bush/Desert/desert_bush_Brittlebush01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bHasPerInstanceHitProxies": true,
+      "bAffectDynamicIndirectLighting": false,
+      "bAffectDistanceFieldLighting": false,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_48",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 17618,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_48.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.49"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Saguaro_BRO_05'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Tree/Desert/Saguaro_BRO_05.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_5",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 32744,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_5.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.50"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Desert_Cover_Rock_Combine_3'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Rocks/Desert_Cover_Rock_Combine_3.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_55",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 18764,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_55.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.51"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'JoshuaTree_BRO_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Tree/Desert/JoshuaTree_BRO_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_6",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 7041,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_6.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.52"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'desert_bush_Brittlebush01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Bush/Desert/desert_bush_Brittlebush01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bHasPerInstanceHitProxies": true,
+      "bAffectDynamicIndirectLighting": false,
+      "bAffectDistanceFieldLighting": false,
+      "bCastDynamicShadow": false,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_8",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 8909,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_8.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.53"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Saguaro_BRO_02'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Tree/Desert/Saguaro_BRO_02.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_9",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 14643,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.FoliageInstancedStaticMeshComponent_9.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.54"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'Desert_Cover_Rock_Combine_1'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vegetation/Rocks/Desert_Cover_Rock_Combine_1.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "InstancedFoliageActor",
+    "Name": "InstancedFoliageActor_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'InstancedFoliageActor'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.55"
+      }
+    }
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Outer": "Tree_x3_y0",
+    "Class": "UScriptClass'Level'",
+    "Properties": {
+      "LevelBuildDataId": "99B2FAEC-40929D9E-66C0DD9A-5E7F6E46",
+      "Model": {
+        "ObjectName": "Model'Tree_x3_y0:PersistentLevel.Model_0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.29"
+      },
+      "WorldSettings": {
+        "ObjectName": "WorldSettings'Tree_x3_y0:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.57"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "WorldSettings'Tree_x3_y0:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.57"
+      },
+      null,
+      {
+        "ObjectName": "InstancedFoliageActor'Tree_x3_y0:PersistentLevel.InstancedFoliageActor_0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.26"
+      },
+      {
+        "ObjectName": "LevelBounds'Tree_x3_y0:PersistentLevel.LevelBounds_1'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.28"
+      },
+      null
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/Maps/TslLobby",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'Tree_x3_y0:PersistentLevel.Model_0'",
+      "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.29"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": null,
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "LevelBounds",
+    "Name": "LevelBounds_1",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelBounds'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Tree_x3_y0:PersistentLevel.LevelBounds_1.BoxComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.0"
+      }
+    }
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "28C5C612-4AB2DB89-3542E588-ECD691F6",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_0",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_1",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_10",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_12",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_13",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_15",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_17",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_18",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_2",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_20",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_22",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_23",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_27",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_29",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_3",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_31",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_4",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_42",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_46",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_48",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_5",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_55",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_6",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_8",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_9",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootComponent0",
+    "Outer": "InstancedFoliageActor_0",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "World",
+    "Name": "Tree_x3_y0",
+    "Class": "UScriptClass'World'",
+    "Properties": {
+      "DefaultPhysicsVolume": null
+    },
+    "PersistentLevel": {
+      "ObjectName": "Level'Tree_x3_y0:PersistentLevel'",
+      "ObjectPath": "TslGame/Content/Maps/Desert/Art/Tree/Tree_x3_y0.27"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  },
+  {
+    "Type": "WorldSettings",
+    "Name": "WorldSettings",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WorldSettings'"
+  }
+]

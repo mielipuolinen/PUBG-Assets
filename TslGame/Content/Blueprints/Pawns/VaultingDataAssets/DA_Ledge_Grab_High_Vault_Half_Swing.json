@@ -1,0 +1,163 @@
+[
+  {
+    "Type": "VaultingData",
+    "Name": "DA_Ledge_Grab_High_Vault_Half_Swing",
+    "Class": "UScriptClass'VaultingData'",
+    "Properties": {
+      "MoveRequirements": {
+        "RowRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": 1
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 14
+          }
+        },
+        "SpeedRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Inclusive"
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 1000.0
+          }
+        },
+        "ZSpeedRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": -1500.0
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": -400.0
+          }
+        },
+        "LedgeRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": 4
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 10
+          }
+        },
+        "IsVault": "EVaultRequirementType::VaultReqType_True",
+        "IsLedgeGrab": "EVaultRequirementType::VaultReqType_True",
+        "IsSlide": "EVaultRequirementType::VaultReqType_Any",
+        "ExecConfig": {
+          "ExecutionDistance": 30.0,
+          "AnticipationDistance": 200.0,
+          "bUse3DDistance": true,
+          "ExecutionZRange": {
+            "LowerBound": {
+              "Value": -20.0
+            },
+            "UpperBound": {
+              "Value": 20.0
+            }
+          },
+          "bUseAnticipationAnim": true,
+          "AnticipationAnim": {
+            "ObjectName": "AnimSequence'Ledge_Grab_High_Anticipation'",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/Ledge_Grab_High_Anticipation.0"
+          },
+          "AnticipationAnimCurve": {
+            "ObjectName": "CurveFloat'C_Ledge_Grab_High_Anticipation'",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Curves/C_Ledge_Grab_High_Anticipation.0"
+          }
+        }
+      },
+      "VaultAnimType": "EVaultAnimType::LedgeGrab_High_Vault_HalfSwing",
+      "LocationStartNormalScale": 42.02,
+      "LocationStartZOffset": -85.95,
+      "LocationEndNormalScale": -131.03,
+      "LocationEndZOffset": -148.16,
+      "PreApexSpeedScale": 0.22,
+      "PostApexSpeedScale": 0.45,
+      "AnimBlendInTime": 0.05,
+      "AnimBlendOutTime": 0.4,
+      "ApexAdditiveStartTime": 0.5,
+      "ApexAdditiveEndTime": 0.7,
+      "StartCutoffByDistance_InMap": {
+        "X": 40.0,
+        "Y": 200.0
+      },
+      "StartCutoffBySpeed_InMap": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_InMap_PreApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PreApex": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "PlayrateBySpeed_InMap_PostApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PostApex": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "AnimationSequence": {
+        "ObjectName": "AnimSequence'Ledge_Grab_High_Vault_Half_Swing'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/Ledge_Grab_High_Vault_Half_Swing.15"
+      },
+      "AnimationSequence_FPP": {
+        "ObjectName": "AnimSequence'Ledge_Grab_High_Vault_Half_Swing_FPP'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/FPP/Ledge_Grab_High_Vault_Half_Swing_FPP.14"
+      },
+      "AnimationSequence_Rifle": {
+        "ObjectName": "AnimSequence'Ledge_Grab_High_Vault_Half_Swing'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/Ledge_Grab_High_Vault_Half_Swing.15"
+      },
+      "AnimationSequence_Rifle_FPP": {
+        "ObjectName": "AnimSequence'Ledge_Grab_High_Vault_Half_Swing_FPP'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/FPP/Ledge_Grab_High_Vault_Half_Swing_FPP.14"
+      },
+      "AnimationCurve": {
+        "ObjectName": "CurveFloat'C_Ledge_Grab_High_Vault_Half_Swing'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Curves/C_Ledge_Grab_High_Vault_Half_Swing.0"
+      },
+      "CharLocationInterpSpeedInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "CharLocationInterpSpeedOutMap": {
+        "X": 6.0,
+        "Y": 3.0
+      },
+      "TimerProgressionByDistanceInMap": {
+        "X": 20.0,
+        "Y": 100.0
+      },
+      "TimerProgressionByDistanceOutMap": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "TimerProgressionVTimerMax": 0.075,
+      "VaultEndTimerNormal": 1.0,
+      "VaultEndTimerFall": 0.72,
+      "CharacterPostVaultVelocityScalar": 1.0,
+      "CharacterPostVaultVelocityScalarVector": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      },
+      "bIsCancellable": true,
+      "MinCancelVTimer": 0.15,
+      "MaxCancelVTimer": 0.4,
+      "TaskEndVTimer": 0.2,
+      "PostVaultTimerProgressionScale": 1.0,
+      "bUseMappedVTimerDampening": true,
+      "MappedDampeningScalar": 0.3,
+      "MappedDampeningVTimerMax": 0.09
+    }
+  }
+]

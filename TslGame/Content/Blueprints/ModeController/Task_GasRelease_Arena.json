@@ -1,0 +1,213 @@
+[
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_Event_DeltaSeconds",
+    "Outer": "ExecuteUbergraph_Task_GasRelease_Arena",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OwnerActor",
+    "Outer": "ExecuteUbergraph_Task_GasRelease_Arena",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_GasRelease_Arena_C:ExecuteUbergraph_Task_GasRelease_Arena.K2Node_Event_DeltaSeconds'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.0"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OwnerActor2",
+    "Outer": "ExecuteUbergraph_Task_GasRelease_Arena",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_GasRelease_Arena_C:ExecuteUbergraph_Task_GasRelease_Arena.K2Node_Event_OwnerActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.1"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Task_GasRelease_Arena",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_GasRelease_Arena_C:ExecuteUbergraph_Task_GasRelease_Arena.K2Node_Event_OwnerActor2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.2"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Task_GasRelease_Arena",
+    "Outer": "Task_GasRelease_Arena_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Task_GasRelease_Arena_C:ExecuteUbergraph_Task_GasRelease_Arena.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.3"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "DeltaSeconds",
+    "Outer": "ReceiveTick",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OwnerActor",
+    "Outer": "ReceiveTick",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_GasRelease_Arena_C:ReceiveTick.DeltaSeconds'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.5"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "Task_GasRelease_Arena_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Task_GasRelease_Arena_C:ExecuteUbergraph_Task_GasRelease_Arena'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.4"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BTTask_BlueprintBase:ReceiveTick'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Task_GasRelease_Arena_C:ReceiveTick.OwnerActor'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.6"
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OwnerActor",
+    "Outer": "ReceiveExecute",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveExecute",
+    "Outer": "Task_GasRelease_Arena_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Task_GasRelease_Arena_C:ReceiveTick'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.7"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BTTask_BlueprintBase:ReceiveExecute'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Task_GasRelease_Arena_C:ReceiveExecute.OwnerActor'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.8"
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Task_GasRelease_Arena_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Task_GasRelease_Arena_C:ReceiveExecute'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.9"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Task_GasRelease_Arena_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Task_GasRelease_Arena_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.10"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Task_GasRelease_Arena_C:ExecuteUbergraph_Task_GasRelease_Arena'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.4"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslArenaTaskGasRelease'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Task_GasRelease_Arena_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.10"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Task_GasRelease_Arena": {
+        "ObjectName": "Function'Task_GasRelease_Arena_C:ExecuteUbergraph_Task_GasRelease_Arena'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.4"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'Task_GasRelease_Arena_C:ReceiveTick'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.7"
+      },
+      "ReceiveExecute": {
+        "ObjectName": "Function'Task_GasRelease_Arena_C:ReceiveExecute'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.9"
+      }
+    },
+    "ClassFlags": 262160,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Task_GasRelease_Arena_C'Default__Task_GasRelease_Arena_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.12"
+    }
+  },
+  {
+    "Type": "Task_GasRelease_Arena_C",
+    "Name": "Default__Task_GasRelease_Arena_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Task_GasRelease_Arena.Task_GasRelease_Arena_C'",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]

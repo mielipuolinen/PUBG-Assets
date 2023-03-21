@@ -1,0 +1,1549 @@
+[
+  {
+    "Type": "AbstractNavData",
+    "Name": "AbstractNavData-Default",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'AbstractNavData'",
+    "Properties": {
+      "bNetLoadOnClient": true
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "BP_DihorOtokSnowstormSpawner_161",
+    "Template": "AkSound",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Snowstorm:PersistentLevel.BP_DihorOtokSnowstormSpawner_161.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.20"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "P_SnowDrop_BP",
+    "Template": "AkSound",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Snowstorm:PersistentLevel.P_SnowDrop_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.21"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "Ak",
+    "Outer": "TslGlobalSound_WeatherClear_Dynamic_Vikendi_86",
+    "Template": "Ak_GEN_VARIABLE",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 17113.922,
+        "Y": 2596.8599,
+        "Z": -7713.283
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BluezoneOpacity_BP_C",
+    "Name": "BluezoneOpacity_BP_130",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BluezoneOpacity_BP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/BluezoneOpacity_BP.BluezoneOpacity_BP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Snowstorm:PersistentLevel.BluezoneOpacity_BP_130.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.23"
+      },
+      "Set BluezoneOpacity": 0.6,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Snowstorm:PersistentLevel.BluezoneOpacity_BP_130.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.23"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Snowstorm:PersistentLevel.BluezoneOpacity_BP_130.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.23"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_6",
+    "Outer": "BrushComponent0",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -100.0,
+                "Y": 100.0,
+                "Z": -100.0
+              },
+              {
+                "X": -100.0,
+                "Y": 100.0,
+                "Z": 100.0
+              },
+              {
+                "X": -100.0,
+                "Y": -100.0,
+                "Z": 100.0
+              },
+              {
+                "X": -100.0,
+                "Y": -100.0,
+                "Z": -100.0
+              },
+              {
+                "X": 100.0,
+                "Y": 100.0,
+                "Z": -100.0
+              },
+              {
+                "X": 100.0,
+                "Y": 100.0,
+                "Z": 100.0
+              },
+              {
+                "X": 100.0,
+                "Y": -100.0,
+                "Z": -100.0
+              },
+              {
+                "X": 100.0,
+                "Y": -100.0,
+                "Z": 100.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -100.0,
+                "Y": -100.0,
+                "Z": -100.0
+              },
+              "Max": {
+                "X": 100.0,
+                "Y": 100.0,
+                "Z": 100.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "bGenerateMirroredCollision": false,
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "8A36F7CA49905438E2CD99A4FEAE8A65",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 470,
+        "SizeOnDisk": 470,
+        "OffsetInFile": "0xB362"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent0",
+    "Outer": "LevelBounds_0",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeScale3D": {
+        "X": 40960000.0,
+        "Y": 40960000.0,
+        "Z": 40960000.0
+      }
+    }
+  },
+  {
+    "Type": "BP_DihorOtokSnowstormSpawner_C",
+    "Name": "BP_DihorOtokSnowstormSpawner_161",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_DihorOtokSnowstormSpawner_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Noboru/Blueprints/BP_DihorOtokSnowstormSpawner.BP_DihorOtokSnowstormSpawner_C'",
+    "Properties": {
+      "P_Low_Fog_large": {
+        "ObjectName": "ParticleSystemComponent'Weather_Snowstorm:PersistentLevel.BP_DihorOtokSnowstormSpawner_161.P_Low_Fog_large'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.19"
+      },
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Weather_Snowstorm:PersistentLevel.BP_DihorOtokSnowstormSpawner_161.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.20"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Weather_Snowstorm:PersistentLevel.BP_DihorOtokSnowstormSpawner_161.AkSound'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.1"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Snowstorm:PersistentLevel.BP_DihorOtokSnowstormSpawner_161.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.20"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "ParticleSystemComponent'Weather_Snowstorm:PersistentLevel.BP_DihorOtokSnowstormSpawner_161.P_Low_Fog_large'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.19"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BrushComponent",
+    "Name": "BrushComponent0",
+    "Outer": "PostProcessVolume",
+    "Class": "UScriptClass'BrushComponent'",
+    "Properties": {
+      "Brush": {
+        "ObjectName": "Model'Weather_Snowstorm:PersistentLevel.PostProcessVolume.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.17"
+      },
+      "BrushBodySetup": {
+        "ObjectName": "BodySetup'Weather_Snowstorm:PersistentLevel.PostProcessVolume.BrushComponent0.BodySetup_6'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.5"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 743480.0,
+        "Y": 623330.0,
+        "Z": -19740.0
+      }
+    }
+  },
+  {
+    "Type": "DirectionalLight",
+    "Name": "DirectionalLight_Sun",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'DirectionalLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "DirectionalLightComponent'Weather_Snowstorm:PersistentLevel.DirectionalLight_Sun.LightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.10"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "DirectionalLightComponent'Weather_Snowstorm:PersistentLevel.DirectionalLight_Sun.LightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.10"
+      }
+    }
+  },
+  {
+    "Type": "DirectionalLightComponent",
+    "Name": "LightComponent0",
+    "Outer": "DirectionalLight_Sun",
+    "Class": "UScriptClass'DirectionalLightComponent'",
+    "Properties": {
+      "OcclusionDepthRange": 5000.0,
+      "DynamicShadowDistanceMovableLight": 4000.0,
+      "CascadeDistributionExponent": 4.0,
+      "CascadeTransitionFraction": 0.3,
+      "DistanceFieldShadowDistance": 40000.0,
+      "TraceDistance": 5000.0,
+      "LightmassSettings": {
+        "LightSourceAngle": 1.5,
+        "ShadowExponent": 1.0
+      },
+      "ModulatedShadowColor": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 255,
+        "Hex": "FFFFFFFF"
+      },
+      "bUseGridShadow": true,
+      "GridShadowSplitSettings": [
+        {
+          "CellSize": 1000.0,
+          "MaxRadius": 3000.0
+        },
+        {
+          "CellSize": 5000.0,
+          "MaxRadius": 15000.0
+        },
+        {
+          "CellSize": 25000.0,
+          "MaxRadius": 75000.0
+        }
+      ],
+      "bUseTemperature": true,
+      "LightFunctionMaterial": {
+        "ObjectName": "MaterialInstanceConstant'M__LF_CloudShadow_Inst_07_DO_Snow'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Material/M__LF_CloudShadow_Inst_07_DO_Snow.0"
+      },
+      "LightFunctionScale": {
+        "X": 25000.0,
+        "Y": 25000.002,
+        "Z": 25000.002
+      },
+      "BloomScale": 0.001,
+      "BloomThreshold": 0.3,
+      "BloomTint": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "bUseRayTracedDistanceFieldShadows": true,
+      "LightGuid": "3014EFCC-45568C22-E979869C-A4B69347",
+      "Intensity": 0.75,
+      "LightColor": {
+        "B": 255,
+        "G": 247,
+        "R": 234,
+        "A": 255,
+        "Hex": "FFEAF7FF"
+      },
+      "VolumetricScatteringIntensity": 1.5,
+      "Mobility": "EComponentMobility::Movable",
+      "RelativeRotation": {
+        "Pitch": -70.94265,
+        "Yaw": -49.89203,
+        "Roll": 179.99663
+      },
+      "RelativeLocation": {
+        "X": 752617.2,
+        "Y": 595246.94,
+        "Z": 3827.498
+      }
+    }
+  },
+  {
+    "Type": "ExponentialHeightFog",
+    "Name": "ExponentialHeightFog_5",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'ExponentialHeightFog'",
+    "Properties": {
+      "Component": {
+        "ObjectName": "ExponentialHeightFogComponent'Weather_Snowstorm:PersistentLevel.ExponentialHeightFog_5.HeightFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.12"
+      },
+      "RootComponent": {
+        "ObjectName": "ExponentialHeightFogComponent'Weather_Snowstorm:PersistentLevel.ExponentialHeightFog_5.HeightFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.12"
+      }
+    }
+  },
+  {
+    "Type": "ExponentialHeightFogComponent",
+    "Name": "HeightFogComponent0",
+    "Outer": "ExponentialHeightFog_5",
+    "Class": "UScriptClass'ExponentialHeightFogComponent'",
+    "Properties": {
+      "FogDensity": 0.35,
+      "FogInscatteringColor": {
+        "R": 0.264875,
+        "G": 0.290548,
+        "B": 0.325,
+        "A": 1.0,
+        "Hex": "FF8D939B"
+      },
+      "HeightDensityLayers": [
+        {
+          "Height": 5000.0,
+          "Density": 1.0
+        },
+        {
+          "Height": 100000.0,
+          "Density": 0.05
+        }
+      ],
+      "FogHeightFalloff": 0.1,
+      "bEnableVolumetricFog": true,
+      "VolumetricFogScatteringDistribution": 0.5,
+      "VolumetricFogAlbedo": {
+        "B": 254,
+        "G": 254,
+        "R": 254,
+        "A": 255,
+        "Hex": "FFFEFEFE"
+      },
+      "VolumetricFogExtinctionScale": 1.25,
+      "VolumetricFogDistance": 15000.0,
+      "RelativeLocation": {
+        "X": 621903.0,
+        "Y": 303118.0,
+        "Z": 2490.0
+      }
+    }
+  },
+  {
+    "Type": "IDCSettingsForDihorOtokClearWeather_C",
+    "Name": "IDCSettingsForDihorOtokClearWeather_26",
+    "Outer": "PersistentLevel",
+    "Template": "Default__IDCSettingsForDihorOtokClearWeather_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/IDC_DihorOtok/IDCSettingsForDihorOtokClearWeather.IDCSettingsForDihorOtokClearWeather_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Snowstorm:PersistentLevel.IDCSettingsForDihorOtokClearWeather_26.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.24"
+      },
+      "ConsoleCommands": [
+        "r.CGV.Fallback 0.334710 0.094216 -0.269714 -0.008018 0.260979 0.072405 -0.211327 -0.007172 0.214882 0.055859 -0.176884 -0.007689 0.061821 -0.116015 -0.048355 -0.058586 0.047291 -0.089008 -0.034988 -0.043716 0.037771 -0.066462 -0.020986 -0.031075 -0.040459 -0.031513 -0.025552 0.000000",
+        "r.CGV.Intensity 1",
+        "r.CGV.FallbackIntensity 0.2",
+        "r.CGV.Hairintensity 0.5",
+        "r.CGV.Skinintensity 1",
+        "r.CGV.BaseIntensity 1",
+        "r.CGV.IndoorIntensity 1.25",
+        "r.CGV.OutdoorIntensity 0.15",
+        "r.CGV.IndoorSaturation 0",
+        "r.CGV.OutdoorSaturation 0.23",
+        "r.WindowLightIntensity 1",
+        "r.CGV.UseFullFallback 1",
+        "r.CGV.FullFallbackIntensity 1",
+        "r.IndoorVolume.Enable 0",
+        "r.GIVolume.Enable 0"
+      ],
+      "ExecuteCommandsInEditor": true,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Snowstorm:PersistentLevel.IDCSettingsForDihorOtokClearWeather_26.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.24"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Snowstorm:PersistentLevel.IDCSettingsForDihorOtokClearWeather_26.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.24"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Outer": "Weather_Snowstorm",
+    "Class": "UScriptClass'Level'",
+    "Properties": {
+      "LevelBuildDataId": "9F553BDF-462A9F62-F2757E9C-F7465BB0",
+      "Model": {
+        "ObjectName": "Model'Weather_Snowstorm:PersistentLevel.Model_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.16"
+      },
+      "WorldSettings": {
+        "ObjectName": "WorldSettings'Weather_Snowstorm:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.33"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "WorldSettings'Weather_Snowstorm:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.33"
+      },
+      null,
+      {
+        "ObjectName": "DirectionalLight'Weather_Snowstorm:PersistentLevel.DirectionalLight_Sun'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.9"
+      },
+      {
+        "ObjectName": "PostProcessVolume'Weather_Snowstorm:PersistentLevel.PostProcessVolume'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.22"
+      },
+      {
+        "ObjectName": "SkyLight'Weather_Snowstorm:PersistentLevel.SkyLight'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.26"
+      },
+      {
+        "ObjectName": "ExponentialHeightFog'Weather_Snowstorm:PersistentLevel.ExponentialHeightFog_5'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.11"
+      },
+      {
+        "ObjectName": "LevelBounds'Weather_Snowstorm:PersistentLevel.LevelBounds_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.15"
+      },
+      {
+        "ObjectName": "IDCSettingsForDihorOtokClearWeather_C'Weather_Snowstorm:PersistentLevel.IDCSettingsForDihorOtokClearWeather_26'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.13"
+      },
+      {
+        "ObjectName": "P_RainDynamic_Sanhok_C'Weather_Snowstorm:PersistentLevel.P_SnowDrop_BP'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.18"
+      },
+      {
+        "ObjectName": "BluezoneOpacity_BP_C'Weather_Snowstorm:PersistentLevel.BluezoneOpacity_BP_130'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.4"
+      },
+      {
+        "ObjectName": "TslGlobalSound_WeatherClear_Dynamic_Vikendi_C'Weather_Snowstorm:PersistentLevel.TslGlobalSound_WeatherClear_Dynamic_Vikendi_86'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.31"
+      },
+      {
+        "ObjectName": "SnowEffect_C'Weather_Snowstorm:PersistentLevel.SnowEffect_120'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.28"
+      },
+      {
+        "ObjectName": "AbstractNavData'Weather_Snowstorm:PersistentLevel.AbstractNavData-Default'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.0"
+      },
+      {
+        "ObjectName": "StaticMeshActor'Weather_Snowstorm:PersistentLevel.SM_SkySphere_2'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.29"
+      },
+      {
+        "ObjectName": "BP_DihorOtokSnowstormSpawner_C'Weather_Snowstorm:PersistentLevel.BP_DihorOtokSnowstormSpawner_161'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.7"
+      },
+      null
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/Maps/TslLobby",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'Weather_Snowstorm:PersistentLevel.Model_0'",
+      "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.16"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": null,
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "LevelBounds",
+    "Name": "LevelBounds_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelBounds'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Weather_Snowstorm:PersistentLevel.LevelBounds_0.BoxComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.6"
+      }
+    }
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "8E12608A-47D8027C-F8490090-55303E81",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_14",
+    "Outer": "PostProcessVolume",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 100.0,
+        "Y": 100.0,
+        "Z": 100.0
+      },
+      "SphereRadius": 173.20508
+    },
+    "Vectors": [
+      {
+        "X": -1.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1.0
+      },
+      {
+        "X": 1.0,
+        "Y": -0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": -1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      }
+    ],
+    "Points": [
+      {
+        "X": -100.0,
+        "Y": -100.0,
+        "Z": -100.0
+      },
+      {
+        "X": -100.0,
+        "Y": -100.0,
+        "Z": 100.0
+      },
+      {
+        "X": -100.0,
+        "Y": 100.0,
+        "Z": 100.0
+      },
+      {
+        "X": -100.0,
+        "Y": 100.0,
+        "Z": -100.0
+      },
+      {
+        "X": 100.0,
+        "Y": 100.0,
+        "Z": 100.0
+      },
+      {
+        "X": 100.0,
+        "Y": 100.0,
+        "Z": -100.0
+      },
+      {
+        "X": 100.0,
+        "Y": -100.0,
+        "Z": 100.0
+      },
+      {
+        "X": 100.0,
+        "Y": -100.0,
+        "Z": -100.0
+      }
+    ],
+    "Nodes": [
+      {
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 0,
+        "iSurf": 0,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 4,
+        "iSurf": 1,
+        "iVertexIndex": 4,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 2,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 8,
+        "iSurf": 2,
+        "iVertexIndex": 8,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 3,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 12,
+        "iSurf": 3,
+        "iVertexIndex": 12,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 4,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "iVertPool": 16,
+        "iSurf": 4,
+        "iVertexIndex": 16,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 5,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "iVertPool": 20,
+        "iSurf": 5,
+        "iVertexIndex": 20,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": -1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": 0,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      }
+    ],
+    "Surfs": [
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 0,
+        "vTextureU": 1,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 3,
+        "vNormal": 1,
+        "vTextureU": 3,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 5,
+        "vNormal": 3,
+        "vTextureU": 4,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 7,
+        "vNormal": 4,
+        "vTextureU": 0,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 2,
+        "vNormal": 5,
+        "vTextureU": 3,
+        "vTextureV": 1,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 2,
+        "vTextureU": 3,
+        "vTextureV": 4,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      }
+    ],
+    "NumSharedSides": 4,
+    "VertexBuffer": null,
+    "LightingGuid": "59AD6C50-44875E6E-63029FA6-2952252F",
+    "LightmassSettings": [
+      {
+        "bUseTwoSidedLighting": false,
+        "bShadowIndirectOnly": false,
+        "bUseEmissiveForStaticLighting": false,
+        "bUseVertexNormalForHemisphereGather": false,
+        "EmissiveLightFalloffExponent": 8.0,
+        "EmissiveLightExplicitInfluenceRadius": 0.0,
+        "EmissiveBoost": 1.0,
+        "DiffuseBoost": 1.0,
+        "FullyOccludedSamplesFraction": 1.0
+      }
+    ]
+  },
+  {
+    "Type": "P_RainDynamic_Sanhok_C",
+    "Name": "P_SnowDrop_BP",
+    "Outer": "PersistentLevel",
+    "Template": "Default__P_RainDynamic_Sanhok_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Effects/Clets/Particles/Environment/P_RainDynamic_Sanhok.P_RainDynamic_Sanhok_C'",
+    "Properties": {
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Weather_Snowstorm:PersistentLevel.P_SnowDrop_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.21"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Weather_Snowstorm:PersistentLevel.P_SnowDrop_BP.AkSound'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.2"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Snowstorm:PersistentLevel.P_SnowDrop_BP.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.21"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "P_Low_Fog_large",
+    "Outer": "BP_DihorOtokSnowstormSpawner_161",
+    "Template": "P_Low_Fog_large_GEN_VARIABLE",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Weather_Snowstorm:PersistentLevel.BP_DihorOtokSnowstormSpawner_161.ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.20"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript"
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "BP_DihorOtokSnowstormSpawner_161",
+    "Template": "ParticleSystem",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "OnSystemFinished": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BP_DihorOtokSnowstormSpawner_C'Weather_Snowstorm:PersistentLevel.BP_DihorOtokSnowstormSpawner_161'",
+              "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.7"
+            },
+            "FunctionName": "OnParticleFinish"
+          }
+        ]
+      },
+      "bDecalChannelValid": true
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "P_SnowDrop_BP",
+    "Template": "ParticleSystem",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_SnowDrop_02_02'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_SnowDrop_02_02.58"
+      },
+      "OldPosition": {
+        "X": -200530.0,
+        "Y": -50460.0,
+        "Z": -4005.0
+      },
+      "OnSystemFinished": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "P_RainDynamic_Sanhok_C'Weather_Snowstorm:PersistentLevel.P_SnowDrop_BP'",
+              "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.18"
+            },
+            "FunctionName": "OnParticleFinish"
+          }
+        ]
+      },
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": -200530.0,
+        "Y": -50460.0,
+        "Z": -4005.0
+      },
+      "bAutoActivate": true
+    }
+  },
+  {
+    "Type": "PostProcessVolume",
+    "Name": "PostProcessVolume",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'PostProcessVolume'",
+    "Properties": {
+      "Settings": {
+        "bOverride_WhiteTemp": true,
+        "bOverride_ColorSaturation": true,
+        "bOverride_ColorContrast": true,
+        "bOverride_BloomIntensity": true,
+        "bOverride_BloomThreshold": true,
+        "bOverride_Bloom1Tint": true,
+        "bOverride_Bloom1Size": true,
+        "bOverride_Bloom2Size": true,
+        "bOverride_Bloom2Tint": true,
+        "bOverride_Bloom3Tint": true,
+        "bOverride_Bloom3Size": true,
+        "bOverride_Bloom4Tint": true,
+        "bOverride_Bloom4Size": true,
+        "bOverride_Bloom5Tint": true,
+        "bOverride_Bloom5Size": true,
+        "bOverride_Bloom6Tint": true,
+        "bOverride_Bloom6Size": true,
+        "bOverride_AutoExposureMinBrightness": true,
+        "bOverride_AutoExposureMaxBrightness": true,
+        "bOverride_AutoExposureSpeedUp": true,
+        "bOverride_AutoExposureSpeedDown": true,
+        "bOverride_AutoExposureBias": true,
+        "bOverride_HBAOPowerExponent": true,
+        "bOverride_HBAORadius": true,
+        "bOverride_HBAOMaxViewDepth": true,
+        "bOverride_AmbientOcclusionPower": true,
+        "bOverride_AmbientOcclusionQuality": true,
+        "bOverride_AmbientOcclusionMipBlend": true,
+        "bOverride_AmbientOcclusionMipScale": true,
+        "WhiteTemp": 6000.0,
+        "ColorSaturation": {
+          "X": 2.0,
+          "Y": 1.615924,
+          "Z": 1.18107,
+          "W": 1.0
+        },
+        "ColorContrast": {
+          "X": 1.25,
+          "Y": 1.25,
+          "Z": 1.25,
+          "W": 1.0
+        },
+        "FilmShoulder": 1.0,
+        "BloomIntensity": 1.0,
+        "Bloom1Size": 2.0,
+        "Bloom2Size": 4.0,
+        "Bloom3Size": 8.0,
+        "Bloom4Size": 16.0,
+        "Bloom5Size": 32.0,
+        "Bloom1Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom2Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom3Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom4Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom5Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom6Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "AutoExposureLowPercent": 58.0,
+        "AutoExposureMinBrightness": 1.0,
+        "AutoExposureMaxBrightness": 1.3,
+        "AutoExposureSpeedUp": 5.0,
+        "AutoExposureSpeedDown": 3.0,
+        "AutoExposureBias": -0.1,
+        "HBAOPowerExponent": 2.0,
+        "HBAORadius": 1.0,
+        "HBAOMaxViewDepth": 100000.0,
+        "DepthOfFieldFstop": 2.990826,
+        "DepthOfFieldDepthBlurRadius": 1.0,
+        "WeightedBlendables": {
+          "Array": [
+            {
+              "Weight": 1.0,
+              "Object": {
+                "ObjectName": "MaterialInstanceConstant'MI_SnowCamera_01'",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/MI_SnowCamera_01.0"
+              }
+            },
+            {
+              "Weight": -1.0,
+              "Object": null
+            }
+          ]
+        }
+      },
+      "bUnbound": true,
+      "BrushType": "Brush_Add",
+      "Brush": {
+        "ObjectName": "Model'Weather_Snowstorm:PersistentLevel.PostProcessVolume.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.17"
+      },
+      "BrushComponent": {
+        "ObjectName": "BrushComponent'Weather_Snowstorm:PersistentLevel.PostProcessVolume.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.8"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "bHidden": false,
+      "RootComponent": {
+        "ObjectName": "BrushComponent'Weather_Snowstorm:PersistentLevel.PostProcessVolume.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.8"
+      },
+      "Tags": [
+        "TslEffectPostProcessVolume"
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BluezoneOpacity_BP_130",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 424728.56,
+        "Y": 370274.03,
+        "Z": 4332.4653
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "IDCSettingsForDihorOtokClearWeather_26",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 10324.156,
+        "Z": 0.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "SnowEffect_120",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 146443.88,
+        "Y": 383789.2,
+        "Z": 31266.354
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SkyLight",
+    "Name": "SkyLight",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'SkyLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "SkyLightComponent'Weather_Snowstorm:PersistentLevel.SkyLight.SkyLightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.27"
+      },
+      "RootComponent": {
+        "ObjectName": "SkyLightComponent'Weather_Snowstorm:PersistentLevel.SkyLight.SkyLightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.27"
+      }
+    }
+  },
+  {
+    "Type": "SkyLightComponent",
+    "Name": "SkyLightComponent0",
+    "Outer": "SkyLight",
+    "Class": "UScriptClass'SkyLightComponent'",
+    "Properties": {
+      "SourceType": "SLS_SpecifiedCubemap",
+      "Cubemap": {
+        "ObjectName": "TextureCube'Vikendi_Snow'",
+        "ObjectPath": "TslGame/Content/Assets/World/HDRI/SkyCube_Vikendi/Vikendi_Snow.0"
+      },
+      "OcclusionMaxDistance": 500.0,
+      "Contrast": 0.7,
+      "MinOcclusion": 0.2,
+      "OcclusionTint": {
+        "B": 38,
+        "G": 38,
+        "R": 38,
+        "A": 255,
+        "Hex": "FF262626"
+      },
+      "LightGuid": "397B09D6-40888D93-066948B0-F9531EC6",
+      "Intensity": 2.0,
+      "LightColor": {
+        "B": 195,
+        "G": 195,
+        "R": 195,
+        "A": 255,
+        "Hex": "FFC3C3C3"
+      },
+      "Mobility": "EComponentMobility::Movable",
+      "RelativeLocation": {
+        "X": -487.0,
+        "Y": -705.0,
+        "Z": 483.0
+      }
+    }
+  },
+  {
+    "Type": "SnowEffect_C",
+    "Name": "SnowEffect_120",
+    "Outer": "PersistentLevel",
+    "Template": "Default__SnowEffect_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/SnowEffect.SnowEffect_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Snowstorm:PersistentLevel.SnowEffect_120.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.25"
+      },
+      "Grass_SnowAmount": 350.0,
+      "Grass_SnowAmount_Power": 1.55,
+      "PP_Control": 1.0,
+      "Noise01_Devide": 5000.0,
+      "Noise02_Devide": 10000.0,
+      "Noise_Value": 18.5,
+      "VolumefogExtinctionScale": 0.975,
+      "USE SnowCamera": true,
+      "Grass_SnowMaskB_Power": 4.0,
+      "Grass_SnowMaskB_Offset": 0.55,
+      "SmokeGrenade_Color": {
+        "R": 0.685,
+        "G": 0.615612,
+        "B": 0.587948,
+        "A": 1.0,
+        "Hex": "FFD8CECA"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Snowstorm:PersistentLevel.SnowEffect_120.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.25"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Snowstorm:PersistentLevel.SnowEffect_120.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.25"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshActor",
+    "Name": "SM_SkySphere_2",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'StaticMeshActor'",
+    "Properties": {
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Snowstorm:PersistentLevel.SM_SkySphere_2.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.30"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Snowstorm:PersistentLevel.SM_SkySphere_2.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.30"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent0",
+    "Outer": "SM_SkySphere_2",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_SkySphere'",
+        "ObjectPath": "Engine/Content/EngineSky/SM_SkySphere.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_Sky_DihorOtok_Snowstorm'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/Skies/DihorOtok/MI_Sky_DihorOtok_Snowstorm.0"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeScale3D": {
+        "X": 5000.0,
+        "Y": 5000.0,
+        "Z": 5000.0
+      }
+    }
+  },
+  {
+    "Type": "TslGlobalSound_WeatherClear_Dynamic_Vikendi_C",
+    "Name": "TslGlobalSound_WeatherClear_Dynamic_Vikendi_86",
+    "Outer": "PersistentLevel",
+    "Template": "Default__TslGlobalSound_WeatherClear_Dynamic_Vikendi_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Environment/TslGlobalSound_WeatherClear_Dynamic_Vikendi.TslGlobalSound_WeatherClear_Dynamic_Vikendi_C'",
+    "Properties": {
+      "Ak": {
+        "ObjectName": "AkComponent'Weather_Snowstorm:PersistentLevel.TslGlobalSound_WeatherClear_Dynamic_Vikendi_86.Ak'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.3"
+      },
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Snowstorm:PersistentLevel.TslGlobalSound_WeatherClear_Dynamic_Vikendi_86.Ak'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.3"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "AkComponent'Weather_Snowstorm:PersistentLevel.TslGlobalSound_WeatherClear_Dynamic_Vikendi_86.Ak'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.3"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "World",
+    "Name": "Weather_Snowstorm",
+    "Class": "UScriptClass'World'",
+    "Properties": {
+      "DefaultPhysicsVolume": null
+    },
+    "PersistentLevel": {
+      "ObjectName": "Level'Weather_Snowstorm:PersistentLevel'",
+      "ObjectPath": "TslGame/Content/Maps/DihorOtok/Weather/Weather_Snowstorm.14"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  },
+  {
+    "Type": "WorldSettings",
+    "Name": "WorldSettings",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WorldSettings'"
+  }
+]

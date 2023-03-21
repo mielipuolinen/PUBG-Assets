@@ -1,0 +1,61 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DmgTypeExplosion_Vehicle_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslDamageType'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 327696,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DmgTypeExplosion_Vehicle_C'Default__DmgTypeExplosion_Vehicle_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgTypeExplosion_Vehicle.1"
+    }
+  },
+  {
+    "Type": "DmgTypeExplosion_Vehicle_C",
+    "Name": "Default__DmgTypeExplosion_Vehicle_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Damage_Type/DmgTypeExplosion_Vehicle.DmgTypeExplosion_Vehicle_C'",
+    "Properties": {
+      "DamageTypeCategory": "EDamageTypeCategory::Damage_Explosion_Vehicle",
+      "HitForceFeedback": {
+        "ObjectName": "TslForceFeedbackEffect'TslFFE_Damaged'",
+        "ObjectPath": "TslGame/Content/Effects/ForceFeedback/TslFFE_Damaged.0"
+      },
+      "KilledForceFeedback": {
+        "ObjectName": "TslForceFeedbackEffect'TslFFE_Killed'",
+        "ObjectPath": "TslGame/Content/Effects/ForceFeedback/TslFFE_Killed.0"
+      },
+      "DamageRatioInfos": [
+        {
+          "DamageRatio": 10.0,
+          "DamageVictimActorType": "EDamageVictimActorType::ExplosiveItem"
+        },
+        {
+          "DamageRatio": 0.0,
+          "DamageVictimActorType": "EDamageVictimActorType::Wheel"
+        }
+      ],
+      "DamageRatioInfos_Console": [
+        {
+          "DamageRatio": 10.0,
+          "DamageVictimActorType": "EDamageVictimActorType::ExplosiveItem"
+        },
+        {
+          "DamageRatio": 0.0,
+          "DamageVictimActorType": "EDamageVictimActorType::Wheel"
+        }
+      ],
+      "bRadialDamageVelChange": true,
+      "DamageImpulse": 1000.0
+    }
+  }
+]

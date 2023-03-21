@@ -3,10 +3,11 @@
     "Type": "StructProperty",
     "Name": "NewVar_0",
     "Outer": "ProjPanzerFaust_Explosion_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": null,
     "PropertyFlags": 65541,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -14,8 +15,9 @@
     "Type": "BoolProperty",
     "Name": "bRotateSelfToWorld",
     "Outer": "ProjPanzerFaust_Explosion_C",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjPanzerFaust_Explosion_C:NewVar_0",
+      "ObjectName": "StructProperty'ProjPanzerFaust_Explosion_C:NewVar_0'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.0"
     },
     "PropertyFlags": 65541,
@@ -26,22 +28,24 @@
     "Type": "StructProperty",
     "Name": "SurfaceVFX",
     "Outer": "ProjPanzerFaust_Explosion_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjPanzerFaust_Explosion_C:bRotateSelfToWorld",
+      "ObjectName": "BoolProperty'ProjPanzerFaust_Explosion_C:bRotateSelfToWorld'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.1"
     },
     "PropertyFlags": 65541,
     "Struct": {
-      "ObjectName": "UserDefinedStruct VFX_Surface",
-      "ObjectPath": "TslGame/Content/Assets/Effects/Blueprints/VFX_Surface.7"
+      "ObjectName": "UserDefinedStruct'VFX_Surface'",
+      "ObjectPath": "TslGame/Content/Assets/Effects/Blueprints/VFX_Surface.3"
     }
   },
   {
     "Type": "BoolProperty",
     "Name": "bEnableSurfaceSwitch",
     "Outer": "ProjPanzerFaust_Explosion_C",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjPanzerFaust_Explosion_C:SurfaceVFX",
+      "ObjectName": "StructProperty'ProjPanzerFaust_Explosion_C:SurfaceVFX'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.2"
     },
     "PropertyFlags": 65541,
@@ -52,6 +56,7 @@
     "Type": "IntProperty",
     "Name": "EntryPoint",
     "Outer": "ExecuteUbergraph_ProjPanzerFaust_Explosion",
+    "Class": "UScriptClass'IntProperty'",
     "Next": null,
     "PropertyFlags": 128
   },
@@ -59,13 +64,14 @@
     "Type": "Function",
     "Name": "ExecuteUbergraph_ProjPanzerFaust_Explosion",
     "Outer": "ProjPanzerFaust_Explosion_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "BoolProperty ProjPanzerFaust_Explosion_C:bEnableSurfaceSwitch",
+      "ObjectName": "BoolProperty'ProjPanzerFaust_Explosion_C:bEnableSurfaceSwitch'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.3"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty ProjPanzerFaust_Explosion_C:ExecuteUbergraph_ProjPanzerFaust_Explosion.EntryPoint",
+        "ObjectName": "IntProperty'ProjPanzerFaust_Explosion_C:ExecuteUbergraph_ProjPanzerFaust_Explosion.EntryPoint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.4"
       }
     ],
@@ -75,12 +81,13 @@
     "Type": "Function",
     "Name": "ReceiveBeginPlay",
     "Outer": "ProjPanzerFaust_Explosion_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjPanzerFaust_Explosion_C:ExecuteUbergraph_ProjPanzerFaust_Explosion",
+      "ObjectName": "Function'ProjPanzerFaust_Explosion_C:ExecuteUbergraph_ProjPanzerFaust_Explosion'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.5"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:ReceiveBeginPlay",
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 134744064
@@ -89,6 +96,7 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Contains_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "BoolSize": 1,
     "bIsNativeBool": true
@@ -97,8 +105,9 @@
     "Type": "StrProperty",
     "Name": "CallFunc_GetDisplayName_ReturnValue",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'StrProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_Contains_ReturnValue",
+      "ObjectName": "BoolProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_Contains_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.7"
     }
   },
@@ -106,12 +115,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_TraceEnd",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StrProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_GetDisplayName_ReturnValue",
+      "ObjectName": "StrProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_GetDisplayName_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.8"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -119,12 +129,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_TraceStart",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_TraceEnd",
+      "ObjectName": "StructProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_TraceEnd'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.9"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -132,8 +143,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_BreakHitResult_FaceIndex",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_TraceStart",
+      "ObjectName": "StructProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_TraceStart'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.10"
     }
   },
@@ -141,8 +153,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_BreakHitResult_HitItem",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_FaceIndex",
+      "ObjectName": "IntProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_FaceIndex'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.11"
     }
   },
@@ -150,8 +163,9 @@
     "Type": "NameProperty",
     "Name": "CallFunc_BreakHitResult_HitBoneName",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'NameProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_HitItem",
+      "ObjectName": "IntProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_HitItem'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.12"
     }
   },
@@ -159,12 +173,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_BreakHitResult_HitComponent",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "NameProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_HitBoneName",
+      "ObjectName": "NameProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_HitBoneName'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.13"
     },
     "PropertyClass": {
-      "ObjectName": "Class PrimitiveComponent",
+      "ObjectName": "Class'PrimitiveComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -172,12 +187,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_BreakHitResult_HitActor",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_HitComponent",
+      "ObjectName": "ObjectProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_HitComponent'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.14"
     },
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -185,12 +201,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_BreakHitResult_PhysMat",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_HitActor",
+      "ObjectName": "ObjectProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_HitActor'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.15"
     },
     "PropertyClass": {
-      "ObjectName": "Class PhysicalMaterial",
+      "ObjectName": "Class'PhysicalMaterial'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -198,12 +215,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_ImpactNormal",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_PhysMat",
+      "ObjectName": "ObjectProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_PhysMat'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.16"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -211,12 +229,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_Normal",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_ImpactNormal",
+      "ObjectName": "StructProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_ImpactNormal'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.17"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -224,12 +243,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_ImpactPoint",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_Normal",
+      "ObjectName": "StructProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_Normal'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.18"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -237,12 +257,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakHitResult_Location",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_ImpactPoint",
+      "ObjectName": "StructProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_ImpactPoint'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.19"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -250,8 +271,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_BreakHitResult_Time",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_Location",
+      "ObjectName": "StructProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_Location'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.20"
     }
   },
@@ -259,8 +281,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_BreakHitResult_bInitialOverlap",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_Time",
+      "ObjectName": "FloatProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_Time'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.21"
     },
     "BoolSize": 1,
@@ -270,8 +293,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_BreakHitResult_bBlockingHit",
     "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_bInitialOverlap",
+      "ObjectName": "BoolProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_bInitialOverlap'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.22"
     },
     "BoolSize": 1,
@@ -281,17 +305,18 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjPanzerFaust_Explosion_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjPanzerFaust_Explosion_C:ReceiveBeginPlay",
+      "ObjectName": "Function'ProjPanzerFaust_Explosion_C:ReceiveBeginPlay'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.6"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "Children": [
       {
-        "ObjectName": "BoolProperty ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_bBlockingHit",
+        "ObjectName": "BoolProperty'ProjPanzerFaust_Explosion_C:UserConstructionScript.CallFunc_BreakHitResult_bBlockingHit'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.23"
       }
     ],
@@ -301,107 +326,110 @@
     "Type": "StructProperty",
     "Name": "UberGraphFrame",
     "Outer": "ProjPanzerFaust_Explosion_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "Function ProjPanzerFaust_Explosion_C:UserConstructionScript",
+      "ObjectName": "Function'ProjPanzerFaust_Explosion_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.24"
     },
     "PropertyFlags": 2105344,
     "Struct": {
-      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
       "ObjectPath": "/Script/Engine"
     }
   },
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjPanzerFaust_Explosion_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjPanzerFaust_Explosion_C:SimpleConstructionScript_1__EFD9F313",
+        "ObjectName": "SimpleConstructionScript'ProjPanzerFaust_Explosion_C:SimpleConstructionScript_1__EFD9F313'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.31"
       },
       "UberGraphFramePointerProperty": {
-        "ObjectName": "StructProperty ProjPanzerFaust_Explosion_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjPanzerFaust_Explosion_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.25"
       },
       "UberGraphFunction": {
-        "ObjectName": "Function ProjPanzerFaust_Explosion_C:ExecuteUbergraph_ProjPanzerFaust_Explosion",
+        "ObjectName": "Function'ProjPanzerFaust_Explosion_C:ExecuteUbergraph_ProjPanzerFaust_Explosion'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslExplosionEffect",
+      "ObjectName": "Class'TslExplosionEffect'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjPanzerFaust_Explosion_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjPanzerFaust_Explosion_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.25"
       }
     ],
     "FuncMap": {
       "ExecuteUbergraph_ProjPanzerFaust_Explosion": {
-        "ObjectName": "Function ProjPanzerFaust_Explosion_C:ExecuteUbergraph_ProjPanzerFaust_Explosion",
+        "ObjectName": "Function'ProjPanzerFaust_Explosion_C:ExecuteUbergraph_ProjPanzerFaust_Explosion'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.5"
       },
       "ReceiveBeginPlay": {
-        "ObjectName": "Function ProjPanzerFaust_Explosion_C:ReceiveBeginPlay",
+        "ObjectName": "Function'ProjPanzerFaust_Explosion_C:ReceiveBeginPlay'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.6"
       },
       "UserConstructionScript": {
-        "ObjectName": "Function ProjPanzerFaust_Explosion_C:UserConstructionScript",
+        "ObjectName": "Function'ProjPanzerFaust_Explosion_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.24"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjPanzerFaust_Explosion_C Default__ProjPanzerFaust_Explosion_C",
+      "ObjectName": "ProjPanzerFaust_Explosion_C'Default__ProjPanzerFaust_Explosion_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.27"
     }
   },
   {
     "Type": "ProjPanzerFaust_Explosion_C",
     "Name": "Default__ProjPanzerFaust_Explosion_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.ProjPanzerFaust_Explosion_C'",
     "Properties": {
       "UberGraphFrame": {},
       "bEnableSurfaceSwitch": true,
       "SurfaceVFX": {
         "Dirt_9_22C0D96E44DF482867F6B5A758D93194": {
-          "ObjectName": "ParticleSystem P_Grenade_Dirt",
+          "ObjectName": "ParticleSystem'P_Grenade_Dirt'",
           "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Grenade_Dirt.363"
         },
         "Water_11_C8AEBF3B4FA685F844D1C89F64774DC2": {
-          "ObjectName": "ParticleSystem P_Grenade_Water",
+          "ObjectName": "ParticleSystem'P_Grenade_Water'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_Grenade_Water.227"
         },
         "Grass_17_A084AF664A15FC8AB2937795EA3E749F": {
-          "ObjectName": "ParticleSystem P_Grenade_Grass",
+          "ObjectName": "ParticleSystem'P_Grenade_Grass'",
           "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Grenade_Grass.327"
         },
         "Sand_18_B1EC5DC24262C9ADED3CE79E713A17C8": {
-          "ObjectName": "ParticleSystem P_Grenade_Sand",
+          "ObjectName": "ParticleSystem'P_Grenade_Sand'",
           "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Grenade_Sand.400"
         },
         "Mud_19_88910E8F4D224894AC9F57883C103F0A": {
-          "ObjectName": "ParticleSystem P_Grenade_Mud",
+          "ObjectName": "ParticleSystem'P_Grenade_Mud'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_Grenade_Mud.246"
         },
         "Snow_20_74BEFD734212A31EB8E55BA8E284270B": {
-          "ObjectName": "ParticleSystem P_Grenade_Snow",
+          "ObjectName": "ParticleSystem'P_Grenade_Snow'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_Grenade_Snow.286"
         },
         "Ice_21_CE62A9674193FD0BCA47C78CCCE61D24": {
-          "ObjectName": "ParticleSystem P_Grenade_Ice",
+          "ObjectName": "ParticleSystem'P_Grenade_Ice'",
           "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Grenade_Ice.377"
         },
         "Default_24_F06A36C84B96E7216125AB80C34DC272": {
-          "ObjectName": "ParticleSystem P_Grenade_Default",
+          "ObjectName": "ParticleSystem'P_Grenade_Default'",
           "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Grenade_Default.218"
         },
         "Reed_28_736057AF4686F8F2013CAF97E6BDC34F": null,
@@ -413,22 +441,22 @@
         "Z": 0.0
       },
       "ExplosionFX": {
-        "ObjectName": "ParticleSystem P_Panzerfaust_Default",
+        "ObjectName": "ParticleSystem'P_Panzerfaust_Default'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_Panzerfaust_Default.167"
       },
       "ExplosionLight": {
-        "ObjectName": "PointLightComponent Default__ProjPanzerFaust_Explosion_C:ExplosionLight",
+        "ObjectName": "PointLightComponent'Default__ProjPanzerFaust_Explosion_C:ExplosionLight'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.28"
       },
       "ExplosionLightFadeOut": 10.0,
       "ExplosionSound": {
-        "ObjectName": "AkAudioEvent Weapon_RocketLauncher_Explosion_Normal",
+        "ObjectName": "AkAudioEvent'Weapon_RocketLauncher_Explosion_Normal'",
         "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/RocketLauncher/Weapon_RocketLauncher_Explosion_Normal.0"
       },
       "DecalEffectDataSet": {
         "DefaultDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -446,7 +474,7 @@
         },
         "ConcreteDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -464,7 +492,7 @@
         },
         "RockDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -482,7 +510,7 @@
         },
         "DirtDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -500,7 +528,7 @@
         },
         "MetalDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -518,7 +546,7 @@
         },
         "WoodDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -536,7 +564,7 @@
         },
         "GrassDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -554,7 +582,7 @@
         },
         "MudDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -572,7 +600,7 @@
         },
         "SnowDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -590,7 +618,7 @@
         },
         "IceDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -611,7 +639,7 @@
       },
       "DecalSpawnDelayTime": 0.1,
       "RootComponent": {
-        "ObjectName": "PointLightComponent Default__ProjPanzerFaust_Explosion_C:ExplosionLight",
+        "ObjectName": "PointLightComponent'Default__ProjPanzerFaust_Explosion_C:ExplosionLight'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.28"
       }
     }
@@ -620,6 +648,7 @@
     "Type": "PointLightComponent",
     "Name": "ExplosionLight",
     "Outer": "Default__ProjPanzerFaust_Explosion_C",
+    "Class": "UScriptClass'PointLightComponent'",
     "Properties": {
       "AttenuationRadius": 1024.0,
       "Intensity": 3.1415927
@@ -628,19 +657,21 @@
   {
     "Type": "SceneComponent",
     "Name": "SceneComponent_0",
-    "Outer": "ProjPanzerFaust_Explosion_C"
+    "Outer": "ProjPanzerFaust_Explosion_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_1__EFD9F313",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjPanzerFaust_Explosion_C:SceneComponent_0",
+        "ObjectName": "SceneComponent'ProjPanzerFaust_Explosion_C:SceneComponent_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.29"
       },
       "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
@@ -651,9 +682,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_1__EFD9F313",
     "Outer": "ProjPanzerFaust_Explosion_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjPanzerFaust_Explosion_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_0",
+        "ObjectName": "SCS_Node'ProjPanzerFaust_Explosion_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Explosion.30"
       }
     }

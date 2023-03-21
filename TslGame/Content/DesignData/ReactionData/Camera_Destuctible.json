@@ -1,0 +1,24 @@
+[
+  {
+    "Type": "TslReactionData",
+    "Name": "Camera_Destuctible",
+    "Class": "UScriptClass'TslReactionData'",
+    "Properties": {
+      "DestroyDelay": 5.0,
+      "ObjectType": "EReactionObjectType::Camera",
+      "VehicleReactionData": {
+        "ReactionType": "EReactionType::Reaction_Physics",
+        "ReactionForceFactor": 1.5
+      },
+      "RadialDamageReactionData": {
+        "ReactionType": "EReactionType::Reaction_Physics",
+        "ReactionForceFactor": 25000.0,
+        "ReactionMinDamage": 80.0
+      },
+      "PointDamageReactionData": {
+        "ReactionType": "EReactionType::Reaction_Destructible",
+        "ReactionForceFactor": 1000.0
+      }
+    }
+  }
+]

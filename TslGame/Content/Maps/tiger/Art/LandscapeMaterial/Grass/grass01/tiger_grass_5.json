@@ -1,0 +1,436 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "tiger_grass_5",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 74.99259,
+                "Y": -2.132393,
+                "Z": 17.132402
+              },
+              {
+                "X": 74.99259,
+                "Y": 13.382393,
+                "Z": 17.132402
+              },
+              {
+                "X": 74.99259,
+                "Y": 13.3824005,
+                "Z": 10.117595
+              },
+              {
+                "X": 74.99259,
+                "Y": -2.132393,
+                "Z": 10.117595
+              },
+              {
+                "X": -74.99264,
+                "Y": -64.88235,
+                "Z": 18.867641
+              },
+              {
+                "X": -74.99264,
+                "Y": 29.882347,
+                "Z": 18.867634
+              },
+              {
+                "X": -74.99264,
+                "Y": 29.88235,
+                "Z": 19.507357
+              },
+              {
+                "X": -74.99264,
+                "Y": -64.88234,
+                "Z": 19.507355
+              },
+              {
+                "X": 0.049934387,
+                "Y": -77.07506,
+                "Z": 4.825069
+              },
+              {
+                "X": -60.950058,
+                "Y": -77.07506,
+                "Z": 4.825061
+              },
+              {
+                "X": -62.799923,
+                "Y": -77.07506,
+                "Z": 6.674926
+              },
+              {
+                "X": -62.799927,
+                "Y": -77.07506,
+                "Z": 26.174946
+              },
+              {
+                "X": 0.049934387,
+                "Y": -77.07506,
+                "Z": 26.17495
+              },
+              {
+                "X": -58.797184,
+                "Y": 46.077797,
+                "Z": 35.702816
+              },
+              {
+                "X": -58.319153,
+                "Y": 46.55584,
+                "Z": 35.702816
+              },
+              {
+                "X": 41.767223,
+                "Y": 46.60776,
+                "Z": 35.702816
+              },
+              {
+                "X": 56.422165,
+                "Y": 31.952816,
+                "Z": 35.702816
+              },
+              {
+                "X": 56.42217,
+                "Y": -20.702824,
+                "Z": 35.702816
+              },
+              {
+                "X": 9.577805,
+                "Y": -67.54719,
+                "Z": 35.702816
+              },
+              {
+                "X": -58.797173,
+                "Y": -67.54718,
+                "Z": 35.702816
+              },
+              {
+                "X": -51.850365,
+                "Y": 53.024628,
+                "Z": -4.274632
+              },
+              {
+                "X": -51.85036,
+                "Y": -67.97537,
+                "Z": -4.274632
+              },
+              {
+                "X": 9.149635,
+                "Y": -67.97536,
+                "Z": -4.274632
+              },
+              {
+                "X": 60.600357,
+                "Y": -16.524628,
+                "Z": -4.274632
+              },
+              {
+                "X": 60.600357,
+                "Y": 27.77462,
+                "Z": -4.274632
+              },
+              {
+                "X": 20.649605,
+                "Y": 67.72538,
+                "Z": -4.274632
+              },
+              {
+                "X": -37.14961,
+                "Y": 67.72537,
+                "Z": -4.274632
+              },
+              {
+                "X": -27.749992,
+                "Y": 77.12499,
+                "Z": 5.1249948
+              },
+              {
+                "X": 11.249985,
+                "Y": 77.125,
+                "Z": 5.124995
+              },
+              {
+                "X": -65.562485,
+                "Y": -74.31249,
+                "Z": 28.937504
+              },
+              {
+                "X": 41.861202,
+                "Y": 46.5138,
+                "Z": 35.73619
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -74.99264,
+                "Y": -77.07506,
+                "Z": -4.274632
+              },
+              "Max": {
+                "X": 74.99259,
+                "Y": 77.125,
+                "Z": 35.73619
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "B251C86B4A2E088ECFCAEB8017789256",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 7230,
+        "SizeOnDisk": 7230,
+        "OffsetInFile": "0xD5FC"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "tiger_grass_5",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "MI_Dogwood_Bark",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 65.729546,
+            "LocalUVDensities": 178.51637,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 2.1678052
+          }
+        },
+        {
+          "MaterialSlotName": "MI_Dogwood_leaves",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 83.44777,
+            "LocalUVDensities": 181.04684,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 45.932693
+          }
+        }
+      ],
+      "LightmapUVDensity": 180.97198,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": -1.5258789E-05,
+          "Y": 7.6293945E-06,
+          "Z": 15.714093
+        },
+        "BoxExtent": {
+          "X": 74.892624,
+          "Y": 76.97507,
+          "Z": 19.888725
+        },
+        "SphereRadius": 99.16099
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'tiger_grass_5:BodySetup_1'",
+      "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/grass01/tiger_grass_5.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "5B1460E7-4D639E62-9E2586BD-501DD970",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 17,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 44,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            },
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 51,
+              "NumTriangles": 116,
+              "MinVertexIndex": 45,
+              "MaxVertexIndex": 392,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 393
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 8,
+            "NumVertices": 393,
+            "Strides": 40,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 0,
+              "NumTriangles": 66,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 197,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 110.2447,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 198
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 8,
+            "NumVertices": 198,
+            "Strides": 40,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 1,
+              "FirstIndex": 0,
+              "NumTriangles": 33,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 98,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 134.18045,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 99
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 8,
+            "NumVertices": 99,
+            "Strides": 40,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": -1.5258789E-05,
+          "Y": 7.6293945E-06,
+          "Z": 15.714093
+        },
+        "BoxExtent": {
+          "X": 74.892624,
+          "Y": 76.97507,
+          "Z": 19.888725
+        },
+        "SphereRadius": 99.16099
+      },
+      "bLODsShareStaticLighting": false,
+      "ScreenSize": [
+        1.0,
+        0.3,
+        0.11,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

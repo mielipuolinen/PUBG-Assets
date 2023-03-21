@@ -1,0 +1,108 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "PT_Invincibility_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'PT_Invincibility_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/PT_Invincibility.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslServerParticle'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "PT_Invincibility_C'Default__PT_Invincibility_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/PT_Invincibility.1"
+    }
+  },
+  {
+    "Type": "PT_Invincibility_C",
+    "Name": "Default__PT_Invincibility_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Buff/PT_Invincibility.PT_Invincibility_C'",
+    "Properties": {
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Default__PT_Invincibility_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/PT_Invincibility.3"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Default__PT_Invincibility_C:AkSound'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/PT_Invincibility.2"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Default__PT_Invincibility_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/PT_Invincibility.3"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Default__PT_Invincibility_C",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Default__PT_Invincibility_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/PT_Invincibility.3"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "Default__PT_Invincibility_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_Actor_groundSpawn'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Character/P_Actor_groundSpawn.135"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "PT_Invincibility_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'PT_Invincibility_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/PT_Invincibility.4"
+      },
+      "VariableGuid": "4B213934-435FC86F-CD5242A2-86967E72",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "PT_Invincibility_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'PT_Invincibility_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/PT_Invincibility.5"
+      }
+    }
+  }
+]

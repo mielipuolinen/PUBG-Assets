@@ -1,0 +1,145 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BP_MolotovFireDebuffFBR_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "BP_MolotovFireDebuffFBR_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'BP_MolotovFireDebuffFBR_C:DefaultSceneRoot'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/BP_MolotovFireDebuffFBR.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_MolotovFireDebuffFBR_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_MolotovFireDebuffFBR_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/BP_MolotovFireDebuffFBR.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslMolotovFireDebuff'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_MolotovFireDebuffFBR_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/BP_MolotovFireDebuffFBR.1"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function'BP_MolotovFireDebuffFBR_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/BP_MolotovFireDebuffFBR.1"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_MolotovFireDebuffFBR_C'Default__BP_MolotovFireDebuffFBR_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/BP_MolotovFireDebuffFBR.3"
+    }
+  },
+  {
+    "Type": "BP_MolotovFireDebuffFBR_C",
+    "Name": "Default__BP_MolotovFireDebuffFBR_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Buff/BP_MolotovFireDebuffFBR.BP_MolotovFireDebuffFBR_C'",
+    "Properties": {
+      "PerTickDamage": 10.0,
+      "DamageTypeClass": {
+        "ObjectName": "BlueprintGeneratedClass'DmgType_MolotovFBR_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_MolotovFBR.0"
+      },
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystem'P_MolotovFlames_Character'",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_MolotovFlames_Character.84"
+      },
+      "ParticleSystemConsole": {
+        "ObjectName": "ParticleSystem'P_MolotovFlames_Character'",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_MolotovFlames_Character.84"
+      },
+      "ParticleSystemKoreanRating": {
+        "ObjectName": "ParticleSystem'P_Molotov_FireDot'",
+        "ObjectPath": "TslGame/Content/Effects/Clets_Teen/Particles/Weapons/Grenade/P_Molotov_FireDot.70"
+      },
+      "OverlapId": "Buff_FireDOT",
+      "OverlapSolveMethod": "EBuffOverlapSolveMethod::RestartTimer",
+      "BuffDuration": 4.0,
+      "AttachSocket": "coat_b_01",
+      "NetCullDistanceSquared": 2.5E+09
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_MolotovFireDebuffFBR_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_MolotovFireDebuffFBR_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/BP_MolotovFireDebuffFBR.4"
+      },
+      "VariableGuid": "2C0392A5-4DE501C9-CA2CDFB2-4B5C675C",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_MolotovFireDebuffFBR_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MolotovFireDebuffFBR_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/BP_MolotovFireDebuffFBR.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'BP_MolotovFireDebuffFBR_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/BP_MolotovFireDebuffFBR.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_MolotovFireDebuffFBR_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/BP_MolotovFireDebuffFBR.5"
+      }
+    }
+  }
+]

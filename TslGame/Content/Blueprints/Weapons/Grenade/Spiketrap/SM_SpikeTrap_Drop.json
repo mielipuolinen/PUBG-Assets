@@ -3,6 +3,7 @@
     "Type": "BodySetup",
     "Name": "BodySetup_0",
     "Outer": "SM_SpikeTrap_Drop",
+    "Class": "UScriptClass'BodySetup'",
     "Properties": {
       "AggGeom": {
         "BoxElems": [
@@ -63,7 +64,7 @@
     "BodySetupGuid": "3440E82B4FF52623500CF38B2A2AABDF",
     "CookedFormatData": {
       "PhysXPC": {
-        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
         "ElementCount": 144239,
         "SizeOnDisk": 144239,
         "OffsetInFile": "0x66B42"
@@ -73,6 +74,7 @@
   {
     "Type": "StaticMesh",
     "Name": "SM_SpikeTrap_Drop",
+    "Class": "UScriptClass'StaticMesh'",
     "Properties": {
       "StaticMaterials": [
         {
@@ -92,11 +94,11 @@
       "LightMapCoordinateIndex": 1,
       "Sockets": [
         {
-          "ObjectName": "StaticMeshSocket SM_SpikeTrap_Drop:StaticMeshSocket_0",
+          "ObjectName": "StaticMeshSocket'SM_SpikeTrap_Drop:StaticMeshSocket_0'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/SM_SpikeTrap_Drop.2"
         },
         {
-          "ObjectName": "StaticMeshSocket SM_SpikeTrap_Drop:StaticMeshSocket_1",
+          "ObjectName": "StaticMeshSocket'SM_SpikeTrap_Drop:StaticMeshSocket_1'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/SM_SpikeTrap_Drop.3"
         }
       ],
@@ -115,7 +117,7 @@
       }
     },
     "BodySetup": {
-      "ObjectName": "BodySetup SM_SpikeTrap_Drop:BodySetup_0",
+      "ObjectName": "BodySetup'SM_SpikeTrap_Drop:BodySetup_0'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/SM_SpikeTrap_Drop.0"
     },
     "NavCollision": null,
@@ -246,6 +248,7 @@
     "Type": "StaticMeshSocket",
     "Name": "StaticMeshSocket_0",
     "Outer": "SM_SpikeTrap_Drop",
+    "Class": "UScriptClass'StaticMeshSocket'",
     "Properties": {
       "SocketName": "UIcamera",
       "RelativeLocation": {
@@ -264,6 +267,7 @@
     "Type": "StaticMeshSocket",
     "Name": "StaticMeshSocket_1",
     "Outer": "SM_SpikeTrap_Drop",
+    "Class": "UScriptClass'StaticMeshSocket'",
     "Properties": {
       "SocketName": "UIcamera_XBOX",
       "RelativeLocation": {

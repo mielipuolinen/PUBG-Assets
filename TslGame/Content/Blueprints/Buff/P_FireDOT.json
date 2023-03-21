@@ -1,0 +1,159 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsForKoreanRating_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsForChineseLicensing_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'P_FireDOT_C:UserConstructionScript.CallFunc_IsForKoreanRating_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/P_FireDOT.0"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "P_FireDOT_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty'P_FireDOT_C:UserConstructionScript.CallFunc_IsForChineseLicensing_ReturnValue'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_FireDOT.1"
+      }
+    ],
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "P_FireDOT_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'P_FireDOT_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_FireDOT.9"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslServerParticle'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'P_FireDOT_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_FireDOT.2"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function'P_FireDOT_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_FireDOT.2"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "P_FireDOT_C'Default__P_FireDOT_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/P_FireDOT.4"
+    }
+  },
+  {
+    "Type": "P_FireDOT_C",
+    "Name": "Default__P_FireDOT_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Buff/P_FireDOT.P_FireDOT_C'",
+    "Properties": {
+      "ParticleSystem": {
+        "ObjectName": "ParticleSystemComponent'Default__P_FireDOT_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_FireDOT.6"
+      },
+      "AkSound": {
+        "ObjectName": "AkComponent'Default__P_FireDOT_C:AkSound'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_FireDOT.5"
+      },
+      "RootComponent": {
+        "ObjectName": "ParticleSystemComponent'Default__P_FireDOT_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_FireDOT.6"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "AkSound",
+    "Outer": "Default__P_FireDOT_C",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "ParticleSystemComponent'Default__P_FireDOT_C:ParticleSystem'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_FireDOT.6"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "ParticleSystem",
+    "Outer": "Default__P_FireDOT_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_Molotov_FireDot'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Molotov_FireDot.156"
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "P_FireDOT_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'P_FireDOT_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_FireDOT.7"
+      },
+      "VariableGuid": "4B213934-435FC86F-CD5242A2-86967E72",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "P_FireDOT_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'P_FireDOT_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_FireDOT.8"
+      }
+    }
+  }
+]

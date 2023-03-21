@@ -1,0 +1,227 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "NewVar_0",
+    "Outer": "Task_CheckFinish_C",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "PropertyFlags": 65541,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_CheckFinish_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_CheckFinish",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetGameMode_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_CheckFinish",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CheckFinish_C:ExecuteUbergraph_Task_CheckFinish.CallFunc_CheckFinish_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.1"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslGameMode'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_Task_CheckFinish",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_CheckFinish_C:ExecuteUbergraph_Task_CheckFinish.CallFunc_GetGameMode_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.2"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsBattle_Royale_Mode_Controller",
+    "Outer": "ExecuteUbergraph_Task_CheckFinish",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CheckFinish_C:ExecuteUbergraph_Task_CheckFinish.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.3"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'BattleRoyaleModeController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_Event_DeltaSeconds",
+    "Outer": "ExecuteUbergraph_Task_CheckFinish",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_CheckFinish_C:ExecuteUbergraph_Task_CheckFinish.K2Node_DynamicCast_AsBattle_Royale_Mode_Controller'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.4"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OwnerActor",
+    "Outer": "ExecuteUbergraph_Task_CheckFinish",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_CheckFinish_C:ExecuteUbergraph_Task_CheckFinish.K2Node_Event_DeltaSeconds'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.5"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Task_CheckFinish",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_CheckFinish_C:ExecuteUbergraph_Task_CheckFinish.K2Node_Event_OwnerActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.6"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Task_CheckFinish",
+    "Outer": "Task_CheckFinish_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_CheckFinish_C:NewVar_0'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.0"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Task_CheckFinish_C:ExecuteUbergraph_Task_CheckFinish.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.7"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "DeltaSeconds",
+    "Outer": "ReceiveTick",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OwnerActor",
+    "Outer": "ReceiveTick",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_CheckFinish_C:ReceiveTick.DeltaSeconds'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.9"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "Task_CheckFinish_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Task_CheckFinish_C:ExecuteUbergraph_Task_CheckFinish'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.8"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BTTask_BlueprintBase:ReceiveTick'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Task_CheckFinish_C:ReceiveTick.OwnerActor'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.10"
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Task_CheckFinish_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Task_CheckFinish_C:ReceiveTick'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.11"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Task_CheckFinish_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Task_CheckFinish_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.12"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Task_CheckFinish_C:ExecuteUbergraph_Task_CheckFinish'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.8"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_BlueprintBase'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Task_CheckFinish_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.12"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Task_CheckFinish": {
+        "ObjectName": "Function'Task_CheckFinish_C:ExecuteUbergraph_Task_CheckFinish'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.8"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'Task_CheckFinish_C:ReceiveTick'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.11"
+      }
+    },
+    "ClassFlags": 262160,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Task_CheckFinish_C'Default__Task_CheckFinish_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_CheckFinish.14"
+    }
+  },
+  {
+    "Type": "Task_CheckFinish_C",
+    "Name": "Default__Task_CheckFinish_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Task_CheckFinish.Task_CheckFinish_C'",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]

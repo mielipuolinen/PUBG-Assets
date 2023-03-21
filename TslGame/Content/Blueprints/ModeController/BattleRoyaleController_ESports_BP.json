@@ -1,0 +1,415 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_RunBehaviorTree_ReturnValue",
+    "Outer": "ExecuteUbergraph_BattleRoyaleController_ESports_BP",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_BattleRoyaleController_ESports_BP",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'BattleRoyaleController_ESports_BP_C:ExecuteUbergraph_BattleRoyaleController_ESports_BP.CallFunc_RunBehaviorTree_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.0"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_BattleRoyaleController_ESports_BP",
+    "Outer": "BattleRoyaleController_ESports_BP_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'BattleRoyaleController_ESports_BP_C:ExecuteUbergraph_BattleRoyaleController_ESports_BP.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.1"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "BattleRoyaleController_ESports_BP_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'BattleRoyaleController_ESports_BP_C:ExecuteUbergraph_BattleRoyaleController_ESports_BP'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "BattleRoyaleController_ESports_BP_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'BattleRoyaleController_ESports_BP_C:ReceiveBeginPlay'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.3"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "BattleRoyaleController_ESports_BP_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'BattleRoyaleController_ESports_BP_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.4"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BattleRoyaleController_ESports_BP_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BattleRoyaleController_ESports_BP_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.13"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'BattleRoyaleController_ESports_BP_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.5"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'BattleRoyaleController_ESports_BP_C:ExecuteUbergraph_BattleRoyaleController_ESports_BP'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.2"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'BattleRoyaleController_ESports'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'BattleRoyaleController_ESports_BP_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.5"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_BattleRoyaleController_ESports_BP": {
+        "ObjectName": "Function'BattleRoyaleController_ESports_BP_C:ExecuteUbergraph_BattleRoyaleController_ESports_BP'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'BattleRoyaleController_ESports_BP_C:ReceiveBeginPlay'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.3"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'BattleRoyaleController_ESports_BP_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.4"
+      }
+    },
+    "ClassFlags": 8651284,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BattleRoyaleController_ESports_BP_C'Default__BattleRoyaleController_ESports_BP_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.7"
+    }
+  },
+  {
+    "Type": "BattleRoyaleController_ESports_BP_C",
+    "Name": "Default__BattleRoyaleController_ESports_BP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.BattleRoyaleController_ESports_BP_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BattleRoyalePoisonGasDataArray": [
+        {
+          "StartDelay": 90.0,
+          "WarningDuration": 300.0,
+          "ReleaseDuration": 300.0,
+          "RadiusRate": 0.4,
+          "RandomRadiusRate": 0.2,
+          "PoisonGasDamagePerSecond": 0.4,
+          "SpreadRatio": 0.5,
+          "DamageMagnifierForDistance": 2.0,
+          "DamageMagnifier": 1.0,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 120.0,
+          "ReleaseDuration": 120.0,
+          "RadiusRate": 0.55,
+          "RandomRadiusRate": 0.0,
+          "PoisonGasDamagePerSecond": 0.8,
+          "SpreadRatio": 0.56,
+          "DamageMagnifierForDistance": 4.0,
+          "DamageMagnifier": 1.666667,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 90.0,
+          "ReleaseDuration": 120.0,
+          "RadiusRate": 0.6,
+          "RandomRadiusRate": 0.0,
+          "PoisonGasDamagePerSecond": 1.0,
+          "SpreadRatio": 0.56,
+          "DamageMagnifierForDistance": 5.0,
+          "DamageMagnifier": 1.5625,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 60.0,
+          "ReleaseDuration": 180.0,
+          "RadiusRate": 0.55,
+          "RandomRadiusRate": 0.0,
+          "PoisonGasDamagePerSecond": 3.0,
+          "SpreadRatio": 0.56,
+          "DamageMagnifierForDistance": 2.15,
+          "DamageMagnifier": 1.5,
+          "LandRatio": 1.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 60.0,
+          "ReleaseDuration": 120.0,
+          "RadiusRate": 0.7,
+          "RandomRadiusRate": 0.0,
+          "PoisonGasDamagePerSecond": 5.0,
+          "SpreadRatio": 0.56,
+          "DamageMagnifierForDistance": 3.6,
+          "DamageMagnifier": 4.666667,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 60.0,
+          "ReleaseDuration": 120.0,
+          "RadiusRate": 0.6,
+          "RandomRadiusRate": 0.0,
+          "PoisonGasDamagePerSecond": 8.0,
+          "SpreadRatio": 0.56,
+          "DamageMagnifierForDistance": 2.65,
+          "DamageMagnifier": 2.8,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 60.0,
+          "ReleaseDuration": 90.0,
+          "RadiusRate": 0.5,
+          "RandomRadiusRate": 0.0,
+          "PoisonGasDamagePerSecond": 10.0,
+          "SpreadRatio": 0.56,
+          "DamageMagnifierForDistance": 2.0,
+          "DamageMagnifier": 2.0,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 60.0,
+          "ReleaseDuration": 60.0,
+          "RadiusRate": 0.5,
+          "RandomRadiusRate": 0.0,
+          "PoisonGasDamagePerSecond": 14.0,
+          "SpreadRatio": 0.56,
+          "DamageMagnifierForDistance": 2.0,
+          "DamageMagnifier": 2.0,
+          "LandRatio": 1.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        },
+        {
+          "StartDelay": 0.0,
+          "WarningDuration": 60.0,
+          "ReleaseDuration": 80.0,
+          "RadiusRate": 0.001,
+          "RandomRadiusRate": 0.0,
+          "PoisonGasDamagePerSecond": 18.0,
+          "SpreadRatio": 10.0,
+          "DamageMagnifierForDistance": 1000.0,
+          "DamageMagnifier": 1.57,
+          "LandRatio": 0.0,
+          "CircleAlgorithm": 0,
+          "bIsFastBluezone": false,
+          "FastPlayerCount": 0,
+          "FastWarningDuration": 10.0,
+          "FastReleaseDuration": 0.0,
+          "DamageMagnifierCurve": {
+            "ObjectName": "CurveFloat'BlueZone_Damage_Magnifier_Curve_Default'",
+            "ObjectPath": "TslGame/Content/Blueprints/EtcData/BlueZone_Damage_Magnifier_Curve_Default.0"
+          },
+          "bIgnoreSafetyZone": false
+        }
+      ],
+      "BattleRoyaleZoneTypeCheckTime": 540.0,
+      "PathFollowingComponent": {
+        "ObjectName": "PathFollowingComponent'Default__BattleRoyaleController_ESports_BP_C:PathFollowingComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.8"
+      },
+      "ActionsComp": {
+        "ObjectName": "PawnActionsComponent'Default__BattleRoyaleController_ESports_BP_C:ActionsComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.9"
+      },
+      "TransformComponent": {
+        "ObjectName": "SceneComponent'Default__BattleRoyaleController_ESports_BP_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.11"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BattleRoyaleController_ESports_BP_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.11"
+      }
+    }
+  },
+  {
+    "Type": "PathFollowingComponent",
+    "Name": "PathFollowingComponent",
+    "Outer": "Default__BattleRoyaleController_ESports_BP_C",
+    "Class": "UScriptClass'PathFollowingComponent'"
+  },
+  {
+    "Type": "PawnActionsComponent",
+    "Name": "ActionsComp",
+    "Outer": "Default__BattleRoyaleController_ESports_BP_C",
+    "Class": "UScriptClass'PawnActionsComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BattleRoyaleController_ESports_BP_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "TransformComponent0",
+    "Outer": "Default__BattleRoyaleController_ESports_BP_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BattleRoyaleController_ESports_BP_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.10"
+      },
+      "VariableGuid": "D429AB1F-4B0F8FC2-56E5ECAC-23B6D737",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BattleRoyaleController_ESports_BP_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BattleRoyaleController_ESports_BP_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleController_ESports_BP.12"
+      }
+    }
+  }
+]

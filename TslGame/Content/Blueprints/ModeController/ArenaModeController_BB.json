@@ -1,0 +1,45 @@
+[
+  {
+    "Type": "BlackboardData",
+    "Name": "ArenaModeController_BB",
+    "Class": "UScriptClass'BlackboardData'",
+    "Properties": {
+      "Keys": [
+        {
+          "EntryName": "StartDelay",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Float'ArenaModeController_BB:BlackboardKeyType_Float_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BB.1"
+          },
+          "bInstanceSynced": false
+        },
+        {
+          "EntryName": "SelfActor",
+          "KeyType": {
+            "ObjectName": "BlackboardKeyType_Object'ArenaModeController_BB:BlackboardKeyType_Object_0'",
+            "ObjectPath": "TslGame/Content/Blueprints/ModeController/ArenaModeController_BB.2"
+          },
+          "bInstanceSynced": false
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BlackboardKeyType_Float",
+    "Name": "BlackboardKeyType_Float_0",
+    "Outer": "ArenaModeController_BB",
+    "Class": "UScriptClass'BlackboardKeyType_Float'"
+  },
+  {
+    "Type": "BlackboardKeyType_Object",
+    "Name": "BlackboardKeyType_Object_0",
+    "Outer": "ArenaModeController_BB",
+    "Class": "UScriptClass'BlackboardKeyType_Object'",
+    "Properties": {
+      "BaseClass": {
+        "ObjectName": "Class'Actor'",
+        "ObjectPath": "/Script/Engine"
+      }
+    }
+  }
+]

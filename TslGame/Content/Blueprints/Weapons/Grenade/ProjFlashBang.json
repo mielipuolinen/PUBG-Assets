@@ -3,9 +3,10 @@
     "Type": "ObjectProperty",
     "Name": "TinnitusSoundAks",
     "Outer": "TinnitusSoundAks",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyClass": {
-      "ObjectName": "Class AkAudioEvent",
+      "ObjectName": "Class'AkAudioEvent'",
       "ObjectPath": "/Script/AkAudio"
     }
   },
@@ -13,10 +14,11 @@
     "Type": "ObjectProperty",
     "Name": "DistancePower",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyFlags": 65541,
     "PropertyClass": {
-      "ObjectName": "Class CurveFloat",
+      "ObjectName": "Class'CurveFloat'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -24,13 +26,14 @@
     "Type": "ObjectProperty",
     "Name": "AnglePower",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjFlashBang_C:DistancePower",
+      "ObjectName": "ObjectProperty'ProjFlashBang_C:DistancePower'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.1"
     },
     "PropertyFlags": 65541,
     "PropertyClass": {
-      "ObjectName": "Class CurveFloat",
+      "ObjectName": "Class'CurveFloat'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -38,8 +41,9 @@
     "Type": "FloatProperty",
     "Name": "MinPower",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjFlashBang_C:AnglePower",
+      "ObjectName": "ObjectProperty'ProjFlashBang_C:AnglePower'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.2"
     },
     "PropertyFlags": 65541
@@ -48,13 +52,14 @@
     "Type": "ArrayProperty",
     "Name": "TinnitusSoundAks",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'ArrayProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:MinPower",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:MinPower'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.3"
     },
     "PropertyFlags": 5,
     "Inner": {
-      "ObjectName": "ObjectProperty ProjFlashBang_C:TinnitusSoundAks.TinnitusSoundAks",
+      "ObjectName": "ObjectProperty'ProjFlashBang_C:TinnitusSoundAks.TinnitusSoundAks'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.0"
     }
   },
@@ -62,17 +67,18 @@
     "Type": "ClassProperty",
     "Name": "FlashbangEffectClass",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'ClassProperty'",
     "Next": {
-      "ObjectName": "ArrayProperty ProjFlashBang_C:TinnitusSoundAks",
+      "ObjectName": "ArrayProperty'ProjFlashBang_C:TinnitusSoundAks'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.4"
     },
     "PropertyFlags": 65541,
     "PropertyClass": {
-      "ObjectName": "Class Class",
+      "ObjectName": "Class'Class'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "MetaClass": {
-      "ObjectName": "Class TslPostProcessEffect",
+      "ObjectName": "Class'TslPostProcessEffect'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -80,13 +86,14 @@
     "Type": "StructProperty",
     "Name": "ExplodeLocation",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ClassProperty ProjFlashBang_C:FlashbangEffectClass",
+      "ObjectName": "ClassProperty'ProjFlashBang_C:FlashbangEffectClass'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.5"
     },
     "PropertyFlags": 65541,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -94,13 +101,14 @@
     "Type": "ObjectProperty",
     "Name": "LocalShooterCharacter",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:ExplodeLocation",
+      "ObjectName": "StructProperty'ProjFlashBang_C:ExplodeLocation'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.6"
     },
     "PropertyFlags": 67589,
     "PropertyClass": {
-      "ObjectName": "Class TslCharacter",
+      "ObjectName": "Class'TslCharacter'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -108,13 +116,14 @@
     "Type": "ObjectProperty",
     "Name": "Flashbang",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjFlashBang_C:LocalShooterCharacter",
+      "ObjectName": "ObjectProperty'ProjFlashBang_C:LocalShooterCharacter'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.7"
     },
     "PropertyFlags": 17179869188,
     "PropertyClass": {
-      "ObjectName": "Class FlashbangComponent",
+      "ObjectName": "Class'FlashbangComponent'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -122,19 +131,21 @@
     "Type": "FloatProperty",
     "Name": "K2Node_Event_Radius",
     "Outer": "ExecuteUbergraph_ProjFlashBang",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": null
   },
   {
     "Type": "StructProperty",
     "Name": "K2Node_Event_Impact",
     "Outer": "ExecuteUbergraph_ProjFlashBang",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang.K2Node_Event_Radius",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang.K2Node_Event_Radius'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.9"
     },
     "PropertyFlags": 549755813890,
     "Struct": {
-      "ObjectName": "ScriptStruct HitResult",
+      "ObjectName": "ScriptStruct'HitResult'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -142,13 +153,14 @@
     "Type": "StructProperty",
     "Name": "K2Node_Event_Rotation",
     "Outer": "ExecuteUbergraph_ProjFlashBang",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang.K2Node_Event_Impact",
+      "ObjectName": "StructProperty'ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang.K2Node_Event_Impact'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.10"
     },
     "PropertyFlags": 2,
     "Struct": {
-      "ObjectName": "ScriptStruct Rotator",
+      "ObjectName": "ScriptStruct'Rotator'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -156,13 +168,14 @@
     "Type": "StructProperty",
     "Name": "K2Node_Event_Location",
     "Outer": "ExecuteUbergraph_ProjFlashBang",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang.K2Node_Event_Rotation",
+      "ObjectName": "StructProperty'ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang.K2Node_Event_Rotation'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.11"
     },
     "PropertyFlags": 2,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -170,8 +183,9 @@
     "Type": "IntProperty",
     "Name": "EntryPoint",
     "Outer": "ExecuteUbergraph_ProjFlashBang",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang.K2Node_Event_Location",
+      "ObjectName": "StructProperty'ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang.K2Node_Event_Location'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.12"
     },
     "PropertyFlags": 128
@@ -180,13 +194,14 @@
     "Type": "Function",
     "Name": "ExecuteUbergraph_ProjFlashBang",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjFlashBang_C:Flashbang",
+      "ObjectName": "ObjectProperty'ProjFlashBang_C:Flashbang'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.8"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang.EntryPoint",
+        "ObjectName": "IntProperty'ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang.EntryPoint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.13"
       }
     ],
@@ -196,6 +211,7 @@
     "Type": "FloatProperty",
     "Name": "Radius",
     "Outer": "ExplodeBP",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": null,
     "PropertyFlags": 128
   },
@@ -203,13 +219,14 @@
     "Type": "StructProperty",
     "Name": "Impact",
     "Outer": "ExplodeBP",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:ExplodeBP.Radius",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:ExplodeBP.Radius'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.15"
     },
     "PropertyFlags": 549890032002,
     "Struct": {
-      "ObjectName": "ScriptStruct HitResult",
+      "ObjectName": "ScriptStruct'HitResult'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -217,13 +234,14 @@
     "Type": "StructProperty",
     "Name": "Rotation",
     "Outer": "ExplodeBP",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:ExplodeBP.Impact",
+      "ObjectName": "StructProperty'ProjFlashBang_C:ExplodeBP.Impact'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.16"
     },
     "PropertyFlags": 134218114,
     "Struct": {
-      "ObjectName": "ScriptStruct Rotator",
+      "ObjectName": "ScriptStruct'Rotator'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -231,13 +249,14 @@
     "Type": "StructProperty",
     "Name": "Location",
     "Outer": "ExplodeBP",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:ExplodeBP.Rotation",
+      "ObjectName": "StructProperty'ProjFlashBang_C:ExplodeBP.Rotation'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.17"
     },
     "PropertyFlags": 134218114,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -245,17 +264,18 @@
     "Type": "Function",
     "Name": "ExplodeBP",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang",
+      "ObjectName": "Function'ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.14"
     },
     "SuperStruct": {
-      "ObjectName": "Function TslProjectile:ExplodeBP",
+      "ObjectName": "Function'TslProjectile:ExplodeBP'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjFlashBang_C:ExplodeBP.Location",
+        "ObjectName": "StructProperty'ProjFlashBang_C:ExplodeBP.Location'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.18"
       }
     ],
@@ -265,12 +285,13 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjFlashBang_C:ExplodeBP",
+      "ObjectName": "Function'ProjFlashBang_C:ExplodeBP'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.19"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 201459712
@@ -279,18 +300,20 @@
     "Type": "IntProperty",
     "Name": "CallFunc_PostEventAtLocation_ReturnValue",
     "Outer": "PlayTinnitusSound",
+    "Class": "UScriptClass'IntProperty'",
     "Next": null
   },
   {
     "Type": "ObjectProperty",
     "Name": "CallFunc_Array_Get_Item",
     "Outer": "PlayTinnitusSound",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjFlashBang_C:PlayTinnitusSound.CallFunc_PostEventAtLocation_ReturnValue",
+      "ObjectName": "IntProperty'ProjFlashBang_C:PlayTinnitusSound.CallFunc_PostEventAtLocation_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.21"
     },
     "PropertyClass": {
-      "ObjectName": "Class AkAudioEvent",
+      "ObjectName": "Class'AkAudioEvent'",
       "ObjectPath": "/Script/AkAudio"
     }
   },
@@ -298,8 +321,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Array_IsValidIndex_ReturnValue",
     "Outer": "PlayTinnitusSound",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjFlashBang_C:PlayTinnitusSound.CallFunc_Array_Get_Item",
+      "ObjectName": "ObjectProperty'ProjFlashBang_C:PlayTinnitusSound.CallFunc_Array_Get_Item'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.22"
     },
     "BoolSize": 1,
@@ -309,8 +333,9 @@
     "Type": "IntProperty",
     "Name": "Index",
     "Outer": "PlayTinnitusSound",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjFlashBang_C:PlayTinnitusSound.CallFunc_Array_IsValidIndex_ReturnValue",
+      "ObjectName": "BoolProperty'ProjFlashBang_C:PlayTinnitusSound.CallFunc_Array_IsValidIndex_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.23"
     },
     "PropertyFlags": 128
@@ -319,13 +344,14 @@
     "Type": "Function",
     "Name": "PlayTinnitusSound",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjFlashBang_C:UserConstructionScript",
+      "ObjectName": "Function'ProjFlashBang_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.20"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty ProjFlashBang_C:PlayTinnitusSound.Index",
+        "ObjectName": "IntProperty'ProjFlashBang_C:PlayTinnitusSound.Index'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.24"
       }
     ],
@@ -335,9 +361,10 @@
     "Type": "StructProperty",
     "Name": "K2Node_MakeArray_Array",
     "Outer": "K2Node_MakeArray_Array",
+    "Class": "UScriptClass'StructProperty'",
     "Next": null,
     "Struct": {
-      "ObjectName": "ScriptStruct PostProcessEffectParameter",
+      "ObjectName": "ScriptStruct'PostProcessEffectParameter'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -345,9 +372,10 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_FinishSpawningActor_ReturnValue",
     "Outer": "SpawnFlashBangEffect",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyClass": {
-      "ObjectName": "Class TslPostProcessEffect",
+      "ObjectName": "Class'TslPostProcessEffect'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -355,8 +383,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsValidClass_ReturnValue",
     "Outer": "SpawnFlashBangEffect",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjFlashBang_C:SpawnFlashBangEffect.CallFunc_FinishSpawningActor_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjFlashBang_C:SpawnFlashBangEffect.CallFunc_FinishSpawningActor_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.27"
     },
     "BoolSize": 1,
@@ -366,12 +395,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
     "Outer": "SpawnFlashBangEffect",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjFlashBang_C:SpawnFlashBangEffect.CallFunc_IsValidClass_ReturnValue",
+      "ObjectName": "BoolProperty'ProjFlashBang_C:SpawnFlashBangEffect.CallFunc_IsValidClass_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.28"
     },
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -379,13 +409,14 @@
     "Type": "ArrayProperty",
     "Name": "K2Node_MakeArray_Array",
     "Outer": "SpawnFlashBangEffect",
+    "Class": "UScriptClass'ArrayProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjFlashBang_C:SpawnFlashBangEffect.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjFlashBang_C:SpawnFlashBangEffect.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.29"
     },
     "PropertyFlags": 134217728,
     "Inner": {
-      "ObjectName": "StructProperty ProjFlashBang_C:SpawnFlashBangEffect.K2Node_MakeArray_Array.K2Node_MakeArray_Array",
+      "ObjectName": "StructProperty'ProjFlashBang_C:SpawnFlashBangEffect.K2Node_MakeArray_Array.K2Node_MakeArray_Array'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.26"
     }
   },
@@ -393,12 +424,13 @@
     "Type": "StructProperty",
     "Name": "K2Node_MakeStruct_PostProcessEffectParameter",
     "Outer": "SpawnFlashBangEffect",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ArrayProperty ProjFlashBang_C:SpawnFlashBangEffect.K2Node_MakeArray_Array",
+      "ObjectName": "ArrayProperty'ProjFlashBang_C:SpawnFlashBangEffect.K2Node_MakeArray_Array'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.30"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct PostProcessEffectParameter",
+      "ObjectName": "ScriptStruct'PostProcessEffectParameter'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -406,12 +438,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_MakeTransform_ReturnValue",
     "Outer": "SpawnFlashBangEffect",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:SpawnFlashBangEffect.K2Node_MakeStruct_PostProcessEffectParameter",
+      "ObjectName": "StructProperty'ProjFlashBang_C:SpawnFlashBangEffect.K2Node_MakeStruct_PostProcessEffectParameter'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.31"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Transform",
+      "ObjectName": "ScriptStruct'Transform'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -419,8 +452,9 @@
     "Type": "FloatProperty",
     "Name": "FlashBangDistance",
     "Outer": "SpawnFlashBangEffect",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:SpawnFlashBangEffect.CallFunc_MakeTransform_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:SpawnFlashBangEffect.CallFunc_MakeTransform_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.32"
     },
     "PropertyFlags": 128
@@ -429,13 +463,14 @@
     "Type": "Function",
     "Name": "SpawnFlashBangEffect",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjFlashBang_C:PlayTinnitusSound",
+      "ObjectName": "Function'ProjFlashBang_C:PlayTinnitusSound'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.25"
     },
     "Children": [
       {
-        "ObjectName": "FloatProperty ProjFlashBang_C:SpawnFlashBangEffect.FlashBangDistance",
+        "ObjectName": "FloatProperty'ProjFlashBang_C:SpawnFlashBangEffect.FlashBangDistance'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.33"
       }
     ],
@@ -445,9 +480,10 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_FinishSpawningActor_ReturnValue",
     "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyClass": {
-      "ObjectName": "BlueprintGeneratedClass BP_FlashBangCaptureActor_v2_C",
+      "ObjectName": "BlueprintGeneratedClass'BP_FlashBangCaptureActor_v2_C'",
       "ObjectPath": "TslGame/Content/Effects/tooner/BP_FlashBangCaptureActor_v2.0"
     }
   },
@@ -455,12 +491,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
     "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_FinishSpawningActor_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_FinishSpawningActor_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.35"
     },
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -468,12 +505,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_MakeTransform_ReturnValue",
     "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.36"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Transform",
+      "ObjectName": "ScriptStruct'Transform'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -481,12 +519,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_GetCameraLocation_ReturnValue",
     "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_MakeTransform_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_MakeTransform_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.37"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -494,12 +533,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_GetCameraRotation_ReturnValue",
     "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_GetCameraLocation_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_GetCameraLocation_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.38"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Rotator",
+      "ObjectName": "ScriptStruct'Rotator'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -507,8 +547,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsValid_ReturnValue",
     "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_GetCameraRotation_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_GetCameraRotation_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.39"
     },
     "BoolSize": 1,
@@ -518,12 +559,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetPlayerCameraManager_ReturnValue",
     "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_IsValid_ReturnValue",
+      "ObjectName": "BoolProperty'ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_IsValid_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.40"
     },
     "PropertyClass": {
-      "ObjectName": "Class PlayerCameraManager",
+      "ObjectName": "Class'PlayerCameraManager'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -531,12 +573,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetActiveCamera_ReturnValue",
     "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_GetPlayerCameraManager_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_GetPlayerCameraManager_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.41"
     },
     "PropertyClass": {
-      "ObjectName": "Class CameraComponent",
+      "ObjectName": "Class'CameraComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -544,8 +587,9 @@
     "Type": "BoolProperty",
     "Name": "K2Node_DynamicCast_bSuccess",
     "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_GetActiveCamera_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjFlashBang_C:SpawnFlashBangCaputeEffect.CallFunc_GetActiveCamera_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.42"
     },
     "BoolSize": 1,
@@ -555,12 +599,13 @@
     "Type": "ObjectProperty",
     "Name": "K2Node_DynamicCast_AsTsl_Character",
     "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjFlashBang_C:SpawnFlashBangCaputeEffect.K2Node_DynamicCast_bSuccess",
+      "ObjectName": "BoolProperty'ProjFlashBang_C:SpawnFlashBangCaputeEffect.K2Node_DynamicCast_bSuccess'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.43"
     },
     "PropertyClass": {
-      "ObjectName": "Class TslCharacter",
+      "ObjectName": "Class'TslCharacter'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -568,12 +613,13 @@
     "Type": "StructProperty",
     "Name": "K2Node_MakeStruct_PostProcessSettings",
     "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjFlashBang_C:SpawnFlashBangCaputeEffect.K2Node_DynamicCast_AsTsl_Character",
+      "ObjectName": "ObjectProperty'ProjFlashBang_C:SpawnFlashBangCaputeEffect.K2Node_DynamicCast_AsTsl_Character'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.44"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct PostProcessSettings",
+      "ObjectName": "ScriptStruct'PostProcessSettings'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -581,13 +627,14 @@
     "Type": "ObjectProperty",
     "Name": "ShooterCharacter",
     "Outer": "SpawnFlashBangCaputeEffect",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:SpawnFlashBangCaputeEffect.K2Node_MakeStruct_PostProcessSettings",
+      "ObjectName": "StructProperty'ProjFlashBang_C:SpawnFlashBangCaputeEffect.K2Node_MakeStruct_PostProcessSettings'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.45"
     },
     "PropertyFlags": 128,
     "PropertyClass": {
-      "ObjectName": "Class Character",
+      "ObjectName": "Class'Character'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -595,13 +642,14 @@
     "Type": "Function",
     "Name": "SpawnFlashBangCaputeEffect",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjFlashBang_C:SpawnFlashBangEffect",
+      "ObjectName": "Function'ProjFlashBang_C:SpawnFlashBangEffect'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.34"
     },
     "Children": [
       {
-        "ObjectName": "ObjectProperty ProjFlashBang_C:SpawnFlashBangCaputeEffect.ShooterCharacter",
+        "ObjectName": "ObjectProperty'ProjFlashBang_C:SpawnFlashBangCaputeEffect.ShooterCharacter'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.46"
       }
     ],
@@ -611,6 +659,7 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Less_FloatFloat_ReturnValue4",
     "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "BoolSize": 1,
     "bIsNativeBool": true
@@ -619,8 +668,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Less_FloatFloat_ReturnValue3",
     "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_Less_FloatFloat_ReturnValue4",
+      "ObjectName": "BoolProperty'ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_Less_FloatFloat_ReturnValue4'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.48"
     },
     "BoolSize": 1,
@@ -630,8 +680,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Less_FloatFloat_ReturnValue2",
     "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_Less_FloatFloat_ReturnValue3",
+      "ObjectName": "BoolProperty'ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_Less_FloatFloat_ReturnValue3'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.49"
     },
     "BoolSize": 1,
@@ -641,8 +692,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Less_FloatFloat_ReturnValue",
     "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_Less_FloatFloat_ReturnValue2",
+      "ObjectName": "BoolProperty'ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_Less_FloatFloat_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.50"
     },
     "BoolSize": 1,
@@ -652,8 +704,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_VSize_ReturnValue",
     "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_Less_FloatFloat_ReturnValue",
+      "ObjectName": "BoolProperty'ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_Less_FloatFloat_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.51"
     }
   },
@@ -661,12 +714,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
     "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_VSize_ReturnValue",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_VSize_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.52"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -674,12 +728,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakTransform_Scale",
     "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_Subtract_VectorVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_Subtract_VectorVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.53"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -687,12 +742,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakTransform_Rotation",
     "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_BreakTransform_Scale",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_BreakTransform_Scale'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.54"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Rotator",
+      "ObjectName": "ScriptStruct'Rotator'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -700,12 +756,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakTransform_Location",
     "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_BreakTransform_Rotation",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_BreakTransform_Rotation'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.55"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -713,12 +770,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_GetSocketTransform_ReturnValue",
     "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_BreakTransform_Location",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_BreakTransform_Location'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.56"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Transform",
+      "ObjectName": "ScriptStruct'Transform'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -726,8 +784,9 @@
     "Type": "IntProperty",
     "Name": "Index",
     "Outer": "GetTinnitusSoundIndex",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_GetSocketTransform_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetTinnitusSoundIndex.CallFunc_GetSocketTransform_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.57"
     },
     "PropertyFlags": 384
@@ -736,13 +795,14 @@
     "Type": "Function",
     "Name": "GetTinnitusSoundIndex",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjFlashBang_C:SpawnFlashBangCaputeEffect",
+      "ObjectName": "Function'ProjFlashBang_C:SpawnFlashBangCaputeEffect'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.47"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty ProjFlashBang_C:GetTinnitusSoundIndex.Index",
+        "ObjectName": "IntProperty'ProjFlashBang_C:GetTinnitusSoundIndex.Index'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.58"
       }
     ],
@@ -752,14 +812,16 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_Abs_ReturnValue",
     "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": null
   },
   {
     "Type": "FloatProperty",
     "Name": "CallFunc_DegAcos_ReturnValue",
     "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_Abs_ReturnValue",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_Abs_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.60"
     }
   },
@@ -767,8 +829,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_Dot_VectorVector_ReturnValue",
     "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_DegAcos_ReturnValue",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_DegAcos_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.61"
     }
   },
@@ -776,12 +839,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Normal_ReturnValue",
     "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_Dot_VectorVector_ReturnValue",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_Dot_VectorVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.62"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -789,12 +853,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_NegateVector_ReturnValue",
     "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_Normal_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_Normal_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.63"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -802,12 +867,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_GetForwardVector_ReturnValue",
     "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_NegateVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_NegateVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.64"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -815,12 +881,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
     "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_GetForwardVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_GetForwardVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.65"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -828,12 +895,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakTransform_Scale",
     "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_Subtract_VectorVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_Subtract_VectorVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.66"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -841,12 +909,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakTransform_Rotation",
     "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_BreakTransform_Scale",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_BreakTransform_Scale'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.67"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Rotator",
+      "ObjectName": "ScriptStruct'Rotator'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -854,12 +923,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakTransform_Location",
     "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_BreakTransform_Rotation",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_BreakTransform_Rotation'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.68"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -867,12 +937,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_GetSocketTransform_ReturnValue",
     "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_BreakTransform_Location",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_BreakTransform_Location'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.69"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Transform",
+      "ObjectName": "ScriptStruct'Transform'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -880,8 +951,9 @@
     "Type": "FloatProperty",
     "Name": "Angle",
     "Outer": "GetCameraToFlashBangAngle",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_GetSocketTransform_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetCameraToFlashBangAngle.CallFunc_GetSocketTransform_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.70"
     },
     "PropertyFlags": 384
@@ -890,13 +962,14 @@
     "Type": "Function",
     "Name": "GetCameraToFlashBangAngle",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjFlashBang_C:GetTinnitusSoundIndex",
+      "ObjectName": "Function'ProjFlashBang_C:GetTinnitusSoundIndex'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.59"
     },
     "Children": [
       {
-        "ObjectName": "FloatProperty ProjFlashBang_C:GetCameraToFlashBangAngle.Angle",
+        "ObjectName": "FloatProperty'ProjFlashBang_C:GetCameraToFlashBangAngle.Angle'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.71"
       }
     ],
@@ -906,14 +979,16 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_FClamp_ReturnValue",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": null
   },
   {
     "Type": "FloatProperty",
     "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_FClamp_ReturnValue",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_FClamp_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.73"
     }
   },
@@ -921,8 +996,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_GetFloatValue_ReturnValue2",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_Multiply_FloatFloat_ReturnValue",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_Multiply_FloatFloat_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.74"
     }
   },
@@ -930,8 +1006,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_Abs_ReturnValue",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_GetFloatValue_ReturnValue2",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_GetFloatValue_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.75"
     }
   },
@@ -939,8 +1016,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_DegAcos_ReturnValue",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_Abs_ReturnValue",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_Abs_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.76"
     }
   },
@@ -948,8 +1026,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_Dot_VectorVector_ReturnValue",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_DegAcos_ReturnValue",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_DegAcos_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.77"
     }
   },
@@ -957,8 +1036,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_GetFloatValue_ReturnValue",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_Dot_VectorVector_ReturnValue",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_Dot_VectorVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.78"
     }
   },
@@ -966,12 +1046,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Normal_ReturnValue",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_GetFloatValue_ReturnValue",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_GetFloatValue_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.79"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -979,8 +1060,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_VSize_ReturnValue",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_Normal_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_Normal_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.80"
     }
   },
@@ -988,12 +1070,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_NegateVector_ReturnValue",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_VSize_ReturnValue",
+      "ObjectName": "FloatProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_VSize_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.81"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -1001,12 +1084,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_GetForwardVector_ReturnValue",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_NegateVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_NegateVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.82"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -1014,12 +1098,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_GetForwardVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_GetForwardVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.83"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -1027,12 +1112,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakTransform_Scale",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_Subtract_VectorVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_Subtract_VectorVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.84"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -1040,12 +1126,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakTransform_Rotation",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_BreakTransform_Scale",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_BreakTransform_Scale'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.85"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Rotator",
+      "ObjectName": "ScriptStruct'Rotator'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -1053,12 +1140,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_BreakTransform_Location",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_BreakTransform_Rotation",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_BreakTransform_Rotation'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.86"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -1066,12 +1154,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_GetSocketTransform_ReturnValue",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_BreakTransform_Location",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_BreakTransform_Location'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.87"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Transform",
+      "ObjectName": "ScriptStruct'Transform'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -1079,8 +1168,9 @@
     "Type": "FloatProperty",
     "Name": "FlashBangDistance",
     "Outer": "GetFlashBangDistance",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjFlashBang_C:GetFlashBangDistance.CallFunc_GetSocketTransform_ReturnValue",
+      "ObjectName": "StructProperty'ProjFlashBang_C:GetFlashBangDistance.CallFunc_GetSocketTransform_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.88"
     },
     "PropertyFlags": 384
@@ -1089,13 +1179,14 @@
     "Type": "Function",
     "Name": "GetFlashBangDistance",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjFlashBang_C:GetCameraToFlashBangAngle",
+      "ObjectName": "Function'ProjFlashBang_C:GetCameraToFlashBangAngle'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.72"
     },
     "Children": [
       {
-        "ObjectName": "FloatProperty ProjFlashBang_C:GetFlashBangDistance.FlashBangDistance",
+        "ObjectName": "FloatProperty'ProjFlashBang_C:GetFlashBangDistance.FlashBangDistance'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.89"
       }
     ],
@@ -1105,97 +1196,100 @@
     "Type": "StructProperty",
     "Name": "UberGraphFrame",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "Function ProjFlashBang_C:GetFlashBangDistance",
+      "ObjectName": "Function'ProjFlashBang_C:GetFlashBangDistance'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.90"
     },
     "PropertyFlags": 2105344,
     "Struct": {
-      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
       "ObjectPath": "/Script/Engine"
     }
   },
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjFlashBang_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjFlashBang_C:SimpleConstructionScript_0__57659476",
+        "ObjectName": "SimpleConstructionScript'ProjFlashBang_C:SimpleConstructionScript_0__57659476'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.101"
       },
       "UberGraphFramePointerProperty": {
-        "ObjectName": "StructProperty ProjFlashBang_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjFlashBang_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.91"
       },
       "UberGraphFunction": {
-        "ObjectName": "Function ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang",
+        "ObjectName": "Function'ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.14"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslProjectile",
+      "ObjectName": "Class'TslProjectile'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjFlashBang_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjFlashBang_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.91"
       }
     ],
     "FuncMap": {
       "ExecuteUbergraph_ProjFlashBang": {
-        "ObjectName": "Function ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang",
+        "ObjectName": "Function'ProjFlashBang_C:ExecuteUbergraph_ProjFlashBang'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.14"
       },
       "ExplodeBP": {
-        "ObjectName": "Function ProjFlashBang_C:ExplodeBP",
+        "ObjectName": "Function'ProjFlashBang_C:ExplodeBP'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.19"
       },
       "UserConstructionScript": {
-        "ObjectName": "Function ProjFlashBang_C:UserConstructionScript",
+        "ObjectName": "Function'ProjFlashBang_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.20"
       },
       "PlayTinnitusSound": {
-        "ObjectName": "Function ProjFlashBang_C:PlayTinnitusSound",
+        "ObjectName": "Function'ProjFlashBang_C:PlayTinnitusSound'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.25"
       },
       "SpawnFlashBangEffect": {
-        "ObjectName": "Function ProjFlashBang_C:SpawnFlashBangEffect",
+        "ObjectName": "Function'ProjFlashBang_C:SpawnFlashBangEffect'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.34"
       },
       "SpawnFlashBangCaputeEffect": {
-        "ObjectName": "Function ProjFlashBang_C:SpawnFlashBangCaputeEffect",
+        "ObjectName": "Function'ProjFlashBang_C:SpawnFlashBangCaputeEffect'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.47"
       },
       "GetTinnitusSoundIndex": {
-        "ObjectName": "Function ProjFlashBang_C:GetTinnitusSoundIndex",
+        "ObjectName": "Function'ProjFlashBang_C:GetTinnitusSoundIndex'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.59"
       },
       "GetCameraToFlashBangAngle": {
-        "ObjectName": "Function ProjFlashBang_C:GetCameraToFlashBangAngle",
+        "ObjectName": "Function'ProjFlashBang_C:GetCameraToFlashBangAngle'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.72"
       },
       "GetFlashBangDistance": {
-        "ObjectName": "Function ProjFlashBang_C:GetFlashBangDistance",
+        "ObjectName": "Function'ProjFlashBang_C:GetFlashBangDistance'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.90"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjFlashBang_C Default__ProjFlashBang_C",
+      "ObjectName": "ProjFlashBang_C'Default__ProjFlashBang_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.93"
     }
   },
   {
     "Type": "ProjFlashBang_C",
     "Name": "Default__ProjFlashBang_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.ProjFlashBang_C'",
     "Properties": {
       "UberGraphFrame": {},
       "ExplodeLocation": {
@@ -1204,54 +1298,54 @@
         "Z": 0.0
       },
       "FlashbangEffectClass": {
-        "ObjectName": "BlueprintGeneratedClass M_Flashbang_Blind_01_BP_C",
+        "ObjectName": "BlueprintGeneratedClass'M_Flashbang_Blind_01_BP_C'",
         "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Flashbang_Blind_01_BP.23"
       },
       "TinnitusSoundAks": [
         {
-          "ObjectName": "AkAudioEvent Flare_Fx_Lv1",
+          "ObjectName": "AkAudioEvent'Flare_Fx_Lv1'",
           "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv1.0"
         },
         {
-          "ObjectName": "AkAudioEvent Flare_Fx_Lv2",
+          "ObjectName": "AkAudioEvent'Flare_Fx_Lv2'",
           "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv2.0"
         },
         {
-          "ObjectName": "AkAudioEvent Flare_Fx_Lv3",
+          "ObjectName": "AkAudioEvent'Flare_Fx_Lv3'",
           "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv3.0"
         },
         {
-          "ObjectName": "AkAudioEvent Flare_Fx_Lv4",
+          "ObjectName": "AkAudioEvent'Flare_Fx_Lv4'",
           "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv4.0"
         },
         {
-          "ObjectName": "AkAudioEvent Flare_Fx_Lv5",
+          "ObjectName": "AkAudioEvent'Flare_Fx_Lv5'",
           "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Flare/Flare_Fx_Lv5.0"
         }
       ],
       "MinPower": 0.07,
       "MovementComp": {
-        "ObjectName": "TslProjectileMovementComponent Default__ProjFlashBang_C:ProjectileComp",
+        "ObjectName": "TslProjectileMovementComponent'Default__ProjFlashBang_C:ProjectileComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.105"
       },
       "CollisionComp": {
-        "ObjectName": "SphereComponent Default__ProjFlashBang_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjFlashBang_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.103"
       },
       "ParticleComp": {
-        "ObjectName": "ParticleSystemComponent Default__ProjFlashBang_C:ParticleComp",
+        "ObjectName": "ParticleSystemComponent'Default__ProjFlashBang_C:ParticleComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.96"
       },
       "MeshComp": {
-        "ObjectName": "StaticMeshComponent Default__ProjFlashBang_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjFlashBang_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.104"
       },
       "InterpolationTargetComp": {
-        "ObjectName": "SphereComponent Default__ProjFlashBang_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjFlashBang_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.102"
       },
       "ConstraintComp": {
-        "ObjectName": "PhysicsConstraintComponent Default__ProjFlashBang_C:MeshConstraint",
+        "ObjectName": "PhysicsConstraintComponent'Default__ProjFlashBang_C:MeshConstraint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.97"
       },
       "MeshInitialRotationRate": {
@@ -1305,28 +1399,28 @@
       },
       "ProjectileParticleClass": "EProjectileParticleClass::PPC_Flash",
       "ExplosionTemplate": {
-        "ObjectName": "BlueprintGeneratedClass ProjFlashBang_Explosion_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjFlashBang_Explosion_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_Explosion.0"
       },
       "ExplosionTemplateInAir": {
-        "ObjectName": "BlueprintGeneratedClass ProjFlashBang_Explosion_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjFlashBang_Explosion_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_Explosion.0"
       },
       "ExplosionTemplateInWater": {
-        "ObjectName": "BlueprintGeneratedClass ProjFlashBang_Explosion_Underwater_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjFlashBang_Explosion_Underwater_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang_Explosion_Underwater.0"
       },
       "bUseManualAudioEffectTrigger": true,
       "EffectData": {
-        "ObjectName": "TslExplosionEffectData FlashExplosionEffectData",
+        "ObjectName": "TslExplosionEffectData'FlashExplosionEffectData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/FlashExplosionEffectData.0"
       },
       "ImpactSound": {
-        "ObjectName": "AkAudioEvent HandBomb_Common_Impact",
+        "ObjectName": "AkAudioEvent'HandBomb_Common_Impact'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/HandBomb_Common/HandBomb_Common_Impact.0"
       },
       "AkComp": {
-        "ObjectName": "AkComponent Default__ProjFlashBang_C:AkComp",
+        "ObjectName": "AkComponent'Default__ProjFlashBang_C:AkComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.94"
       },
       "bChangeFuseTimerOnImpact": true,
@@ -1338,7 +1432,7 @@
         "DamageType": null
       },
       "RootComponent": {
-        "ObjectName": "SphereComponent Default__ProjFlashBang_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjFlashBang_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.103"
       }
     }
@@ -1347,9 +1441,10 @@
     "Type": "AkComponent",
     "Name": "AkComp",
     "Outer": "Default__ProjFlashBang_C",
+    "Class": "UScriptClass'AkComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjFlashBang_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjFlashBang_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.103"
       }
     }
@@ -1358,6 +1453,7 @@
     "Type": "FlashbangComponent",
     "Name": "Flashbang_GEN_VARIABLE",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'FlashbangComponent'",
     "Properties": {
       "Tracer": {
         "bEnabled": true,
@@ -1416,7 +1512,7 @@
         0
       ],
       "DebuffClass": {
-        "ObjectName": "BlueprintGeneratedClass BP_FlashbangDebuff_C",
+        "ObjectName": "BlueprintGeneratedClass'BP_FlashbangDebuff_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Buffs/BP_FlashbangDebuff.2"
       }
     }
@@ -1425,9 +1521,10 @@
     "Type": "ParticleSystemComponent",
     "Name": "ParticleComp",
     "Outer": "Default__ProjFlashBang_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "StaticMeshComponent Default__ProjFlashBang_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjFlashBang_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.104"
       }
     }
@@ -1436,9 +1533,10 @@
     "Type": "PhysicsConstraintComponent",
     "Name": "MeshConstraint",
     "Outer": "Default__ProjFlashBang_C",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjFlashBang_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjFlashBang_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.102"
       }
     }
@@ -1446,19 +1544,21 @@
   {
     "Type": "SceneComponent",
     "Name": "SceneComponent_1",
-    "Outer": "ProjFlashBang_C"
+    "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class FlashbangComponent",
+        "ObjectName": "Class'FlashbangComponent'",
         "ObjectPath": "/Script/TslGame"
       },
       "ComponentTemplate": {
-        "ObjectName": "FlashbangComponent ProjFlashBang_C:Flashbang_GEN_VARIABLE",
+        "ObjectName": "FlashbangComponent'ProjFlashBang_C:Flashbang_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.95"
       },
       "VariableGuid": "9FFF256E-46188C28-573787BF-95A19FB2",
@@ -1469,13 +1569,14 @@
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjFlashBang_C:SceneComponent_1",
+        "ObjectName": "SceneComponent'ProjFlashBang_C:SceneComponent_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.98"
       },
       "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
@@ -1486,21 +1587,22 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0__57659476",
     "Outer": "ProjFlashBang_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "RootNodes": [
         {
-          "ObjectName": "SCS_Node ProjFlashBang_C:SimpleConstructionScript_0__57659476.SCS_Node_0",
+          "ObjectName": "SCS_Node'ProjFlashBang_C:SimpleConstructionScript_0__57659476.SCS_Node_0'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.99"
         }
       ],
       "AllNodes": [
         {
-          "ObjectName": "SCS_Node ProjFlashBang_C:SimpleConstructionScript_0__57659476.SCS_Node_0",
+          "ObjectName": "SCS_Node'ProjFlashBang_C:SimpleConstructionScript_0__57659476.SCS_Node_0'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.99"
         }
       ],
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjFlashBang_C:SimpleConstructionScript_0__57659476.SCS_Node_1",
+        "ObjectName": "SCS_Node'ProjFlashBang_C:SimpleConstructionScript_0__57659476.SCS_Node_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.100"
       }
     }
@@ -1509,9 +1611,10 @@
     "Type": "SphereComponent",
     "Name": "InterpolationTarget",
     "Outer": "Default__ProjFlashBang_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjFlashBang_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjFlashBang_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.103"
       }
     }
@@ -1520,6 +1623,7 @@
     "Type": "SphereComponent",
     "Name": "SphereComp",
     "Outer": "Default__ProjFlashBang_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "SphereRadius": 4.0,
       "BodyInstance": {
@@ -1529,7 +1633,7 @@
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "ProjFlashBang_C Default__ProjFlashBang_C",
+              "ObjectName": "ProjFlashBang_C'Default__ProjFlashBang_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.93"
             },
             "FunctionName": "OnHit"
@@ -1542,27 +1646,28 @@
     "Type": "StaticMeshComponent",
     "Name": "MeshComp",
     "Outer": "Default__ProjFlashBang_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
     "Properties": {
       "StaticMesh": {
-        "ObjectName": "StaticMesh M84_01_Projectile",
+        "ObjectName": "StaticMesh'M84_01_Projectile'",
         "ObjectPath": "TslGame/Content/Weapon/Grenades/M84_Flash/M84_01_Projectile.1"
       },
       "BodyInstance": {
         "AngularDamping": 1.0
       },
-      "RelativeScale3D": {
-        "X": 1.5,
-        "Y": 1.5,
-        "Z": 1.5
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__ProjFlashBang_C:InterpolationTarget'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.102"
       },
       "RelativeLocation": {
         "X": 0.0,
         "Y": 0.0,
         "Z": -8.0
       },
-      "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjFlashBang_C:InterpolationTarget",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.102"
+      "RelativeScale3D": {
+        "X": 1.5,
+        "Y": 1.5,
+        "Z": 1.5
       }
     }
   },
@@ -1570,6 +1675,7 @@
     "Type": "TslProjectileMovementComponent",
     "Name": "ProjectileComp",
     "Outer": "Default__ProjFlashBang_C",
+    "Class": "UScriptClass'TslProjectileMovementComponent'",
     "Properties": {
       "SlidingFriction_Speed_In": {
         "X": 0.0,

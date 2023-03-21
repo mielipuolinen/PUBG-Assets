@@ -1,0 +1,225 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "CarePaKage_01",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "1B064F8F47410963D4173AB1A51B1027",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 113689,
+        "SizeOnDisk": 113689,
+        "OffsetInFile": "0x449D9"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "CarePaKage_01",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "MI_CarePackage",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 413.85983,
+            "LocalUVDensities": 604.91296,
+            "LocalUVDensities": 597.7236,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 597.7236,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 2,
+      "Sockets": [
+        {
+          "ObjectName": "StaticMeshSocket'CarePaKage_01:StaticMeshSocket_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePaKage_01.2"
+        },
+        {
+          "ObjectName": "StaticMeshSocket'CarePaKage_01:StaticMeshSocket_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePaKage_01.3"
+        },
+        {
+          "ObjectName": "StaticMeshSocket'CarePaKage_01:StaticMeshSocket_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePaKage_01.4"
+        },
+        {
+          "ObjectName": "StaticMeshSocket'CarePaKage_01:StaticMeshSocket_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePaKage_01.5"
+        }
+      ],
+      "ExtendedBounds": {
+        "BoxExtent": {
+          "X": 92.95645,
+          "Y": 95.109795,
+          "Z": 76.43017
+        },
+        "SphereRadius": 131.18108
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'CarePaKage_01:BodySetup_0'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/CarePaKage_01.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "9BCB80F8-4CA99A0F-6ECE1087-C494D953",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 3848,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 4231,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 4232
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 3,
+            "NumVertices": 4232,
+            "Strides": 20,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "BoxExtent": {
+          "X": 92.95645,
+          "Y": 95.109795,
+          "Z": 76.43017
+        },
+        "SphereRadius": 131.18108
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_0",
+    "Outer": "CarePaKage_01",
+    "Class": "UScriptClass'StaticMeshSocket'",
+    "Properties": {
+      "SocketName": "Smoke",
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 73.5051
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_1",
+    "Outer": "CarePaKage_01",
+    "Class": "UScriptClass'StaticMeshSocket'",
+    "Properties": {
+      "SocketName": "Light",
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0013122559,
+        "Z": -75.24188
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_2",
+    "Outer": "CarePaKage_01",
+    "Class": "UScriptClass'StaticMeshSocket'",
+    "Properties": {
+      "SocketName": "Smoke_Air",
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 75.99147
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshSocket",
+    "Name": "StaticMeshSocket_3",
+    "Outer": "CarePaKage_01",
+    "Class": "UScriptClass'StaticMeshSocket'",
+    "Properties": {
+      "SocketName": "ParachutSocket",
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 74.325134
+      }
+    }
+  }
+]

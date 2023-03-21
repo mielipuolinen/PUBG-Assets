@@ -1,0 +1,1536 @@
+[/Script/Engine.PlayerController]
+InputYawScale=2.5
+InputPitchScale=-2.5
+InputRollScale=1.0
+
+[/Script/Engine.GameSession]
+MaxPlayers=128
+bRequiresPushToTalk=False
+
+[/Script/TslGame.TslGameMode]
+MatchStartType=EMatchStartType::Normal
+PostMatchWaitingTime=60
+NextRoundWaitingTime=10
+EndRoundCeremonyDuration=4.0
+RoundMatchCeremonyDuration=4.0
+ServerQuitAfterLeavingMapTime=10
+MinPlayers=2
+PlayerSpawnTryMaxCount=50
+IsBattleRoyale=True
+bEnablePerfBotLogin=True
+bEnableObserverInPIE=False
+FlareGunMsgDist=200000
+
+[/Script/TslGame.BattleRoyaleModeController]
+FastZonePlayerCount=0
+
+[/Script/TslGame.TslPlayerController]
++NearClippingLevelsOverZ=(Z=5000,Level=ENearClippingLevel::Low)
++NearClippingLevelsOverZ=(Z=50000,Level=ENearClippingLevel::Middle)
+MaxValidPing=2000
++ObserverPreLoadClassList=/Game/Blueprints/UI/Observer/MatchResult/UI_ObserverMatchResult.UI_ObserverMatchResult_C
+NewCorpseLifeSpan=-1
+PreloadManagerClass=/Game/Blueprints/Loading/BP_GamePreloadManager.BP_GamePreloadManager_C
+GuideMessageDataTableAsset=/Game/Blueprints/UI/TutorialGuide/TutorialGuideMessageTable.TutorialGuideMessageTable
+ImmersiveScreenClassPath=/Game/Blueprints/WebBrowser/BP_ImmersiveScreen.BP_ImmersiveScreen_C
+
+[/Script/TslGame.TslTDMPlayerController]
+NewCorpseLifeSpan=6
+[/Script/TslGame.TslFutsalPlayerController]
+NewCorpseLifeSpan=1
+
+[/Script/TslGame.TslRacingPlayerController]
+PreloadManagerClass=/Game/Blueprints/Loading/BP_RacingModePreloadManager.BP_RacingModePreloadManager_C
+
+[/Script/TslGame.TslPlayerPostProcessEffectComponent]
+MaterialParameterCollection = /Game/Export_Marek/MPC_Master.MPC_Master
+OutlineEffectClass=BlueprintGeneratedClass'/Game/Blueprints/Observer/BP_PP_OutlineCustomDepthOcclusion_Inst.BP_PP_OutlineCustomDepthOcclusion_Inst_C'
+DBNOEffectClass=BlueprintGeneratedClass'/Game/Effects/Clets/Material/M_DBNOPostProcessEffect.M_DBNOPostProcessEffect_C'
+OutSidePlayerAreaEffectClass=BlueprintGeneratedClass'/Game/Effects/Clets/Material/M_ElectricWall_Inside_BP.M_ElectricWall_Inside_BP_C'
+PlayerFenceEffectClass=BlueprintGeneratedClass'/Game/Effects/Clets/Material/M_OutPlayArea2.M_OutPlayArea2_C'
+DamageDirectionIndicatorEffectClass=BlueprintGeneratedClass'/Game/Effects/Clets/Material/DamageDirectionIndicator_PP.DamageDirectionIndicator_PP_C'
+ThermalScopingEffectClass=BlueprintGeneratedClass'/Game/Materials/Thermal/ThermoPostProcessEffect.ThermoPostProcessEffect_C'
+BlizzardZoneEffectClass=BlueprintGeneratedClass'/Game/Effects/Clets/BlizzardZone/BP_BlizzardZone_PostProcessEffect.BP_BlizzardZone_PostProcessEffect_C'
+BlizzardEffectEmitterClass=BlueprintGeneratedClass'/Game/Blueprints/BlizzardZoneController/BlizzardEffectEmitter_BP.BlizzardEffectEmitter_BP_C'
+
+[/Script/TslGame.TslParticleManager]
++GroupList=(GroupName="ImpactParticle", CullType=ETslParticleCullType::SameTransform, MaxSameTransformCount=2)
++GroupList=(GroupName="GunImpact", CullType=ETslParticleCullType::DistAndFrustumAndNear, MaxDistance=100000, MaxNearbyTransformCount=2)
++GroupList=(GroupName="GunImpactLight")
++GroupList=(GroupName="FireField", GroupPriority=ETslParticleGroupPriority::High)
++GroupList=(GroupName="LivingThings")
++GroupList=(GroupName="LivingThings_GunImpact")
+
+[/Script/TslGame.MatchPreparer]
+WarmupTime=60
+WarmupTimeInPIE=20
+WarmupTime_Console=90
+WarmupTime_ConsoleCompetitive=120
+WarmupTime_ConsoleArena=120
+WarmupTime_ConsoleTraining=60
+WarmupTime_ConsoleChimera=120
+WarmupTime_ConsoleHeaven=120
+WarmupTime_ConsoleDihorOtok=120
+
+
+[/Script/TslGame.AirborneMatchPreparer]
+AircraftCapacityOverride=104
+
+[/Script/TslGame.ItemSpawnProcessor]
+TimeSliceDuration=0.015
+
+[/Script/TslGame.DroppedItemGroup]
+RandomSpawnRadius=60.0
+RandomSpawnRadiusMinimum=20.0
+
+[/Script/TslGame.InventoryFacade]
++AutoSwapEquipSlotID=EEquipSlotID::WeaponPrimary
++AutoSwapEquipSlotID=EEquipSlotID::Backpack
++AutoSwapEquipSlotID=EEquipSlotID::WeaponSecondary
++AutoSwapEquipSlotID=EEquipSlotID::Mask
++AutoSwapEquipSlotID=EEquipSlotID::Torso
++AutoSwapEquipSlotID=EEquipSlotID::Outer
++AutoSwapEquipSlotID=EEquipSlotID::Hands
++AutoSwapEquipSlotID=EEquipSlotID::Legs
++AutoSwapEquipSlotID=EEquipSlotID::Feet
++AutoSwapEquipSlotID=EEquipSlotID::Belt
++AutoSwapEquipSlotID=EEquipSlotID::Eyes
++AutoSwapEquipSlotID=EEquipSlotID::Head
++AutoSwapEquipSlotID=EEquipSlotID::TorsoArmor
++AutoSwapEquipSlotID=EEquipSlotID::Hat
+
+[/Script/TslGame.DroppedItemGridManager]
+MaxGridSize=6400
+MaxItemNumPerGroup=10
+
+[/Script/TslGame.EventItemSpawnProcessor]
++IgnoreSpotParentActorList="/Script/TslGame.TslTrain"
+
+[/Script/TslGame.VoiceComponent]
+ResetFailureDelaySeconds=2.0
+UpdatePositionIntervalSeconds=0.1
+
+[/Script/TslGame.TslEntryHud]
+DefaultLobbyUrl="http://localhost:23847"
+
+[/Script/TslGame.TslCharacter]
+bIsVaultingSystemEnabled=True
+TargetingFOV=60.0
+AimingDelay=0.2
+ScopingDelay=0.125
+FallDamageFactor=0.035
+FallDamageVelocityMin=1000
+CorpseLifeSpan=60.0
+GamepadReloadHoldTime=0.3
+GamepadUnarmHoldTime=0.2
+BleedOutRateSec = 1.1
+BleedOutDamage = 35.0
+MaxBreathADS = 100.0
+MaxBreathADSConsole = 150.0
+
+[/Script/TslGame.TslZombiePlayerController]
+ZombiePOVPPClass=BlueprintGeneratedClass'/Game/Blueprints/Zombie/BP_ZombiePOV_PP.BP_ZombiePOV_PP_C'
+
+[/Script/TslGame.TslWeapon]
+LogWeaponFirePerFireCount=10
+
+[/Script/TslGame.TslWeapon_Trajectory]
+TrajectoryGravityZ=-9.8
+FireAtMuzzle=True
+DefaultTimerFrequency=0.016
+CrouchSpreadModifier=0.5
+ProneSpreadModifier=0.2
+WalkSpread=2
+RunSpread=5
+JumpSpread=15.0
+
+[/Script/TslGame.TslCharacterMovement]
+UseBlockedHitDamage=True
+
+[/Script/TslGame.TslHUDSetting]
+PingCautionThreshold=100
+PingWarningThreshold=200
+PingVariationThreshold=30
+PacketLossCautionThreshold=1
+PacketLossWarningThreshold=5
+bShowNetDebugIcon=False
+
+[/Script/TslGame.TslRatingPopupBoxWidget]
+LowRatingValue=0
+MiddleRatingValue=50
+HighRatingValue=100
+
+[/Script/GameplayAbilities.AbilitySystemGlobals]
++GameplayCueNotifyPaths=/Game/Monster/Abilities/Cues
+
+[/Script/TslGame.TslCheatManager]
++CheatSpawnClassName="/Game/Blueprints/FBR/CarePackage/Carapackage_RedBox_FBR_01.Carapackage_RedBox_FBR_01_C"
++CheatSpawnClassName="/Game/Blueprints/CarePackage/Carapackage_RedBox.Carapackage_RedBox_C"
+
++TestCheatList0=(FunctionName="OnStartFire", DelayTime=1.0)
++TestCheatList0=(FunctionName="OnUnarm", DelayTime=0.5)
++TestCheatList0=(FunctionName="OnUnarm")
++TestCheatList1=(FunctionName="OnStartFire", DelayTime=0.2)
++TestCheatList1=(FunctionName="OnReloadPad", DelayTime=1.0)
++TestCheatList1=(FunctionName="OnStartFire", DelayTime=0.2)
+;// UazSkin
++TestCheatList2=(CommandName="SpawnVehicle 1", DelayTime=0.1)
++TestCheatList2=(CommandName="ApplyVehicleSkin Item_ReplaceMeshSkin")
++TestCheatList2=(CommandName="SetWheeledVehicleYaw 0")
++TestCheatList2=(CommandName="veh.DebugMovement 1")
+
++TestCheatListMemreport=(CommandName="r.streaming.dropmips 1", DelayTime=5.0)
++TestCheatListMemreport=(CommandName="MovePlayerWhereToMemreport", DelayTime=180.0)
++TestCheatListMemreport=(CommandName="memreport -full", DelayTime=0.0)
++TestCheatListMemreport=(CommandName="hc.LogLoadedPackages", DelayTime=0.0)
+
++TestCheatListAutoProfileWithStat=(CommandName="Admin PauseBlueZone 1")
++TestCheatListAutoProfileWithStat=(CommandName="Stat StartFile")
++TestCheatListAutoProfileWithStat=(CommandName="MovePlayerWhereToSpawnAI 0", DelayTime=120)
++TestCheatListAutoProfileWithStat=(CommandName="Admin PerfBot 25", DelayTime=60)
++TestCheatListAutoProfileWithStat=(CommandName="MovePlayerWhereToSpawnAI 1")
++TestCheatListAutoProfileWithStat=(CommandName="Admin PerfBot 25", DelayTime=60)
++TestCheatListAutoProfileWithStat=(CommandName="MovePlayerWhereToSpawnAI 2")
++TestCheatListAutoProfileWithStat=(CommandName="Admin PerfBot 25", DelayTime=60)
++TestCheatListAutoProfileWithStat=(CommandName="MovePlayerWhereToSpawnAI 3")
++TestCheatListAutoProfileWithStat=(CommandName="Admin PerfBot 25", DelayTime=60)
++TestCheatListAutoProfileWithStat=(CommandName="Admin PerfBotMove")
++TestCheatListAutoProfileWithStat=(CommandName="Admin AIBotShoot 1", DelayTime=60)
++TestCheatListAutoProfileWithStat=(CommandName="Stat StopFile")
++TestCheatListAutoProfileWithStat=(CommandName="ShowSimpleOkPopup AutoProfileWithStatEnded")
+
++TestCheatListAutoProfileWithMemreport=(CommandName="Admin PauseBlueZone 1")
++TestCheatListAutoProfileWithMemreport=(CommandName="r.streaming.dropmips 1")
++TestCheatListAutoProfileWithMemreport=(CommandName="MovePlayerWhereToSpawnAI 0", DelayTime=120)
++TestCheatListAutoProfileWithMemreport=(CommandName="memreport -full")
++TestCheatListAutoProfileWithMemreport=(CommandName="Admin PerfBot 25", DelayTime=60)
++TestCheatListAutoProfileWithMemreport=(CommandName="memreport -full")
++TestCheatListAutoProfileWithMemreport=(CommandName="MovePlayerWhereToSpawnAI 1")
++TestCheatListAutoProfileWithMemreport=(CommandName="Admin PerfBot 25", DelayTime=60)
++TestCheatListAutoProfileWithMemreport=(CommandName="memreport -full")
++TestCheatListAutoProfileWithMemreport=(CommandName="MovePlayerWhereToSpawnAI 2")
++TestCheatListAutoProfileWithMemreport=(CommandName="Admin PerfBot 25", DelayTime=60)
++TestCheatListAutoProfileWithMemreport=(CommandName="memreport -full")
++TestCheatListAutoProfileWithMemreport=(CommandName="MovePlayerWhereToSpawnAI 3")
++TestCheatListAutoProfileWithMemreport=(CommandName="Admin PerfBot 25", DelayTime=60)
++TestCheatListAutoProfileWithMemreport=(CommandName="memreport -full")
++TestCheatListAutoProfileWithMemreport=(CommandName="Admin PerfBotMove")
++TestCheatListAutoProfileWithMemreport=(CommandName="Admin AIBotShoot 1", DelayTime=60)
++TestCheatListAutoProfileWithMemreport=(CommandName="memreport -full")
++TestCheatListAutoProfileWithMemreport=(CommandName="ShowSimpleOkPopup AutoProfileWithMemreportEnded")
+
++TestCheatListAutoProfileWithPackagememory=(CommandName="Admin PauseBlueZone 1")
++TestCheatListAutoProfileWithPackagememory=(CommandName="MovePlayerWhereToSpawnAI 0", DelayTime=120)
++TestCheatListAutoProfileWithPackagememory=(CommandName="hc.LogLoadedPackages")
++TestCheatListAutoProfileWithPackagememory=(CommandName="Admin PerfBot 25", DelayTime=60)
++TestCheatListAutoProfileWithPackagememory=(CommandName="hc.LogLoadedPackages")
++TestCheatListAutoProfileWithPackagememory=(CommandName="MovePlayerWhereToSpawnAI 1")
++TestCheatListAutoProfileWithPackagememory=(CommandName="Admin PerfBot 25", DelayTime=60)
++TestCheatListAutoProfileWithPackagememory=(CommandName="hc.LogLoadedPackages")
++TestCheatListAutoProfileWithPackagememory=(CommandName="MovePlayerWhereToSpawnAI 2")
++TestCheatListAutoProfileWithPackagememory=(CommandName="Admin PerfBot 25", DelayTime=60)
++TestCheatListAutoProfileWithPackagememory=(CommandName="hc.LogLoadedPackages")
++TestCheatListAutoProfileWithPackagememory=(CommandName="MovePlayerWhereToSpawnAI 3")
++TestCheatListAutoProfileWithPackagememory=(CommandName="Admin PerfBot 25", DelayTime=60)
++TestCheatListAutoProfileWithPackagememory=(CommandName="hc.LogLoadedPackages")
++TestCheatListAutoProfileWithPackagememory=(CommandName="Admin PerfBotMove")
++TestCheatListAutoProfileWithPackagememory=(CommandName="Admin AIBotShoot 1", DelayTime=60)
++TestCheatListAutoProfileWithPackagememory=(CommandName="hc.LogLoadedPackages")
++TestCheatListAutoProfileWithPackagememory=(CommandName="ShowSimpleOkPopup AutoProfileWithPackagememoryEnded")
+
+BenchmarkStartDelay=150.0
++BenchmarkSequenceConfigs=(MapName="Baltic_Main", BenchmarkPath="/Game/Maps/Baltic/Benchmark/Baltic_Benchmark", LevelSequenceName="Benchmark_FullMap", CameraName="Benchmark_Cam_1", PlayRate=0.3)
++BenchmarkSequenceConfigs=(MapName="Desert_Main", BenchmarkPath="/Game/Maps/Desert/Benchmark/Desert_Benchmark", LevelSequenceName="Desert_benchmark_FullMap", CameraName="Benchmark_FullMap", PlayRate=0.3)
++BenchmarkSequenceConfigs=(MapName="Savage_Main", BenchmarkPath="/Game/Maps/Savage/Benchmark/Savage_Benchmark", LevelSequenceName="Savage_benchmark_FullMap", CameraName="Benchmark", PlayRate=0.3)
++BenchmarkSequenceConfigs=(MapName="DihorOtok_Main", BenchmarkPath="/Game/Maps/DihorOtok/Benchmark/DihorOtok_Benchmark", LevelSequenceName="DihorOtok_benchmark_FullMap", CameraName="Benchmark", PlayRate=0.01)
++BenchmarkSequenceConfigs=(MapName="Summerland_Main", BenchmarkPath="/Game/Maps/Summerland/Benchmark/Summerland_Benchmark", LevelSequenceName="Benchmark_FullMap", CameraName="Benchmark_FullMap", PlayRate=0.018)
++BenchmarkSequenceConfigs=(MapName="Chimera_Main", BenchmarkPath="/Game/Maps/Chimera/Benchmark/Chimera_Benchmark", LevelSequenceName="Chimera_Benchmark_FullMap", CameraName="Benchmark_FullMap", PlayRate=0.0003)
++BenchmarkSequenceConfigs=(MapName="Heaven_Main", BenchmarkPath="/Game/Maps/Heaven/Benchmark/Heaven_Benchmark", LevelSequenceName="Benchmark_FullMap", CameraName="Benchmark", PlayRate=1) 
++BenchmarkSequenceConfigs=(MapName="Tiger_Main", BenchmarkPath="/Game/Maps/Tiger/Benchmark/Tiger_Benchmark", LevelSequenceName="Tiger_benchmark_FullMap", CameraName="Benchmark_FullMap", PlayRate=0.008) 
++BenchmarkSequenceConfigs=(MapName="Kiki_Main", BenchmarkPath="/Game/Maps/Kiki/Benchmark/Kiki_Benchmark", LevelSequenceName="Kiki_benchmark_FullMap", CameraName="Benchmark_FullMap", PlayRate=0.008) 
+
++PIEDefaultCommandList="TestKeyboardRotation 0.3 0.3"
++PIEDefaultCommandList="HideTslDebugInformation"
+
+
+[/Script/TslGame.PlayerMovePositionContainer]
+; Los Leones
++Memreport=(MapName="Desert_Main",Position="473811.78 535544.69 19810.41 0 359.38 159.47 0.00")
+; Sahmee
++Memreport=(MapName="Savage_Main",Position="149306.81 354864.00 1146.41 0 3.19 178.01. 0.00")
+; Yasnaya
++Memreport=(MapName="Baltic_Main",Position="547908.31 240100.58 183.32 0 356.38 142.53 0.00")
+; Al Habar
++Memreport=(MapName="Summerland_Main",Position="148734.95 43641.86 670.62 0 2.96 275.77 0.00")
+;Heaven
++Memreport=(MapName="Heaven_Main",Position="64714.40 86134.66 3026.08 0 348.99 228.23 0.00")
+; Cosmodrome
++Memreport=(MapName="DihorOtok_Main",Position="374061.34 147677.31 4328.25 0 2.76 51.65 0.00")
+; Go Dok
++Memreport=(MapName="Tiger_Main",Position="257759.28 242448.84 1670.75 0 352.60 108.53 0.00") 
+
+; Town03
++Memreport=(MapName="Kiki_Main",Position="456135.56 263048.72 7973.15 0 342.67 56.79 0.00") 
+
+; Los Leones
++AutoProfile=(MapName="Desert_Main",Position="453469.28 537529.81 19897.46 0 0.00 2.31 0.00")
++AutoProfile=(MapName="Desert_Main",Position="490471.21 532396.68 19894.40 0 0.00 -177.00 0.00")
++AutoProfile=(MapName="Desert_Main",Position="468355.53 571839.93 19781.44 0 0.00 -90.08 0.00")
++AutoProfile=(MapName="Desert_Main",Position="499105.62 561278.87 19873.25 0 0.00 -172.81 0.00")
+; Sahmee
++AutoProfile=(MapName="Savage_Main",Position="143810.98 351662.31 1144.33 0 0.00 -2.70 0.00")
++AutoProfile=(MapName="Savage_Main",Position="144501.79 355433.56 1144.26 0 0.00 -13.43 0.00")
++AutoProfile=(MapName="Savage_Main",Position="143776.39 359028.46 1144.31 0 0.00 3.04 0.00")
++AutoProfile=(MapName="Savage_Main",Position="142874.31 363578.18 1144.25 0 0.00 -6.99 0.00")
+; Yasnaya
++AutoProfile=(MapName="Baltic_Main",Position="526186.68 249633.01 179.45 0 0.00 -86.12 0.00")
++AutoProfile=(MapName="Baltic_Main",Position="522736.53 239254.12 183.59 0 0.00 5.47 0.00")
++AutoProfile=(MapName="Baltic_Main",Position="539083.68 239110.40 180.31 0 0.00 10.10 0.00")
++AutoProfile=(MapName="Baltic_Main",Position="560808.00 249063.34 181.75 0 0.00 -95.47 0.00")
+; Al Habar
++AutoProfile=(MapName="Summerland_Main",Position="145069.50 52328.22 678.65 0 0.00 -1.43 0.00")
++AutoProfile=(MapName="Summerland_Main",Position="153245.01 49477.53 678.73 0 0.00 -126.12 0.00")
++AutoProfile=(MapName="Summerland_Main",Position="147890.14 44037.10 668.49 0 0.00 -69.24 0.00")
++AutoProfile=(MapName="Summerland_Main",Position="153788.00 35058.44 678.63 0 0.00 168.17 0.00")
+; Cosmodrome
++AutoProfile=(MapName="DihorOtok_Main",Position="365820.46 153566.76 3314.15 0.00 56.22 0.00")
++AutoProfile=(MapName="DihorOtok_Main",Position="382764.62 165320.79 2865.93 0.00 -146.14 0.00")
++AutoProfile=(MapName="DihorOtok_Main",Position="395878.87 152707.25 2987.46 0.00 169.68 0.00")
++AutoProfile=(MapName="DihorOtok_Main",Position="380273.81 140594.93 2854.24 0.00 81.57 0.00")
+; Go Dok
++AutoProfile=(MapName="Tiger_Main",Position="257759.28 242448.84 1670.75 0 352.60 108.53 0.00") 
++AutoProfile=(MapName="Tiger_Main",Position="341131.75 506411.50 2302.00 0 352.60 108.53 0.00")
++AutoProfile=(MapName="Tiger_Main",Position="574287.00 596346.94 1871.40 0 346.29 15.91 0.00")
++AutoProfile=(MapName="Tiger_Main",Position="473396.88 358956.31 3472.37 0 328.84 273.24 0.00")
+
+
++AutoProfile=(MapName="Kiki_Main",Position="550982.63 496769.97 1397.91 0 355.01 354.13 0")
++AutoProfile=(MapName="Kiki_Main",Position="311947.09 177111.67 192.21 0 358.59 307.37 0")
++AutoProfile=(MapName="Kiki_Main",Position="748021.56 315101.63 400.4 0 6.03 247.81 0")
++AutoProfile=(MapName="Kiki_Main",Position="330219.75 287345.63 7040.2 0 344.86 243.51 0")
++AutoProfile=(MapName="Kiki_Main",Position="411208.56 468806.66 9089.9 0 336.71 196.49 0")
++AutoProfile=(MapName="Kiki_Main",Position="176107.91 427545.06 6933.03 0 347.83 97.83 0")
++AutoProfile=(MapName="Kiki_Main",Position="235411.41 205729.42 3880.2 0 347.32 244.96 0")
++AutoProfile=(MapName="Kiki_Main",Position="512018.41 82134.06 782.93 0 0.33 102.65 0")
++AutoProfile=(MapName="Kiki_Main",Position="351400.19 340309.75 4906.98 0 333.31 109.75 0")
++AutoProfile=(MapName="Kiki_Main",Position="456135.56 263048.72 7973.15 0 342.67 56.79 0")
++AutoProfile=(MapName="Kiki_Main",Position="355939.31 555073.25 8581.11 0 347.22 66.41 0")
++AutoProfile=(MapName="Kiki_Main",Position="290978.91 39439.87 1694.93 0 352.9 136.41 0")
+
+[/Script/TslGame.TslBaseHUD]
+DebugLineActorNameNear=10000
+DebugLineActorNameMiddle=100000
+DebugLineActorNameFar=400000
+
+
+[/Script/EngineSettings.GeneralProjectSettings]
+Description=PUBG: BATTLEGROUNDS
+ProjectID=B173FF8C4175E00CF98499B703FB7B42
+ProjectName=BATTLEGROUNDS
+CopyrightNotice=COPYRIGHT 2017-2018 PUBG CORPORATION. ALL RIGHTS RESERVED.
+ProjectDisplayedTitle=NSLOCTEXT("ST_Lobby", "K_IGU_02", "M_APPTITLE")
+bShouldWindowPreserveAspectRatio=True
+
+[/Script/TslGame.TslGameInstance]
++PersistentUClassPaths=/Game/Blueprints/UI/HUDMain.HUDMain_C
++PersistentUClassPaths=/Game/Blueprints/Tools/MapStatAnalyzer/MapStatAnalyzer.MapStatAnalyzer_C
++PersistentUClassPaths=/Game/Blueprints/Tools/StatMapLocations/StatMapLocations.StatMapLocations_C
++WinMTRPath=%GAMEDIR%Binaries/ThirdParty/WinMTR/WinMTR.exe
+WelcomeScreenMap=/Game/Maps/TslWelcome
+bUseLobbyWidget=False
+LobbyWidgetZOrder=5
+bEnablePlayHighlight=true
+bChangeableHighlightBeginEndTime=false
+bEnableHighlightExport=false
+bEnableHighlightShortcut=false
+HighlightEventTimeBefore=5
+HighlightEventTimeAfter=2
+
+[/Script/TslGame.TslBanMessageData]
+; KickProcess : Disconnect, Shutdown, ShutdownIn10Sec
+BanStringTable=/Game/StringTables/Popup/NS_BAN.NS_BAN
++KickMessageKeyList=(KickType=HWID,KeyString="K_ACU_03")
++KickMessageKeyList=(KickType=MouseMacro,KeyString="K_ACU_02")
++KickMessageKeyList=(KickType=InGame,KickProcess=Disconnect,KeyString="K_ACU_00")
++KickMessageKeyList=(KickType=InGame,KickProcess=Shutdown,KeyString="K_ACU_00")
++KickMessageKeyList=(KickType=InGame,KickProcess=ShutdownIn10Sec,KeyString="K_ACU_ZT_04")
++KickMessageKeyList=(KickType=BattleEye,KeyString="K_ACU_01")
+
+[/Script/TslGame.TslPawnInputBindingComponent]
+PingCoolTimeSeconds=2.0
+
+[/Script/TslGame.TslHttpLogSender]
++LiveLobbyUrl=prod-live-front.playbattlegrounds.com
++TestLobbyUrl=pctest-live-front.playbattlegrounds.com
+
+[DedicatedServer]
+UdpPortRangeMin=7000
+UdpPortRangeMax=7999
+
+[TslLocalization]
+CulturesToStageCache=en
++CulturesToStageCache=ko
++CulturesToStageCache=zh-CN
++CulturesToStageCache=zh-TW
++CulturesToStageCache=ar
++CulturesToStageCache=de
++CulturesToStageCache=es
++CulturesToStageCache=es-MX
++CulturesToStageCache=fr
++CulturesToStageCache=it
++CulturesToStageCache=pl
++CulturesToStageCache=pt
++CulturesToStageCache=pt-BR
++CulturesToStageCache=tr
++CulturesToStageCache=ru
++CulturesToStageCache=ja
++CulturesToStageCache=th
++CulturesToStageCache=vi
++CulturesToStageCache=id
++CulturesToStageCache=uk
++CulturesToStageCache=ga-IE
++CulturesToStageCache=ca
+
+
+[/Script/TslGame.CameraSettings]
+CameraPitchMinStand=-75.000000
+CameraPitchMaxStand=75.000000
+CameraYawMinStand=-179.999
+CameraYawMaxStand=179.999
+CameraPitchMinProne=-35.000000
+CameraPitchMaxProne=27.000000
+CameraYawMinProne=-179.999
+CameraYawMaxProne=179.999
+CameraPitchMinInVehicle=-60.000000
+CameraPitchMaxInVehicle=30.000000
+CameraYawMinInVehicle=-179.999
+CameraYawMaxInVehicle=179.999
+HeadBoneName=head
++HideMaterialsWhenCameraIsInHead=_Hair_
++HideMaterialsWhenCameraIsInHead=_Face_
++HideMaterialsWhenCameraIsInHead=_Eye_
++HideMaterialsWhenCameraIsInHead=_Eyes_
++HideMaterialsWhenCameraIsInHead=_Head_
++HideMaterialsWhenCameraIsInHead=_Mask_
++HideMaterialsWhenCameraIsInHead=_Band_
++HideMaterialsWhenCameraIsInHead=_fur
++HideMaterialsWhenCameraIsInHead=_Back_
++HideMaterialsOnHighScopeMode=_Jacket_
++HideMaterialsOnHighScopeMode=_Ghillie_
+
+[Internationalization]
++LocalizationPaths=%GAMEDIR%Content/Localization/TSL_UI
++LocalizationPaths=%GAMEDIR%Content/Localization/TSL_Item
++LocalizationPaths=%GAMEDIR%Content/Localization/TSL_Source
++LocalizationPaths=%GAMEDIR%Content/Localization/TSL_Unknown
+
+[/Script/Engine.GameNetworkManager]
+MAXCLIENTUPDATEINTERVAL=0.5
+MoveRepSize=1680.0
+MAXPOSITIONERRORSQUARED=3.0
+ClientAuthorativePosition=true
+bMovementTimeDiscrepancyDetection=True
+bMovementTimeDiscrepancyResolution=True
+
+[/Script/MoviePlayer.MoviePlayerSettings]
+bWaitForMoviesToComplete=True
+bMoviesAreSkippable=False
++StartupMovies=LoadingScreen
+
+[/Script/TslGame.HighlightSession]
+Config_Kill=(BeforeDurationSec=30.0,AfterDurationSec=10.0,LinkWaitDurationSec=20.0)
+Config_KillGroggy=(BeforeDurationSec=30.0,AfterDurationSec=10.0,LinkWaitDurationSec=30.0)
+Config_Die=(BeforeDurationSec=30.0,AfterDurationSec=5.0,LinkWaitDurationSec=1.0)
+Config_DieGroggy=(BeforeDurationSec=30.0,AfterDurationSec=10.0,LinkWaitDurationSec=30.0)
+Config_EndMatch=(BeforeDurationSec=30.0,AfterDurationSec=5.0,LinkWaitDurationSec=0.0)
+Config_DeathCam=(BeforeDurationSec=15.0,AfterDurationSec=5.0,LinkWaitDurationSec=0.0)
+
+[/Script/TslGame.TslSpectatorPawn]
+bEnableReplayEditor = true
+-ArrObPos_Erangel=(Loc=(X=398683.0,Y=117658.0,Z=12567.0),Rot=(Pitch=-28.124763,Yaw=149.062347,Roll=0.000023))
+-ArrObPos_Erangel=(Loc=(X=116140.0,Y=237579.0,Z=25834.0),Rot=(Pitch=-19.687412,Yaw=11.250216,Roll=0.0))
+-ArrObPos_Erangel=(Loc=(X=389671.0,Y=313635.0,Z=10559.0),Rot=(Pitch=-11.249984,Yaw=-22.500107,Roll=0.0))
+-ArrObPos_Erangel=(Loc=(X=517289.0,Y=227841.0,Z=9698.0),Rot=(Pitch=-28.124880,Yaw=33.750008,Roll=0.000007))
+-ArrObPos_Erangel=(Loc=(X=342559.0,Y=392893.0,Z=13277.0),Rot=(Pitch=-30.937347,Yaw=36.562546,Roll=0.000001))
+-ArrObPos_Erangel=(Loc=(X=690483.0,Y=320698.0,Z=9730.0),Rot=(Pitch=-30.937374,Yaw=28.125029,Roll=0.000001))
+-ArrObPos_Erangel=(Loc=(X=584672.0,Y=464274.0,Z=11110.0),Rot=(Pitch=-30.937347,Yaw=59.062363,Roll=0.000008))
+-ArrObPos_Erangel=(Loc=(X=136441.0,Y=592067.0,Z=13348.0),Rot=(Pitch=-22.499920,Yaw=22.500099,Roll=0.0))
+-ArrObPos_Erangel=(Loc=(X=459374.0,Y=617675.0,Z=9404.0),Rot=(Pitch=-33.749718,Yaw=118.12484,Roll=0.000025))
+-ArrObPos_Erangel=(Loc=(X=596468.0,Y=592198.0,Z=7902.0),Rot=(Pitch=-33.749836,Yaw=36.562527,Roll=0.000004))
+
++ArrObPos_Erangel=(Loc=(X=398683.0,Y=117658.0,Z=12567.0),Rot=(Pitch=-28.124763,Yaw=149.062347,Roll=0.000023))
++ArrObPos_Erangel=(Loc=(X=116140.0,Y=237579.0,Z=25834.0),Rot=(Pitch=-19.687412,Yaw=11.250216,Roll=0.0))
++ArrObPos_Erangel=(Loc=(X=389671.0,Y=313635.0,Z=10559.0),Rot=(Pitch=-11.249984,Yaw=-22.500107,Roll=0.0))
++ArrObPos_Erangel=(Loc=(X=517289.0,Y=227841.0,Z=9698.0),Rot=(Pitch=-28.124880,Yaw=33.750008,Roll=0.000007))
++ArrObPos_Erangel=(Loc=(X=342559.0,Y=392893.0,Z=13277.0),Rot=(Pitch=-30.937347,Yaw=36.562546,Roll=0.000001))
++ArrObPos_Erangel=(Loc=(X=690483.0,Y=320698.0,Z=9730.0),Rot=(Pitch=-30.937374,Yaw=28.125029,Roll=0.000001))
++ArrObPos_Erangel=(Loc=(X=584672.0,Y=464274.0,Z=11110.0),Rot=(Pitch=-30.937347,Yaw=59.062363,Roll=0.000008))
++ArrObPos_Erangel=(Loc=(X=136441.0,Y=592067.0,Z=13348.0),Rot=(Pitch=-22.499920,Yaw=22.500099,Roll=0.0))
++ArrObPos_Erangel=(Loc=(X=459374.0,Y=617675.0,Z=9404.0),Rot=(Pitch=-33.749718,Yaw=118.12484,Roll=0.000025))
++ArrObPos_Erangel=(Loc=(X=596468.0,Y=592198.0,Z=7902.0),Rot=(Pitch=-33.749836,Yaw=36.562527,Roll=0.000004))
+
+-ArrObPos_Desert=(Loc=(X=217972.000000,Y=147834.000000,Z=25437.000000),Rot=(Pitch=-33.749664,Yaw=-19.687592,Roll=0.000000))
+-ArrObPos_Desert=(Loc=(X=514287.000000,Y=42573.000000,Z=22259.000000),Rot=(Pitch=-25.312447,Yaw=22.499868,Roll=0.000002))
+-ArrObPos_Desert=(Loc=(X=643225.000000,Y=25121.000000,Z=21490.000000),Rot=(Pitch=-19.687426,Yaw=30.937599,Roll=0.000000))
+-ArrObPos_Desert=(Loc=(X=114491.000000,Y=280836.000000,Z=27937.000000),Rot=(Pitch=-22.499920,Yaw=0.000009,Roll=0.000000))
+-ArrObPos_Desert=(Loc=(X=354444.000000,Y=279709.000000,Z=20146.000000),Rot=(Pitch=-25.312365,Yaw=22.500027,Roll=0.000003))
+-ArrObPos_Desert=(Loc=(X=623126.000000,Y=227599.000000,Z=24616.000000),Rot=(Pitch=-33.749901,Yaw=61.875042,Roll=0.000001))
+-ArrObPos_Desert=(Loc=(X=109221.000000,Y=587523.000000,Z=17715.000000),Rot=(Pitch=-25.312372,Yaw=36.562439,Roll=0.000004))
+-ArrObPos_Desert=(Loc=(X=432776.000000,Y=529653.000000,Z=44153.000000),Rot=(Pitch=-30.937353,Yaw=22.499926,Roll=0.000003))
+-ArrObPos_Desert=(Loc=(X=598886.000000,Y=635705.000000,Z=11153.000000),Rot=(Pitch=-28.124941,Yaw=-8.437513,Roll=0.000000))
+-ArrObPos_Desert=(Loc=(X=53800.000000,Y=734015.000000,Z=25455.000000),Rot=(Pitch=-28.124922,Yaw=-14.062610,Roll=0.000001))
+
++ArrObPos_Desert=(Loc=(X=217972.000000,Y=147834.000000,Z=25437.000000),Rot=(Pitch=-33.749664,Yaw=-19.687592,Roll=0.000000))
++ArrObPos_Desert=(Loc=(X=514287.000000,Y=42573.000000,Z=22259.000000),Rot=(Pitch=-25.312447,Yaw=22.499868,Roll=0.000002))
++ArrObPos_Desert=(Loc=(X=643225.000000,Y=25121.000000,Z=21490.000000),Rot=(Pitch=-19.687426,Yaw=30.937599,Roll=0.000000))
++ArrObPos_Desert=(Loc=(X=114491.000000,Y=280836.000000,Z=27937.000000),Rot=(Pitch=-22.499920,Yaw=0.000009,Roll=0.000000))
++ArrObPos_Desert=(Loc=(X=354444.000000,Y=279709.000000,Z=20146.000000),Rot=(Pitch=-25.312365,Yaw=22.500027,Roll=0.000003))
++ArrObPos_Desert=(Loc=(X=623126.000000,Y=227599.000000,Z=24616.000000),Rot=(Pitch=-33.749901,Yaw=61.875042,Roll=0.000001))
++ArrObPos_Desert=(Loc=(X=109221.000000,Y=587523.000000,Z=17715.000000),Rot=(Pitch=-25.312372,Yaw=36.562439,Roll=0.000004))
++ArrObPos_Desert=(Loc=(X=432776.000000,Y=529653.000000,Z=44153.000000),Rot=(Pitch=-30.937353,Yaw=22.499926,Roll=0.000003))
++ArrObPos_Desert=(Loc=(X=598886.000000,Y=635705.000000,Z=11153.000000),Rot=(Pitch=-28.124941,Yaw=-8.437513,Roll=0.000000))
++ArrObPos_Desert=(Loc=(X=53800.000000,Y=734015.000000,Z=25455.000000),Rot=(Pitch=-28.124922,Yaw=-14.062610,Roll=0.000001))
+
+-ArrObPos_Savage=(Loc=(X=113495.23,Y=122381.02,Z=5669.18),Rot=(Pitch=335.40,Yaw=340.02,Roll=0.000000))
+-ArrObPos_Savage=(Loc=(X=70256.92,Y=151916.08,Z=15035.99),Rot=(Pitch=334.35,Yaw=42.86,Roll=0.000000))
+-ArrObPos_Savage=(Loc=(X=182985.72,Y=205801.25,Z=5806.81),Rot=(Pitch=332.00,Yaw=323.82,Roll=0.000000))
+-ArrObPos_Savage=(Loc=(X=240864.73,Y=149408.48,Z=10987.70),Rot=(Pitch=326.50,Yaw=318.17,Roll=0.000000))
+-ArrObPos_Savage=(Loc=(X=332099.28,Y=152974.03,Z=8243.03),Rot=(Pitch=318.91,Yaw=13.67,Roll=0.000000))
+-ArrObPos_Savage=(Loc=(X=115081.99,Y=271105.75,Z=6443.09),Rot=(Pitch=328.41,Yaw=285.82,Roll=0.000000))
+-ArrObPos_Savage=(Loc=(X=139431.16,Y=366480.34,Z=5800.55),Rot=(Pitch=328.06,Yaw=302.52,Roll=0.000000))
+-ArrObPos_Savage=(Loc=(X=227557.05,Y=350580.28,Z=6361.69),Rot=(Pitch=332.76,Yaw=341.82,Roll=0.000000))
+-ArrObPos_Savage=(Loc=(X=330375.00,Y=289836.31,Z=6517.90),Rot=(Pitch=323.06,Yaw= 345.37,Roll=0.000000))
+-ArrObPos_Savage=(Loc=(X=322187.00,Y=352576.13,Z=5410.67),Rot=(Pitch=324.41,Yaw=333.52,Roll=0.000000))
+
++ArrObPos_Savage=(Loc=(X=113495.23,Y=122381.02,Z=5669.18),Rot=(Pitch=335.40,Yaw=340.02,Roll=0.000000))
++ArrObPos_Savage=(Loc=(X=70256.92,Y=151916.08,Z=15035.99),Rot=(Pitch=334.35,Yaw=42.86,Roll=0.000000))
++ArrObPos_Savage=(Loc=(X=182985.72,Y=205801.25,Z=5806.81),Rot=(Pitch=332.00,Yaw=323.82,Roll=0.000000))
++ArrObPos_Savage=(Loc=(X=240864.73,Y=149408.48,Z=10987.70),Rot=(Pitch=326.50,Yaw=318.17,Roll=0.000000))
++ArrObPos_Savage=(Loc=(X=332099.28,Y=152974.03,Z=8243.03),Rot=(Pitch=318.91,Yaw=13.67,Roll=0.000000))
++ArrObPos_Savage=(Loc=(X=115081.99,Y=271105.75,Z=6443.09),Rot=(Pitch=328.41,Yaw=285.82,Roll=0.000000))
++ArrObPos_Savage=(Loc=(X=139431.16,Y=366480.34,Z=5800.55),Rot=(Pitch=328.06,Yaw=302.52,Roll=0.000000))
++ArrObPos_Savage=(Loc=(X=227557.05,Y=350580.28,Z=6361.69),Rot=(Pitch=332.76,Yaw=341.82,Roll=0.000000))
++ArrObPos_Savage=(Loc=(X=330375.00,Y=289836.31,Z=6517.90),Rot=(Pitch=323.06,Yaw= 345.37,Roll=0.000000))
++ArrObPos_Savage=(Loc=(X=322187.00,Y=352576.13,Z=5410.67),Rot=(Pitch=324.41,Yaw=333.52,Roll=0.000000))
+
+[NullNetworkReplayStreaming]
+bInMemoryArchiveEnabled=True
+
+[/Script/TslGame.TslEngineUtilSettings]
+TiledDoorMaterialName=/Game/Assets/World/DoorHlod/M_Flatten_Doors.M_Flatten_Doors
+TiledDoorProxyMeshName=/Game/Assets/World/DoorHlod/BaseCube.BaseCube
++TiledDoorMeshes=/Game/Assets/World/Baltic/Props/OldProps/Baltic_Door_A_Indoor.Baltic_Door_A_Indoor
++TiledDoorMeshes=/Game/Assets/World/Baltic/Props/OldProps/Baltic_Door_E.Baltic_Door_E
++TiledDoorMeshes=/Game/Assets/World/Baltic/Old/Assets/World/Common/Exterior/WindowDoors/Baltic_Door_F.Baltic_Door_F
++TiledDoorMeshes=/Game/Assets/World/Baltic/Old/Assets/World/Common/Exterior/WindowDoors/Baltic_Door_F_Left.Baltic_Door_F_Left
++TiledDoorMeshes=/Game/Assets/World/Baltic/Props/Common/Meshes/Windows_and_Doors/SM_Baltic_Door_Interior_01.SM_Baltic_Door_Interior_01
++TiledDoorMeshes=/Game/Assets/World/Baltic/Props/Common/Meshes/Windows_and_Doors/SM_Baltic_Door_Exterior_01.SM_Baltic_Door_Exterior_01
++TiledDoorMeshes=/Game/Assets/World/Baltic/Props/Common/Meshes/Windows_and_Doors/SM_Baltic_Door_Exterior_02.SM_Baltic_Door_Exterior_02
++TiledDoorMeshes=/Game/Assets/World/Baltic/Props/Common/Meshes/Windows_and_Doors/SM_Baltic_RuralDoor_01.SM_Baltic_RuralDoor_01
++TiledDoorMeshes=/Game/Assets/World/Common/Interior/Desert/Desert_MilitaryBase_Door_A_Indoor.Desert_MilitaryBase_Door_A_Indoor
++TiledDoorMeshes=/Game/Assets/World/Common/Interior/Desert/Desert_MilitaryBase_Door_B_Indoor.Desert_MilitaryBase_Door_B_Indoor
++TiledDoorMeshes=/Game/Assets/World/Common/Interior/Desert/Desert_MilitaryBase_Door_C_Indoor.Desert_MilitaryBase_Door_C_Indoor
++TiledDoorMeshes=/Game/Assets/World/Common/Interior/Desert/Desert_MilitaryBase_Door_D_Indoor.Desert_MilitaryBase_Door_D_Indoor
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/City_WoodenDoor_Inside.City_WoodenDoor_Inside
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/City_WoodenDoor_Outside_L.City_WoodenDoor_Outside_L
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/City_WoodenDoor_Outside_R.City_WoodenDoor_Outside_R
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Door_A_Indoor.Door_A_Indoor
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Door_F.Door_F
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/City_Door_Desert_01.City_Door_Desert_01
++TiledDoorMeshes=/Game/Assets/World/Artifact/Desert_School/FBX/Door_A.Door_A
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/City_SteelDoor_Outside_L.City_SteelDoor_Outside_L
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/City_SteelDoor_Outside_R.City_SteelDoor_Outside_R
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/City_SteelDoor_Inside.City_SteelDoor_Inside
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Village_GreenDoor_Inside.Village_GreenDoor_Inside
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Village_GreenDoor_Outside_L.Village_GreenDoor_Outside_L
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Village_GreenDoor_Outside_R.Village_GreenDoor_Outside_R
++TiledDoorMeshes=/Game/Assets/World/Buildings/Artifacts/DihorOtok/City/City_Commercial_02/SM_DO_City_Commercial_02_Door.SM_DO_City_Commercial_02_Door
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/DihorOtok/SM_DO_CF_SteelDoor_Indoor_a.SM_DO_CF_SteelDoor_Indoor_a
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/DihorOtok/SM_DO_CF_SteelDoor_Outdoor_a.SM_DO_CF_SteelDoor_Outdoor_a
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/DihorOtok/SM_DO_CF_WoodDoor_Indoor_a.SM_DO_CF_WoodDoor_Indoor_a
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/DihorOtok/SM_DO_CF_WoodDoor_Outdoor_a.SM_DO_CF_WoodDoor_Outdoor_a
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/DihorOtok/SM_DO_CF_SteelDoor_Outdoor_d.SM_DO_CF_SteelDoor_Outdoor_d
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/DihorOtok/SM_DO_Door_HS_Indoor_a.SM_DO_Door_HS_Indoor_a
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/DihorOtok/SM_DO_Door_HS_Outdoor_a.SM_DO_Door_HS_Outdoor_a
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/DihorOtok/Common/Doors_Windows/SM_DO_Door_Residential_02.SM_DO_Door_Residential_02
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/DihorOtok/SM_DO_HS_Door_Outdoor_C.SM_DO_HS_Door_Outdoor_C
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/DihorOtok/SM_DO_Door_Steel_Outside_R.SM_DO_Door_Steel_Outside_R
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/DihorOtok/Common/Doors_Windows/SM_DO_Door_Residential_02_OutDoubleDoor.SM_DO_Door_Residential_02_OutDoubleDoor
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/DihorOtok/Common/Doors_Windows/SM_DO_Door_Residential_01.SM_DO_Door_Residential_01
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/DihorOtok/SM_DO_Door_Town_Outdoor_b.SM_DO_Door_Town_Outdoor_b
++TiledDoorMeshes=/Game/Assets/World/Artifact/Winery/FBX/Door_Gate_b_Indoor.Door_Gate_b_Indoor
++TiledDoorMeshes=/Game/Assets/World/Artifact/Winery/FBX/Door_Gate_b.Door_Gate_b
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/DihorOtok/SM_DO_CF_WoodDoor_Indoor_a_2.SM_DO_CF_WoodDoor_Indoor_a_2
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/DihorOtok/SM_DO_Old_Door_01.SM_DO_Old_Door_01
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Door_E.Door_E
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Door_F_Left.Door_F_Left
++TiledDoorMeshes=/Game/Assets/World/Buildings/Modules/WoodStory/Interior/Interior_Door1.Interior_Door1
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Door_A.Door_A
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Heaven/Heaven_SteelDoor_Door_01.Heaven_SteelDoor_Door_01
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Heaven/Heaven_SteelDoor_Door_INT_01.Heaven_SteelDoor_Door_INT_01
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Savage/Savage_Bootcamp_Door_ext_01.Savage_Bootcamp_Door_ext_01
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Savage/Savage_Bootcamp_Door_ext_02.Savage_Bootcamp_Door_ext_02
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Savage/Savage_Bootcamp_Door_Int_01.Savage_Bootcamp_Door_Int_01
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Savage/Savage_Resort_Door_Int_01.Savage_Resort_Door_Int_01
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Savage/Savage_Resort_Door_Ext_01.Savage_Resort_Door_Ext_01
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Savage/Savage_Town_Door_Ext_02.Savage_Town_Door_Ext_02
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Savage/Savage_Town_Door_Ext_01.Savage_Town_Door_Ext_01
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Savage/Savage_Town_Door_Int_01.Savage_Town_Door_Int_01
++TiledDoorMeshes=/Game/Assets/World/Buildings/Artifacts/Desert/Motel/bulding/Asset/Motel_Door_b.Motel_Door_b
++TiledDoorMeshes=/Game/Assets/World/Buildings/Artifacts/Desert/Motel/bulding/Asset/Motel_Door_OutDoor_b.Motel_Door_OutDoor_b
++TiledDoorMeshes=/Game/Assets/World/Buildings/Artifacts/Desert/SilverMine/Asset/SilverM_Door_a.SilverM_Door_a
++TiledDoorMeshes=/Game/Assets/World/Buildings/Artifacts/Desert/SilverMine/Asset/SilverM_Door_OutDoor_a.SilverM_Door_OutDoor_a
++TiledDoorMeshes=/Game/Assets/World/Common/Exterior/WindowDoors/Bro_Door_A.Bro_Door_A
+TiledFrameWidth=8
+
+[StatMapLocations]
++StatGroups=STATGROUP_unit
++StatGroups=STATGROUP_engine
++StatGroups=STATGROUP_tickgroups
++StatGroups=STATGROUP_particles
++StatGroups=STATGROUP_GPUParticles
++StatGroups=STATGROUP_physics
++StatGroups=STATGROUP_RHI
++StatGroups=STATGROUP_scenerendering
++StatGroups=STATGROUP_character
++StatGroups=STATGROUP_game
++StatGroups=STATGROUP_Streaming
++StatGroups=STATGROUP_asyncloadgamethread
+
+
+; engine
++StatCycleNames=StatUnit FrameTime
++StatCycleNames=StatUnit GameThreadTime
++StatCycleNames=StatUnit RenderThreadTime
++StatCycleNames=StatUnit GPUTime
+; tickgroups
++StatCycleNames=TG_PrePhysics
++StatCycleNames=TG_StartPhysics
++StatCycleNames=start TG_DuringPhysics
++StatCycleNames=TG_EndPhysics
++StatCycleNames=TG_PostPhysics
+; particles
++StatCycleNames=PSys Comp Tick Time
++StatCycleNames=STAT_SpriteTickTime
++StatCountNames=STAT_SpriteParticles
++StatCycleNames=STAT_MeshTickTime
++StatCountNames=STAT_MeshParticles
+; GPUParticles
++StatCycleNames=STAT_GPUParticleTickTime
++StatCountNames=STAT_GPUSpriteParticles
+; physics
++StatCountNames=Shapes
++StatCountNames=Static Bodies
++StatCountNames=Mobile Bodies
++StatCycleNames=Sync Sim Time (ms)
++StatCycleNames=Async Sim Time (ms)
+; rhi
++StatCountNames=Triangles Drawn
++StatCountNames=DrawPrimitive calls
+; scenerendering
++StatCycleNames=Translucency GPU Time (MS)
+; game
++StatCycleNames=gc mark time
++StatCycleNames=gc sweep time
+; Streaming
++StatCycleNames=Streaming Texture
++StatCycleNames=Update Streaming Data
+; asyncloadgamethread
++StatCycleNames=TickAsyncLoading GT
++StatCycleNames=PostLoadObjects GT
+
+
+[MapStatAnalyzer]
++StatGroups=STATGROUP_unit
++StatGroups=STATGROUP_engine
++StatGroups=STATGROUP_tickgroups
++StatGroups=STATGROUP_particles
++StatGroups=STATGROUP_GPUParticles
++StatGroups=STATGROUP_physics
++StatGroups=STATGROUP_RHI
++StatGroups=STATGROUP_scenerendering
++StatGroups=STATGROUP_character
++StatGroups=STATGROUP_TslVehicle
++StatGroups=STATGROUP_game
++StatGroups=STATGROUP_Streaming
++StatGroups=STATGROUP_asyncloadgamethread
+
+; engine
++StatNames=StatUnit FrameTime
++StatNames=StatUnit GameThreadTime
++StatNames=StatUnit RenderThreadTime
++StatNames=StatUnit GPUTime
+; tickgroups
++StatNames=TG_PrePhysics
++StatNames=TG_StartPhysics
++StatNames=start TG_DuringPhysics
++StatNames=TG_EndPhysics
++StatNames=TG_PostPhysics
+; particles
++StatNames=PSys Comp Tick Time
++StatNames=STAT_SpriteTickTime
++StatNames=STAT_SpriteParticles
++StatNames=STAT_MeshTickTime
++StatNames=STAT_MeshParticles
+; GPUParticles
++StatNames=STAT_GPUParticleTickTime
++StatNames=STAT_GPUSpriteParticles
+; physics
++StatNames=Shapes
++StatNames=Static Bodies
++StatNames=Mobile Bodies
++StatNames=Sync Sim Time (ms)
++StatNames=Async Sim Time (ms)
+; rhi
++StatNames=Triangles Drawn
++StatNames=DrawPrimitive calls
+; scenerendering
++StatNames=Translucency GPU Time (MS)
+; character
++StatNames=Char Tick
+; TslVehicle
++StatNames=Vehicle Tick
+; game
++StatNames=gc mark time
++StatNames=gc sweep time
+; Streaming
++StatNames=Streaming Texture
++StatNames=Update Streaming Data
+; asyncloadgamethread
++StatNames=TickAsyncLoading GT
++StatNames=PostLoadObjects GT
+
++StableFrameStats=gc mark time
++StableFrameStats=gc sweep time
++StableFrameStats=TickAsyncLoading GT
++StableFrameStats=PostLoadObjects GT
++StableFrameStats=Streaming Texture
++StableFrameStats=Update Streaming Data
++StableFrameStatsThreshold=0.1
++StableFrameStatsThreshold=0.1
++StableFrameStatsThreshold=0.1
++StableFrameStatsThreshold=0.1
++StableFrameStatsThreshold=0.4
++StableFrameStatsThreshold=0.4
+
++HitchFrameStats=StatUnit GPUTime
++HitchFrameStatsThreshold_PC=15
++HitchFrameStatsThreshold_Console=24
+
+[Erangel_Debug_Locations]
++Location=FTransform(FRotator(356.92f, 201.29f, 0.00f), FVector(562342.00f, 245603.42f, 183.12f))
++Location=FTransform(FRotator(356.42f, 66.15f, 0.00f), FVector(359108.66f, 395207.34f, 3733.08f))
++Location=FTransform(FRotator(355.64f, 170.18f, 0.00f), FVector(612215.75f, 472031.38f, 654.66f))
++Location=FTransform(FRotator(9.73f, 54.28f, 0.00f), FVector(107728.89f, 137421.27f, 2716.31f))
++Location=FTransform(FRotator(356.63f, 357.71f, 0.00f), FVector(431550.09f, 634786.06f, 886.14f))
++Location=FTransform(FRotator(0.62f, 335.03f, 0.00f), FVector(180228.95f, 310895.94f, 915.99f))
++Location=FTransform(FRotator(358.66f, 190.89f, 0.00f), FVector(148067.58f, 156505.09f, 2665.74f))
+
+[Miramar_Debug_Locations]
++Location=FTransform(FRotator(342.23f, 220.76f, 0.00f), FVector(397524.56f, 457602.03f, 10693.87f))
++Location=FTransform(FRotator(348.00f, 213.00f, 0.00f), FVector(392953.00f, 307747.00f, 8397.20f))
++Location=FTransform(FRotator(353.33f, 56.78f, 0.00f), FVector(179025.84f, 390999.50f, 7176.44f))
++Location=FTransform(FRotator(352.09f, 356.72f, 0.00f), FVector(368870.91f, 297513.94f, 7121.41f))
+
+[Vikendi_Debug_Locations]
++Location=FTransform(FRotator(338.54f, 31.86f, 0.00f), FVector(102053.65f, 237698.91f, 4683.41f))
++Location=FTransform(FRotator(339.50f, 256.64f, 0.00f), FVector(328250.47f, 461169.09f, 6389.86f))
++Location=FTransform(FRotator(353.17f, 221.88f, 0.00f), FVector(384951.00f, 158360.72f, 3666.90f))
++Location=FTransform(FRotator(6.32f, 152.21f, 0.00f), FVector(388489.47f, 149453.53f, 3021.43f))
++Location=FTransform(FRotator(345.39f, 117.63f, 0.00f), FVector(386470.66f, 144127.05f, 3027.88f))
+
+[Sanhok_Debug_Locations]
++Location=FTransform(FRotator(340.80f, 162.54f, 0.00f), FVector(256537.00f, 137705.95f, 5504.16f))
++Location=FTransform(FRotator(345.91f, 265.54f, 0.00f), FVector(123853.34f, 270768.25f, 1844.39f))
++Location=FTransform(FRotator(348.00f, 332.45f, 0.00f), FVector(143622.27f, 359813.06f, 1524.85f))
+
+[Karakin_Debug_Locations]
++Location=FTransform(FRotator(342.09f, 120.61f, 0.00f), FVector(153851.03f, 31275.14f, 2464.76f))
++Location=FTransform(FRotator(344.21f, 354.70f, 0.00f), FVector(43557.38f, 113843.07f, 1502.86f))
+
+[/Script/TslGame.TslSettings]
+ObserverNetSpeed=100000
+SupportedClientReplay=True
+SupportedKillcam=True
+bStartServerRecording=False
+MK3DReplayVerNumForClient=100
+ReportAvailableRecordDaysAgo=7
+MaxReplaysForNullStreamer=20
+RepDistance_Item=10000.000000
+RepDistance_NpcCharacter=15000.000000
+RepDistance_Freefall=80000.000000
+RepDistance_Door=50000.000000
+RepDistance_Window=15000.000000
+RepDistance_CanBeDamagedItemGroup=15000.000000
+RepDistanceMinModifier=0.750000
+RepFrequency_Character=100.000000
+RepFrequency_NpcCharacter=20.000000
+RepFrequency_WheeledVehicle=100.000000
+RepFrequency_FloatingVehicle=30.000000
+RepFrequency_Parachute=15.000000
+RepFrequency_Aircraft=10.000000
+RepFrequency_CarePackage=10.000000
+RepFrequency_CanBeDamagedItemGroup=3.000000
+CustomNetUpdateRateMap=((2, 5.000000),(1, 10.000000))
+DemoMaxRecordHz_Character=0.000000
+DemoMaxRecordHz_NpcCharacter=0.000000
+DemoMaxRecordHz_WheeledVehicle=30.000000
+DemoMaxRecordHz_FloatingVehicle=30.000000
+RepVehicle_SpawnDistance=50000.000000
+RepVehicle_UnspawnDistance=75000.000000
+RepVehicle_PhysicErrorCorrection=(LinearDeltaThresholdSq=640000.000000,LinearInterpAlpha=0.200000,LinearRecipFixTime=1.000000,AngularDeltaThreshold=0.628318,AngularInterpAlpha=0.0300000,AngularRecipFixTime=0.1000000,BodySpeedThresholdSq=0.000100)
+RepVehicle_PhysicErrorCorrection_BaseComp=(LinearDeltaThresholdSq=200.000000,LinearInterpAlpha=0.100000,LinearRecipFixTime=3.00000,AngularDeltaThreshold=0.288,AngularInterpAlpha=0.100000,AngularRecipFixTime=3.0000000,BodySpeedThresholdSq=0.0)
+CharacterCorrection_MaxSpeed=640.000000
+CharacterCorrection_MaxSpeedPositionError=192.000000
+CharacterCorrection_ZeroSpeedPositionError=32.000000
+bBattlEyeEnabled=True
+BattlEyeReliablePacketIntervalOnClient=30.000000
+BattlEyeReliablePacketIntervalOnServer=30.000000
+bTPEnabled=False
+bTPEnabledInPIE=False
+bTPLaFPSUpdateStatus=True
+TPLaFPSUpdateStatusPeriodInMs=100.000000
+bAceEnabled=True
+bChineseLicensing=False
+bUseGappLobby=False
+GappLobbyUrl=http://lobbyba.game.qq.com/index.html
+TobiiURL="http://10.10.1.50:5000"
+bIsESportsServer=False
+bKoreanRating=False
+bKakao=False
+bKakaoTest=False
+bIsXenuineRunning=False
+GameStateLogInterval=10.000000
+ServerStatLogInterval=60.000000
+CharacterPositionLogInterval=10.000000
+DestructibleComponentMaxDrawDistance=22500.000000
+CharacterClassToPlay=None
++TestVehicleClasses=/Game/Vehicles/Buggy/BluePrint/Buggy_A_01.Buggy_A_01
++TestVehicleClasses=/Game/Vehicles/Uaz/BluePrint/Uaz_A_01.Uaz_A_01
++TestVehicleClasses=/Game/Vehicles/Dacia/BluePrint/Dacia_A_01_v2.Dacia_A_01_v2
++TestVehicleClasses=/Game/Vehicles/Motorcycle/BluePrint/BP_Motorbike_04_SideCar.BP_Motorbike_04_SideCar
++TestVehicleClasses=/Game/Vehicles/Motorcycle/BluePrint/BP_Motorbike_04.BP_Motorbike_04
++TestVehicleClasses=/Game/Vehicles/Pickup/BluePrint/BP_PickupTruck_A.BP_PickupTruck_A
++TestVehicleClasses=/Game/Vehicles/MiniBus/BluePrint/BP_Van_A_01.BP_Van_A_01
++TestVehicleClasses=/Game/Vehicles/Pickup/BluePrint/BP_PickupTruck_B.BP_PickupTruck_B
++TestVehicleClasses=/Game/Vehicles/Mirado/BluePrint/BP_Mirado_A_02.BP_Mirado_A_02
++TestVehicleClasses=/Game/Vehicles/Mirado/BluePrint/BP_Mirado_Open_03.BP_Mirado_Open_03
++TestVehicleClasses=/Game/Vehicles/Scooter/BluePrint/BP_Scooter.BP_Scooter
++TestVehicleClasses=/Game/Vehicles/TukTukTuk/BluePrint/BP_TukTukTuk.BP_TukTukTuk
++TestVehicleClasses=/Game/Vehicles/Rony/BluePrint/BP_Rony.BP_Rony
++TestVehicleClasses=/Game/Vehicles/Snowmobile/BP_Snowmobile.BP_Snowmobile
++TestVehicleClasses=/Game/Vehicles/Snowbike/BP_Snowbike.BP_Snowbike
++TestVehicleClasses=/Game/Vehicles/LadaNiva/BluePrint/BP_Niva_01.BP_Niva_01
++TestVehicleClasses=/Game/Vehicles/BRDM/BP_BRDM.BP_BRDM
++TestVehicleClasses=/Game/Vehicles/Motorglider/BP_Motorglider.BP_Motorglider
++TestVehicleClasses=/Game/Vehicles/LootTruck/BP_LootTruck.BP_LootTruck
++TestVehicleClasses=/Game/Vehicles/DirtBike/Blueprints/BP_Dirtbike.BP_Dirtbike
++TestVehicleClasses=/Game/Vehicles/CoupeRB/BP_CoupeRB.BP_CoupeRB
++TestVehicleClasses=/Game/Vehicles/ATV/Blueprints/BP_ATV.BP_ATV
++TestVehicleClasses=/Game/Vehicles/ElSolitario/BP_Motorbike_Solitario.BP_Motorbike_Solitario
++TestVehicleClasses=/Game/Vehicles/ElSolitario/BP_Motorbike_Solitario_SideCar.BP_Motorbike_Solitario_SideCar
++TestVehicleClasses=/Game/Vehicles/Pillar_Car/BluePrint/BP_Pillar_Car.BP_Pillar_Car
++TestFloatingVehicleClasses=/Game/Vehicles/Boat_PG117/BluePrint/PG117_A_01.PG117_A_01
++TestFloatingVehicleClasses=/Game/Vehicles/AquaRail/BluePrint/AquaRail_A_01.AquaRail_A_01
++TestFloatingVehicleClasses=/Game/Vehicles/Airboat/BluePrint/Airboat_V2.Airboat_V2
++TestVehicleClasses=/Game/Vehicles/Bicycle/BP/BP_Bicycle.BP_Bicycle
++TestVehicleClasses=/Game/Vehicles/Food_Truck/BluePrint/BP_Food_Truck.BP_Food_Truck
++VehicleConsoleCollisionCurveClasses=/Game/Vehicles/Base_Vehicle/VehicleCollisionCharacterDamageConsole/VehicleCollisionCharacterDamage_Console.VehicleCollisionCharacterDamage_Console
++VehicleConsoleCollisionCurveClasses=/Game/Vehicles/Base_Vehicle/VehicleCollisionCharacterDamageConsole/VehicleCollisionCharacterDamage_Console_1.VehicleCollisionCharacterDamage_Console_1
++VehicleConsoleCollisionCurveClasses=/Game/Vehicles/Base_Vehicle/VehicleCollisionCharacterDamageConsole/VehicleCollisionCharacterDamage_Console_2.VehicleCollisionCharacterDamage_Console_2
++ChineseLicensingDefaultCustomizeData=(CustomizableObjectGroupName="Torso",EquipableItem=BlueprintGeneratedClass'/Game/Item/Equip/Item_Body_F_04.Item_Body_F_04_C')
++ChineseLicensingDefaultCustomizeData=(CustomizableObjectGroupName="Legs",EquipableItem=BlueprintGeneratedClass'/Game/Item/Equip/Item_Legs_C_02.Item_Legs_C_02_C')
+StoppedWheeledVehicleSpeedThreshold=0.500000
+StoppedFloatingVehicleSpeedThreshold=2.000000
+LastDriverDuration=10.000000
+SkinDataTableSet=((Skin_Parachute, /Game/Item/Skin/Parachute/ParachuteSkinDB.ParachuteSkinDB),(Skin_Weapon, /Game/Item/Skin/Weapon/WeaponSkinDB.WeaponSkinDB),(Skin_Equipment, /Game/Item/Skin/Equip/EquipSkinDB.EquipSkinDB),(Skin_Vehicle, /Game/Item/Skin/Vehicle/VehicleSkinDB.VehicleSkinDB),(Skin_Throwable, /Game/Item/Skin/Throwables/ThrowableSkinDB.ThrowableSkinDB))
+RestrictedSkinDataTable_Console=/Game/Item/Skin/Console_VestedSkinDB
++TestSkinClasses=/Game/Item/Skin/Weapon/Item_Skin_HK416_Rosewood_01.Item_Skin_HK416_Rosewood_01
++TestSkinClasses=/Game/Item/Skin/Weapon/Item_Skin_AK47_Glory_01.Item_Skin_AK47_Glory_01
++TestSkinClasses=/Game/Item/Skin/Weapon/Item_Skin_M16A1_Bstat_01.Item_Skin_M16A1_Bstat_01
++TestSkinClasses=/Game/Item/Skin/Parachute/Item_Skin_Parachute_Test.Item_Skin_Parachute_Test
++TestVehicleSkinClasses=/Game/Item/Skin/Vehicle/Item_Skin_Uaz_WhiteTiger.Item_Skin_Uaz_WhiteTiger
++TestVehicleSkinClasses=/Game/Item/Skin/Vehicle/Item_Skin_Uaz_Test.Item_Skin_Uaz_Test
++TestMaleGearClasses=Item_Back_C_01_Lv3_C
++TestMaleGearClasses=Item_Weapon_SCAR-L_C
++TestMaleGearClasses=Item_Weapon_AK47_C
++TestMaleGearClasses=Item_Weapon_M9_C
++TestMaleGearClasses=Item_Weapon_Pan_C
++TestMaleGearClasses=Item_Ammo_556mm_C
++TestMaleGearClasses=Item_Ammo_762mm_C
++TestMaleGearClasses=Item_Ammo_9mm_C
++TestMaleGearClasses=Item_Armor_D_01_Lv2_C
++TestMaleGearClasses=Item_Legs_C_04_C
++TestMaleGearClasses=Item_Jacket_PJ_01_C
++TestMaleGearClasses=Item_Feet_TW_01_C
++TestMaleGearClasses=Item_Body_TW_01_C
++TestMaleGearClasses=Item_Head_C_02_C
++TestFemaleGearClasses=Item_Back_C_01_Lv3_C
++TestFemaleGearClasses=Item_Weapon_UMP_C
++TestFemaleGearClasses=Item_Weapon_HK416_C
++TestFemaleGearClasses=Item_Weapon_M1911_C
++TestFemaleGearClasses=Item_Weapon_Machete_C
++TestFemaleGearClasses=Item_Ammo_556mm_C
++TestFemaleGearClasses=Item_Ammo_45ACP_C
++TestFemaleGearClasses=Item_Ammo_9mm_C
++TestFemaleGearClasses=Item_Armor_D_01_Lv2_C
++TestFemaleGearClasses=Item_Legs_C_04_C
++TestFemaleGearClasses=Item_Jacket_PJ_01_C
++TestFemaleGearClasses=Item_Feet_TW_01_C
++TestFemaleGearClasses=Item_Body_TW_01_C
++TestFemaleGearClasses=Item_Head_C_02_C
+TestMaleCustomizationOptions=(("NudeBody", "M_Normal"),("Hair", "M_Hair_K_01"),("Face", "M_Normal"),("Makeup", "M_Makeup_004"))
+TestFemaleCustomizationOptions=(("NudeBody", "F_Normal"),("Hair", "F_Hair_J_01"),("Face", "F_Normal"),("Makeup", "F_Makeup_001"))
+bSupportedSkin=True
+MasteryDataTableSet=((Charm, /Game/Item/WeaponMastery/Charm/MasteryCharmDB.MasteryCharmDB))
+InteractableDistanceToleranceOnDedicatedServer=800.000000
+InteractableDistance_ItemDefault=200.000000
+InteractableDistance_ItemProjectileDefault=400.000000
+InteractableSpeed_ItemDefault=600.000000
+InteractionCollisionForFPS=(CapsuleHalfHeight=200.000000,CapsuleRadius=80.000000,CapsuleOffset=(X=0.000000,Y=0.000000,Z=0.000000))
+InteractionCollisionForTPS=(CapsuleHalfHeight=200.000000,CapsuleRadius=100.000000,CapsuleOffset=(X=0.000000,Y=0.000000,Z=-150.000000))
+TracerManagerClass=BlueprintGeneratedClass'/Game/Export_Marek/BP_TracerManager.BP_TracerManager_C'
+GameplayTracerManagerClass=BlueprintGeneratedClass'/Game/Blueprints/GameplayTracers/BP_GameplayTracerManager.BP_GameplayTracerManager_C'
+WorldMarkerManagerClass=BlueprintGeneratedClass'/Game/Blueprints/WorldMarker/TslWorldMarkerManager_BP.TslWorldMarkerManager_BP_C'
+TimeBetweenTracers=0.200000
+bEnableInitialItemDonator=True
+InventoryMaxSpaceDefault=20.000000
+MaxDrawDistance_Item=5000.000000
+MaxDrawDistance_CanBeDamagedItem=15000.000000
+UICrosshairDistance=500.000000
+UICrosshairInterpSpeed=10.000000
+UICrosshairDisableDistance=200.000000
+BallisticDragScale=1.000000
+BallisticDropScale=1.000000
+BallisticMOAScale=1.000000
+RecoilControlScaleTotal=1.000000
+RecoilControlScaleTotalGamepad=0.500000
+RecoilControlScaleX=1.000000
+RecoilControlScaleY=1.000000
+ConsoleRecoilAlpha=0.000000
+RecoilAnimScale=1.000000
+RecoilAnimScaleGamepad=0.500000
+ForceTickPoseDistance_Weapon=2000.000000
+GameTimeMultiplier=1.000000
+AimOffsetRayCast=True
+MeleeWeaponPitchMin=-40.000000
+MeleeWeaponPitchMax=15.000000
+EnableThrowLagCompensation=True
+FullRecoilRecovery=False
+OpenWaypoint=True
+OpenEngageHint=True
+LevelLoadingBoostParameters=(AsyncLoadingTimeLimit=100.000000,PriorityAsyncLoadingExtraTime=200.000000,LevelStreamingActorsUpdateTimeLimit=5.000000,LevelStreamingComponentsRegistrationGranularity=50)
++ErangelIgnoreWeatherIds=Rainy
++ErangelIgnoreWeatherIds=Foggy
++LevelNamesUsingSeperateGamma=Baltic_Main
++LevelNamesUsingSeperateGamma=Desert_Main
++LevelNamesUsingSeperateGamma=Savage_Main
++LevelNamesUsingSeperateGamma=DihorOtok_Main
++LevelNamesUsingSeperateGamma=Summerland_Main
++LevelNamesUsingSeperateGamma=Chimera_Main
++LevelNamesUsingSeperateGamma=Tiger_Main
++LevelNamesUsingSeperateGamma=Kiki_Main
++LevelNamesUsingSeperateGamma=Heaven_Main
++NearClippingValues=(Level=Low,Value=50.000000)
++NearClippingValues=(Level=Middle,Value=100.000000)
++NearClippingValues=(Level=High,Value=300.000000)
++CustomizableCategoryData=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_108", "UI"),Category="UI",NotDuplicateCategoryNames=("UI"))
++CustomizableCategoryData=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_109", "COMBAT"),Category="Combat",NotDuplicateCategoryNames=("Combat"))
++CustomizableCategoryData=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_110", "DRIVING"),Category="Driving",NotDuplicateCategoryNames=("Driving"))
++CustomizableCategoryData=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_111", "TEAM SPECTATOR MODE"),Category="TeamSpectator",NotDuplicateCategoryNames=("TeamSpectator"))
++CustomizableCategoryData=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_112", "OBSERVER MODE"),Category="Observer",NotDuplicateCategoryNames=("Observer"))
++CustomizableCategoryData=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_113", "SWIMMING"),Category="Swimming",NotDuplicateCategoryNames=("Swimming"))
++CustomizableCategoryData=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_114", "COMMON"),Category="Common",NotDuplicateCategoryNames=("Common"))
++CustomizableCategoryData=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_115", "ITEM"),Category="Item",NotDuplicateCategoryNames=("Item"))
++CustomizableCategoryData=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_116", "SOUND"),Category="Sound",NotDuplicateCategoryNames=("Sound"))
++CustomizableCategoryData=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_117", "THROWING"),Category="Throwing",NotDuplicateCategoryNames=("Throwing"))
++CustomizableCategoryData=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_118", "SEAT CHANGE"),Category="SeatChange",NotDuplicateCategoryNames=("SeatChange"))
++CustomizableCategoryData=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_119", "MOTORCYCLE"),Category="Motorcycle",NotDuplicateCategoryNames=("Motorcycle"))
++CustomizableCategoryData=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_120", "ADS"),Category="ADS",NotDuplicateCategoryNames=("ADS"))
++CustomizableCategoryData=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_121", "REPLAY"),Category="Replay",NotDuplicateCategoryNames=("Replay"))
++CustomizableActionNames=(Category="Observer",ActionName="FollowOrFreeCamZoomInit",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_122", "Cam Zoom Reset"))
++CustomizableActionNames=(Category="Combat",ActionName="Fire",DisplayName=NSLOCTEXT("", "K_CLEANKEY_123", "Fire"))
++CustomizableActionNames=(Category="Combat",ActionName="Targeting",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_124", "Aim / ADS"))
++CustomizableActionNames=(Category="Combat",ActionName="Aim",DisplayName=NSLOCTEXT("", "K_CLEANKEY_125", "Aim"))
++CustomizableActionNames=(Category="Combat",ActionName="ADS",DisplayName=NSLOCTEXT("", "K_CLEANKEY_126", "ADS"))
++CustomizableActionNames=(Category="Combat",ActionName="Reload",DisplayName=NSLOCTEXT("", "K_CLEANKEY_127", "Reload"))
++CustomizableActionNames=(Category="Combat",ActionName="NextWeapon",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_128", "Next Weapon"))
++CustomizableActionNames=(Category="Combat",ActionName="PrevWeapon",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_129", "Previous Weapon"))
++CustomizableActionNames=(Category="Common",ActionName="Walk",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_130", "Walk / Glide"))
++CustomizableActionNames=(Category="Common",ActionName="Sprint",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_131", "Sprint / Fast Descent"))
++CustomizableActionNames=(Category="Common",ActionName="Jump",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_132", "Jump / Vault"))
++CustomizableActionNames=(Category="Common",ActionName="JumpOnly",DisplayName=NSLOCTEXT("", "K_CLEANKEY_133", "Jump Only"))
++CustomizableActionNames=(Category="Common",ActionName="VaultOnly",DisplayName=NSLOCTEXT("", "K_CLEANKEY_134", "Vault Only"))
++CustomizableActionNames=(Category="Common",ActionName="ToggleCrouch",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_135", "Crouch"))
++CustomizableActionNames=(Category="Common",ActionName="ToggleProne",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_136", "Prone"))
++CustomizableActionNames=(Category="Common",ActionName="ReplaceAttachment",DisplayName=INVTEXT("ReplaceAttachment"))
++CustomizableActionNames=(Category="Combat",ActionName="Weapon_1",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_137", "Primary Weapon 1"))
++CustomizableActionNames=(Category="Combat",ActionName="Weapon_2",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_138", "Primary Weapon 2"))
++CustomizableActionNames=(Category="Combat",ActionName="Weapon_3",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_139", "Side Arm"))
++CustomizableActionNames=(Category="Combat",ActionName="Weapon_4",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_140", "Melee Weapon"))
++CustomizableActionNames=(Category="Combat",ActionName="Weapon_5",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_141", "Throwables"))
++CustomizableActionNames=(Category="Combat",ActionName="ToggleFiringMode",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_142", "Toggle Firing Mode"))
++CustomizableActionNames=(Category="Throwing",ActionName="ToggleQuickThrow",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_143", "Toggle Throwing Stance"))
++CustomizableActionNames=(Category="Throwing",ActionName="StartCookingThrowable",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_144", "Cook Grenade"))
++CustomizableActionNames=(Category="ADS",ActionName="ScopeZoomIn",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_145", "Scope Zoom In"))
++CustomizableActionNames=(Category="ADS",ActionName="ScopeZoomOut",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_146", "Scope Zoom Out"))
++CustomizableActionNames=(Category="ADS",ActionName="ReticleBrightnessUp",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_147", "Reticle Brightness Up"))
++CustomizableActionNames=(Category="ADS",ActionName="ReticleBrightnessDown",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_148", "Reticle Brightness Down"))
++CustomizableActionNames=(Category="SeatChange",ActionName="ToVehicleSeat_1",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_149", "Vehicle Seat 1"))
++CustomizableActionNames=(Category="SeatChange",ActionName="ToVehicleSeat_2",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_150", "Vehicle Seat 2"))
++CustomizableActionNames=(Category="SeatChange",ActionName="ToVehicleSeat_3",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_151", "Vehicle Seat 3"))
++CustomizableActionNames=(Category="SeatChange",ActionName="ToVehicleSeat_4",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_152", "Vehicle Seat 4"))
++CustomizableActionNames=(Category="SeatChange",ActionName="ToVehicleSeat_5",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_153", "Vehicle Seat 5"))
++CustomizableActionNames=(Category="SeatChange",ActionName="ToVehicleSeat_6",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_154", "Vehicle Seat 6"))
++CustomizableActionNames=(Category="SeatChange",ActionName="ToVehicleSeat_7",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_155", "Vehicle Seat 7"))
++CustomizableActionNames=(Category="SeatChange",ActionName="ToVehicleSeat_8",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_156", "Vehicle Seat 8"))
++CustomizableActionNames=(Category="SeatChange",ActionName="ToVehicleSeat_9",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_157", "Vehicle Seat 9"))
++CustomizableActionNames=(Category="SeatChange",ActionName="ToVehicleSeat_10",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_158", "Vehicle Seat 10"))
++CustomizableActionNames=(Category="Driving",ActionName="Handbrake",DisplayName=NSLOCTEXT("", "K_CLEANKEY_159", "Handbrake"))
++CustomizableActionNames=(Category="Common",ActionName="Interact",DisplayName=NSLOCTEXT("", "K_CLEANKEY_160", "Interact"))
++CustomizableActionNames=(Category="UI",ActionName="ToggleMap",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_161", "Map"))
++CustomizableActionNames=(Category="UI",ActionName="ToggleExtendedMinimap",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_162", "Extended Minimap"))
++CustomizableActionNames=(Category="UI",ActionName="ToggleInventory",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_163", "Inventory"))
++CustomizableActionNames=(Category="Common",ActionName="ToggleCamera",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_164", "Toggle Camera"))
++CustomizableActionNames=(Category="Sound",ActionName="PushToTalk",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_165", "Push To Talk"))
++CustomizableActionNames=(Category="Sound",ActionName="ToggleMuteVoiceChat",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_166", "Mute Voice Chat"))
++CustomizableActionNames=(Category="ADS",ActionName="IncreaseZeroing",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_167", "Increase Zeroing"))
++CustomizableActionNames=(Category="ADS",ActionName="DecreaseZeroing",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_168", "Decrease Zeroing"))
++CustomizableActionNames=(Category="Common",ActionName="ToggleAutoRun",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_169", "Auto Run"))
++CustomizableActionNames=(Category="Common",ActionName="HoldRotation",DisplayName=NSLOCTEXT("", "K_CLEANKEY_170", "Freelook"))
++CustomizableActionNames=(Category="Item",ActionName="UseMedKit",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_171", "Use Med Kit"))
++CustomizableActionNames=(Category="Item",ActionName="UseFirstAid",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_172", "Use First Aid Kit"))
++CustomizableActionNames=(Category="Item",ActionName="UseBandage",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_173", "Use Bandage"))
++CustomizableActionNames=(Category="Item",ActionName="UseBoostItem",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_174", "Use Boost Item"))
++CustomizableActionNames=(Category="UI",ActionName="ItemStackCountHandling",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_175", "Item Quantity Control"))
++CustomizableActionNames=(Category="Driving",ActionName="VehicleBoost",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_176", "Boost"))
++CustomizableActionNames=(Category="UI",ActionName="ToggleUI",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_177", "Toggle UI"))
++CustomizableActionNames=(Category="Combat",ActionName="PeekLeft",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_178", "Peek Left"))
++CustomizableActionNames=(Category="Combat",ActionName="PeekRight",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_179", "Peek Right"))
++CustomizableActionNames=(Category="Combat",ActionName="Unarm",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_180", "Unarm"))
++CustomizableActionNames=(Category="TeamSpectator",ActionName="PreviousPlayer",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_181", "Previous Player"))
++CustomizableActionNames=(Category="TeamSpectator",ActionName="NextPlayer",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_182", "Next Player"))
++CustomizableActionNames=(Category="ADS",ActionName="HoldBreath",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_183", "Hold Breath"))
++CustomizableActionNames=(Category="UI",ActionName="DeleteMyMarker",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_184", "Delete My Marker"))
++CustomizableActionNames=(Category="Driving",ActionName="Horn",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_185", "Horn"))
++CustomizableActionNames=(Category="Combat",ActionName="UseGrenade",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_186", "Use Grenade"))
++CustomizableActionNames=(Category="Combat",ActionName="UseFlashBang",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_187", "Use Stun Grenade"))
++CustomizableActionNames=(Category="Combat",ActionName="UseSmokeBomb",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_188", "Use Smoke Grenade"))
++CustomizableActionNames=(Category="Combat",ActionName="UseMolotov",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_189", "Use Molotov"))
++CustomizableActionNames=(Category="Sound",ActionName="ToggleMuteMasterVolume",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_190", "Mute Master Volume"))
++CustomizableActionNames=(Category="Sound",ActionName="SwitchVoiceChannel",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_191", "Switch Voice Channel"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverFastMove",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_192", "Increase Camera Speed"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSlowMove",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_193", "Decrease Camera Speed"))
++CustomizableActionNames=(Category="Observer",ActionName="ToggleObseverTagWidget",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_194", "Toggle Player Tag"))
++CustomizableActionNames=(Category="Observer",ActionName="ToggleX-Ray",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_195", "Toggle X-Ray"))
++CustomizableActionNames=(Category="Observer",ActionName="ToggleFreeCameraLag",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_196", "Toggle Smooth Free Cam"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveLocation1",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_197", "Save Position 1"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveLocation2",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_198", "Save Position 2"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveLocation3",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_199", "Save Position 3"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveLocation4",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_200", "Save Position 4"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveLocation5",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_201", "Save Position 5"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveLocation6",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_202", "Save Position 6"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveLocation7",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_203", "Save Position 7"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveLocation8",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_204", "Save Position 8"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveLocation9",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_205", "Save Position 9"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveLocation0",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_206", "Save Position 10"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetLocation1",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_207", "Move To Saved Position 1"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetLocation2",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_208", "Move To Saved Position 2"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetLocation3",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_209", "Move To Saved Position 3"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetLocation4",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_210", "Move To Saved Position 4"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetLocation5",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_211", "Move To Saved Position 5"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetLocation6",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_212", "Move To Saved Position 6"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetLocation7",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_213", "Move To Saved Position 7"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetLocation8",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_214", "Move To Saved Position 8"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetLocation9",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_215", "Move To Saved Position 9"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetLocation0",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_216", "Move To Saved Position 10"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter1",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_217", "Save Player 1"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter2",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_218", "Save Player 2"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter3",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_219", "Save Player 3"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter4",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_220", "Save Player 4"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter5",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_221", "Save Player 5"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter6",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_222", "Save Player 6"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter7",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_223", "Save Player 7"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter8",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_224", "Save Player 8"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter9",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_225", "Save Player 9"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter10",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_226", "Save Player 10"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter11",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_227", "Save Player 11"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter12",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_228", "Save Player 12"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter13",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_229", "Save Player 13"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter14",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_230", "Save Player 14"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter15",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_231", "Save Player 15"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter16",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_232", "Save Player 16"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter17",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_233", "Save Player 17"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter18",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_234", "Save Player 18"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter19",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_235", "Save Player 19"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSaveCharacter20",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_236", "Save Player 20"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec1",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_237", "Spectate Saved Player 1"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec2",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_238", "Spectate Saved Player 2"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec3",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_239", "Spectate Saved Player 3"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec4",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_240", "Spectate Saved Player 4"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec5",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_241", "Spectate Saved Player 5"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec6",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_242", "Spectate Saved Player 6"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec7",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_243", "Spectate Saved Player 7"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec8",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_244", "Spectate Saved Player 8"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec9",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_245", "Spectate Saved Player 9"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec10",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_246", "Spectate Saved Player 10"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec11",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_247", "Spectate Saved Player 11"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec12",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_248", "Spectate Saved Player 12"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec13",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_249", "Spectate Saved Player 13"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec14",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_250", "Spectate Saved Player 14"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec15",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_251", "Spectate Saved Player 15"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec16",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_252", "Spectate Saved Player 16"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec17",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_253", "Spectate Saved Player 17"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec18",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_254", "Spectate Saved Player 18"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec19",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_255", "Spectate Saved Player 19"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetCharacterSpec20",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_256", "Spectate Saved Player 20"))
++CustomizableActionNames=(Category="Observer",ActionName="SwitchCameraSpectator",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_257", "Spectator Cam"))
++CustomizableActionNames=(Category="Observer",ActionName="SwitchCameraFollow",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_258", "Follow Cam"))
++CustomizableActionNames=(Category="Observer",ActionName="ObserverSetFree",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_259", "Free Cam"))
++CustomizableActionNames=(Category="Observer",ActionName="ToggleTracerDisplay",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_260", "Toggle Tracer Display"))
++CustomizableActionNames=(Category="Observer",ActionName="ToggleTracerColor",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_261", "Toggle Tracer Team Color"))
++CustomizableActionNames=(Category="Observer",ActionName="NextTracerType",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_262", "Cycle Tracer Display Mode"))
++CustomizableActionNames=(Category="UI",ActionName="ToggleOption",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_263", "Toggle Options"))
++CustomizableActionNames=(Category="ADS",ActionName="ResetZeroing",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_264", "Reset Zeroing"))
++CustomizableActionNames=(Category="UI",ActionName="SetMapMarkerAtCurrentPosition",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_265", "Mark My Location"))
++CustomizableActionNames=(Category="Item",ActionName="UseHealItem",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_266", "Use Heal Item"))
++CustomizableActionNames=(Category="Item",ActionName="UseAdrenaline",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_267", "Use Adrenaline Syringe"))
++CustomizableActionNames=(Category="Item",ActionName="UsePainKiller",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_268", "Use Painkiller"))
++CustomizableActionNames=(Category="Item",ActionName="UseEnergyDrink",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_269", "Use Energy Drink"))
++CustomizableActionNames=(Category="Observer",ActionName="TogglePlayerList",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_270", "Player List"))
++CustomizableActionNames=(Category="Observer",ActionName="PlayerInfoDistanceUp",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_271", "Increase Player Tag Visibility Range"))
++CustomizableActionNames=(Category="Observer",ActionName="PlayerInfoDistanceDown",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_272", "Decrease Player Tag Visibility Range"))
++CustomizableActionNames=(Category="Observer",ActionName="ShowCarePackageItemList",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_273", "Show Carepackage"))
++CustomizableActionNames=(Category="Replay",ActionName="ToggleReplayTimeline",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_274", "Toggle Timeline"))
++CustomizableActionNames=(Category="Replay",ActionName="ReplayTogglePause",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_275", "Toggle Pause"))
++CustomizableActionNames=(Category="Replay",ActionName="SpectateLocalReplayPlayer",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_276", "Return to Recorded Player"))
++CustomizableActionNames=(Category="Replay",ActionName="ReplaySpeedUp",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_277", "Increase Play Speed"))
++CustomizableActionNames=(Category="Replay",ActionName="ReplaySpeedDown",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_278", "Decrease Play Speed"))
++CustomizableActionNames=(Category="UI",ActionName="ToggleThrowableItemWheel",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_279", "Throwable Items"))
++CustomizableActionNames=(Category="UI",ActionName="ToggleHealItemWheel",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_280", "Heal Items"))
++CustomizableActionNames=(Category="UI",ActionName="ToggleEmoteWheel",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_281", "Emotes"))
++CustomizableActionNames=(Category="UI",ActionName="EmoteHK1",DisplayName=LOCTABLE("/Game/Animations/Battlegrounds/Anims/Emotes/ST_emotes.ST_Emotes", "EmoteHotKey1"))
++CustomizableActionNames=(Category="UI",ActionName="EmoteHK2",DisplayName=LOCTABLE("/Game/Animations/Battlegrounds/Anims/Emotes/ST_emotes.ST_Emotes", "EmoteHotKey2"))
++CustomizableActionNames=(Category="UI",ActionName="EmoteHK3",DisplayName=LOCTABLE("/Game/Animations/Battlegrounds/Anims/Emotes/ST_emotes.ST_Emotes", "EmoteHotKey3"))
++CustomizableActionNames=(Category="UI",ActionName="EmoteHK4",DisplayName=LOCTABLE("/Game/Animations/Battlegrounds/Anims/Emotes/ST_emotes.ST_Emotes", "EmoteHotKey4"))
++CustomizableActionNames=(Category="UI",ActionName="EmoteHK5",DisplayName=LOCTABLE("/Game/Animations/Battlegrounds/Anims/Emotes/ST_emotes.ST_Emotes", "EmoteHotKey5"))
++CustomizableActionNames=(Category="UI",ActionName="EmoteHK6",DisplayName=LOCTABLE("/Game/Animations/Battlegrounds/Anims/Emotes/ST_emotes.ST_Emotes", "EmoteHotKey6"))
++CustomizableActionNames=(Category="UI",ActionName="EmoteHK7",DisplayName=LOCTABLE("/Game/Animations/Battlegrounds/Anims/Emotes/ST_emotes.ST_Emotes", "EmoteHotKey7"))
++CustomizableActionNames=(Category="UI",ActionName="EmoteHK8",DisplayName=LOCTABLE("/Game/Animations/Battlegrounds/Anims/Emotes/ST_emotes.ST_Emotes", "EmoteHotKey8"))
++CustomizableActionNames=(Category="UI",ActionName="EmoteHK9",DisplayName=LOCTABLE("/Game/Animations/Battlegrounds/Anims/Emotes/ST_emotes.ST_Emotes", "EmoteHotKey9"))
++CustomizableActionNames=(Category="UI",ActionName="EmoteHK10",DisplayName=LOCTABLE("/Game/Animations/Battlegrounds/Anims/Emotes/ST_emotes.ST_Emotes", "EmoteHotKey10"))
++CustomizableActionNames=(Category="UI",ActionName="EmoteHK11",DisplayName=LOCTABLE("/Game/Animations/Battlegrounds/Anims/Emotes/ST_emotes.ST_Emotes", "EmoteHotKey11"))
++CustomizableActionNames=(Category="UI",ActionName="EmoteHK12",DisplayName=LOCTABLE("/Game/Animations/Battlegrounds/Anims/Emotes/ST_emotes.ST_Emotes", "EmoteHotKey12"))
++CustomizableActionNames=(Category="TeamSpectator",ActionName="ReportToggle",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_282", "Report Player"))
++CustomizableActionNames=(Category="Observer",ActionName="ThirdPersonSpectate",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_283", "ThirdPerson Spectate"))
++CustomizableActionNames=(Category="UI",ActionName="SetPingAtViewingTarget",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_284", "Quick Marker"))
++CustomizableActionNames=(Category="UI",ActionName="ToggleKeyHint",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_285", "Toggle Key Hint"))
++CustomizableActionNames=(Category="ADS",ActionName="HoldAngled",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_287", "Toggle Canted Sights"))
++CustomizableActionNames=(Category="Observer",ActionName="ToggleDamageIndicator",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_288", "Toggle Damage Indicator"))
++CustomizableActionNames=(Category="Observer",ActionName="TogglePlayerStat",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_289", "Toggle Player Stats"))
++CustomizableActionNames=(Category="Combat",ActionName="WeaponInspection",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_290", "Inspect Weapon"))
++CustomizableActionNames=(Category="Combat",ActionName="UseSpikeTrap",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_291", "Use Spike Trap"))
++CustomizableActionNames=(Category="Combat",ActionName="UseStickyBomb",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_292", "Use Sticky Bomb"))
++CustomizableActionNames=(Category="Combat",ActionName="UseC4",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_293", "Use C4"))
++CustomizableActionNames=(Category="Combat",ActionName="UseDecoyGrenade",DisplayName=NSLOCTEXT("[/Script/TslGame]", "", "Use Decoy Grenade"))
++CustomizableActionNames=(Category="UI",ActionName="ToggleVehicleSelectWidget",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_358", "VehicleSelectWidget"))
++CustomizableAxisNames=(Category="Common",AxisName="MoveForward",DisplayName=NSLOCTEXT("", "K_CLEANKEY_294", "Move Forward"),Scale=1.000000)
++CustomizableAxisNames=(Category="Common",AxisName="MoveForward",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_295", "Move Backward"),Scale=-1.000000)
++CustomizableAxisNames=(Category="Common",AxisName="MoveRight",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_296", "Strafe Right"),Scale=1.000000)
++CustomizableAxisNames=(Category="Common",AxisName="MoveRight",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_297", "Strafe Left"),Scale=-1.000000)
++CustomizableAxisNames=(Category="Driving",AxisName="VehicleMoveForward",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_298", "Accelerate"),Scale=1.000000)
++CustomizableAxisNames=(Category="Driving",AxisName="VehicleMoveForward",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_299", "Brake / Reverse"),Scale=-1.000000)
++CustomizableAxisNames=(Category="Driving",AxisName="VehicleMoveRight",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_300", "Turn Right"),Scale=1.000000)
++CustomizableAxisNames=(Category="Driving",AxisName="VehicleMoveRight",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_301", "Turn Left"),Scale=-1.000000)
++CustomizableAxisNames=(Category="Motorcycle",AxisName="AirControlPitch",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_302", "Air Control Pitch Up"),Scale=1.000000)
++CustomizableAxisNames=(Category="Motorcycle",AxisName="AirControlPitch",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_303", "Air Control Pitch Down"),Scale=-1.000000)
++CustomizableAxisNames=(Category="Motorcycle",AxisName="AirControlRoll",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_304", "Air Control Roll Right"),Scale=1.000000)
++CustomizableAxisNames=(Category="Motorcycle",AxisName="AirControlRoll",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_305", "Air Control Roll Left"),Scale=-1.000000)
++CustomizableAxisNames=(Category="Observer",AxisName="ObserverMoveUp",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_306", "Free Cam Move Up"),Scale=1.000000)
++CustomizableAxisNames=(Category="Observer",AxisName="ObserverMoveUp",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_307", "Free Cam Move Down"),Scale=-1.000000)
++CustomizableAxisNames=(Category="Swimming",AxisName="MoveUp",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_308", "Swim Up"),Scale=1.000000)
++CustomizableAxisNames=(Category="Swimming",AxisName="MoveUp",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_309", "Swim Down"),Scale=-1.000000)
++CustomizableMouseSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_310", "General Sensitivity"),MouseSensitiveName="Normal",MouseSensitivity=50.000000)
++CustomizableMouseSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_311", "Targeting Sensitivity"),MouseSensitiveName="Targeting",MouseSensitivity=50.000000)
++CustomizableMouseSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_312", "Iron-sight Sensitivity"),MouseSensitiveName="Scoping",MouseSensitivity=50.000000)
++CustomizableMouseSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_313", "Scoping"),MouseSensitiveName="ScopingMagnified",MouseSensitivity=50.000000)
++CustomizableMouseSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_314", "2X Scope Sensitivity"),MouseSensitiveName="Scope2X",MouseSensitivity=50.000000)
++CustomizableMouseSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_315", "3X Scope Sensitivity"),MouseSensitiveName="Scope3X",MouseSensitivity=50.000000)
++CustomizableMouseSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_316", "4X Scope Sensitivity"),MouseSensitiveName="Scope4X",MouseSensitivity=50.000000)
++CustomizableMouseSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_317", "6X Scope Sensitivity"),MouseSensitiveName="Scope6X",MouseSensitivity=50.000000)
++CustomizableMouseSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_318", "8X Scope Sensitivity"),MouseSensitiveName="Scope8X",MouseSensitivity=50.000000)
++CustomizableMouseSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_319", "15X Scope Sensitivity"),MouseSensitiveName="Scope15X",MouseSensitivity=50.000000)
++NamedFovList=(SensitiveName="Scope2X",FOV=40.000000)
++NamedFovList=(SensitiveName="Scope3X",FOV=26.666666)
++NamedFovList=(SensitiveName="Scope4X",FOV=19.000000)
++NamedFovList=(SensitiveName="Scope6X",FOV=13.333333)
++NamedFovList=(SensitiveName="Scope8X",FOV=10.000000)
++NamedFovList=(SensitiveName="Scope15X",FOV=6.666667)
++CustomizableGamePadSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_320", "General Sensitivity"),GamePadSensitiveName="Normal",GamePadSensitivity=5.000000,GamePadCurve=CurveFloat'/Game/Blueprints/UI/Option/Key/GamePad_Normal_SensitiveCurve.GamePad_Normal_SensitiveCurve')
++CustomizableGamePadSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_321", "Vehicle Driver Sensitivity"),GamePadSensitiveName="VehicleDriver",GamePadSensitivity=5.000000,GamePadCurve=CurveFloat'/Game/Blueprints/UI/Option/Key/GamePad_Vehicle_SensitiveCurve.GamePad_Vehicle_SensitiveCurve')
++CustomizableGamePadSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_322", "Targeting Sensitivity"),GamePadSensitiveName="Targeting",GamePadSensitivity=5.000000,GamePadCurve=CurveFloat'/Game/Blueprints/UI/Option/Key/GamePad_Targeting_SensitiveCurve.GamePad_Targeting_SensitiveCurve')
++CustomizableGamePadSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_323", "Iron-sight Sensitivity"),GamePadSensitiveName="Scoping",GamePadSensitivity=5.000000,GamePadCurve=CurveFloat'/Game/Blueprints/UI/Option/Key/GamePad_Scope_SensitiveCurve.GamePad_Scope_SensitiveCurve')
++CustomizableGamePadSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_324", "Scoping"),GamePadSensitiveName="ScopingMagnified",GamePadSensitivity=5.000000,GamePadCurve=CurveFloat'/Game/Blueprints/UI/Option/Key/GamePad_Scope_SensitiveCurve.GamePad_Scope_SensitiveCurve')
++CustomizableGamePadSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_325", "2X Scope Sensitivity"),GamePadSensitiveName="Scope2X",GamePadSensitivity=5.000000,GamePadCurve=CurveFloat'/Game/Blueprints/UI/Option/Key/GamePad_ScopeX2_SensitiveCurve.GamePad_ScopeX2_SensitiveCurve')
++CustomizableGamePadSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_326", "3X Scope Sensitivity"),GamePadSensitiveName="Scope3X",GamePadSensitivity=5.000000,GamePadCurve=CurveFloat'/Game/Blueprints/UI/Option/Key/GamePad_ScopeX3_SensitiveCurve.GamePad_ScopeX3_SensitiveCurve')
++CustomizableGamePadSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_327", "4X Scope Sensitivity"),GamePadSensitiveName="Scope4X",GamePadSensitivity=5.000000,GamePadCurve=CurveFloat'/Game/Blueprints/UI/Option/Key/GamePad_ScopeX4_SensitiveCurve.GamePad_ScopeX4_SensitiveCurve')
++CustomizableGamePadSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_328", "6X Scope Sensitivity"),GamePadSensitiveName="Scope6X",GamePadSensitivity=5.000000,GamePadCurve=CurveFloat'/Game/Blueprints/UI/Option/Key/GamePad_ScopeX6_SensitiveCurve.GamePad_ScopeX6_SensitiveCurve')
++CustomizableGamePadSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_329", "8X Scope Sensitivity"),GamePadSensitiveName="Scope8X",GamePadSensitivity=5.000000,GamePadCurve=CurveFloat'/Game/Blueprints/UI/Option/Key/GamePad_ScopeX8_SensitiveCurve_2.GamePad_ScopeX8_SensitiveCurve_2')
++CustomizableGamePadSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_330", "15X Scope Sensitivity"),GamePadSensitiveName="Scope15X",GamePadSensitivity=5.000000,GamePadCurve=CurveFloat'/Game/Blueprints/UI/Option/Key/GamePad_ScopeX15_SensitiveCurve.GamePad_ScopeX15_SensitiveCurve')
++CustomizableGamePadSensitiveNames=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_331", "Aim Acceleration"),GamePadSensitiveName="AimAcceleration",GamePadSensitivity=0.000000,GamePadCurve=CurveFloat'/Game/Blueprints/UI/Option/Key/GamePad_AimAccelRampUpTimeForTargeting_Curve.GamePad_AimAccelRampUpTimeForTargeting_Curve')
++SupportedQualityLevels=(QualityLevel=0,DisplayQualityLevelName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_332", "Very Low"))
++SupportedQualityLevels=(QualityLevel=1,DisplayQualityLevelName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_333", "Low"))
++SupportedQualityLevels=(QualityLevel=2,DisplayQualityLevelName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_334", "Medium"))
++SupportedQualityLevels=(QualityLevel=3,DisplayQualityLevelName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_335", "High"))
++SupportedQualityLevels=(QualityLevel=4,DisplayQualityLevelName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_336", "Ultra"))
++SupportedScreenResolutions=(Width=800,Height=600)
++SupportedScreenResolutions=(Width=1024,Height=720)
++SupportedScreenResolutions=(Width=1920,Height=1080)
++SupportedScreenResolutions=(Width=3840,Height=2160)
+MouseSensitivityCurve=/Game/Blueprints/UI/Option/Key/MouseSensitiveCurve.MouseSensitiveCurve
+GammaCurve=/Game/Blueprints/UI/Option/Graphic/GammaCurve.GammaCurve
+VibrationCurve=/Game/Effects/ForceFeedback/FFE_VibrationMultiplierCurve.FFE_VibrationMultiplierCurve
+DBNOEffectFadeOutCurve=/Game/Blueprints/Pawns/CustomPawnCurves/Curve_DBNOFadeOut.Curve_DBNOFadeOut
+ReviveEffectCurve=/Game/Blueprints/Pawns/CustomPawnCurves/Curve_Revive.Curve_Revive
+PoisonGasWarningZoneAnimationCurve=/Game/Blueprints/ModeController/PoisonGasWarningZoneAnimationCurve.PoisonGasWarningZoneAnimationCurve
+SpectateTargetViewRotationLerpSpeedCurve=/Game/Blueprints/Pawns/CustomPawnCurves/Curve_ViewTargetRotationLerpSpeed.Curve_ViewTargetRotationLerpSpeed
+BluezoneInSoundAk=/Game/WwiseAssets/BlueZone/BlueZone_In.BlueZone_In
+BluezoneOutSoundAk=/Game/WwiseAssets/BlueZone/BlueZone_Out.BlueZone_Out
+BluezoneBuzzingSoundStartAk=/Game/WwiseAssets/UI/UI_Vostok/UI_Vostok_BluezoneBuzzing.UI_Vostok_BluezoneBuzzing
+BluezoneBuzzingSoundStopAk=/Game/WwiseAssets/UI/UI_Vostok/UI_Vostok_BluezoneBuzzing_Stop.UI_Vostok_BluezoneBuzzing_Stop
+BluezoneBuzzingSoundDistance=2000
+GamePadAimAcceleration=(RampUpTimeForTargetingCurve=CurveFloat'/Game/Blueprints/UI/Option/Key/GamePad_AimAccelRampUpTimeForTargeting_Curve.GamePad_AimAccelRampUpTimeForTargeting_Curve')
++ColorBlindTypes=(Key=Normal,DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_337", "Normal"))
++ColorBlindTypes=(Key=Deuteranopia,DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_338", "Deuteranopia"))
++ColorBlindTypes=(Key=Protanopia,DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_339", "Protanopia"))
++ColorBlindTypes=(Key=Tritanopia,DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_340", "Tritanopia"))
++CrosshairColors=(Color=(R=1.000000,G=1.000000,B=1.000000,A=0.500000),DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_341", "Default"),ColorString="DEFAULT")
++CrosshairColors=(Color=(R=1.000000,G=1.000000,B=1.000000,A=0.500000),DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_342", "Custom"),ColorString="CUSTOM")
++ReticleColors=(ReticleType=RedDot,ColorSet=(ColorSet=((),(Type=Deuteranopia,Color=(R=0.435294,G=0.137255,B=0.996078,A=1.000000)),(Type=Protanopia,Color=(R=0.121569,G=0.203922,B=1.000000,A=1.000000)),(Type=Tritanopia))))
++ReticleColors=(ReticleType=HoloSight,ColorSet=(ColorSet=((Color=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)),(Type=Deuteranopia,Color=(R=0.435294,G=0.137255,B=0.996078,A=1.000000)),(Type=Protanopia,Color=(R=0.121569,G=0.203922,B=1.000000,A=1.000000)),(Type=Tritanopia,Color=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)))))
++ReticleColors=(ReticleType=Scope2x,ColorSet=(ColorSet=((Color=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)),(Type=Deuteranopia,Color=(R=0.435294,G=0.137255,B=0.996078,A=1.000000)),(Type=Protanopia,Color=(R=0.121569,G=0.203922,B=1.000000,A=1.000000)),(Type=Tritanopia,Color=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)))))
++ReticleColors=(ReticleType=Scope3x,ColorSet=(ColorSet=((Color=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)),(Type=Deuteranopia,Color=(R=0.435294,G=0.137255,B=0.996078,A=1.000000)),(Type=Protanopia,Color=(R=0.121569,G=0.203922,B=1.000000,A=1.000000)),(Type=Tritanopia,Color=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)))))
++ReticleColors=(ReticleType=Scope4x,ColorSet=(ColorSet=((Color=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)),(Type=Deuteranopia,Color=(R=0.435294,G=0.137255,B=0.996078,A=1.000000)),(Type=Protanopia,Color=(R=0.121569,G=0.203922,B=1.000000,A=1.000000)),(Type=Tritanopia,Color=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)))))
++ReticleColors=(ReticleType=Scope6x,ColorSet=(ColorSet=((Color=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)),(Type=Deuteranopia,Color=(R=0.435294,G=0.137255,B=0.996078,A=1.000000)),(Type=Protanopia,Color=(R=0.121569,G=0.203922,B=1.000000,A=1.000000)),(Type=Tritanopia,Color=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)))))
++ReticleColors=(ReticleType=Scope8x,ColorSet=(ColorSet=((Color=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)),(Type=Deuteranopia,Color=(R=0.435294,G=0.137255,B=0.996078,A=1.000000)),(Type=Protanopia,Color=(R=0.121569,G=0.203922,B=1.000000,A=1.000000)),(Type=Tritanopia,Color=(R=1.000000,G=1.000000,B=1.000000,A=1.000000)))))
++SeatColorsForState=(SeatState=Empty,ColorSet=(ColorSet=((Color=(R=0.949020,G=0.949020,B=0.949020,A=0.247059)),(Type=Deuteranopia,Color=(R=0.887923,G=0.887923,B=0.887923,A=0.247059)),(Type=Protanopia,Color=(R=0.887923,G=0.887923,B=0.887923,A=0.247059)),(Type=Tritanopia,Color=(R=0.887923,G=0.887923,B=0.887923,A=0.247059)))))
++SeatColorsForState=(SeatState=Player,ColorSet=(ColorSet=((Color=(R=1.000000,G=0.564712,B=0.000000,A=1.000000)),(Type=Deuteranopia,Color=(R=1.000000,G=0.564712,B=0.000000,A=1.000000)),(Type=Protanopia,Color=(R=1.000000,G=0.564712,B=0.000000,A=1.000000)),(Type=Tritanopia,Color=(R=1.000000,G=0.564712,B=0.000000,A=1.000000)))))
++SeatColorsForState=(SeatState=Teammate,ColorSet=(ColorSet=((Color=(R=0.887923,G=0.887923,B=0.887923,A=1.000000)),(Type=Deuteranopia,Color=(R=0.887923,G=0.887923,B=0.887923,A=1.000000)),(Type=Protanopia,Color=(R=0.887923,G=0.887923,B=0.887923,A=1.000000)),(Type=Tritanopia,Color=(R=0.887923,G=0.887923,B=0.887923,A=1.000000)))))
++SeatColorsForState=(SeatState=Enemy,ColorSet=(ColorSet=((Color=(R=0.791298,G=0.000000,B=0.006049,A=1.000000)),(Type=Deuteranopia,Color=(R=0.283149,G=0.155926,B=0.046665,A=1.000000)),(Type=Protanopia,Color=(R=0.291771,G=0.254152,B=0.141263,A=1.000000)),(Type=Tritanopia,Color=(R=0.610496,G=0.057805,B=0.066626,A=1.000000)))))
++KeyInputModeNames=(ModeName="Toggle",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_343", "Toggle"))
++KeyInputModeNames=(ModeName="Hold",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_344", "Hold"))
++KeyInputModeNames=(ModeName="DoubleTap",DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_345", "Double Tap"))
++MiniMapTypeList=(DisplayUiName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_346", "Square"),UiKey="MiniMap_Original")
++MiniMapTypeList=(DisplayUiName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_347", "Circular"),UiKey="MiniMap_Circle")
+MinimumScreenResolutionRatio=1.600000
+MinimumScreenResolution=(Width=1280,Height=720)
++OverrideMarkerColorAndIcons=(TeamMemberColor=(ColorSet=((Color=(R=0.814847,G=0.783538,B=0.005605,A=1.000000)),(Type=Deuteranopia,Color=(R=0.964687,G=0.846873,B=0.015209,A=1.000000)),(Type=Protanopia,Color=(R=0.964687,G=0.846873,B=0.015209,A=1.000000)),(Type=Tritanopia,Color=(R=0.964687,G=0.846873,B=0.015209,A=1.000000)))),MarkerColorTextIcon=Texture2D'/Game/UI/HUD/Map/Marker/mapmarker_01.mapmarker_01',MarkerIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',PlayerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_playericon_player01.team_playericon_player01',CompassIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',IndicatorIcon=Texture2D'/Game/UI/HUD/Indicators/indicator_player01.indicator_player01',MapDeathIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture')
++OverrideMarkerColorAndIcons=(TeamMemberColor=(ColorSet=((Color=(R=0.701102,G=0.122139,B=0.019382,A=1.000000)),(Type=Deuteranopia,Color=(R=0.708376,G=0.184475,B=0.020289,A=1.000000)),(Type=Protanopia,Color=(R=0.904661,G=0.162029,B=0.008023,A=1.000000)),(Type=Tritanopia,Color=(R=0.879623,G=0.127438,B=0.064803,A=1.000000)))),MarkerColorTextIcon=Texture2D'/Game/UI/HUD/Map/Marker/mapmarker_02.mapmarker_02',MarkerIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',PlayerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_playericon_player02.team_playericon_player02',CompassIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',IndicatorIcon=Texture2D'/Game/UI/HUD/Indicators/indicator_player02.indicator_player02',MapDeathIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture')
++OverrideMarkerColorAndIcons=(TeamMemberColor=(ColorSet=((Color=(R=0.042311,G=0.351533,B=0.693872,A=1.000000)),(Type=Deuteranopia,Color=(R=0.000000,G=0.122139,B=1.000000,A=1.000000)),(Type=Protanopia,Color=(R=0.021219,G=0.099899,B=0.745404,A=1.000000)),(Type=Tritanopia,Color=(R=0.056128,G=0.187821,B=0.496933,A=1.000000)))),MarkerColorTextIcon=Texture2D'/Game/UI/HUD/Map/Marker/mapmarker_03.mapmarker_03',MarkerIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',PlayerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_playericon_player03.team_playericon_player03',CompassIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',IndicatorIcon=Texture2D'/Game/UI/HUD/Indicators/indicator_player03.indicator_player03',MapDeathIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture')
++OverrideMarkerColorAndIcons=(TeamMemberColor=(ColorSet=((Color=(R=0.057805,G=0.462077,B=0.066626,A=1.000000)),(Type=Deuteranopia,Color=(R=0.000911,G=0.904661,B=0.371238,A=1.000000)),(Type=Protanopia,Color=(R=0.010330,G=0.564712,B=0.266356,A=1.000000)),(Type=Tritanopia,Color=(R=0.000000,G=0.637597,B=0.597202,A=1.000000)))),MarkerColorTextIcon=Texture2D'/Game/UI/HUD/Map/Marker/mapmarker_04.mapmarker_04',MarkerIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',PlayerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_playericon_player04.team_playericon_player04',CompassIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',IndicatorIcon=Texture2D'/Game/UI/HUD/Indicators/indicator_player04.indicator_player04',MapDeathIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture')
++OverrideMarkerColorAndIcons=(TeamMemberColor=(ColorSet=((Color=(R=0.381326,G=0.012286,B=0.043735,A=1.000000)),(Type=Deuteranopia,Color=(R=0.417885,G=0.012983,B=0.040915,A=1.000000)),(Type=Protanopia,Color=(R=0.417885,G=0.012983,B=0.040915,A=1.000000)),(Type=Tritanopia,Color=(R=0.346704,G=0.011612,B=0.057805,A=1.000000)))),MarkerColorTextIcon=Texture2D'/Game/UI/HUD/Map/Marker/mapmarker_05.mapmarker_05',MarkerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_mapmarker_empty.team_mapmarker_empty',PlayerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_playericon_player05.team_playericon_player05',CompassIcon=Texture2D'/Game/UI/HUD/Compass/compass_marker_empty.compass_marker_empty',IndicatorIcon=Texture2D'/Game/UI/HUD/Indicators/indicator_player05.indicator_player05',MapDeathIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture')
++OverrideMarkerColorAndIcons=(TeamMemberColor=(ColorSet=((Color=(R=0.644480,G=0.093059,B=0.341915,A=1.000000)),(Type=Deuteranopia,Color=(R=1.000000,G=0.246201,B=0.485150,A=1.000000)),(Type=Protanopia,Color=(R=0.584079,G=0.215861,B=0.462077,A=1.000000)),(Type=Tritanopia,Color=(R=0.904661,G=0.332452,B=0.417885,A=1.000000)))),MarkerColorTextIcon=Texture2D'/Game/UI/HUD/Map/Marker/mapmarker_06.mapmarker_06',MarkerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_mapmarker_empty.team_mapmarker_empty',PlayerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_playericon_player06.team_playericon_player06',CompassIcon=Texture2D'/Game/UI/HUD/Compass/compass_marker_empty.compass_marker_empty',IndicatorIcon=Texture2D'/Game/UI/HUD/Indicators/indicator_player06.indicator_player06',MapDeathIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture')
++OverrideMarkerColorAndIcons=(TeamMemberColor=(ColorSet=((Color=(R=0.019382,G=0.051269,B=0.174647,A=1.000000)),(Type=Deuteranopia,Color=(R=0.351533,G=0.009134,B=0.351533,A=1.000000)),(Type=Protanopia,Color=(R=0.021219,G=0.018500,B=0.127438,A=1.000000)),(Type=Tritanopia,Color=(R=0.242281,G=0.072272,B=0.337164,A=1.000000)))),MarkerColorTextIcon=Texture2D'/Game/UI/HUD/Map/Marker/mapmarker_07.mapmarker_07',MarkerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_mapmarker_empty.team_mapmarker_empty',PlayerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_playericon_player07.team_playericon_player07',CompassIcon=Texture2D'/Game/UI/HUD/Compass/compass_marker_empty.compass_marker_empty',IndicatorIcon=Texture2D'/Game/UI/HUD/Indicators/indicator_player07.indicator_player07',MapDeathIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture')
++OverrideMarkerColorAndIcons=(TeamMemberColor=(ColorSet=((Color=(R=0.283149,G=0.672443,B=0.822786,A=1.000000)),(Type=Deuteranopia,Color=(R=0.168269,G=0.610496,B=0.783538,A=1.000000)),(Type=Protanopia,Color=(R=0.584079,G=0.822786,B=0.930111,A=1.000000)),(Type=Tritanopia,Color=(R=0.630757,G=0.768151,B=0.904661,A=1.000000)))),MarkerColorTextIcon=Texture2D'/Game/UI/HUD/Map/Marker/mapmarker_08.mapmarker_08',MarkerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_mapmarker_empty.team_mapmarker_empty',PlayerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_playericon_player08.team_playericon_player08',CompassIcon=Texture2D'/Game/UI/HUD/Compass/compass_marker_empty.compass_marker_empty',IndicatorIcon=Texture2D'/Game/UI/HUD/Indicators/indicator_player08.indicator_player08',MapDeathIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture')
++OverrideMarkerColorAndIcons=(TeamMemberColor=(ColorSet=((Color=(R=0.039546,G=0.396755,B=0.445201,A=1.000000)),(Type=Deuteranopia,Color=(R=0.045186,G=0.283149,B=0.337164,A=1.000000)),(Type=Protanopia,Color=(R=0.045186,G=0.283149,B=0.337164,A=1.000000)),(Type=Tritanopia,Color=(R=0.254152,G=0.527115,B=0.386430,A=1.000000)))),MarkerColorTextIcon=Texture2D'/Game/UI/HUD/Map/Marker/mapmarker_09.mapmarker_09',MarkerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_mapmarker_empty.team_mapmarker_empty',PlayerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_playericon_player09.team_playericon_player09',CompassIcon=Texture2D'/Game/UI/HUD/Compass/compass_marker_empty.compass_marker_empty',IndicatorIcon=Texture2D'/Game/UI/HUD/Indicators/indicator_player09.indicator_player09',MapDeathIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture')
++OverrideMarkerColorAndIcons=(TeamMemberColor=(ColorSet=((Color=(R=0.760525,G=0.760525,B=0.760525,A=1.000000)),(Type=Deuteranopia,Color=(R=0.760525,G=0.760525,B=0.760525,A=1.000000)),(Type=Protanopia,Color=(R=0.760525,G=0.760525,B=0.760525,A=1.000000)),(Type=Tritanopia,Color=(R=0.679543,G=0.679543,B=0.679543,A=1.000000)))),MarkerColorTextIcon=Texture2D'/Game/UI/HUD/Map/Marker/mapmarker_10.mapmarker_10',MarkerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_mapmarker_empty.team_mapmarker_empty',PlayerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_playericon_player10.team_playericon_player10',CompassIcon=Texture2D'/Game/UI/HUD/Compass/compass_marker_empty.compass_marker_empty',IndicatorIcon=Texture2D'/Game/UI/HUD/Indicators/indicator_player10.indicator_player10',MapDeathIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture')
+OverrideDefaultTeamMarkerColorAndIcons=(TeamMemberColor=(ColorSet=((Color=(R=0.027321,G=0.479320,B=1.000000,A=1.000000)),(Type=Deuteranopia,Color=(R=0.027321,G=0.479320,B=1.000000,A=1.000000)),(Type=Protanopia,Color=(R=0.027321,G=0.479320,B=1.000000,A=1.000000)),(Type=Tritanopia,Color=(R=0.004391,G=1.000000,B=0.052861,A=1.000000)))),MarkerColorTextIcon=None,MarkerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_mapmarker_empty.team_mapmarker_empty',PlayerIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',CompassIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',IndicatorIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',MapDeathIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture')
+OverrideZombieMarkerColorAndIcons=(TeamMemberColor=(ColorSet=((Color=(R=0.102242,G=0.630757,B=0.003347,A=1.000000)),(Type=Deuteranopia,Color=(R=0.102242,G=0.630757,B=0.003347,A=1.000000)),(Type=Protanopia,Color=(R=0.102242,G=0.630757,B=0.003347,A=1.000000)),(Type=Tritanopia,Color=(R=0.102242,G=0.630757,B=0.003347,A=1.000000)))),MarkerColorTextIcon=None,MarkerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_mapmarker_empty.team_mapmarker_empty',PlayerIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',CompassIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',IndicatorIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',MapDeathIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture')
+OverrideHumanMarkerColorAndIcons=(TeamMemberColor=(ColorSet=((Color=(R=0.381326,G=0.003677,B=0.003677,A=1.000000)),(Type=Deuteranopia,Color=(R=0.381326,G=0.003677,B=0.003677,A=1.000000)),(Type=Protanopia,Color=(R=0.381326,G=0.003677,B=0.003677,A=1.000000)),(Type=Tritanopia,Color=(R=0.381326,G=0.003677,B=0.003677,A=1.000000)))),MarkerColorTextIcon=None,MarkerIcon=Texture2D'/Game/Blueprints/UI/Team/squadlist_Icons/team_mapmarker_empty.team_mapmarker_empty',PlayerIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',CompassIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',IndicatorIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture',MapDeathIcon=Texture2D'/Game/UI/HUD/Observer/emptytexture.emptytexture')
+OverrideMyPlatoonMarkerColorAndIcon=(AlternativeColor=(ColorSet=((Color=(R=0.021219,G=0.205079,B=1.000000,A=1.000000)),(Type=Deuteranopia,Color=(R=0.021219,G=0.205079,B=1.000000,A=1.000000)),(Type=Protanopia,Color=(R=0.021219,G=0.205079,B=1.000000,A=1.000000)),(Type=Tritanopia,Color=(R=0.021219,G=0.205079,B=1.000000,A=1.000000)))),TeamMemberColor=(ColorSet=((Color=(R=0.033105,G=0.896270,B=1.000000,A=1.000000)),(Type=Deuteranopia,Color=(R=0.033105,G=0.896270,B=1.000000,A=1.000000)),(Type=Protanopia,Color=(R=0.033105,G=0.896270,B=1.000000,A=1.000000)),(Type=Tritanopia,Color=(R=0.033105,G=0.896270,B=1.000000,A=1.000000)))),MarkerColorTextIcon=None,MarkerIcon=None,PlayerIcon=None,CompassIcon=None,IndicatorIcon=None,MapDeathIcon=None)
+OverrideOtherPlatoonMarkerColorAndIcon=(AlternativeColor=(ColorSet=((Color=(R=0.913099,G=0.061246,B=0.026241,A=1.000000)),(Type=Deuteranopia,Color=(R=0.913099,G=0.061246,B=0.026241,A=1.000000)),(Type=Protanopia,Color=(R=0.913099,G=0.061246,B=0.026241,A=1.000000)),(Type=Tritanopia,Color=(R=0.913099,G=0.061246,B=0.026241,A=1.000000)))),TeamMemberColor=(ColorSet=((Color=(R=1.000000,G=0.226966,B=0.007499,A=1.000000)),(Type=Deuteranopia,Color=(R=1.000000,G=0.226966,B=0.007499,A=1.000000)),(Type=Protanopia,Color=(R=1.000000,G=0.226966,B=0.007499,A=1.000000)),(Type=Tritanopia,Color=(R=1.000000,G=0.226966,B=0.007499,A=1.000000)))),MarkerColorTextIcon=None,MarkerIcon=None,PlayerIcon=None,CompassIcon=None,IndicatorIcon=None,MapDeathIcon=None)
+PunchClientHitLeeway_Attacker=300.000000
+PunchClientHitLeeway_Victim=550.000000
+PunchClientHitLeeway_VictimInPlace=150.000000
+MeleeClientHitLeeway_Attacker=400.000000
+MeleeClientHitLeeway_AttackerInPlace=200.000000
+MeleeClientHitLeeway_Victim=550.000000
+MeleeClientHitLeeway_VictimInPlace=150.000000
+MeleeThrowClientHitLeeway_Victim=550.000000
+MeleeThrowClientHitLeeway_VictimInPlace=200.000000
+MeleeThrowProjectileLeewayMultiplier=10.000000
+MeleeThrowProjectileLeewayMultiplier_Log=4.000000
+ClientSideHitLeeway=2500.000000
+ClientSideHitLeewayZ=500.000000
+ClientSideHitLeewayInPlace=300.000000
+LogClientSideHitLeeway=500.000000
+LogClientSideHitLeewayZ=400.000000
+ClientSideOriginDistanceLeeway=3000.000000
+ClientSideOriginDistanceLeewayInPlace=400.000000
+TravelDistanceLeeway=1000.000000
+TravelDistanceLeewayInMovingBase=1500.000000
+AllowedHitLag=2000.000000
+HackDetectionSpeed=800.000000
+HackDetectionSpeed_Crouch=700.000000
+HackDetectionSpeed_Prone=300.000000
+CheatLogMaxCounts=((VerifyLagSwitch, 10),(InvalidH1, 10),(InvalidH2, 0),(InvalidH3, 0),(InvalidC1, 10),(InvalidC2, 10),(InvalidC3, 10),(InvalidC4, 10),(InvalidC5, 10),(InvalidC6, 10),(InvalidC7, 10),(InvalidT0, 10),(InvalidT1, 0),(CHKSUM_H2, 0),(CHKSUM_H3, 0),(InvalidT2, 0),(InvalidAimDir, 10),(InvalidPelletDir, 10),(InvalidAmmoSpeed, 10),(InvalidAmmoDir, 10),(InvalidCharacterFlag, 5),(InvalidPropertyCrc, 5),(InvalidWeaponCrc, 5),(InvalidWeaponRecoil, 5),(InvalidSwayBuffer, 5),(InvalidCameraYaw, 5),(InvalidWeaponPackageCrc, 1),(InvalidWeaponFlag, 5),(InvalidHitComponent, 5),(InvalidCollisionProfileCrc, 1),(InvalidPakListCrc,1),(InvalidCharacterCrc,5),(InvalidHitLocation,5),(InvalidSight,5),(InvalidBackface,5),(InvalidMovementCurveCrc,1),(InvalidDriverFire,10),(CHKSUM_UO, 10),(CHKSUM_UF, 10),(ItemPackage, 0),(InvalidOrigin_Gun, 0),(InvalidOrigin_Punch, 0),(VHC_TRY_BYPASS_SERVERSIMUL, 10),(VHC_BYPASSED_SERVERSIMUL, 1),(VHC_FORCE_SERVERSIMUL, 25),(InvalidVehicleOverlap, 10),(InvalidViewRotation,5),(InvalidPenetration,5),(InvalidPunchSpeed,5),(InsideMeshCharacter,10),(BC_BoatCorrection,10))
+ClientVehicleMoveIgnoreTime=2.000000
+VHC_MG_TC_MaxKmPerHour=200.000000
+VHC_FORCE_SERVERSIMIUL_Duration=10.0
+VHC_MG_PL_Pitch=1.000000
+VHC_MG_PL_Duration=2.000000
+VHC_MG_PL_Distance=100.000000
+DistCheck_MinVehicleDistError=400.000000
+DistCheck_VehicleSpeedWeight=1.000000
+DistCheck_MinShooterDistError=400.000000
+DistCheck_ShooterSpeedWeight=1.000000
+MaxIgnoreBulletSpeed=3000000
+MaxIgnoreVelocityHitDiatnce=3000
+VHC_MG_HL_CellUnit=1000
+VHC_MG_HL_CellCheckTime=10
+VHC_MG_HL_CellCheckHeight=1500
+VHC_MG_PL_MotorbikeAccumDuration=5.0
+VHC_MG_EC_MaxAccumDistSqAtServer=15000.0
+VHC_MG_EC_EvaluationDistance=200.0
+VHC_UnderLandscape_CheckTime=10
+VHC_UnderLandscape_CheckHeight=100000
++OverrideScalabilities=(QualityType=EFoliageQuality,OverrideScalabilityValues=((ConsoleName="foliage.DensityScale",Values=("1","1","1","1","1")),(ConsoleName="grass.DensityScale",Values=("1","1","1","1","1")),(ConsoleName="r.ViewFoliageDistance",Values=("80000.0","100000.0","200000.0","400000.0","800000.0")),(ConsoleName="foliage.MinimumScreenSize",Values=("0.000005","0.000005","0.000005","0.000005","0.000005"))))
++OverrideScalabilities=(QualityType=EShadowQuality,OverrideScalabilityValues=((ConsoleName="r.DistanceFieldShadowing",Values=("1","1","1","1","1"))))
++OverrideScalabilities=(QualityType=EViewDistanceQuality,OverrideScalabilityValues=((ConsoleName="r.ViewDistanceScale",Values=("1","1","1","1","1"))))
+FakeDoorBlockMaxY=10.000000
++ReportCauses=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_348", "Select Suspicion"),ReportCauseType=Default,DetailCauseTypeList=)
++ReportCauses=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_349", "Cheating"),ReportCauseType=Cheat,DetailCauseTypeList=(AutoAim,NoRecoil,EspOrPenetration,Speedhack))
++ReportCauses=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_350", "Teaming"),ReportCauseType=Teaming,DetailCauseTypeList=)
++ReportCauses=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_351", "Intentional Teamkill"),ReportCauseType=TeamKill,DetailCauseTypeList=)
++ReportCauses=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_352", "Improper Nickname"),ReportCauseType=InappropriateID,DetailCauseTypeList=)
++ReportCauses=(DisplayName=LOCTABLE("/Game/StringTables/Report/ST_ReportPlayer.ST_ReportPlayer", "VerbalHarassment"),ReportCauseType=VerbalHarassment,DetailCauseTypeList=)
++ReportCauses=(DisplayName=LOCTABLE("/Game/StringTables/Report/ST_ReportPlayer.ST_ReportPlayer", "Griefing"),ReportCauseType=Griefing,DetailCauseTypeList=)
++ReportCauses=(DisplayName=LOCTABLE("/Game/StringTables/Report/ST_ReportPlayer.ST_ReportPlayer", "StreamSniping"),ReportCauseType=StreamSniping,DetailCauseTypeList=)
++SubjectToReport=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_353", "Killer Name"),SubjectToReportType=Killer)
++SubjectToReport=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_354", "Spectator"),SubjectToReportType=Spectating_Player)
++SubjectToReport=(DisplayName=LOCTABLE("/Game/StringTables/Report/ST_ReportPlayer.ST_ReportPlayer", "ReplayPlayer"),SubjectToReportType=Replay_Player)
++SubjectToReport=(DisplayName=NSLOCTEXT("[/Script/TslGame]", "K_CLEANKEY_355", "Team Member Name"),SubjectToReportType=Team_Member)
++ReportDetailCauseTypeDescriptions=(ReportDetailCauseType=AutoAim,Description=LOCTABLE("/Game/StringTables/Report/ST_ReportPlayer.ST_ReportPlayer", "AutoAim"))
++ReportDetailCauseTypeDescriptions=(ReportDetailCauseType=NoRecoil,Description=LOCTABLE("/Game/StringTables/Report/ST_ReportPlayer.ST_ReportPlayer", "NoRecoil"))
++ReportDetailCauseTypeDescriptions=(ReportDetailCauseType=EspOrPenetration,Description=LOCTABLE("/Game/StringTables/Report/ST_ReportPlayer.ST_ReportPlayer", "ESPOrPenetration"))
++ReportDetailCauseTypeDescriptions=(ReportDetailCauseType=Speedhack,Description=LOCTABLE("/Game/StringTables/Report/ST_ReportPlayer.ST_ReportPlayer", "SpeedHack"))
+FreelookRecoveryInterpSpeed=15.000000
+GamepadSensitiveMultiplier=(("Scope8X", 0.100000),("Scope15X", 0.100000))
+GamePadInnerDeadZone=10.000000
+GamePadOutDeadZoneAcceleration=1.200000
+GamePadOutMaxAxisValue=1.300000
+GamePadAccelerationStandardFps=60.000000
+GamepadActionDataTable=/Game/DesignData/GamepadActionTable
+AimAssistDecisionRadius=0.000000
+bApplyInputValue=False
+bIgnorePadSensitive=False
+InsensitiveZone=0.000000
+SoundPauseAllAk=/Game/WwiseAssets/For_Replay/Sound_All_Pause.Sound_All_Pause
+SoundResumeAllAk=/Game/WwiseAssets/For_Replay/Sound_All_Resume.Sound_All_Resume
+SoundDuckingActiveAK=/Game/WwiseAssets/UI_Sound/UI_Ducking_and_VoluemAdjustmentGuide/UI_Ducking_Active.UI_Ducking_Active
+SoundDuckingDeactiveAK=/Game/WwiseAssets/UI_Sound/UI_Ducking_and_VoluemAdjustmentGuide/UI_Ducking_Deactive.UI_Ducking_Deactive
+VolumeAdjustmentGuideStartAK=/Game/WwiseAssets/UI_Sound/UI_Ducking_and_VoluemAdjustmentGuide/UI_VolumeAdjustmentGuide_Sample_Start.UI_VolumeAdjustmentGuide_Sample_Start
+VolumeAdjustmentGuideStopAK=/Game/WwiseAssets/UI_Sound/UI_Ducking_and_VoluemAdjustmentGuide/UI_VolumeAdjustmentGuide_Sample_Stop.UI_VolumeAdjustmentGuide_Sample_Stop
++SavedObPosMapConfigs=(MapName="Erangel_Main",SavedObPos=((Loc=(X=398683.000000,Y=117658.000000,Z=12567.000000),Rot=(Pitch=-28.124763,Yaw=149.062347,Roll=0.000000)),(Loc=(X=116140.000000,Y=237579.000000,Z=25834.000000),Rot=(Pitch=-19.687412,Yaw=11.250216,Roll=0.000000)),(Loc=(X=389671.000000,Y=313635.000000,Z=10559.000000),Rot=(Pitch=-11.249984,Yaw=-22.500107,Roll=0.000000)),(Loc=(X=517289.000000,Y=227841.000000,Z=9698.000000),Rot=(Pitch=-28.124880,Yaw=33.750008,Roll=0.000000)),(Loc=(X=342559.000000,Y=392893.000000,Z=13277.000000),Rot=(Pitch=-30.937347,Yaw=36.562546,Roll=0.000000)),(Loc=(X=690483.000000,Y=320698.000000,Z=9730.000000),Rot=(Pitch=-30.937374,Yaw=28.125029,Roll=0.000000)),(Loc=(X=584672.000000,Y=464274.000000,Z=11110.000000),Rot=(Pitch=-30.937347,Yaw=59.062363,Roll=0.000000)),(Loc=(X=136441.000000,Y=592067.000000,Z=13348.000000),Rot=(Pitch=-22.499920,Yaw=22.500099,Roll=0.000000)),(Loc=(X=459374.000000,Y=617675.000000,Z=9404.000000),Rot=(Pitch=-33.749718,Yaw=118.124840,Roll=0.000000)),(Loc=(X=596468.000000,Y=592198.000000,Z=7902.000000),Rot=(Pitch=-33.749836,Yaw=36.562527,Roll=0.000000))))
++SavedObPosMapConfigs=(MapName="Desert_Main",SavedObPos=((Loc=(X=217972.000000,Y=147834.000000,Z=25437.000000),Rot=(Pitch=-33.749664,Yaw=-19.687592,Roll=0.000000)),(Loc=(X=514287.000000,Y=42573.000000,Z=22259.000000),Rot=(Pitch=-25.312447,Yaw=22.499868,Roll=0.000000)),(Loc=(X=643225.000000,Y=25121.000000,Z=21490.000000),Rot=(Pitch=-19.687426,Yaw=30.937599,Roll=0.000000)),(Loc=(X=114491.000000,Y=280836.000000,Z=27937.000000),Rot=(Pitch=-22.499920,Yaw=0.000009,Roll=0.000000)),(Loc=(X=354444.000000,Y=279709.000000,Z=20146.000000),Rot=(Pitch=-25.312365,Yaw=22.500027,Roll=0.000000)),(Loc=(X=623126.000000,Y=227599.000000,Z=24616.000000),Rot=(Pitch=-33.749901,Yaw=61.875042,Roll=0.000000)),(Loc=(X=109221.000000,Y=587523.000000,Z=17715.000000),Rot=(Pitch=-25.312372,Yaw=36.562439,Roll=0.000000)),(Loc=(X=432776.000000,Y=529653.000000,Z=44153.000000),Rot=(Pitch=-30.937353,Yaw=22.499926,Roll=0.000000)),(Loc=(X=598886.000000,Y=635705.000000,Z=11153.000000),Rot=(Pitch=-28.124941,Yaw=-8.437513,Roll=0.000000)),(Loc=(X=53800.000000,Y=734015.000000,Z=25455.000000),Rot=(Pitch=-28.124922,Yaw=-14.062610,Roll=0.000000))))
++SavedObPosMapConfigs=(MapName="Savage_Main",SavedObPos=((Loc=(X=113495.226563,Y=122381.023438,Z=5669.180176),Rot=(Pitch=335.399994,Yaw=340.019989,Roll=0.000000)),(Loc=(X=70256.921875,Y=151916.078125,Z=15035.990234),Rot=(Pitch=334.350006,Yaw=42.860001,Roll=0.000000)),(Loc=(X=182985.718750,Y=205801.250000,Z=5806.810059),Rot=(Pitch=332.000000,Yaw=323.820007,Roll=0.000000)),(Loc=(X=240864.734375,Y=149408.484375,Z=10987.700195),Rot=(Pitch=326.500000,Yaw=318.170013,Roll=0.000000)),(Loc=(X=332099.281250,Y=152974.031250,Z=8243.030273),Rot=(Pitch=318.910004,Yaw=13.670000,Roll=0.000000)),(Loc=(X=115081.992188,Y=271105.750000,Z=6443.089844),Rot=(Pitch=328.410004,Yaw=285.820007,Roll=0.000000)),(Loc=(X=139431.156250,Y=366480.343750,Z=5800.549805),Rot=(Pitch=328.059998,Yaw=302.519989,Roll=0.000000)),(Loc=(X=227557.046875,Y=350580.281250,Z=6361.689941),Rot=(Pitch=332.760010,Yaw=341.820007,Roll=0.000000)),(Loc=(X=330375.000000,Y=289836.312500,Z=6517.899902),Rot=(Pitch=323.059998,Yaw=345.369995,Roll=0.000000)),(Loc=(X=322187.000000,Y=352576.125000,Z=5410.669922),Rot=(Pitch=324.410004,Yaw=333.519989,Roll=0.000000))))
++SavedObPosMapConfigs=(MapName="DihorOtok_Main",SavedObPos=((Loc=(X=356378.093750,Y=129134.218750,Z=14900.089844),Rot=(Pitch=345.709991,Yaw=52.930000,Roll=0.000000)),(Loc=(X=305454.593750,Y=204555.562500,Z=18176.560547),Rot=(Pitch=323.880005,Yaw=268.459991,Roll=0.000000)),(Loc=(X=236684.593750,Y=264644.531250,Z=18255.630859),Rot=(Pitch=338.239990,Yaw=290.329987,Roll=0.000000)),(Loc=(X=138139.156250,Y=251012.078125,Z=8700.849609),Rot=(Pitch=346.589996,Yaw=184.250000,Roll=0.000000)),(Loc=(X=399797.312500,Y=301247.437500,Z=10715.200195),Rot=(Pitch=335.750000,Yaw=253.429993,Roll=0.000000)),(Loc=(X=435270.500000,Y=354725.875000,Z=11993.639648),Rot=(Pitch=340.059998,Yaw=281.339996,Roll=0.000000)),(Loc=(X=343455.000000,Y=352300.312500,Z=10930.290039),Rot=(Pitch=329.480011,Yaw=27.680000,Roll=0.000000)),(Loc=(X=204959.625000,Y=386883.156250,Z=10386.219727),Rot=(Pitch=333.260010,Yaw=335.200012,Roll=0.000000)),(Loc=(X=360264.187500,Y=458987.312500,Z=26257.130859),Rot=(Pitch=314.459991,Yaw=286.709991,Roll=0.000000)),(Loc=(X=455780.937500,Y=425751.312500,Z=17485.619141),Rot=(Pitch=324.109985,Yaw=136.059998,Roll=0.000000))))
+RepDistance_Character=100000.000000
+RepDistance_Character_Console=60000.000000
+RepDistance_Weapon=100000.000000
+RepDistance_Weapon_Console=60000.000000
+RepDistance_Vehicle=100000.000000
+RepDistance_Vehicle_Console=70000.000000
+RepDistance_Parachute=150000.000000
+RepDistance_Parachute_Console=75000.000000
+RepDistance_Train=100000.000000
+RepDistance_Train_Console=70000.000000
+RepDistance_SupplyBox=100000.000000
+RepDistance_SupplyBox_Console=60000.000000
+bVoiceChatEnabled=True
+DialogUMGWidgetClassStringAssetReference=/Game/Blueprints/UI/Menu/LobbyMessagePopupWidget.LobbyMessagePopupWidget
+LoadingScreenUMGWidgetClassStringAssetReference=/Game/Blueprints/UI/LoadingScreen/LoadingScreen.LoadingScreen
+GamepadDebugHudStringAsssetReference=/Game/Blueprints/UI/Debug/BP_GamepadDebugHud.BP_GamepadDebugHud
++AnimatableCustomizableDatas=(MutableType=Hair,TargetAnimDynamicType=Hair,MutableNames=("F_Hair_067_01","M_Hair_061_06","M_Hair_061_05","M_Hair_061_04","M_Hair_061_03","M_Hair_061_02","M_Hair_061_01","F_Hair_061_06","F_Hair_061_05","F_Hair_061_04","F_Hair_061_03","F_Hair_061_02","F_Hair_061_01","M_Hair_054_06","M_Hair_054_05","M_Hair_054_04","M_Hair_054_03","M_Hair_054_02","M_Hair_054_01","F_Hair_054_06","F_Hair_054_05","F_Hair_054_04","F_Hair_054_03","F_Hair_054_02","F_Hair_054_01","M_Hair_056_06","M_Hair_056_05","M_Hair_056_04","M_Hair_056_03","M_Hair_056_02","M_Hair_056_01","F_Hair_056_06","F_Hair_056_05","F_Hair_056_04","F_Hair_056_03","F_Hair_056_02","F_Hair_056_01","M_Hair_055_06","M_Hair_055_05","M_Hair_055_04","M_Hair_055_03","M_Hair_055_02","M_Hair_055_01","F_Hair_055_06","F_Hair_055_05","F_Hair_055_04","F_Hair_055_03","F_Hair_055_02","F_Hair_055_01","M_Hair_048_06","M_Hair_048_05","M_Hair_048_04","M_Hair_048_03","M_Hair_048_02","M_Hair_048_01","F_Hair_048_06","F_Hair_048_05","F_Hair_048_04","F_Hair_048_03","F_Hair_048_02","F_Hair_048_01","F_Hair_043_01","F_Hair_043_02","F_Hair_043_03","F_Hair_043_04","F_Hair_043_05","F_Hair_043_06","M_Hair_043_01","M_Hair_043_02","M_Hair_043_03","M_Hair_043_04","M_Hair_043_05","M_Hair_043_06","M_Hair_041_01_Zombie","M_Hair_041_02_Zombie","M_Hair_041_03_Zombie","M_Hair_041_04_Zombie","M_Hair_041_05_Zombie","M_Hair_041_06_Zombie","F_Hair_041_01_Zombie","F_Hair_041_02_Zombie","F_Hair_041_03_Zombie","F_Hair_041_04_Zombie","F_Hair_041_05_Zombie","F_Hair_041_06_Zombie","M_Hair_041_01","M_Hair_041_02","M_Hair_041_03","M_Hair_041_04","M_Hair_041_05","M_Hair_041_06","F_Hair_041_01","F_Hair_041_02","F_Hair_041_03","F_Hair_041_04","F_Hair_041_05","F_Hair_041_06","M_Hair_039_01","M_Hair_039_02","M_Hair_039_03","M_Hair_039_04","M_Hair_039_05","M_Hair_039_06","F_Hair_039_01","F_Hair_039_02","F_Hair_039_03","F_Hair_039_04","F_Hair_039_05","F_Hair_039_06","M_Hair_038_01","M_Hair_038_02","M_Hair_038_03","M_Hair_038_04","M_Hair_038_05","M_Hair_038_06","F_Hair_038_01","F_Hair_038_02","F_Hair_038_03","F_Hair_038_04","F_Hair_038_05","F_Hair_038_06","F_Hair_H_01_Zombie","F_Hair_H_02_Zombie","F_Hair_H_03_Zombie","F_Hair_H_04_Zombie","F_Hair_H_05_Zombie","F_Hair_H_06_Zombie","F_Hair_B_01_Zombie","F_Hair_B_02_Zombie","F_Hair_B_03_Zombie","F_Hair_B_04_Zombie","F_Hair_B_05_Zombie","F_Hair_B_06_Zombie","F_Hair_H_01","F_Hair_H_02","F_Hair_H_03","F_Hair_H_04","F_Hair_H_05","F_Hair_H_06","F_Hair_B_01","F_Hair_B_02","F_Hair_B_03","F_Hair_B_04","F_Hair_B_05","F_Hair_B_06","M_Hair_H_01_Zombie","M_Hair_H_02_Zombie","M_Hair_H_03_Zombie","M_Hair_H_04_Zombie","M_Hair_H_05_Zombie","M_Hair_H_06_Zombie","M_Hair_B_01_Zombie","M_Hair_B_02_Zombie","M_Hair_B_03_Zombie","M_Hair_B_04_Zombie","M_Hair_B_05_Zombie","M_Hair_B_06_Zombie","M_Hair_H_01","M_Hair_H_02","M_Hair_H_03","M_Hair_H_04","M_Hair_H_05","M_Hair_H_06","M_Hair_B_01","M_Hair_B_02","M_Hair_B_03","M_Hair_B_04","M_Hair_B_05","M_Hair_B_06","F_Hair_J_01_Zombie","F_Hair_J_01","M_Hair_J_01","M_Hair_J_01_Zombie","F_Hair_027_01","F_Hair_027_02","F_Hair_027_03","F_Hair_027_04","F_Hair_027_05","F_Hair_027_06","F_Hair_027_01_Zombie","F_Hair_027_02_Zombie","F_Hair_027_03_Zombie","F_Hair_027_04_Zombie","F_Hair_027_05_Zombie","F_Hair_027_06_Zombie","F_Hair_028_01","F_Hair_028_02","F_Hair_028_03","F_Hair_028_04","F_Hair_028_05","F_Hair_028_06","M_Hair_028_01","M_Hair_028_02","M_Hair_028_03","M_Hair_028_04","M_Hair_028_05","M_Hair_028_06","M_Hair_Mermaid_01","M_Hair_Mermaid_02","M_Hair_Mermaid_03","M_Hair_Mermaid_04","M_Hair_Mermaid_01_Zombie","M_Hair_Mermaid_02_Zombie","M_Hair_Mermaid_03_Zombie","M_Hair_Mermaid_04_Zombie","F_Hair_Mermaid_01","F_Hair_Mermaid_02","F_Hair_Mermaid_03","F_Hair_Mermaid_04","F_Hair_Mermaid_01_Zombie","F_Hair_Mermaid_02_Zombie","F_Hair_Mermaid_03_Zombie","F_Hair_Mermaid_04_Zombie"))
++AnimatableCustomizableDatas=(MutableType=Outer,TargetAnimDynamicType=Hair,MutableNames=("F_Jacket_HoodieXL","M_Jacket_HoodieXL","M_Jacket_RabbitD","F_Jacket_RabbitD","M_Jacket_RabbitC","F_Jacket_RabbitC","F_Jacket_MMoon","M_Jacket_MMoon","F_Jacket_RabbitA","M_Jacket_RabbitA"))
++AnimatableCustomizableDatas=(MutableType=Outer,TargetAnimDynamicType=Coat,MutableNames=("F_Jacket_AnorakCrop","M_Jacket_AnorakCrop","F_Jacket_Resistance","M_Jacket_Resistance","F_Jacket_Alligator","M_Jacket_Alligator","F_Jacket_Hyunmu","M_Jacket_Hyunmu","F_Jacket_Jujak","M_Jacket_Jujak","F_Jacket_Winter","M_Jacket_Winter","F_Jacket_BearHunter","M_Jacket_BearHunter","F_Jacket_NoInfection","M_Jacket_NoInfection","F_Jacket_CircusClown","M_Jacket_CircusClown","F_Jacket_22PGC_Suit","M_Jacket_22PGC_Suit","F_Jacket_22PGC","M_Jacket_22PGC","F_Jacket_Creed","M_Jacket_Creed","F_Jacket_Assassin","M_Jacket_Assassin","F_Jacket_Ghillie","M_Jacket_Ghillie","F_Jacket_Resistance","M_Jacket_Resistance","F_Jacket_Jaguar","M_Jacket_Jaguar","F_Jacket_Atomic","M_Jacket_Atomic","F_Jacket_JeremyLin","M_Jacket_JeremyLin","F_Jacket_21PGC","M_Jacket_21PGC","F_Jacket_PU_01", "M_Jacket_PU_01","F_Jacket_Xmas","M_Jacket_Xmas", "F_Jacket_D_01", "F_Jacket_D_02", "F_Jacket_D_03", "F_Jacket_D_04", "F_Jacket_Captain", "M_Jacket_D_01", "M_Jacket_D_02", "M_Jacket_D_03", "M_Jacket_D_04", "M_Jacket_Captain", "M_Jacket_FBRGown", "F_Jacket_FBRGown","F_Jacket_Julie_A","M_Jacket_Julie_A","F_Jacket_RabbitA","M_Jacket_RabbitA","F_Ghillie","M_Ghillie"))
++AnimatableCustomizableDatas=(MutableType=Torso,TargetAnimDynamicType=Coat,MutableNames=("M_Body_Robwoman","F_Body_Robwoman","M_Body_YGBRS","F_Body_YGBRS","M_Body_DeathSlinger","F_Body_DeathSlinger","M_Body_Huntress","F_Body_Huntress","M_Body_Apocalypse","F_Body_Apocalypse","M_Body_Nier2B","F_Body_Nier2B","M_Body_NierNier","F_Body_NierNier","F_Body_Venus","M_Body_Venus","F_Body_Dracula","M_Body_Dracula","F_Body_BloodHunter","M_Body_BloodHunter","F_Body_Cleric","M_Body_Cleric","F_Body_CircusPerformer","M_Body_CircusPerformer","F_Body_Fox","M_Body_Fox","F_Body_King","M_Body_King","F_Body_Phoenix2","M_Body_Phoenix2","F_Body_21PGIS","M_Body_21PGIS","F_Body_21PGI","M_Body_21PGI","F_Body_Elf","M_Body_Elf","F_Body_Sadiya_A","F_Body_Sadiya_B","M_Body_Sadiya_A","M_Body_Sadiya_B","F_Body_Lion","M_Body_Lion","F_Body_HanbokB","M_Body_HanbokB","F_Body_Dino","M_Body_Dino","F_Body_Rabbit_B","M_Body_Rabbit_B","F_Body_Creepydoll","M_Body_Creepydoll","F_Body_Creepydoll","M_Body_Creepydoll"))
++AnimatableCustomizableDatas=(MutableType=Torso,TargetAnimDynamicType=Hair,MutableNames=("F_Body_Rabbit_B","M_Body_Rabbit_B"))
++AnimatableCustomizableDatas=(MutableType=Legs,TargetAnimDynamicType=Coat,MutableNames=("F_Legs_VK","M_Legs_VK"))
++AnimatableCustomizableDatas=(MutableType=Head,TargetAnimDynamicType=Hair,MutableNames=("F_Head_Neko","M_Head_Neko","F_Head_Easter","M_Head_Easter","F_Head_Pillar","M_Head_Pillar","F_Head_G_C","M_Head_G_C","F_Head_F_B","M_Head_F_B","F_Head_G_A","M_Head_G_A","F_Head_Basketball","M_Head_Basketball","F_Head_Rider2022","M_Head_Rider2022"))
++AnimatableCustomizableDatas=(MutableType=Mask,TargetAnimDynamicType=Hair,MutableNames=("F_Mask_Stocking","M_Mask_Stocking","F_Mask_Robberies","M_Mask_Robberies","F_Mask_Huntress","M_Mask_Huntress","F_Mask_E","M_Mask_E"))
++GamepadReportList_Main=(OptionName="Main",DisplayName=LOCTABLE("/Game/StringTables/Report/ST_ReportPlayer.ST_ReportPlayer", "ReportType"),DescText="")
++TslFontStyles=Roboto-Condensed-Regular
++TslFontStyles=Roboto-Condensed-Light
++TslFontStyles=Roboto-Condensed-Bold
++TslFontStyles=Agency-Regular
++TslFontStyles=Agency-Bold
++TslFontStyles=Agency-MonoNum-Regular
++TslFontStyles=Agency-MonoNum-Bold
++TslFontStyles=Ruda-Regular
++TeamColors=(R=0.012286,G=0.045186,B=0.223228,A=1.000000)
++TeamColors=(R=0.045186,G=0.230740,B=0.049707,A=1.000000)
++TeamColors=(R=0.571125,G=0.132868,B=0.015996,A=1.000000)
++TeamColors=(R=0.020289,G=0.212231,B=0.590619,A=1.000000)
++TeamColors=(R=0.070360,G=0.015996,B=0.205079,A=1.000000)
++TeamColors=(R=0.270498,G=0.035601,B=0.017642,A=1.000000)
++TeamColors=(R=0.054480,G=0.104616,B=0.004391,A=1.000000)
++TeamColors=(R=0.439657,G=0.027321,B=0.107023,A=1.000000)
++TeamColors=(R=0.266356,G=0.127438,B=0.029557,A=1.000000)
++TeamColors=(R=0.168269,G=0.004777,B=0.056128,A=1.000000)
++TeamColors=(R=0.514918,G=0.361307,B=0.025187,A=1.000000)
++TeamColors=(R=0.093059,G=0.381326,B=0.366253,A=1.000000)
++TeamColors=(R=0.138432,G=0.187821,B=0.215861,A=1.000000)
++TeamColors=(R=0.672443,G=0.274677,B=0.012286,A=1.000000)
++TeamColors=(R=0.042311,G=0.061246,B=0.072272,A=1.000000)
++TeamColors=(R=0.637597,G=0.171441,B=0.291771,A=1.000000)
++TeamColors=(R=0.004025,G=0.130136,B=0.116971,A=1.000000)
++TeamColors=(R=0.194618,G=0.063010,B=0.006512,A=1.000000)
++TeamColors=(R=0.155926,G=0.283149,B=0.018500,A=1.000000)
++TeamColors=(R=0.219526,G=0.090842,B=0.309469,A=1.000000)
++TeamColors=(R=0.064803,G=0.309469,B=0.177888,A=1.000000)
++TeamColors=(R=0.187821,G=0.287441,B=0.462077,A=1.000000)
++TeamColors=(R=0.665387,G=0.283149,B=0.174647,A=1.000000)
++TeamColors=(R=0.033105,G=0.028426,B=0.127438,A=1.000000)
++TeamColors=(R=0.242281,G=0.212231,B=0.010330,A=1.000000)
+SoloColor=(R=0.000000,G=0.000000,B=0.000000,A=0.400000)
++TwoTeamGameTeamColors=(ColorNameText=NSLOCTEXT("CaptureObjectWidget [/Script/TslGame]", "K_CLEANKEY_356", "B"),Color=(R=0.001214,G=0.313989,B=1.000000,A=1.000000))
++TwoTeamGameTeamColors=(ColorNameText=NSLOCTEXT("CaptureObjectWidget [/Script/TslGame]", "K_CLEANKEY_357", "R"),Color=(R=0.644480,G=0.039546,B=0.039546,A=1.000000))
++ModifierKeyIconDataArray=(Texture=None,Ratio=0.000000)
++ModifierKeyIconDataArray=(Texture=Texture2D'/Game/UI/KeyboardAndMouse/Keys/Key_Mod_Alt.Key_Mod_Alt',Ratio=1.400000)
++ModifierKeyIconDataArray=(Texture=Texture2D'/Game/UI/KeyboardAndMouse/Keys/Key_Mod_Ctrl.Key_Mod_Ctrl',Ratio=1.400000)
++ModifierKeyIconDataArray=(Texture=Texture2D'/Game/UI/KeyboardAndMouse/Keys/Key_Mod_2_CtrlAlt.Key_Mod_2_CtrlAlt',Ratio=1.400000)
++ModifierKeyIconDataArray=(Texture=Texture2D'/Game/UI/KeyboardAndMouse/Keys/Key_Mod_Shift.Key_Mod_Shift',Ratio=1.400000)
++ModifierKeyIconDataArray=(Texture=Texture2D'/Game/UI/KeyboardAndMouse/Keys/Key_Mod_2_ShiftAlt.Key_Mod_2_ShiftAlt',Ratio=1.400000)
++ModifierKeyIconDataArray=(Texture=Texture2D'/Game/UI/KeyboardAndMouse/Keys/Key_Mod_2_ShiftCtrl.Key_Mod_2_ShiftCtrl',Ratio=1.400000)
++ModifierKeyIconDataArray=(Texture=Texture2D'/Game/UI/KeyboardAndMouse/Keys/Key_Mod_3_ShiftCtrlAlt.Key_Mod_3_ShiftCtrlAlt',Ratio=1.400000)
+SharedVFXMatParamCollection=/Game/Assets/Effects/ParticleSystem/Shared_VFX_Parameters.Shared_VFX_Parameters
+GlobalMatParamCollection=/Game/Materials/GlobalMaterialParameters.GlobalMaterialParameters
+LivingThingEventAsset=/Game/Blueprints/LivingThings/EventTables/DA_LTEvents.DA_LTEvents
+UseFollowParachute=True
+HoldReleaseSecond=0.800000
+BluezoneBuzzingSoundStartAk=/Game/WwiseAssets/BlueZone/BlueZone_BluezoneBuzzing.BlueZone_BluezoneBuzzing
+BluezoneBuzzingSoundStopAk=/Game/WwiseAssets/BlueZone/BlueZone_BluezoneBuzzing_Stop.BlueZone_BluezoneBuzzing_Stop
+BluezoneBuzzingSoundDistance=10000.000000
+NormalWheelColor=(R=0.887923,G=0.887923,B=0.887923,A=0.600000)
+LightDamagedWheelColor=(R=0.887923,G=0.887923,B=0.887923,A=1.000000)
+HeavyDamagedWheelColorSet=(ColorSet=((Color=(R=1.000000,G=0.132868,B=0.002732,A=1.000000)),(Type=Deuteranopia,Color=(R=1.000000,G=0.132868,B=0.002732,A=1.000000)),(Type=Protanopia,Color=(R=1.000000,G=0.132868,B=0.002732,A=1.000000)),(Type=Tritanopia,Color=(R=1.000000,G=0.246201,B=0.074214,A=1.000000))))
+PuncturedWheelColorSet=(ColorSet=((Color=(R=0.791298,G=0.000000,B=0.006049,A=1.000000)),(Type=Deuteranopia,Color=(R=0.283149,G=0.155926,B=0.046665,A=1.000000)),(Type=Protanopia,Color=(R=0.291771,G=0.254152,B=0.141263,A=1.000000)),(Type=Tritanopia,Color=(R=0.610496,G=0.057805,B=0.066626,A=1.000000))))
+CinematicDirectorPawnClass=/Game/Blueprints/Tools/Cinematic/BP_CinematicDirectorPawn.BP_CinematicDirectorPawn_C
++CustomizableActionNames=(Category="UI",ActionName="ToggleLoadout",DisplayName=LOCTABLE("/Game/StringTables/Mode/Arena/NS_LOADOUT.NS_LOADOUT", "K_VOSTOK_62"))
+TestStreamingURL=""
+KillFeedSkinTableStr=/Game/Item/Skin/KillFeed/KillFeedSkinDB.KillFeedSkinDB
+DormantSoundDataAssetRef=/Game/AntiCheat/ACDormantSoundDataAsset.ACDormantSoundDataAsset
+VehicleSkinInteractionDataAssetRef=/Game/Vehicles/VehicleData/VehicleSkinInteractionDataAsset.VehicleSkinInteractionDataAsset
+VehicleSkinDefaultFXDataAssetRef=/Game/Vehicles/TransitionFX/DA_CommonVehicle_SkinFX.DA_CommonVehicle_SkinFX
++ThermalItemNames=ThermItem_0
++ThermalItemNames=ThermItem_1
++ThermalItemNames=ThermItem_2
++ThermalItemNames=ThermItem_3
++ThermalItemNames=ThermItem_4
++ThermalInteractiveMaps=DihorOtok_Main
++ThermalInteractiveMaps=Range_Main
+
+[/Script/UnrealEd.ProjectPackagingSettings]
+BuildConfiguration=PPBC_Development
+StagingDirectory=(Path="")
+FullRebuild=False
+ForDistribution=False
+IncludeDebugFiles=False
+BlueprintNativizationMethod=Disabled
+bWarnIfPackagedWithoutNativizationFlag=True
+UsePakFile=True
+bGenerateChunks=True
+bChunkHardReferencesOnly=False
+bBuildHttpChunkInstallData=False
+HttpChunkInstallDataDirectory=(Path="")
+HttpChunkInstallDataVersion=
+IncludePrerequisites=True
+bShareMaterialShaderCode=False
+bSharedMaterialNativeLibraries=False
+ApplocalPrerequisitesDirectory=(Path="")
+IncludeCrashReporter=False
+InternationalizationPreset=All
++CulturesToStage=en
++CulturesToStage=ko
++CulturesToStage=zh-CN
++CulturesToStage=zh-TW
++CulturesToStage=ar
++CulturesToStage=de
++CulturesToStage=es
++CulturesToStage=es-MX
++CulturesToStage=fr
++CulturesToStage=it
++CulturesToStage=pl
++CulturesToStage=pt
++CulturesToStage=pt-BR
++CulturesToStage=tr
++CulturesToStage=ru
++CulturesToStage=ja
++CulturesToStage=th
++CulturesToStage=vi
++CulturesToStage=id
++CulturesToStage=uk
++CulturesToStage=ga-IE
++CulturesToStage=ca
+DefaultCulture=en
+bCookAll=False
+bCookMapsOnly=False
+bCompressed=True
+bEncryptIniFiles=True
+bEncryptPakIndex=True
+bSkipEditorContent=True
++MapsToCook=(FilePath="../../../../Tsl/Content/Maps/Baltic/Baltic_Main.umap")
++MapsToCook=(FilePath="../../../../Tsl/Content/Maps/Desert/Desert_Main.umap")
++MapsToCook=(FilePath="../../../../Tsl/Content/Maps/Savage/Savage_Main.umap")
++MapsToCook=(FilePath="../../../../Tsl/Content/Maps/DihorOtok/DihorOtok_Main.umap")
++MapsToCook=(FilePath="../../../../Tsl/Content/Maps/Range/Range_Main.umap")
++MapsToCook=(FilePath="../../../../Tsl/Content/Maps/Summerland/Summerland_Main.umap")
++MapsToCook=(FilePath="../../../../Tsl/Content/Maps/Chimera/Chimera_Main.umap")
++MapsToCook=(FilePath="../../../../Tsl/Content/Maps/Heaven/Heaven_Main.umap")
++MapsToCook=(FilePath="../../../../Tsl/Content/Maps/Tiger/Tiger_Main.umap")
++MapsToCook=(FilePath="../../../../Tsl/Content/Maps/Kiki/Kiki_Main.umap")
++MapsToCook=(FilePath="../../../../Tsl/Content/Maps/Tutorial/Tutorial_Main.umap")
++MapsToCook=(FilePath="../../../../Tsl/Content/Maps/Has/Has.umap")
++DirectoriesToAlwaysCook=(Path="Item")
++DirectoriesToAlwaysCook=(Path="Blueprints/Tools/MapStatAnalyzer")
++DirectoriesToAlwaysCook=(Path="Blueprints/Tools/StatMapLocations")
++DirectoriesToAlwaysCook=(Path="Blueprints/Tools/TestParachuting")
++DirectoriesToAlwaysCook=(Path="Blueprints/Tools/VehicleDrivingTest")
++DirectoriesToAlwaysCook=(Path="Blueprints/FBR")
++DirectoriesToAlwaysCook=(Path="Blueprints/UI/Option/Rearrangement/PcWidgets")
++DirectoriesToAlwaysCook=(Path="Blueprints/UI/Arena")
++DirectoriesToAlwaysCook=(Path="Blueprints/Racing")
++DirectoriesToAlwaysCook=(Path="Blueprints/BlizzardZoneController")
++DirectoriesToAlwaysCook=(Path="UI/Arena/CoverImages")
++DirectoriesToAlwaysCook=(Path="WwiseAssets/UI_OutGame/NEW")
++DirectoriesToAlwaysCook=(Path="WwiseAssets/UI_Sound/UI_Vostok")
++DirectoriesToAlwaysCook=(Path="Vehicles/Base_Vehicle/VehicleCollisionCharacterDamageConsole")
++DirectoriesToAlwaysCook=(Path="Assets/World/Vegetation/Materials/ImposterLOD")
++DirectoriesToAlwaysCook=(Path="AntiCheat")
++DirectoriesToNeverCook=(Path="Maps/playtrack_sharedassets")
++DirectoriesToNeverCook=(Path="Maps/Test")
++DirectoriesToNeverCook=(Path="Maps/Erangel")
++DirectoriesToAlwaysStageAsUFS=(Path="uiresources")
++DirectoriesToAlwaysStageAsUFS=(Path="WwiseAudio")
++DirectoriesToAlwaysStageAsUFS=(Path="MutableStreamedData")
++DirectoriesToAlwaysStageAsUFS=(Path="Fonts")
++DirectoriesToAlwaysStageAsUFS=(Path="Blueprints/Tools/TestParachuting")
++DirectoriesToAlwaysStageAsUFS=(Path="Blueprints/Tools/VehicleDrivingTest")
++DirectoriesToAlwaysStageAsUFS=(Path="Maps/Erangel/Art/StaticMeshCache")
++DirectoriesToAlwaysStageAsUFS=(Path="Maps/Desert/Art/StaticMeshCache")
++DirectoriesToAlwaysStageAsUFS=(Path="Maps/Savage/Art/StaticMeshCache")
++DirectoriesToAlwaysStageAsUFS=(Path="Maps/DihorOtok/Art/StaticMeshCache")
++DirectoriesToAlwaysStageAsUFS=(Path="Maps/Range/Art/StaticMeshCache")
++DirectoriesToAlwaysStageAsUFS=(Path="Maps/Baltic/Art/StaticMeshCache")
++DirectoriesToAlwaysStageAsUFS=(Path="Maps/Summerland/Art/StaticMeshCache")
++DirectoriesToAlwaysStageAsUFS=(Path="Maps/Chimera/Art/StaticMeshCache")
++DirectoriesToAlwaysStageAsUFS=(Path="Maps/Heaven/Art/StaticMeshCache")
++DirectoriesToAlwaysStageAsUFS=(Path="Maps/Tiger/Art/StaticMeshCache")
++DirectoriesToAlwaysStageAsUFS=(Path="Maps/Kiki/Art/StaticMeshCache")
++DirectoriesToAlwaysStageAsUFS=(Path="Razer")
++DirectoriesToAlwaysStageAsNonUFS_Server=(Path="NAV")
++DirectoriesToAlwaysStageAsNonUFS_Server=(Path="Maps/Chimera/Art/Nav")
++DirectoriesToAlwaysStageAsNonUFS_Server=(Path="ColorTable")
++DirectoriesToAlwaysStageAsUFS_Client=(Path="Certificates")
+bNativizeBlueprintAssets=False
+bNativizeOnlySelectedBlueprints=False
+
+[/Script/AkAudio.AkSettings]
+MaxSimultaneousReverbVolumes=4
+WwiseProjectPath=(FilePath="Wwise/Bro.wproj")
+WwiseWindowsInstallationPath=(Path="C:/Program Files (x86)/Audiokinetic/Wwise 2019.1.6.7110")
+WwiseMacInstallationPath=(FilePath="")
+SuppressWwiseProjectPathWarnings=False
+
+

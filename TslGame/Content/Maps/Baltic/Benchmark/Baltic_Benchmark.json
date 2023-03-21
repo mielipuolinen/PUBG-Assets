@@ -1,0 +1,646 @@
+[
+  {
+    "Type": "AbstractNavData",
+    "Name": "AbstractNavData-Default",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'AbstractNavData'",
+    "Properties": {
+      "bNetLoadOnClient": true
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent0",
+    "Outer": "LevelBounds_0",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 452244.0,
+        "Y": 379442.3,
+        "Z": 75141.23
+      },
+      "RelativeScale3D": {
+        "X": 779388.0,
+        "Y": 493411.4,
+        "Z": 150333.55
+      }
+    }
+  },
+  {
+    "Type": "CameraActor",
+    "Name": "Benchmark_Cam_1",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'CameraActor'",
+    "Properties": {
+      "CameraComponent": {
+        "ObjectName": "CameraComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_1.CameraComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.5"
+      },
+      "SceneComponent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_1.SceneComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.29"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_1.SceneComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.29"
+      }
+    }
+  },
+  {
+    "Type": "CameraActor",
+    "Name": "Benchmark_Cam_Falling",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'CameraActor'",
+    "Properties": {
+      "CameraComponent": {
+        "ObjectName": "CameraComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_Falling.CameraComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.6"
+      },
+      "SceneComponent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_Falling.SceneComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.30"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_Falling.SceneComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.30"
+      }
+    }
+  },
+  {
+    "Type": "CameraActor",
+    "Name": "Benchmark_Cam_FullMap",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'CameraActor'",
+    "Properties": {
+      "CameraComponent": {
+        "ObjectName": "CameraComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_FullMap.CameraComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.7"
+      },
+      "SceneComponent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_FullMap.SceneComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.31"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_FullMap.SceneComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.31"
+      }
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "CameraComponent",
+    "Outer": "Benchmark_Cam_1",
+    "Class": "UScriptClass'CameraComponent'",
+    "Properties": {
+      "bConstrainAspectRatio": false,
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_1.SceneComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.29"
+      }
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "CameraComponent",
+    "Outer": "Benchmark_Cam_Falling",
+    "Class": "UScriptClass'CameraComponent'",
+    "Properties": {
+      "bConstrainAspectRatio": false,
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_Falling.SceneComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.30"
+      }
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "CameraComponent",
+    "Outer": "Benchmark_Cam_FullMap",
+    "Class": "UScriptClass'CameraComponent'",
+    "Properties": {
+      "bConstrainAspectRatio": false,
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_FullMap.SceneComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.31"
+      }
+    }
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Outer": "Baltic_Benchmark",
+    "Class": "UScriptClass'Level'",
+    "Properties": {
+      "LevelBuildDataId": "AA52F54A-4F298B89-7E60208C-3187CB2B",
+      "Model": {
+        "ObjectName": "Model'Baltic_Benchmark:PersistentLevel.Model_0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.22"
+      },
+      "WorldSettings": {
+        "ObjectName": "WorldSettings'Baltic_Benchmark:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.39"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "WorldSettings'Baltic_Benchmark:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.39"
+      },
+      null,
+      {
+        "ObjectName": "LevelBounds'Baltic_Benchmark:PersistentLevel.LevelBounds_0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.9"
+      },
+      {
+        "ObjectName": "CameraActor'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_1'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.2"
+      },
+      {
+        "ObjectName": "LevelSequenceActor'Baltic_Benchmark:PersistentLevel.Benchmark_Seq_1'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.12"
+      },
+      {
+        "ObjectName": "CameraActor'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_FullMap'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.4"
+      },
+      {
+        "ObjectName": "CameraActor'Baltic_Benchmark:PersistentLevel.Benchmark_Cam_Falling'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.3"
+      },
+      {
+        "ObjectName": "LevelSequenceActor'Baltic_Benchmark:PersistentLevel.Benchmark_Falling_5'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.10"
+      },
+      {
+        "ObjectName": "AbstractNavData'Baltic_Benchmark:PersistentLevel.AbstractNavData-Default'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.0"
+      },
+      {
+        "ObjectName": "LevelSequenceActor'Baltic_Benchmark:PersistentLevel.Benchmark_Seq_StaticBridge'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.13"
+      },
+      {
+        "ObjectName": "LevelSequenceActor'Baltic_Benchmark:PersistentLevel.Benchmark_Seq_StaticCity'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.14"
+      },
+      {
+        "ObjectName": "LevelSequenceActor'Baltic_Benchmark:PersistentLevel.Benchmark_TestStream'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.15"
+      },
+      {
+        "ObjectName": "LevelSequenceActor'Baltic_Benchmark:PersistentLevel.Benchmark_FullMap_2'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.11"
+      },
+      null
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/Maps/TslLobby",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'Baltic_Benchmark:PersistentLevel.Model_0'",
+      "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.22"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": null,
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "LevelBounds",
+    "Name": "LevelBounds_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelBounds'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Baltic_Benchmark:PersistentLevel.LevelBounds_0.BoxComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.1"
+      }
+    }
+  },
+  {
+    "Type": "LevelSequenceActor",
+    "Name": "Benchmark_Falling_5",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelSequenceActor'",
+    "Properties": {
+      "LevelSequence": null,
+      "BurnInOptions": {
+        "ObjectName": "LevelSequenceBurnInOptions'Baltic_Benchmark:PersistentLevel.Benchmark_Falling_5.BurnInOptions'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.16"
+      },
+      "BindingOverrides": {
+        "ObjectName": "MovieSceneBindingOverrides'Baltic_Benchmark:PersistentLevel.Benchmark_Falling_5.BindingOverrides'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.23"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Falling_5.SceneComp'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.32"
+      }
+    }
+  },
+  {
+    "Type": "LevelSequenceActor",
+    "Name": "Benchmark_FullMap_2",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelSequenceActor'",
+    "Properties": {
+      "LevelSequence": null,
+      "BurnInOptions": {
+        "ObjectName": "LevelSequenceBurnInOptions'Baltic_Benchmark:PersistentLevel.Benchmark_FullMap_2.BurnInOptions'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.17"
+      },
+      "BindingOverrides": {
+        "ObjectName": "MovieSceneBindingOverrides'Baltic_Benchmark:PersistentLevel.Benchmark_FullMap_2.BindingOverrides'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.24"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_FullMap_2.SceneComp'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.33"
+      }
+    }
+  },
+  {
+    "Type": "LevelSequenceActor",
+    "Name": "Benchmark_Seq_1",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelSequenceActor'",
+    "Properties": {
+      "LevelSequence": null,
+      "BurnInOptions": {
+        "ObjectName": "LevelSequenceBurnInOptions'Baltic_Benchmark:PersistentLevel.Benchmark_Seq_1.BurnInOptions'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.18"
+      },
+      "BindingOverrides": {
+        "ObjectName": "MovieSceneBindingOverrides'Baltic_Benchmark:PersistentLevel.Benchmark_Seq_1.BindingOverrides'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.25"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Seq_1.SceneComp'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.34"
+      }
+    }
+  },
+  {
+    "Type": "LevelSequenceActor",
+    "Name": "Benchmark_Seq_StaticBridge",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelSequenceActor'",
+    "Properties": {
+      "LevelSequence": null,
+      "BurnInOptions": {
+        "ObjectName": "LevelSequenceBurnInOptions'Baltic_Benchmark:PersistentLevel.Benchmark_Seq_StaticBridge.BurnInOptions'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.19"
+      },
+      "BindingOverrides": {
+        "ObjectName": "MovieSceneBindingOverrides'Baltic_Benchmark:PersistentLevel.Benchmark_Seq_StaticBridge.BindingOverrides'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.26"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Seq_StaticBridge.SceneComp'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.35"
+      }
+    }
+  },
+  {
+    "Type": "LevelSequenceActor",
+    "Name": "Benchmark_Seq_StaticCity",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelSequenceActor'",
+    "Properties": {
+      "LevelSequence": null,
+      "BurnInOptions": {
+        "ObjectName": "LevelSequenceBurnInOptions'Baltic_Benchmark:PersistentLevel.Benchmark_Seq_StaticCity.BurnInOptions'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.20"
+      },
+      "BindingOverrides": {
+        "ObjectName": "MovieSceneBindingOverrides'Baltic_Benchmark:PersistentLevel.Benchmark_Seq_StaticCity.BindingOverrides'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.27"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_Seq_StaticCity.SceneComp'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.36"
+      }
+    }
+  },
+  {
+    "Type": "LevelSequenceActor",
+    "Name": "Benchmark_TestStream",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelSequenceActor'",
+    "Properties": {
+      "LevelSequence": null,
+      "BurnInOptions": {
+        "ObjectName": "LevelSequenceBurnInOptions'Baltic_Benchmark:PersistentLevel.Benchmark_TestStream.BurnInOptions'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.21"
+      },
+      "BindingOverrides": {
+        "ObjectName": "MovieSceneBindingOverrides'Baltic_Benchmark:PersistentLevel.Benchmark_TestStream.BindingOverrides'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.28"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Baltic_Benchmark:PersistentLevel.Benchmark_TestStream.SceneComp'",
+        "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.37"
+      }
+    }
+  },
+  {
+    "Type": "LevelSequenceBurnInOptions",
+    "Name": "BurnInOptions",
+    "Outer": "Benchmark_Falling_5",
+    "Class": "UScriptClass'LevelSequenceBurnInOptions'"
+  },
+  {
+    "Type": "LevelSequenceBurnInOptions",
+    "Name": "BurnInOptions",
+    "Outer": "Benchmark_FullMap_2",
+    "Class": "UScriptClass'LevelSequenceBurnInOptions'"
+  },
+  {
+    "Type": "LevelSequenceBurnInOptions",
+    "Name": "BurnInOptions",
+    "Outer": "Benchmark_Seq_1",
+    "Class": "UScriptClass'LevelSequenceBurnInOptions'"
+  },
+  {
+    "Type": "LevelSequenceBurnInOptions",
+    "Name": "BurnInOptions",
+    "Outer": "Benchmark_Seq_StaticBridge",
+    "Class": "UScriptClass'LevelSequenceBurnInOptions'"
+  },
+  {
+    "Type": "LevelSequenceBurnInOptions",
+    "Name": "BurnInOptions",
+    "Outer": "Benchmark_Seq_StaticCity",
+    "Class": "UScriptClass'LevelSequenceBurnInOptions'"
+  },
+  {
+    "Type": "LevelSequenceBurnInOptions",
+    "Name": "BurnInOptions",
+    "Outer": "Benchmark_TestStream",
+    "Class": "UScriptClass'LevelSequenceBurnInOptions'"
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "6925C0B6-4B0B927B-574BE999-FE0DEA3A",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "MovieSceneBindingOverrides",
+    "Name": "BindingOverrides",
+    "Outer": "Benchmark_Falling_5",
+    "Class": "UScriptClass'MovieSceneBindingOverrides'"
+  },
+  {
+    "Type": "MovieSceneBindingOverrides",
+    "Name": "BindingOverrides",
+    "Outer": "Benchmark_FullMap_2",
+    "Class": "UScriptClass'MovieSceneBindingOverrides'"
+  },
+  {
+    "Type": "MovieSceneBindingOverrides",
+    "Name": "BindingOverrides",
+    "Outer": "Benchmark_Seq_1",
+    "Class": "UScriptClass'MovieSceneBindingOverrides'"
+  },
+  {
+    "Type": "MovieSceneBindingOverrides",
+    "Name": "BindingOverrides",
+    "Outer": "Benchmark_Seq_StaticBridge",
+    "Class": "UScriptClass'MovieSceneBindingOverrides'"
+  },
+  {
+    "Type": "MovieSceneBindingOverrides",
+    "Name": "BindingOverrides",
+    "Outer": "Benchmark_Seq_StaticCity",
+    "Class": "UScriptClass'MovieSceneBindingOverrides'"
+  },
+  {
+    "Type": "MovieSceneBindingOverrides",
+    "Name": "BindingOverrides",
+    "Outer": "Benchmark_TestStream",
+    "Class": "UScriptClass'MovieSceneBindingOverrides'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent",
+    "Outer": "Benchmark_Cam_1",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "ComponentVelocity": {
+        "X": 1011.72327,
+        "Y": -2.5488446,
+        "Z": -4.828866
+      },
+      "RelativeLocation": {
+        "X": 48521.344,
+        "Y": 70812.586,
+        "Z": -2546.3345
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent",
+    "Outer": "Benchmark_Cam_Falling",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "ComponentVelocity": {
+        "X": 268.06775,
+        "Y": -11.247598,
+        "Z": -402.3945
+      },
+      "RelativeLocation": {
+        "X": 63560.0,
+        "Y": 154230.0,
+        "Z": 99260.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent",
+    "Outer": "Benchmark_Cam_FullMap",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "ComponentVelocity": {
+        "X": "-Infinity",
+        "Y": "NaN",
+        "Z": "NaN"
+      },
+      "RelativeRotation": {
+        "Pitch": -2.9999077,
+        "Yaw": 4.669028,
+        "Roll": 2.6717036E-08
+      },
+      "RelativeLocation": {
+        "X": 65178.375,
+        "Y": 133746.6,
+        "Z": 5608.8003
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComp",
+    "Outer": "Benchmark_Falling_5",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 841810.0,
+        "Y": 626020.0,
+        "Z": 150180.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComp",
+    "Outer": "Benchmark_FullMap_2",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 599850.0,
+        "Y": 304470.0,
+        "Z": 65620.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComp",
+    "Outer": "Benchmark_Seq_1",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 254250.0,
+        "Y": 339420.0,
+        "Z": 4300.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComp",
+    "Outer": "Benchmark_Seq_StaticBridge",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 254250.0,
+        "Y": 339420.0,
+        "Z": 4300.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComp",
+    "Outer": "Benchmark_Seq_StaticCity",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 254250.0,
+        "Y": 339420.0,
+        "Z": 4300.0
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComp",
+    "Outer": "Benchmark_TestStream",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 571130.0,
+        "Y": 356990.0,
+        "Z": 960.0
+      }
+    }
+  },
+  {
+    "Type": "World",
+    "Name": "Baltic_Benchmark",
+    "Class": "UScriptClass'World'",
+    "Properties": {
+      "DefaultPhysicsVolume": null
+    },
+    "PersistentLevel": {
+      "ObjectName": "Level'Baltic_Benchmark:PersistentLevel'",
+      "ObjectPath": "TslGame/Content/Maps/Baltic/Benchmark/Baltic_Benchmark.8"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  },
+  {
+    "Type": "WorldSettings",
+    "Name": "WorldSettings",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WorldSettings'"
+  }
+]

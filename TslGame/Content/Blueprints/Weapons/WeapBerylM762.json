@@ -3,26 +3,27 @@
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapBerylM762_C",
     "Super": "DefaultRifleSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapBerylM762_C:SimpleConstructionScript_0",
+        "ObjectName": "SimpleConstructionScript'WeapBerylM762_C:SimpleConstructionScript_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBerylM762.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectName": "BlueprintGeneratedClass'DefaultRifleSetting_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapBerylM762_C Default__WeapBerylM762_C",
+      "ObjectName": "WeapBerylM762_C'Default__WeapBerylM762_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBerylM762.1"
     }
   },
@@ -30,10 +31,11 @@
     "Type": "WeapBerylM762_C",
     "Name": "Default__WeapBerylM762_C",
     "Template": "Default__DefaultRifleSetting_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/WeapBerylM762.WeapBerylM762_C'",
     "Properties": {
       "TrailFX": null,
       "WeaponTrajectoryData": {
-        "ObjectName": "WeaponTrajectoryData WeapBerylM762_WeaponTrajectoryData",
+        "ObjectName": "WeaponTrajectoryData'WeapBerylM762_WeaponTrajectoryData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapBerylM762_WeaponTrajectoryData.0"
       },
       "WeaponGunPostprocessSettings": {
@@ -46,11 +48,11 @@
         "DepthBlurBlackPoint": 45.0
       },
       "WeaponGunData": {
-        "ObjectName": "WeaponGunDataAsset WeapBerylM762_WeaponGunData",
+        "ObjectName": "WeaponGunDataAsset'WeapBerylM762_WeaponGunData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapBerylM762_WeaponGunData.0"
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_gun_M762",
+        "ObjectName": "Texture2D'weapons_gun_M762'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_M762.0"
       },
       "WeaponIconRatio": 3.09,
@@ -81,7 +83,7 @@
           1000.0
         ],
         "RecoilMontage": {
-          "ObjectName": "AnimMontage Rifle_Recoil_762_Montage",
+          "ObjectName": "AnimMontage'Rifle_Recoil_762_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Recoil/Rifle_Recoil_762_Montage.0"
         },
         "WeaponEquipDuration": 0.2,
@@ -90,7 +92,7 @@
         "PhysicalBodyHitImpactPower": 10000.0
       },
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapBerylM762_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__WeapBerylM762_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBerylM762.6"
       },
       "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
@@ -157,45 +159,51 @@
           "AttachmentMeshAsset": "/Game/Weapon/Rifles/M762/Meshes/M762_Mag_01_Set.M762_Mag_01_Set",
           "AttachmentMeshName": "MagazineDefault",
           "AttachmentTemplate": {
-            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectName": "Class'AsyncStaticMeshComponent'",
             "ObjectPath": "/Script/TslGame"
           }
         }
       ],
       "WeaponTag": "M762",
       "MuzzleFX": {
-        "ObjectName": "ParticleSystem P_Muzzle_Beryl",
+        "ObjectName": "ParticleSystem'P_Muzzle_Beryl'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Rifle/P_Muzzle_Beryl.96"
       },
-      "EquipAnimData": {
-        "EAccessorySlot::Slot_Secondary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
-          },
-          "PlayRate": 1.5
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_Secondary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_SecondarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.5
+          }
         },
-        "EAccessorySlot::Slot_SideArm": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_SideArm": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PistolSlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
         },
-        "EAccessorySlot::Slot_Primary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_Primary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PrimarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
         }
-      },
+      ],
       "WeaponAudioData": {
-        "ObjectName": "WeaponAudioData WeapBerylM762_WeaponAudioData",
+        "ObjectName": "WeaponAudioData'WeapBerylM762_WeaponAudioData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapBerylM762_WeaponAudioData.0"
       },
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapBerylM762_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapBerylM762_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBerylM762.2"
       }
     }
@@ -205,12 +213,13 @@
     "Name": "RootScene",
     "Outer": "Default__WeapBerylM762_C",
     "Template": "RootScene",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapBerylM762_C Default__WeapBerylM762_C",
+              "ObjectName": "WeapBerylM762_C'Default__WeapBerylM762_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBerylM762.1"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -222,19 +231,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapBerylM762_C"
+    "Outer": "WeapBerylM762_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapBerylM762_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapBerylM762_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBerylM762.3"
       },
       "VariableGuid": "4B1B0ABE-483B9FB5-B48D1D92-B9412BF2",
@@ -245,9 +256,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0",
     "Outer": "WeapBerylM762_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapBerylM762_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectName": "SCS_Node'WeapBerylM762_C:SimpleConstructionScript_0.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBerylM762.4"
       }
     }
@@ -257,20 +269,21 @@
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapBerylM762_C",
     "Template": "WeaponMesh3P",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "AnimClass": {
-        "ObjectName": "AnimBlueprintGeneratedClass ABP_Weapon_M762_RD_C",
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_Weapon_M762_RD_C'",
         "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M762/Redux/Weapon_RD/ABP_Weapon_M762_RD.36"
       },
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh SK_M762",
+        "ObjectName": "SkeletalMesh'SK_M762'",
         "ObjectPath": "TslGame/Content/Weapon/Rifles/M762/Meshes/SK_M762.0"
       },
       "BodyInstance": {
         "MassInKgOverride": 14.318548
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapBerylM762_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapBerylM762_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapBerylM762.2"
       }
     }

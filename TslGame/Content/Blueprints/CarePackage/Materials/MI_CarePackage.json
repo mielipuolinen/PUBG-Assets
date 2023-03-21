@@ -1,0 +1,101 @@
+[
+  {
+    "Type": "MaterialInstanceConstant",
+    "Name": "MI_CarePackage",
+    "Class": "UScriptClass'MaterialInstanceConstant'",
+    "Properties": {
+      "PhysMaterial": {
+        "ObjectName": "PhysicalMaterial'PhysMat_Metal'",
+        "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Metal.0"
+      },
+      "Parent": {
+        "ObjectName": "Material'M_Buggy'",
+        "ObjectPath": "TslGame/Content/Vehicles/M_Buggy.0"
+      },
+      "bHasStaticPermutationResource": true,
+      "bPermutationResourceInBaseMaterial": true,
+      "ScalarParameterValues": [
+        {
+          "ParameterName": "RefractionDepthBias",
+          "ParameterValue": 0.0,
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ],
+      "TextureParameterValues": [
+        {
+          "ParameterName": "BaseColor",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'CarePackage_D'",
+            "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Textures/CarePackage_D.0"
+          },
+          "ExpressionGUID": "2FEFCA0C-477510CC-9CCDF792-0E9CEE5F"
+        },
+        {
+          "ParameterName": "Material",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'CarePackage_RM'",
+            "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Textures/CarePackage_RM.0"
+          },
+          "ExpressionGUID": "A48AEA9D-4E9CA67D-DA51289C-DDA44D3D"
+        },
+        {
+          "ParameterName": "Normal",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'CarePackage_N'",
+            "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Textures/CarePackage_N.0"
+          },
+          "ExpressionGUID": "2FC84620-440CA7F2-E0BA7281-1614B858"
+        },
+        {
+          "ParameterName": "AO",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'CarePackage_AO'",
+            "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Textures/CarePackage_AO.0"
+          },
+          "ExpressionGUID": "AE368C05-49CD53DD-A505CEBE-14CF3948"
+        }
+      ],
+      "BasePropertyOverrides": {
+        "bOverride_TwoSided": true,
+        "TwoSided": true
+      },
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 160.0,
+          "UVChannelIndex": 0,
+          "TextureName": "Blank_N"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "CarePackage_AO"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "CarePackage_D"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "CarePackage_N"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "CarePackage_RM"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "dn_plastic_05_AO"
+        },
+        {
+          "SamplingScale": 1.0,
+          "UVChannelIndex": 0,
+          "TextureName": "dn_rubber_01_AO"
+        }
+      ]
+    }
+  }
+]

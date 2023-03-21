@@ -1,0 +1,135 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "Buff_HealOverTime_FirstAid_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "Buff_HealOverTime_FirstAid_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_HealOverTime_FirstAid_C:DefaultSceneRoot'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime_FirstAid.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_HealOverTime_FirstAid_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Buff_HealOverTime_FirstAid_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime_FirstAid.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'HealOverTimeBuff'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Buff_HealOverTime_FirstAid_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime_FirstAid.1"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function'Buff_HealOverTime_FirstAid_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime_FirstAid.1"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_HealOverTime_FirstAid_C'Default__Buff_HealOverTime_FirstAid_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime_FirstAid.3"
+    }
+  },
+  {
+    "Type": "Buff_HealOverTime_FirstAid_C",
+    "Name": "Default__Buff_HealOverTime_FirstAid_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Buff/Buff_HealOverTime_FirstAid.Buff_HealOverTime_FirstAid_C'",
+    "Properties": {
+      "HealPerTick": 15.0,
+      "HealLimit": 75.0,
+      "bUseStrictHealLimit": true,
+      "BuffDurationWithTraumaBag": 2.0,
+      "OverlapId": "Buff_HealOverTime",
+      "OverlapSolveMethod": "EBuffOverlapSolveMethod::Overwrite",
+      "BuffTickInterval": 0.45,
+      "BuffTickFirstDelay": 0.0,
+      "BuffDuration": 2.0,
+      "bClientNotifyStartBuff": true,
+      "bClientNotifyStopBuff": true,
+      "bReplicateMovement": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Buff_HealOverTime_FirstAid_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Buff_HealOverTime_FirstAid_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime_FirstAid.4"
+      },
+      "VariableGuid": "57191945-479B082D-946179B9-A532E1D6",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Buff_HealOverTime_FirstAid_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Buff_HealOverTime_FirstAid_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime_FirstAid.5"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Buff_HealOverTime_FirstAid_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime_FirstAid.5"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Buff_HealOverTime_FirstAid_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_HealOverTime_FirstAid.5"
+      }
+    }
+  }
+]

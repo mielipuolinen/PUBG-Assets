@@ -1,0 +1,1995 @@
+[
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent0",
+    "Outer": "LevelBounds_0",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_0",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 15124,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_0.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.32"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_FieldBush_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Bush/ST_VK_FieldBush_01/ST_VK_FieldBush_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "DecalChannel": "EDecalChannel::Channel0",
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_1",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 16829,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_1.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.33"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_GeneralPine_02_Snow'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_GeneralPine_01/ST_VK_GeneralPine_02_Snow.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_10",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 7437,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_10.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.34"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_MountainTree_03'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_MountainPine_01/ST_VK_MountainTree_03.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_11",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 28132,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_11.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.35"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_MountainTree_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_MountainPine_01/ST_VK_MountainTree_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_12",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 24934,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_12.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.36"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_TownBush_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Bush/ST_VK_TownBush_01/ST_VK_TownBush_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_13",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 14730,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_13.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.37"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_FieldTree_02'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_FieldTree_01/ST_VK_FieldTree_02.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_14",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 8878,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_14.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.38"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_GeneralPine_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_GeneralPine_01/ST_VK_GeneralPine_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_15",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 17303,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_15.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.39"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_FieldTree_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_FieldTree_01/ST_VK_FieldTree_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_16",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 7142,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_16.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.40"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_GeneralPine_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_GeneralPine_01/ST_VK_GeneralPine_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_17",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 14167,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_17.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.41"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_TownBush_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Bush/ST_VK_TownBush_01/ST_VK_TownBush_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_18",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 11045,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_18.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.42"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_TownBush_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Bush/ST_VK_TownBush_01/ST_VK_TownBush_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_19",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 17312,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_19.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.43"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_FieldTree_04_Snow'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_FieldTree_01/ST_VK_FieldTree_04_Snow.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_2",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 16710,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_2.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.44"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_GeneralPine_01_Snow'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_GeneralPine_01/ST_VK_GeneralPine_01_Snow.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_20",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 8677,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_20.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.45"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_FieldTree_04'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_FieldTree_01/ST_VK_FieldTree_04.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_21",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 29224,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_21.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.46"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_FieldBush_02'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Bush/ST_VK_FieldBush_01/ST_VK_FieldBush_02.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_22",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 6452,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_22.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.47"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_FieldBush_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Bush/ST_VK_FieldBush_01/ST_VK_FieldBush_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_23",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 29167,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_23.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.48"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_GeneralBush_02'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Bush/ST_VK_GeneralBush_01/ST_VK_GeneralBush_02.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_24",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 21823,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_24.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.49"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_GeneralBush_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Bush/ST_VK_GeneralBush_01/ST_VK_GeneralBush_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_25",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 3204,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_25.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.50"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_PineBush_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Bush/ST_VK_PindBush_01/ST_VK_PineBush_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_27",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 27621,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_27.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.51"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_GeneralPine_02'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_GeneralPine_01/ST_VK_GeneralPine_02.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_3",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 19835,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_3.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.52"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_ForestTree_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_ForestTree_01/ST_VK_ForestTree_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_4",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 10101,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_4.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.53"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_FieldTree_03'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_FieldTree_01/ST_VK_FieldTree_03.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_5",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 8401,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_5.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.54"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_MountainBush_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Bush/ST_VK_MountainBush_01/ST_VK_MountainBush_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "DecalChannel": "EDecalChannel::Channel0",
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_6",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 24470,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_6.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.55"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_PineBush_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Bush/ST_VK_PindBush_01/ST_VK_PineBush_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "DecalChannel": "EDecalChannel::Channel0",
+      "BodyInstance": {
+        "CollisionProfileName": "NoCollision",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "CollisionEnabled": "ECollisionEnabled::NoCollision",
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_7",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 7617,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_7.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.56"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_ForestTree_02'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_ForestTree_01/ST_VK_ForestTree_02.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_8",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 12475,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_8.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.57"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_MountainPine_01'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_MountainPine_01/ST_VK_MountainPine_01.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "FoliageInstancedStaticMeshComponent",
+    "Name": "FoliageInstancedStaticMeshComponent_9",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'FoliageInstancedStaticMeshComponent'",
+    "Properties": {
+      "InstancingRandomSeed": 22860,
+      "PhysicsSerializer": {
+        "ObjectName": "PhysicsSerializer'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.FoliageInstancedStaticMeshComponent_9.PhysicsSerializer'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.58"
+      },
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'ST_VK_GeneralPine_02'",
+        "ObjectPath": "TslGame/Content/Assets/World/Vikendi/Foliage/Tree/ST_VK_GeneralPine_01/ST_VK_GeneralPine_02.1"
+      },
+      "OverriddenLightMapRes": 8,
+      "bUseAsOccluder": true,
+      "bHasPerInstanceHitProxies": true,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "bAutoWeld": false,
+        "bOverrideWalkableSlopeOnInstance": true,
+        "WalkableSlopeOverride": {
+          "WalkableSlopeBehavior": "WalkableSlope_Unwalkable"
+        },
+        "ObjectType": "ECC_WorldStatic"
+      },
+      "Mobility": "EComponentMobility::Static",
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "InstancedFoliageActor",
+    "Name": "InstancedFoliageActor_1",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'InstancedFoliageActor'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1.RootComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.59"
+      }
+    }
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Outer": "Tree_X1_Y2",
+    "Class": "UScriptClass'Level'",
+    "Properties": {
+      "LevelBuildDataId": "87052F07-4D188CD2-1ABB3197-F4748492",
+      "Model": {
+        "ObjectName": "Model'Tree_X1_Y2:PersistentLevel.Model_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.31"
+      },
+      "WorldSettings": {
+        "ObjectName": "WorldSettings'Tree_X1_Y2:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.61"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "WorldSettings'Tree_X1_Y2:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.61"
+      },
+      null,
+      {
+        "ObjectName": "LevelBounds'Tree_X1_Y2:PersistentLevel.LevelBounds_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.30"
+      },
+      {
+        "ObjectName": "InstancedFoliageActor'Tree_X1_Y2:PersistentLevel.InstancedFoliageActor_1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.28"
+      },
+      null
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/Maps/lobby/TslLobby_2021/TslLobby_2021_Default_Main",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'Tree_X1_Y2:PersistentLevel.Model_0'",
+      "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.31"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": null,
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "LevelBounds",
+    "Name": "LevelBounds_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelBounds'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Tree_X1_Y2:PersistentLevel.LevelBounds_0.BoxComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.0"
+      }
+    }
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "3ACDAD8E-46C7BB63-8480848C-4F489D86",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_0",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_1",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_10",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_11",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_12",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_13",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_14",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_15",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_16",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_17",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_18",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_19",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_2",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_20",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_21",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_22",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_23",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_24",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_25",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_27",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_3",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_4",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_5",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_6",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_7",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_8",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "PhysicsSerializer",
+    "Name": "PhysicsSerializer",
+    "Outer": "FoliageInstancedStaticMeshComponent_9",
+    "Class": "UScriptClass'PhysicsSerializer'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootComponent0",
+    "Outer": "InstancedFoliageActor_1",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "World",
+    "Name": "Tree_X1_Y2",
+    "Class": "UScriptClass'World'",
+    "Properties": {
+      "DefaultPhysicsVolume": null
+    },
+    "PersistentLevel": {
+      "ObjectName": "Level'Tree_X1_Y2:PersistentLevel'",
+      "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/Tree/Tree_x1_y2.29"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  },
+  {
+    "Type": "WorldSettings",
+    "Name": "WorldSettings",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WorldSettings'"
+  }
+]

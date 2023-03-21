@@ -1,0 +1,249 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_12",
+    "Outer": "tiger_SmallRock03",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "CCCD55454586281EAA572186568A4D24",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 2531,
+        "SizeOnDisk": 2531,
+        "OffsetInFile": "0x3E9C"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "tiger_SmallRock03",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "mat_smallrocks_new_INST",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 171.4338,
+            "LocalUVDensities": 106.44425,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 106.44425,
+      "LightMapResolution": 32,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.5713768,
+          "Y": -1.511858,
+          "Z": 14.754363
+        },
+        "BoxExtent": {
+          "X": 23.134136,
+          "Y": 23.895754,
+          "Z": 14.855184
+        },
+        "SphereRadius": 29.902937
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'tiger_SmallRock03:BodySetup_12'",
+      "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/tiger_SmallRock03.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "639C89B5-4E782D84-9F0D67B7-EC5D37B5",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 98,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 73,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 74
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 74,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 48,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 44,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 45
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 45,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 24,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 32,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 33
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 33,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 12,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 23,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 24
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 24,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.5713768,
+          "Y": -1.511858,
+          "Z": 14.754363
+        },
+        "BoxExtent": {
+          "X": 23.134136,
+          "Y": 23.895754,
+          "Z": 14.855184
+        },
+        "SphereRadius": 29.902937
+      },
+      "bLODsShareStaticLighting": false,
+      "ScreenSize": [
+        1.5045054,
+        0.06728353,
+        0.033641767,
+        0.02127692,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

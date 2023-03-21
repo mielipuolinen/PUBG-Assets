@@ -1,0 +1,472 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "BuffClass",
+    "Outer": "Buff_DecreaseBreathInHolding_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "PropertyFlags": 65541,
+    "Struct": {
+      "ObjectName": "ScriptStruct'TslStringClass'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "Buff_DecreaseBreathInHolding_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Buff_DecreaseBreathInHolding_C:BuffClass'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.0"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "UnderlyingType",
+    "Outer": "CallFunc_GetBreathType_ReturnValue",
+    "Class": "UScriptClass'ByteProperty'",
+    "Next": null,
+    "Enum": null
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_AddBuff_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class'TslBuff'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_ClassDynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.CallFunc_AddBuff_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.3"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ClassProperty",
+    "Name": "K2Node_ClassDynamicCast_AsTsl_Buff",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Class": "UScriptClass'ClassProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.K2Node_ClassDynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.4"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Class'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "MetaClass": {
+      "ObjectName": "Class'TslBuff'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ClassProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.K2Node_ClassDynamicCast_AsTsl_Buff'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.5"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ClassProperty",
+    "Name": "CallFunc_GetClassFromStringClassReference_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Class": "UScriptClass'ClassProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.CallFunc_Greater_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.6"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Class'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "MetaClass": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetBreath_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "ClassProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.CallFunc_GetClassFromStringClassReference_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.7"
+    }
+  },
+  {
+    "Type": "EnumProperty",
+    "Name": "CallFunc_GetBreathType_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Class": "UScriptClass'EnumProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.CallFunc_GetBreath_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.8"
+    },
+    "Enum": {
+      "ObjectName": "Enum'EBreathType'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "UnderlyingProp": {
+      "ObjectName": "ByteProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.CallFunc_GetBreathType_ReturnValue.UnderlyingType'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.2"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetBuffComponent_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "EnumProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.CallFunc_GetBreathType_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.9"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'BuffComponet'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.CallFunc_GetBuffComponent_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.10"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Character",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.11"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OtherCharacter",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.K2Node_DynamicCast_AsTsl_Character'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.12"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetOwnerPawn_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.K2Node_Event_OtherCharacter'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.13"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Pawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetCharacter_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.CallFunc_GetOwnerPawn_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.14"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.CallFunc_GetCharacter_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.15"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Buff_DecreaseBreathInHolding",
+    "Outer": "Buff_DecreaseBreathInHolding_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInHolding_C:DefaultSceneRoot'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.16"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OtherCharacter",
+    "Outer": "TickBuff",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "TickBuff",
+    "Outer": "Buff_DecreaseBreathInHolding_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.17"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'TslBuff:TickBuff'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Buff_DecreaseBreathInHolding_C:TickBuff.OtherCharacter'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.18"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "UnderlyingType",
+    "Outer": "CallFunc_GetBreathType_ReturnValue",
+    "Class": "UScriptClass'ByteProperty'",
+    "Next": null,
+    "Enum": null
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetCharacter_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "EnumProperty",
+    "Name": "CallFunc_GetBreathType_ReturnValue",
+    "Outer": "UserConstructionScript",
+    "Class": "UScriptClass'EnumProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DecreaseBreathInHolding_C:UserConstructionScript.CallFunc_GetCharacter_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.21"
+    },
+    "Enum": {
+      "ObjectName": "Enum'EBreathType'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "UnderlyingProp": {
+      "ObjectName": "ByteProperty'Buff_DecreaseBreathInHolding_C:UserConstructionScript.CallFunc_GetBreathType_ReturnValue.UnderlyingType'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.20"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "Buff_DecreaseBreathInHolding_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_DecreaseBreathInHolding_C:TickBuff'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.19"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "EnumProperty'Buff_DecreaseBreathInHolding_C:UserConstructionScript.CallFunc_GetBreathType_ReturnValue'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.22"
+      }
+    ],
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Buff_DecreaseBreathInHolding_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Buff_DecreaseBreathInHolding_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.23"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_DecreaseBreathInHolding_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Buff_DecreaseBreathInHolding_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.29"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Buff_DecreaseBreathInHolding_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.24"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.17"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'CharacterBreathBuff'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Buff_DecreaseBreathInHolding_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.24"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Buff_DecreaseBreathInHolding": {
+        "ObjectName": "Function'Buff_DecreaseBreathInHolding_C:ExecuteUbergraph_Buff_DecreaseBreathInHolding'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.17"
+      },
+      "TickBuff": {
+        "ObjectName": "Function'Buff_DecreaseBreathInHolding_C:TickBuff'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.19"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'Buff_DecreaseBreathInHolding_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.23"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_DecreaseBreathInHolding_C'Default__Buff_DecreaseBreathInHolding_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.26"
+    }
+  },
+  {
+    "Type": "Buff_DecreaseBreathInHolding_C",
+    "Name": "Default__Buff_DecreaseBreathInHolding_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.Buff_DecreaseBreathInHolding_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BuffClass": {
+        "ObjectClass": null
+      },
+      "BreathPerTick": 2.0,
+      "OverlapId": "Buff_DecreaseBreathInHolding",
+      "BuffTickInterval": 0.1,
+      "BuffTickFirstDelay": 1.0,
+      "Infinite": true,
+      "IsDebuff": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Buff_DecreaseBreathInHolding_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Buff_DecreaseBreathInHolding_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.27"
+      },
+      "VariableGuid": "DD473638-45FD5CC6-F889F1B4-7851CEF0",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Buff_DecreaseBreathInHolding_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Buff_DecreaseBreathInHolding_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.28"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Buff_DecreaseBreathInHolding_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.28"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Buff_DecreaseBreathInHolding_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DecreaseBreathInHolding.28"
+      }
+    }
+  }
+]

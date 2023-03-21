@@ -1,0 +1,209 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "tiger_Dirtstone_3",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "DefaultInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "33F8F70B45BA2F23268DE2A9A12EE167"
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "tiger_Dirtstone_3",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "_Sctr_S_qkbhX_LOD4default",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 444.10864,
+            "LocalUVDensities": 292.08487,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 292.08484,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.23543549,
+          "Y": 1.088665,
+          "Z": -9.660618
+        },
+        "BoxExtent": {
+          "X": 89.89684,
+          "Y": 64.50519,
+          "Z": 25.79601
+        },
+        "SphereRadius": 97.75336
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'tiger_Dirtstone_3:BodySetup_0'",
+      "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Dirt02/tiger_Dirtstone_3.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "A0659AAC-42047A26-D060A8B8-EA3352AF",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 234,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 151,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 152
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 152,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 116,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 84,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 39.259502,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 85
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 85,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        },
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 58,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 47,
+              "bEnableCollision": false,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 81.91822,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 48
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 48,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.23543549,
+          "Y": 1.088665,
+          "Z": -9.660618
+        },
+        "BoxExtent": {
+          "X": 89.89684,
+          "Y": 64.50519,
+          "Z": 25.79601
+        },
+        "SphereRadius": 97.75336
+      },
+      "bLODsShareStaticLighting": false,
+      "ScreenSize": [
+        1.0,
+        0.3,
+        0.11,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

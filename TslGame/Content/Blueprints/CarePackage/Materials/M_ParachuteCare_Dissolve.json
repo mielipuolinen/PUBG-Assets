@@ -1,0 +1,1042 @@
+[
+  {
+    "Type": "Material",
+    "Name": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "PhysMaterial": {
+        "ObjectName": "PhysicalMaterial'PhysMat_Grass'",
+        "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Grass.0"
+      },
+      "BaseColor": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_2",
+        "UseConstant": false,
+        "Constant": {
+          "B": 128,
+          "G": 128,
+          "R": 128,
+          "A": 255,
+          "Hex": "FF808080"
+        }
+      },
+      "Metallic": {
+        "Expression": null,
+        "OutputIndex": 3,
+        "InputName": "",
+        "Mask": 1,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSampleParameter2D_5",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "Specular": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionScalarParameter_1",
+        "UseConstant": false,
+        "Constant": 0.5
+      },
+      "Roughness": {
+        "Expression": null,
+        "OutputIndex": 2,
+        "InputName": "",
+        "Mask": 1,
+        "MaskR": 0,
+        "MaskG": 1,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSampleParameter2D_5",
+        "UseConstant": false,
+        "Constant": 0.5
+      },
+      "Normal": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_0",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "EmissiveColor": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_3",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "OpacityMask": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_5",
+        "UseConstant": false,
+        "Constant": 1.0
+      },
+      "BlendMode": "BLEND_Masked",
+      "WorldPositionOffset": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_4",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "SubsurfaceColor": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_12",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "AmbientOcclusion": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 1,
+        "MaskR": 1,
+        "MaskG": 1,
+        "MaskB": 1,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureSampleParameter2D_6",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "Temperature": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_7",
+        "UseConstant": false,
+        "Constant": 0.0
+      },
+      "TwoSided": true,
+      "DitheredLODTransition": true,
+      "bUsedWithSkeletalMesh": true,
+      "bUsedWithInstancedStaticMeshes": true,
+      "EditorX": 2224,
+      "EditorY": -544,
+      "Expressions": [
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameter2D'M_ParachuteCare_Dissolve:MaterialExpressionTextureSampleParameter2D_5'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.15"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_ParachuteCare_Dissolve:MaterialExpressionScalarParameter_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.6"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameter2D'M_ParachuteCare_Dissolve:MaterialExpressionTextureSampleParameter2D_6'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.16"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameter2D'M_ParachuteCare_Dissolve:MaterialExpressionTextureSampleParameter2D_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.13"
+        },
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall'M_ParachuteCare_Dissolve:MaterialExpressionMaterialFunctionCall_8'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.4"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameter2D'M_ParachuteCare_Dissolve:MaterialExpressionTextureSampleParameter2D_4'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.14"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_ParachuteCare_Dissolve:MaterialExpressionScalarParameter_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.12"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_ParachuteCare_Dissolve:MaterialExpressionScalarParameter_13'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.7"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_ParachuteCare_Dissolve:MaterialExpressionScalarParameter_26'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.11"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_ParachuteCare_Dissolve:MaterialExpressionScalarParameter_25'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.10"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_ParachuteCare_Dissolve:MaterialExpressionScalarParameter_24'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.9"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_ParachuteCare_Dissolve:MaterialExpressionScalarParameter_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.5"
+        },
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall'M_ParachuteCare_Dissolve:MaterialExpressionMaterialFunctionCall_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.1"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_ParachuteCare_Dissolve:MaterialExpressionScalarParameter_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.8"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionVectorParameter'M_ParachuteCare_Dissolve:MaterialExpressionVectorParameter_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.17"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall'M_ParachuteCare_Dissolve:MaterialExpressionMaterialFunctionCall_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.2"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall'M_ParachuteCare_Dissolve:MaterialExpressionMaterialFunctionCall_7'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.3"
+        }
+      ],
+      "MaterialFunctionInfos": [
+        {
+          "StateId": "49637CE3-497F6537-F49E7E96-78C0735F",
+          "Function": {
+            "ObjectName": "MaterialFunction'SimpleGrassWind'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SimpleGrassWind.0"
+          }
+        },
+        {
+          "StateId": "AFD578CD-4BE585F1-358DB19C-52D50837",
+          "Function": {
+            "ObjectName": "MaterialFunction'MF_Dissolve'",
+            "ObjectPath": "TslGame/Content/Effects/Clets/MaterialFuntion/MF_Dissolve.4"
+          }
+        },
+        {
+          "StateId": "AFD578CD-4BE585F1-358DB19C-52D50837",
+          "Function": {
+            "ObjectName": "MaterialFunction'MF_Dissolve'",
+            "ObjectPath": "TslGame/Content/Effects/Clets/MaterialFuntion/MF_Dissolve.4"
+          }
+        },
+        {
+          "StateId": "A36CB742-4F58E940-D2F0BA92-6DBB5765",
+          "Function": {
+            "ObjectName": "MaterialFunction'MF_ThermoClass'",
+            "ObjectPath": "TslGame/Content/Materials/Thermal/MF_ThermoClass.11"
+          }
+        }
+      ],
+      "MaterialParameterCollectionInfos": [
+        {
+          "StateId": "0F08089D-42CBB519-CA1BE8A2-92B31045",
+          "ParameterCollection": {
+            "ObjectName": "MaterialParameterCollection'GlobalMaterialParameters'",
+            "ObjectPath": "TslGame/Content/Materials/GlobalMaterialParameters.0"
+          }
+        }
+      ],
+      "StateId": "5CCAA8A0-4649B9A7-B423069D-65654238",
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "Parachute_A_PGI_D"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "Parachute_RM2"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "ParachuteCare_AO"
+        },
+        {
+          "SamplingScale": 0.25,
+          "UVChannelIndex": 0,
+          "TextureName": "ParachuteCare_N"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Env_01"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_0",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionMaterialFunctionCall'",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction'MF_Dissolve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/MaterialFuntion/MF_Dissolve.4"
+      },
+      "FunctionInputs": [
+        {
+          "ExpressionInputId": "253929D0-4C8D59F5-C59D3495-19E9A6B7",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "DissolveColor",
+            "Mask": 1,
+            "MaskR": 1,
+            "MaskG": 1,
+            "MaskB": 1,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionVectorParameter_0"
+          }
+        },
+        {
+          "ExpressionInputId": "72D01455-40BDCB01-0938B4B9-399509E8",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "DissolveValue",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionScalarParameter_2"
+          }
+        },
+        {
+          "ExpressionInputId": "E308716A-429C920A-EDAF0B87-4774F6BB",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "DissolveControl",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionScalarParameter_2"
+          }
+        },
+        {
+          "ExpressionInputId": "B0E66725-41DF3BB6-B8FA40AA-1C24C8E4",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": -1,
+            "InputName": "DissolveTex",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "None"
+          }
+        },
+        {
+          "ExpressionInputId": "4D518F91-46C8BC23-B088A3BC-EE424BB7",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "DissolveU",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionConstant_3"
+          }
+        },
+        {
+          "ExpressionInputId": "937A29EF-477D7F04-59AABF91-104096FB",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "DissolveV",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionConstant_4"
+          }
+        }
+      ],
+      "FunctionOutputs": [
+        {
+          "ExpressionOutputId": "1D812325-40F95F87-E0C444AB-D5AD256D",
+          "Output": {
+            "OutputName": "Opacity",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        },
+        {
+          "ExpressionOutputId": "AB105CFC-48F84F20-FD151B93-933B894B",
+          "Output": {
+            "OutputName": "IfMask",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        }
+      ],
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      },
+      "Outputs": [
+        {
+          "OutputName": "Opacity",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        },
+        {
+          "OutputName": "IfMask",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_2",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionMaterialFunctionCall'",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction'MF_Dissolve'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/MaterialFuntion/MF_Dissolve.4"
+      },
+      "FunctionInputs": [
+        {
+          "ExpressionInputId": "253929D0-4C8D59F5-C59D3495-19E9A6B7",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "DissolveColor",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionConstant3Vector_2"
+          }
+        },
+        {
+          "ExpressionInputId": "72D01455-40BDCB01-0938B4B9-399509E8",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "DissolveValue",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionMultiply_14"
+          }
+        },
+        {
+          "ExpressionInputId": "E308716A-429C920A-EDAF0B87-4774F6BB",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "DissolveControl",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionMultiply_14"
+          }
+        },
+        {
+          "ExpressionInputId": "B0E66725-41DF3BB6-B8FA40AA-1C24C8E4",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": -1,
+            "InputName": "DissolveTex",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "None"
+          }
+        },
+        {
+          "ExpressionInputId": "4D518F91-46C8BC23-B088A3BC-EE424BB7",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "DissolveU",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionConstant_3"
+          }
+        },
+        {
+          "ExpressionInputId": "937A29EF-477D7F04-59AABF91-104096FB",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "DissolveV",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionConstant_4"
+          }
+        }
+      ],
+      "FunctionOutputs": [
+        {
+          "ExpressionOutputId": "1D812325-40F95F87-E0C444AB-D5AD256D",
+          "Output": {
+            "OutputName": "Opacity",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        },
+        {
+          "ExpressionOutputId": "AB105CFC-48F84F20-FD151B93-933B894B",
+          "Output": {
+            "OutputName": "IfMask",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        }
+      ],
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      },
+      "Outputs": [
+        {
+          "OutputName": "Opacity",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        },
+        {
+          "OutputName": "IfMask",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_7",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionMaterialFunctionCall'",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction'MF_ThermoClass'",
+        "ObjectPath": "TslGame/Content/Materials/Thermal/MF_ThermoClass.11"
+      },
+      "FunctionInputs": [
+        {
+          "ExpressionInputId": "D459D39C-427711EA-B872A889-1A56BC44",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "CustomTemp",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "None"
+          }
+        },
+        {
+          "ExpressionInputId": "2426A3C9-45CF96BD-F7BF9288-B02CE80D",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "CustomAlpha",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "None"
+          }
+        }
+      ],
+      "FunctionOutputs": [
+        {
+          "ExpressionOutputId": "C511D07C-4B479B85-BBF03E85-5F617B33",
+          "Output": {
+            "OutputName": "Temperature",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        },
+        {
+          "ExpressionOutputId": "89F52571-4697D103-F8C83AAB-84ACB737",
+          "Output": {
+            "OutputName": "TemperatureAlpha",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        }
+      ],
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      },
+      "Outputs": [
+        {
+          "OutputName": "Temperature",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        },
+        {
+          "OutputName": "TemperatureAlpha",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_8",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionMaterialFunctionCall'",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction'SimpleGrassWind'",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/WorldPositionOffset/SimpleGrassWind.0"
+      },
+      "FunctionInputs": [
+        {
+          "ExpressionInputId": "59B25CA3-44057CBC-047826BB-B081BB6A",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "WindIntensity",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionScalarParameter_26"
+          }
+        },
+        {
+          "ExpressionInputId": "9F127867-429E94C8-53245BA4-15B9133D",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "WindWeight",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionScalarParameter_24"
+          }
+        },
+        {
+          "ExpressionInputId": "B142CFD8-4EFE5357-F8C6E6A4-4E070E4D",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "WindSpeed",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionScalarParameter_25"
+          }
+        },
+        {
+          "ExpressionInputId": "12C80829-425389C3-EE47AC97-BD178E9D",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "AdditionalWPO",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionConstant3Vector_0"
+          }
+        }
+      ],
+      "FunctionOutputs": [
+        {
+          "ExpressionOutputId": "786F77A7-413AC09B-F7F84581-E91EE756",
+          "Output": {
+            "OutputName": "Result",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        }
+      ],
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      },
+      "Outputs": [
+        {
+          "OutputName": "Result",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_0",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 1.0,
+      "ParameterName": "Diffuse Bright",
+      "ExpressionGUID": "EAA50EF5-42A2AB54-03A9CBB2-45D04792",
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_1",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "ParameterName": "Specular",
+      "ExpressionGUID": "7A298199-4951ECED-D5305F82-E24FA4B8",
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_13",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.7,
+      "SliderMax": 1.0,
+      "ParameterName": "Subsurface Power",
+      "ExpressionGUID": "2B2BDF1A-448D0667-EA888086-E169E049",
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_2",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.837971,
+      "ParameterName": "Dissolve",
+      "ExpressionGUID": "928FA40D-492BE725-B484189E-6C500D9F",
+      "Group": "Dissolve",
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_24",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 1.0,
+      "ParameterName": "Weight",
+      "ExpressionGUID": "E24290CE-4C7AD458-B7A6FCB8-340771AA",
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_25",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.2,
+      "ParameterName": "Speed",
+      "ExpressionGUID": "805FE385-44540DA2-A6003495-7158F1DC",
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_26",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.15,
+      "ParameterName": "Intensity",
+      "ExpressionGUID": "8D1C8904-4DE89F19-D8FF3690-D3DAE2E8",
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_3",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 5.0,
+      "SliderMax": 20.0,
+      "ParameterName": "Roughness",
+      "ExpressionGUID": "9D8A495A-4CE3A288-3A82C6A1-F44CD9CA",
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameter2D",
+    "Name": "MaterialExpressionTextureSampleParameter2D_1",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionTextureSampleParameter2D'",
+    "Properties": {
+      "ParameterName": "Diffuse",
+      "ExpressionGUID": "331B2BBA-4B78B803-ACC08795-77CDFB75",
+      "MipValueMode": "TMVM_MipBias",
+      "Texture": {
+        "ObjectName": "Texture2D'Parachute_A_PGI_D'",
+        "ObjectPath": "TslGame/Content/Vehicles/Parachute/Parachute/Textures/Parachute_A_PGI_D.0"
+      },
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameter2D",
+    "Name": "MaterialExpressionTextureSampleParameter2D_4",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionTextureSampleParameter2D'",
+    "Properties": {
+      "ParameterName": "Normal",
+      "ExpressionGUID": "39189FE2-4EA7269D-3DF1D687-C3E390FC",
+      "MipValueMode": "TMVM_MipBias",
+      "Texture": {
+        "ObjectName": "Texture2D'ParachuteCare_N'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Textures/ParachuteCare_N.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameter2D",
+    "Name": "MaterialExpressionTextureSampleParameter2D_5",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionTextureSampleParameter2D'",
+    "Properties": {
+      "ParameterName": "Roughness",
+      "ExpressionGUID": "075B9FA4-49519DBA-9C729385-12BA5D6F",
+      "Texture": {
+        "ObjectName": "Texture2D'Parachute_RM2'",
+        "ObjectPath": "TslGame/Content/Vehicles/Parachute/Parachute/Textures/Parachute_RM2.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearColor",
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameter2D",
+    "Name": "MaterialExpressionTextureSampleParameter2D_6",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionTextureSampleParameter2D'",
+    "Properties": {
+      "ParameterName": "AO",
+      "ExpressionGUID": "32A4B7ED-444B1B3E-94ED8385-0BADB4F7",
+      "MipValueMode": "TMVM_MipBias",
+      "Texture": {
+        "ObjectName": "Texture2D'ParachuteCare_AO'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Textures/ParachuteCare_AO.0"
+      },
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_0",
+    "Outer": "M_ParachuteCare_Dissolve",
+    "Class": "UScriptClass'MaterialExpressionVectorParameter'",
+    "Properties": {
+      "DefaultValue": {
+        "R": 1.0,
+        "G": 0.395086,
+        "B": 0.090463,
+        "A": 0.0,
+        "Hex": "FFA955"
+      },
+      "ParameterName": "DissolveColor",
+      "ExpressionGUID": "E4481A4F-40951AAC-2083ECB3-FBE4E484",
+      "Group": "Dissolve",
+      "Material": {
+        "ObjectName": "Material'M_ParachuteCare_Dissolve'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Materials/M_ParachuteCare_Dissolve.0"
+      }
+    }
+  }
+]

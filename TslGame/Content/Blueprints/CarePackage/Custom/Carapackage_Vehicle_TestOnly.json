@@ -1,0 +1,1038 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "bArrived",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "PropertyFlags": 65541,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "AltCheckTHandle",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Carapackage_Vehicle_TestOnly_C:bArrived'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.0"
+    },
+    "PropertyFlags": 65541,
+    "Struct": {
+      "ObjectName": "ScriptStruct'TimerHandle'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Scene",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:AltCheckTHandle'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.1"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CarFakeMesh",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Vehicle_TestOnly_C:Scene'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.2"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SkeletalMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetTimer_ReturnValue",
+    "Outer": "ExecuteUbergraph_Carapackage_Vehicle_TestOnly",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct'TimerHandle'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_SetStaticMesh_ReturnValue",
+    "Outer": "ExecuteUbergraph_Carapackage_Vehicle_TestOnly",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:ExecuteUbergraph_Carapackage_Vehicle_TestOnly.CallFunc_K2_SetTimer_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.4"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_HasAuthority_ReturnValue",
+    "Outer": "ExecuteUbergraph_Carapackage_Vehicle_TestOnly",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Carapackage_Vehicle_TestOnly_C:ExecuteUbergraph_Carapackage_Vehicle_TestOnly.CallFunc_SetStaticMesh_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.5"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Carapackage_Vehicle_TestOnly",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Carapackage_Vehicle_TestOnly_C:ExecuteUbergraph_Carapackage_Vehicle_TestOnly.CallFunc_HasAuthority_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.6"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Carapackage_Vehicle_TestOnly",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Vehicle_TestOnly_C:CarFakeMesh'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.3"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Carapackage_Vehicle_TestOnly_C:ExecuteUbergraph_Carapackage_Vehicle_TestOnly.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.7"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveDestroyed",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:ExecuteUbergraph_Carapackage_Vehicle_TestOnly'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.8"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveDestroyed'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "CL_HideMesh",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:ReceiveDestroyed'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.9"
+    },
+    "FunctionFlags": 201343168
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:CL_HideMesh'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.10"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:ReceiveBeginPlay'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.11"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "K2Node_MakeArray_Array",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "K2Node_MakeArray_Array2",
+    "Outer": "K2Node_MakeArray_Array2",
+    "Class": "UScriptClass'ByteProperty'",
+    "Next": null,
+    "Enum": {
+      "ObjectName": "Enum'EObjectTypeQuery'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_TraceEnd",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_TraceStart",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_TraceEnd'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.15"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_BreakHitResult_FaceIndex",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_TraceStart'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.16"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_BreakHitResult_HitItem",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "IntProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_FaceIndex'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.17"
+    }
+  },
+  {
+    "Type": "NameProperty",
+    "Name": "CallFunc_BreakHitResult_HitBoneName",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'NameProperty'",
+    "Next": {
+      "ObjectName": "IntProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_HitItem'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.18"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_HitComponent",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "NameProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_HitBoneName'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.19"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PrimitiveComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_HitActor",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_HitComponent'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.20"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BreakHitResult_PhysMat",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_HitActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.21"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PhysicalMaterial'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_ImpactNormal",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_PhysMat'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.22"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_Normal",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_ImpactNormal'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.23"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_ImpactPoint",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_Normal'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.24"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_BreakHitResult_Location",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_ImpactPoint'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.25"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakHitResult_Time",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_Location'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.26"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BreakHitResult_bInitialOverlap",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_Time'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.27"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BreakHitResult_bBlockingHit",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_bInitialOverlap'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.28"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_LineTraceSingleForObjects_ReturnValue",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_BreakHitResult_bBlockingHit'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.29"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_LineTraceSingleForObjects_OutHit",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_LineTraceSingleForObjects_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.30"
+    },
+    "PropertyFlags": 549755813888,
+    "Struct": {
+      "ObjectName": "ScriptStruct'HitResult'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array2",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'ArrayProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_LineTraceSingleForObjects_OutHit'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.31"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "ByteProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.K2Node_MakeArray_Array2.K2Node_MakeArray_Array2'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.14"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'ArrayProperty'",
+    "Next": {
+      "ObjectName": "ArrayProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.K2Node_MakeArray_Array2'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.32"
+    },
+    "PropertyFlags": 134217730,
+    "Inner": {
+      "ObjectName": "ObjectProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.K2Node_MakeArray_Array.K2Node_MakeArray_Array'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.13"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Add_VectorVector_ReturnValue",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ArrayProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.K2Node_MakeArray_Array'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.33"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+    "Outer": "CheckAlt",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_Add_VectorVector_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.34"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "CheckAlt",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.12"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:CheckAlt.CallFunc_K2_GetActorLocation_ReturnValue'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.35"
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "StrProperty",
+    "Name": "CallFunc_Conv_VectorToString_ReturnValue",
+    "Outer": "TriggerArrive",
+    "Class": "UScriptClass'StrProperty'",
+    "Next": null
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetMovementComponent_ReturnValue",
+    "Outer": "TriggerArrive",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "StrProperty'Carapackage_Vehicle_TestOnly_C:TriggerArrive.CallFunc_Conv_VectorToString_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.37"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PawnMovementComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_FinishSpawningActor_ReturnValue",
+    "Outer": "TriggerArrive",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Vehicle_TestOnly_C:TriggerArrive.CallFunc_GetMovementComponent_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.38"
+    },
+    "PropertyClass": {
+      "ObjectName": "BlueprintGeneratedClass'Uaz_A_01_C'",
+      "ObjectPath": "TslGame/Content/Vehicles/Uaz/BluePrint/Uaz_A_01.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue",
+    "Outer": "TriggerArrive",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Vehicle_TestOnly_C:TriggerArrive.CallFunc_FinishSpawningActor_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.39"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_GetComponentToWorld_ReturnValue",
+    "Outer": "TriggerArrive",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carapackage_Vehicle_TestOnly_C:TriggerArrive.CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.40"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Transform'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetVelocity_ReturnValue",
+    "Outer": "TriggerArrive",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:TriggerArrive.CallFunc_K2_GetComponentToWorld_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.41"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_HasAuthority_ReturnValue",
+    "Outer": "TriggerArrive",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:TriggerArrive.CallFunc_GetVelocity_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.42"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "Function",
+    "Name": "TriggerArrive",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:CheckAlt'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.36"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty'Carapackage_Vehicle_TestOnly_C:TriggerArrive.CallFunc_HasAuthority_ReturnValue'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.43"
+      }
+    ],
+    "FunctionFlags": 209846272
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:TriggerArrive'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.44"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Carapackage_Vehicle_TestOnly_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.58"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.45"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:ExecuteUbergraph_Carapackage_Vehicle_TestOnly'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.8"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'CarePackageItem'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Carapackage_Vehicle_TestOnly_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.45"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Carapackage_Vehicle_TestOnly": {
+        "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:ExecuteUbergraph_Carapackage_Vehicle_TestOnly'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.8"
+      },
+      "ReceiveDestroyed": {
+        "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:ReceiveDestroyed'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.9"
+      },
+      "CL_HideMesh": {
+        "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:CL_HideMesh'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.10"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:ReceiveBeginPlay'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.11"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.12"
+      },
+      "CheckAlt": {
+        "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:CheckAlt'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.36"
+      },
+      "TriggerArrive": {
+        "ObjectName": "Function'Carapackage_Vehicle_TestOnly_C:TriggerArrive'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.44"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Carapackage_Vehicle_TestOnly_C'Default__Carapackage_Vehicle_TestOnly_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.47"
+    }
+  },
+  {
+    "Type": "Carapackage_Vehicle_TestOnly_C",
+    "Name": "Default__Carapackage_Vehicle_TestOnly_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.Carapackage_Vehicle_TestOnly_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AltCheckTHandle": {
+        "Handle": 0
+      },
+      "ParachuteClass": {
+        "ObjectName": "BlueprintGeneratedClass'Parachute_Flaregun_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Parachute_Flaregun.0"
+      },
+      "VisualStaticMesh": {
+        "ObjectName": "AsyncStaticMeshComponent'Default__Carapackage_Vehicle_TestOnly_C:VisualStaticMesh'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.49"
+      },
+      "LimitFallSpeed": 500.0,
+      "MovementComponent": {
+        "ObjectName": "SimpleInterpolationMovement'Default__Carapackage_Vehicle_TestOnly_C:MovementComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.59"
+      },
+      "BuoyancyForceComponent": {
+        "ObjectName": "BuoyancyForceComponent'Default__Carapackage_Vehicle_TestOnly_C:BuoyancyForceComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.51"
+      },
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_Vehicle_TestOnly_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.50"
+      },
+      "InteractionComponent": {
+        "ObjectName": "OnceInteractionComponent'Default__Carapackage_Vehicle_TestOnly_C:InteractionComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.52"
+      },
+      "DropStaticMesh": {
+        "ObjectName": "AsyncStaticMeshComponent'Default__Carapackage_Vehicle_TestOnly_C:DropStaticMesh'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.48"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_Vehicle_TestOnly_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.50"
+      },
+      "OnDestroyed": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "Carapackage_Vehicle_TestOnly_C'Default__Carapackage_Vehicle_TestOnly_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.47"
+            },
+            "FunctionName": "OnDestroy"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "AsyncStaticMeshComponent",
+    "Name": "DropStaticMesh",
+    "Outer": "Default__Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'AsyncStaticMeshComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_Vehicle_TestOnly_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.50"
+      }
+    }
+  },
+  {
+    "Type": "AsyncStaticMeshComponent",
+    "Name": "VisualStaticMesh",
+    "Outer": "Default__Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'AsyncStaticMeshComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_Vehicle_TestOnly_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.50"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -100.29791
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent",
+    "Outer": "Default__Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 95.0,
+        "Y": 85.0,
+        "Z": 10.0
+      },
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bUseCCD": false,
+        "CollisionEnabled": "ECollisionEnabled::QueryOnly"
+      },
+      "CanCharacterStepUpOn": "ECB_No",
+      "PhysicsVolumeChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "SimpleInterpolationMovement'Default__Carapackage_Vehicle_TestOnly_C:MovementComponent'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.59"
+            },
+            "FunctionName": "PhysicsVolumeChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BuoyancyForceComponent",
+    "Name": "BuoyancyForceComponent",
+    "Outer": "Default__Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'BuoyancyForceComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_Vehicle_TestOnly_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.50"
+      }
+    }
+  },
+  {
+    "Type": "OnceInteractionComponent",
+    "Name": "InteractionComponent",
+    "Outer": "Default__Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'OnceInteractionComponent'",
+    "Properties": {
+      "OnInteractBy": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "Carapackage_Vehicle_TestOnly_C'Default__Carapackage_Vehicle_TestOnly_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.47"
+            },
+            "FunctionName": "ServerOnInteractBy"
+          }
+        ]
+      },
+      "ClientOnInteractBy": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "Carapackage_Vehicle_TestOnly_C'Default__Carapackage_Vehicle_TestOnly_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.47"
+            },
+            "FunctionName": "ClientOnInteractBy"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "Scene_GEN_VARIABLE",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -76.062225
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Carapackage_Vehicle_TestOnly_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.53"
+      },
+      "VariableGuid": "35894EE2-488C159F-461F42AD-C9139BB6",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Carapackage_Vehicle_TestOnly_C:Scene_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.54"
+      },
+      "ParentComponentOrVariableName": "BoxComponent",
+      "bIsParentComponentNative": true,
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'Carapackage_Vehicle_TestOnly_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.57"
+        }
+      ],
+      "VariableGuid": "105CB424-4501308E-63DC57A8-633BA101",
+      "InternalVariableName": "Scene"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent'Carapackage_Vehicle_TestOnly_C:CarFakeMesh_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.60"
+      },
+      "VariableGuid": "45D02A52-4ABA912B-22CE4985-AAABF863",
+      "InternalVariableName": "CarFakeMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Carapackage_Vehicle_TestOnly_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.56"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Carapackage_Vehicle_TestOnly_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.56"
+        },
+        {
+          "ObjectName": "SCS_Node'Carapackage_Vehicle_TestOnly_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.57"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Carapackage_Vehicle_TestOnly_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/Carapackage_Vehicle_TestOnly.55"
+      }
+    }
+  },
+  {
+    "Type": "SimpleInterpolationMovement",
+    "Name": "MovementComponent",
+    "Outer": "Default__Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'SimpleInterpolationMovement'"
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "CarFakeMesh_GEN_VARIABLE",
+    "Outer": "Carapackage_Vehicle_TestOnly_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Properties": {
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class'ClothingSimulationFactoryNv'",
+        "ObjectPath": "/Script/ClothingSystemRuntime"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_Uaz_NoCover'",
+        "ObjectPath": "TslGame/Content/Vehicles/Uaz/Mesh/SK_Uaz_NoCover.0"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Weapon",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Grenade",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "InteractiveObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CrosshairImpact",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      }
+    }
+  }
+]

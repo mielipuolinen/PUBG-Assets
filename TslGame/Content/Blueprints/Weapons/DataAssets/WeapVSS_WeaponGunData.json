@@ -2,11 +2,12 @@
   {
     "Type": "WeaponGunDataAsset",
     "Name": "WeapVSS_WeaponGunData",
+    "Class": "UScriptClass'WeaponGunDataAsset'",
     "Properties": {
       "WeaponGunConfig": {
         "AmmoItemID": "Item_Ammo_9mm_C",
         "TracerClass": {
-          "ObjectName": "ParticleSystem P_Tracer_VSS",
+          "ObjectName": "ParticleSystem'P_Tracer_VSS'",
           "ObjectPath": "TslGame/Content/Export_Marek/Tracer/P_Tracer_VSS.10"
         },
         "GameplayTracerAmmoModOverride": 5,
@@ -53,9 +54,11 @@
           "Z": 2.0
         },
         "bUseConstScope": true,
-        "ScopeOffsetMap": {
-          "EScopeType::Right": -25.0
-        }
+        "ScopeOffsetMap": [
+          {
+            "EScopeType::Right": -25.0
+          }
+        ]
       },
       "WeaponDeviationConfig": {
         "DeviationBase": 3.1,
@@ -70,50 +73,50 @@
       },
       "WeaponAnimConfig": {
         "CharacterGripBlendspace": {
-          "ObjectName": "BlendSpace1D Weapon_VSS_Grip_RD",
+          "ObjectName": "BlendSpace1D'Weapon_VSS_Grip_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/VSS/Redux/Weapon_VSS_Grip_RD.0"
         },
         "CharacterLHGripBlendspace": {
-          "ObjectName": "BlendSpace1D Weapon_VSS_Grip_RD",
+          "ObjectName": "BlendSpace1D'Weapon_VSS_Grip_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/VSS/Redux/Weapon_VSS_Grip_RD.0"
         },
         "CharacterFireSelector": {
-          "ObjectName": "AnimMontage Character_Weapon_VSS_Firemode_Montage_RD",
+          "ObjectName": "AnimMontage'Character_Weapon_VSS_Firemode_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/VSS/Redux/Character_Weapon_VSS_Firemode_Montage_RD.0"
         },
         "CharacterReloadTactical": {
-          "ObjectName": "AnimMontage CharacterWeapon_VSS_Reload_Montage_RD",
+          "ObjectName": "AnimMontage'CharacterWeapon_VSS_Reload_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/VSS/Redux/CharacterWeapon_VSS_Reload_Montage_RD.0"
         },
         "CharacterReloadCharge": {
-          "ObjectName": "AnimMontage CharacterWeapon_VSS_Reload_Charge_Montage_RD",
+          "ObjectName": "AnimMontage'CharacterWeapon_VSS_Reload_Charge_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/VSS/Redux/CharacterWeapon_VSS_Reload_Charge_Montage_RD.0"
         },
         "WeaponReloadTactical": {
-          "ObjectName": "AnimMontage Weapon_VSS_Reload_Charge_Montage_RD",
+          "ObjectName": "AnimMontage'Weapon_VSS_Reload_Charge_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/VSS/Redux/Weapon_RD/Weapon_VSS_Reload_Charge_Montage_RD.0"
         },
         "WeaponReloadCharge": {
-          "ObjectName": "AnimMontage Weapon_VSS_Reload_Charge_Montage_RD",
+          "ObjectName": "AnimMontage'Weapon_VSS_Reload_Charge_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/VSS/Redux/Weapon_RD/Weapon_VSS_Reload_Charge_Montage_RD.0"
         },
         "WeaponInspectMontage": {
-          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectName": "AnimMontage'Rifle_Combat_FPP_Inspect_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
         },
         "ReloadDurationTactical": 2.1,
         "ReloadDurationCharge": 2.9,
         "ReloadDurationMagOut": 0.4,
         "ShotCameraShake": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_VSS_9x39_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_VSS_9x39_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_VSS_9x39.0"
         },
         "ShotCameraShakeIronsight": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_VSS_9x39_Ironsight_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_VSS_9x39_Ironsight_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_VSS_9x39_Ironsight.0"
         },
         "ShotCameraShakeADS": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_VSS_9x39_Scope_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_VSS_9x39_Scope_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_VSS_9x39_Scope.0"
         },
         "RecoilKickADS": 1.0,

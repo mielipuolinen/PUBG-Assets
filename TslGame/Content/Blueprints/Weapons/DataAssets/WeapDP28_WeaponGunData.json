@@ -2,6 +2,7 @@
   {
     "Type": "WeaponGunDataAsset",
     "Name": "WeapDP28_WeaponGunData",
+    "Class": "UScriptClass'WeaponGunDataAsset'",
     "Properties": {
       "WeaponGunConfig": {
         "AmmoItemID": "Item_Ammo_762mm_C",
@@ -50,23 +51,23 @@
       },
       "WeaponAnimConfig": {
         "CharacterGripBlendspace": {
-          "ObjectName": "BlendSpace1D Weapon_DP28_Grip_RD",
+          "ObjectName": "BlendSpace1D'Weapon_DP28_Grip_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DP28/Redux/Weapon_DP28_Grip_RD.0"
         },
         "CharacterFireSelector": {
-          "ObjectName": "AnimMontage Character_Weapon_AK_Firemode_Montage",
+          "ObjectName": "AnimMontage'Character_Weapon_AK_Firemode_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/AK/Character_Weapon_AK_Firemode_Montage.0"
         },
         "CharacterReloadTactical": {
-          "ObjectName": "AnimMontage CharacterWeapon_DP28_Reload_Montage_RD",
+          "ObjectName": "AnimMontage'CharacterWeapon_DP28_Reload_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DP28/Redux/CharacterWeapon_DP28_Reload_Montage_RD.0"
         },
         "CharacterReloadCharge": {
-          "ObjectName": "AnimMontage CharacterWeapon_DP28_Reload_Charge_Montage_RD",
+          "ObjectName": "AnimMontage'CharacterWeapon_DP28_Reload_Charge_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/DP28/Redux/CharacterWeapon_DP28_Reload_Charge_Montage_RD.0"
         },
         "WeaponInspectMontage": {
-          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectName": "AnimMontage'Rifle_Combat_FPP_Inspect_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
         },
         "ReloadDurationTactical": 4.5,
@@ -74,15 +75,15 @@
         "ReloadDurationMagOut": 0.4,
         "CycleAfterReloadDelay": 0.25,
         "ShotCameraShake": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_762_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_Rifle_762_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_762.0"
         },
         "ShotCameraShakeIronsight": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_762_Ironsight_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_Rifle_762_Ironsight_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_762_Ironsight.0"
         },
         "ShotCameraShakeADS": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_762_ADS_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_Rifle_762_ADS_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_762_ADS.0"
         },
         "RecoilKickADS": 1.0,
@@ -96,9 +97,11 @@
           "Y": -20.0,
           "Z": 3.0
         },
-        "ShakeScaleStanceMap": {
-          "EAnimStance::Prone": 0.8
-        }
+        "ShakeScaleStanceMap": [
+          {
+            "EAnimStance::Prone": 0.8
+          }
+        ]
       }
     }
   }

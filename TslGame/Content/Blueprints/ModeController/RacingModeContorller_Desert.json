@@ -1,0 +1,219 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_RunBehaviorTree_ReturnValue",
+    "Outer": "ExecuteUbergraph_RacingModeContorller_Desert",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_RacingModeContorller_Desert",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'RacingModeContorller_Desert_C:ExecuteUbergraph_RacingModeContorller_Desert.CallFunc_RunBehaviorTree_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.0"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_RacingModeContorller_Desert",
+    "Outer": "RacingModeContorller_Desert_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'RacingModeContorller_Desert_C:ExecuteUbergraph_RacingModeContorller_Desert.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.1"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "RacingModeContorller_Desert_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'RacingModeContorller_Desert_C:ExecuteUbergraph_RacingModeContorller_Desert'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "RacingModeContorller_Desert_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'RacingModeContorller_Desert_C:ReceiveBeginPlay'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.3"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "RacingModeContorller_Desert_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'RacingModeContorller_Desert_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.4"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "RacingModeContorller_Desert_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'RacingModeContorller_Desert_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.13"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'RacingModeContorller_Desert_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.5"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'RacingModeContorller_Desert_C:ExecuteUbergraph_RacingModeContorller_Desert'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.2"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'RacingModeController'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'RacingModeContorller_Desert_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.5"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_RacingModeContorller_Desert": {
+        "ObjectName": "Function'RacingModeContorller_Desert_C:ExecuteUbergraph_RacingModeContorller_Desert'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'RacingModeContorller_Desert_C:ReceiveBeginPlay'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.3"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'RacingModeContorller_Desert_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.4"
+      }
+    },
+    "ClassFlags": 8651284,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "RacingModeContorller_Desert_C'Default__RacingModeContorller_Desert_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.7"
+    }
+  },
+  {
+    "Type": "RacingModeContorller_Desert_C",
+    "Name": "Default__RacingModeContorller_Desert_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.RacingModeContorller_Desert_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BattleRoyalePlayerFenceData": {
+        "Damage": 1000.0,
+        "bUsePlayerFence": true,
+        "bUseOutsideDamage": true
+      },
+      "PathFollowingComponent": {
+        "ObjectName": "PathFollowingComponent'Default__RacingModeContorller_Desert_C:PathFollowingComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.8"
+      },
+      "ActionsComp": {
+        "ObjectName": "PawnActionsComponent'Default__RacingModeContorller_Desert_C:ActionsComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.9"
+      },
+      "TransformComponent": {
+        "ObjectName": "SceneComponent'Default__RacingModeContorller_Desert_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.10"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__RacingModeContorller_Desert_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.10"
+      }
+    }
+  },
+  {
+    "Type": "PathFollowingComponent",
+    "Name": "PathFollowingComponent",
+    "Outer": "Default__RacingModeContorller_Desert_C",
+    "Class": "UScriptClass'PathFollowingComponent'"
+  },
+  {
+    "Type": "PawnActionsComponent",
+    "Name": "ActionsComp",
+    "Outer": "Default__RacingModeContorller_Desert_C",
+    "Class": "UScriptClass'PawnActionsComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "TransformComponent0",
+    "Outer": "Default__RacingModeContorller_Desert_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "RacingModeContorller_Desert_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'RacingModeContorller_Desert_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.11"
+      },
+      "VariableGuid": "0F0EF414-42D7A4A1-4FCBBAB6-E6E0464A",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "RacingModeContorller_Desert_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'RacingModeContorller_Desert_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/RacingModeContorller_Desert.12"
+      }
+    }
+  }
+]

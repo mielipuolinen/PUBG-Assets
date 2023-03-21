@@ -1,0 +1,103 @@
+[
+  {
+    "Type": "VaultingData",
+    "Name": "DA_Vault160_Narrow",
+    "Class": "UScriptClass'VaultingData'",
+    "Properties": {
+      "MoveRequirements": {
+        "RowRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 14
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": 18
+          }
+        },
+        "IsVault": "EVaultRequirementType::VaultReqType_True",
+        "IsNarrow": "EVaultRequirementType::VaultReqType_True"
+      },
+      "VaultAnimType": "EVaultAnimType::Vault160_Narrow",
+      "LocationStartNormalScale": 128.0,
+      "LocationStartZOffset": -155.0,
+      "LocationEndNormalScale": -91.0,
+      "LocationEndZOffset": -250.0,
+      "PreApexSpeedScale": 0.42,
+      "PostApexSpeedScale": 0.66,
+      "AnimBlendInTime": 0.16,
+      "AnimBlendOutTime": 0.45,
+      "ApexAdditiveStartTime": 0.47,
+      "ApexAdditiveEndTime": 0.8,
+      "StartCutoffByDistance_InMap": {
+        "X": 40.0,
+        "Y": 200.0
+      },
+      "StartCutoffBySpeed_InMap": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "StartCutoffBySpeed_OutMap": {
+        "X": 0.0,
+        "Y": 0.01
+      },
+      "PlayrateBySpeed_InMap_PreApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PreApex": {
+        "X": 1.0,
+        "Y": 1.3
+      },
+      "PlayrateBySpeed_InMap_PostApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PostApex": {
+        "X": 1.0,
+        "Y": 1.15
+      },
+      "AnimationSequence": {
+        "ObjectName": "AnimSequence'Unarmed_Vaulting_Jump__160_Narrow'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Unarmed_Vaulting_Jump__160_Narrow.7"
+      },
+      "AnimationCurve": {
+        "ObjectName": "CurveFloat'C_Vault_160_Narrow'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Curves/C_Vault_160_Narrow.0"
+      },
+      "CharLocationInterpSpeedInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "CharLocationInterpSpeedOutMap": {
+        "X": 6.0,
+        "Y": 4.0
+      },
+      "TimerProgressionByDistanceInMap": {
+        "X": 20.0,
+        "Y": 100.0
+      },
+      "TimerProgressionByDistanceOutMap": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "TimerProgressionVTimerMax": 0.07,
+      "VaultEndTimerNormal": 1.0,
+      "VaultEndTimerFall": 0.8,
+      "CharacterPostVaultVelocityScalar": 1.0,
+      "CharacterPostVaultVelocityScalarVector": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      },
+      "bIsCancellable": true,
+      "MinCancelVTimer": 0.2,
+      "MaxCancelVTimer": 0.4,
+      "TaskEndVTimer": 0.05,
+      "PostVaultTimerProgressionScale": 1.5,
+      "bUseMappedVTimerDampening": true,
+      "MappedDampeningScalar": 0.3,
+      "MappedDampeningVTimerMax": 0.1
+    }
+  }
+]

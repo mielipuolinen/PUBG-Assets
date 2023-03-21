@@ -1,0 +1,157 @@
+[
+  {
+    "Type": "VaultingData",
+    "Name": "DA_Ledge_Grab_Up_Climb_Swing",
+    "Class": "UScriptClass'VaultingData'",
+    "Properties": {
+      "MoveRequirements": {
+        "RowRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": 1
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 24
+          }
+        },
+        "CapsuleRelativeRange": {
+          "LowerBound": {
+            "Value": -500.0
+          },
+          "UpperBound": {
+            "Value": -250.0
+          }
+        },
+        "SpeedRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Inclusive"
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Exclusive",
+            "Value": 1000.0
+          }
+        },
+        "ZSpeedRange": {
+          "LowerBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": -400.0
+          },
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Exclusive"
+          }
+        },
+        "LedgeRange": {
+          "UpperBound": {
+            "Type": "ERangeBoundTypes::Inclusive",
+            "Value": 4
+          }
+        },
+        "IsClimb": "EVaultRequirementType::VaultReqType_True",
+        "IsLedgeGrab": "EVaultRequirementType::VaultReqType_True",
+        "IsSlide": "EVaultRequirementType::VaultReqType_Any",
+        "IsNarrow": "EVaultRequirementType::VaultReqType_Any",
+        "ExecConfig": {
+          "ExecutionDistance": 60.0,
+          "AnticipationDistance": 250.0,
+          "bUseAnimStartForDistance": true,
+          "bUse3DDistance": true,
+          "ExecutionZRange": {
+            "LowerBound": {
+              "Value": -60.0
+            },
+            "UpperBound": {
+              "Type": "ERangeBoundTypes::Inclusive",
+              "Value": 20.0
+            }
+          },
+          "AnticipationAnim": {
+            "ObjectName": "AnimSequence'Ledge_Grab_Up_Swing_Anticipate'",
+            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/Ledge_Grab_Up_Swing_Anticipate.0"
+          }
+        }
+      },
+      "VaultAnimType": "EVaultAnimType::LedgeGrab_Up_Climb_Swing",
+      "LocationStartNormalScale": 69.6,
+      "LocationStartZOffset": -158.54,
+      "LocationEndNormalScale": -48.13,
+      "bIsClimb": true,
+      "PreApexSpeedScale": 0.27,
+      "PostApexSpeedScale": 0.42,
+      "AnimBlendInTime": 0.15,
+      "AnimBlendOutTime": 0.4,
+      "ApexAdditiveStartTime": 0.2,
+      "ApexAdditiveEndTime": 0.7,
+      "StartCutoffByDistance_InMap": {
+        "X": 40.0,
+        "Y": 200.0
+      },
+      "StartCutoffBySpeed_InMap": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_InMap_PreApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PreApex": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "PlayrateBySpeed_InMap_PostApex": {
+        "X": 0.0,
+        "Y": 700.0
+      },
+      "PlayrateBySpeed_OutMap_PostApex": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "AnimationSequence": {
+        "ObjectName": "AnimSequence'Ledge_Grab_Up_Climb_Swing'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/Ledge_Grab_Up_Climb_Swing.12"
+      },
+      "AnimationSequence_FPP": {
+        "ObjectName": "AnimSequence'Ledge_Grab_Up_Climb_Swing_FPP'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/FPP/Ledge_Grab_Up_Climb_Swing_FPP.12"
+      },
+      "AnimationSequence_Rifle": {
+        "ObjectName": "AnimSequence'Ledge_Grab_Up_Climb_Swing'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/Ledge_Grab_Up_Climb_Swing.12"
+      },
+      "AnimationSequence_Rifle_FPP": {
+        "ObjectName": "AnimSequence'Ledge_Grab_Up_Climb_Swing_FPP'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Vaulting/Prototype/Animation/FPP/Ledge_Grab_Up_Climb_Swing_FPP.12"
+      },
+      "AnimationCurve": {
+        "ObjectName": "CurveFloat'C_LedgeGrab_Low_Climb_Swing'",
+        "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Curves/C_LedgeGrab_Low_Climb_Swing.0"
+      },
+      "CharLocationInterpSpeedInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "CharLocationInterpSpeedOutMap": {
+        "X": 12.0,
+        "Y": 8.0
+      },
+      "TimerProgressionByDistanceInMap": {
+        "X": 40.0,
+        "Y": 100.0
+      },
+      "TimerProgressionByDistanceOutMap": {
+        "X": 1.0,
+        "Y": 1.0
+      },
+      "TimerProgressionVTimerMax": 0.07,
+      "VaultEndTimerNormal": 1.0,
+      "VaultEndTimerFall": 0.8,
+      "bIsCancellable": true,
+      "MinCancelVTimer": 0.3,
+      "MaxCancelVTimer": 0.6,
+      "TaskEndVTimer": 0.3,
+      "PostVaultTimerProgressionScale": 0.33,
+      "MappedDampeningScalar": 0.1,
+      "MappedDampeningVTimerMax": 0.05
+    }
+  }
+]

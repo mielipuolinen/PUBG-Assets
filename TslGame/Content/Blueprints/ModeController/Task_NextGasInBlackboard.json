@@ -1,0 +1,229 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_GetNeedUpdateGasData_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_NextGasInBlackboard",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsMatchInProgressBP_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_NextGasInBlackboard",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_NextGasInBlackboard_C:ExecuteUbergraph_Task_NextGasInBlackboard.CallFunc_GetNeedUpdateGasData_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.0"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_NextGasInBlackboard",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_NextGasInBlackboard_C:ExecuteUbergraph_Task_NextGasInBlackboard.CallFunc_IsMatchInProgressBP_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.1"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetGameState_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_NextGasInBlackboard",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_NextGasInBlackboard_C:ExecuteUbergraph_Task_NextGasInBlackboard.CallFunc_IsValid_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.2"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslGameState'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_SetNextGasInBlackboard_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_NextGasInBlackboard",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_NextGasInBlackboard_C:ExecuteUbergraph_Task_NextGasInBlackboard.CallFunc_GetGameState_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.3"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_Task_NextGasInBlackboard",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_NextGasInBlackboard_C:ExecuteUbergraph_Task_NextGasInBlackboard.CallFunc_SetNextGasInBlackboard_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.4"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsBattle_Royale_Mode_Controller",
+    "Outer": "ExecuteUbergraph_Task_NextGasInBlackboard",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_NextGasInBlackboard_C:ExecuteUbergraph_Task_NextGasInBlackboard.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.5"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'BattleRoyaleModeController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OwnerActor",
+    "Outer": "ExecuteUbergraph_Task_NextGasInBlackboard",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_NextGasInBlackboard_C:ExecuteUbergraph_Task_NextGasInBlackboard.K2Node_DynamicCast_AsBattle_Royale_Mode_Controller'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.6"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Task_NextGasInBlackboard",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_NextGasInBlackboard_C:ExecuteUbergraph_Task_NextGasInBlackboard.K2Node_Event_OwnerActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.7"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Task_NextGasInBlackboard",
+    "Outer": "Task_NextGasInBlackboard_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Task_NextGasInBlackboard_C:ExecuteUbergraph_Task_NextGasInBlackboard.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.8"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OwnerActor",
+    "Outer": "ReceiveExecute",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveExecute",
+    "Outer": "Task_NextGasInBlackboard_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Task_NextGasInBlackboard_C:ExecuteUbergraph_Task_NextGasInBlackboard'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.9"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BTTask_BlueprintBase:ReceiveExecute'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Task_NextGasInBlackboard_C:ReceiveExecute.OwnerActor'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.10"
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Task_NextGasInBlackboard_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Task_NextGasInBlackboard_C:ReceiveExecute'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.11"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Task_NextGasInBlackboard_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Task_NextGasInBlackboard_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.12"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Task_NextGasInBlackboard_C:ExecuteUbergraph_Task_NextGasInBlackboard'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.9"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_BlueprintBase'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Task_NextGasInBlackboard_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.12"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Task_NextGasInBlackboard": {
+        "ObjectName": "Function'Task_NextGasInBlackboard_C:ExecuteUbergraph_Task_NextGasInBlackboard'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.9"
+      },
+      "ReceiveExecute": {
+        "ObjectName": "Function'Task_NextGasInBlackboard_C:ReceiveExecute'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.11"
+      }
+    },
+    "ClassFlags": 262160,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Task_NextGasInBlackboard_C'Default__Task_NextGasInBlackboard_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.14"
+    }
+  },
+  {
+    "Type": "Task_NextGasInBlackboard_C",
+    "Name": "Default__Task_NextGasInBlackboard_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Task_NextGasInBlackboard.Task_NextGasInBlackboard_C'",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]

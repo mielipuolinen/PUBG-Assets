@@ -3,6 +3,7 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_K2_AttachToComponent_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjC4",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "BoolSize": 1,
     "bIsNativeBool": true
@@ -11,12 +12,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_ServerPositionToLocal_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjC4",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjC4_C:ExecuteUbergraph_ProjC4.CallFunc_K2_AttachToComponent_ReturnValue",
+      "ObjectName": "BoolProperty'ProjC4_C:ExecuteUbergraph_ProjC4.CallFunc_K2_AttachToComponent_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.0"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -24,12 +26,13 @@
     "Type": "StructProperty",
     "Name": "K2Node_CustomEvent_Loc",
     "Outer": "ExecuteUbergraph_ProjC4",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjC4_C:ExecuteUbergraph_ProjC4.CallFunc_ServerPositionToLocal_ReturnValue",
+      "ObjectName": "StructProperty'ProjC4_C:ExecuteUbergraph_ProjC4.CallFunc_ServerPositionToLocal_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.1"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -37,8 +40,9 @@
     "Type": "IntProperty",
     "Name": "EntryPoint",
     "Outer": "ExecuteUbergraph_ProjC4",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjC4_C:ExecuteUbergraph_ProjC4.K2Node_CustomEvent_Loc",
+      "ObjectName": "StructProperty'ProjC4_C:ExecuteUbergraph_ProjC4.K2Node_CustomEvent_Loc'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.2"
     },
     "PropertyFlags": 128
@@ -47,10 +51,11 @@
     "Type": "Function",
     "Name": "ExecuteUbergraph_ProjC4",
     "Outer": "ProjC4_C",
+    "Class": "UScriptClass'Function'",
     "Next": null,
     "Children": [
       {
-        "ObjectName": "IntProperty ProjC4_C:ExecuteUbergraph_ProjC4.EntryPoint",
+        "ObjectName": "IntProperty'ProjC4_C:ExecuteUbergraph_ProjC4.EntryPoint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.3"
       }
     ],
@@ -60,12 +65,13 @@
     "Type": "Function",
     "Name": "ReceiveBeginPlay",
     "Outer": "ProjC4_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjC4_C:ExecuteUbergraph_ProjC4",
+      "ObjectName": "Function'ProjC4_C:ExecuteUbergraph_ProjC4'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.4"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:ReceiveBeginPlay",
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 134744064
@@ -74,10 +80,11 @@
     "Type": "StructProperty",
     "Name": "Loc",
     "Outer": "Client_DrawSphere",
+    "Class": "UScriptClass'StructProperty'",
     "Next": null,
     "PropertyFlags": 128,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -85,13 +92,14 @@
     "Type": "Function",
     "Name": "Client_DrawSphere",
     "Outer": "ProjC4_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjC4_C:ReceiveBeginPlay",
+      "ObjectName": "Function'ProjC4_C:ReceiveBeginPlay'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.5"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjC4_C:Client_DrawSphere.Loc",
+        "ObjectName": "StructProperty'ProjC4_C:Client_DrawSphere.Loc'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.6"
       }
     ],
@@ -101,12 +109,13 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjC4_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjC4_C:Client_DrawSphere",
+      "ObjectName": "Function'ProjC4_C:Client_DrawSphere'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.7"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 201459712
@@ -115,101 +124,104 @@
     "Type": "StructProperty",
     "Name": "UberGraphFrame",
     "Outer": "ProjC4_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "Function ProjC4_C:UserConstructionScript",
+      "ObjectName": "Function'ProjC4_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.8"
     },
     "PropertyFlags": 2105344,
     "Struct": {
-      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
       "ObjectPath": "/Script/Engine"
     }
   },
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjC4_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjC4_C:SimpleConstructionScript_0__57659476",
+        "ObjectName": "SimpleConstructionScript'ProjC4_C:SimpleConstructionScript_0__57659476'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.17"
       },
       "UberGraphFramePointerProperty": {
-        "ObjectName": "StructProperty ProjC4_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjC4_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.9"
       },
       "UberGraphFunction": {
-        "ObjectName": "Function ProjC4_C:ExecuteUbergraph_ProjC4",
+        "ObjectName": "Function'ProjC4_C:ExecuteUbergraph_ProjC4'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.4"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslProjectile",
+      "ObjectName": "Class'TslProjectile'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjC4_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjC4_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.9"
       }
     ],
     "FuncMap": {
       "ExecuteUbergraph_ProjC4": {
-        "ObjectName": "Function ProjC4_C:ExecuteUbergraph_ProjC4",
+        "ObjectName": "Function'ProjC4_C:ExecuteUbergraph_ProjC4'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.4"
       },
       "ReceiveBeginPlay": {
-        "ObjectName": "Function ProjC4_C:ReceiveBeginPlay",
+        "ObjectName": "Function'ProjC4_C:ReceiveBeginPlay'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.5"
       },
       "Client_DrawSphere": {
-        "ObjectName": "Function ProjC4_C:Client_DrawSphere",
+        "ObjectName": "Function'ProjC4_C:Client_DrawSphere'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.7"
       },
       "UserConstructionScript": {
-        "ObjectName": "Function ProjC4_C:UserConstructionScript",
+        "ObjectName": "Function'ProjC4_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.8"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjC4_C Default__ProjC4_C",
+      "ObjectName": "ProjC4_C'Default__ProjC4_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.11"
     }
   },
   {
     "Type": "ProjC4_C",
     "Name": "Default__ProjC4_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.ProjC4_C'",
     "Properties": {
       "UberGraphFrame": {},
       "MovementComp": {
-        "ObjectName": "TslProjectileMovementComponent Default__ProjC4_C:ProjectileComp",
+        "ObjectName": "TslProjectileMovementComponent'Default__ProjC4_C:ProjectileComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.21"
       },
       "CollisionComp": {
-        "ObjectName": "SphereComponent Default__ProjC4_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjC4_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.19"
       },
       "ParticleComp": {
-        "ObjectName": "ParticleSystemComponent Default__ProjC4_C:ParticleComp",
+        "ObjectName": "ParticleSystemComponent'Default__ProjC4_C:ParticleComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.13"
       },
       "MeshComp": {
-        "ObjectName": "StaticMeshComponent Default__ProjC4_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjC4_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.20"
       },
       "InterpolationTargetComp": {
-        "ObjectName": "SphereComponent Default__ProjC4_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjC4_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.18"
       },
       "ConstraintComp": {
-        "ObjectName": "PhysicsConstraintComponent Default__ProjC4_C:MeshConstraint",
+        "ObjectName": "PhysicsConstraintComponent'Default__ProjC4_C:MeshConstraint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.14"
       },
       "MeshInitialRotationRate": {
@@ -219,31 +231,31 @@
       },
       "ProjectileParticleClass": "EProjectileParticleClass::PPC_Frag",
       "ExplosionTemplate": {
-        "ObjectName": "BlueprintGeneratedClass ProjC4_Explosion_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjC4_Explosion_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4_Explosion.25"
       },
       "ExplosionTemplateInAir": {
-        "ObjectName": "BlueprintGeneratedClass ProjGrenade_ExplosionInAir_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjGrenade_ExplosionInAir_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_ExplosionInAir.0"
       },
       "ExplosionTemplateInWater": {
-        "ObjectName": "BlueprintGeneratedClass ProjGrenade_Explosion_Underwater_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjGrenade_Explosion_Underwater_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade_Explosion_Underwater.20"
       },
       "ExplosionTemplateDestroyedWall": {
-        "ObjectName": "BlueprintGeneratedClass ProjC4_Explosion_C",
+        "ObjectName": "BlueprintGeneratedClass'ProjC4_Explosion_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4_Explosion.25"
       },
       "EffectData": {
-        "ObjectName": "TslExplosionEffectData C4ExplosionEffectData",
+        "ObjectName": "TslExplosionEffectData'C4ExplosionEffectData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/C4ExplosionEffectData.0"
       },
       "ImpactSound": {
-        "ObjectName": "AkAudioEvent HandBomb_C4_Attach",
+        "ObjectName": "AkAudioEvent'HandBomb_C4_Attach'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/C4/HandBomb_C4_Attach.0"
       },
       "AkComp": {
-        "ObjectName": "AkComponent Default__ProjC4_C:AkComp",
+        "ObjectName": "AkComponent'Default__ProjC4_C:AkComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.12"
       },
       "ProjectileConfig": {
@@ -252,15 +264,15 @@
         "ExplosionRadius": 2500.0,
         "IgniteFuelInRadius": 1000.0,
         "DamageCurve": {
-          "ObjectName": "CurveFloat C4DamageCurve",
+          "ObjectName": "CurveFloat'C4DamageCurve'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/C4DamageCurve.0"
         },
         "DistanceCurveCurveVertical": {
-          "ObjectName": "CurveFloat C4DistanceCurveVertical",
+          "ObjectName": "CurveFloat'C4DistanceCurveVertical'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/C4DistanceCurveVertical.0"
         },
         "DamageType": {
-          "ObjectName": "BlueprintGeneratedClass DmgTypeExplosion_C4_C",
+          "ObjectName": "BlueprintGeneratedClass'DmgTypeExplosion_C4_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgTypeExplosion_C4.0"
         },
         "bDamageCheckThroughWalls": true,
@@ -288,19 +300,19 @@
         ],
         "IgnoreAttachActorClasses": [
           {
-            "ObjectName": "Class DroppedItem",
+            "ObjectName": "Class'DroppedItem'",
             "ObjectPath": "/Script/TslGame"
           },
           {
-            "ObjectName": "Class TslEmPickupVehicle",
+            "ObjectName": "Class'TslEmPickupVehicle'",
             "ObjectPath": "/Script/TslGame"
           },
           {
-            "ObjectName": "Class TslDrone",
+            "ObjectName": "Class'TslDrone'",
             "ObjectPath": "/Script/TslGame"
           },
           {
-            "ObjectName": "Class TslBicycleVehicle",
+            "ObjectName": "Class'TslBicycleVehicle'",
             "ObjectPath": "/Script/TslGame"
           }
         ],
@@ -308,7 +320,7 @@
         "AttachedRepDistance": 200000.0,
         "AttachedRepDistanceConsole": 170000.0,
         "DamageCauserIcon": {
-          "ObjectName": "Texture2D weapons_c4",
+          "ObjectName": "Texture2D'weapons_c4'",
           "ObjectPath": "TslGame/Content/UI/Weapon/weapons_c4.0"
         },
         "DamageIconRatio": 1.06,
@@ -328,20 +340,20 @@
         "Y": 0.1
       },
       "CustomTickingSound": {
-        "ObjectName": "AkAudioEvent HandBomb_C4_Beep",
+        "ObjectName": "AkAudioEvent'HandBomb_C4_Beep'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/C4/HandBomb_C4_Beep.0"
       },
       "PreExplosionSound": {
-        "ObjectName": "AkAudioEvent HandBomb_C4_PreExplosion",
+        "ObjectName": "AkAudioEvent'HandBomb_C4_PreExplosion'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/C4/HandBomb_C4_PreExplosion.0"
       },
       "bShouldAutoDestroyParticleComp": false,
-      "RootComponent": {
-        "ObjectName": "SphereComponent Default__ProjC4_C:SphereComp",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.19"
-      },
       "PrimaryActorTick": {
         "bAllowTickOnDedicatedServer": true
+      },
+      "RootComponent": {
+        "ObjectName": "SphereComponent'Default__ProjC4_C:SphereComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.19"
       }
     }
   },
@@ -349,9 +361,10 @@
     "Type": "AkComponent",
     "Name": "AkComp",
     "Outer": "Default__ProjC4_C",
+    "Class": "UScriptClass'AkComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjC4_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjC4_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.19"
       }
     }
@@ -360,13 +373,14 @@
     "Type": "ParticleSystemComponent",
     "Name": "ParticleComp",
     "Outer": "Default__ProjC4_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
     "Properties": {
       "Template": {
-        "ObjectName": "ParticleSystem P_C4_Blink",
+        "ObjectName": "ParticleSystem'P_C4_Blink'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/P_C4_Blink.15"
       },
       "AttachParent": {
-        "ObjectName": "StaticMeshComponent Default__ProjC4_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjC4_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.20"
       }
     }
@@ -375,6 +389,7 @@
     "Type": "PhysicsConstraintComponent",
     "Name": "MeshConstraint",
     "Outer": "Default__ProjC4_C",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
     "Properties": {
       "ConstraintInstance": {
         "ProfileInstance": {
@@ -387,7 +402,7 @@
         }
       },
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjC4_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjC4_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.18"
       }
     }
@@ -395,19 +410,21 @@
   {
     "Type": "SceneComponent",
     "Name": "SceneComponent_1",
-    "Outer": "ProjC4_C"
+    "Outer": "ProjC4_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjC4_C:SceneComponent_1",
+        "ObjectName": "SceneComponent'ProjC4_C:SceneComponent_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.15"
       },
       "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
@@ -418,9 +435,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0__57659476",
     "Outer": "ProjC4_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjC4_C:SimpleConstructionScript_0__57659476.SCS_Node_1",
+        "ObjectName": "SCS_Node'ProjC4_C:SimpleConstructionScript_0__57659476.SCS_Node_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.16"
       }
     }
@@ -429,9 +447,10 @@
     "Type": "SphereComponent",
     "Name": "InterpolationTarget",
     "Outer": "Default__ProjC4_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjC4_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjC4_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.19"
       }
     }
@@ -440,6 +459,7 @@
     "Type": "SphereComponent",
     "Name": "SphereComp",
     "Outer": "Default__ProjC4_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "SphereRadius": 3.5
     }
@@ -448,14 +468,15 @@
     "Type": "StaticMeshComponent",
     "Name": "MeshComp",
     "Outer": "Default__ProjC4_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
     "Properties": {
       "StaticMesh": {
-        "ObjectName": "StaticMesh SM_C4_Projectile",
+        "ObjectName": "StaticMesh'SM_C4_Projectile'",
         "ObjectPath": "TslGame/Content/Weapon/Grenades/C4/SM_C4_Projectile.1"
       },
       "OverrideMaterials": [
         {
-          "ObjectName": "MaterialInstanceConstant M_C4",
+          "ObjectName": "MaterialInstanceConstant'M_C4'",
           "ObjectPath": "TslGame/Content/Weapon/Grenades/C4/Materials/M_C4.0"
         }
       ],
@@ -491,7 +512,7 @@
         "Roll": -90.0
       },
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjC4_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjC4_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.18"
       }
     }
@@ -500,6 +521,7 @@
     "Type": "TslProjectileMovementComponent",
     "Name": "ProjectileComp",
     "Outer": "Default__ProjC4_C",
+    "Class": "UScriptClass'TslProjectileMovementComponent'",
     "Properties": {
       "InitialSpeed": 1500.0,
       "MaxSpeed": 4000.0,

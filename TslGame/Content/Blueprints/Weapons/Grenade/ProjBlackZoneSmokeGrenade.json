@@ -3,6 +3,7 @@
     "Type": "TextProperty",
     "Name": "NoTargetsFoundText",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'TextProperty'",
     "Next": null,
     "PropertyFlags": 65541
   },
@@ -10,13 +11,14 @@
     "Type": "StructProperty",
     "Name": "InterpVelocity",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "TextProperty ProjBlackZoneSmokeGrenade_C:NoTargetsFoundText",
+      "ObjectName": "TextProperty'ProjBlackZoneSmokeGrenade_C:NoTargetsFoundText'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.0"
     },
     "PropertyFlags": 65541,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -24,13 +26,14 @@
     "Type": "StructProperty",
     "Name": "ActorLocLastTick",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:InterpVelocity",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:InterpVelocity'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.1"
     },
     "PropertyFlags": 65541,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -38,8 +41,9 @@
     "Type": "FloatProperty",
     "Name": "ReleaseBuffer",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:ActorLocLastTick",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:ActorLocLastTick'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.2"
     },
     "PropertyFlags": 65541
@@ -48,8 +52,9 @@
     "Type": "BoolProperty",
     "Name": "bSmokeSpawned",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBlackZoneSmokeGrenade_C:ReleaseBuffer",
+      "ObjectName": "FloatProperty'ProjBlackZoneSmokeGrenade_C:ReleaseBuffer'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.3"
     },
     "PropertyFlags": 65541,
@@ -60,8 +65,9 @@
     "Type": "FloatProperty",
     "Name": "HitTimeDelay",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:bSmokeSpawned",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:bSmokeSpawned'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.4"
     },
     "PropertyFlags": 65541
@@ -70,8 +76,9 @@
     "Type": "FloatProperty",
     "Name": "HitMinVelocity",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBlackZoneSmokeGrenade_C:HitTimeDelay",
+      "ObjectName": "FloatProperty'ProjBlackZoneSmokeGrenade_C:HitTimeDelay'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.5"
     },
     "PropertyFlags": 65541
@@ -80,8 +87,9 @@
     "Type": "FloatProperty",
     "Name": "HitImpactMax",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBlackZoneSmokeGrenade_C:HitMinVelocity",
+      "ObjectName": "FloatProperty'ProjBlackZoneSmokeGrenade_C:HitMinVelocity'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.6"
     },
     "PropertyFlags": 65541
@@ -90,8 +98,9 @@
     "Type": "FloatProperty",
     "Name": "HitImpactMin",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBlackZoneSmokeGrenade_C:HitImpactMax",
+      "ObjectName": "FloatProperty'ProjBlackZoneSmokeGrenade_C:HitImpactMax'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.7"
     },
     "PropertyFlags": 65541
@@ -100,8 +109,9 @@
     "Type": "FloatProperty",
     "Name": "HitTimer",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBlackZoneSmokeGrenade_C:HitImpactMin",
+      "ObjectName": "FloatProperty'ProjBlackZoneSmokeGrenade_C:HitImpactMin'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.8"
     },
     "PropertyFlags": 65541
@@ -110,13 +120,14 @@
     "Type": "ObjectProperty",
     "Name": "EndSmokeSound",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBlackZoneSmokeGrenade_C:HitTimer",
+      "ObjectName": "FloatProperty'ProjBlackZoneSmokeGrenade_C:HitTimer'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.9"
     },
     "PropertyFlags": 5,
     "PropertyClass": {
-      "ObjectName": "Class AkAudioEvent",
+      "ObjectName": "Class'AkAudioEvent'",
       "ObjectPath": "/Script/AkAudio"
     }
   },
@@ -124,13 +135,14 @@
     "Type": "ObjectProperty",
     "Name": "StartSmokeSound",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:EndSmokeSound",
+      "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:EndSmokeSound'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.10"
     },
     "PropertyFlags": 5,
     "PropertyClass": {
-      "ObjectName": "Class AkAudioEvent",
+      "ObjectName": "Class'AkAudioEvent'",
       "ObjectPath": "/Script/AkAudio"
     }
   },
@@ -138,13 +150,14 @@
     "Type": "ObjectProperty",
     "Name": "TslWorldOffset",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:StartSmokeSound",
+      "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:StartSmokeSound'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.11"
     },
     "PropertyFlags": 17179869188,
     "PropertyClass": {
-      "ObjectName": "Class TslWorldOffsetComponent",
+      "ObjectName": "Class'TslWorldOffsetComponent'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -152,6 +165,7 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Not_PreBool_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "BoolSize": 1,
     "bIsNativeBool": true
@@ -160,8 +174,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsLocationUnderground_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Not_PreBool_ReturnValue",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Not_PreBool_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.13"
     },
     "BoolSize": 1,
@@ -171,21 +186,23 @@
     "Type": "StructProperty",
     "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_IsLocationUnderground_ReturnValue",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_IsLocationUnderground_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.14"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
   {
     "Type": "BoolProperty",
-    "Name": "Temp_bool_Has_Been_Initd_Variable3",
+    "Name": "___bool_Has_Been_Initd_Variable3",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_K2_GetActorLocation_ReturnValue",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_K2_GetActorLocation_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.15"
     },
     "BoolSize": 1,
@@ -195,8 +212,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_CheckForTargets_IsValidLocation",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.Temp_bool_Has_Been_Initd_Variable3",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.___bool_Has_Been_Initd_Variable3'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.16"
     },
     "BoolSize": 1,
@@ -206,8 +224,9 @@
     "Type": "BoolProperty",
     "Name": "K2Node_DynamicCast_bSuccess",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_CheckForTargets_IsValidLocation",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_CheckForTargets_IsValidLocation'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.17"
     },
     "BoolSize": 1,
@@ -217,12 +236,13 @@
     "Type": "ObjectProperty",
     "Name": "K2Node_DynamicCast_AsTsl_Character",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.K2Node_DynamicCast_bSuccess",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.K2Node_DynamicCast_bSuccess'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.18"
     },
     "PropertyClass": {
-      "ObjectName": "Class TslCharacter",
+      "ObjectName": "Class'TslCharacter'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -230,21 +250,23 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetInstigator_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.K2Node_DynamicCast_AsTsl_Character",
+      "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.K2Node_DynamicCast_AsTsl_Character'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.19"
     },
     "PropertyClass": {
-      "ObjectName": "Class Pawn",
+      "ObjectName": "Class'Pawn'",
       "ObjectPath": "/Script/Engine"
     }
   },
   {
     "Type": "BoolProperty",
-    "Name": "Temp_bool_IsClosed_Variable3",
+    "Name": "___bool_IsClosed_Variable3",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_GetInstigator_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_GetInstigator_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.20"
     },
     "BoolSize": 1,
@@ -254,12 +276,13 @@
     "Type": "ObjectProperty",
     "Name": "K2Node_CustomEvent_TargetInstigator",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.Temp_bool_IsClosed_Variable3",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.___bool_IsClosed_Variable3'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.21"
     },
     "PropertyClass": {
-      "ObjectName": "Class TslCharacter",
+      "ObjectName": "Class'TslCharacter'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -267,12 +290,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.K2Node_CustomEvent_TargetInstigator",
+      "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.K2Node_CustomEvent_TargetInstigator'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.22"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct TimerHandle",
+      "ObjectName": "ScriptStruct'TimerHandle'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -280,12 +304,13 @@
     "Type": "DelegateProperty",
     "Name": "K2Node_CreateDelegate_OutputDelegate",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'DelegateProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_K2_SetTimerDelegate_ReturnValue",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_K2_SetTimerDelegate_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.23"
     },
     "SignatureFunction": {
-      "ObjectName": "DelegateFunction TimerDynamicDelegate__DelegateSignature",
+      "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -293,12 +318,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Add_VectorVector_ReturnValue2",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "DelegateProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.K2Node_CreateDelegate_OutputDelegate",
+      "ObjectName": "DelegateProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.K2Node_CreateDelegate_OutputDelegate'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.24"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -306,12 +332,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Add_VectorVector_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Add_VectorVector_ReturnValue2",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Add_VectorVector_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.25"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -319,12 +346,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Multiply_VectorFloat_ReturnValue3",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Add_VectorVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Add_VectorVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.26"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -332,12 +360,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_VInterpTo_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Multiply_VectorFloat_ReturnValue3",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Multiply_VectorFloat_ReturnValue3'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.27"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -345,12 +374,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Multiply_VectorFloat_ReturnValue2",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_VInterpTo_ReturnValue",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_VInterpTo_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.28"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -358,12 +388,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_Multiply_VectorFloat_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Multiply_VectorFloat_ReturnValue2",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Multiply_VectorFloat_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.29"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -371,8 +402,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_Lerp_ReturnValue2",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Multiply_VectorFloat_ReturnValue",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Multiply_VectorFloat_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.30"
     }
   },
@@ -380,8 +412,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_Lerp_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Lerp_ReturnValue2",
+      "ObjectName": "FloatProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Lerp_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.31"
     }
   },
@@ -389,8 +422,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_RandomFloat_ReturnValue2",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Lerp_ReturnValue",
+      "ObjectName": "FloatProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_Lerp_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.32"
     }
   },
@@ -398,8 +432,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_RandomFloat_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_RandomFloat_ReturnValue2",
+      "ObjectName": "FloatProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_RandomFloat_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.33"
     }
   },
@@ -407,12 +442,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_GetForwardVector_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_RandomFloat_ReturnValue",
+      "ObjectName": "FloatProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_RandomFloat_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.34"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -420,8 +456,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsAnySimulatingPhysics_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_GetForwardVector_ReturnValue",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_GetForwardVector_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.35"
     },
     "BoolSize": 1,
@@ -431,8 +468,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_PostAkEvent_ReturnValue2",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_IsAnySimulatingPhysics_ReturnValue",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_IsAnySimulatingPhysics_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.36"
     }
   },
@@ -440,8 +478,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_PostAkEvent_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_PostAkEvent_ReturnValue2",
+      "ObjectName": "IntProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_PostAkEvent_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.37"
     }
   },
@@ -449,8 +488,9 @@
     "Type": "BoolProperty",
     "Name": "K2Node_ComponentBoundEvent_bWorldShift",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_PostAkEvent_ReturnValue",
+      "ObjectName": "IntProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_PostAkEvent_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.38"
     },
     "BoolSize": 1,
@@ -460,13 +500,14 @@
     "Type": "StructProperty",
     "Name": "K2Node_ComponentBoundEvent_InOffset",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.K2Node_ComponentBoundEvent_bWorldShift",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.K2Node_ComponentBoundEvent_bWorldShift'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.39"
     },
     "PropertyFlags": 2,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -474,8 +515,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsValid_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.K2Node_ComponentBoundEvent_InOffset",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.K2Node_ComponentBoundEvent_InOffset'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.40"
     },
     "BoolSize": 1,
@@ -485,8 +527,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsActive_ReturnValue2",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_IsValid_ReturnValue",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_IsValid_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.41"
     },
     "BoolSize": 1,
@@ -494,10 +537,11 @@
   },
   {
     "Type": "BoolProperty",
-    "Name": "Temp_bool_Has_Been_Initd_Variable2",
+    "Name": "___bool_Has_Been_Initd_Variable2",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_IsActive_ReturnValue2",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_IsActive_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.42"
     },
     "BoolSize": 1,
@@ -507,8 +551,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsActive_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.Temp_bool_Has_Been_Initd_Variable2",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.___bool_Has_Been_Initd_Variable2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.43"
     },
     "BoolSize": 1,
@@ -518,17 +563,19 @@
     "Type": "FloatProperty",
     "Name": "K2Node_Event_DeltaSeconds",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_IsActive_ReturnValue",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_IsActive_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.44"
     }
   },
   {
     "Type": "BoolProperty",
-    "Name": "Temp_bool_Has_Been_Initd_Variable",
+    "Name": "___bool_Has_Been_Initd_Variable",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.K2Node_Event_DeltaSeconds",
+      "ObjectName": "FloatProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.K2Node_Event_DeltaSeconds'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.45"
     },
     "BoolSize": 1,
@@ -536,10 +583,11 @@
   },
   {
     "Type": "BoolProperty",
-    "Name": "Temp_bool_IsClosed_Variable2",
+    "Name": "___bool_IsClosed_Variable2",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.Temp_bool_Has_Been_Initd_Variable",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.___bool_Has_Been_Initd_Variable'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.46"
     },
     "BoolSize": 1,
@@ -549,8 +597,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_HasAuthority_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.Temp_bool_IsClosed_Variable2",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.___bool_IsClosed_Variable2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.47"
     },
     "BoolSize": 1,
@@ -558,10 +607,11 @@
   },
   {
     "Type": "BoolProperty",
-    "Name": "Temp_bool_IsClosed_Variable",
+    "Name": "___bool_IsClosed_Variable",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_HasAuthority_ReturnValue",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.CallFunc_HasAuthority_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.48"
     },
     "BoolSize": 1,
@@ -571,8 +621,9 @@
     "Type": "IntProperty",
     "Name": "EntryPoint",
     "Outer": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.Temp_bool_IsClosed_Variable",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.___bool_IsClosed_Variable'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.49"
     },
     "PropertyFlags": 128
@@ -581,13 +632,14 @@
     "Type": "Function",
     "Name": "ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:TslWorldOffset",
+      "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:TslWorldOffset'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.12"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.EntryPoint",
+        "ObjectName": "IntProperty'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade.EntryPoint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.50"
       }
     ],
@@ -597,12 +649,13 @@
     "Type": "Function",
     "Name": "PropagateEffectActor_BP",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+      "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.51"
     },
     "SuperStruct": {
-      "ObjectName": "Function TslProjectile:PropagateEffectActor_BP",
+      "ObjectName": "Function'TslProjectile:PropagateEffectActor_BP'",
       "ObjectPath": "/Script/TslGame"
     },
     "FunctionFlags": 134744064
@@ -611,10 +664,11 @@
     "Type": "ObjectProperty",
     "Name": "TargetInstigator",
     "Outer": "Request Black Zone",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyFlags": 128,
     "PropertyClass": {
-      "ObjectName": "Class TslCharacter",
+      "ObjectName": "Class'TslCharacter'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -622,13 +676,14 @@
     "Type": "Function",
     "Name": "Request Black Zone",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:PropagateEffectActor_BP",
+      "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:PropagateEffectActor_BP'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.52"
     },
     "Children": [
       {
-        "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:Request Black Zone.TargetInstigator",
+        "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:Request Black Zone.TargetInstigator'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.53"
       }
     ],
@@ -638,6 +693,7 @@
     "Type": "BoolProperty",
     "Name": "bWorldShift",
     "Outer": "BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "PropertyFlags": 128,
     "BoolSize": 1,
@@ -647,13 +703,14 @@
     "Type": "StructProperty",
     "Name": "InOffset",
     "Outer": "BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature.bWorldShift",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature.bWorldShift'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.55"
     },
     "PropertyFlags": 134218114,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -661,13 +718,14 @@
     "Type": "Function",
     "Name": "BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:Request Black Zone",
+      "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:Request Black Zone'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.54"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature.InOffset",
+        "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature.InOffset'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.56"
       }
     ],
@@ -677,8 +735,9 @@
     "Type": "Function",
     "Name": "End",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature",
+      "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.57"
     },
     "FunctionFlags": 201326592
@@ -687,6 +746,7 @@
     "Type": "FloatProperty",
     "Name": "DeltaSeconds",
     "Outer": "ReceiveTick",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": null,
     "PropertyFlags": 128
   },
@@ -694,17 +754,18 @@
     "Type": "Function",
     "Name": "ReceiveTick",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:End",
+      "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:End'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.58"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:ReceiveTick",
+      "ObjectName": "Function'Actor:ReceiveTick'",
       "ObjectPath": "/Script/Engine"
     },
     "Children": [
       {
-        "ObjectName": "FloatProperty ProjBlackZoneSmokeGrenade_C:ReceiveTick.DeltaSeconds",
+        "ObjectName": "FloatProperty'ProjBlackZoneSmokeGrenade_C:ReceiveTick.DeltaSeconds'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.59"
       }
     ],
@@ -714,12 +775,13 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:ReceiveTick",
+      "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:ReceiveTick'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.60"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 201459712
@@ -728,6 +790,7 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsValid_ReturnValue",
     "Outer": "RequestTarget",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "BoolSize": 1,
     "bIsNativeBool": true
@@ -736,12 +799,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetBlackZoneController_ReturnValue",
     "Outer": "RequestTarget",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:RequestTarget.CallFunc_IsValid_ReturnValue",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:RequestTarget.CallFunc_IsValid_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.62"
     },
     "PropertyClass": {
-      "ObjectName": "Class BlackZoneController",
+      "ObjectName": "Class'BlackZoneController'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -749,8 +813,9 @@
     "Type": "BoolProperty",
     "Name": "K2Node_DynamicCast_bSuccess",
     "Outer": "RequestTarget",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:RequestTarget.CallFunc_GetBlackZoneController_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:RequestTarget.CallFunc_GetBlackZoneController_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.63"
     },
     "BoolSize": 1,
@@ -760,12 +825,13 @@
     "Type": "ObjectProperty",
     "Name": "K2Node_DynamicCast_AsTsl_Game_Mode",
     "Outer": "RequestTarget",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:RequestTarget.K2Node_DynamicCast_bSuccess",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:RequestTarget.K2Node_DynamicCast_bSuccess'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.64"
     },
     "PropertyClass": {
-      "ObjectName": "Class TslGameMode",
+      "ObjectName": "Class'TslGameMode'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -773,12 +839,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetGameMode_ReturnValue",
     "Outer": "RequestTarget",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:RequestTarget.K2Node_DynamicCast_AsTsl_Game_Mode",
+      "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:RequestTarget.K2Node_DynamicCast_AsTsl_Game_Mode'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.65"
     },
     "PropertyClass": {
-      "ObjectName": "Class GameModeBase",
+      "ObjectName": "Class'GameModeBase'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -786,12 +853,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
     "Outer": "RequestTarget",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:RequestTarget.CallFunc_GetGameMode_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:RequestTarget.CallFunc_GetGameMode_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.66"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -799,13 +867,14 @@
     "Type": "ObjectProperty",
     "Name": "TargetInstigator",
     "Outer": "RequestTarget",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:RequestTarget.CallFunc_K2_GetActorLocation_ReturnValue",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:RequestTarget.CallFunc_K2_GetActorLocation_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.67"
     },
     "PropertyFlags": 128,
     "PropertyClass": {
-      "ObjectName": "Class TslCharacter",
+      "ObjectName": "Class'TslCharacter'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -813,13 +882,14 @@
     "Type": "Function",
     "Name": "RequestTarget",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:UserConstructionScript",
+      "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.61"
     },
     "Children": [
       {
-        "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:RequestTarget.TargetInstigator",
+        "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:RequestTarget.TargetInstigator'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.68"
       }
     ],
@@ -829,9 +899,10 @@
     "Type": "StructProperty",
     "Name": "CallFunc_CheckLocationForValidBeacons_BeaconIds",
     "Outer": "CallFunc_CheckLocationForValidBeacons_BeaconIds",
+    "Class": "UScriptClass'StructProperty'",
     "Next": null,
     "Struct": {
-      "ObjectName": "ScriptStruct Guid",
+      "ObjectName": "ScriptStruct'Guid'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -839,6 +910,7 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_Greater_IntInt_ReturnValue",
     "Outer": "CheckForTargets",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "BoolSize": 1,
     "bIsNativeBool": true
@@ -847,8 +919,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_Array_Length_ReturnValue",
     "Outer": "CheckForTargets",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_Greater_IntInt_ReturnValue",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_Greater_IntInt_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.71"
     }
   },
@@ -856,8 +929,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_CheckLocationForValidBeacons_ReturnValue",
     "Outer": "CheckForTargets",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_Array_Length_ReturnValue",
+      "ObjectName": "IntProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_Array_Length_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.72"
     },
     "BoolSize": 1,
@@ -867,8 +941,9 @@
     "Type": "FloatProperty",
     "Name": "CallFunc_CheckLocationForValidBeacons_BlackZoneRadius",
     "Outer": "CheckForTargets",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_CheckLocationForValidBeacons_ReturnValue",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_CheckLocationForValidBeacons_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.73"
     }
   },
@@ -876,12 +951,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_CheckLocationForValidBeacons_BlackZoneOrigin",
     "Outer": "CheckForTargets",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_CheckLocationForValidBeacons_BlackZoneRadius",
+      "ObjectName": "FloatProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_CheckLocationForValidBeacons_BlackZoneRadius'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.74"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -889,13 +965,14 @@
     "Type": "ArrayProperty",
     "Name": "CallFunc_CheckLocationForValidBeacons_BeaconIds",
     "Outer": "CheckForTargets",
+    "Class": "UScriptClass'ArrayProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_CheckLocationForValidBeacons_BlackZoneOrigin",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_CheckLocationForValidBeacons_BlackZoneOrigin'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.75"
     },
     "PropertyFlags": 134217728,
     "Inner": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_CheckLocationForValidBeacons_BeaconIds.CallFunc_CheckLocationForValidBeacons_BeaconIds",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_CheckLocationForValidBeacons_BeaconIds.CallFunc_CheckLocationForValidBeacons_BeaconIds'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.70"
     }
   },
@@ -903,12 +980,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetDestructibleSurfaceManager_ReturnValue",
     "Outer": "CheckForTargets",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ArrayProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_CheckLocationForValidBeacons_BeaconIds",
+      "ObjectName": "ArrayProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_CheckLocationForValidBeacons_BeaconIds'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.76"
     },
     "PropertyClass": {
-      "ObjectName": "Class TslDestructibleSurfaceManager",
+      "ObjectName": "Class'TslDestructibleSurfaceManager'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -916,12 +994,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetBlackZoneController_ReturnValue",
     "Outer": "CheckForTargets",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_GetDestructibleSurfaceManager_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_GetDestructibleSurfaceManager_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.77"
     },
     "PropertyClass": {
-      "ObjectName": "Class BlackZoneController",
+      "ObjectName": "Class'BlackZoneController'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -929,12 +1008,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetTslGameState_ReturnValue",
     "Outer": "CheckForTargets",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_GetBlackZoneController_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_GetBlackZoneController_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.78"
     },
     "PropertyClass": {
-      "ObjectName": "Class TslGameState",
+      "ObjectName": "Class'TslGameState'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -942,8 +1022,9 @@
     "Type": "BoolProperty",
     "Name": "K2Node_DynamicCast_bSuccess",
     "Outer": "CheckForTargets",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_GetTslGameState_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_GetTslGameState_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.79"
     },
     "BoolSize": 1,
@@ -953,12 +1034,13 @@
     "Type": "ObjectProperty",
     "Name": "K2Node_DynamicCast_AsTsl_Game_Mode",
     "Outer": "CheckForTargets",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.K2Node_DynamicCast_bSuccess",
+      "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.K2Node_DynamicCast_bSuccess'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.80"
     },
     "PropertyClass": {
-      "ObjectName": "Class TslGameMode",
+      "ObjectName": "Class'TslGameMode'",
       "ObjectPath": "/Script/TslGame"
     }
   },
@@ -966,12 +1048,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
     "Outer": "CheckForTargets",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.K2Node_DynamicCast_AsTsl_Game_Mode",
+      "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.K2Node_DynamicCast_AsTsl_Game_Mode'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.81"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -979,12 +1062,13 @@
     "Type": "ObjectProperty",
     "Name": "CallFunc_GetGameMode_ReturnValue",
     "Outer": "CheckForTargets",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_K2_GetActorLocation_ReturnValue",
+      "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_K2_GetActorLocation_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.82"
     },
     "PropertyClass": {
-      "ObjectName": "Class GameModeBase",
+      "ObjectName": "Class'GameModeBase'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -992,8 +1076,9 @@
     "Type": "BoolProperty",
     "Name": "IsValidLocation",
     "Outer": "CheckForTargets",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_GetGameMode_ReturnValue",
+      "ObjectName": "ObjectProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.CallFunc_GetGameMode_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.83"
     },
     "PropertyFlags": 384,
@@ -1004,13 +1089,14 @@
     "Type": "Function",
     "Name": "CheckForTargets",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:RequestTarget",
+      "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:RequestTarget'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.69"
     },
     "Children": [
       {
-        "ObjectName": "BoolProperty ProjBlackZoneSmokeGrenade_C:CheckForTargets.IsValidLocation",
+        "ObjectName": "BoolProperty'ProjBlackZoneSmokeGrenade_C:CheckForTargets.IsValidLocation'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.84"
       }
     ],
@@ -1020,111 +1106,114 @@
     "Type": "StructProperty",
     "Name": "UberGraphFrame",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:CheckForTargets",
+      "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:CheckForTargets'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.85"
     },
     "PropertyFlags": 2105344,
     "Struct": {
-      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
       "ObjectPath": "/Script/Engine"
     }
   },
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "DynamicBindingObjects": [
         {
-          "ObjectName": "ComponentDelegateBinding ProjBlackZoneSmokeGrenade_C:ComponentDelegateBinding_2",
+          "ObjectName": "ComponentDelegateBinding'ProjBlackZoneSmokeGrenade_C:ComponentDelegateBinding_2'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.90"
         }
       ],
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjBlackZoneSmokeGrenade_C:SimpleConstructionScript_0__57659476",
+        "ObjectName": "SimpleConstructionScript'ProjBlackZoneSmokeGrenade_C:SimpleConstructionScript_0__57659476'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.96"
       },
       "UberGraphFramePointerProperty": {
-        "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.86"
       },
       "UberGraphFunction": {
-        "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+        "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.51"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslProjectile",
+      "ObjectName": "Class'TslProjectile'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjBlackZoneSmokeGrenade_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjBlackZoneSmokeGrenade_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.86"
       }
     ],
     "FuncMap": {
       "ExecuteUbergraph_ProjBlackZoneSmokeGrenade": {
-        "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade",
+        "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:ExecuteUbergraph_ProjBlackZoneSmokeGrenade'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.51"
       },
       "PropagateEffectActor_BP": {
-        "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:PropagateEffectActor_BP",
+        "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:PropagateEffectActor_BP'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.52"
       },
       "Request Black Zone": {
-        "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:Request Black Zone",
+        "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:Request Black Zone'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.54"
       },
       "BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature": {
-        "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature",
+        "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:BndEvt__TslWorldOffset_K2Node_ComponentBoundEvent_1_OnApplyWorldOffsetSignature__DelegateSignature'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.57"
       },
       "End": {
-        "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:End",
+        "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:End'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.58"
       },
       "ReceiveTick": {
-        "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:ReceiveTick",
+        "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:ReceiveTick'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.60"
       },
       "UserConstructionScript": {
-        "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:UserConstructionScript",
+        "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.61"
       },
       "RequestTarget": {
-        "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:RequestTarget",
+        "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:RequestTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.69"
       },
       "CheckForTargets": {
-        "ObjectName": "Function ProjBlackZoneSmokeGrenade_C:CheckForTargets",
+        "ObjectName": "Function'ProjBlackZoneSmokeGrenade_C:CheckForTargets'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.85"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjBlackZoneSmokeGrenade_C Default__ProjBlackZoneSmokeGrenade_C",
+      "ObjectName": "ProjBlackZoneSmokeGrenade_C'Default__ProjBlackZoneSmokeGrenade_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.88"
     }
   },
   {
     "Type": "ProjBlackZoneSmokeGrenade_C",
     "Name": "Default__ProjBlackZoneSmokeGrenade_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.ProjBlackZoneSmokeGrenade_C'",
     "Properties": {
       "UberGraphFrame": {},
       "StartSmokeSound": {
-        "ObjectName": "AkAudioEvent SmokeBomb_Explosion",
+        "ObjectName": "AkAudioEvent'SmokeBomb_Explosion'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/SmokeBomb/SmokeBomb_Explosion.0"
       },
       "EndSmokeSound": {
-        "ObjectName": "AkAudioEvent SmokeBomb_Explosion_Stop",
+        "ObjectName": "AkAudioEvent'SmokeBomb_Explosion_Stop'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/SmokeBomb/SmokeBomb_Explosion_Stop.0"
       },
       "HitImpactMin": 300.0,
@@ -1146,27 +1235,27 @@
         "Key": "K_GDU_01"
       },
       "MovementComp": {
-        "ObjectName": "TslProjectileMovementComponent Default__ProjBlackZoneSmokeGrenade_C:ProjectileComp",
+        "ObjectName": "TslProjectileMovementComponent'Default__ProjBlackZoneSmokeGrenade_C:ProjectileComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.100"
       },
       "CollisionComp": {
-        "ObjectName": "SphereComponent Default__ProjBlackZoneSmokeGrenade_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjBlackZoneSmokeGrenade_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.98"
       },
       "ParticleComp": {
-        "ObjectName": "ParticleSystemComponent Default__ProjBlackZoneSmokeGrenade_C:ParticleComp",
+        "ObjectName": "ParticleSystemComponent'Default__ProjBlackZoneSmokeGrenade_C:ParticleComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.91"
       },
       "MeshComp": {
-        "ObjectName": "StaticMeshComponent Default__ProjBlackZoneSmokeGrenade_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjBlackZoneSmokeGrenade_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.99"
       },
       "InterpolationTargetComp": {
-        "ObjectName": "SphereComponent Default__ProjBlackZoneSmokeGrenade_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjBlackZoneSmokeGrenade_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.97"
       },
       "ConstraintComp": {
-        "ObjectName": "PhysicsConstraintComponent Default__ProjBlackZoneSmokeGrenade_C:MeshConstraint",
+        "ObjectName": "PhysicsConstraintComponent'Default__ProjBlackZoneSmokeGrenade_C:MeshConstraint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.92"
       },
       "MeshInitialRotationRate": {
@@ -1180,11 +1269,11 @@
       "HideMeshAtExplosion": false,
       "bUseVelocityStartTimer": true,
       "ImpactSound": {
-        "ObjectName": "AkAudioEvent HandBomb_Common_Impact",
+        "ObjectName": "AkAudioEvent'HandBomb_Common_Impact'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/HandBomb_Common/HandBomb_Common_Impact.0"
       },
       "AkComp": {
-        "ObjectName": "AkComponent Default__ProjBlackZoneSmokeGrenade_C:AkComp",
+        "ObjectName": "AkComponent'Default__ProjBlackZoneSmokeGrenade_C:AkComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.89"
       },
       "bPropagateEffectActor": true,
@@ -1203,11 +1292,11 @@
         ]
       },
       "ReplicatedEffectActor": {
-        "ObjectName": "BlueprintGeneratedClass BP_BZSmokePropagationHost_C",
+        "ObjectName": "BlueprintGeneratedClass'BP_BZSmokePropagationHost_C'",
         "ObjectPath": "TslGame/Content/Export_Marek/NewSmoke/BP_BZSmokePropagationHost.28"
       },
       "RootComponent": {
-        "ObjectName": "SphereComponent Default__ProjBlackZoneSmokeGrenade_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjBlackZoneSmokeGrenade_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.98"
       }
     }
@@ -1216,9 +1305,10 @@
     "Type": "AkComponent",
     "Name": "AkComp",
     "Outer": "Default__ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'AkComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjBlackZoneSmokeGrenade_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjBlackZoneSmokeGrenade_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.98"
       }
     }
@@ -1227,6 +1317,7 @@
     "Type": "ComponentDelegateBinding",
     "Name": "ComponentDelegateBinding_2",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
     "Properties": {
       "ComponentDelegateBindings": [
         {
@@ -1241,13 +1332,14 @@
     "Type": "ParticleSystemComponent",
     "Name": "ParticleComp",
     "Outer": "Default__ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
     "Properties": {
       "Template": {
-        "ObjectName": "ParticleSystem P_BZSmokeGrenadeTrail",
+        "ObjectName": "ParticleSystem'P_BZSmokeGrenadeTrail'",
         "ObjectPath": "TslGame/Content/Export_Marek/NewSmoke/P_BZSmokeGrenadeTrail.22"
       },
       "AttachParent": {
-        "ObjectName": "StaticMeshComponent Default__ProjBlackZoneSmokeGrenade_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjBlackZoneSmokeGrenade_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.99"
       }
     }
@@ -1256,6 +1348,7 @@
     "Type": "PhysicsConstraintComponent",
     "Name": "MeshConstraint",
     "Outer": "Default__ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
     "Properties": {
       "ConstraintInstance": {
         "ProfileInstance": {
@@ -1270,7 +1363,7 @@
       },
       "bUseAttachParentBound": true,
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjBlackZoneSmokeGrenade_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjBlackZoneSmokeGrenade_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.97"
       }
     }
@@ -1278,19 +1371,21 @@
   {
     "Type": "SceneComponent",
     "Name": "SceneComponent_1",
-    "Outer": "ProjBlackZoneSmokeGrenade_C"
+    "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class TslWorldOffsetComponent",
+        "ObjectName": "Class'TslWorldOffsetComponent'",
         "ObjectPath": "/Script/TslGame"
       },
       "ComponentTemplate": {
-        "ObjectName": "TslWorldOffsetComponent ProjBlackZoneSmokeGrenade_C:TslWorldOffset_GEN_VARIABLE",
+        "ObjectName": "TslWorldOffsetComponent'ProjBlackZoneSmokeGrenade_C:TslWorldOffset_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.101"
       },
       "VariableGuid": "760FF482-460E1130-B69CD5B7-C35D864E",
@@ -1301,13 +1396,14 @@
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjBlackZoneSmokeGrenade_C:SceneComponent_1",
+        "ObjectName": "SceneComponent'ProjBlackZoneSmokeGrenade_C:SceneComponent_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.93"
       },
       "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
@@ -1318,21 +1414,22 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0__57659476",
     "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "RootNodes": [
         {
-          "ObjectName": "SCS_Node ProjBlackZoneSmokeGrenade_C:SimpleConstructionScript_0__57659476.SCS_Node_0",
+          "ObjectName": "SCS_Node'ProjBlackZoneSmokeGrenade_C:SimpleConstructionScript_0__57659476.SCS_Node_0'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.94"
         }
       ],
       "AllNodes": [
         {
-          "ObjectName": "SCS_Node ProjBlackZoneSmokeGrenade_C:SimpleConstructionScript_0__57659476.SCS_Node_0",
+          "ObjectName": "SCS_Node'ProjBlackZoneSmokeGrenade_C:SimpleConstructionScript_0__57659476.SCS_Node_0'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.94"
         }
       ],
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjBlackZoneSmokeGrenade_C:SimpleConstructionScript_0__57659476.SCS_Node_1",
+        "ObjectName": "SCS_Node'ProjBlackZoneSmokeGrenade_C:SimpleConstructionScript_0__57659476.SCS_Node_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.95"
       }
     }
@@ -1341,9 +1438,10 @@
     "Type": "SphereComponent",
     "Name": "InterpolationTarget",
     "Outer": "Default__ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjBlackZoneSmokeGrenade_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjBlackZoneSmokeGrenade_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.98"
       }
     }
@@ -1352,6 +1450,7 @@
     "Type": "SphereComponent",
     "Name": "SphereComp",
     "Outer": "Default__ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "SphereRadius": 4.2,
       "bReceivesDecals": false,
@@ -1362,7 +1461,7 @@
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "ProjBlackZoneSmokeGrenade_C Default__ProjBlackZoneSmokeGrenade_C",
+              "ObjectName": "ProjBlackZoneSmokeGrenade_C'Default__ProjBlackZoneSmokeGrenade_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.88"
             },
             "FunctionName": "OnHit"
@@ -1375,9 +1474,10 @@
     "Type": "StaticMeshComponent",
     "Name": "MeshComp",
     "Outer": "Default__ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
     "Properties": {
       "StaticMesh": {
-        "ObjectName": "StaticMesh BZ_SignalSmoke_Projectile",
+        "ObjectName": "StaticMesh'BZ_SignalSmoke_Projectile'",
         "ObjectPath": "TslGame/Content/Weapon/Grenades/BZ_SignalSmoke/BZ_SignalSmoke_Projectile.1"
       },
       "OverrideMaterials": [
@@ -1394,29 +1494,29 @@
           "Z": 0.0
         },
         "PhysMaterialOverride": {
-          "ObjectName": "PhysicalMaterial PhysMat_Grenade",
+          "ObjectName": "PhysicalMaterial'PhysMat_Grenade'",
           "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Grenade.0"
         }
       },
       "CanCharacterStepUpOn": "ECB_No",
-      "RelativeScale3D": {
-        "X": 1.414,
-        "Y": 1.414,
-        "Z": 1.414
-      },
       "RelativeRotation": {
         "Pitch": 90.0,
         "Yaw": 0.0,
         "Roll": 0.0
+      },
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__ProjBlackZoneSmokeGrenade_C:InterpolationTarget'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.97"
       },
       "RelativeLocation": {
         "X": 0.0,
         "Y": 0.0,
         "Z": 0.3
       },
-      "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjBlackZoneSmokeGrenade_C:InterpolationTarget",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjBlackZoneSmokeGrenade.97"
+      "RelativeScale3D": {
+        "X": 1.414,
+        "Y": 1.414,
+        "Z": 1.414
       },
       "bCanEverAffectNavigation": false
     }
@@ -1425,6 +1525,7 @@
     "Type": "TslProjectileMovementComponent",
     "Name": "ProjectileComp",
     "Outer": "Default__ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'TslProjectileMovementComponent'",
     "Properties": {
       "SlidingFriction_Speed_In": {
         "X": 0.0,
@@ -1447,6 +1548,7 @@
   {
     "Type": "TslWorldOffsetComponent",
     "Name": "TslWorldOffset_GEN_VARIABLE",
-    "Outer": "ProjBlackZoneSmokeGrenade_C"
+    "Outer": "ProjBlackZoneSmokeGrenade_C",
+    "Class": "UScriptClass'TslWorldOffsetComponent'"
   }
 ]

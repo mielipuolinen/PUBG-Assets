@@ -1,0 +1,715 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "ModeController",
+    "Outer": "Service_PoisonDamage_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 67589,
+    "PropertyClass": {
+      "ObjectName": "Class'BattleRoyaleModeController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "EverySecondTimer",
+    "Outer": "Service_PoisonDamage_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Service_PoisonDamage_C:ModeController'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.0"
+    },
+    "PropertyFlags": 65541,
+    "Struct": {
+      "ObjectName": "ScriptStruct'TimerHandle'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+    "Outer": "CallFunc_GetAllActorsOfClass_OutActors",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.CallFunc_Greater_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.3"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_Length_ReturnValue",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.CallFunc_Less_IntInt_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.4"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "IntProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.CallFunc_Array_Length_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.5"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetGameState_ReturnValue",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.CallFunc_Array_Get_Item'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.6"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslGameState'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "CallFunc_GetAllActorsOfClass_OutActors",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'ArrayProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.CallFunc_GetGameState_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.7"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "ObjectProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.CallFunc_GetAllActorsOfClass_OutActors.CallFunc_GetAllActorsOfClass_OutActors'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.2"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ArrayProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.CallFunc_GetAllActorsOfClass_OutActors'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.8"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "___int_Loop_Counter_Variable",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "IntProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.CallFunc_Add_IntInt_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.9"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "___int_Array_Index_Variable",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "IntProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.___int_Loop_Counter_Variable'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.10"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "IntProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.___int_Array_Index_Variable'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.11"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'TimerHandle'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "DelegateProperty",
+    "Name": "K2Node_CreateDelegate_OutputDelegate",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'DelegateProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.CallFunc_K2_SetTimerDelegate_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.12"
+    },
+    "SignatureFunction": {
+      "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "DelegateProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.K2Node_CreateDelegate_OutputDelegate'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.13"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsBattle_Royale_Mode_Controller",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.14"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'BattleRoyaleModeController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OwnerActor",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.K2Node_DynamicCast_AsBattle_Royale_Mode_Controller'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.15"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.K2Node_Event_OwnerActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.16"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Service_PoisonDamage",
+    "Outer": "Service_PoisonDamage_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "StructProperty'Service_PoisonDamage_C:EverySecondTimer'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.1"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.17"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OwnerActor",
+    "Outer": "ReceiveActivation",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveActivation",
+    "Outer": "Service_PoisonDamage_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.18"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BTService_BlueprintBase:ReceiveActivation'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Service_PoisonDamage_C:ReceiveActivation.OwnerActor'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.19"
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "EverySecond",
+    "Outer": "Service_PoisonDamage_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Service_PoisonDamage_C:ReceiveActivation'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.20"
+    },
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_ApplyDamage_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_CanDealDamage_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_ApplyDamage_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.22"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetPoisonGasDamagePerSecond_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_CanDealDamage_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.23"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetGameMode_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_GetPoisonGasDamagePerSecond_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.24"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslGameMode'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_VSize_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_GetGameMode_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.25"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Subtract_VectorVector_ReturnValue2",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_VSize_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.26"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_MakeVector_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_Subtract_VectorVector_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.27"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Z",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_MakeVector_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.28"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Y",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_BreakVector_Z'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.29"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_X",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_BreakVector_Y'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.30"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsImmuneBlueZone_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_BreakVector_X'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.31"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_GetActorLocation_ReturnValue2",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_IsImmuneBlueZone_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.32"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_FloatFloat_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_K2_GetActorLocation_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.33"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_VSize2DSquared_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_Less_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.34"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetGameState_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_VSize2DSquared_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.35"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslGameState'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Conv_VectorToVector2D_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_GetGameState_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.36"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector2D'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_Subtract_VectorVector_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_Conv_VectorToVector2D_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.37"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_GetActorLocation_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_Subtract_VectorVector_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.38"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_K2_GetActorLocation_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.39"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Player_State",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Service_PoisonDamage_C:TakeDamageToCharacter.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.40"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslPlayerState'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Service_PoisonDamage_C:TakeDamageToCharacter.K2Node_DynamicCast_AsTsl_Player_State'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.41"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetTslPlayerController_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_IsValid_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.42"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslPlayerController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Square_ReturnValue",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_GetTslPlayerController_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.43"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "TargetCharacter",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Service_PoisonDamage_C:TakeDamageToCharacter.CallFunc_Square_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.44"
+    },
+    "PropertyFlags": 2049,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "SafetyPosition",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Service_PoisonDamage_C:TakeDamageToCharacter.TargetCharacter'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.45"
+    },
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "SafetyRadius",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Service_PoisonDamage_C:TakeDamageToCharacter.SafetyPosition'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.46"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Character",
+    "Outer": "TakeDamageToCharacter",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Service_PoisonDamage_C:TakeDamageToCharacter.SafetyRadius'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.47"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "TakeDamageToCharacter",
+    "Outer": "Service_PoisonDamage_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Service_PoisonDamage_C:EverySecond'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.21"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Service_PoisonDamage_C:TakeDamageToCharacter.Character'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.48"
+      }
+    ],
+    "FunctionFlags": 201457664
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Service_PoisonDamage_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Service_PoisonDamage_C:TakeDamageToCharacter'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.49"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Service_PoisonDamage_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Service_PoisonDamage_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.50"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.18"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'BTService_BlueprintBase'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Service_PoisonDamage_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.50"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Service_PoisonDamage": {
+        "ObjectName": "Function'Service_PoisonDamage_C:ExecuteUbergraph_Service_PoisonDamage'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.18"
+      },
+      "ReceiveActivation": {
+        "ObjectName": "Function'Service_PoisonDamage_C:ReceiveActivation'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.20"
+      },
+      "EverySecond": {
+        "ObjectName": "Function'Service_PoisonDamage_C:EverySecond'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.21"
+      },
+      "TakeDamageToCharacter": {
+        "ObjectName": "Function'Service_PoisonDamage_C:TakeDamageToCharacter'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.49"
+      }
+    },
+    "ClassFlags": 262160,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Service_PoisonDamage_C'Default__Service_PoisonDamage_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.52"
+    }
+  },
+  {
+    "Type": "Service_PoisonDamage_C",
+    "Name": "Default__Service_PoisonDamage_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Service_PoisonDamage.Service_PoisonDamage_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "EverySecondTimer": {
+        "Handle": 0
+      }
+    }
+  }
+]

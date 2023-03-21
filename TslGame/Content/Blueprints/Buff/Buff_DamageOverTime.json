@@ -1,0 +1,398 @@
+[
+  {
+    "Type": "ClassProperty",
+    "Name": "DamageType",
+    "Outer": "Buff_DamageOverTime_C",
+    "Class": "UScriptClass'ClassProperty'",
+    "Next": null,
+    "PropertyFlags": 5,
+    "PropertyClass": {
+      "ObjectName": "Class'Class'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "MetaClass": {
+      "ObjectName": "Class'DamageType'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "BaseDamage",
+    "Outer": "Buff_DamageOverTime_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "ClassProperty'Buff_DamageOverTime_C:DamageType'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.0"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "Buff_DamageOverTime_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_DamageOverTime_C:BaseDamage'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.1"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetInstigatorController_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_DamageOverTime",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class'Controller'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetAttackId_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_DamageOverTime",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime.CallFunc_GetInstigatorController_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.3"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'AttackId'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess2",
+    "Outer": "ExecuteUbergraph_Buff_DamageOverTime",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime.CallFunc_GetAttackId_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.4"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Drone",
+    "Outer": "ExecuteUbergraph_Buff_DamageOverTime",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime.K2Node_DynamicCast_bSuccess2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.5"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslDrone'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetOwnerPawn_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_DamageOverTime",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime.K2Node_DynamicCast_AsTsl_Drone'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.6"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Pawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetInstigatorController_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DamageOverTime",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime.CallFunc_GetOwnerPawn_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.7"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Controller'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_Buff_DamageOverTime",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime.CallFunc_GetInstigatorController_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.8"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Character",
+    "Outer": "ExecuteUbergraph_Buff_DamageOverTime",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.9"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetAttackId_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DamageOverTime",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime.K2Node_DynamicCast_AsTsl_Character'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.10"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'AttackId'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetOwnerPawn_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_DamageOverTime",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime.CallFunc_GetAttackId_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.11"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Pawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OtherCharacter",
+    "Outer": "ExecuteUbergraph_Buff_DamageOverTime",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime.CallFunc_GetOwnerPawn_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.12"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Buff_DamageOverTime",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime.K2Node_Event_OtherCharacter'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.13"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Buff_DamageOverTime",
+    "Outer": "Buff_DamageOverTime_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_DamageOverTime_C:DefaultSceneRoot'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.2"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.14"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OtherCharacter",
+    "Outer": "TickBuff",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "TickBuff",
+    "Outer": "Buff_DamageOverTime_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.15"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'TslBuff:TickBuff'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Buff_DamageOverTime_C:TickBuff.OtherCharacter'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.16"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "Buff_DamageOverTime_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_DamageOverTime_C:TickBuff'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.17"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Buff_DamageOverTime_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Buff_DamageOverTime_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.18"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_DamageOverTime_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Buff_DamageOverTime_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.24"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Buff_DamageOverTime_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.19"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.15"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslBuff'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Buff_DamageOverTime_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.19"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Buff_DamageOverTime": {
+        "ObjectName": "Function'Buff_DamageOverTime_C:ExecuteUbergraph_Buff_DamageOverTime'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.15"
+      },
+      "TickBuff": {
+        "ObjectName": "Function'Buff_DamageOverTime_C:TickBuff'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.17"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'Buff_DamageOverTime_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.18"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_DamageOverTime_C'Default__Buff_DamageOverTime_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.21"
+    }
+  },
+  {
+    "Type": "Buff_DamageOverTime_C",
+    "Name": "Default__Buff_DamageOverTime_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.Buff_DamageOverTime_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BaseDamage": 1.0,
+      "OverlapId": "Buff_DamageOverTime",
+      "OverlapSolveMethod": "EBuffOverlapSolveMethod::RestartTimer",
+      "BuffDuration": 10.0,
+      "IsDebuff": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Buff_DamageOverTime_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Buff_DamageOverTime_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.22"
+      },
+      "VariableGuid": "52B77A9A-40853ADF-D810FE84-30A22716",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Buff_DamageOverTime_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Buff_DamageOverTime_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.23"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Buff_DamageOverTime_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.23"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Buff_DamageOverTime_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.23"
+      }
+    }
+  }
+]

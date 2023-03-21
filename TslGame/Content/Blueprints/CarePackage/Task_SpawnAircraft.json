@@ -1,0 +1,383 @@
+[
+  {
+    "Type": "FloatProperty",
+    "Name": "NextSpawnDelay",
+    "Outer": "Task_SpawnAircraft_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CanSpawn",
+    "Outer": "Task_SpawnAircraft_C",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_SpawnAircraft_C:NextSpawnDelay'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.0"
+    },
+    "PropertyFlags": 65541,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "ElapseTime",
+    "Outer": "Task_SpawnAircraft_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_SpawnAircraft_C:CanSpawn'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.1"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CarePackageController",
+    "Outer": "Task_SpawnAircraft_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_SpawnAircraft_C:ElapseTime'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.2"
+    },
+    "PropertyFlags": 67589,
+    "PropertyClass": {
+      "ObjectName": "Class'CarePackageController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetSpawnInterval_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_GreaterEqual_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft.CallFunc_GetSpawnInterval_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.4"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsMatchInProgressBP_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft.CallFunc_GreaterEqual_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.5"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft.CallFunc_IsMatchInProgressBP_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.6"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_SpawnAircraftCarePackage_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft.CallFunc_IsValid_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.7"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetGameState_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft.CallFunc_SpawnAircraftCarePackage_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.8"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslGameState'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetStartDelay_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft.CallFunc_GetGameState_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.9"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Add_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft.CallFunc_GetStartDelay_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.10"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft.CallFunc_Add_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.11"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsCare_Package_Controller",
+    "Outer": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.12"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'CarePackageController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OwnerActor",
+    "Outer": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft.K2Node_DynamicCast_AsCare_Package_Controller'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.13"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_Event_DeltaSeconds",
+    "Outer": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft.K2Node_Event_OwnerActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.14"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OwnerActor2",
+    "Outer": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft.K2Node_Event_DeltaSeconds'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.15"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft.K2Node_Event_OwnerActor2'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.16"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Task_SpawnAircraft",
+    "Outer": "Task_SpawnAircraft_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_SpawnAircraft_C:CarePackageController'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.3"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.17"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OwnerActor",
+    "Outer": "ReceiveExecute",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveExecute",
+    "Outer": "Task_SpawnAircraft_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.18"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BTTask_BlueprintBase:ReceiveExecute'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Task_SpawnAircraft_C:ReceiveExecute.OwnerActor'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.19"
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "DeltaSeconds",
+    "Outer": "ReceiveTick",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OwnerActor",
+    "Outer": "ReceiveTick",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_SpawnAircraft_C:ReceiveTick.DeltaSeconds'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.21"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "Task_SpawnAircraft_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Task_SpawnAircraft_C:ReceiveExecute'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.20"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BTTask_BlueprintBase:ReceiveTick'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Task_SpawnAircraft_C:ReceiveTick.OwnerActor'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.22"
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Task_SpawnAircraft_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Task_SpawnAircraft_C:ReceiveTick'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.23"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Task_SpawnAircraft_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Task_SpawnAircraft_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.24"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.18"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_BlueprintBase'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Task_SpawnAircraft_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.24"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Task_SpawnAircraft": {
+        "ObjectName": "Function'Task_SpawnAircraft_C:ExecuteUbergraph_Task_SpawnAircraft'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.18"
+      },
+      "ReceiveExecute": {
+        "ObjectName": "Function'Task_SpawnAircraft_C:ReceiveExecute'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.20"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'Task_SpawnAircraft_C:ReceiveTick'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.23"
+      }
+    },
+    "ClassFlags": 262160,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Task_SpawnAircraft_C'Default__Task_SpawnAircraft_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.26"
+    }
+  },
+  {
+    "Type": "Task_SpawnAircraft_C",
+    "Name": "Default__Task_SpawnAircraft_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Task_SpawnAircraft.Task_SpawnAircraft_C'",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_SkydiveComponent_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslSkydiveComponent'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 10747920,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_SkydiveComponent_C'Default__BP_SkydiveComponent_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Pawns/BP_SkydiveComponent.1"
+    }
+  },
+  {
+    "Type": "BP_SkydiveComponent_C",
+    "Name": "Default__BP_SkydiveComponent_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Pawns/BP_SkydiveComponent.BP_SkydiveComponent_C'",
+    "Properties": {
+      "LateralSettings": {
+        "MaxLatVelocity": 2500.0
+      },
+      "ParachuteGeneralSettings": {
+        "ParachuteForwardVelocityTransferTimeout": 1.33,
+        "ParachuteForwardVelocityTransferTimeoutDTScalar": 0.33,
+        "ParachuteInputBlockTime": 1.7,
+        "ParachuteSK": {
+          "ObjectName": "SkeletalMesh'SK_Parachute_V2'",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/ParachuteV2/SK_Parachute_V2.0"
+        },
+        "ParachuteAnimInstance": {
+          "ObjectName": "AnimBlueprintGeneratedClass'ABP_Parachute_V2_C'",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/ParachuteV2/ABP_Parachute_V2.70"
+        },
+        "PhysicsAssetRef": {
+          "ObjectName": "PhysicsAsset'SK_Parachute_V2_PhysicsAsset_TN4'",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/ParachuteV2/SK_Parachute_V2_PhysicsAsset_TN4.0"
+        },
+        "CameraStateBlendMap": [
+          {
+            "ESkydiveState::Skydive_Freefall": {
+              "BlendInTime": 0.7,
+              "BlendFunction": "VTBlend_Cubic",
+              "BlendExponent": 1.0,
+              "bLockOutgoing": true
+            }
+          },
+          {
+            "ESkydiveState::Skydive_ParachuteDeploying": {
+              "BlendInTime": 1.0,
+              "BlendFunction": "VTBlend_Cubic",
+              "BlendExponent": 1.0,
+              "bLockOutgoing": true
+            }
+          }
+        ]
+      },
+      "ParachuteDeploySettings": {
+        "AutoDeployAltitude": 250.0
+      },
+      "ParachuteCutoffSettings": {
+        "AutoCutInputScale": 0.5,
+        "CutoffReadyDuration": 0.33,
+        "AutoCutoffVelocityScalar": {
+          "X": 0.7,
+          "Y": 0.7,
+          "Z": 0.7
+        },
+        "AutoCutoffAnimTime": 0.075,
+        "MeshRotationResetStep": 40.0
+      },
+      "ParachuteOverlapSettings": {
+        "LocalOffset": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 450.0
+        },
+        "CollisionShape": {
+          "Radius": 150.0
+        }
+      },
+      "LandSettings": {
+        "LandingTypeArray": [
+          {
+            "LandingSurfaceType": "EParachuteLandingSurfaceType::Surface_Vertical",
+            "LandingSpeedLimit": 10000.0,
+            "LocalLandingMontage": {
+              "ObjectName": "AnimMontage'Parachute_Brace_to_verticalHit_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/Parachute_Brace_to_verticalHit_Montage.0"
+            },
+            "RemoteLandingMontage": {
+              "ObjectName": "AnimMontage'Parachute_Brace_to_verticalHit_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/Parachute_Brace_to_verticalHit_Montage.0"
+            },
+            "bUseRotationLock": true,
+            "RotationLockTime": 0.2,
+            "ParachuteCollapseMontage": {
+              "ObjectName": "AnimMontage'Parachute_Detach_verticalHit_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/ParachuteV2/Parachute_Detach_verticalHit_Montage.0"
+            },
+            "LandingName": "Vertical"
+          },
+          {
+            "LandingSurfaceType": "EParachuteLandingSurfaceType::Surface_Horizontal",
+            "LandingSpeedLimit": 10000.0,
+            "LocalLandingMontage": {
+              "ObjectName": "AnimMontage'Parachute_Land_to_Roll_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/Parachute_Land_to_Roll_Montage.0"
+            },
+            "RemoteLandingMontage": {
+              "ObjectName": "AnimMontage'Parachute_Land_to_Roll_Remote_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/Parachute_Land_to_Roll_Remote_Montage.0"
+            },
+            "bUseRotationLock": true,
+            "RotationLockTime": 0.7,
+            "ParachuteCollapseMontage": {
+              "ObjectName": "AnimMontage'Parachute_Detach_Stand_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/ParachuteV2/Parachute_Detach_Stand_Montage.0"
+            },
+            "LandingName": "Roll"
+          },
+          {
+            "LandingSurfaceType": "EParachuteLandingSurfaceType::Surface_Horizontal",
+            "LandingSpeedLimit": 1500.0,
+            "LocalLandingMontage": {
+              "ObjectName": "AnimMontage'Parachute_Land_to_Run_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/Parachute_Land_to_Run_Montage.0"
+            },
+            "RemoteLandingMontage": {
+              "ObjectName": "AnimMontage'Parachute_Land_to_Run_Remote_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/Parachute_Land_to_Run_Remote_Montage.0"
+            },
+            "bUseRotationLock": true,
+            "RotationLockTime": 0.45,
+            "ParachuteCollapseMontage": {
+              "ObjectName": "AnimMontage'Parachute_Detach_Stand_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/ParachuteV2/Parachute_Detach_Stand_Montage.0"
+            },
+            "LandingName": "Run"
+          },
+          {
+            "LandingSurfaceType": "EParachuteLandingSurfaceType::Surface_Horizontal",
+            "LandingSpeedLimit": 1000.0,
+            "LocalLandingMontage": {
+              "ObjectName": "AnimMontage'Parachute_Land_to_Stand_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/Parachute_Land_to_Stand_Montage.0"
+            },
+            "RemoteLandingMontage": {
+              "ObjectName": "AnimMontage'Parachute_Land_to_Stand_Remote_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/Parachute_Land_to_Stand_Remote_Montage.0"
+            },
+            "bUseRotationLock": true,
+            "RotationLockTime": 0.35,
+            "ParachuteCollapseMontage": {
+              "ObjectName": "AnimMontage'Parachute_Detach_roll_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/ParachuteV2/Parachute_Detach_roll_Montage.0"
+            },
+            "LandingName": "Stand"
+          }
+        ],
+        "ManualDetachMontage": {
+          "ObjectName": "AnimMontage'Parachute_Detach_Stand_Montage'",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/ParachuteV2/Parachute_Detach_Stand_Montage.0"
+        }
+      },
+      "SkydiveNetInterpSettings": {
+        "FreefallLocationInterpSpeedExp": 2.0
+      },
+      "SkydiveEffects": {
+        "FreefallEffect": {
+          "ObjectName": "ParticleSystem'P_Erangel_Cloud_Falling'",
+          "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_Erangel_Cloud_Falling.57"
+        },
+        "ParachuteEffect": {
+          "ObjectName": "ParticleSystem'P_Erangel_Cloud_Parachute'",
+          "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Environment/P_Erangel_Cloud_Parachute.62"
+        },
+        "FreefallCameraShakeClass": {
+          "ObjectName": "BlueprintGeneratedClass'CameraShakeForFallingNew_C'",
+          "ObjectPath": "TslGame/Content/Vehicles/Base_Vehicle/CameraShakeForFallingNew.6"
+        },
+        "ParachuteCameraShakeClass": {
+          "ObjectName": "BlueprintGeneratedClass'CameraShakeForParachuting_C'",
+          "ObjectPath": "TslGame/Content/Vehicles/Base_Vehicle/CameraShakeForParachuting.6"
+        },
+        "SkydiveCameraShakeCurve": {
+          "ObjectName": "CurveVector'C_SkydiveCameraShake'",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Parachute/ParachuteV2/C_SkydiveCameraShake.0"
+        }
+      },
+      "SkydiveAudioSettings": {
+        "FreefallLoop": {
+          "ObjectName": "AkAudioEvent'SkyDive_Freefall_Loop'",
+          "ObjectPath": "TslGame/Content/WwiseAssets/Directing/SkyDive/SkyDive_Freefall_Loop.0"
+        },
+        "ParachuteLoop": {
+          "ObjectName": "AkAudioEvent'SkyDive_Parachute_Loop'",
+          "ObjectPath": "TslGame/Content/WwiseAssets/Directing/SkyDive/SkyDive_Parachute_Loop.0"
+        },
+        "ParachuteOpen": {
+          "ObjectName": "AkAudioEvent'SkyDive_Parachute_Open'",
+          "ObjectPath": "TslGame/Content/WwiseAssets/Directing/SkyDive/SkyDive_Parachute_Open.0"
+        },
+        "LootableParachuteOpen": {
+          "ObjectName": "AkAudioEvent'Skydive_Parachute_Lootable_Open'",
+          "ObjectPath": "TslGame/Content/WwiseAssets/Directing/SkyDive/Skydive_Parachute_Lootable_Open.0"
+        }
+      },
+      "DamageSettings": {
+        "bApplyLandingDamage": false,
+        "DamageType": {
+          "ObjectName": "BlueprintGeneratedClass'DmgTypeInstant_Fall_C'",
+          "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgTypeInstant_Fall.0"
+        },
+        "FallDamageBlockTime": 1.0
+      },
+      "MaxAheadWindowSize": 16,
+      "UncorrectedSmoothingSpeed": 2.0,
+      "MinStateBroadcastRate": 128,
+      "ServerSimulationStartOffsetSec": 0.0,
+      "PrimaryComponentTick": {
+        "bStartWithTickEnabled": false
+      }
+    }
+  }
+]

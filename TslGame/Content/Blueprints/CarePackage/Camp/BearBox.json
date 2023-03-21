@@ -1,0 +1,169 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BearBox_C",
+    "Super": "CampSupplyBox_BP_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BearBox_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/BearBox.7"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'CampSupplyBox_BP_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/CampSupplyBox_BP.0"
+    },
+    "ClassFlags": 8651284,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BearBox_C'Default__BearBox_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/BearBox.1"
+    }
+  },
+  {
+    "Type": "BearBox_C",
+    "Name": "Default__BearBox_C",
+    "Template": "Default__CampSupplyBox_BP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Camp/BearBox.BearBox_C'",
+    "Properties": {
+      "GroupTag": "BearBox",
+      "PackageMesh": "/Game/Assets/World/Vikendi/Props/Meshes/Cave/SM_VK_Bear_Box.SM_VK_Bear_Box",
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__BearBox_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/BearBox.3"
+      },
+      "InteractionComponent": {
+        "ObjectName": "OnceInteractionComponent'Default__BearBox_C:InteractionComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/BearBox.4"
+      },
+      "DropStaticMesh": {
+        "ObjectName": "AsyncStaticMeshComponent'Default__BearBox_C:DropStaticMesh'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/BearBox.2"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__BearBox_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/BearBox.3"
+      },
+      "OnDestroyed": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BearBox_C'Default__BearBox_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/BearBox.1"
+            },
+            "FunctionName": "OnDestroy"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "AsyncStaticMeshComponent",
+    "Name": "DropStaticMesh",
+    "Outer": "Default__BearBox_C",
+    "Template": "DropStaticMesh",
+    "Class": "UScriptClass'AsyncStaticMeshComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BearBox_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/BearBox.3"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent",
+    "Outer": "Default__BearBox_C",
+    "Template": "BoxComponent",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 54.0,
+        "Y": 40.0,
+        "Z": 76.0
+      },
+      "ShapeColor": {
+        "B": 223,
+        "G": 112,
+        "R": 147,
+        "A": 255,
+        "Hex": "FF9370DF"
+      },
+      "Mobility": "EComponentMobility::Static"
+    }
+  },
+  {
+    "Type": "OnceInteractionComponent",
+    "Name": "InteractionComponent",
+    "Outer": "Default__BearBox_C",
+    "Template": "InteractionComponent",
+    "Class": "UScriptClass'OnceInteractionComponent'",
+    "Properties": {
+      "OnInteractBy": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BearBox_C'Default__BearBox_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/BearBox.1"
+            },
+            "FunctionName": "ServerOnInteractBy"
+          }
+        ]
+      },
+      "ClientOnInteractBy": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "BearBox_C'Default__BearBox_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/BearBox.1"
+            },
+            "FunctionName": "ClientOnInteractBy"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BearBox_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BearBox_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/BearBox.5"
+      },
+      "VariableGuid": "1FA2DAE4-444785A1-11BD12AB-8561AF74",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BearBox_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BearBox_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Camp/BearBox.6"
+      }
+    }
+  }
+]

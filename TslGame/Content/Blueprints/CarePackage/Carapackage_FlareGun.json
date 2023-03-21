@@ -1,0 +1,383 @@
+[
+  {
+    "Type": "FloatProperty",
+    "Name": "FlightTime",
+    "Outer": "Carapackage_FlareGun_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "Carapackage_FlareGun_C",
+    "Super": "UserConstructionScript",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "FloatProperty'Carapackage_FlareGun_C:FlightTime'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Carapackage_RedBox_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_RedBox.19"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Carapackage_FlareGun_C",
+    "Super": "Carapackage_RedBox_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Carapackage_FlareGun_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.13"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Carapackage_FlareGun_C:InheritableComponentHandler'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.9"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'Carapackage_RedBox_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_RedBox.21"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Carapackage_FlareGun_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.1"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function'Carapackage_FlareGun_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.1"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Carapackage_FlareGun_C'Default__Carapackage_FlareGun_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.3"
+    }
+  },
+  {
+    "Type": "Carapackage_FlareGun_C",
+    "Name": "Default__Carapackage_FlareGun_C",
+    "Template": "Default__Carapackage_RedBox_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.Carapackage_FlareGun_C'",
+    "Properties": {
+      "ParachuteClass": {
+        "ObjectName": "BlueprintGeneratedClass'Parachute_Flaregun_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Parachute_Flaregun.0"
+      },
+      "SmokeFxClass": {
+        "ObjectName": "BlueprintGeneratedClass'P_Carepackage_Smoke_Flaregun_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Smoke_Flaregun.0"
+      },
+      "LightFxClass": {
+        "ObjectName": "BlueprintGeneratedClass'P_Carepackage_Light_Flaregun_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Light_Flaregun.0"
+      },
+      "VisualStaticMesh": {
+        "ObjectName": "AsyncStaticMeshComponent'Default__Carapackage_FlareGun_C:VisualStaticMesh'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.5"
+      },
+      "VisualPackageMesh": "/Game/Blueprints/CarePackage/CarePackage_B.CarePackage_B",
+      "LimitFallSpeed": 715.0,
+      "MovementComponent": {
+        "ObjectName": "SimpleInterpolationMovement'Default__Carapackage_FlareGun_C:MovementComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.14"
+      },
+      "BuoyancyForceComponent": {
+        "ObjectName": "BuoyancyForceComponent'Default__Carapackage_FlareGun_C:BuoyancyForceComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.8"
+      },
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_FlareGun_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.7"
+      },
+      "InteractionComponent": {
+        "ObjectName": "OnceInteractionComponent'Default__Carapackage_FlareGun_C:InteractionComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.10"
+      },
+      "DropStaticMesh": {
+        "ObjectName": "AsyncStaticMeshComponent'Default__Carapackage_FlareGun_C:DropStaticMesh'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.4"
+      },
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_FlareGun_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.7"
+      },
+      "OnDestroyed": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "Carapackage_FlareGun_C'Default__Carapackage_FlareGun_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.3"
+            },
+            "FunctionName": "OnDestroy"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "AsyncStaticMeshComponent",
+    "Name": "DropStaticMesh",
+    "Outer": "Default__Carapackage_FlareGun_C",
+    "Template": "DropStaticMesh",
+    "Class": "UScriptClass'AsyncStaticMeshComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_FlareGun_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.7"
+      }
+    }
+  },
+  {
+    "Type": "AsyncStaticMeshComponent",
+    "Name": "VisualStaticMesh",
+    "Outer": "Default__Carapackage_FlareGun_C",
+    "Template": "VisualStaticMesh",
+    "Class": "UScriptClass'AsyncStaticMeshComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_FlareGun_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.7"
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -88.0
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ExplosionBlocker_GEN_VARIABLE",
+    "Outer": "Carapackage_FlareGun_C",
+    "Template": "ExplosionBlocker_GEN_VARIABLE",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Grenade",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "InteractiveObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CrosshairImpact",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        }
+      },
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": -9.1552734E-05,
+        "Z": -6.864769
+      },
+      "RelativeScale3D": {
+        "X": 1.1791276,
+        "Y": 0.9741485,
+        "Z": 1.094956
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent",
+    "Outer": "Default__Carapackage_FlareGun_C",
+    "Template": "BoxComponent",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 103.0,
+        "Y": 85.0,
+        "Z": 88.0
+      },
+      "PhysicsVolumeChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "SimpleInterpolationMovement'Default__Carapackage_FlareGun_C:MovementComponent'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.14"
+            },
+            "FunctionName": "PhysicsVolumeChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BuoyancyForceComponent",
+    "Name": "BuoyancyForceComponent",
+    "Outer": "Default__Carapackage_FlareGun_C",
+    "Template": "BuoyancyForceComponent",
+    "Class": "UScriptClass'BuoyancyForceComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__Carapackage_FlareGun_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.7"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Carapackage_FlareGun_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'BoxComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "BoxComponent'Carapackage_FlareGun_C:ExplosionBlocker_GEN_VARIABLE'",
+            "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.6"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'Carapackage_RedBox_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_RedBox.21"
+            },
+            "SCSVariableName": "ExplosionBlocker",
+            "AssociatedGuid": "CC75E46A-4758DB27-365F06B5-2D4B8AFB"
+          },
+          "CookedComponentInstancingData": {
+            "bIsValid": false,
+            "ChangedPropertyList": []
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "OnceInteractionComponent",
+    "Name": "InteractionComponent",
+    "Outer": "Default__Carapackage_FlareGun_C",
+    "Template": "InteractionComponent",
+    "Class": "UScriptClass'OnceInteractionComponent'",
+    "Properties": {
+      "OnInteractBy": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "Carapackage_FlareGun_C'Default__Carapackage_FlareGun_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.3"
+            },
+            "FunctionName": "ServerOnInteractBy"
+          }
+        ]
+      },
+      "ClientOnInteractBy": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "Carapackage_FlareGun_C'Default__Carapackage_FlareGun_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.3"
+            },
+            "FunctionName": "ClientOnInteractBy"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Carapackage_FlareGun_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Carapackage_FlareGun_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.11"
+      },
+      "VariableGuid": "35894EE2-488C159F-461F42AD-C9139BB6",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Carapackage_FlareGun_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Carapackage_FlareGun_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.12"
+      }
+    }
+  },
+  {
+    "Type": "SimpleInterpolationMovement",
+    "Name": "MovementComponent",
+    "Outer": "Default__Carapackage_FlareGun_C",
+    "Template": "MovementComponent",
+    "Class": "UScriptClass'SimpleInterpolationMovement'"
+  }
+]

@@ -1,0 +1,214 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage_Arena",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Arena_Mode_Controller",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage_Arena",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Service_PoisonDamage_Arena_C:ExecuteUbergraph_Service_PoisonDamage_Arena.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.0"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslArenaModeController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage_Arena",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Service_PoisonDamage_Arena_C:ExecuteUbergraph_Service_PoisonDamage_Arena.K2Node_DynamicCast_AsTsl_Arena_Mode_Controller'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.1"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'TimerHandle'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OwnerActor",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage_Arena",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Service_PoisonDamage_Arena_C:ExecuteUbergraph_Service_PoisonDamage_Arena.CallFunc_K2_SetTimerDelegate_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.2"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "DelegateProperty",
+    "Name": "K2Node_CreateDelegate_OutputDelegate",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage_Arena",
+    "Class": "UScriptClass'DelegateProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Service_PoisonDamage_Arena_C:ExecuteUbergraph_Service_PoisonDamage_Arena.K2Node_Event_OwnerActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.3"
+    },
+    "SignatureFunction": {
+      "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Service_PoisonDamage_Arena",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "DelegateProperty'Service_PoisonDamage_Arena_C:ExecuteUbergraph_Service_PoisonDamage_Arena.K2Node_CreateDelegate_OutputDelegate'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.4"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Service_PoisonDamage_Arena",
+    "Outer": "Service_PoisonDamage_Arena_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Service_PoisonDamage_Arena_C:ExecuteUbergraph_Service_PoisonDamage_Arena.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.5"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "Function",
+    "Name": "EverySecond",
+    "Outer": "Service_PoisonDamage_Arena_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Service_PoisonDamage_Arena_C:ExecuteUbergraph_Service_PoisonDamage_Arena'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.6"
+    },
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OwnerActor",
+    "Outer": "ReceiveActivation",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveActivation",
+    "Outer": "Service_PoisonDamage_Arena_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Service_PoisonDamage_Arena_C:EverySecond'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.7"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BTService_BlueprintBase:ReceiveActivation'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Service_PoisonDamage_Arena_C:ReceiveActivation.OwnerActor'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.8"
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Service_PoisonDamage_Arena_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Service_PoisonDamage_Arena_C:ReceiveActivation'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.9"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Service_PoisonDamage_Arena_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Service_PoisonDamage_Arena_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.10"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Service_PoisonDamage_Arena_C:ExecuteUbergraph_Service_PoisonDamage_Arena'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslArenaServicePoisonDamage'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Service_PoisonDamage_Arena_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.10"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Service_PoisonDamage_Arena": {
+        "ObjectName": "Function'Service_PoisonDamage_Arena_C:ExecuteUbergraph_Service_PoisonDamage_Arena'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.6"
+      },
+      "EverySecond": {
+        "ObjectName": "Function'Service_PoisonDamage_Arena_C:EverySecond'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.7"
+      },
+      "ReceiveActivation": {
+        "ObjectName": "Function'Service_PoisonDamage_Arena_C:ReceiveActivation'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.9"
+      }
+    },
+    "ClassFlags": 262160,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Service_PoisonDamage_Arena_C'Default__Service_PoisonDamage_Arena_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.12"
+    }
+  },
+  {
+    "Type": "Service_PoisonDamage_Arena_C",
+    "Name": "Default__Service_PoisonDamage_Arena_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Service_PoisonDamage_Arena.Service_PoisonDamage_Arena_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "DamageTypeClass": {
+        "ObjectName": "BlueprintGeneratedClass'DmgType_BlueZone_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_BlueZone.0"
+      }
+    }
+  }
+]

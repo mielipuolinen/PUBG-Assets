@@ -3,26 +3,27 @@
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapGroza_C",
     "Super": "DefaultRifleSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapGroza_C:SimpleConstructionScript_0",
+        "ObjectName": "SimpleConstructionScript'WeapGroza_C:SimpleConstructionScript_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapGroza.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectName": "BlueprintGeneratedClass'DefaultRifleSetting_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapGroza_C Default__WeapGroza_C",
+      "ObjectName": "WeapGroza_C'Default__WeapGroza_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapGroza.1"
     }
   },
@@ -30,10 +31,11 @@
     "Type": "WeapGroza_C",
     "Name": "Default__WeapGroza_C",
     "Template": "Default__DefaultRifleSetting_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/WeapGroza.WeapGroza_C'",
     "Properties": {
       "TrailFX": null,
       "WeaponTrajectoryData": {
-        "ObjectName": "WeaponTrajectoryData WeapGroza_WeaponTrajectoryData",
+        "ObjectName": "WeaponTrajectoryData'WeapGroza_WeaponTrajectoryData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapGroza_WeaponTrajectoryData.0"
       },
       "WeaponGunPostprocessSettings": {
@@ -46,11 +48,11 @@
         "DepthBlurBlackPoint": 40.0
       },
       "WeaponGunData": {
-        "ObjectName": "WeaponGunDataAsset WeapGroza_WeaponGunData",
+        "ObjectName": "WeaponGunDataAsset'WeapGroza_WeaponGunData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapGroza_WeaponGunData.0"
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_gun_GROZA",
+        "ObjectName": "Texture2D'weapons_gun_GROZA'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_GROZA.0"
       },
       "WeaponIconRatio": 2.12,
@@ -74,7 +76,7 @@
           300.0
         ],
         "RecoilMontage": {
-          "ObjectName": "AnimMontage Rifle_Recoil_762_Montage",
+          "ObjectName": "AnimMontage'Rifle_Recoil_762_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Recoil/Rifle_Recoil_762_Montage.0"
         },
         "WeaponEquipDuration": 0.2,
@@ -83,7 +85,7 @@
         "PhysicalBodyHitImpactPower": 10000.0
       },
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapGroza_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__WeapGroza_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapGroza.6"
       },
       "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
@@ -130,7 +132,7 @@
           "AttachmentMeshAsset": "/Game/Weapon/Rifles/GROZA/Meshes/GROZA_Mag_01_Set.GROZA_Mag_01_Set",
           "AttachmentMeshName": "MagazineDefault",
           "AttachmentTemplate": {
-            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectName": "Class'AsyncStaticMeshComponent'",
             "ObjectPath": "/Script/TslGame"
           }
         },
@@ -140,45 +142,51 @@
           "AttachmentMeshAsset": "/Game/Weapon/Rifles/GROZA/Meshes/ForeGrip_GROZA_Set.ForeGrip_GROZA_Set",
           "AttachmentMeshName": "MuzzleDefault",
           "AttachmentTemplate": {
-            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectName": "Class'AsyncStaticMeshComponent'",
             "ObjectPath": "/Script/TslGame"
           }
         }
       ],
       "WeaponTag": "Groza",
       "MuzzleFX": {
-        "ObjectName": "ParticleSystem P_Muzzle_Groza",
+        "ObjectName": "ParticleSystem'P_Muzzle_Groza'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Muzzle/Rifle/P_Muzzle_Groza.96"
       },
-      "EquipAnimData": {
-        "EAccessorySlot::Slot_Secondary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
-          },
-          "PlayRate": 1.5
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_Secondary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_SecondarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.5
+          }
         },
-        "EAccessorySlot::Slot_SideArm": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_SideArm": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PistolSlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
         },
-        "EAccessorySlot::Slot_Primary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_Primary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PrimarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
         }
-      },
+      ],
       "WeaponAudioData": {
-        "ObjectName": "WeaponAudioData WeapGroza_WeaponAudioData",
+        "ObjectName": "WeaponAudioData'WeapGroza_WeaponAudioData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapGroza_WeaponAudioData.0"
       },
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapGroza_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapGroza_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapGroza.2"
       }
     }
@@ -188,12 +196,13 @@
     "Name": "RootScene",
     "Outer": "Default__WeapGroza_C",
     "Template": "RootScene",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapGroza_C Default__WeapGroza_C",
+              "ObjectName": "WeapGroza_C'Default__WeapGroza_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapGroza.1"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -205,19 +214,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapGroza_C"
+    "Outer": "WeapGroza_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapGroza_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapGroza_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapGroza.3"
       },
       "VariableGuid": "4B1B0ABE-483B9FB5-B48D1D92-B9412BF2",
@@ -228,9 +239,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0",
     "Outer": "WeapGroza_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapGroza_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectName": "SCS_Node'WeapGroza_C:SimpleConstructionScript_0.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapGroza.4"
       }
     }
@@ -240,13 +252,14 @@
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapGroza_C",
     "Template": "WeaponMesh3P",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "AnimClass": {
-        "ObjectName": "AnimBlueprintGeneratedClass ABP_Weapon_Groza_RD_C",
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_Weapon_Groza_RD_C'",
         "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Groza/Redux/Weapon_RD/ABP_Weapon_Groza_RD.30"
       },
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh GROZA_Set",
+        "ObjectName": "SkeletalMesh'GROZA_Set'",
         "ObjectPath": "TslGame/Content/Weapon/Rifles/GROZA/Meshes/GROZA_Set.0"
       },
       "bEnableUpdateRateOptimizations": true,
@@ -254,7 +267,7 @@
         "MassInKgOverride": 14.318548
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapGroza_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapGroza_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapGroza.2"
       }
     }

@@ -1,0 +1,247 @@
+[
+  {
+    "Type": "FloatProperty",
+    "Name": "FlightTime",
+    "Outer": "BP_VehicleDrop_BRDM_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "BP_VehicleDrop_BRDM_C",
+    "Super": "UserConstructionScript",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "FloatProperty'BP_VehicleDrop_BRDM_C:FlightTime'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.0"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BP_VehicleDrop_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop.1"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BP_VehicleDrop_BRDM_C",
+    "Super": "BP_VehicleDrop_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BP_VehicleDrop_BRDM_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.9"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'BP_VehicleDrop_BRDM_C:InheritableComponentHandler'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.5"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BP_VehicleDrop_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop.2"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'BP_VehicleDrop_BRDM_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.1"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function'BP_VehicleDrop_BRDM_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.1"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BP_VehicleDrop_BRDM_C'Default__BP_VehicleDrop_BRDM_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.3"
+    }
+  },
+  {
+    "Type": "BP_VehicleDrop_BRDM_C",
+    "Name": "Default__BP_VehicleDrop_BRDM_C",
+    "Template": "Default__BP_VehicleDrop_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.BP_VehicleDrop_BRDM_C'",
+    "Properties": {
+      "CollisionComponent": {
+        "ObjectName": "BoxComponent'Default__BP_VehicleDrop_BRDM_C:CollisionComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.4"
+      },
+      "MovementComponent": {
+        "ObjectName": "ProjectileMovementComponent'Default__BP_VehicleDrop_BRDM_C:MovementComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.6"
+      },
+      "VehicleSpawnClass": {
+        "ObjectName": "BlueprintGeneratedClass'BP_BRDM_C'",
+        "ObjectPath": "TslGame/Content/Vehicles/BRDM/BP_BRDM.33"
+      },
+      "AltitudeCheck_SphereTraceRadius": 150.0,
+      "VelocityClampInMap": {
+        "X": 3000.0,
+        "Y": 1200.0
+      },
+      "VelocityClampOutMap": {
+        "X": 1430.0,
+        "Y": 600.0
+      },
+      "FakeMesh": {
+        "ObjectName": "SkeletalMeshComponent'Default__BP_VehicleDrop_BRDM_C:FakeMesh'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.11"
+      },
+      "RemoteRole": "ROLE_SimulatedProxy",
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__BP_VehicleDrop_BRDM_C:CollisionComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.4"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "CollisionComponent",
+    "Outer": "Default__BP_VehicleDrop_BRDM_C",
+    "Template": "CollisionComponent",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "PhysicsVolumeChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "ProjectileMovementComponent'Default__BP_VehicleDrop_BRDM_C:MovementComponent'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.6"
+            },
+            "FunctionName": "PhysicsVolumeChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "BP_VehicleDrop_BRDM_C",
+    "Class": "UScriptClass'InheritableComponentHandler'",
+    "Properties": {
+      "Records": [
+        {
+          "ComponentClass": {
+            "ObjectName": "Class'SkeletalMeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "ComponentTemplate": {
+            "ObjectName": "SkeletalMeshComponent'BP_VehicleDrop_BRDM_C:ParachuteMesh_GEN_VARIABLE'",
+            "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.10"
+          },
+          "ComponentKey": {
+            "OwnerClass": {
+              "ObjectName": "BlueprintGeneratedClass'BP_VehicleDrop_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop.2"
+            },
+            "SCSVariableName": "ParachuteMesh",
+            "AssociatedGuid": "F4F1D4D1-4C4BDCC8-CBBDB498-DEF3D769"
+          },
+          "CookedComponentInstancingData": {
+            "bIsValid": false,
+            "ChangedPropertyList": []
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "ProjectileMovementComponent",
+    "Name": "MovementComponent",
+    "Outer": "Default__BP_VehicleDrop_BRDM_C",
+    "Template": "MovementComponent",
+    "Class": "UScriptClass'ProjectileMovementComponent'",
+    "Properties": {
+      "InitialSpeed": 1430.0,
+      "MaxSpeed": 1430.0
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BP_VehicleDrop_BRDM_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BP_VehicleDrop_BRDM_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.7"
+      },
+      "VariableGuid": "98820044-471CDD79-1B9196BC-BB0294C4",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BP_VehicleDrop_BRDM_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BP_VehicleDrop_BRDM_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.8"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "ParachuteMesh_GEN_VARIABLE",
+    "Outer": "BP_VehicleDrop_BRDM_C",
+    "Template": "ParachuteMesh_GEN_VARIABLE",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 165.2132
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "FakeMesh",
+    "Outer": "Default__BP_VehicleDrop_BRDM_C",
+    "Template": "FakeMesh",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Properties": {
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'SK_BRDM'",
+        "ObjectPath": "TslGame/Content/Vehicles/BRDM/Mesh/SK_BRDM.0"
+      },
+      "OverrideMaterials": [
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "Material'M_Transparent'",
+          "ObjectPath": "TslGame/Content/Export_Marek/M_Transparent.0"
+        }
+      ],
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__BP_VehicleDrop_BRDM_C:CollisionComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Custom/BP_VehicleDrop_BRDM.4"
+      }
+    }
+  }
+]

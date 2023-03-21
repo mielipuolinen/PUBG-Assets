@@ -3,6 +3,7 @@
     "Type": "BodySetup",
     "Name": "BodySetup_0",
     "Outer": "spikehandle_Box0012",
+    "Class": "UScriptClass'BodySetup'",
     "Properties": {
       "AggGeom": {
         "ConvexElems": [
@@ -206,7 +207,7 @@
     "BodySetupGuid": "90DF1C534F29A71732763E9A3F8E529F",
     "CookedFormatData": {
       "PhysXPC": {
-        "BulkDataFlags": "BULKDATA_ForceInlinePayload",
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
         "ElementCount": 20575,
         "SizeOnDisk": 20575,
         "OffsetInFile": "0xCA5F"
@@ -216,6 +217,7 @@
   {
     "Type": "StaticMesh",
     "Name": "spikehandle_Box0012",
+    "Class": "UScriptClass'StaticMesh'",
     "Properties": {
       "StaticMaterials": [
         {
@@ -248,7 +250,7 @@
       }
     },
     "BodySetup": {
-      "ObjectName": "BodySetup spikehandle_Box0012:BodySetup_0",
+      "ObjectName": "BodySetup'spikehandle_Box0012:BodySetup_0'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Spiketrap/spikehandle_Box0012.0"
     },
     "NavCollision": null,

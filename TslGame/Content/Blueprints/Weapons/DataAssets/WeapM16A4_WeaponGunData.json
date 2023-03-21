@@ -2,15 +2,16 @@
   {
     "Type": "WeaponGunDataAsset",
     "Name": "WeapM16A4_WeaponGunData",
+    "Class": "UScriptClass'WeaponGunDataAsset'",
     "Properties": {
       "WeaponGunConfig": {
         "AmmoItemID": "Item_Ammo_556mm_C",
         "TracerClass": {
-          "ObjectName": "ParticleSystem P_Tracer_Mini14",
+          "ObjectName": "ParticleSystem'P_Tracer_Mini14'",
           "ObjectPath": "TslGame/Content/Export_Marek/Tracer/P_Tracer_Mini14.10"
         },
         "AmmoPerClip": 30,
-        "TimeBetweenShots": 0.1,
+        "TimeBetweenShots": 0.075,
         "AttachmentTagData": [
           {
             "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
@@ -48,6 +49,7 @@
           }
         ],
         "bUseTimeBetweenBursts": true,
+        "TimeBetweenBursts": 0.075,
         "NoAnimReloadDuration": 2.5,
         "FiringModes": [
           "EFiringMode::Normal",
@@ -80,46 +82,46 @@
       },
       "WeaponAnimConfig": {
         "CharacterGripBlendspace": {
-          "ObjectName": "BlendSpace1D Weapon_M16_Grip_RD",
+          "ObjectName": "BlendSpace1D'Weapon_M16_Grip_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M16/Redux/Weapon_M16_Grip_RD.0"
         },
         "CharacterFireSelector": {
-          "ObjectName": "AnimMontage Character_Weapon_M16_Firemode_Montage_RD",
+          "ObjectName": "AnimMontage'Character_Weapon_M16_Firemode_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M16/Redux/Character_Weapon_M16_Firemode_Montage_RD.0"
         },
         "CharacterReloadTactical": {
-          "ObjectName": "AnimMontage Character_Weapon_M16_Reload_Tactical_Montage_RD",
+          "ObjectName": "AnimMontage'Character_Weapon_M16_Reload_Tactical_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M16/Redux/Character_Weapon_M16_Reload_Tactical_Montage_RD.0"
         },
         "CharacterReloadCharge": {
-          "ObjectName": "AnimMontage Character_Weapon_M16_Reload_Charge_Montage_RD",
+          "ObjectName": "AnimMontage'Character_Weapon_M16_Reload_Charge_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M16/Redux/Character_Weapon_M16_Reload_Charge_Montage_RD.0"
         },
         "WeaponReloadTactical": {
-          "ObjectName": "AnimMontage Weapon_M16_Reload_Tactical_Montage_RD",
+          "ObjectName": "AnimMontage'Weapon_M16_Reload_Tactical_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M16/Redux/Weapon_RD/Weapon_M16_Reload_Tactical_Montage_RD.0"
         },
         "WeaponReloadCharge": {
-          "ObjectName": "AnimMontage Weapon_M16_Reload_Charge_Montage_RD",
+          "ObjectName": "AnimMontage'Weapon_M16_Reload_Charge_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/M16/Redux/Weapon_RD/Weapon_M16_Reload_Charge_Montage_RD.0"
         },
         "WeaponInspectMontage": {
-          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectName": "AnimMontage'Rifle_Combat_FPP_Inspect_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
         },
         "ReloadDurationTactical": 1.9,
         "ReloadDurationCharge": 2.2,
         "ReloadDurationMagOut": 0.4,
         "ShotCameraShake": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_556_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_Rifle_556_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_556.0"
         },
         "ShotCameraShakeIronsight": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_556_M16_Ironsight_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_Rifle_556_M16_Ironsight_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_556_M16_Ironsight.0"
         },
         "ShotCameraShakeADS": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_Rifle_556_M16_ADS_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_Rifle_556_M16_ADS_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_556_M16_ADS.0"
         },
         "RecoilKickADS": 0.9,

@@ -3,10 +3,11 @@
     "Type": "StructProperty",
     "Name": "NewVar_0",
     "Outer": "ProjPanzerFaust_Penetration_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": null,
     "PropertyFlags": 65541,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -14,8 +15,9 @@
     "Type": "BoolProperty",
     "Name": "bRotateSelfToWorld",
     "Outer": "ProjPanzerFaust_Penetration_C",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjPanzerFaust_Penetration_C:NewVar_0",
+      "ObjectName": "StructProperty'ProjPanzerFaust_Penetration_C:NewVar_0'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.0"
     },
     "PropertyFlags": 65541,
@@ -26,22 +28,24 @@
     "Type": "StructProperty",
     "Name": "SurfaceVFX",
     "Outer": "ProjPanzerFaust_Penetration_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjPanzerFaust_Penetration_C:bRotateSelfToWorld",
+      "ObjectName": "BoolProperty'ProjPanzerFaust_Penetration_C:bRotateSelfToWorld'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.1"
     },
     "PropertyFlags": 65541,
     "Struct": {
-      "ObjectName": "UserDefinedStruct VFX_Surface",
-      "ObjectPath": "TslGame/Content/Assets/Effects/Blueprints/VFX_Surface.7"
+      "ObjectName": "UserDefinedStruct'VFX_Surface'",
+      "ObjectPath": "TslGame/Content/Assets/Effects/Blueprints/VFX_Surface.3"
     }
   },
   {
     "Type": "BoolProperty",
     "Name": "bEnableSurfaceSwitch",
     "Outer": "ProjPanzerFaust_Penetration_C",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjPanzerFaust_Penetration_C:SurfaceVFX",
+      "ObjectName": "StructProperty'ProjPanzerFaust_Penetration_C:SurfaceVFX'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.2"
     },
     "PropertyFlags": 65541,
@@ -52,6 +56,7 @@
     "Type": "IntProperty",
     "Name": "EntryPoint",
     "Outer": "ExecuteUbergraph_ProjPanzerFaust_Penetration",
+    "Class": "UScriptClass'IntProperty'",
     "Next": null,
     "PropertyFlags": 128
   },
@@ -59,13 +64,14 @@
     "Type": "Function",
     "Name": "ExecuteUbergraph_ProjPanzerFaust_Penetration",
     "Outer": "ProjPanzerFaust_Penetration_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "BoolProperty ProjPanzerFaust_Penetration_C:bEnableSurfaceSwitch",
+      "ObjectName": "BoolProperty'ProjPanzerFaust_Penetration_C:bEnableSurfaceSwitch'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.3"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty ProjPanzerFaust_Penetration_C:ExecuteUbergraph_ProjPanzerFaust_Penetration.EntryPoint",
+        "ObjectName": "IntProperty'ProjPanzerFaust_Penetration_C:ExecuteUbergraph_ProjPanzerFaust_Penetration.EntryPoint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.4"
       }
     ],
@@ -75,12 +81,13 @@
     "Type": "Function",
     "Name": "ReceiveBeginPlay",
     "Outer": "ProjPanzerFaust_Penetration_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjPanzerFaust_Penetration_C:ExecuteUbergraph_ProjPanzerFaust_Penetration",
+      "ObjectName": "Function'ProjPanzerFaust_Penetration_C:ExecuteUbergraph_ProjPanzerFaust_Penetration'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.5"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:ReceiveBeginPlay",
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 134744064
@@ -89,12 +96,13 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjPanzerFaust_Penetration_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjPanzerFaust_Penetration_C:ReceiveBeginPlay",
+      "ObjectName": "Function'ProjPanzerFaust_Penetration_C:ReceiveBeginPlay'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.6"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 201459712
@@ -103,106 +111,109 @@
     "Type": "StructProperty",
     "Name": "UberGraphFrame",
     "Outer": "ProjPanzerFaust_Penetration_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "Function ProjPanzerFaust_Penetration_C:UserConstructionScript",
+      "ObjectName": "Function'ProjPanzerFaust_Penetration_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.7"
     },
     "PropertyFlags": 2105344,
     "Struct": {
-      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
       "ObjectPath": "/Script/Engine"
     }
   },
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjPanzerFaust_Penetration_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjPanzerFaust_Penetration_C:SimpleConstructionScript_1__EFD9F313",
+        "ObjectName": "SimpleConstructionScript'ProjPanzerFaust_Penetration_C:SimpleConstructionScript_1__EFD9F313'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.14"
       },
       "UberGraphFramePointerProperty": {
-        "ObjectName": "StructProperty ProjPanzerFaust_Penetration_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjPanzerFaust_Penetration_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.8"
       },
       "UberGraphFunction": {
-        "ObjectName": "Function ProjPanzerFaust_Penetration_C:ExecuteUbergraph_ProjPanzerFaust_Penetration",
+        "ObjectName": "Function'ProjPanzerFaust_Penetration_C:ExecuteUbergraph_ProjPanzerFaust_Penetration'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslExplosionEffect",
+      "ObjectName": "Class'TslExplosionEffect'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjPanzerFaust_Penetration_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjPanzerFaust_Penetration_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.8"
       }
     ],
     "FuncMap": {
       "ExecuteUbergraph_ProjPanzerFaust_Penetration": {
-        "ObjectName": "Function ProjPanzerFaust_Penetration_C:ExecuteUbergraph_ProjPanzerFaust_Penetration",
+        "ObjectName": "Function'ProjPanzerFaust_Penetration_C:ExecuteUbergraph_ProjPanzerFaust_Penetration'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.5"
       },
       "ReceiveBeginPlay": {
-        "ObjectName": "Function ProjPanzerFaust_Penetration_C:ReceiveBeginPlay",
+        "ObjectName": "Function'ProjPanzerFaust_Penetration_C:ReceiveBeginPlay'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.6"
       },
       "UserConstructionScript": {
-        "ObjectName": "Function ProjPanzerFaust_Penetration_C:UserConstructionScript",
+        "ObjectName": "Function'ProjPanzerFaust_Penetration_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.7"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjPanzerFaust_Penetration_C Default__ProjPanzerFaust_Penetration_C",
+      "ObjectName": "ProjPanzerFaust_Penetration_C'Default__ProjPanzerFaust_Penetration_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.10"
     }
   },
   {
     "Type": "ProjPanzerFaust_Penetration_C",
     "Name": "Default__ProjPanzerFaust_Penetration_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.ProjPanzerFaust_Penetration_C'",
     "Properties": {
       "UberGraphFrame": {},
       "SurfaceVFX": {
         "Dirt_9_22C0D96E44DF482867F6B5A758D93194": {
-          "ObjectName": "ParticleSystem P_Grenade_Dirt",
+          "ObjectName": "ParticleSystem'P_Grenade_Dirt'",
           "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Grenade_Dirt.363"
         },
         "Water_11_C8AEBF3B4FA685F844D1C89F64774DC2": {
-          "ObjectName": "ParticleSystem P_Grenade_Water",
+          "ObjectName": "ParticleSystem'P_Grenade_Water'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_Grenade_Water.227"
         },
         "Grass_17_A084AF664A15FC8AB2937795EA3E749F": {
-          "ObjectName": "ParticleSystem P_Grenade_Grass",
+          "ObjectName": "ParticleSystem'P_Grenade_Grass'",
           "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Grenade_Grass.327"
         },
         "Sand_18_B1EC5DC24262C9ADED3CE79E713A17C8": {
-          "ObjectName": "ParticleSystem P_Grenade_Sand",
+          "ObjectName": "ParticleSystem'P_Grenade_Sand'",
           "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Grenade_Sand.400"
         },
         "Mud_19_88910E8F4D224894AC9F57883C103F0A": {
-          "ObjectName": "ParticleSystem P_Grenade_Mud",
+          "ObjectName": "ParticleSystem'P_Grenade_Mud'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_Grenade_Mud.246"
         },
         "Snow_20_74BEFD734212A31EB8E55BA8E284270B": {
-          "ObjectName": "ParticleSystem P_Grenade_Snow",
+          "ObjectName": "ParticleSystem'P_Grenade_Snow'",
           "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_Grenade_Snow.286"
         },
         "Ice_21_CE62A9674193FD0BCA47C78CCCE61D24": {
-          "ObjectName": "ParticleSystem P_Grenade_Ice",
+          "ObjectName": "ParticleSystem'P_Grenade_Ice'",
           "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Grenade_Ice.377"
         },
         "Default_24_F06A36C84B96E7216125AB80C34DC272": {
-          "ObjectName": "ParticleSystem P_Grenade_Default",
+          "ObjectName": "ParticleSystem'P_Grenade_Default'",
           "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Grenade_Default.218"
         },
         "Reed_28_736057AF4686F8F2013CAF97E6BDC34F": null,
@@ -214,22 +225,22 @@
         "Z": 0.0
       },
       "ExplosionFX": {
-        "ObjectName": "ParticleSystem P_Panzerfaust_PenetratingExplosion",
+        "ObjectName": "ParticleSystem'P_Panzerfaust_PenetratingExplosion'",
         "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_Panzerfaust_PenetratingExplosion.151"
       },
       "ExplosionLight": {
-        "ObjectName": "PointLightComponent Default__ProjPanzerFaust_Penetration_C:ExplosionLight",
+        "ObjectName": "PointLightComponent'Default__ProjPanzerFaust_Penetration_C:ExplosionLight'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.11"
       },
       "ExplosionLightFadeOut": 10.0,
       "ExplosionSound": {
-        "ObjectName": "AkAudioEvent Grenade_Explosion",
+        "ObjectName": "AkAudioEvent'Grenade_Explosion'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/Grenade/Grenade_Explosion.0"
       },
       "DecalEffectDataSet": {
         "DefaultDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -247,7 +258,7 @@
         },
         "ConcreteDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -265,7 +276,7 @@
         },
         "RockDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -283,7 +294,7 @@
         },
         "DirtDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -301,7 +312,7 @@
         },
         "MetalDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -319,7 +330,7 @@
         },
         "WoodDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -337,7 +348,7 @@
         },
         "GrassDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -355,7 +366,7 @@
         },
         "MudDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -373,7 +384,7 @@
         },
         "SnowDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -391,7 +402,7 @@
         },
         "IceDecal": {
           "Material": {
-            "ObjectName": "Material M_ExplosionDecal_01",
+            "ObjectName": "Material'M_ExplosionDecal_01'",
             "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_ExplosionDecal_01.0"
           },
           "Size": {
@@ -412,7 +423,7 @@
       },
       "DecalSpawnDelayTime": 0.1,
       "RootComponent": {
-        "ObjectName": "PointLightComponent Default__ProjPanzerFaust_Penetration_C:ExplosionLight",
+        "ObjectName": "PointLightComponent'Default__ProjPanzerFaust_Penetration_C:ExplosionLight'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.11"
       }
     }
@@ -421,6 +432,7 @@
     "Type": "PointLightComponent",
     "Name": "ExplosionLight",
     "Outer": "Default__ProjPanzerFaust_Penetration_C",
+    "Class": "UScriptClass'PointLightComponent'",
     "Properties": {
       "AttenuationRadius": 1024.0,
       "Intensity": 3.1415927
@@ -429,19 +441,21 @@
   {
     "Type": "SceneComponent",
     "Name": "SceneComponent_0",
-    "Outer": "ProjPanzerFaust_Penetration_C"
+    "Outer": "ProjPanzerFaust_Penetration_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_1__EFD9F313",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjPanzerFaust_Penetration_C:SceneComponent_0",
+        "ObjectName": "SceneComponent'ProjPanzerFaust_Penetration_C:SceneComponent_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.12"
       },
       "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
@@ -452,9 +466,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_1__EFD9F313",
     "Outer": "ProjPanzerFaust_Penetration_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjPanzerFaust_Penetration_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_0",
+        "ObjectName": "SCS_Node'ProjPanzerFaust_Penetration_C:SimpleConstructionScript_1__EFD9F313.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjPanzerFaust_Penetration.13"
       }
     }

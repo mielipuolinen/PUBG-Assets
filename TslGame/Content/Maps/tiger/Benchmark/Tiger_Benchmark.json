@@ -1,0 +1,255 @@
+[
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent0",
+    "Outer": "LevelBounds_0",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 372996.03,
+        "Y": 140984.73,
+        "Z": 2466.0
+      },
+      "RelativeScale3D": {
+        "X": 746148.06,
+        "Y": 282125.47,
+        "Z": 5088.0
+      }
+    }
+  },
+  {
+    "Type": "CameraActor",
+    "Name": "Benchmark_FullMap",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'CameraActor'",
+    "Properties": {
+      "CameraComponent": {
+        "ObjectName": "CameraComponent'Tiger_Benchmark:PersistentLevel.Benchmark_FullMap.CameraComponent'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.2"
+      },
+      "SceneComponent": {
+        "ObjectName": "SceneComponent'Tiger_Benchmark:PersistentLevel.Benchmark_FullMap.SceneComponent'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.9"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Tiger_Benchmark:PersistentLevel.Benchmark_FullMap.SceneComponent'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.9"
+      }
+    }
+  },
+  {
+    "Type": "CameraComponent",
+    "Name": "CameraComponent",
+    "Outer": "Benchmark_FullMap",
+    "Class": "UScriptClass'CameraComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "SceneComponent'Tiger_Benchmark:PersistentLevel.Benchmark_FullMap.SceneComponent'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.9"
+      }
+    }
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Outer": "Tiger_Benchmark",
+    "Class": "UScriptClass'Level'",
+    "Properties": {
+      "LevelBuildDataId": "9A6F757D-441FF351-113DDAB6-1E2082F7",
+      "Model": {
+        "ObjectName": "Model'Tiger_Benchmark:PersistentLevel.Model_0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.7"
+      },
+      "WorldSettings": {
+        "ObjectName": "WorldSettings'Tiger_Benchmark:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.12"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "WorldSettings'Tiger_Benchmark:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.12"
+      },
+      null,
+      {
+        "ObjectName": "CameraActor'Tiger_Benchmark:PersistentLevel.Benchmark_FullMap'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.1"
+      },
+      {
+        "ObjectName": "LevelSequenceActor'Tiger_Benchmark:PersistentLevel.Tiger_benchmark_FullMap_2'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.5"
+      },
+      {
+        "ObjectName": "LevelBounds'Tiger_Benchmark:PersistentLevel.LevelBounds_0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.4"
+      },
+      null
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/Maps/lobby/esports_lobby/TslLobby_pgi_2021_main",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'Tiger_Benchmark:PersistentLevel.Model_0'",
+      "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.7"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": null,
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "LevelBounds",
+    "Name": "LevelBounds_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelBounds'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Tiger_Benchmark:PersistentLevel.LevelBounds_0.BoxComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.0"
+      }
+    }
+  },
+  {
+    "Type": "LevelSequenceActor",
+    "Name": "Tiger_benchmark_FullMap_2",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelSequenceActor'",
+    "Properties": {
+      "LevelSequence": null,
+      "BurnInOptions": {
+        "ObjectName": "LevelSequenceBurnInOptions'Tiger_Benchmark:PersistentLevel.Tiger_benchmark_FullMap_2.BurnInOptions'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.6"
+      },
+      "BindingOverrides": {
+        "ObjectName": "MovieSceneBindingOverrides'Tiger_Benchmark:PersistentLevel.Tiger_benchmark_FullMap_2.BindingOverrides'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.8"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Tiger_Benchmark:PersistentLevel.Tiger_benchmark_FullMap_2.SceneComp'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.10"
+      }
+    }
+  },
+  {
+    "Type": "LevelSequenceBurnInOptions",
+    "Name": "BurnInOptions",
+    "Outer": "Tiger_benchmark_FullMap_2",
+    "Class": "UScriptClass'LevelSequenceBurnInOptions'"
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "C6453B6A-4B663581-89AA0C8B-E4B0AF06",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "MovieSceneBindingOverrides",
+    "Name": "BindingOverrides",
+    "Outer": "Tiger_benchmark_FullMap_2",
+    "Class": "UScriptClass'MovieSceneBindingOverrides'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComponent",
+    "Outer": "Benchmark_FullMap",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "SceneComp",
+    "Outer": "Tiger_benchmark_FullMap_2",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 50.0,
+        "Y": 50.0,
+        "Z": 50.0
+      }
+    }
+  },
+  {
+    "Type": "World",
+    "Name": "Tiger_Benchmark",
+    "Class": "UScriptClass'World'",
+    "Properties": {
+      "DefaultPhysicsVolume": null
+    },
+    "PersistentLevel": {
+      "ObjectName": "Level'Tiger_Benchmark:PersistentLevel'",
+      "ObjectPath": "TslGame/Content/Maps/tiger/Benchmark/Tiger_Benchmark.3"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  },
+  {
+    "Type": "WorldSettings",
+    "Name": "WorldSettings",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WorldSettings'"
+  }
+]

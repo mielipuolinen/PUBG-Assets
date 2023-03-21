@@ -1,0 +1,246 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_RunBehaviorTree_ReturnValue",
+    "Outer": "ExecuteUbergraph_CarePackageController_Tiger_CR",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_CarePackageController_Tiger_CR",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'CarePackageController_Tiger_CR_C:ExecuteUbergraph_CarePackageController_Tiger_CR.CallFunc_RunBehaviorTree_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.0"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_CarePackageController_Tiger_CR",
+    "Outer": "CarePackageController_Tiger_CR_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'CarePackageController_Tiger_CR_C:ExecuteUbergraph_CarePackageController_Tiger_CR.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.1"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "CarePackageController_Tiger_CR_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'CarePackageController_Tiger_CR_C:ExecuteUbergraph_CarePackageController_Tiger_CR'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "CarePackageController_Tiger_CR_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'CarePackageController_Tiger_CR_C:ReceiveBeginPlay'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.3"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "CarePackageController_Tiger_CR_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'CarePackageController_Tiger_CR_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.4"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "CarePackageController_Tiger_CR_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'CarePackageController_Tiger_CR_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.13"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'CarePackageController_Tiger_CR_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.5"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'CarePackageController_Tiger_CR_C:ExecuteUbergraph_CarePackageController_Tiger_CR'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.2"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'CarePackageController'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'CarePackageController_Tiger_CR_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.5"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_CarePackageController_Tiger_CR": {
+        "ObjectName": "Function'CarePackageController_Tiger_CR_C:ExecuteUbergraph_CarePackageController_Tiger_CR'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'CarePackageController_Tiger_CR_C:ReceiveBeginPlay'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.3"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'CarePackageController_Tiger_CR_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.4"
+      }
+    },
+    "ClassFlags": 8651284,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "CarePackageController_Tiger_CR_C'Default__CarePackageController_Tiger_CR_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.7"
+    }
+  },
+  {
+    "Type": "CarePackageController_Tiger_CR_C",
+    "Name": "Default__CarePackageController_Tiger_CR_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.CarePackageController_Tiger_CR_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AircraftCarePackageClassString": null,
+      "StartDelay": {
+        "X": 180.0,
+        "Y": 300.0
+      },
+      "SpawnInterval": {
+        "X": 180.0,
+        "Y": 600.0
+      },
+      "FlyingHeight": 30000.0,
+      "CarePackageLifeTime": 1500.0,
+      "WhiteZoneSpawnInnerRate": 0.7,
+      "AircraftFlareGunCarePackageClassString": null,
+      "AircraftFlareGunVehicleClassString": null,
+      "FlareDeploymentStringTypeMap": [
+        {
+          "EFlareDeploymentType::Deploy_InWhite": "/Game/Blueprints/CarePackage/Custom/AircraftCarePackage_FlareGun.AircraftCarePackage_FlareGun_C"
+        },
+        {
+          "EFlareDeploymentType::Deploy_InBlue": "/Game/Blueprints/CarePackage/Custom/AircraftCarePackage_Vehicle.AircraftCarePackage_Vehicle_C"
+        },
+        {
+          "EFlareDeploymentType::Deploy_Outside": "/Game/Blueprints/CarePackage/Custom/AircraftCarePackage_Vehicle.AircraftCarePackage_Vehicle_C"
+        }
+      ],
+      "SpawnDelayMap": null,
+      "MultiCarePackageDropInfo": {
+        "LengthMeter": 120.0,
+        "WidthMeter": 20.0,
+        "MinCount": 5,
+        "MaxCount": 15
+      },
+      "PathFollowingComponent": {
+        "ObjectName": "PathFollowingComponent'Default__CarePackageController_Tiger_CR_C:PathFollowingComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.8"
+      },
+      "ActionsComp": {
+        "ObjectName": "PawnActionsComponent'Default__CarePackageController_Tiger_CR_C:ActionsComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.9"
+      },
+      "TransformComponent": {
+        "ObjectName": "SceneComponent'Default__CarePackageController_Tiger_CR_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.11"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__CarePackageController_Tiger_CR_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.11"
+      }
+    }
+  },
+  {
+    "Type": "PathFollowingComponent",
+    "Name": "PathFollowingComponent",
+    "Outer": "Default__CarePackageController_Tiger_CR_C",
+    "Class": "UScriptClass'PathFollowingComponent'"
+  },
+  {
+    "Type": "PawnActionsComponent",
+    "Name": "ActionsComp",
+    "Outer": "Default__CarePackageController_Tiger_CR_C",
+    "Class": "UScriptClass'PawnActionsComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "CarePackageController_Tiger_CR_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "TransformComponent0",
+    "Outer": "Default__CarePackageController_Tiger_CR_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'CarePackageController_Tiger_CR_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.10"
+      },
+      "VariableGuid": "99196F1F-4C74B2CB-8F238CA2-29DB599D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "CarePackageController_Tiger_CR_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'CarePackageController_Tiger_CR_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/CarePackageController_Tiger_CR.12"
+      }
+    }
+  }
+]

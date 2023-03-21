@@ -1,0 +1,124 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "BattleRoyaleModeController_DihorOtok_C",
+    "Super": "BattleRoyaleModeController_Def_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'BattleRoyaleModeController_DihorOtok_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/DihorOtok/BattleRoyaleModeController_DihorOtok.7"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'BattleRoyaleModeController_Def_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/BattleRoyaleModeController_Def.7"
+    },
+    "ClassFlags": 8651284,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "BattleRoyaleModeController_DihorOtok_C'Default__BattleRoyaleModeController_DihorOtok_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/DihorOtok/BattleRoyaleModeController_DihorOtok.1"
+    }
+  },
+  {
+    "Type": "BattleRoyaleModeController_DihorOtok_C",
+    "Name": "Default__BattleRoyaleModeController_DihorOtok_C",
+    "Template": "Default__BattleRoyaleModeController_Def_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/DihorOtok/BattleRoyaleModeController_DihorOtok.BattleRoyaleModeController_DihorOtok_C'",
+    "Properties": {
+      "BattleRoyalePlayerFenceData": {
+        "Damage": 25.0,
+        "DamagingStartTime": 4.0,
+        "FenceColor": {
+          "B": 255,
+          "G": 255,
+          "R": 255,
+          "A": 0,
+          "Hex": "FFFFFF"
+        },
+        "bUsePlayerFence": true,
+        "bUseOutsideDamage": true
+      },
+      "PathFollowingComponent": {
+        "ObjectName": "PathFollowingComponent'Default__BattleRoyaleModeController_DihorOtok_C:PathFollowingComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/DihorOtok/BattleRoyaleModeController_DihorOtok.2"
+      },
+      "ActionsComp": {
+        "ObjectName": "PawnActionsComponent'Default__BattleRoyaleModeController_DihorOtok_C:ActionsComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/DihorOtok/BattleRoyaleModeController_DihorOtok.3"
+      },
+      "TransformComponent": {
+        "ObjectName": "SceneComponent'Default__BattleRoyaleModeController_DihorOtok_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/DihorOtok/BattleRoyaleModeController_DihorOtok.5"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__BattleRoyaleModeController_DihorOtok_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/DihorOtok/BattleRoyaleModeController_DihorOtok.5"
+      }
+    }
+  },
+  {
+    "Type": "PathFollowingComponent",
+    "Name": "PathFollowingComponent",
+    "Outer": "Default__BattleRoyaleModeController_DihorOtok_C",
+    "Template": "PathFollowingComponent",
+    "Class": "UScriptClass'PathFollowingComponent'"
+  },
+  {
+    "Type": "PawnActionsComponent",
+    "Name": "ActionsComp",
+    "Outer": "Default__BattleRoyaleModeController_DihorOtok_C",
+    "Template": "ActionsComp",
+    "Class": "UScriptClass'PawnActionsComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "BattleRoyaleModeController_DihorOtok_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "TransformComponent0",
+    "Outer": "Default__BattleRoyaleModeController_DihorOtok_C",
+    "Template": "TransformComponent0",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'BattleRoyaleModeController_DihorOtok_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/DihorOtok/BattleRoyaleModeController_DihorOtok.4"
+      },
+      "VariableGuid": "0EA93DAE-46F64938-180028B3-5519DDC4",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "BattleRoyaleModeController_DihorOtok_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'BattleRoyaleModeController_DihorOtok_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/DihorOtok/BattleRoyaleModeController_DihorOtok.6"
+      }
+    }
+  }
+]

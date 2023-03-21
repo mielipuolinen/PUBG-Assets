@@ -1,0 +1,61 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DmgType_ZombiePunch_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslDamageType'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 327696,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DmgType_ZombiePunch_C'Default__DmgType_ZombiePunch_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_ZombiePunch.1"
+    }
+  },
+  {
+    "Type": "DmgType_ZombiePunch_C",
+    "Name": "Default__DmgType_ZombiePunch_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Damage_Type/DmgType_ZombiePunch.DmgType_ZombiePunch_C'",
+    "Properties": {
+      "DamageTypeCategory": "EDamageTypeCategory::Damage_ZombiePunch",
+      "HitForceFeedback": {
+        "ObjectName": "TslForceFeedbackEffect'TslFFE_Damaged'",
+        "ObjectPath": "TslGame/Content/Effects/ForceFeedback/TslFFE_Damaged.0"
+      },
+      "KilledForceFeedback": {
+        "ObjectName": "TslForceFeedbackEffect'TslFFE_Killed'",
+        "ObjectPath": "TslGame/Content/Effects/ForceFeedback/TslFFE_Killed.0"
+      },
+      "DamageRatioInfos": [
+        {
+          "DamageRatio": 3.0,
+          "DamageVictimActorType": "EDamageVictimActorType::DestructibleActor"
+        },
+        {
+          "DamageRatio": 0.1,
+          "DamageVictimActorType": "EDamageVictimActorType::Vehicle"
+        },
+        {
+          "DamageRatio": 0.0,
+          "DamageVictimActorType": "EDamageVictimActorType::ExplosiveItem"
+        }
+      ],
+      "DamageRatioInfos_Console": [
+        {
+          "DamageRatio": 0.0,
+          "DamageVictimActorType": "EDamageVictimActorType::ExplosiveItem"
+        }
+      ],
+      "HitReaction": true,
+      "DamageImpulse": 0.0
+    }
+  }
+]

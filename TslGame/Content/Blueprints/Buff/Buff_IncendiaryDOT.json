@@ -1,0 +1,363 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetWaterSurfaceHeight_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT.CallFunc_Greater_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.0"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Z",
+    "Outer": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT.CallFunc_GetWaterSurfaceHeight_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.1"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_Y",
+    "Outer": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT.CallFunc_BreakVector_Z'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.2"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_BreakVector_X",
+    "Outer": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT.CallFunc_BreakVector_Y'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.3"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_GetSocketLocation_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT.CallFunc_BreakVector_X'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.4"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetPhysicsVolume_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT.CallFunc_GetSocketLocation_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.5"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PhysicsVolume'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetMovementComponent_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT.CallFunc_GetPhysicsVolume_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.6"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PawnMovementComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetBuffComponent_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT.CallFunc_GetMovementComponent_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.7"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'BuffComponet'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT.CallFunc_GetBuffComponent_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.8"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsTsl_Character",
+    "Outer": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.9"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OtherCharacter",
+    "Outer": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT.K2Node_DynamicCast_AsTsl_Character'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.10"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetOwnerPawn_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT.K2Node_Event_OtherCharacter'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.11"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Pawn'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT.CallFunc_GetOwnerPawn_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.12"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Buff_IncendiaryDOT",
+    "Outer": "Buff_IncendiaryDOT_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.13"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OtherCharacter",
+    "Outer": "TickBuff",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "TickBuff",
+    "Outer": "Buff_IncendiaryDOT_C",
+    "Super": "TickBuff",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.14"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Buff_DamageOverTime_C:TickBuff'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.17"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Buff_IncendiaryDOT_C:TickBuff.OtherCharacter'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.15"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "Buff_IncendiaryDOT_C",
+    "Super": "UserConstructionScript",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_IncendiaryDOT_C:TickBuff'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.16"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Buff_DamageOverTime_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.18"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Buff_IncendiaryDOT_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Buff_IncendiaryDOT_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.17"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_IncendiaryDOT_C",
+    "Super": "Buff_DamageOverTime_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Buff_IncendiaryDOT_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.23"
+      },
+      "InheritableComponentHandler": {
+        "ObjectName": "InheritableComponentHandler'Buff_IncendiaryDOT_C:InheritableComponentHandler'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.21"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Buff_IncendiaryDOT_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.18"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.14"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "BlueprintGeneratedClass'Buff_DamageOverTime_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_DamageOverTime.20"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Buff_IncendiaryDOT_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.18"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Buff_IncendiaryDOT": {
+        "ObjectName": "Function'Buff_IncendiaryDOT_C:ExecuteUbergraph_Buff_IncendiaryDOT'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.14"
+      },
+      "TickBuff": {
+        "ObjectName": "Function'Buff_IncendiaryDOT_C:TickBuff'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.16"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'Buff_IncendiaryDOT_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.17"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_IncendiaryDOT_C'Default__Buff_IncendiaryDOT_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.20"
+    }
+  },
+  {
+    "Type": "Buff_IncendiaryDOT_C",
+    "Name": "Default__Buff_IncendiaryDOT_C",
+    "Template": "Default__Buff_DamageOverTime_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.Buff_IncendiaryDOT_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BaseDamage": 4.0,
+      "DamageType": {
+        "ObjectName": "BlueprintGeneratedClass'DmgType_KillTruckTurret_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_KillTruckTurret.0"
+      },
+      "OverlapId": "Buff_FireDOT",
+      "AttachSocket": "coat_b_01",
+      "AttachServerPaticleClass": {
+        "ObjectName": "BlueprintGeneratedClass'P_FireDOT_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/P_FireDOT.3"
+      }
+    }
+  },
+  {
+    "Type": "InheritableComponentHandler",
+    "Name": "InheritableComponentHandler",
+    "Outer": "Buff_IncendiaryDOT_C",
+    "Class": "UScriptClass'InheritableComponentHandler'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "VariableGuid": "EDA7BA43-4FAB09E6-152CCBA3-093A0DEF",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Buff_IncendiaryDOT_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Buff_IncendiaryDOT_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_IncendiaryDOT.22"
+      }
+    }
+  }
+]

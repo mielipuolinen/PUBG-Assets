@@ -1,0 +1,240 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_RunBehaviorTree_ReturnValue",
+    "Outer": "ExecuteUbergraph_CarePackageController_Desert",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_CarePackageController_Desert",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'CarePackageController_Desert_C:ExecuteUbergraph_CarePackageController_Desert.CallFunc_RunBehaviorTree_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.0"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_CarePackageController_Desert",
+    "Outer": "CarePackageController_Desert_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'CarePackageController_Desert_C:ExecuteUbergraph_CarePackageController_Desert.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.1"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "CarePackageController_Desert_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'CarePackageController_Desert_C:ExecuteUbergraph_CarePackageController_Desert'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.2"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "CarePackageController_Desert_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'CarePackageController_Desert_C:ReceiveBeginPlay'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.3"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "CarePackageController_Desert_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'CarePackageController_Desert_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.4"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "CarePackageController_Desert_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'CarePackageController_Desert_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.13"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'CarePackageController_Desert_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.5"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'CarePackageController_Desert_C:ExecuteUbergraph_CarePackageController_Desert'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.2"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'CarePackageController'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'CarePackageController_Desert_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.5"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_CarePackageController_Desert": {
+        "ObjectName": "Function'CarePackageController_Desert_C:ExecuteUbergraph_CarePackageController_Desert'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.2"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'CarePackageController_Desert_C:ReceiveBeginPlay'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.3"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'CarePackageController_Desert_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.4"
+      }
+    },
+    "ClassFlags": 8651284,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "CarePackageController_Desert_C'Default__CarePackageController_Desert_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.7"
+    }
+  },
+  {
+    "Type": "CarePackageController_Desert_C",
+    "Name": "Default__CarePackageController_Desert_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.CarePackageController_Desert_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "AircraftCarePackageClassString": null,
+      "StartDelay": {
+        "X": 180.0,
+        "Y": 300.0
+      },
+      "SpawnInterval": {
+        "X": 180.0,
+        "Y": 600.0
+      },
+      "FlyingHeight": 30000.0,
+      "CarePackageLifeTime": 1500.0,
+      "WhiteZoneSpawnInnerRate": 0.7,
+      "AircraftFlareGunCarePackageClassString": null,
+      "AircraftFlareGunVehicleClassString": null,
+      "FlareDeploymentStringTypeMap": [
+        {
+          "EFlareDeploymentType::Deploy_InWhite": "/Game/Blueprints/CarePackage/Custom/AircraftCarePackage_FlareGun.AircraftCarePackage_FlareGun_C"
+        },
+        {
+          "EFlareDeploymentType::Deploy_InBlue": "/Game/Blueprints/CarePackage/Custom/AircraftCarePackage_Vehicle.AircraftCarePackage_Vehicle_C"
+        },
+        {
+          "EFlareDeploymentType::Deploy_Outside": "/Game/Blueprints/CarePackage/Custom/AircraftCarePackage_Vehicle.AircraftCarePackage_Vehicle_C"
+        }
+      ],
+      "SpawnDelayMap": null,
+      "PathFollowingComponent": {
+        "ObjectName": "PathFollowingComponent'Default__CarePackageController_Desert_C:PathFollowingComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.8"
+      },
+      "ActionsComp": {
+        "ObjectName": "PawnActionsComponent'Default__CarePackageController_Desert_C:ActionsComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.9"
+      },
+      "TransformComponent": {
+        "ObjectName": "SceneComponent'Default__CarePackageController_Desert_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.11"
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__CarePackageController_Desert_C:TransformComponent0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.11"
+      }
+    }
+  },
+  {
+    "Type": "PathFollowingComponent",
+    "Name": "PathFollowingComponent",
+    "Outer": "Default__CarePackageController_Desert_C",
+    "Class": "UScriptClass'PathFollowingComponent'"
+  },
+  {
+    "Type": "PawnActionsComponent",
+    "Name": "ActionsComp",
+    "Outer": "Default__CarePackageController_Desert_C",
+    "Class": "UScriptClass'PawnActionsComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "CarePackageController_Desert_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "TransformComponent0",
+    "Outer": "Default__CarePackageController_Desert_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'CarePackageController_Desert_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.10"
+      },
+      "VariableGuid": "99196F1F-4C74B2CB-8F238CA2-29DB599D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "CarePackageController_Desert_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'CarePackageController_Desert_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Desert/CarePackageController_Desert.12"
+      }
+    }
+  }
+]

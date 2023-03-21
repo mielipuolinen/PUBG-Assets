@@ -1,0 +1,131 @@
+[
+  {
+    "Type": "WeaponGunDataAsset",
+    "Name": "WeapFamasG2_WeaponGunData",
+    "Class": "UScriptClass'WeaponGunDataAsset'",
+    "Properties": {
+      "WeaponGunConfig": {
+        "AmmoItemID": "Item_Ammo_556mm_C",
+        "TracerClass": null,
+        "AmmoPerClip": 30,
+        "TimeBetweenShots": 0.06666,
+        "AttachmentTagData": [
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
+            "AttachableTags": [
+              "UpperSmall",
+              "UpperReddot",
+              "UpperHolo"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Muzzle",
+            "AttachableTags": [
+              "MuzzleLarge"
+            ]
+          },
+          {
+            "AttachmentSlotID": "EWeaponAttachmentSlotID::Angled",
+            "AttachableTags": [
+              "RMR"
+            ]
+          }
+        ],
+        "NoAnimReloadDuration": 3.1,
+        "FiringModes": [
+          "EFiringMode::Normal",
+          "EFiringMode::Burst",
+          "EFiringMode::FullAuto"
+        ],
+        "BurstDelay": 0.085714,
+        "FiringBulletsSpread": 1.0,
+        "WeaponLength": 39.0,
+        "ShoulderLength": 22.0,
+        "HandWeaponOffset": {
+          "X": 6.0,
+          "Y": 0.0,
+          "Z": -4.0
+        },
+        "HandWeaponOffsetFPP": {
+          "X": 2.0,
+          "Y": 0.0,
+          "Z": 2.0
+        },
+        "InertiaPitchAdditiveInterpSpeed": 15.0
+      },
+      "WeaponDeviationConfig": {
+        "DeviationBase": 3.0,
+        "DeviationBaseAim": 1.2,
+        "MOA": 1.2,
+        "DeviationRecoilGain": 1.3,
+        "DeviationRecoilGainAim": 0.8,
+        "DeviationRecoilGainADS": 0.02,
+        "DeviationMax": 8.0,
+        "DeviationMoveMaxReferenceVelocity": 300.0
+      },
+      "WeaponAnimConfig": {
+        "CharacterGripBlendspace": {
+          "ObjectName": "BlendSpace1D'BS_FamasG2_Grip'",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/FamasG2/BS_FamasG2_Grip.0"
+        },
+        "CharacterLHGripBlendspace": {
+          "ObjectName": "BlendSpace'BS_FamasG2_LH_Grip'",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/FamasG2/BS_FamasG2_LH_Grip.0"
+        },
+        "CharacterFireSelector": {
+          "ObjectName": "AnimMontage'FamasG2_Firemode_Montage'",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/FamasG2/FamasG2_Firemode_Montage.0"
+        },
+        "CharacterReloadTactical": {
+          "ObjectName": "AnimMontage'FamasG2_Reload_Montage'",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/FamasG2/FamasG2_Reload_Montage.0"
+        },
+        "CharacterReloadCharge": {
+          "ObjectName": "AnimMontage'FamasG2_Reload_Charge_Montage'",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/FamasG2/FamasG2_Reload_Charge_Montage.0"
+        },
+        "WeaponReloadTactical": {
+          "ObjectName": "AnimMontage'Weapon_FamasG2_Reload_Montage'",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/FamasG2/Weapon/Weapon_FamasG2_Reload_Montage.0"
+        },
+        "WeaponReloadCharge": {
+          "ObjectName": "AnimMontage'Wapon_FamasG2_Reload_Charge_Montage'",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/FamasG2/Weapon/Wapon_FamasG2_Reload_Charge_Montage.0"
+        },
+        "WeaponInspectMontage": {
+          "ObjectName": "AnimMontage'Rifle_Combat_FPP_Inspect_Montage'",
+          "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
+        },
+        "LobbyAnimClassOverride": "EWeaponClass::Class_SMG",
+        "bUseLobbyAnimClassOverride": true,
+        "ReloadDurationTactical": 2.7,
+        "ReloadDurationCharge": 3.3,
+        "ReloadDurationMagOut": 0.4,
+        "ShotCameraShake": {
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_Rifle_556_C'",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_556.0"
+        },
+        "ShotCameraShakeIronsight": {
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_Rifle_556_AUG_Ironsight_C'",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_556_AUG_Ironsight.0"
+        },
+        "ShotCameraShakeADS": {
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_Rifle_556_Scope_C'",
+          "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_Rifle_556_Scope.0"
+        },
+        "RecoilKickADS": 1.0,
+        "RecoilKick_MovementMaxMultiplier": 1.3,
+        "MagDropLinearVelocity": {
+          "X": 98.100266,
+          "Y": 111.496216,
+          "Z": -166.21219
+        },
+        "MagDropAngularVelocity": {
+          "X": -123.80231,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      }
+    }
+  }
+]

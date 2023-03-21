@@ -3,10 +3,11 @@
     "Type": "StructProperty",
     "Name": "LerpedTargetRotation",
     "Outer": "ProjDecoyGrenade_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": null,
     "PropertyFlags": 65541,
     "Struct": {
-      "ObjectName": "ScriptStruct Rotator",
+      "ObjectName": "ScriptStruct'Rotator'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -14,8 +15,9 @@
     "Type": "BoolProperty",
     "Name": "bRotateUp",
     "Outer": "ProjDecoyGrenade_C",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjDecoyGrenade_C:LerpedTargetRotation",
+      "ObjectName": "StructProperty'ProjDecoyGrenade_C:LerpedTargetRotation'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.0"
     },
     "PropertyFlags": 65541,
@@ -26,13 +28,14 @@
     "Type": "StructProperty",
     "Name": "TargetRotation",
     "Outer": "ProjDecoyGrenade_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjDecoyGrenade_C:bRotateUp",
+      "ObjectName": "BoolProperty'ProjDecoyGrenade_C:bRotateUp'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.1"
     },
     "PropertyFlags": 65541,
     "Struct": {
-      "ObjectName": "ScriptStruct Rotator",
+      "ObjectName": "ScriptStruct'Rotator'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -40,14 +43,16 @@
     "Type": "FloatProperty",
     "Name": "K2Node_Event_DeltaSeconds",
     "Outer": "ExecuteUbergraph_ProjDecoyGrenade",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": null
   },
   {
     "Type": "IntProperty",
     "Name": "EntryPoint",
     "Outer": "ExecuteUbergraph_ProjDecoyGrenade",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjDecoyGrenade_C:ExecuteUbergraph_ProjDecoyGrenade.K2Node_Event_DeltaSeconds",
+      "ObjectName": "FloatProperty'ProjDecoyGrenade_C:ExecuteUbergraph_ProjDecoyGrenade.K2Node_Event_DeltaSeconds'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.3"
     },
     "PropertyFlags": 128
@@ -56,13 +61,14 @@
     "Type": "Function",
     "Name": "ExecuteUbergraph_ProjDecoyGrenade",
     "Outer": "ProjDecoyGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "StructProperty ProjDecoyGrenade_C:TargetRotation",
+      "ObjectName": "StructProperty'ProjDecoyGrenade_C:TargetRotation'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.2"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty ProjDecoyGrenade_C:ExecuteUbergraph_ProjDecoyGrenade.EntryPoint",
+        "ObjectName": "IntProperty'ProjDecoyGrenade_C:ExecuteUbergraph_ProjDecoyGrenade.EntryPoint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.4"
       }
     ],
@@ -72,12 +78,13 @@
     "Type": "Function",
     "Name": "ReceiveBeginPlay",
     "Outer": "ProjDecoyGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjDecoyGrenade_C:ExecuteUbergraph_ProjDecoyGrenade",
+      "ObjectName": "Function'ProjDecoyGrenade_C:ExecuteUbergraph_ProjDecoyGrenade'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.5"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:ReceiveBeginPlay",
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 134744064
@@ -86,6 +93,7 @@
     "Type": "FloatProperty",
     "Name": "DeltaSeconds",
     "Outer": "ReceiveTick",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": null,
     "PropertyFlags": 128
   },
@@ -93,17 +101,18 @@
     "Type": "Function",
     "Name": "ReceiveTick",
     "Outer": "ProjDecoyGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjDecoyGrenade_C:ReceiveBeginPlay",
+      "ObjectName": "Function'ProjDecoyGrenade_C:ReceiveBeginPlay'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.6"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:ReceiveTick",
+      "ObjectName": "Function'Actor:ReceiveTick'",
       "ObjectPath": "/Script/Engine"
     },
     "Children": [
       {
-        "ObjectName": "FloatProperty ProjDecoyGrenade_C:ReceiveTick.DeltaSeconds",
+        "ObjectName": "FloatProperty'ProjDecoyGrenade_C:ReceiveTick.DeltaSeconds'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.7"
       }
     ],
@@ -113,12 +122,13 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjDecoyGrenade_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjDecoyGrenade_C:ReceiveTick",
+      "ObjectName": "Function'ProjDecoyGrenade_C:ReceiveTick'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.8"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 201459712
@@ -127,77 +137,80 @@
     "Type": "StructProperty",
     "Name": "UberGraphFrame",
     "Outer": "ProjDecoyGrenade_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "Function ProjDecoyGrenade_C:UserConstructionScript",
+      "ObjectName": "Function'ProjDecoyGrenade_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.9"
     },
     "PropertyFlags": 2105344,
     "Struct": {
-      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
       "ObjectPath": "/Script/Engine"
     }
   },
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjDecoyGrenade_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjDecoyGrenade_C:SimpleConstructionScript_0",
+        "ObjectName": "SimpleConstructionScript'ProjDecoyGrenade_C:SimpleConstructionScript_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.20"
       },
       "UberGraphFramePointerProperty": {
-        "ObjectName": "StructProperty ProjDecoyGrenade_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjDecoyGrenade_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.10"
       },
       "UberGraphFunction": {
-        "ObjectName": "Function ProjDecoyGrenade_C:ExecuteUbergraph_ProjDecoyGrenade",
+        "ObjectName": "Function'ProjDecoyGrenade_C:ExecuteUbergraph_ProjDecoyGrenade'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class ProjDecoyGrenade",
+      "ObjectName": "Class'ProjDecoyGrenade'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjDecoyGrenade_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjDecoyGrenade_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.10"
       }
     ],
     "FuncMap": {
       "ExecuteUbergraph_ProjDecoyGrenade": {
-        "ObjectName": "Function ProjDecoyGrenade_C:ExecuteUbergraph_ProjDecoyGrenade",
+        "ObjectName": "Function'ProjDecoyGrenade_C:ExecuteUbergraph_ProjDecoyGrenade'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.5"
       },
       "ReceiveBeginPlay": {
-        "ObjectName": "Function ProjDecoyGrenade_C:ReceiveBeginPlay",
+        "ObjectName": "Function'ProjDecoyGrenade_C:ReceiveBeginPlay'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.6"
       },
       "ReceiveTick": {
-        "ObjectName": "Function ProjDecoyGrenade_C:ReceiveTick",
+        "ObjectName": "Function'ProjDecoyGrenade_C:ReceiveTick'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.8"
       },
       "UserConstructionScript": {
-        "ObjectName": "Function ProjDecoyGrenade_C:UserConstructionScript",
+        "ObjectName": "Function'ProjDecoyGrenade_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.9"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjDecoyGrenade_C Default__ProjDecoyGrenade_C",
+      "ObjectName": "ProjDecoyGrenade_C'Default__ProjDecoyGrenade_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.12"
     }
   },
   {
     "Type": "ProjDecoyGrenade_C",
     "Name": "Default__ProjDecoyGrenade_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.ProjDecoyGrenade_C'",
     "Properties": {
       "UberGraphFrame": {},
       "TargetRotation": {
@@ -211,35 +224,35 @@
         "Roll": 0.0
       },
       "DecoyComp": {
-        "ObjectName": "DecoyComponent Default__ProjDecoyGrenade_C:DecoyComp",
+        "ObjectName": "DecoyComponent'Default__ProjDecoyGrenade_C:DecoyComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.15"
       },
       "AIPerceptionStimuliSourceComponent": {
-        "ObjectName": "AIPerceptionStimuliSourceComponent Default__ProjDecoyGrenade_C:AIPerceptionStimuliSourceComponent",
+        "ObjectName": "AIPerceptionStimuliSourceComponent'Default__ProjDecoyGrenade_C:AIPerceptionStimuliSourceComponent'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.13"
       },
       "MovementComp": {
-        "ObjectName": "TslProjectileMovementComponent Default__ProjDecoyGrenade_C:ProjectileComp",
+        "ObjectName": "TslProjectileMovementComponent'Default__ProjDecoyGrenade_C:ProjectileComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.24"
       },
       "CollisionComp": {
-        "ObjectName": "SphereComponent Default__ProjDecoyGrenade_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjDecoyGrenade_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.22"
       },
       "ParticleComp": {
-        "ObjectName": "ParticleSystemComponent Default__ProjDecoyGrenade_C:ParticleComp",
+        "ObjectName": "ParticleSystemComponent'Default__ProjDecoyGrenade_C:ParticleComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.16"
       },
       "MeshComp": {
-        "ObjectName": "StaticMeshComponent Default__ProjDecoyGrenade_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjDecoyGrenade_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.23"
       },
       "InterpolationTargetComp": {
-        "ObjectName": "SphereComponent Default__ProjDecoyGrenade_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjDecoyGrenade_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.21"
       },
       "ConstraintComp": {
-        "ObjectName": "PhysicsConstraintComponent Default__ProjDecoyGrenade_C:MeshConstraint",
+        "ObjectName": "PhysicsConstraintComponent'Default__ProjDecoyGrenade_C:MeshConstraint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.17"
       },
       "MeshInitialRotationRate": {
@@ -250,11 +263,11 @@
       "ProjectileParticleClass": "EProjectileParticleClass::PPC_Flash",
       "HideMeshAtExplosion": false,
       "ImpactSound": {
-        "ObjectName": "AkAudioEvent HandBomb_Common_Impact",
+        "ObjectName": "AkAudioEvent'HandBomb_Common_Impact'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/HandBomb_Common/HandBomb_Common_Impact.0"
       },
       "AkComp": {
-        "ObjectName": "AkComponent Default__ProjDecoyGrenade_C:AkComp",
+        "ObjectName": "AkComponent'Default__ProjDecoyGrenade_C:AkComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.14"
       },
       "bChangeFuseTimerOnImpact": true,
@@ -297,7 +310,7 @@
       },
       "PreExplosionTime": 0.2,
       "RootComponent": {
-        "ObjectName": "SphereComponent Default__ProjDecoyGrenade_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjDecoyGrenade_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.22"
       }
     }
@@ -305,15 +318,17 @@
   {
     "Type": "AIPerceptionStimuliSourceComponent",
     "Name": "AIPerceptionStimuliSourceComponent",
-    "Outer": "Default__ProjDecoyGrenade_C"
+    "Outer": "Default__ProjDecoyGrenade_C",
+    "Class": "UScriptClass'AIPerceptionStimuliSourceComponent'"
   },
   {
     "Type": "AkComponent",
     "Name": "AkComp",
     "Outer": "Default__ProjDecoyGrenade_C",
+    "Class": "UScriptClass'AkComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjDecoyGrenade_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjDecoyGrenade_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.22"
       }
     }
@@ -322,9 +337,10 @@
     "Type": "DecoyComponent",
     "Name": "DecoyComp",
     "Outer": "Default__ProjDecoyGrenade_C",
+    "Class": "UScriptClass'DecoyComponent'",
     "Properties": {
       "DecoyWeaponInfoTable": {
-        "ObjectName": "DataTable DecoyGrenadeDataTable",
+        "ObjectName": "DataTable'DecoyGrenadeDataTable'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DecoyGrenadeDataTable.0"
       },
       "DecoyRandomizerStream": {
@@ -341,20 +357,21 @@
     "Type": "ParticleSystemComponent",
     "Name": "ParticleComp",
     "Outer": "Default__ProjDecoyGrenade_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
     "Properties": {
       "RelativeRotation": {
         "Pitch": 90.0,
         "Yaw": 0.0,
         "Roll": 0.0
       },
+      "AttachParent": {
+        "ObjectName": "StaticMeshComponent'Default__ProjDecoyGrenade_C:MeshComp'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.23"
+      },
       "RelativeLocation": {
         "X": 9.536744E-07,
         "Y": 0.0,
         "Z": 7.0
-      },
-      "AttachParent": {
-        "ObjectName": "StaticMeshComponent Default__ProjDecoyGrenade_C:MeshComp",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.23"
       }
     }
   },
@@ -362,9 +379,10 @@
     "Type": "PhysicsConstraintComponent",
     "Name": "MeshConstraint",
     "Outer": "Default__ProjDecoyGrenade_C",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjDecoyGrenade_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjDecoyGrenade_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.21"
       }
     }
@@ -372,19 +390,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "ProjDecoyGrenade_C"
+    "Outer": "ProjDecoyGrenade_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjDecoyGrenade_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'ProjDecoyGrenade_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.18"
       },
       "VariableGuid": "9F33CAC0-47D1DFA5-91BD9190-85F1A2C2",
@@ -395,9 +415,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0",
     "Outer": "ProjDecoyGrenade_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjDecoyGrenade_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectName": "SCS_Node'ProjDecoyGrenade_C:SimpleConstructionScript_0.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.19"
       }
     }
@@ -406,9 +427,10 @@
     "Type": "SphereComponent",
     "Name": "InterpolationTarget",
     "Outer": "Default__ProjDecoyGrenade_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjDecoyGrenade_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjDecoyGrenade_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.22"
       }
     }
@@ -417,6 +439,7 @@
     "Type": "SphereComponent",
     "Name": "SphereComp",
     "Outer": "Default__ProjDecoyGrenade_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "SphereRadius": 4.0,
       "BodyInstance": {
@@ -428,14 +451,15 @@
     "Type": "StaticMeshComponent",
     "Name": "MeshComp",
     "Outer": "Default__ProjDecoyGrenade_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
     "Properties": {
       "StaticMesh": {
-        "ObjectName": "StaticMesh Decoy_Projectile",
+        "ObjectName": "StaticMesh'Decoy_Projectile'",
         "ObjectPath": "TslGame/Content/Weapon/Grenades/Decoy/Decoy_Projectile.1"
       },
       "OverrideMaterials": [
         {
-          "ObjectName": "MaterialInstanceConstant MI_Decoy_Grenade",
+          "ObjectName": "MaterialInstanceConstant'MI_Decoy_Grenade'",
           "ObjectPath": "TslGame/Content/Weapon/Grenades/Decoy/Materials/MI_Decoy_Grenade.0"
         }
       ],
@@ -448,19 +472,19 @@
           "Z": -2.0
         }
       },
-      "RelativeScale3D": {
-        "X": 1.25,
-        "Y": 1.25,
-        "Z": 1.25
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__ProjDecoyGrenade_C:InterpolationTarget'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.21"
       },
       "RelativeLocation": {
         "X": -0.25354004,
         "Y": -0.86782837,
         "Z": 0.00021362305
       },
-      "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjDecoyGrenade_C:InterpolationTarget",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjDecoyGrenade.21"
+      "RelativeScale3D": {
+        "X": 1.25,
+        "Y": 1.25,
+        "Z": 1.25
       }
     }
   },
@@ -468,6 +492,7 @@
     "Type": "TslProjectileMovementComponent",
     "Name": "ProjectileComp",
     "Outer": "Default__ProjDecoyGrenade_C",
+    "Class": "UScriptClass'TslProjectileMovementComponent'",
     "Properties": {
       "SlidingFriction_Speed_In": {
         "X": 0.0,

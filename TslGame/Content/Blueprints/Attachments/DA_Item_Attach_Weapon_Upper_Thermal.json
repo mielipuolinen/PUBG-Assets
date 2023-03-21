@@ -2,6 +2,7 @@
   {
     "Type": "WeaponAttachmentDataAsset",
     "Name": "DA_Item_Attach_Weapon_Upper_Thermal",
+    "Class": "UScriptClass'WeaponAttachmentDataAsset'",
     "Properties": {
       "AttachmentData": {
         "AttachmentSlotID": "EWeaponAttachmentSlotID::UpperRail",
@@ -12,16 +13,22 @@
         "ZeroingDistances": [
           100.0
         ],
+        "ScopePostprocessData": {
+          "ObjectName": "ReticlePostprocessData'Sight_Thermal_PostprocessData'",
+          "ObjectPath": "TslGame/Content/Item/Attachment/AttachmentDataAssets/Sight_Thermal_PostprocessData.0"
+        },
         "FPPSocketOffset": {
           "X": 0.0,
           "Y": 0.0,
           "Z": -1.55
-        }
+        },
+        "bThermalTemperatureInteractive": true
       },
       "AttachedSoundAk": "/Game/WwiseAssets/UI_Sound/UI_Item_Equip/UI_Item_Attachment/UI_Item_Equip_Attachment_Attached_Scopes.UI_Item_Equip_Attachment_Attached_Scopes",
+      "AttachmentMeshName": "ThermalScope",
       "AttachmentMeshAsset": "/Game/Weapon/Accessories/Thermal/Mesh/SM_ATN_Thermal_Scope_final.SM_ATN_Thermal_Scope_final",
       "AttachmentTemplate": {
-        "ObjectName": "Class AsyncStaticMeshComponent",
+        "ObjectName": "Class'AsyncStaticMeshComponent'",
         "ObjectPath": "/Script/TslGame"
       }
     }

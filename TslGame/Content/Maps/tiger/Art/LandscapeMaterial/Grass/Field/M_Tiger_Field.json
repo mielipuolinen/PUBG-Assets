@@ -1,0 +1,2339 @@
+[
+  {
+    "Type": "Material",
+    "Name": "M_Tiger_Field",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "PhysMaterial": {
+        "ObjectName": "PhysicalMaterial'PhysMat_Grass'",
+        "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Grass.0"
+      },
+      "BaseColor": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_4",
+        "UseConstant": false,
+        "Constant": {
+          "B": 128,
+          "G": 128,
+          "R": 128,
+          "A": 255,
+          "Hex": "FF808080"
+        }
+      },
+      "Specular": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionStaticSwitchParameter_3",
+        "UseConstant": false,
+        "Constant": 0.5
+      },
+      "Roughness": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionReroute_5",
+        "UseConstant": false,
+        "Constant": 0.5
+      },
+      "Normal": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionReroute_9",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "EmissiveColor": {
+        "Expression": null,
+        "OutputIndex": -1,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "None",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "OpacityMask": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionStaticSwitchParameter_7",
+        "UseConstant": false,
+        "Constant": 1.0
+      },
+      "BlendMode": "BLEND_Masked",
+      "ShadingModel": "MSM_TwoSidedFoliage",
+      "WorldPositionOffset": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionStaticSwitchParameter_4",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        }
+      },
+      "SubsurfaceColor": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionReroute_8",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "CustomizedUVs": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionReroute_10",
+        "UseConstant": false,
+        "Constant": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "bPrepassMasked": true,
+      "TwoSided": true,
+      "DitheredLODTransition": true,
+      "NumCustomizedUVs": 2,
+      "bUsedWithInstancedStaticMeshes": true,
+      "bApplyMaterialClipVolumes": true,
+      "MaterialClipVolumeTypes": {
+        "bVegetationSmall": true,
+        "bOther": false
+      },
+      "MaterialClipVolumeImportance": "MCVI_Low",
+      "EditorX": 4736,
+      "EditorY": -144,
+      "Expressions": [
+        null,
+        {
+          "ObjectName": "MaterialExpressionStaticSwitchParameter'M_Tiger_Field:MaterialExpressionStaticSwitchParameter_3'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.43"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionStaticSwitchParameter'M_Tiger_Field:MaterialExpressionStaticSwitchParameter_7'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.47"
+        },
+        {
+          "ObjectName": "MaterialExpressionStaticSwitchParameter'M_Tiger_Field:MaterialExpressionStaticSwitchParameter_4'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.44"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionStaticSwitchParameter'M_Tiger_Field:MaterialExpressionStaticSwitchParameter_0'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.38"
+        },
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall'M_Tiger_Field:MaterialExpressionMaterialFunctionCall_23'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.8"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_16'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.16"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameter2D'M_Tiger_Field:MaterialExpressionTextureSampleParameter2D_5'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.52"
+        },
+        {
+          "ObjectName": "MaterialExpressionStaticSwitchParameter'M_Tiger_Field:MaterialExpressionStaticSwitchParameter_5'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.45"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameter2D'M_Tiger_Field:MaterialExpressionTextureSampleParameter2D_6'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.53"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_17'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.17"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionCollectionParameter'M_Tiger_Field:MaterialExpressionCollectionParameter_0'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.1"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_19'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.18"
+        },
+        {
+          "ObjectName": "MaterialExpressionFeatureLevelSwitch'M_Tiger_Field:MaterialExpressionFeatureLevelSwitch_0'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.4"
+        },
+        {
+          "ObjectName": "MaterialExpressionStaticSwitchParameter'M_Tiger_Field:MaterialExpressionStaticSwitchParameter_10'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.40"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_28'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.20"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionVectorParameter'M_Tiger_Field:MaterialExpressionVectorParameter_2'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.58"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionStaticSwitchParameter'M_Tiger_Field:MaterialExpressionStaticSwitchParameter_11'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.41"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_29'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.21"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_30'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.23"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_31'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.24"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_32'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.25"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_35'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.26"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionVectorParameter'M_Tiger_Field:MaterialExpressionVectorParameter_5'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.59"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_36'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.27"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_37'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.28"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionStaticSwitchParameter'M_Tiger_Field:MaterialExpressionStaticSwitchParameter_12'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.42"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_38'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.29"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameter2D'M_Tiger_Field:MaterialExpressionTextureSampleParameter2D_8'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.54"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameter2D'M_Tiger_Field:MaterialExpressionTextureSampleParameter2D_9'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.55"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_43'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.31"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionVectorParameter'M_Tiger_Field:MaterialExpressionVectorParameter_7'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.60"
+        },
+        {
+          "ObjectName": "MaterialExpressionVectorParameter'M_Tiger_Field:MaterialExpressionVectorParameter_8'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.61"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample'M_Tiger_Field:MaterialExpressionTextureSample_0'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.48"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall'M_Tiger_Field:MaterialExpressionMaterialFunctionCall_9'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.9"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_49'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.32"
+        },
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall'M_Tiger_Field:MaterialExpressionMaterialFunctionCall_11'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.7"
+        },
+        {
+          "ObjectName": "MaterialExpressionStaticSwitchParameter'M_Tiger_Field:MaterialExpressionStaticSwitchParameter_1'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.39"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_3'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.22"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample'M_Tiger_Field:MaterialExpressionTextureSample_1'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.49"
+        },
+        {
+          "ObjectName": "MaterialExpressionVectorParameter'M_Tiger_Field:MaterialExpressionVectorParameter_0'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.56"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionVectorParameter'M_Tiger_Field:MaterialExpressionVectorParameter_1'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.57"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_4'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.30"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_12'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.14"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_13'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.15"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionStaticSwitchParameter'M_Tiger_Field:MaterialExpressionStaticSwitchParameter_6'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.46"
+        },
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall'M_Tiger_Field:MaterialExpressionMaterialFunctionCall_0'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.5"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_10'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.12"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_11'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.13"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_2'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.19"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_1'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.11"
+        },
+        {
+          "ObjectName": "MaterialExpressionMaterialFunctionCall'M_Tiger_Field:MaterialExpressionMaterialFunctionCall_1'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.6"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_9'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.37"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_5'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.33"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_0'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.10"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample'M_Tiger_Field:MaterialExpressionTextureSample_2'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.50"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionCollectionParameter'M_Tiger_Field:MaterialExpressionCollectionParameter_1'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.2"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_7'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.35"
+        },
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionCollectionParameter'M_Tiger_Field:MaterialExpressionCollectionParameter_3'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.3"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameter2D'M_Tiger_Field:MaterialExpressionTextureSampleParameter2D_0'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.51"
+        },
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_6'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.34"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Tiger_Field:MaterialExpressionScalarParameter_8'",
+          "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.36"
+        }
+      ],
+      "MaterialFunctionInfos": [
+        {
+          "StateId": "B6067F67-4AC0092A-9D7DF581-EBEEE180",
+          "Function": {
+            "ObjectName": "MaterialFunction'HueShift'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/HueShift.0"
+          }
+        },
+        {
+          "StateId": "3FA44BF2-462D624C-FA222987-6FE1F968",
+          "Function": {
+            "ObjectName": "MaterialFunction'CheapContrast'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.1"
+          }
+        },
+        {
+          "StateId": "B7C71B91-4E2BB667-772D6CBE-2AB55665",
+          "Function": {
+            "ObjectName": "MaterialFunction'LinearGradient'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.0"
+          }
+        },
+        {
+          "StateId": "A696C5E7-44930450-09E2D389-0C3E9173",
+          "Function": {
+            "ObjectName": "MaterialFunction'GetSatelliteUV'",
+            "ObjectPath": "TslGame/Content/Assets/World/landscape/GetSatelliteUV.4"
+          }
+        },
+        {
+          "StateId": "87C7614C-49801F93-5E8864A5-54296FFB",
+          "Function": {
+            "ObjectName": "MaterialFunction'WorldPosition-XY'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Coordinates/WorldPosition-XY.0"
+          }
+        },
+        {
+          "StateId": "7560E2DA-4356343C-18E6818A-A015BAC5",
+          "Function": {
+            "ObjectName": "MaterialFunction'MakeFloat2'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/Utility/MakeFloat2.0"
+          }
+        },
+        {
+          "StateId": "FE67B48A-44296B30-FBF15EBB-0FC10ADF",
+          "Function": {
+            "ObjectName": "MaterialFunction'FlattenNormal'",
+            "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal.0"
+          }
+        },
+        {
+          "StateId": "00FD69A3-41D31913-46320DBB-2E51CFAF",
+          "Function": {
+            "ObjectName": "MaterialFunction'MF_Snow_Grass'",
+            "ObjectPath": "TslGame/Content/Effects/Clets/MaterialFuntion/MF_Snow_Grass.18"
+          }
+        }
+      ],
+      "MaterialParameterCollectionInfos": [
+        {
+          "StateId": "884FC2F0-4B869588-EC01668A-8FFA244E",
+          "ParameterCollection": {
+            "ObjectName": "MaterialParameterCollection'MPC_Global'",
+            "ObjectPath": "TslGame/Content/GlobalSettings/MPC_Global.0"
+          }
+        },
+        {
+          "StateId": "4236A052-4B611E69-6383638E-4B08B91D",
+          "ParameterCollection": {
+            "ObjectName": "MaterialParameterCollection'MPC_WeatherSystem'",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Material/MPC_WeatherSystem.0"
+          }
+        }
+      ],
+      "StateId": "C45DAE02-432AE802-21B4D1BE-1CBEC2E9",
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 0.25,
+          "UVChannelIndex": 0,
+          "TextureName": "BaseTexture_D"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "clouds"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "eran_re_Foliage_1_2_d"
+        },
+        {
+          "SamplingScale": 0.25,
+          "UVChannelIndex": 0,
+          "TextureName": "grass_satellite"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Noize_Wave_N"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "T_Tiger_Field_Mask"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "tsl_Grass_02_N"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionCollectionParameter",
+    "Name": "MaterialExpressionCollectionParameter_0",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionCollectionParameter'",
+    "Properties": {
+      "Collection": {
+        "ObjectName": "MaterialParameterCollection'MPC_Global'",
+        "ObjectPath": "TslGame/Content/GlobalSettings/MPC_Global.0"
+      },
+      "ParameterName": "WorldOrigin",
+      "ParameterId": "1033BAC3-4F870985-02FF31B8-D522538F",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "bCollapsed": true
+    }
+  },
+  {
+    "Type": "MaterialExpressionCollectionParameter",
+    "Name": "MaterialExpressionCollectionParameter_1",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionCollectionParameter'",
+    "Properties": {
+      "Collection": {
+        "ObjectName": "MaterialParameterCollection'MPC_Global'",
+        "ObjectPath": "TslGame/Content/GlobalSettings/MPC_Global.0"
+      },
+      "ParameterName": "WorldOrigin",
+      "ParameterId": "1033BAC3-4F870985-02FF31B8-D522538F",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "bCollapsed": true
+    }
+  },
+  {
+    "Type": "MaterialExpressionCollectionParameter",
+    "Name": "MaterialExpressionCollectionParameter_3",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionCollectionParameter'",
+    "Properties": {
+      "Collection": {
+        "ObjectName": "MaterialParameterCollection'MPC_Global'",
+        "ObjectPath": "TslGame/Content/GlobalSettings/MPC_Global.0"
+      },
+      "ParameterName": "WorldOrigin",
+      "ParameterId": "1033BAC3-4F870985-02FF31B8-D522538F",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "bCollapsed": true
+    }
+  },
+  {
+    "Type": "MaterialExpressionFeatureLevelSwitch",
+    "Name": "MaterialExpressionFeatureLevelSwitch_0",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionFeatureLevelSwitch'",
+    "Properties": {
+      "Default": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_3"
+      },
+      "Inputs": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_3"
+      },
+      "Inputs": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionStaticSwitchParameter_10"
+      },
+      "Inputs": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionStaticSwitchParameter_10"
+      },
+      "Inputs": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionStaticSwitchParameter_10"
+      },
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_0",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionMaterialFunctionCall'",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction'FlattenNormal'",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/Texturing/FlattenNormal.0"
+      },
+      "FunctionInputs": [
+        {
+          "ExpressionInputId": "28AAF190-44840619-BEBDFC82-4A64C7A0",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "Normal",
+            "Mask": 1,
+            "MaskR": 1,
+            "MaskG": 1,
+            "MaskB": 1,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionTextureSampleParameter2D_6"
+          }
+        },
+        {
+          "ExpressionInputId": "03CE862F-4BD8BFCC-05500481-15A40E71",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "Flatness",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionScalarParameter_10"
+          }
+        }
+      ],
+      "FunctionOutputs": [
+        {
+          "ExpressionOutputId": "CF2DF7CD-446736F3-FF50B0A1-7088C5A7",
+          "Output": {
+            "OutputName": "Result",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        }
+      ],
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "Outputs": [
+        {
+          "OutputName": "Result",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_1",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionMaterialFunctionCall'",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction'MF_Snow_Grass'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/MaterialFuntion/MF_Snow_Grass.18"
+      },
+      "FunctionInputs": [
+        {
+          "ExpressionInputId": "93C7923C-41263058-E271C68A-F37107FA",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "BaseTexture",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionMultiply_3"
+          }
+        }
+      ],
+      "FunctionOutputs": [
+        {
+          "ExpressionOutputId": "B4A788D5-4CF7E22E-FD0E7FAE-25F5D61B",
+          "Output": {
+            "OutputName": "BaseColor",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        }
+      ],
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "Outputs": [
+        {
+          "OutputName": "BaseColor",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_11",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionMaterialFunctionCall'",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction'GetSatelliteUV'",
+        "ObjectPath": "TslGame/Content/Assets/World/landscape/GetSatelliteUV.4"
+      },
+      "FunctionInputs": [
+        {
+          "ExpressionInputId": "772B4E5E-4F3ABE75-F7928D8C-0BF9E283",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "offset_x",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionConstant_13"
+          }
+        },
+        {
+          "ExpressionInputId": "4D6DFDB9-4762AD09-FC52CFB5-E3360AEA",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "offset_y",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionConstant_13"
+          }
+        },
+        {
+          "ExpressionInputId": "D1FC2C93-4DA34E40-3D35C3B9-4EEFDD61",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "scale_y",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionConstant_16"
+          }
+        },
+        {
+          "ExpressionInputId": "B06608E0-4C5060A4-9109BDBD-0250E94F",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "scale_x",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionConstant_16"
+          }
+        }
+      ],
+      "FunctionOutputs": [
+        {
+          "ExpressionOutputId": "B8B56292-48F3514C-738B1698-6C268ABE",
+          "Output": {
+            "OutputName": "Result",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        }
+      ],
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "Outputs": [
+        {
+          "OutputName": "Result",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_23",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionMaterialFunctionCall'",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction'HueShift'",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions02/HueShift.0"
+      },
+      "FunctionInputs": [
+        {
+          "ExpressionInputId": "AC2B9A55-4C8F2FC4-4CAFC38D-EECA8B27",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "Hue Shift Percentage",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionMultiply_36"
+          }
+        },
+        {
+          "ExpressionInputId": "7357D1CC-48154075-7C89D685-B6F4ED36",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "Texture",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionMultiply_25"
+          }
+        }
+      ],
+      "FunctionOutputs": [
+        {
+          "ExpressionOutputId": "52E5E332-482A8447-B8F4679D-4758D2F3",
+          "Output": {
+            "OutputName": "Result",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        }
+      ],
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "Outputs": [
+        {
+          "OutputName": "Result",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionMaterialFunctionCall",
+    "Name": "MaterialExpressionMaterialFunctionCall_9",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionMaterialFunctionCall'",
+    "Properties": {
+      "MaterialFunction": {
+        "ObjectName": "MaterialFunction'CheapContrast'",
+        "ObjectPath": "Engine/Content/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.1"
+      },
+      "FunctionInputs": [
+        {
+          "ExpressionInputId": "95C9DA0E-48D34168-E34AD3A6-07BAA34E",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 1,
+            "InputName": "In",
+            "Mask": 1,
+            "MaskR": 1,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionTextureSample_0"
+          }
+        },
+        {
+          "ExpressionInputId": "3C3E177E-485D8FFF-C35D1482-F0A20020",
+          "Input": {
+            "Expression": null,
+            "OutputIndex": 0,
+            "InputName": "Contrast",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0,
+            "ExpressionName": "MaterialExpressionScalarParameter_49"
+          }
+        }
+      ],
+      "FunctionOutputs": [
+        {
+          "ExpressionOutputId": "5067ED8C-4A2EFE82-DB33F99E-BE37E80E",
+          "Output": {
+            "OutputName": "Result",
+            "Mask": 0,
+            "MaskR": 0,
+            "MaskG": 0,
+            "MaskB": 0,
+            "MaskA": 0
+          }
+        }
+      ],
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "Outputs": [
+        {
+          "OutputName": "Result",
+          "Mask": 0,
+          "MaskR": 0,
+          "MaskG": 0,
+          "MaskB": 0,
+          "MaskA": 0
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_0",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "ParameterName": "Color_Test",
+      "ExpressionGUID": "90D2E3EF-458A7743-EB24DAA1-AF2EE44E",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_1",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 1.0,
+      "ParameterName": "Diffuse Bright",
+      "ExpressionGUID": "B1CCDA82-493462C3-872008B9-12CD11B0",
+      "Group": "1Misc",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_10",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "ParameterName": "grass normal flatten",
+      "ExpressionGUID": "476376A7-4AB15D87-D7C756B6-3F5EE915",
+      "Group": "1Misc",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_11",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 5.0,
+      "ParameterName": "grass color variety - mask intensity",
+      "ExpressionGUID": "F9B3843C-4089E204-2538FB9E-950A19F2",
+      "Group": "Satellite",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_12",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.5,
+      "ParameterName": "subsurface multiplier",
+      "ExpressionGUID": "88ED0203-488BDE95-B39B6B8C-BD7D24E4",
+      "Group": "1Misc",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_13",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.1,
+      "ParameterName": "Specular Top",
+      "ExpressionGUID": "BF22A102-49D81BC6-4F5AD98F-E858717B",
+      "Group": "1Misc",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_16",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": -0.2,
+      "ParameterName": "Specular Bottom",
+      "ExpressionGUID": "AFDF61A0-4CFF914B-DE90598B-32E481D8",
+      "Group": "1Misc",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_17",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 1.0,
+      "SliderMax": 20.0,
+      "ParameterName": "Roughness",
+      "ExpressionGUID": "5AB2DAD8-4CC83AAE-FAAF6084-8A02FE22",
+      "Group": "1Misc",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_19",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 3.0,
+      "ParameterName": "bottom gradient power",
+      "ExpressionGUID": "B5ED38A1-406335F9-5528B9B8-33FEFCAA",
+      "Group": "Satellite",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_2",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.55,
+      "ParameterName": "specular falloff",
+      "ExpressionGUID": "67203D52-479FA1F2-4F7CC286-FAA2E331",
+      "Group": "1Misc",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_28",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 20.0,
+      "ParameterName": "StaticWPOHigh",
+      "ExpressionGUID": "A140EF06-444FEA37-50A9ED90-42E0CCC0",
+      "Group": "Wind",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_29",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 500.0,
+      "ParameterName": "ObjectScaleColoring_1",
+      "ExpressionGUID": "9B4A3FDA-4E58633B-2910F9A1-AB7146A4",
+      "Group": "Wind",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_3",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 4.0,
+      "ParameterName": "grass color variety - mask power",
+      "ExpressionGUID": "326B6D03-46BA65D5-628ECC85-A786C123",
+      "Group": "Satellite",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_30",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.3,
+      "ParameterName": "ObjectScale_WindDecrement",
+      "ExpressionGUID": "0AC19614-49D790BD-169B129E-A414E83E",
+      "Group": "Wind",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_31",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 10000.0,
+      "ParameterName": "WorldPositionScale_BigWave",
+      "ExpressionGUID": "AA9CDCE7-46448DE8-8D57ADA0-D935DCB6",
+      "Group": "Wind",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "Desc": "Tiling scale for wind texture",
+      "bCommentBubbleVisible": true
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_32",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.05,
+      "ParameterName": "AnimTimeScale",
+      "ExpressionGUID": "A7830188-40632677-8C37239C-198CF63D",
+      "Group": "Wind",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "Desc": "Speed scale of Grass animation",
+      "bCommentBubbleVisible": true
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_35",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.02,
+      "SliderMax": 0.1,
+      "ParameterName": "BendScale",
+      "ExpressionGUID": "D31ACC13-404BC275-BE77C594-0D4BE4DA",
+      "Group": "Wind",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "Desc": "Amount of bending",
+      "bCommentBubbleVisible": true
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_36",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 10.0,
+      "ParameterName": "WorldPositionScale_SmallWave",
+      "ExpressionGUID": "371AF7F3-4327A8B9-ABADBBAF-1DC22488",
+      "Group": "Wind",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "Desc": "Tiling scale for wind noise texture "
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_37",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.8,
+      "ParameterName": "BigWaveWeight",
+      "ExpressionGUID": "D6E3AAAB-470F5929-425C9D85-2E98C666",
+      "Group": "Wind",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_38",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 5.0,
+      "ParameterName": "WindNormalStrength",
+      "ExpressionGUID": "7B6D5CB0-47E76EEA-21C047B3-F4990727",
+      "Group": "Wind",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_4",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 38.0,
+      "ParameterName": "bottom gradient intensity",
+      "ExpressionGUID": "E3A082AC-4FF0CDCE-205E8EBF-9D48B040",
+      "Group": "Satellite",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_43",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 7500.0,
+      "ParameterName": "grass color variety - mask scale",
+      "ExpressionGUID": "0352E3CB-4817DEE1-B393F086-D5CEA8BB",
+      "Group": "Satellite",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "Desc": "819200.0",
+      "bCommentBubbleVisible": true
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_49",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.3,
+      "ParameterName": "satellite contrast",
+      "ExpressionGUID": "BE8BE941-47427388-DC2C478F-05E7292A",
+      "Group": "Satellite",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_5",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.05,
+      "ParameterName": "PerInstanceHueShift",
+      "ExpressionGUID": "3BA4F106-4E2C53AB-E460BBB2-7F26368E",
+      "Group": "1Misc",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_6",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 1.0,
+      "ParameterName": "Setmap_Tone",
+      "ExpressionGUID": "1A04D369-44A17597-CF58FA8F-7635D1E6",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_7",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 7500.0,
+      "ParameterName": "Field_Mask_Scale",
+      "ExpressionGUID": "7CC0BB48-4FD77217-4D297583-7C60B534",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "Desc": "819200.0",
+      "bCommentBubbleVisible": true
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_8",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 1.5,
+      "ParameterName": "setmapColor_Power",
+      "ExpressionGUID": "EB31B357-41723CC6-57E7899C-6EE0AAF0",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_9",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 5.0,
+      "ParameterName": "VerticalUVGradientPower",
+      "ExpressionGUID": "DD6376B0-4D741EC5-66FCED91-57FDCC55",
+      "Group": "1Misc",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionStaticSwitchParameter",
+    "Name": "MaterialExpressionStaticSwitchParameter_0",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionStaticSwitchParameter'",
+    "Properties": {
+      "A": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_1"
+      },
+      "B": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_3"
+      },
+      "ParameterName": "USE SnowMask",
+      "ExpressionGUID": "48E49A7B-410A2F38-744784B7-55448138",
+      "Group": "0Settings",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      },
+      "bRealtimePreview": true
+    }
+  },
+  {
+    "Type": "MaterialExpressionStaticSwitchParameter",
+    "Name": "MaterialExpressionStaticSwitchParameter_1",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionStaticSwitchParameter'",
+    "Properties": {
+      "A": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionSaturate_2"
+      },
+      "B": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_6"
+      },
+      "DefaultValue": true,
+      "ParameterName": "world space mask color variation",
+      "ExpressionGUID": "DFB167FC-4AEEF1D1-84E963AD-27771BC3",
+      "Group": "0Settings",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionStaticSwitchParameter",
+    "Name": "MaterialExpressionStaticSwitchParameter_10",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionStaticSwitchParameter'",
+    "Properties": {
+      "A": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionStaticSwitchParameter_11"
+      },
+      "B": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant3Vector_8"
+      },
+      "DefaultValue": true,
+      "ParameterName": "UseWPO",
+      "ExpressionGUID": "2324C296-4DA09FF0-6FEF1A8E-89D1DC38",
+      "Group": "Wind",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionStaticSwitchParameter",
+    "Name": "MaterialExpressionStaticSwitchParameter_11",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionStaticSwitchParameter'",
+    "Properties": {
+      "A": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionAdd_3"
+      },
+      "B": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_9"
+      },
+      "DefaultValue": true,
+      "ParameterName": "UseWPOWaves",
+      "ExpressionGUID": "5F5DDA14-4622DFCC-A98F5596-117AA9F7",
+      "Group": "Wind",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionStaticSwitchParameter",
+    "Name": "MaterialExpressionStaticSwitchParameter_12",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionStaticSwitchParameter'",
+    "Properties": {
+      "A": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionNormalize_5"
+      },
+      "B": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_39"
+      },
+      "DefaultValue": true,
+      "ParameterName": "Wind Normal On/OFF",
+      "ExpressionGUID": "EE942AE2-416E4FCC-5283E4BD-DD0C442F",
+      "Group": "0Settings",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionStaticSwitchParameter",
+    "Name": "MaterialExpressionStaticSwitchParameter_3",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionStaticSwitchParameter'",
+    "Properties": {
+      "A": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_2"
+      },
+      "B": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_14"
+      },
+      "DefaultValue": true,
+      "ParameterName": "New Specular Values",
+      "ExpressionGUID": "C0B4AF8E-40842767-7BFD96AA-B285B440",
+      "Group": "0Settings",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionStaticSwitchParameter",
+    "Name": "MaterialExpressionStaticSwitchParameter_4",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionStaticSwitchParameter'",
+    "Properties": {
+      "A": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionReroute_7"
+      },
+      "B": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_15"
+      },
+      "DefaultValue": true,
+      "ParameterName": "WIND ON/OFF",
+      "ExpressionGUID": "ABC586C2-41D84601-7E704CBD-6780420D",
+      "Group": "0Settings",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionStaticSwitchParameter",
+    "Name": "MaterialExpressionStaticSwitchParameter_5",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionStaticSwitchParameter'",
+    "Properties": {
+      "A": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionSubtract_3"
+      },
+      "B": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionFeatureLevelSwitch_0"
+      },
+      "DefaultValue": true,
+      "ParameterName": "NewWPO",
+      "ExpressionGUID": "E2705748-42F6FD03-422710A7-E285AF81",
+      "Group": "Wind",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionStaticSwitchParameter",
+    "Name": "MaterialExpressionStaticSwitchParameter_6",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionStaticSwitchParameter'",
+    "Properties": {
+      "A": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_0"
+      },
+      "B": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_15"
+      },
+      "DefaultValue": true,
+      "ParameterName": "diffuse mix",
+      "ExpressionGUID": "84D25805-40A9C374-4326B99A-0864BC94",
+      "Group": "0Settings",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionStaticSwitchParameter",
+    "Name": "MaterialExpressionStaticSwitchParameter_7",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionStaticSwitchParameter'",
+    "Properties": {
+      "A": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionReroute_6"
+      },
+      "B": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionConstant_8"
+      },
+      "DefaultValue": true,
+      "ParameterName": "000TOGGLE",
+      "ExpressionGUID": "BBD113AE-4D799554-D9D0F8B0-9E9CDA9F",
+      "Group": "0Settings",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_0",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionTextureSample'",
+    "Properties": {
+      "Coordinates": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMaterialFunctionCall_11"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D'grass_satellite'",
+        "ObjectPath": "TslGame/Content/tsl_sourse/erangel_re_grass/eran_re_foliage/grass_satellite.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Alpha",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_1",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionTextureSample'",
+    "Properties": {
+      "Coordinates": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionDivide_2"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D'clouds'",
+        "ObjectPath": "TslGame/Content/tsl_sourse/erangel_re_grass/eran_re_foliage/clouds.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Alpha",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_2",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionTextureSample'",
+    "Properties": {
+      "Coordinates": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionDivide_0"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D'T_Tiger_Field_Mask'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Texture_Array/T_Tiger_Field_Mask.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Alpha",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameter2D",
+    "Name": "MaterialExpressionTextureSampleParameter2D_0",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionTextureSampleParameter2D'",
+    "Properties": {
+      "ParameterName": "WorldTexture",
+      "ExpressionGUID": "E1DA6C8A-4E536122-DD00E9B4-CCE3A511",
+      "Coordinates": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionDivide_1"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D'BaseTexture_D'",
+        "ObjectPath": "TslGame/Content/Assets/World/Common/Textures/BaseTexture_D.0"
+      },
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameter2D",
+    "Name": "MaterialExpressionTextureSampleParameter2D_5",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionTextureSampleParameter2D'",
+    "Properties": {
+      "ParameterName": "Diffuse",
+      "ExpressionGUID": "A8980E02-4B86047E-DF999FBA-0AF1A622",
+      "MipValueMode": "TMVM_MipBias",
+      "Texture": {
+        "ObjectName": "Texture2D'eran_re_Foliage_1_2_d'",
+        "ObjectPath": "TslGame/Content/tsl_sourse/erangel_re_grass/eran_re_foliage/foliage_1/eran_re_Foliage_1_2_d.0"
+      },
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameter2D",
+    "Name": "MaterialExpressionTextureSampleParameter2D_6",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionTextureSampleParameter2D'",
+    "Properties": {
+      "ParameterName": "Normal",
+      "ExpressionGUID": "DFBB893B-45A9452C-36453DA5-FC93D772",
+      "MipValueMode": "TMVM_MipBias",
+      "Texture": {
+        "ObjectName": "Texture2D'tsl_Grass_02_N'",
+        "ObjectPath": "TslGame/Content/tsl_sourse/Vegetation/Grass/tsl_Grass_02/tsl_Grass_02_N.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameter2D",
+    "Name": "MaterialExpressionTextureSampleParameter2D_8",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionTextureSampleParameter2D'",
+    "Properties": {
+      "ParameterName": "Noize_Wave",
+      "ExpressionGUID": "A60DCDAA-4814124A-9136DBA5-5BCE109A",
+      "Coordinates": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_1"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D'T_Noize_Wave_N'",
+        "ObjectPath": "TslGame/Content/Assets/World/Ocean/UltimateRiverTool/Meshes/Grass/Textures/T_Noize_Wave_N.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameter2D",
+    "Name": "MaterialExpressionTextureSampleParameter2D_9",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionTextureSampleParameter2D'",
+    "Properties": {
+      "ParameterName": "Noize_Wave_1",
+      "ExpressionGUID": "C7F44D4F-4484A1A3-19C11B8A-D2BDE9B4",
+      "Coordinates": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionPanner_3"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D'T_Noize_Wave_N'",
+        "ObjectPath": "TslGame/Content/Assets/World/Ocean/UltimateRiverTool/Meshes/Grass/Textures/T_Noize_Wave_N.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_0",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionVectorParameter'",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.178,
+        "G": 1.0,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FF75FF00"
+      },
+      "ParameterName": "undergrass Road",
+      "ExpressionGUID": "74B63CF7-46A71132-2B8990B9-67B75829",
+      "Group": "Satellite",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_1",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionVectorParameter'",
+    "Properties": {
+      "DefaultValue": {
+        "R": 1.0,
+        "G": 0.0,
+        "B": 0.877983,
+        "A": 1.0,
+        "Hex": "FFFF00F1"
+      },
+      "ParameterName": "undergrass notRoad",
+      "ExpressionGUID": "2ED93AB1-4EFEAAA5-A9A779A1-BD9AC61C",
+      "Group": "Satellite",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_2",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionVectorParameter'",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.9,
+        "G": 0.9,
+        "B": -0.5,
+        "A": 1.0,
+        "Hex": "FFF4F400"
+      },
+      "ParameterName": "WPOWaveAmounttXYZ",
+      "ExpressionGUID": "09DDBC5D-43D9495E-68A4B882-2B119878",
+      "Group": "Wind",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_5",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionVectorParameter'",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.273439,
+        "G": 0.0,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FF8F00FF"
+      },
+      "ParameterName": "MainWind",
+      "ExpressionGUID": "403AF172-4575B17A-E803868C-D001917F",
+      "Group": "Wind",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_7",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionVectorParameter'",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.96,
+        "G": 0.078588,
+        "B": 0.0,
+        "A": 1.0,
+        "Hex": "FFFB4F00"
+      },
+      "ParameterName": "variety 01",
+      "ExpressionGUID": "D6FBCD66-405BD5CF-311B6AA2-A51E1C7E",
+      "Group": "Satellite",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionVectorParameter",
+    "Name": "MaterialExpressionVectorParameter_8",
+    "Outer": "M_Tiger_Field",
+    "Class": "UScriptClass'MaterialExpressionVectorParameter'",
+    "Properties": {
+      "DefaultValue": {
+        "R": 0.0,
+        "G": 0.905545,
+        "B": 1.0,
+        "A": 1.0,
+        "Hex": "FF00F5FF"
+      },
+      "ParameterName": "variety 02",
+      "ExpressionGUID": "80ACCA0D-47BC9A93-6CB351B7-BADC2139",
+      "Group": "Satellite",
+      "Material": {
+        "ObjectName": "Material'M_Tiger_Field'",
+        "ObjectPath": "TslGame/Content/Maps/tiger/Art/LandscapeMaterial/Grass/Field/M_Tiger_Field.0"
+      }
+    }
+  }
+]

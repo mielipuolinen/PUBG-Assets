@@ -1,0 +1,4338 @@
+[
+  {
+    "Type": "AbstractNavData",
+    "Name": "AbstractNavData-Default",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'AbstractNavData'",
+    "Properties": {
+      "bNetLoadOnClient": true
+    }
+  },
+  {
+    "Type": "BillboardComponent",
+    "Name": "Icon",
+    "Outer": "BP_Ocean_177",
+    "Template": "BillboardComponent_582",
+    "Class": "UScriptClass'BillboardComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 125640.16,
+        "Y": 634380.75,
+        "Z": -1500.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BillboardComponent",
+    "Name": "Billboard",
+    "Outer": "BP_Underwater_735",
+    "Template": "Billboard_GEN_VARIABLE",
+    "Class": "UScriptClass'BillboardComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": -25476.0,
+        "Y": 17166.0,
+        "Z": 187.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_45",
+    "Outer": "BrushComponent0",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -50.0,
+                "Y": 50.0,
+                "Z": -50.0
+              },
+              {
+                "X": -50.0,
+                "Y": 50.0,
+                "Z": 50.0
+              },
+              {
+                "X": -50.0,
+                "Y": -50.0,
+                "Z": 50.0
+              },
+              {
+                "X": -50.0,
+                "Y": -50.0,
+                "Z": -50.0
+              },
+              {
+                "X": 50.0,
+                "Y": 50.0,
+                "Z": -50.0
+              },
+              {
+                "X": 50.0,
+                "Y": 50.0,
+                "Z": 50.0
+              },
+              {
+                "X": 50.0,
+                "Y": -50.0,
+                "Z": -50.0
+              },
+              {
+                "X": 50.0,
+                "Y": -50.0,
+                "Z": 50.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -50.0,
+                "Y": -50.0,
+                "Z": -50.0
+              },
+              "Max": {
+                "X": 50.0,
+                "Y": 50.0,
+                "Z": 50.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "bGenerateMirroredCollision": false,
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "60CF176349573CCEFDB5DF81FD293A77",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 470,
+        "SizeOnDisk": 470,
+        "OffsetInFile": "0x13941"
+      }
+    }
+  },
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_5",
+    "Outer": "BrushComponent0",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -32499.996,
+                "Y": 21499.969,
+                "Z": -5000.0
+              },
+              {
+                "X": -32499.996,
+                "Y": 21499.969,
+                "Z": 5000.0
+              },
+              {
+                "X": -32499.996,
+                "Y": -21499.967,
+                "Z": 5000.0
+              },
+              {
+                "X": -32499.996,
+                "Y": -21499.967,
+                "Z": -5000.0
+              },
+              {
+                "X": 32499.969,
+                "Y": 21499.996,
+                "Z": -5000.0
+              },
+              {
+                "X": 32499.969,
+                "Y": 21499.996,
+                "Z": 5000.0
+              },
+              {
+                "X": 32499.996,
+                "Y": -21499.967,
+                "Z": -5000.0
+              },
+              {
+                "X": 32499.996,
+                "Y": -21499.967,
+                "Z": 5000.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -32499.996,
+                "Y": -21499.967,
+                "Z": -5000.0
+              },
+              "Max": {
+                "X": 32499.996,
+                "Y": 21499.996,
+                "Z": 5000.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "bGenerateMirroredCollision": false,
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "9ADCA09E428376D417A4B581CE8D6E5F",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 470,
+        "SizeOnDisk": 470,
+        "OffsetInFile": "0x13E29"
+      }
+    }
+  },
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_4",
+    "Outer": "BrushComponent0",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -100.0,
+                "Y": 100.0,
+                "Z": -100.0
+              },
+              {
+                "X": -100.0,
+                "Y": 100.0,
+                "Z": 100.0
+              },
+              {
+                "X": -100.0,
+                "Y": -100.0,
+                "Z": 100.0
+              },
+              {
+                "X": -100.0,
+                "Y": -100.0,
+                "Z": -100.0
+              },
+              {
+                "X": 100.0,
+                "Y": 100.0,
+                "Z": -100.0
+              },
+              {
+                "X": 100.0,
+                "Y": 100.0,
+                "Z": 100.0
+              },
+              {
+                "X": 100.0,
+                "Y": -100.0,
+                "Z": -100.0
+              },
+              {
+                "X": 100.0,
+                "Y": -100.0,
+                "Z": 100.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -100.0,
+                "Y": -100.0,
+                "Z": -100.0
+              },
+              "Max": {
+                "X": 100.0,
+                "Y": 100.0,
+                "Z": 100.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "bGenerateMirroredCollision": false,
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "4F41127D4D24FA6538E7D890DEB1B282",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 470,
+        "SizeOnDisk": 470,
+        "OffsetInFile": "0x14311"
+      }
+    }
+  },
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_43",
+    "Outer": "BrushComponent0",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -2500000.0,
+                "Y": -1048576.0,
+                "Z": 50000.0
+              },
+              {
+                "X": -2500000.0,
+                "Y": -1048576.0,
+                "Z": -50000.0
+              },
+              {
+                "X": -2500000.0,
+                "Y": 1048576.0,
+                "Z": -50000.0
+              },
+              {
+                "X": -2500000.0,
+                "Y": 1048576.0,
+                "Z": 50000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 2500000.0,
+                "Z": 50000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 2500000.0,
+                "Z": -50000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 2500000.0,
+                "Z": -50000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 2500000.0,
+                "Z": 50000.0
+              },
+              {
+                "X": 2500000.0,
+                "Y": 1048576.0,
+                "Z": 50000.0
+              },
+              {
+                "X": 2500000.0,
+                "Y": 1048576.0,
+                "Z": -50000.0
+              },
+              {
+                "X": 2500000.0,
+                "Y": -1048576.0,
+                "Z": -50000.0
+              },
+              {
+                "X": 2500000.0,
+                "Y": -1048576.0,
+                "Z": 50000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -2500000.0,
+                "Z": 50000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -2500000.0,
+                "Z": -50000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -2500000.0,
+                "Z": -50000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -2500000.0,
+                "Z": 50000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -1048576.0,
+                "Z": 50000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -1048576.0,
+                "Z": 50000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 1048576.0,
+                "Z": 50000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 1048576.0,
+                "Z": 50000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 1048576.0,
+                "Z": -50000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 1048576.0,
+                "Z": -50000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -1048576.0,
+                "Z": -50000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -1048576.0,
+                "Z": -50000.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -2500000.0,
+                "Y": -2500000.0,
+                "Z": -50000.0
+              },
+              "Max": {
+                "X": 2500000.0,
+                "Y": 2500000.0,
+                "Z": 50000.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "bGenerateMirroredCollision": false,
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "915241B644A2A3E36453EC94D4A824E3",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 718,
+        "SizeOnDisk": 718,
+        "OffsetInFile": "0x148B9"
+      }
+    }
+  },
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_43",
+    "Outer": "BrushComponent0",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -32499.996,
+                "Y": 21499.969,
+                "Z": -5000.0
+              },
+              {
+                "X": -32499.996,
+                "Y": 21499.969,
+                "Z": 5000.0
+              },
+              {
+                "X": -32499.996,
+                "Y": -21499.967,
+                "Z": 5000.0
+              },
+              {
+                "X": -32499.996,
+                "Y": -21499.967,
+                "Z": -5000.0
+              },
+              {
+                "X": 32499.969,
+                "Y": 21499.996,
+                "Z": -5000.0
+              },
+              {
+                "X": 32499.969,
+                "Y": 21499.996,
+                "Z": 5000.0
+              },
+              {
+                "X": 32499.996,
+                "Y": -21499.967,
+                "Z": -5000.0
+              },
+              {
+                "X": 32499.996,
+                "Y": -21499.967,
+                "Z": 5000.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -32499.996,
+                "Y": -21499.967,
+                "Z": -5000.0
+              },
+              "Max": {
+                "X": 32499.996,
+                "Y": 21499.996,
+                "Z": 5000.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "bGenerateMirroredCollision": false,
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "661A58E042F08F3F8EA60A9F7F7049AE",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 470,
+        "SizeOnDisk": 470,
+        "OffsetInFile": "0x14E99"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "Box",
+    "Outer": "BP_Ocean_177",
+    "Template": "Box_GEN_VARIABLE",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BodyInstance": {},
+      "AttachParent": {
+        "ObjectName": "OceanMeshComponent'Water:PersistentLevel.BP_Ocean_177.OceanPlane'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.33"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'PrimitiveComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "BodyInstance",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent0",
+    "Outer": "LevelBounds_0",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": -25476.0,
+        "Y": 17166.0,
+        "Z": 187.0
+      },
+      "RelativeScale3D": {
+        "X": 512.0,
+        "Y": 512.0,
+        "Z": 512.0
+      }
+    }
+  },
+  {
+    "Type": "BP_Ocean_C",
+    "Name": "BP_Ocean_177",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_Ocean_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Ocean/BP_Ocean.BP_Ocean_C'",
+    "Properties": {
+      "Box": {
+        "ObjectName": "BoxComponent'Water:PersistentLevel.BP_Ocean_177.Box'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.8"
+      },
+      "DepthPlaneUnderside": {
+        "ObjectName": "StaticMeshComponent'Water:PersistentLevel.BP_Ocean_177.DepthPlaneUnderside'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.38"
+      },
+      "InfiniteSystem": {
+        "ObjectName": "InfiniteSystemComponent'Water:PersistentLevel.BP_Ocean_177.InfiniteSystem'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.18"
+      },
+      "DepthPlaneTopside": {
+        "ObjectName": "StaticMeshComponent'Water:PersistentLevel.BP_Ocean_177.DepthPlaneTopside'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.37"
+      },
+      "OceanPlane": {
+        "ObjectName": "OceanMeshComponent'Water:PersistentLevel.BP_Ocean_177.OceanPlane'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.33"
+      },
+      "Icon": {
+        "ObjectName": "BillboardComponent'Water:PersistentLevel.BP_Ocean_177.Icon'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.1"
+      },
+      "BaseColorDark": {
+        "R": 0.084068,
+        "G": 0.161132,
+        "B": 0.255,
+        "A": 1.0,
+        "Hex": "FF52708A"
+      },
+      "BaseColorLight": {
+        "R": 0.21856,
+        "G": 0.42,
+        "B": 0.411642,
+        "A": 1.0,
+        "Hex": "FF81AEAC"
+      },
+      "ShallowWaterColor": {
+        "R": 0.54495,
+        "G": 0.865,
+        "B": 0.852942,
+        "A": 1.0,
+        "Hex": "FFC3F0EE"
+      },
+      "BaseColorLerp": 0.1,
+      "FresnelPower": 10.0,
+      "Base Fresnel Reflect": 0.1,
+      "Metallic": 0.2,
+      "Roughness": 0.1,
+      "Specular": 0.6,
+      "TesselationMultiplier": 0.2,
+      "Opacity": 10.0,
+      "BaseDepthFade": 12000.0,
+      "DistortionStrength": 0.2,
+      "SceneColorCustomDepth": 1000.0,
+      "FoamScale": 500.0,
+      "FoamDepth1": 0.0,
+      "FoamDepth2": 20.0,
+      "FoamTimeScale": 1.38,
+      "SSS_Color": {
+        "R": 0.584078,
+        "G": 0.745404,
+        "B": 0.730461,
+        "A": 1.0,
+        "Hex": "FFC9E0DE"
+      },
+      "SSS_Scale": 0.034404,
+      "SSS_Intensity": 0.697247,
+      "SSS_LightDepth": 326.54874,
+      "DetailNormalScale": 3000.0,
+      "DetailNormalStrength": 0.3,
+      "MediumNormalScale": 5000.0,
+      "MediumNormalStrength": 0.3,
+      "FarNormalScale": 50000.0,
+      "FarNormalSpeed": 0.04,
+      "FarNormalStrength": 0.2,
+      "FarNormalBlendFalloff": 5000.0,
+      "PanWaveLerp": 0.742987,
+      "PanWaveIntensity": 0.176742,
+      "PanWaveTimeScale": 0.65531,
+      "PanWaveSize": 8285.845,
+      "SSS_MacroNormalStrength": 0.973451,
+      "FoamSoftness1": 0.06,
+      "SceneDepthSoftness": 0.5,
+      "BaseDepthFadeSoftness": 0.2,
+      "SeafoamScale": 1500.0,
+      "CubemapRelectionStrength": 23.0,
+      "OceanShader": "OceanShaderEnum::NewEnumerator14",
+      "MID_Ocean": {
+        "ObjectName": "MaterialInstanceDynamic'Water:PersistentLevel.BP_Ocean_177.OceanPlane.MaterialInstanceDynamic_0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.22"
+      },
+      "MID_Ocean_Depth": {
+        "ObjectName": "MaterialInstanceDynamic'Water:PersistentLevel.BP_Ocean_177.DepthPlaneTopside.MaterialInstanceDynamic_3'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.21"
+      },
+      "MID_Ocean_LOD": {
+        "ObjectName": "MaterialInstanceDynamic'Water:PersistentLevel.BP_Ocean_177.OceanPlane.MaterialInstanceDynamic_1'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.23"
+      },
+      "MID_Ocean_Simple": {
+        "ObjectName": "MaterialInstanceDynamic'Water:PersistentLevel.BP_Ocean_177.OceanPlane.MaterialInstanceDynamic_2'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.24"
+      },
+      "UseNewMaterials": true,
+      "GlobalWaveAmplitude": 0.2,
+      "WaveClusters": [
+        {
+          "Rotation": 0.45,
+          "Length": 1293.4094,
+          "Amplitude": 120.0,
+          "Steepness": 1.0,
+          "TimeScale": 1.0
+        }
+      ],
+      "WaveSetOffsetsOverride": [
+        {
+          "Wave01": {
+            "Rotation": 0.0,
+            "Length": 1.05,
+            "Amplitude": 1.4,
+            "Steepness": 1.2,
+            "TimeScale": 1.0
+          },
+          "Wave02": {
+            "Rotation": -0.05,
+            "Length": 0.65,
+            "Amplitude": 1.1,
+            "Steepness": 0.6,
+            "TimeScale": 1.0
+          },
+          "Wave03": {
+            "Rotation": 0.045,
+            "Length": 1.85,
+            "Amplitude": 2.1,
+            "Steepness": 1.35,
+            "TimeScale": 1.0
+          },
+          "Wave04": {
+            "Rotation": 0.02,
+            "Length": 0.65,
+            "Amplitude": 0.0,
+            "Steepness": 0.9,
+            "TimeScale": 1.0
+          },
+          "Wave05": {
+            "Rotation": 0.0,
+            "Length": 1.0,
+            "Amplitude": 0.0001,
+            "Steepness": 0.0001,
+            "TimeScale": 1.0
+          },
+          "Wave06": {
+            "Rotation": 0.0,
+            "Length": 1.0,
+            "Amplitude": 0.0001,
+            "Steepness": 0.0001,
+            "TimeScale": 1.0
+          },
+          "Wave07": {
+            "Rotation": 0.0,
+            "Length": 1.0,
+            "Amplitude": 0.0001,
+            "Steepness": 0.0001,
+            "TimeScale": 1.0
+          },
+          "Wave08": {
+            "Rotation": 0.0,
+            "Length": 1.0,
+            "Amplitude": 0.0001,
+            "Steepness": 0.0001,
+            "TimeScale": 1.0
+          }
+        }
+      ],
+      "RootComponent": {
+        "ObjectName": "BillboardComponent'Water:PersistentLevel.BP_Ocean_177.Icon'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.1"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "BillboardComponent'Water:PersistentLevel.BP_Ocean_177.Icon'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.1"
+        },
+        {
+          "ObjectName": "OceanMeshComponent'Water:PersistentLevel.BP_Ocean_177.OceanPlane'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.33"
+        },
+        {
+          "ObjectName": "StaticMeshComponent'Water:PersistentLevel.BP_Ocean_177.DepthPlaneTopside'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.37"
+        },
+        {
+          "ObjectName": "InfiniteSystemComponent'Water:PersistentLevel.BP_Ocean_177.InfiniteSystem'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.18"
+        },
+        {
+          "ObjectName": "StaticMeshComponent'Water:PersistentLevel.BP_Ocean_177.DepthPlaneUnderside'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.38"
+        },
+        {
+          "ObjectName": "BoxComponent'Water:PersistentLevel.BP_Ocean_177.Box'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.8"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BP_Underwater_C",
+    "Name": "BP_Underwater_735",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_Underwater_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Ocean/BP_Underwater.BP_Underwater_C'",
+    "Properties": {
+      "CausticsDirectionalLight": {
+        "ObjectName": "DirectionalLightComponent'Water:PersistentLevel.BP_Underwater_735.CausticsDirectionalLight'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.17"
+      },
+      "Billboard": {
+        "ObjectName": "BillboardComponent'Water:PersistentLevel.BP_Underwater_735.Billboard'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.2"
+      },
+      "WetLensBlurFade": {
+        "ObjectName": "TimelineComponent'Water:PersistentLevel.BP_Underwater_735.WetLensBlurFade'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.39"
+      },
+      "WetLensDistortFade": {
+        "ObjectName": "TimelineComponent'Water:PersistentLevel.BP_Underwater_735.WetLensDistortFade'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.40"
+      },
+      "EnableCausticsLight": false,
+      "EnableWetLensPP": false,
+      "UpdateUnderwaterPP": true,
+      "UnderwaterPPVolumeRef": {
+        "ObjectName": "PostProcessVolume'Water:PersistentLevel.PP_UnderWater'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.34"
+      },
+      "UnderwaterPPVolumeRef_Masked": {
+        "ObjectName": "PostProcessVolume'Water:PersistentLevel.PP_Underwater_Masked'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.36"
+      },
+      "BP_OceanRef": {
+        "ObjectName": "BP_Ocean_C'Water:PersistentLevel.BP_Ocean_177'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.10"
+      },
+      "RootComponent": {
+        "ObjectName": "BillboardComponent'Water:PersistentLevel.BP_Underwater_735.Billboard'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.2"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "BillboardComponent'Water:PersistentLevel.BP_Underwater_735.Billboard'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.2"
+        },
+        {
+          "ObjectName": "DirectionalLightComponent'Water:PersistentLevel.BP_Underwater_735.CausticsDirectionalLight'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.17"
+        },
+        {
+          "ObjectName": "TimelineComponent'Water:PersistentLevel.BP_Underwater_735.WetLensDistortFade'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.40"
+        },
+        {
+          "ObjectName": "TimelineComponent'Water:PersistentLevel.BP_Underwater_735.WetLensBlurFade'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.39"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BrushComponent",
+    "Name": "BrushComponent0",
+    "Outer": "PP_UnderWater",
+    "Class": "UScriptClass'BrushComponent'",
+    "Properties": {
+      "Brush": {
+        "ObjectName": "Model'Water:PersistentLevel.PP_UnderWater.Model_3'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.28"
+      },
+      "BrushBodySetup": {
+        "ObjectName": "BodySetup'Water:PersistentLevel.PP_UnderWater.BrushComponent0.BodySetup_45'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.3"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "AttachParent": {
+        "ObjectName": "BillboardComponent'Water:PersistentLevel.BP_Underwater_735.Billboard'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.2"
+      },
+      "RelativeLocation": {
+        "X": 49752.0,
+        "Y": -72592.0,
+        "Z": -100797.0
+      }
+    }
+  },
+  {
+    "Type": "BrushComponent",
+    "Name": "BrushComponent0",
+    "Outer": "PP_Underwater3",
+    "Class": "UScriptClass'BrushComponent'",
+    "Properties": {
+      "Brush": {
+        "ObjectName": "Model'Water:PersistentLevel.PP_Underwater3.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.29"
+      },
+      "BrushBodySetup": {
+        "ObjectName": "BodySetup'Water:PersistentLevel.PP_Underwater3.BrushComponent0.BodySetup_5'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.4"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 373251.34,
+        "Y": 58298.062,
+        "Z": 3060.0
+      }
+    }
+  },
+  {
+    "Type": "BrushComponent",
+    "Name": "BrushComponent0",
+    "Outer": "PP_Underwater_Masked",
+    "Class": "UScriptClass'BrushComponent'",
+    "Properties": {
+      "Brush": {
+        "ObjectName": "Model'Water:PersistentLevel.PP_Underwater_Masked.Model_4'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.30"
+      },
+      "BrushBodySetup": {
+        "ObjectName": "BodySetup'Water:PersistentLevel.PP_Underwater_Masked.BrushComponent0.BodySetup_4'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.5"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "AttachParent": {
+        "ObjectName": "BillboardComponent'Water:PersistentLevel.BP_Underwater_735.Billboard'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.2"
+      },
+      "RelativeLocation": {
+        "X": 51316.0,
+        "Y": -72206.0,
+        "Z": -101187.0
+      }
+    }
+  },
+  {
+    "Type": "BrushComponent",
+    "Name": "BrushComponent0",
+    "Outer": "TslOceanWaterVolume",
+    "Class": "UScriptClass'BrushComponent'",
+    "Properties": {
+      "Brush": {
+        "ObjectName": "Model'Water:PersistentLevel.TslOceanWaterVolume.Model_1'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.31"
+      },
+      "BrushBodySetup": {
+        "ObjectName": "BodySetup'Water:PersistentLevel.TslOceanWaterVolume.BrushComponent0.BodySetup_43'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.6"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "PhysMaterialOverride": {
+          "ObjectName": "PhysicalMaterial'PhysMat_Water'",
+          "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Water.0"
+        }
+      },
+      "RelativeLocation": {
+        "X": 400000.0,
+        "Y": 400000.0,
+        "Z": -51500.0
+      }
+    }
+  },
+  {
+    "Type": "BrushComponent",
+    "Name": "BrushComponent0",
+    "Outer": "TslOceanWaterVolume2",
+    "Class": "UScriptClass'BrushComponent'",
+    "Properties": {
+      "Brush": {
+        "ObjectName": "Model'Water:PersistentLevel.TslOceanWaterVolume2.Model_1'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.32"
+      },
+      "BrushBodySetup": {
+        "ObjectName": "BodySetup'Water:PersistentLevel.TslOceanWaterVolume2.BrushComponent0.BodySetup_43'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.7"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "PhysMaterialOverride": {
+          "ObjectName": "PhysicalMaterial'PhysMat_Water'",
+          "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Water.0"
+        }
+      },
+      "RelativeLocation": {
+        "X": 373251.34,
+        "Y": 58298.06,
+        "Z": 3060.0
+      }
+    }
+  },
+  {
+    "Type": "DirectionalLightComponent",
+    "Name": "CausticsDirectionalLight",
+    "Outer": "BP_Underwater_735",
+    "Template": "CausticsDirectionalLight_GEN_VARIABLE",
+    "Class": "UScriptClass'DirectionalLightComponent'",
+    "Properties": {
+      "LightGuid": "A919C8DA-4C81F911-C075E3AF-878469EE",
+      "bVisible": false,
+      "AttachParent": {
+        "ObjectName": "BillboardComponent'Water:PersistentLevel.BP_Underwater_735.Billboard'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.2"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "bVisible",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "InfiniteSystemComponent",
+    "Name": "InfiniteSystem",
+    "Outer": "BP_Ocean_177",
+    "Template": "InfiniteSystem297E7DD9439EE0D8A8EBD488FA0E47C1",
+    "Class": "UScriptClass'InfiniteSystemComponent'",
+    "Properties": {
+      "ScaleMin": 1.0,
+      "AttachParent": {
+        "ObjectName": "OceanMeshComponent'Water:PersistentLevel.BP_Ocean_177.OceanPlane'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.33"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'InfiniteSystemComponent'",
+            "ObjectPath": "/Script/OceanPlugin"
+          },
+          "MemberName": "ScaleMin",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Outer": "Water",
+    "Class": "UScriptClass'Level'",
+    "Properties": {
+      "LevelBuildDataId": "84346A66-4E749F23-B76EAAAB-AEFF0D29",
+      "Model": {
+        "ObjectName": "Model'Water:PersistentLevel.Model_0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.27"
+      },
+      "WorldSettings": {
+        "ObjectName": "WorldSettings'Water:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.44"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "WorldSettings'Water:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.44"
+      },
+      null,
+      {
+        "ObjectName": "LevelBounds'Water:PersistentLevel.LevelBounds_0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.20"
+      },
+      {
+        "ObjectName": "TslPhysicsVolume'Water:PersistentLevel.TslOceanWaterVolume'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.41"
+      },
+      {
+        "ObjectName": "BP_Ocean_C'Water:PersistentLevel.BP_Ocean_177'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.10"
+      },
+      {
+        "ObjectName": "BP_Underwater_C'Water:PersistentLevel.BP_Underwater_735'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.11"
+      },
+      {
+        "ObjectName": "AbstractNavData'Water:PersistentLevel.AbstractNavData-Default'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.0"
+      },
+      {
+        "ObjectName": "TslPhysicsVolume'Water:PersistentLevel.TslOceanWaterVolume2'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.42"
+      },
+      {
+        "ObjectName": "PostProcessVolume'Water:PersistentLevel.PP_Underwater3'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.35"
+      },
+      null,
+      {
+        "ObjectName": "PostProcessVolume'Water:PersistentLevel.PP_UnderWater'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.34"
+      },
+      {
+        "ObjectName": "PostProcessVolume'Water:PersistentLevel.PP_Underwater_Masked'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.36"
+      }
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/Maps/TslLobby",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'Water:PersistentLevel.Model_0'",
+      "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.27"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": null,
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "LevelBounds",
+    "Name": "LevelBounds_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelBounds'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Water:PersistentLevel.LevelBounds_0.BoxComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.9"
+      }
+    }
+  },
+  {
+    "Type": "MaterialInstanceDynamic",
+    "Name": "MaterialInstanceDynamic_3",
+    "Outer": "DepthPlaneTopside",
+    "Class": "UScriptClass'MaterialInstanceDynamic'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "MaterialInstanceConstant'M_Inst_Ocean_Depth'",
+        "ObjectPath": "TslGame/Content/Ocean/Materials/M_Ocean_Versions/M_Inst_Ocean_Depth.0"
+      },
+      "TextureParameterValues": [
+        {
+          "ParameterName": "Large Wave Height",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_LargeWaves_H'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_LargeWaves_H.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialInstanceDynamic",
+    "Name": "MaterialInstanceDynamic_0",
+    "Outer": "OceanPlane",
+    "Class": "UScriptClass'MaterialInstanceDynamic'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material'M_Ocean_SurfaceTranslucency_OPT'",
+        "ObjectPath": "TslGame/Content/Ocean/Materials/M_Ocean_Versions/M_Ocean_SurfaceTranslucency_OPT.0"
+      },
+      "TextureParameterValues": [
+        {
+          "ParameterName": "Wave Normal",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_normal'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_normal.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Small Wave Normal",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_normal'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_normal.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Far Wave Normal",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_normal'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_normal.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Large Wave Height",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_LargeWaves_H'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_LargeWaves_H.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "ShoreFoam",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_D'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_D.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "ShoreFoam2",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Perlin_Noise_M'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Perlin_Noise_M.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "ShoreFoamRoughness",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_roughness'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_roughness.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Seafoam Texture",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Seafoam_01'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Seafoam_01.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Reflection Cubemap",
+          "ParameterValue": {
+            "ObjectName": "TextureCube'Desert_Outer_HDR'",
+            "ObjectPath": "Engine/Content/MapTemplates/Sky/Desert_Outer_HDR.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialInstanceDynamic",
+    "Name": "MaterialInstanceDynamic_1",
+    "Outer": "OceanPlane",
+    "Class": "UScriptClass'MaterialInstanceDynamic'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material'M_Ocean_Opaque_OPT'",
+        "ObjectPath": "TslGame/Content/Ocean/Materials/M_Ocean_Versions/M_Ocean_Opaque_OPT.0"
+      },
+      "TextureParameterValues": [
+        {
+          "ParameterName": "Wave Normal",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_normal'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_normal.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Small Wave Normal",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_normal'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_normal.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Far Wave Normal",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_normal'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_normal.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Large Wave Height",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_LargeWaves_H'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_LargeWaves_H.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "ShoreFoam",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_D'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_D.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "ShoreFoam2",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Perlin_Noise_M'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Perlin_Noise_M.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "ShoreFoamRoughness",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_roughness'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_roughness.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Seafoam Texture",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Seafoam_01'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Seafoam_01.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Reflection Cubemap",
+          "ParameterValue": {
+            "ObjectName": "TextureCube'Desert_Outer_HDR'",
+            "ObjectPath": "Engine/Content/MapTemplates/Sky/Desert_Outer_HDR.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialInstanceDynamic",
+    "Name": "MaterialInstanceDynamic_2",
+    "Outer": "OceanPlane",
+    "Class": "UScriptClass'MaterialInstanceDynamic'",
+    "Properties": {
+      "Parent": {
+        "ObjectName": "Material'M_Ocean_Forward_OPT'",
+        "ObjectPath": "TslGame/Content/Ocean/Materials/M_Ocean_Versions/M_Ocean_Forward_OPT.0"
+      },
+      "TextureParameterValues": [
+        {
+          "ParameterName": "Wave Normal",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_normal'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_normal.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Small Wave Normal",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_normal'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_normal.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Far Wave Normal",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_normal'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_normal.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Large Wave Height",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_LargeWaves_H'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_LargeWaves_H.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "ShoreFoam",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_D'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_D.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "ShoreFoam2",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Perlin_Noise_M'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Perlin_Noise_M.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "ShoreFoamRoughness",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Foam_roughness'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Foam_roughness.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Seafoam Texture",
+          "ParameterValue": {
+            "ObjectName": "Texture2D'T_Seafoam_01'",
+            "ObjectPath": "TslGame/Content/Ocean/Textures/T_Seafoam_01.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "ParameterName": "Reflection Cubemap",
+          "ParameterValue": {
+            "ObjectName": "TextureCube'Desert_Outer_HDR'",
+            "ObjectPath": "Engine/Content/MapTemplates/Sky/Desert_Outer_HDR.0"
+          },
+          "ExpressionGUID": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MeshClippingUnderwaterComponent",
+    "Name": "MeshClippingUnderwaterComponent",
+    "Outer": "TslOceanWaterVolume",
+    "Class": "UScriptClass'MeshClippingUnderwaterComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {},
+      "AttachParent": {
+        "ObjectName": "BrushComponent'Water:PersistentLevel.TslOceanWaterVolume.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.15"
+      }
+    }
+  },
+  {
+    "Type": "MeshClippingUnderwaterComponent",
+    "Name": "MeshClippingUnderwaterComponent",
+    "Outer": "TslOceanWaterVolume2",
+    "Class": "UScriptClass'MeshClippingUnderwaterComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {},
+      "AttachParent": {
+        "ObjectName": "BrushComponent'Water:PersistentLevel.TslOceanWaterVolume2.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.16"
+      }
+    }
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "203BD39C-4639635B-14B716AF-9554A3E8",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_3",
+    "Outer": "PP_UnderWater",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 50.0,
+        "Y": 50.0,
+        "Z": 50.0
+      },
+      "SphereRadius": 86.60254
+    },
+    "Vectors": [
+      {
+        "X": -1.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1.0
+      },
+      {
+        "X": 1.0,
+        "Y": -0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": -1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      }
+    ],
+    "Points": [
+      {
+        "X": -50.0,
+        "Y": -50.0,
+        "Z": -50.0
+      },
+      {
+        "X": -50.0,
+        "Y": -50.0,
+        "Z": 50.0
+      },
+      {
+        "X": -50.0,
+        "Y": 50.0,
+        "Z": 50.0
+      },
+      {
+        "X": -50.0,
+        "Y": 50.0,
+        "Z": -50.0
+      },
+      {
+        "X": 50.0,
+        "Y": 50.0,
+        "Z": 50.0
+      },
+      {
+        "X": 50.0,
+        "Y": 50.0,
+        "Z": -50.0
+      },
+      {
+        "X": 50.0,
+        "Y": -50.0,
+        "Z": 50.0
+      },
+      {
+        "X": 50.0,
+        "Y": -50.0,
+        "Z": -50.0
+      }
+    ],
+    "Nodes": [
+      {
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 50.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 0,
+        "iSurf": 0,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 50.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 4,
+        "iSurf": 1,
+        "iVertexIndex": 4,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 2,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 50.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 8,
+        "iSurf": 2,
+        "iVertexIndex": 8,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 3,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 50.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 12,
+        "iSurf": 3,
+        "iVertexIndex": 12,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 4,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 50.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "iVertPool": 16,
+        "iSurf": 4,
+        "iVertexIndex": 16,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 5,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 50.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "iVertPool": 20,
+        "iSurf": 5,
+        "iVertexIndex": 20,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": -1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": 0,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      }
+    ],
+    "Surfs": [
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 0,
+        "vTextureU": 1,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 50.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 3,
+        "vNormal": 1,
+        "vTextureU": 3,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 50.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 5,
+        "vNormal": 3,
+        "vTextureU": 4,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 50.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 7,
+        "vNormal": 4,
+        "vTextureU": 0,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 50.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 2,
+        "vNormal": 5,
+        "vTextureU": 3,
+        "vTextureV": 1,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 50.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 2,
+        "vTextureU": 3,
+        "vTextureV": 4,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 50.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      }
+    ],
+    "NumSharedSides": 4,
+    "VertexBuffer": null,
+    "LightingGuid": "FF0BE608-46956CCA-41309A81-DC77C91F",
+    "LightmassSettings": [
+      {
+        "bUseTwoSidedLighting": false,
+        "bShadowIndirectOnly": false,
+        "bUseEmissiveForStaticLighting": false,
+        "bUseVertexNormalForHemisphereGather": false,
+        "EmissiveLightFalloffExponent": 8.0,
+        "EmissiveLightExplicitInfluenceRadius": 0.0,
+        "EmissiveBoost": 1.0,
+        "DiffuseBoost": 1.0,
+        "FullyOccludedSamplesFraction": 1.0
+      }
+    ]
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_14",
+    "Outer": "PP_Underwater3",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 32500.0,
+        "Y": 21500.0,
+        "Z": 5000.0
+      },
+      "SphereRadius": 39287.402
+    },
+    "Vectors": [
+      {
+        "X": -0.99999994,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.99999994,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1.0
+      },
+      {
+        "X": 0.99999994,
+        "Y": -0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": -0.99999994,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      }
+    ],
+    "Points": [
+      {
+        "X": -32500.0,
+        "Y": -21500.0,
+        "Z": -5000.0
+      },
+      {
+        "X": -32500.0,
+        "Y": -21500.0,
+        "Z": 5000.0
+      },
+      {
+        "X": -32500.0,
+        "Y": 21500.0,
+        "Z": 5000.0
+      },
+      {
+        "X": -32500.0,
+        "Y": 21500.0,
+        "Z": -5000.0
+      },
+      {
+        "X": 32500.0,
+        "Y": 21500.0,
+        "Z": 5000.0
+      },
+      {
+        "X": 32500.0,
+        "Y": 21500.0,
+        "Z": -5000.0
+      },
+      {
+        "X": 32500.0,
+        "Y": -21500.0,
+        "Z": 5000.0
+      },
+      {
+        "X": 32500.0,
+        "Y": -21500.0,
+        "Z": -5000.0
+      }
+    ],
+    "Nodes": [
+      {
+        "Plane": {
+          "Vector": {
+            "X": -0.99999994,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 32499.998,
+          "X": -0.99999994,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 0,
+        "iSurf": 0,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.99999994,
+            "Z": 0.0
+          },
+          "W": 21499.998,
+          "X": 0.0,
+          "Y": 0.99999994,
+          "Z": 0.0
+        },
+        "iVertPool": 4,
+        "iSurf": 1,
+        "iVertexIndex": 4,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 2,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.99999994,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 32499.998,
+          "X": 0.99999994,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 8,
+        "iSurf": 2,
+        "iVertexIndex": 8,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 3,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -0.99999994,
+            "Z": 0.0
+          },
+          "W": 21499.998,
+          "X": 0.0,
+          "Y": -0.99999994,
+          "Z": 0.0
+        },
+        "iVertPool": 12,
+        "iSurf": 3,
+        "iVertexIndex": 12,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 4,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 5000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "iVertPool": 16,
+        "iSurf": 4,
+        "iVertexIndex": 16,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 5,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 5000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "iVertPool": 20,
+        "iSurf": 5,
+        "iVertexIndex": 20,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": -1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": 0,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      }
+    ],
+    "Surfs": [
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 0,
+        "vTextureU": 1,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": -0.99999994,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 32499.998,
+          "X": -0.99999994,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 3,
+        "vNormal": 1,
+        "vTextureU": 3,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.99999994,
+            "Z": 0.0
+          },
+          "W": 21499.998,
+          "X": 0.0,
+          "Y": 0.99999994,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 5,
+        "vNormal": 3,
+        "vTextureU": 4,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.99999994,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 32499.998,
+          "X": 0.99999994,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 7,
+        "vNormal": 4,
+        "vTextureU": 0,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -0.99999994,
+            "Z": 0.0
+          },
+          "W": 21499.998,
+          "X": 0.0,
+          "Y": -0.99999994,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 2,
+        "vNormal": 5,
+        "vTextureU": 3,
+        "vTextureV": 1,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 5000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 2,
+        "vTextureU": 3,
+        "vTextureV": 4,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 5000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      }
+    ],
+    "NumSharedSides": 4,
+    "VertexBuffer": null,
+    "LightingGuid": "9B15EE40-4C2EEC72-C013EAA2-C2CA8F68",
+    "LightmassSettings": [
+      {
+        "bUseTwoSidedLighting": false,
+        "bShadowIndirectOnly": false,
+        "bUseEmissiveForStaticLighting": false,
+        "bUseVertexNormalForHemisphereGather": false,
+        "EmissiveLightFalloffExponent": 8.0,
+        "EmissiveLightExplicitInfluenceRadius": 0.0,
+        "EmissiveBoost": 1.0,
+        "DiffuseBoost": 1.0,
+        "FullyOccludedSamplesFraction": 1.0
+      }
+    ]
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_4",
+    "Outer": "PP_Underwater_Masked",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 100.0,
+        "Y": 100.0,
+        "Z": 100.0
+      },
+      "SphereRadius": 173.20508
+    },
+    "Vectors": [
+      {
+        "X": -1.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1.0
+      },
+      {
+        "X": 1.0,
+        "Y": -0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": -1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      }
+    ],
+    "Points": [
+      {
+        "X": -100.0,
+        "Y": -100.0,
+        "Z": -100.0
+      },
+      {
+        "X": -100.0,
+        "Y": -100.0,
+        "Z": 100.0
+      },
+      {
+        "X": -100.0,
+        "Y": 100.0,
+        "Z": 100.0
+      },
+      {
+        "X": -100.0,
+        "Y": 100.0,
+        "Z": -100.0
+      },
+      {
+        "X": 100.0,
+        "Y": 100.0,
+        "Z": 100.0
+      },
+      {
+        "X": 100.0,
+        "Y": 100.0,
+        "Z": -100.0
+      },
+      {
+        "X": 100.0,
+        "Y": -100.0,
+        "Z": 100.0
+      },
+      {
+        "X": 100.0,
+        "Y": -100.0,
+        "Z": -100.0
+      }
+    ],
+    "Nodes": [
+      {
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 0,
+        "iSurf": 0,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 4,
+        "iSurf": 1,
+        "iVertexIndex": 4,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 2,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 8,
+        "iSurf": 2,
+        "iVertexIndex": 8,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 3,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 12,
+        "iSurf": 3,
+        "iVertexIndex": 12,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 4,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "iVertPool": 16,
+        "iSurf": 4,
+        "iVertexIndex": 16,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 5,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "iVertPool": 20,
+        "iSurf": 5,
+        "iVertexIndex": 20,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": -1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": 0,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      }
+    ],
+    "Surfs": [
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 0,
+        "vTextureU": 1,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 3,
+        "vNormal": 1,
+        "vTextureU": 3,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 5,
+        "vNormal": 3,
+        "vTextureU": 4,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 7,
+        "vNormal": 4,
+        "vTextureU": 0,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 2,
+        "vNormal": 5,
+        "vTextureU": 3,
+        "vTextureV": 1,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 2,
+        "vTextureU": 3,
+        "vTextureV": 4,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 100.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      }
+    ],
+    "NumSharedSides": 4,
+    "VertexBuffer": null,
+    "LightingGuid": "11572370-47924AC1-3D27AAB1-49148A09",
+    "LightmassSettings": [
+      {
+        "bUseTwoSidedLighting": false,
+        "bShadowIndirectOnly": false,
+        "bUseEmissiveForStaticLighting": false,
+        "bUseVertexNormalForHemisphereGather": false,
+        "EmissiveLightFalloffExponent": 8.0,
+        "EmissiveLightExplicitInfluenceRadius": 0.0,
+        "EmissiveBoost": 1.0,
+        "DiffuseBoost": 1.0,
+        "FullyOccludedSamplesFraction": 1.0
+      }
+    ]
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_1",
+    "Outer": "TslOceanWaterVolume",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 2500000.0,
+        "Y": 2500000.0,
+        "Z": 50000.0
+      },
+      "SphereRadius": 3535887.5
+    },
+    "Vectors": [
+      {
+        "X": -1.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1.0
+      },
+      {
+        "X": 1.0,
+        "Y": -0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": -1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      }
+    ],
+    "Points": [
+      {
+        "X": -2500000.0,
+        "Y": -2500000.0,
+        "Z": -50000.0
+      },
+      {
+        "X": -2500000.0,
+        "Y": -2500000.0,
+        "Z": 50000.0
+      },
+      {
+        "X": -2500000.0,
+        "Y": 2500000.0,
+        "Z": 50000.0
+      },
+      {
+        "X": -2500000.0,
+        "Y": 2500000.0,
+        "Z": -50000.0
+      },
+      {
+        "X": 2500000.0,
+        "Y": 2500000.0,
+        "Z": 50000.0
+      },
+      {
+        "X": 2500000.0,
+        "Y": 2500000.0,
+        "Z": -50000.0
+      },
+      {
+        "X": 2500000.0,
+        "Y": -2500000.0,
+        "Z": 50000.0
+      },
+      {
+        "X": 2500000.0,
+        "Y": -2500000.0,
+        "Z": -50000.0
+      }
+    ],
+    "Nodes": [
+      {
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 2500000.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 0,
+        "iSurf": 0,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 2500000.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 4,
+        "iSurf": 1,
+        "iVertexIndex": 4,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 2,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 2500000.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 8,
+        "iSurf": 2,
+        "iVertexIndex": 8,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 3,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 2500000.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 12,
+        "iSurf": 3,
+        "iVertexIndex": 12,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 4,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 50000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "iVertPool": 16,
+        "iSurf": 4,
+        "iVertexIndex": 16,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 5,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 50000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "iVertPool": 20,
+        "iSurf": 5,
+        "iVertexIndex": 20,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": -1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": 0,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      }
+    ],
+    "Surfs": [
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 0,
+        "vTextureU": 1,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 2500000.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 3,
+        "vNormal": 1,
+        "vTextureU": 3,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 2500000.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 5,
+        "vNormal": 3,
+        "vTextureU": 4,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 2500000.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 7,
+        "vNormal": 4,
+        "vTextureU": 0,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 2500000.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 2,
+        "vNormal": 5,
+        "vTextureU": 3,
+        "vTextureV": 1,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 50000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 2,
+        "vTextureU": 3,
+        "vTextureV": 4,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 50000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      }
+    ],
+    "NumSharedSides": 4,
+    "VertexBuffer": null,
+    "LightingGuid": "103F02C4-41639642-1BCEFC9F-54CB0B47",
+    "LightmassSettings": [
+      {
+        "bUseTwoSidedLighting": false,
+        "bShadowIndirectOnly": false,
+        "bUseEmissiveForStaticLighting": false,
+        "bUseVertexNormalForHemisphereGather": false,
+        "EmissiveLightFalloffExponent": 8.0,
+        "EmissiveLightExplicitInfluenceRadius": 0.0,
+        "EmissiveBoost": 1.0,
+        "DiffuseBoost": 1.0,
+        "FullyOccludedSamplesFraction": 1.0
+      }
+    ]
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_1",
+    "Outer": "TslOceanWaterVolume2",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 32500.0,
+        "Y": 21500.0,
+        "Z": 5000.0
+      },
+      "SphereRadius": 39287.402
+    },
+    "Vectors": [
+      {
+        "X": -0.99999994,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.99999994,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1.0
+      },
+      {
+        "X": 0.99999994,
+        "Y": -0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": -0.99999994,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      }
+    ],
+    "Points": [
+      {
+        "X": -32500.0,
+        "Y": -21500.0,
+        "Z": -5000.0
+      },
+      {
+        "X": -32500.0,
+        "Y": -21500.0,
+        "Z": 5000.0
+      },
+      {
+        "X": -32500.0,
+        "Y": 21500.0,
+        "Z": 5000.0
+      },
+      {
+        "X": -32500.0,
+        "Y": 21500.0,
+        "Z": -5000.0
+      },
+      {
+        "X": 32500.0,
+        "Y": 21500.0,
+        "Z": 5000.0
+      },
+      {
+        "X": 32500.0,
+        "Y": 21500.0,
+        "Z": -5000.0
+      },
+      {
+        "X": 32500.0,
+        "Y": -21500.0,
+        "Z": 5000.0
+      },
+      {
+        "X": 32500.0,
+        "Y": -21500.0,
+        "Z": -5000.0
+      }
+    ],
+    "Nodes": [
+      {
+        "Plane": {
+          "Vector": {
+            "X": -0.99999994,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 32499.998,
+          "X": -0.99999994,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 0,
+        "iSurf": 0,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.99999994,
+            "Z": 0.0
+          },
+          "W": 21499.998,
+          "X": 0.0,
+          "Y": 0.99999994,
+          "Z": 0.0
+        },
+        "iVertPool": 4,
+        "iSurf": 1,
+        "iVertexIndex": 4,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 2,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.99999994,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 32499.998,
+          "X": 0.99999994,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 8,
+        "iSurf": 2,
+        "iVertexIndex": 8,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 3,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -0.99999994,
+            "Z": 0.0
+          },
+          "W": 21499.998,
+          "X": 0.0,
+          "Y": -0.99999994,
+          "Z": 0.0
+        },
+        "iVertPool": 12,
+        "iSurf": 3,
+        "iVertexIndex": 12,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 4,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 5000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "iVertPool": 16,
+        "iSurf": 4,
+        "iVertexIndex": 16,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 5,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 5000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "iVertPool": 20,
+        "iSurf": 5,
+        "iVertexIndex": 20,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": -1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": 0,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      }
+    ],
+    "Surfs": [
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 0,
+        "vTextureU": 1,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": -0.99999994,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 32499.998,
+          "X": -0.99999994,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 3,
+        "vNormal": 1,
+        "vTextureU": 3,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.99999994,
+            "Z": 0.0
+          },
+          "W": 21499.998,
+          "X": 0.0,
+          "Y": 0.99999994,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 5,
+        "vNormal": 3,
+        "vTextureU": 4,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.99999994,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 32499.998,
+          "X": 0.99999994,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 7,
+        "vNormal": 4,
+        "vTextureU": 0,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -0.99999994,
+            "Z": 0.0
+          },
+          "W": 21499.998,
+          "X": 0.0,
+          "Y": -0.99999994,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 2,
+        "vNormal": 5,
+        "vTextureU": 3,
+        "vTextureV": 1,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 5000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 2,
+        "vTextureU": 3,
+        "vTextureV": 4,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 5000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      }
+    ],
+    "NumSharedSides": 4,
+    "VertexBuffer": null,
+    "LightingGuid": "E94DD4F9-497A5FF8-AD8E1B9D-32CD0862",
+    "LightmassSettings": [
+      {
+        "bUseTwoSidedLighting": false,
+        "bShadowIndirectOnly": false,
+        "bUseEmissiveForStaticLighting": false,
+        "bUseVertexNormalForHemisphereGather": false,
+        "EmissiveLightFalloffExponent": 8.0,
+        "EmissiveLightExplicitInfluenceRadius": 0.0,
+        "EmissiveBoost": 1.0,
+        "DiffuseBoost": 1.0,
+        "FullyOccludedSamplesFraction": 1.0
+      }
+    ]
+  },
+  {
+    "Type": "OceanMeshComponent",
+    "Name": "OceanPlane",
+    "Outer": "BP_Ocean_177",
+    "Template": "OceanPlane_GEN_VARIABLE",
+    "Class": "UScriptClass'OceanMeshComponent'",
+    "Properties": {
+      "DefaultMaterial": {
+        "ObjectName": "MaterialInstanceDynamic'Water:PersistentLevel.BP_Ocean_177.OceanPlane.MaterialInstanceDynamic_0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.22"
+      },
+      "LODMaterial": {
+        "ObjectName": "MaterialInstanceDynamic'Water:PersistentLevel.BP_Ocean_177.OceanPlane.MaterialInstanceDynamic_1'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.23"
+      },
+      "SimpleMaterial": {
+        "ObjectName": "MaterialInstanceDynamic'Water:PersistentLevel.BP_Ocean_177.OceanPlane.MaterialInstanceDynamic_2'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.24"
+      },
+      "BoundsExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 24.0
+      },
+      "LODTransitionStart": 15000.0,
+      "LODTransitionEnd": 18000.0,
+      "AttachParent": {
+        "ObjectName": "BillboardComponent'Water:PersistentLevel.BP_Ocean_177.Icon'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.1"
+      },
+      "RelativeLocation": {
+        "X": -18760.156,
+        "Y": 130419.25,
+        "Z": 0.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'OceanMeshComponent'",
+            "ObjectPath": "/Script/OceanPlugin"
+          },
+          "MemberName": "DefaultMaterial",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'OceanMeshComponent'",
+            "ObjectPath": "/Script/OceanPlugin"
+          },
+          "MemberName": "LODMaterial",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'OceanMeshComponent'",
+            "ObjectPath": "/Script/OceanPlugin"
+          },
+          "MemberName": "SimpleMaterial",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'OceanMeshComponent'",
+            "ObjectPath": "/Script/OceanPlugin"
+          },
+          "MemberName": "BoundsExtent",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'OceanMeshComponent'",
+            "ObjectPath": "/Script/OceanPlugin"
+          },
+          "MemberName": "LODTransitionStart",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'OceanMeshComponent'",
+            "ObjectPath": "/Script/OceanPlugin"
+          },
+          "MemberName": "LODTransitionEnd",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PostProcessVolume",
+    "Name": "PP_UnderWater",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'PostProcessVolume'",
+    "Properties": {
+      "Settings": {
+        "WeightedBlendables": {
+          "Array": [
+            {
+              "Weight": 1.0,
+              "Object": {
+                "ObjectName": "MaterialInstanceConstant'M_Underwater_PP_Inst2'",
+                "ObjectPath": "TslGame/Content/Ocean/Materials/M_Underwater_PP_Inst2.0"
+              }
+            },
+            {
+              "Weight": 1.0,
+              "Object": {
+                "ObjectName": "Material'M_UnderwaterDistortion'",
+                "ObjectPath": "TslGame/Content/Ocean/Materials/M_UnderwaterDistortion.0"
+              }
+            }
+          ]
+        }
+      },
+      "BlendRadius": 5.0,
+      "BrushType": "Brush_Add",
+      "Brush": {
+        "ObjectName": "Model'Water:PersistentLevel.PP_UnderWater.Model_3'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.28"
+      },
+      "BrushComponent": {
+        "ObjectName": "BrushComponent'Water:PersistentLevel.PP_UnderWater.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.12"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "bHidden": false,
+      "RootComponent": {
+        "ObjectName": "BrushComponent'Water:PersistentLevel.PP_UnderWater.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.12"
+      }
+    }
+  },
+  {
+    "Type": "PostProcessVolume",
+    "Name": "PP_Underwater3",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'PostProcessVolume'",
+    "Properties": {
+      "Settings": {
+        "bOverride_WhiteTemp": true,
+        "bOverride_SceneColorTint": true,
+        "bOverride_SceneFringeIntensity": true,
+        "bOverride_VignetteIntensity": true,
+        "bOverride_DepthOfFieldFocalDistance": true,
+        "bOverride_DepthOfFieldFocalRegion": true,
+        "bOverride_DepthOfFieldNearTransitionRegion": true,
+        "bOverride_DepthOfFieldFarTransitionRegion": true,
+        "bOverride_DepthOfFieldNearBlurSize": true,
+        "bOverride_DepthOfFieldFarBlurSize": true,
+        "WhiteTemp": 4486.725,
+        "WhiteTint": -0.035398,
+        "SceneColorTint": {
+          "R": 0.199675,
+          "G": 0.245,
+          "B": 0.202463,
+          "A": 1.0,
+          "Hex": "FF7B887C"
+        },
+        "SceneFringeIntensity": 1.5,
+        "AutoExposureMinBrightness": 5.0,
+        "AutoExposureMaxBrightness": 1.0,
+        "AutoExposureBias": -1.20354,
+        "VignetteIntensity": 0.646018,
+        "DepthOfFieldMethod": "DOFM_Gaussian",
+        "DepthOfFieldFocalDistance": 0.0,
+        "DepthOfFieldFocalRegion": 2831.8582,
+        "DepthOfFieldNearTransitionRegion": 10000.0,
+        "DepthOfFieldFarTransitionRegion": 2035.3981,
+        "DepthOfFieldNearBlurSize": 0.0,
+        "DepthOfFieldFarBlurSize": 0.2,
+        "WeightedBlendables": {
+          "Array": [
+            {
+              "Weight": 1.0,
+              "Object": {
+                "ObjectName": "MaterialInstanceConstant'MI_Underwater_PP'",
+                "ObjectPath": "TslGame/Content/Assets/World/Ocean/MI_Underwater_PP.0"
+              }
+            }
+          ]
+        }
+      },
+      "BlendRadius": 1.0,
+      "BrushType": "Brush_Add",
+      "Brush": {
+        "ObjectName": "Model'Water:PersistentLevel.PP_Underwater3.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.29"
+      },
+      "BrushComponent": {
+        "ObjectName": "BrushComponent'Water:PersistentLevel.PP_Underwater3.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.13"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "bHidden": false,
+      "RootComponent": {
+        "ObjectName": "BrushComponent'Water:PersistentLevel.PP_Underwater3.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.13"
+      }
+    }
+  },
+  {
+    "Type": "PostProcessVolume",
+    "Name": "PP_Underwater_Masked",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'PostProcessVolume'",
+    "Properties": {
+      "Settings": {
+        "WeightedBlendables": {
+          "Array": [
+            {
+              "Weight": 0.0,
+              "Object": {
+                "ObjectName": "MaterialInstanceConstant'M_Underwater_PP_Inst2_Masked'",
+                "ObjectPath": "TslGame/Content/Ocean/Materials/M_Underwater_PP_Inst2_Masked.0"
+              }
+            }
+          ]
+        }
+      },
+      "Priority": 1.0,
+      "bUnbound": true,
+      "BrushType": "Brush_Add",
+      "Brush": {
+        "ObjectName": "Model'Water:PersistentLevel.PP_Underwater_Masked.Model_4'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.30"
+      },
+      "BrushComponent": {
+        "ObjectName": "BrushComponent'Water:PersistentLevel.PP_Underwater_Masked.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.14"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "bHidden": false,
+      "RootComponent": {
+        "ObjectName": "BrushComponent'Water:PersistentLevel.PP_Underwater_Masked.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.14"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DepthPlaneTopside",
+    "Outer": "BP_Ocean_177",
+    "Template": "DepthPlaneTopside_GEN_VARIABLE",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceDynamic'Water:PersistentLevel.BP_Ocean_177.DepthPlaneTopside.MaterialInstanceDynamic_3'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.21"
+        }
+      ],
+      "bRenderCustomDepth": false,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "AttachParent": {
+        "ObjectName": "OceanMeshComponent'Water:PersistentLevel.BP_Ocean_177.OceanPlane'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.33"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'MeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "OverrideMaterials",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'PrimitiveComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "BodyInstance",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "DepthPlaneUnderside",
+    "Outer": "BP_Ocean_177",
+    "Template": "DepthPlaneUnderside_GEN_VARIABLE",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceDynamic'Water:PersistentLevel.BP_Ocean_177.DepthPlaneTopside.MaterialInstanceDynamic_3'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.21"
+        }
+      ],
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "AttachParent": {
+        "ObjectName": "OceanMeshComponent'Water:PersistentLevel.BP_Ocean_177.OceanPlane'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.33"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'MeshComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "OverrideMaterials",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        },
+        {
+          "MemberParent": {
+            "ObjectName": "Class'PrimitiveComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "BodyInstance",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "TimelineComponent",
+    "Name": "WetLensBlurFade",
+    "Outer": "BP_Underwater_735",
+    "Class": "UScriptClass'TimelineComponent'",
+    "Properties": {
+      "TheTimeline": {
+        "LengthMode": "TL_TimelineLength",
+        "InterpFloats": [
+          {
+            "FloatCurve": {
+              "ObjectName": "CurveFloat'BP_Underwater_C:CurveFloat_0'",
+              "ObjectPath": "TslGame/Content/Ocean/BP_Underwater.113"
+            },
+            "InterpFunc": {
+              "Num": 0,
+              "Name": "None"
+            },
+            "TrackName": "Blur",
+            "FloatPropertyName": "WetLensBlurFade_Blur_B2C70C3E4A4917173B3F64B8E8588721"
+          }
+        ],
+        "TimelinePostUpdateFunc": {
+          "Num": 12,
+          "Name": "WetLensBlurFade__UpdateFunc"
+        },
+        "TimelineFinishedFunc": {
+          "Num": 12,
+          "Name": "WetLensBlurFade__FinishedFunc"
+        },
+        "PropertySetObject": {
+          "ObjectName": "BP_Underwater_C'Water:PersistentLevel.BP_Underwater_735'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.11"
+        },
+        "DirectionPropertyName": "WetLensBlurFade__Direction_B2C70C3E4A4917173B3F64B8E8588721"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::UserConstructionScript"
+    }
+  },
+  {
+    "Type": "TimelineComponent",
+    "Name": "WetLensDistortFade",
+    "Outer": "BP_Underwater_735",
+    "Class": "UScriptClass'TimelineComponent'",
+    "Properties": {
+      "TheTimeline": {
+        "LengthMode": "TL_TimelineLength",
+        "InterpFloats": [
+          {
+            "FloatCurve": {
+              "ObjectName": "CurveFloat'BP_Underwater_C:CurveFloat_0_1'",
+              "ObjectPath": "TslGame/Content/Ocean/BP_Underwater.114"
+            },
+            "InterpFunc": {
+              "Num": 0,
+              "Name": "None"
+            },
+            "TrackName": "Distort",
+            "FloatPropertyName": "WetLensDistortFade_Distort_DB03BB894275DA67C2B7AE9C6381C460"
+          }
+        ],
+        "TimelinePostUpdateFunc": {
+          "Num": 12,
+          "Name": "WetLensDistortFade__UpdateFunc"
+        },
+        "TimelineFinishedFunc": {
+          "Num": 12,
+          "Name": "WetLensDistortFade__FinishedFunc"
+        },
+        "PropertySetObject": {
+          "ObjectName": "BP_Underwater_C'Water:PersistentLevel.BP_Underwater_735'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.11"
+        },
+        "DirectionPropertyName": "WetLensDistortFade__Direction_DB03BB894275DA67C2B7AE9C6381C460"
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::UserConstructionScript"
+    }
+  },
+  {
+    "Type": "TslPhysicsVolume",
+    "Name": "TslOceanWaterVolume",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'TslPhysicsVolume'",
+    "Properties": {
+      "OceanManager": {
+        "ObjectName": "BP_Ocean_C'Water:PersistentLevel.BP_Ocean_177'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.10"
+      },
+      "DefaultWaterSplash": {
+        "ObjectName": "BlueprintGeneratedClass'P_Water_Dive_Char_BP_C'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Character/P_Water_Dive_Char_BP.24"
+      },
+      "VehicleWaterSplash": {
+        "ObjectName": "BlueprintGeneratedClass'P_Water_Dive_Car_BP_C'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Vehicle/P_Water_Dive_Car_BP.24"
+      },
+      "WaterSplashMuteTypes": [
+        {
+          "ObjectName": "Class'TslFloatingVehicle'",
+          "ObjectPath": "/Script/TslGame"
+        }
+      ],
+      "MeshClippingUnderwaterComponent": {
+        "ObjectName": "MeshClippingUnderwaterComponent'Water:PersistentLevel.TslOceanWaterVolume.MeshClippingUnderwaterComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.25"
+      },
+      "WaterSplashOverrideMap": [
+        {
+          "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.ProjApple_C'": {
+            "ObjectName": "BlueprintGeneratedClass'P_Water_Dive_Proj_BP_C'",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Character/P_Water_Dive_Proj_BP.24"
+          }
+        },
+        {
+          "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.ProjFlashBang_C'": {
+            "ObjectName": "BlueprintGeneratedClass'P_Water_Dive_Proj_BP_C'",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Character/P_Water_Dive_Proj_BP.24"
+          }
+        },
+        {
+          "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.ProjGrenade_C'": {
+            "ObjectName": "BlueprintGeneratedClass'P_Water_Dive_Proj_BP_C'",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Character/P_Water_Dive_Proj_BP.24"
+          }
+        },
+        {
+          "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.ProjMolotov_C'": {
+            "ObjectName": "BlueprintGeneratedClass'P_Water_Dive_Proj_BP_C'",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Character/P_Water_Dive_Proj_BP.24"
+          }
+        },
+        {
+          "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_v2.ProjSmokeBomb_v2_C'": {
+            "ObjectName": "BlueprintGeneratedClass'P_Water_Dive_Proj_BP_C'",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Character/P_Water_Dive_Proj_BP.24"
+          }
+        }
+      ],
+      "Priority": 1,
+      "FluidFriction": 10.0,
+      "bWaterVolume": true,
+      "bPhysicsOnContact": true,
+      "BrushType": "Brush_Add",
+      "Brush": {
+        "ObjectName": "Model'Water:PersistentLevel.TslOceanWaterVolume.Model_1'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.31"
+      },
+      "BrushComponent": {
+        "ObjectName": "BrushComponent'Water:PersistentLevel.TslOceanWaterVolume.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.15"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "bHidden": false,
+      "RootComponent": {
+        "ObjectName": "BrushComponent'Water:PersistentLevel.TslOceanWaterVolume.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.15"
+      }
+    }
+  },
+  {
+    "Type": "TslPhysicsVolume",
+    "Name": "TslOceanWaterVolume2",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'TslPhysicsVolume'",
+    "Properties": {
+      "DefaultWaterSplash": {
+        "ObjectName": "BlueprintGeneratedClass'P_Water_Dive_Char_BP_C'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Character/P_Water_Dive_Char_BP.24"
+      },
+      "VehicleWaterSplash": {
+        "ObjectName": "BlueprintGeneratedClass'P_Water_Dive_Car_BP_C'",
+        "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Vehicle/P_Water_Dive_Car_BP.24"
+      },
+      "WaterSplashMuteTypes": [
+        {
+          "ObjectName": "Class'TslFloatingVehicle'",
+          "ObjectPath": "/Script/TslGame"
+        }
+      ],
+      "MeshClippingUnderwaterComponent": {
+        "ObjectName": "MeshClippingUnderwaterComponent'Water:PersistentLevel.TslOceanWaterVolume2.MeshClippingUnderwaterComponent'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.26"
+      },
+      "WaterSplashOverrideMap": [
+        {
+          "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjApple.ProjApple_C'": {
+            "ObjectName": "BlueprintGeneratedClass'P_Water_Dive_Proj_BP_C'",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Character/P_Water_Dive_Proj_BP.24"
+          }
+        },
+        {
+          "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjFlashBang.ProjFlashBang_C'": {
+            "ObjectName": "BlueprintGeneratedClass'P_Water_Dive_Proj_BP_C'",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Character/P_Water_Dive_Proj_BP.24"
+          }
+        },
+        {
+          "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjGrenade.ProjGrenade_C'": {
+            "ObjectName": "BlueprintGeneratedClass'P_Water_Dive_Proj_BP_C'",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Character/P_Water_Dive_Proj_BP.24"
+          }
+        },
+        {
+          "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjMolotov.ProjMolotov_C'": {
+            "ObjectName": "BlueprintGeneratedClass'P_Water_Dive_Proj_BP_C'",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Character/P_Water_Dive_Proj_BP.24"
+          }
+        },
+        {
+          "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb_v2.ProjSmokeBomb_v2_C'": {
+            "ObjectName": "BlueprintGeneratedClass'P_Water_Dive_Proj_BP_C'",
+            "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Character/P_Water_Dive_Proj_BP.24"
+          }
+        }
+      ],
+      "Priority": 1,
+      "FluidFriction": 10.0,
+      "bWaterVolume": true,
+      "bPhysicsOnContact": true,
+      "BrushType": "Brush_Add",
+      "Brush": {
+        "ObjectName": "Model'Water:PersistentLevel.TslOceanWaterVolume2.Model_1'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.32"
+      },
+      "BrushComponent": {
+        "ObjectName": "BrushComponent'Water:PersistentLevel.TslOceanWaterVolume2.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.16"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "bHidden": false,
+      "RootComponent": {
+        "ObjectName": "BrushComponent'Water:PersistentLevel.TslOceanWaterVolume2.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.16"
+      }
+    }
+  },
+  {
+    "Type": "World",
+    "Name": "Water",
+    "Class": "UScriptClass'World'",
+    "Properties": {
+      "DefaultPhysicsVolume": null
+    },
+    "PersistentLevel": {
+      "ObjectName": "Level'Water:PersistentLevel'",
+      "ObjectPath": "TslGame/Content/Maps/Desert/Landscape/Water.19"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  },
+  {
+    "Type": "WorldSettings",
+    "Name": "WorldSettings",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WorldSettings'"
+  }
+]

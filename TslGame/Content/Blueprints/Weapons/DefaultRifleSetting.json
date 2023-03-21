@@ -2,107 +2,119 @@
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "DefaultRifleSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript DefaultRifleSetting_C:SimpleConstructionScript_1",
+        "ObjectName": "SimpleConstructionScript'DefaultRifleSetting_C:SimpleConstructionScript_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslWeapon_Trajectory",
+      "ObjectName": "Class'TslWeapon_Trajectory'",
       "ObjectPath": "/Script/TslGame"
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "DefaultRifleSetting_C Default__DefaultRifleSetting_C",
+      "ObjectName": "DefaultRifleSetting_C'Default__DefaultRifleSetting_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.1"
     }
   },
   {
     "Type": "DefaultRifleSetting_C",
     "Name": "Default__DefaultRifleSetting_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.DefaultRifleSetting_C'",
     "Properties": {
-      "UnderWaterTrailFXClassPerLength": {
-        "80": {
-          "ObjectName": "BlueprintGeneratedClass BP_UnderwaterBulletTrailEffectShort_C",
-          "ObjectPath": "TslGame/Content/Effects/ParticleSystems/Weapons/AssaultRifle/Muzzle/BP_UnderwaterBulletTrailEffectShort.0"
-        },
-        "300": {
-          "ObjectName": "BlueprintGeneratedClass BP_UnderwaterBulletTrailEffectMid_C",
-          "ObjectPath": "TslGame/Content/Effects/ParticleSystems/Weapons/AssaultRifle/Muzzle/BP_UnderwaterBulletTrailEffectMid.0"
-        }
-      },
-      "TrailTargetParam": "ShockBeamEnd",
       "TrailFX": {
-        "ObjectName": "ParticleSystem P_AssaultRifle_Trail",
+        "ObjectName": "ParticleSystem'P_AssaultRifle_Trail'",
         "ObjectPath": "TslGame/Content/Effects/ParticleSystems/Weapons/AssaultRifle/Muzzle/P_AssaultRifle_Trail.31"
       },
       "ImpactTemplate": {
-        "ObjectName": "BlueprintGeneratedClass GunImpact_Med_C",
+        "ObjectName": "BlueprintGeneratedClass'GunImpact_Med_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Med.4"
       },
+      "UnderWaterTrailFXClassPerLength": [
+        {
+          "80": {
+            "ObjectName": "BlueprintGeneratedClass'BP_UnderwaterBulletTrailEffectShort_C'",
+            "ObjectPath": "TslGame/Content/Effects/ParticleSystems/Weapons/AssaultRifle/Muzzle/BP_UnderwaterBulletTrailEffectShort.0"
+          }
+        },
+        {
+          "300": {
+            "ObjectName": "BlueprintGeneratedClass'BP_UnderwaterBulletTrailEffectMid_C'",
+            "ObjectPath": "TslGame/Content/Effects/ParticleSystems/Weapons/AssaultRifle/Muzzle/BP_UnderwaterBulletTrailEffectMid.0"
+          }
+        }
+      ],
+      "TrailTargetParam": "ShockBeamEnd",
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__DefaultRifleSetting_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__DefaultRifleSetting_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.6"
       },
       "MuzzleAttachPoint": "MuzzleFlashSocket",
       "MuzzleFX": {
-        "ObjectName": "ParticleSystem P_AP5_Barrel_Smoke",
+        "ObjectName": "ParticleSystem'P_AP5_Barrel_Smoke'",
         "ObjectPath": "TslGame/Content/Weapons/FPSWeaponPack/Effects/ParticlesSystems/Weapons/AP5/P_AP5_Barrel_Smoke.83"
       },
       "FireForceFeedback": {
-        "ObjectName": "TslForceFeedbackEffect TslFFE_Fire",
+        "ObjectName": "TslForceFeedbackEffect'TslFFE_Fire'",
         "ObjectPath": "TslGame/Content/Effects/ForceFeedback/TslFFE_Fire.0"
       },
       "WeaponAnim": {
         "PickUp": {
-          "ObjectName": "AnimMontage MIL2_M3_W2_Glean_Montage",
+          "ObjectName": "AnimMontage'MIL2_M3_W2_Glean_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Military_Rifle/MIL2_M3_W2_Glean_Montage.0"
         }
       },
       "ProneRollAnim": {
         "RollLeft": {
-          "ObjectName": "AnimMontage MIL2_M3_W2_ProneRoll_L_Loop_IP_Montage",
+          "ObjectName": "AnimMontage'MIL2_M3_W2_ProneRoll_L_Loop_IP_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Military_Rifle/MIL2_M3_W2_ProneRoll_L_Loop_IP_Montage.0"
         },
         "RollRight": {
-          "ObjectName": "AnimMontage MIL2_M3_W2_ProneRoll_R_Loop_IP_Montage",
+          "ObjectName": "AnimMontage'MIL2_M3_W2_ProneRoll_R_Loop_IP_Montage'",
           "ObjectPath": "TslGame/Content/Characters/Animations/Human_Biped/Military_Rifle/MIL2_M3_W2_ProneRoll_R_Loop_IP_Montage.0"
         }
       },
-      "EquipAnimData": {
-        "EAccessorySlot::Slot_Secondary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Rifle_Combat_Stand_SecondarySlot_Montage.0"
-          },
-          "PlayRate": 1.5
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_Secondary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_SecondarySlot_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Rifle_Combat_Stand_SecondarySlot_Montage.0"
+            },
+            "PlayRate": 1.5
+          }
         },
-        "EAccessorySlot::Slot_SideArm": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Rifle_Combat_Stand_PistolSlot_Montage.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_SideArm": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PistolSlot_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Rifle_Combat_Stand_PistolSlot_Montage.0"
+            },
+            "PlayRate": 1.0
+          }
         },
-        "EAccessorySlot::Slot_Primary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Rifle_Combat_Stand_PrimarySlot_Montage.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_Primary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PrimarySlot_Montage'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Rifle_Combat_Stand_PrimarySlot_Montage.0"
+            },
+            "PlayRate": 1.0
+          }
         }
-      },
+      ],
       "HipDuration": 0.1,
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__DefaultRifleSetting_C:RootScene",
+        "ObjectName": "SceneComponent'Default__DefaultRifleSetting_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.2"
       }
     }
@@ -111,12 +123,13 @@
     "Type": "SceneComponent",
     "Name": "RootScene",
     "Outer": "Default__DefaultRifleSetting_C",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "DefaultRifleSetting_C Default__DefaultRifleSetting_C",
+              "ObjectName": "DefaultRifleSetting_C'Default__DefaultRifleSetting_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.1"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -128,19 +141,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "DefaultRifleSetting_C"
+    "Outer": "DefaultRifleSetting_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent DefaultRifleSetting_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'DefaultRifleSetting_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.3"
       },
       "VariableGuid": "0C6D3A3A-4277CE70-2C29309C-F1123538",
@@ -151,9 +166,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_1",
     "Outer": "DefaultRifleSetting_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node DefaultRifleSetting_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectName": "SCS_Node'DefaultRifleSetting_C:SimpleConstructionScript_1.SCS_Node_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.4"
       }
     }
@@ -162,11 +178,12 @@
     "Type": "WeaponMeshComponent",
     "Name": "WeaponMesh3P",
     "Outer": "Default__DefaultRifleSetting_C",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "bEnablePhysicsOnDedicatedServer": false,
       "bComponentUseFixedSkelBounds": true,
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__DefaultRifleSetting_C:RootScene",
+        "ObjectName": "SceneComponent'Default__DefaultRifleSetting_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.2"
       }
     }

@@ -2,11 +2,12 @@
   {
     "Type": "WeaponGunDataAsset",
     "Name": "WeapMG3_WeaponGunData",
+    "Class": "UScriptClass'WeaponGunDataAsset'",
     "Properties": {
       "WeaponGunConfig": {
         "AmmoItemID": "Item_Ammo_762mm_C",
         "TracerClass": {
-          "ObjectName": "ParticleSystem P_Tracer_LMG",
+          "ObjectName": "ParticleSystem'P_Tracer_LMG'",
           "ObjectPath": "TslGame/Content/Export_Marek/Tracer/P_Tracer_LMG.10"
         },
         "TracerAmmoMod": 5,
@@ -23,10 +24,14 @@
             ]
           }
         ],
-        "TimeBetweenShotsOverride": {
-          "EFiringMode::FullAutoFast": 0.060606,
-          "EFiringMode::FullAuto": 0.090909
-        },
+        "TimeBetweenShotsOverride": [
+          {
+            "EFiringMode::FullAutoFast": 0.060606
+          },
+          {
+            "EFiringMode::FullAuto": 0.090909
+          }
+        ],
         "NoAnimReloadDuration": 3.5,
         "FiringModes": [
           "EFiringMode::FullAuto",
@@ -47,16 +52,20 @@
           "Z": 2.0
         },
         "ADSTimeMultiplier": 0.9,
-        "GunshotFiremodeMap": {
-          "EFiringMode::FullAutoFast": {
-            "ObjectName": "AkAudioEvent Weapon_MG3_Fire_LongTail_Fast",
-            "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/MG3/Weapon_MG3_Fire_LongTail_Fast.0"
+        "GunshotFiremodeMap": [
+          {
+            "EFiringMode::FullAutoFast": {
+              "ObjectName": "AkAudioEvent'Weapon_MG3_Fire_LongTail_Fast'",
+              "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/MG3/Weapon_MG3_Fire_LongTail_Fast.0"
+            }
           },
-          "EFiringMode::FullAuto": {
-            "ObjectName": "AkAudioEvent Weapon_MG3_Fire_LongTail_Slow",
-            "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/MG3/Weapon_MG3_Fire_LongTail_Slow.0"
+          {
+            "EFiringMode::FullAuto": {
+              "ObjectName": "AkAudioEvent'Weapon_MG3_Fire_LongTail_Slow'",
+              "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/MG3/Weapon_MG3_Fire_LongTail_Slow.0"
+            }
           }
-        }
+        ]
       },
       "WeaponDeviationConfig": {
         "DeviationBase": 3.1,
@@ -71,19 +80,19 @@
       },
       "WeaponAnimConfig": {
         "CharacterGripBlendspace": {
-          "ObjectName": "BlendSpace1D Weapon_MG3_Grip_RD",
+          "ObjectName": "BlendSpace1D'Weapon_MG3_Grip_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/MG3/Redux/Weapon_MG3_Grip_RD.0"
         },
         "CharacterReloadTactical": {
-          "ObjectName": "AnimMontage CharacterWeapon_MG3_Reload_Montage_RD",
+          "ObjectName": "AnimMontage'CharacterWeapon_MG3_Reload_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/MG3/Redux/CharacterWeapon_MG3_Reload_Montage_RD.0"
         },
         "CharacterReloadCharge": {
-          "ObjectName": "AnimMontage CharacterWeapon_MG3_Reload_Charge_Montage_RD",
+          "ObjectName": "AnimMontage'CharacterWeapon_MG3_Reload_Charge_Montage_RD'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/MG3/Redux/CharacterWeapon_MG3_Reload_Charge_Montage_RD.0"
         },
         "WeaponInspectMontage": {
-          "ObjectName": "AnimMontage Rifle_Combat_FPP_Inspect_Montage",
+          "ObjectName": "AnimMontage'Rifle_Combat_FPP_Inspect_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Rifle/Idling/Rifle_Combat_FPP_Inspect_Montage.0"
         },
         "LobbyAnimClassOverride": "EWeaponClass::Class_Rifle",
@@ -92,29 +101,35 @@
         "ReloadDurationCharge": 8.2,
         "ReloadDurationMagOut": 0.4,
         "ShotCameraShake": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_LMG_MG3_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_LMG_MG3_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_LMG_MG3.0"
         },
         "ShotCameraShakeIronsight": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_LMG_MG3_Ironsight_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_LMG_MG3_Ironsight_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_LMG_MG3_Ironsight.0"
         },
         "ShotCameraShakeADS": {
-          "ObjectName": "BlueprintGeneratedClass CS_WeapGun_LMG_MG3_ADS_C",
+          "ObjectName": "BlueprintGeneratedClass'CS_WeapGun_LMG_MG3_ADS_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/CS_WeapGun_LMG_MG3_ADS.0"
         },
         "RecoilKickADS": 0.85,
         "RecoilKick_MovementMaxMultiplier": 1.3,
-        "ShakeScaleStanceMap": {
-          "EAnimStance::Crouch": 0.7,
-          "EAnimStance::Prone": 0.35
-        },
-        "ADSAnimRecoilStanceMap": {
-          "EAnimStance::Prone": 0.85
-        }
+        "ShakeScaleStanceMap": [
+          {
+            "EAnimStance::Crouch": 0.7
+          },
+          {
+            "EAnimStance::Prone": 0.35
+          }
+        ],
+        "ADSAnimRecoilStanceMap": [
+          {
+            "EAnimStance::Prone": 0.85
+          }
+        ]
       },
       "ConsoleWeaponRecoilData": {
-        "ObjectName": "WeaponGunRecoilData WeapM249_RecoilDataConsole",
+        "ObjectName": "WeaponGunRecoilData'WeapM249_RecoilDataConsole'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapM249_RecoilDataConsole.0"
       }
     }

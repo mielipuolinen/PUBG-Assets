@@ -1,0 +1,1657 @@
+[
+  {
+    "Type": "AbstractNavData",
+    "Name": "AbstractNavData-Default",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'AbstractNavData'",
+    "Properties": {
+      "bNetLoadOnClient": true
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "Ak",
+    "Outer": "TslGlobalSound_WeatherClear_95",
+    "Template": "Ak_GEN_VARIABLE",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1000.0
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "AtmosphericFog",
+    "Name": "AtmosphericFog",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'AtmosphericFog'",
+    "Properties": {
+      "AtmosphericFogComponent": {
+        "ObjectName": "AtmosphericFogComponent'Weather_Desert_Sunrise:PersistentLevel.AtmosphericFog.AtmosphericFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.3"
+      },
+      "RootComponent": {
+        "ObjectName": "AtmosphericFogComponent'Weather_Desert_Sunrise:PersistentLevel.AtmosphericFog.AtmosphericFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.3"
+      }
+    }
+  },
+  {
+    "Type": "AtmosphericFogComponent",
+    "Name": "AtmosphericFogComponent0",
+    "Outer": "AtmosphericFog",
+    "Class": "UScriptClass'AtmosphericFogComponent'",
+    "Properties": {
+      "DistanceScale": 16.0,
+      "AltitudeScale": 0.1,
+      "DistanceOffset": -5.0,
+      "StartDistance": 11000.0,
+      "SunDiscScale": 3.0,
+      "HeightDensityLayers": [
+        {
+          "Height": 5000.0,
+          "Density": 1.0
+        },
+        {
+          "Height": 12000.0,
+          "Density": 0.4
+        },
+        {
+          "Height": 100000.0,
+          "Density": 0.2
+        }
+      ],
+      "PrecomputeParams": {
+        "DensityHeight": 0.3
+      },
+      "RelativeLocation": {
+        "X": 621903.0,
+        "Y": 303118.0,
+        "Z": 42490.0
+      }
+    }
+  },
+  {
+    "Type": "BluezoneOpacity_BP_C",
+    "Name": "BluezoneOpacity_BP_102",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BluezoneOpacity_BP_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/BluezoneOpacity_BP.BluezoneOpacity_BP_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Desert_Sunrise:PersistentLevel.BluezoneOpacity_BP_102.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.18"
+      },
+      "Set BluezoneOpacity": 0.45,
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Desert_Sunrise:PersistentLevel.BluezoneOpacity_BP_102.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.18"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Desert_Sunrise:PersistentLevel.BluezoneOpacity_BP_102.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.18"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_6",
+    "Outer": "BrushComponent0",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": -25000000.0,
+                "Y": -1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": -1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": 1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -25000000.0,
+                "Y": 1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": 1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": 1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": -1048576.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": 25000000.0,
+                "Y": -1048576.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -25000000.0,
+                "Z": -1048576.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -25000000.0,
+                "Z": 1048576.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 1048576.0,
+                "Z": 25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": 1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": 1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": -1048576.0,
+                "Y": -1048576.0,
+                "Z": -25000000.0
+              },
+              {
+                "X": 1048576.0,
+                "Y": -1048576.0,
+                "Z": -25000000.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": -25000000.0,
+                "Y": -25000000.0,
+                "Z": -25000000.0
+              },
+              "Max": {
+                "X": 25000000.0,
+                "Y": 25000000.0,
+                "Z": 25000000.0
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "bGenerateMirroredCollision": false,
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "92045C0946052F599073A6B076D742D9",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 1254,
+        "SizeOnDisk": 1254,
+        "OffsetInFile": "0x12E563"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent0",
+    "Outer": "LevelBounds_0",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeScale3D": {
+        "X": 12288000.0,
+        "Y": 12288000.0,
+        "Z": 12288000.0
+      }
+    }
+  },
+  {
+    "Type": "BrushComponent",
+    "Name": "BrushComponent0",
+    "Outer": "PostProcessVolume_1",
+    "Class": "UScriptClass'BrushComponent'",
+    "Properties": {
+      "Brush": {
+        "ObjectName": "Model'Weather_Desert_Sunrise:PersistentLevel.PostProcessVolume_1.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.16"
+      },
+      "BrushBodySetup": {
+        "ObjectName": "BodySetup'Weather_Desert_Sunrise:PersistentLevel.PostProcessVolume_1.BrushComponent0.BodySetup_6'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.5"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 743484.0,
+        "Y": 623332.5,
+        "Z": -19744.75
+      }
+    }
+  },
+  {
+    "Type": "DirectionalLight",
+    "Name": "DirectionalLight_Sun_1",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'DirectionalLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "DirectionalLightComponent'Weather_Desert_Sunrise:PersistentLevel.DirectionalLight_Sun_1.LightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.9"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "DirectionalLightComponent'Weather_Desert_Sunrise:PersistentLevel.DirectionalLight_Sun_1.LightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.9"
+      }
+    }
+  },
+  {
+    "Type": "DirectionalLightComponent",
+    "Name": "LightComponent0",
+    "Outer": "DirectionalLight_Sun_1",
+    "Class": "UScriptClass'DirectionalLightComponent'",
+    "Properties": {
+      "OcclusionDepthRange": 5000.0,
+      "DynamicShadowDistanceMovableLight": 4000.0,
+      "CascadeDistributionExponent": 4.0,
+      "CascadeTransitionFraction": 0.3,
+      "DistanceFieldShadowDistance": 40000.0,
+      "TraceDistance": 5000.0,
+      "LightmassSettings": {
+        "LightSourceAngle": 1.5,
+        "ShadowExponent": 1.0
+      },
+      "bUsedAsAtmosphereSunLight": true,
+      "bUseGridShadow": true,
+      "GridShadowSplitSettings": [
+        {
+          "CellSize": 1000.0,
+          "MaxRadius": 3000.0
+        },
+        {
+          "CellSize": 5000.0,
+          "MaxRadius": 15000.0
+        },
+        {
+          "CellSize": 25000.0,
+          "MaxRadius": 75000.0
+        }
+      ],
+      "Temperature": 5000.0,
+      "bUseTemperature": true,
+      "BloomScale": 0.001,
+      "BloomThreshold": 0.3,
+      "BloomTint": {
+        "B": 255,
+        "G": 255,
+        "R": 255,
+        "A": 0,
+        "Hex": "FFFFFF"
+      },
+      "bUseRayTracedDistanceFieldShadows": true,
+      "LightGuid": "7D4048AD-4A588A0D-CBCCFC8C-5965E633",
+      "Intensity": 1.0,
+      "LightColor": {
+        "B": 196,
+        "G": 228,
+        "R": 255,
+        "A": 255,
+        "Hex": "FFFFE4C4"
+      },
+      "VolumetricScatteringIntensity": 5.0,
+      "Mobility": "EComponentMobility::Movable",
+      "RelativeRotation": {
+        "Pitch": -22.227818,
+        "Yaw": 0.0,
+        "Roll": -90.942566
+      },
+      "RelativeLocation": {
+        "X": 430947.28,
+        "Y": 321886.2,
+        "Z": 3263.9666
+      }
+    }
+  },
+  {
+    "Type": "ExponentialHeightFog",
+    "Name": "ExponentialHeightFog",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'ExponentialHeightFog'",
+    "Properties": {
+      "Component": {
+        "ObjectName": "ExponentialHeightFogComponent'Weather_Desert_Sunrise:PersistentLevel.ExponentialHeightFog.HeightFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.11"
+      },
+      "RootComponent": {
+        "ObjectName": "ExponentialHeightFogComponent'Weather_Desert_Sunrise:PersistentLevel.ExponentialHeightFog.HeightFogComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.11"
+      }
+    }
+  },
+  {
+    "Type": "ExponentialHeightFogComponent",
+    "Name": "HeightFogComponent0",
+    "Outer": "ExponentialHeightFog",
+    "Class": "UScriptClass'ExponentialHeightFogComponent'",
+    "Properties": {
+      "FogDensity": 0.0035,
+      "FogInscatteringColor": {
+        "R": 0.35,
+        "G": 0.231646,
+        "B": 0.171205,
+        "A": 1.0,
+        "Hex": "FFA08473"
+      },
+      "HeightDensityLayers": [
+        {
+          "Height": 5000.0,
+          "Density": 1.0
+        },
+        {
+          "Height": 150000.0,
+          "Density": 0.5
+        }
+      ],
+      "FogHeightFalloff": 0.04,
+      "FogMaxOpacity": 0.75,
+      "VolumetricFogScatteringDistribution": 0.5,
+      "VolumetricFogDistance": 10000.0,
+      "RelativeLocation": {
+        "X": 621903.0,
+        "Y": 303118.0,
+        "Z": 7634.822
+      }
+    }
+  },
+  {
+    "Type": "IDCSettingsForDesertSunriseWeather_C",
+    "Name": "IDCSettingsForDesertSunriseWeather_48",
+    "Outer": "PersistentLevel",
+    "Template": "Default__IDCSettingsForDesertSunriseWeather_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Environment/PostProcess/IDC_Desert/IDCSettingsForDesertSunriseWeather.IDCSettingsForDesertSunriseWeather_C'",
+    "Properties": {
+      "DefaultSceneRoot": {
+        "ObjectName": "SceneComponent'Weather_Desert_Sunrise:PersistentLevel.IDCSettingsForDesertSunriseWeather_48.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.19"
+      },
+      "ConsoleCommands": [
+        "r.CGV.Fallback 0.501885 0.023671 -0.451213 -0.035228 0.352097 0.017882 -0.301062 -0.013282 0.240940 0.001869 -0.187845 -0.003953 0.097923 -0.054091 0.059559 -0.010519 0.069699 -0.041085 0.013485 -0.021177 0.042449 -0.020363 -0.022477 -0.020498 -0.101214 -0.086255 -0.070035 0.000000",
+        "r.CGV.Intensity 0.75",
+        "r.CGV.FallbackIntensity 0.12",
+        "r.CGV.Hairintensity 0.5",
+        "r.CGV.Skinintensity 0.7",
+        "r.CGV.BaseIntensity 0.3",
+        "r.CGV.IndoorIntensity 3.5",
+        "r.CGV.OutdoorIntensity 0.5",
+        "r.CGV.IndoorSaturation 0",
+        "r.CGV.OutdoorSaturation 1",
+        "r.WindowLightIntensity 0.5",
+        "r.CGV.UseFullFallback 1",
+        "r.CGV.FullFallbackIntensity 1"
+      ],
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Weather_Desert_Sunrise:PersistentLevel.IDCSettingsForDesertSunriseWeather_48.DefaultSceneRoot'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.19"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "SceneComponent'Weather_Desert_Sunrise:PersistentLevel.IDCSettingsForDesertSunriseWeather_48.DefaultSceneRoot'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.19"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Outer": "Weather_Desert_Sunrise",
+    "Class": "UScriptClass'Level'",
+    "Properties": {
+      "LevelBuildDataId": "9F553BDF-462A9F62-F2757E9C-F7465BB0",
+      "Model": {
+        "ObjectName": "Model'Weather_Desert_Sunrise:PersistentLevel.Model_0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.15"
+      },
+      "WorldSettings": {
+        "ObjectName": "WorldSettings'Weather_Desert_Sunrise:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.32"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "WorldSettings'Weather_Desert_Sunrise:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.32"
+      },
+      null,
+      {
+        "ObjectName": "LevelBounds'Weather_Desert_Sunrise:PersistentLevel.LevelBounds_0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.14"
+      },
+      {
+        "ObjectName": "SkyLight'Weather_Desert_Sunrise:PersistentLevel.SkyLight'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.20"
+      },
+      {
+        "ObjectName": "TslGlobalSound_WeatherClear_C'Weather_Desert_Sunrise:PersistentLevel.TslGlobalSound_WeatherClear_95'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.30"
+      },
+      {
+        "ObjectName": "AbstractNavData'Weather_Desert_Sunrise:PersistentLevel.AbstractNavData-Default'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.0"
+      },
+      {
+        "ObjectName": "IDCSettingsForDesertSunriseWeather_C'Weather_Desert_Sunrise:PersistentLevel.IDCSettingsForDesertSunriseWeather_48'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.12"
+      },
+      {
+        "ObjectName": "BluezoneOpacity_BP_C'Weather_Desert_Sunrise:PersistentLevel.BluezoneOpacity_BP_102'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.4"
+      },
+      {
+        "ObjectName": "StaticMeshActor'Weather_Desert_Sunrise:PersistentLevel.SM_SkySphere_2'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.25"
+      },
+      {
+        "ObjectName": "DirectionalLight'Weather_Desert_Sunrise:PersistentLevel.DirectionalLight_Sun_1'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.8"
+      },
+      {
+        "ObjectName": "PostProcessVolume'Weather_Desert_Sunrise:PersistentLevel.PostProcessVolume_1'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.17"
+      },
+      {
+        "ObjectName": "ExponentialHeightFog'Weather_Desert_Sunrise:PersistentLevel.ExponentialHeightFog'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.10"
+      },
+      {
+        "ObjectName": "StaticMeshActor'Weather_Desert_Sunrise:PersistentLevel.SM_MERGED_VistaMountainDesert_a3'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.22"
+      },
+      {
+        "ObjectName": "StaticMeshActor'Weather_Desert_Sunrise:PersistentLevel.SM_MERGED_VistaMountainDesert_b3'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.23"
+      },
+      {
+        "ObjectName": "StaticMeshActor'Weather_Desert_Sunrise:PersistentLevel.SM_MERGED_VistaMountainDesert_c3'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.24"
+      },
+      {
+        "ObjectName": "AtmosphericFog'Weather_Desert_Sunrise:PersistentLevel.AtmosphericFog'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.2"
+      },
+      null
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/Maps/TslLobby",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'Weather_Desert_Sunrise:PersistentLevel.Model_0'",
+      "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.15"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": null,
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "LevelBounds",
+    "Name": "LevelBounds_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelBounds'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Weather_Desert_Sunrise:PersistentLevel.LevelBounds_0.BoxComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.6"
+      }
+    }
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "BB0F77B7-45C1CEC7-56936F8B-1BD6FDBF",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_14",
+    "Outer": "PostProcessVolume_1",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      "SphereRadius": 43301270.0
+    },
+    "Vectors": [
+      {
+        "X": -1.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1.0
+      },
+      {
+        "X": 1.0,
+        "Y": -0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": -1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 1.0
+      }
+    ],
+    "Points": [
+      {
+        "X": -25000000.0,
+        "Y": -25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": -25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": -25000000.0,
+        "Y": 25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": 25000000.0,
+        "Z": -25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": -25000000.0,
+        "Z": 25000000.0
+      },
+      {
+        "X": 25000000.0,
+        "Y": -25000000.0,
+        "Z": -25000000.0
+      }
+    ],
+    "Nodes": [
+      {
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 0,
+        "iSurf": 0,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 4,
+        "iSurf": 1,
+        "iVertexIndex": 4,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 2,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "iVertPool": 8,
+        "iSurf": 2,
+        "iVertexIndex": 8,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 3,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "iVertPool": 12,
+        "iSurf": 3,
+        "iVertexIndex": 12,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 4,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "iVertPool": 16,
+        "iSurf": 4,
+        "iVertexIndex": 16,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 5,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "iVertPool": 20,
+        "iSurf": 5,
+        "iVertexIndex": 20,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": -1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": 0,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      }
+    ],
+    "Surfs": [
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 0,
+        "vTextureU": 1,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": -1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": -1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 3,
+        "vNormal": 1,
+        "vTextureU": 3,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 5,
+        "vNormal": 3,
+        "vTextureU": 4,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 1.0,
+            "Y": 0.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 1.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 7,
+        "vNormal": 4,
+        "vTextureU": 0,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": -1.0,
+            "Z": 0.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": -1.0,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 2,
+        "vNormal": 5,
+        "vTextureU": 3,
+        "vTextureV": 1,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": 1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 2,
+        "vTextureU": 3,
+        "vTextureV": 4,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 25000000.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      }
+    ],
+    "NumSharedSides": 4,
+    "VertexBuffer": null,
+    "LightingGuid": "D4A11937-442DA676-D751FFB2-309D94B6",
+    "LightmassSettings": [
+      {
+        "bUseTwoSidedLighting": false,
+        "bShadowIndirectOnly": false,
+        "bUseEmissiveForStaticLighting": false,
+        "bUseVertexNormalForHemisphereGather": false,
+        "EmissiveLightFalloffExponent": 8.0,
+        "EmissiveLightExplicitInfluenceRadius": 0.0,
+        "EmissiveBoost": 1.0,
+        "DiffuseBoost": 1.0,
+        "FullyOccludedSamplesFraction": 1.0
+      }
+    ]
+  },
+  {
+    "Type": "PostProcessVolume",
+    "Name": "PostProcessVolume_1",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'PostProcessVolume'",
+    "Properties": {
+      "Settings": {
+        "bOverride_FilmToeAmount": true,
+        "bOverride_BloomIntensity": true,
+        "bOverride_BloomThreshold": true,
+        "bOverride_Bloom1Tint": true,
+        "bOverride_Bloom1Size": true,
+        "bOverride_Bloom2Size": true,
+        "bOverride_Bloom2Tint": true,
+        "bOverride_Bloom3Tint": true,
+        "bOverride_Bloom3Size": true,
+        "bOverride_Bloom4Tint": true,
+        "bOverride_Bloom4Size": true,
+        "bOverride_Bloom5Tint": true,
+        "bOverride_Bloom5Size": true,
+        "bOverride_Bloom6Tint": true,
+        "bOverride_Bloom6Size": true,
+        "bOverride_BloomSizeScale": true,
+        "bOverride_AutoExposureMinBrightness": true,
+        "bOverride_AutoExposureMaxBrightness": true,
+        "bOverride_AutoExposureSpeedUp": true,
+        "bOverride_AutoExposureSpeedDown": true,
+        "bOverride_HistogramLogMin": true,
+        "bOverride_HistogramLogMax": true,
+        "bOverride_HBAORadius": true,
+        "bOverride_HBAOMaxViewDepth": true,
+        "bOverride_AmbientOcclusionPower": true,
+        "bOverride_AmbientOcclusionQuality": true,
+        "bOverride_AmbientOcclusionMipBlend": true,
+        "bOverride_AmbientOcclusionMipScale": true,
+        "WhiteTint": 0.05,
+        "ColorSaturation": {
+          "X": 1.05,
+          "Y": 1.05,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "ColorGamma": {
+          "X": 1.2,
+          "Y": 1.2,
+          "Z": 1.2,
+          "W": 1.0
+        },
+        "ColorContrastMidtones": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "ColorGammaMidtones": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "ColorGammaHighlights": {
+          "X": 1.1,
+          "Y": 1.1,
+          "Z": 1.1,
+          "W": 1.0
+        },
+        "FilmToe": 0.0,
+        "FilmWhiteClip": 1.0,
+        "FilmShadowTintBlend": 10.0,
+        "FilmShadowTintAmount": 10.0,
+        "FilmChannelMixerGreen": {
+          "R": 0.0,
+          "G": 1.0,
+          "B": 0.12,
+          "A": 1.0,
+          "Hex": "FF00FF61"
+        },
+        "FilmChannelMixerBlue": {
+          "R": 0.0,
+          "G": 0.2,
+          "B": 1.0,
+          "A": 1.0,
+          "Hex": "FF007CFF"
+        },
+        "FilmToeAmount": 0.65,
+        "FilmHealAmount": 0.25,
+        "SceneColorTint": {
+          "R": 1.04,
+          "G": 1.02,
+          "B": 1.05,
+          "A": 1.0,
+          "Hex": "FFFFFFFF"
+        },
+        "BloomIntensity": 0.35,
+        "BloomSizeScale": 1.0,
+        "Bloom1Size": 2.0,
+        "Bloom2Size": 4.0,
+        "Bloom3Size": 8.0,
+        "Bloom4Size": 16.0,
+        "Bloom5Size": 32.0,
+        "Bloom1Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom2Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom3Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom4Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom5Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "Bloom6Tint": {
+          "R": 0.5,
+          "G": 0.5,
+          "B": 0.5,
+          "A": 1.0,
+          "Hex": "FFBCBCBC"
+        },
+        "AutoExposureLowPercent": 58.0,
+        "AutoExposureMinBrightness": 1.2,
+        "AutoExposureSpeedDown": 5.0,
+        "HistogramLogMin": -5.5,
+        "HistogramLogMax": 1.5,
+        "HBAOPowerExponent": 1.5,
+        "HBAORadius": 1.5,
+        "HBAOMaxViewDepth": 30000.0,
+        "DepthOfFieldFstop": 2.990826,
+        "DepthOfFieldDepthBlurRadius": 1.0,
+        "WeightedBlendables": {
+          "Array": [
+            {
+              "Weight": 1.0,
+              "Object": {
+                "ObjectName": "Material'M_LobbyTransition'",
+                "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_LobbyTransition.0"
+              }
+            }
+          ]
+        }
+      },
+      "BrushType": "Brush_Add",
+      "Brush": {
+        "ObjectName": "Model'Weather_Desert_Sunrise:PersistentLevel.PostProcessVolume_1.Model_14'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.16"
+      },
+      "BrushComponent": {
+        "ObjectName": "BrushComponent'Weather_Desert_Sunrise:PersistentLevel.PostProcessVolume_1.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.7"
+      },
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "bHidden": false,
+      "RootComponent": {
+        "ObjectName": "BrushComponent'Weather_Desert_Sunrise:PersistentLevel.PostProcessVolume_1.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.7"
+      },
+      "Tags": [
+        "TslEffectPostProcessVolume"
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "BluezoneOpacity_BP_102",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 520595.3,
+        "Y": 678683.5,
+        "Z": 8560.523
+      },
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript",
+      "UCSModifiedProperties": [
+        {
+          "MemberParent": {
+            "ObjectName": "Class'SceneComponent'",
+            "ObjectPath": "/Script/Engine"
+          },
+          "MemberName": "RelativeLocation",
+          "MemberGuid": "00000000-00000000-00000000-00000000"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot",
+    "Outer": "IDCSettingsForDesertSunriseWeather_48",
+    "Template": "DefaultSceneRoot_GEN_VARIABLE",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "bNetAddressable": true,
+      "CreationMethod": "EComponentCreationMethod::SimpleConstructionScript"
+    }
+  },
+  {
+    "Type": "SkyLight",
+    "Name": "SkyLight",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'SkyLight'",
+    "Properties": {
+      "LightComponent": {
+        "ObjectName": "SkyLightComponent'Weather_Desert_Sunrise:PersistentLevel.SkyLight.SkyLightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.21"
+      },
+      "RootComponent": {
+        "ObjectName": "SkyLightComponent'Weather_Desert_Sunrise:PersistentLevel.SkyLight.SkyLightComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.21"
+      }
+    }
+  },
+  {
+    "Type": "SkyLightComponent",
+    "Name": "SkyLightComponent0",
+    "Outer": "SkyLight",
+    "Class": "UScriptClass'SkyLightComponent'",
+    "Properties": {
+      "SourceType": "SLS_SpecifiedCubemap",
+      "Cubemap": {
+        "ObjectName": "TextureCube'T_Cubemap_Summerland_Global_Dusk'",
+        "ObjectPath": "TslGame/Content/Assets/Lighting/Cubemaps/Summerland/T_Cubemap_Summerland_Global_Dusk.0"
+      },
+      "OcclusionMaxDistance": 500.0,
+      "Contrast": 0.7,
+      "MinOcclusion": 0.2,
+      "OcclusionTint": {
+        "B": 24,
+        "G": 24,
+        "R": 24,
+        "A": 255,
+        "Hex": "FF181818"
+      },
+      "LightGuid": "397B09D6-40888D93-066948B0-F9531EC6",
+      "Intensity": 2.0,
+      "Mobility": "EComponentMobility::Movable",
+      "RelativeLocation": {
+        "X": -487.0,
+        "Y": -705.0,
+        "Z": 483.0
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshActor",
+    "Name": "SM_MERGED_VistaMountainDesert_a3",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'StaticMeshActor'",
+    "Properties": {
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Sunrise:PersistentLevel.SM_MERGED_VistaMountainDesert_a3.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.26"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Sunrise:PersistentLevel.SM_MERGED_VistaMountainDesert_a3.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.26"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshActor",
+    "Name": "SM_MERGED_VistaMountainDesert_b3",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'StaticMeshActor'",
+    "Properties": {
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Sunrise:PersistentLevel.SM_MERGED_VistaMountainDesert_b3.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.27"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Sunrise:PersistentLevel.SM_MERGED_VistaMountainDesert_b3.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.27"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshActor",
+    "Name": "SM_MERGED_VistaMountainDesert_c3",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'StaticMeshActor'",
+    "Properties": {
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Sunrise:PersistentLevel.SM_MERGED_VistaMountainDesert_c3.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.28"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Sunrise:PersistentLevel.SM_MERGED_VistaMountainDesert_c3.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.28"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshActor",
+    "Name": "SM_SkySphere_2",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'StaticMeshActor'",
+    "Properties": {
+      "StaticMeshComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Sunrise:PersistentLevel.SM_SkySphere_2.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.29"
+      },
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Weather_Desert_Sunrise:PersistentLevel.SM_SkySphere_2.StaticMeshComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.29"
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent0",
+    "Outer": "SM_MERGED_VistaMountainDesert_a3",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_MERGED_VistaMountainDesert_a'",
+        "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/SM_MERGED_VistaMountainDesert_a.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Desert_mountain_01_FakeShadowA_Dusk'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/Dusk/M_Desert_mountain_01_FakeShadowA_Dusk.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Desert_hills_01_FakeShadowA_Dusk'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/Dusk/M_Desert_hills_01_FakeShadowA_Dusk.0"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision"
+      },
+      "RelativeLocation": {
+        "X": -224048.95,
+        "Y": 136139.66,
+        "Z": 37590.805
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent0",
+    "Outer": "SM_MERGED_VistaMountainDesert_b3",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_MERGED_VistaMountainDesert_b'",
+        "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/SM_MERGED_VistaMountainDesert_b.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Desert_mountain_01_FakeShadowB_Dusk'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/Dusk/M_Desert_mountain_01_FakeShadowB_Dusk.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Desert_hills_01_FakeShadowB_Dusk'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/Dusk/M_Desert_hills_01_FakeShadowB_Dusk.0"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision"
+      },
+      "RelativeLocation": {
+        "X": -422572.16,
+        "Y": -205164.2,
+        "Z": 17580.557
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent0",
+    "Outer": "SM_MERGED_VistaMountainDesert_c3",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_MERGED_VistaMountainDesert_c'",
+        "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/SM_MERGED_VistaMountainDesert_c.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Desert_hills_01_FakeShadowC_Dusk'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/Dusk/M_Desert_hills_01_FakeShadowC_Dusk.0"
+        },
+        {
+          "ObjectName": "MaterialInstanceConstant'M_Desert_mountain_01_FakeShadowC_Dusk'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/BakedVistaAssets/Desert/Dusk/M_Desert_mountain_01_FakeShadowC_Dusk.0"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "CollisionEnabled": "ECollisionEnabled::NoCollision"
+      },
+      "RelativeLocation": {
+        "X": 1137107.8,
+        "Y": -68338.81,
+        "Z": 29223.793
+      }
+    }
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent0",
+    "Outer": "SM_SkySphere_2",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'SM_SkySphere'",
+        "ObjectPath": "Engine/Content/EngineSky/SM_SkySphere.1"
+      },
+      "OverrideMaterials": [
+        {
+          "ObjectName": "MaterialInstanceConstant'MI_Sky_Desert_Sunrise'",
+          "ObjectPath": "TslGame/Content/Assets/Lighting/Skies/Desert/MI_Sky_Desert_Sunrise.0"
+        }
+      ],
+      "LDMaxDrawDistance": 100000.0,
+      "CachedMaxDrawDistance": 100000.0,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeScale3D": {
+        "X": 1500.0,
+        "Y": 1500.0,
+        "Z": 1500.0
+      }
+    }
+  },
+  {
+    "Type": "TslGlobalSound_WeatherClear_C",
+    "Name": "TslGlobalSound_WeatherClear_95",
+    "Outer": "PersistentLevel",
+    "Template": "Default__TslGlobalSound_WeatherClear_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Environment/TslGlobalSound_WeatherClear.TslGlobalSound_WeatherClear_C'",
+    "Properties": {
+      "Ak": {
+        "ObjectName": "AkComponent'Weather_Desert_Sunrise:PersistentLevel.TslGlobalSound_WeatherClear_95.Ak'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.1"
+      },
+      "RootComponent": {
+        "ObjectName": "AkComponent'Weather_Desert_Sunrise:PersistentLevel.TslGlobalSound_WeatherClear_95.Ak'",
+        "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.1"
+      },
+      "BlueprintCreatedComponents": [
+        {
+          "ObjectName": "AkComponent'Weather_Desert_Sunrise:PersistentLevel.TslGlobalSound_WeatherClear_95.Ak'",
+          "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "World",
+    "Name": "Weather_Desert_Sunrise",
+    "Class": "UScriptClass'World'",
+    "Properties": {
+      "DefaultPhysicsVolume": null
+    },
+    "PersistentLevel": {
+      "ObjectName": "Level'Weather_Desert_Sunrise:PersistentLevel'",
+      "ObjectPath": "TslGame/Content/Maps/Desert/Weather/Weather_Desert_Sunrise.13"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  },
+  {
+    "Type": "WorldSettings",
+    "Name": "WorldSettings",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WorldSettings'"
+  }
+]

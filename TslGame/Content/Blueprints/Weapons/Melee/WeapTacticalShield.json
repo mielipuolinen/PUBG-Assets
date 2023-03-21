@@ -3,10 +3,11 @@
     "Type": "ObjectProperty",
     "Name": "Ak",
     "Outer": "WeapTacticalShield_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyFlags": 17179869188,
     "PropertyClass": {
-      "ObjectName": "Class AkComponent",
+      "ObjectName": "Class'AkComponent'",
       "ObjectPath": "/Script/AkAudio"
     }
   },
@@ -14,18 +15,20 @@
     "Type": "IntProperty",
     "Name": "CallFunc_PostAkEvent_ReturnValue2",
     "Outer": "ExecuteUbergraph_WeapTacticalShield",
+    "Class": "UScriptClass'IntProperty'",
     "Next": null
   },
   {
     "Type": "ObjectProperty",
     "Name": "CallFunc_SpawnEmitterAtLocation_ReturnValue",
     "Outer": "ExecuteUbergraph_WeapTacticalShield",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "IntProperty WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield.CallFunc_PostAkEvent_ReturnValue2",
+      "ObjectName": "IntProperty'WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield.CallFunc_PostAkEvent_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.1"
     },
     "PropertyClass": {
-      "ObjectName": "Class ParticleSystemComponent",
+      "ObjectName": "Class'ParticleSystemComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -33,12 +36,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_GetSocketLocation_ReturnValue",
     "Outer": "ExecuteUbergraph_WeapTacticalShield",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield.CallFunc_SpawnEmitterAtLocation_ReturnValue",
+      "ObjectName": "ObjectProperty'WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield.CallFunc_SpawnEmitterAtLocation_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.2"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -46,8 +50,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_PostAkEvent_ReturnValue",
     "Outer": "ExecuteUbergraph_WeapTacticalShield",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "StructProperty WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield.CallFunc_GetSocketLocation_ReturnValue",
+      "ObjectName": "StructProperty'WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield.CallFunc_GetSocketLocation_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.3"
     }
   },
@@ -55,8 +60,9 @@
     "Type": "IntProperty",
     "Name": "EntryPoint",
     "Outer": "ExecuteUbergraph_WeapTacticalShield",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield.CallFunc_PostAkEvent_ReturnValue",
+      "ObjectName": "IntProperty'WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield.CallFunc_PostAkEvent_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.4"
     },
     "PropertyFlags": 128
@@ -65,13 +71,14 @@
     "Type": "Function",
     "Name": "ExecuteUbergraph_WeapTacticalShield",
     "Outer": "WeapTacticalShield_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "ObjectProperty WeapTacticalShield_C:Ak",
+      "ObjectName": "ObjectProperty'WeapTacticalShield_C:Ak'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.0"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield.EntryPoint",
+        "ObjectName": "IntProperty'WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield.EntryPoint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.5"
       }
     ],
@@ -81,12 +88,13 @@
     "Type": "Function",
     "Name": "OnPushActivated",
     "Outer": "WeapTacticalShield_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield",
+      "ObjectName": "Function'WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.6"
     },
     "SuperStruct": {
-      "ObjectName": "Function TslWeapon_Shield:OnPushActivated",
+      "ObjectName": "Function'TslWeapon_Shield:OnPushActivated'",
       "ObjectPath": "/Script/TslGame"
     },
     "FunctionFlags": 134350848
@@ -95,12 +103,13 @@
     "Type": "Function",
     "Name": "OnDebuffOutOfCharges",
     "Outer": "WeapTacticalShield_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function WeapTacticalShield_C:OnPushActivated",
+      "ObjectName": "Function'WeapTacticalShield_C:OnPushActivated'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.7"
     },
     "SuperStruct": {
-      "ObjectName": "Function TslWeapon_Shield:OnDebuffOutOfCharges",
+      "ObjectName": "Function'TslWeapon_Shield:OnDebuffOutOfCharges'",
       "ObjectPath": "/Script/TslGame"
     },
     "FunctionFlags": 134350848
@@ -109,12 +118,13 @@
     "Type": "Function",
     "Name": "OnDebuffActivated",
     "Outer": "WeapTacticalShield_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function WeapTacticalShield_C:OnDebuffOutOfCharges",
+      "ObjectName": "Function'WeapTacticalShield_C:OnDebuffOutOfCharges'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.8"
     },
     "SuperStruct": {
-      "ObjectName": "Function TslWeapon_Shield:OnDebuffActivated",
+      "ObjectName": "Function'TslWeapon_Shield:OnDebuffActivated'",
       "ObjectPath": "/Script/TslGame"
     },
     "FunctionFlags": 134350848
@@ -123,12 +133,13 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "WeapTacticalShield_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function WeapTacticalShield_C:OnDebuffActivated",
+      "ObjectName": "Function'WeapTacticalShield_C:OnDebuffActivated'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.9"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 201459712
@@ -137,13 +148,14 @@
     "Type": "StructProperty",
     "Name": "UberGraphFrame",
     "Outer": "WeapTacticalShield_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "Function WeapTacticalShield_C:UserConstructionScript",
+      "ObjectName": "Function'WeapTacticalShield_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.10"
     },
     "PropertyFlags": 2105344,
     "Struct": {
-      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -151,62 +163,63 @@
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapTacticalShield_C",
     "Super": "DefaultShieldSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapTacticalShield_C:SimpleConstructionScript_0",
+        "ObjectName": "SimpleConstructionScript'WeapTacticalShield_C:SimpleConstructionScript_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.21"
       },
       "UberGraphFramePointerProperty": {
-        "ObjectName": "StructProperty WeapTacticalShield_C:UberGraphFrame",
+        "ObjectName": "StructProperty'WeapTacticalShield_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.11"
       },
       "UberGraphFunction": {
-        "ObjectName": "Function WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield",
+        "ObjectName": "Function'WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.6"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "BlueprintGeneratedClass DefaultShieldSetting_C",
+      "ObjectName": "BlueprintGeneratedClass'DefaultShieldSetting_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/DefaultShieldSetting.0"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty WeapTacticalShield_C:UberGraphFrame",
+        "ObjectName": "StructProperty'WeapTacticalShield_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.11"
       }
     ],
     "FuncMap": {
       "ExecuteUbergraph_WeapTacticalShield": {
-        "ObjectName": "Function WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield",
+        "ObjectName": "Function'WeapTacticalShield_C:ExecuteUbergraph_WeapTacticalShield'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.6"
       },
       "OnPushActivated": {
-        "ObjectName": "Function WeapTacticalShield_C:OnPushActivated",
+        "ObjectName": "Function'WeapTacticalShield_C:OnPushActivated'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.7"
       },
       "OnDebuffOutOfCharges": {
-        "ObjectName": "Function WeapTacticalShield_C:OnDebuffOutOfCharges",
+        "ObjectName": "Function'WeapTacticalShield_C:OnDebuffOutOfCharges'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.8"
       },
       "OnDebuffActivated": {
-        "ObjectName": "Function WeapTacticalShield_C:OnDebuffActivated",
+        "ObjectName": "Function'WeapTacticalShield_C:OnDebuffActivated'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.9"
       },
       "UserConstructionScript": {
-        "ObjectName": "Function WeapTacticalShield_C:UserConstructionScript",
+        "ObjectName": "Function'WeapTacticalShield_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.10"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapTacticalShield_C Default__WeapTacticalShield_C",
+      "ObjectName": "WeapTacticalShield_C'Default__WeapTacticalShield_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.13"
     }
   },
@@ -214,10 +227,11 @@
     "Type": "WeapTacticalShield_C",
     "Name": "Default__WeapTacticalShield_C",
     "Template": "Default__DefaultShieldSetting_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.WeapTacticalShield_C'",
     "Properties": {
       "UberGraphFrame": {},
       "PushDamageType": {
-        "ObjectName": "BlueprintGeneratedClass DmgType_Melee_C",
+        "ObjectName": "BlueprintGeneratedClass'DmgType_Melee_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Melee.0"
       },
       "PushDistance": 70.0,
@@ -241,56 +255,74 @@
         "EVaultAnimType::Vault90_Mobile",
         "EVaultAnimType::Vault90_Stationary"
       ],
-      "VaultingDataOverrides": {
-        "EVaultAnimType::Climb60_Stationary": {
-          "ObjectName": "VaultingData DA_Shield_Climb60_Stationary",
-          "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Climb60_Stationary.0"
+      "VaultingDataOverrides": [
+        {
+          "EVaultAnimType::Climb60_Stationary": {
+            "ObjectName": "VaultingData'DA_Shield_Climb60_Stationary'",
+            "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Climb60_Stationary.0"
+          }
         },
-        "EVaultAnimType::Vault60_Slide": {
-          "ObjectName": "VaultingData DA_Shield_Vault60_Slide",
-          "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Vault60_Slide.0"
+        {
+          "EVaultAnimType::Vault60_Slide": {
+            "ObjectName": "VaultingData'DA_Shield_Vault60_Slide'",
+            "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Vault60_Slide.0"
+          }
         },
-        "EVaultAnimType::Vault60_Stationary": {
-          "ObjectName": "VaultingData DA_Shield_Vault60_Stationary",
-          "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Vault60_Stationary.0"
+        {
+          "EVaultAnimType::Vault60_Stationary": {
+            "ObjectName": "VaultingData'DA_Shield_Vault60_Stationary'",
+            "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Vault60_Stationary.0"
+          }
         },
-        "EVaultAnimType::Climb120_Stationary": {
-          "ObjectName": "VaultingData DA_Shield_Climb120_Stationary",
-          "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Climb120_Stationary.0"
+        {
+          "EVaultAnimType::Climb120_Stationary": {
+            "ObjectName": "VaultingData'DA_Shield_Climb120_Stationary'",
+            "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Climb120_Stationary.0"
+          }
         },
-        "EVaultAnimType::Vault120_Slide": {
-          "ObjectName": "VaultingData DA_Shield_Vault120_Slide",
-          "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Vault120_Slide.0"
+        {
+          "EVaultAnimType::Vault120_Slide": {
+            "ObjectName": "VaultingData'DA_Shield_Vault120_Slide'",
+            "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Vault120_Slide.0"
+          }
         },
-        "EVaultAnimType::Vault120_Stationary": {
-          "ObjectName": "VaultingData DA_Shield_Vault120_Stationary",
-          "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Vault120_Stationary.0"
+        {
+          "EVaultAnimType::Vault120_Stationary": {
+            "ObjectName": "VaultingData'DA_Shield_Vault120_Stationary'",
+            "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Vault120_Stationary.0"
+          }
         },
-        "EVaultAnimType::Climb90_Stationary": {
-          "ObjectName": "VaultingData DA_Shield_Climb90_Stationary",
-          "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Climb90_Stationary.0"
+        {
+          "EVaultAnimType::Climb90_Stationary": {
+            "ObjectName": "VaultingData'DA_Shield_Climb90_Stationary'",
+            "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Climb90_Stationary.0"
+          }
         },
-        "EVaultAnimType::Vault90_Slide": {
-          "ObjectName": "VaultingData DA_Shield_Vault90_Slide",
-          "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Vault90_Slide.0"
+        {
+          "EVaultAnimType::Vault90_Slide": {
+            "ObjectName": "VaultingData'DA_Shield_Vault90_Slide'",
+            "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Vault90_Slide.0"
+          }
         },
-        "EVaultAnimType::Vault90_Stationary": {
-          "ObjectName": "VaultingData DA_Shield_Vault90_Stationary",
-          "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Vault90_Stationary.0"
+        {
+          "EVaultAnimType::Vault90_Stationary": {
+            "ObjectName": "VaultingData'DA_Shield_Vault90_Stationary'",
+            "ObjectPath": "TslGame/Content/Blueprints/Pawns/VaultingDataAssets/DA_Shield_Vault90_Stationary.0"
+          }
         }
-      },
+      ],
       "FlashbangComponent": {
-        "ObjectName": "FlashbangComponent Default__WeapTacticalShield_C:FlashbangComponent",
+        "ObjectName": "FlashbangComponent'Default__WeapTacticalShield_C:FlashbangComponent'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.16"
       },
       "HitCapsuleComponent": {
-        "ObjectName": "CapsuleComponent Default__WeapTacticalShield_C:HitCollisionCylinder",
+        "ObjectName": "CapsuleComponent'Default__WeapTacticalShield_C:HitCollisionCylinder'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.15"
       },
       "AttackAnims": [
         {
           "AttackAnim": {
-            "ObjectName": "AnimMontage Melee_Combat_Upperbody_Attack_1_Montage",
+            "ObjectName": "AnimMontage'Melee_Combat_Upperbody_Attack_1_Montage'",
             "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Melee/Attack/Melee_Combat_Upperbody_Attack_1_Montage.0"
           },
           "AttackDecalEffectDataSet": {
@@ -351,7 +383,7 @@
             },
             "ConcreteDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Concrete",
+                "ObjectName": "Material'M_Melee_Blunt_Concrete'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Concrete.0"
               },
               "RicochetMaterial": null,
@@ -464,7 +496,7 @@
             },
             "DirtDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Dirt",
+                "ObjectName": "Material'M_Melee_Blunt_Dirt'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Dirt.0"
               },
               "RicochetMaterial": null,
@@ -632,7 +664,7 @@
             },
             "MetalDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Steel",
+                "ObjectName": "Material'M_Melee_Blunt_Steel'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Steel.0"
               },
               "RicochetMaterial": null,
@@ -690,7 +722,7 @@
             },
             "WoodDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Wood",
+                "ObjectName": "Material'M_Melee_Blunt_Wood'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Wood.0"
               },
               "RicochetMaterial": null,
@@ -1023,7 +1055,7 @@
             },
             "CactusDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Cactus",
+                "ObjectName": "Material'M_Melee_Blunt_Cactus'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Cactus.0"
               },
               "RicochetMaterial": null,
@@ -1081,7 +1113,7 @@
             },
             "PaperDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Paper",
+                "ObjectName": "Material'M_Melee_Blunt_Paper'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Paper.0"
               },
               "RicochetMaterial": null,
@@ -1139,7 +1171,7 @@
             },
             "RubberDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Rubber",
+                "ObjectName": "Material'M_Melee_Blunt_Rubber'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Rubber.0"
               },
               "RicochetMaterial": null,
@@ -1197,7 +1229,7 @@
             },
             "FabricDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Fabric",
+                "ObjectName": "Material'M_Melee_Blunt_Fabric'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Fabric.0"
               },
               "RicochetMaterial": null,
@@ -1255,7 +1287,7 @@
             },
             "SnowDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Snow",
+                "ObjectName": "Material'M_Melee_Blunt_Snow'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Snow.0"
               },
               "RicochetMaterial": null,
@@ -1757,7 +1789,7 @@
         },
         {
           "AttackAnim": {
-            "ObjectName": "AnimMontage Melee_Combat_Upperbody_Attack_2_Montage",
+            "ObjectName": "AnimMontage'Melee_Combat_Upperbody_Attack_2_Montage'",
             "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Melee/Attack/Melee_Combat_Upperbody_Attack_2_Montage.0"
           },
           "AttackDecalEffectDataSet": {
@@ -1818,7 +1850,7 @@
             },
             "ConcreteDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Concrete",
+                "ObjectName": "Material'M_Melee_Blunt_Concrete'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Concrete.0"
               },
               "RicochetMaterial": null,
@@ -1931,7 +1963,7 @@
             },
             "DirtDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Dirt",
+                "ObjectName": "Material'M_Melee_Blunt_Dirt'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Dirt.0"
               },
               "RicochetMaterial": null,
@@ -2099,7 +2131,7 @@
             },
             "MetalDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Steel",
+                "ObjectName": "Material'M_Melee_Blunt_Steel'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Steel.0"
               },
               "RicochetMaterial": null,
@@ -2157,7 +2189,7 @@
             },
             "WoodDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Wood",
+                "ObjectName": "Material'M_Melee_Blunt_Wood'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Wood.0"
               },
               "RicochetMaterial": null,
@@ -2490,7 +2522,7 @@
             },
             "CactusDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Cactus",
+                "ObjectName": "Material'M_Melee_Blunt_Cactus'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Cactus.0"
               },
               "RicochetMaterial": null,
@@ -2548,7 +2580,7 @@
             },
             "PaperDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Paper",
+                "ObjectName": "Material'M_Melee_Blunt_Paper'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Paper.0"
               },
               "RicochetMaterial": null,
@@ -2606,7 +2638,7 @@
             },
             "RubberDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Rubber",
+                "ObjectName": "Material'M_Melee_Blunt_Rubber'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Rubber.0"
               },
               "RicochetMaterial": null,
@@ -2664,7 +2696,7 @@
             },
             "FabricDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Fabric",
+                "ObjectName": "Material'M_Melee_Blunt_Fabric'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Fabric.0"
               },
               "RicochetMaterial": null,
@@ -2722,7 +2754,7 @@
             },
             "SnowDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Snow",
+                "ObjectName": "Material'M_Melee_Blunt_Snow'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Snow.0"
               },
               "RicochetMaterial": null,
@@ -3224,7 +3256,7 @@
         },
         {
           "AttackAnim": {
-            "ObjectName": "AnimMontage Melee_Combat_Upperbody_Attack_3_Montage",
+            "ObjectName": "AnimMontage'Melee_Combat_Upperbody_Attack_3_Montage'",
             "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Melee/Attack/Melee_Combat_Upperbody_Attack_3_Montage.0"
           },
           "AttackDecalEffectDataSet": {
@@ -3285,7 +3317,7 @@
             },
             "ConcreteDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Concrete",
+                "ObjectName": "Material'M_Melee_Blunt_Concrete'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Concrete.0"
               },
               "RicochetMaterial": null,
@@ -3398,7 +3430,7 @@
             },
             "DirtDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Dirt",
+                "ObjectName": "Material'M_Melee_Blunt_Dirt'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Dirt.0"
               },
               "RicochetMaterial": null,
@@ -3566,7 +3598,7 @@
             },
             "MetalDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Steel",
+                "ObjectName": "Material'M_Melee_Blunt_Steel'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Steel.0"
               },
               "RicochetMaterial": null,
@@ -3624,7 +3656,7 @@
             },
             "WoodDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Wood",
+                "ObjectName": "Material'M_Melee_Blunt_Wood'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Wood.0"
               },
               "RicochetMaterial": null,
@@ -3957,7 +3989,7 @@
             },
             "CactusDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Cactus",
+                "ObjectName": "Material'M_Melee_Blunt_Cactus'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Cactus.0"
               },
               "RicochetMaterial": null,
@@ -4015,7 +4047,7 @@
             },
             "PaperDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Paper",
+                "ObjectName": "Material'M_Melee_Blunt_Paper'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Paper.0"
               },
               "RicochetMaterial": null,
@@ -4073,7 +4105,7 @@
             },
             "RubberDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Rubber",
+                "ObjectName": "Material'M_Melee_Blunt_Rubber'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Rubber.0"
               },
               "RicochetMaterial": null,
@@ -4131,7 +4163,7 @@
             },
             "FabricDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Fabric",
+                "ObjectName": "Material'M_Melee_Blunt_Fabric'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Fabric.0"
               },
               "RicochetMaterial": null,
@@ -4189,7 +4221,7 @@
             },
             "SnowDecal": {
               "Material": {
-                "ObjectName": "Material M_Melee_Blunt_Snow",
+                "ObjectName": "Material'M_Melee_Blunt_Snow'",
                 "ObjectPath": "TslGame/Content/Effects/Clets/Material/M_Melee_Blunt_Snow.0"
               },
               "RicochetMaterial": null,
@@ -4693,11 +4725,11 @@
       "Damage": 80.0,
       "WeaponImpact": 40000.0,
       "ImpactTemplate": {
-        "ObjectName": "BlueprintGeneratedClass MeleeImpact_Blunt_C",
+        "ObjectName": "BlueprintGeneratedClass'MeleeImpact_Blunt_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/MeleeImpact_Blunt.0"
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_melee_pan",
+        "ObjectName": "Texture2D'weapons_melee_pan'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_melee_pan.0"
       },
       "WeaponIconRatio": 1.6,
@@ -4717,22 +4749,22 @@
         "EWeaponClass::Class_SMG"
       ],
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapTacticalShield_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__WeapTacticalShield_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.22"
       },
       "WeaponTag": "Pan",
       "AnimWeaponType": "EAnimWeaponType::Shield",
       "WeaponAudioData": {
-        "ObjectName": "WeaponAudioData WeapTacticalShield_WeaponAudioData",
+        "ObjectName": "WeaponAudioData'WeapTacticalShield_WeaponAudioData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/DataAssets/WeapTacticalShield_WeaponAudioData.0"
-      },
-      "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapTacticalShield_C:RootScene",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.17"
       },
       "PrimaryActorTick": {
         "bStartWithTickEnabled": false,
         "bAllowTickOnDedicatedServer": false
+      },
+      "RootComponent": {
+        "ObjectName": "SceneComponent'Default__WeapTacticalShield_C:RootScene'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.17"
       }
     }
   },
@@ -4740,9 +4772,10 @@
     "Type": "AkComponent",
     "Name": "Ak_GEN_VARIABLE",
     "Outer": "WeapTacticalShield_C",
+    "Class": "UScriptClass'AkComponent'",
     "Properties": {
       "AkAudioEvent": {
-        "ObjectName": "AkAudioEvent _Weapon_OutOfAmmo",
+        "ObjectName": "AkAudioEvent'_Weapon_OutOfAmmo'",
         "ObjectPath": "TslGame/Content/WwiseAssets/Weapons/_Common/OutOfAmmo/_Weapon_OutOfAmmo.0"
       }
     }
@@ -4752,20 +4785,21 @@
     "Name": "HitCollisionCylinder",
     "Outer": "Default__WeapTacticalShield_C",
     "Template": "HitCollisionCylinder",
+    "Class": "UScriptClass'CapsuleComponent'",
     "Properties": {
-      "RelativeScale3D": {
-        "X": 2.5,
-        "Y": 1.0,
-        "Z": 2.0
+      "AttachParent": {
+        "ObjectName": "WeaponMeshComponent'Default__WeapTacticalShield_C:WeaponMesh3P'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.22"
       },
       "RelativeLocation": {
         "X": 0.0,
         "Y": -12.0,
         "Z": -18.0
       },
-      "AttachParent": {
-        "ObjectName": "WeaponMeshComponent Default__WeapTacticalShield_C:WeaponMesh3P",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.22"
+      "RelativeScale3D": {
+        "X": 2.5,
+        "Y": 1.0,
+        "Z": 2.0
       }
     }
   },
@@ -4774,6 +4808,7 @@
     "Name": "FlashbangComponent",
     "Outer": "Default__WeapTacticalShield_C",
     "Template": "FlashbangComponent",
+    "Class": "UScriptClass'FlashbangComponent'",
     "Properties": {
       "SphereQueryObjects": [
         244
@@ -4785,7 +4820,7 @@
       ],
       "FlashMaxAngle": 180.0,
       "DebuffClass": {
-        "ObjectName": "BlueprintGeneratedClass BP_ShieldFlashbangDebuff_C",
+        "ObjectName": "BlueprintGeneratedClass'BP_ShieldFlashbangDebuff_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/Buffs/BP_ShieldFlashbangDebuff.2"
       }
     }
@@ -4795,12 +4830,13 @@
     "Name": "RootScene",
     "Outer": "Default__WeapTacticalShield_C",
     "Template": "RootScene",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapTacticalShield_C Default__WeapTacticalShield_C",
+              "ObjectName": "WeapTacticalShield_C'Default__WeapTacticalShield_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.13"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -4812,19 +4848,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapTacticalShield_C"
+    "Outer": "WeapTacticalShield_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_0",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapTacticalShield_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapTacticalShield_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.18"
       },
       "VariableGuid": "39A13190-4EBB2694-BA56B891-9EEDE063",
@@ -4835,13 +4873,14 @@
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class AkComponent",
+        "ObjectName": "Class'AkComponent'",
         "ObjectPath": "/Script/AkAudio"
       },
       "ComponentTemplate": {
-        "ObjectName": "AkComponent WeapTacticalShield_C:Ak_GEN_VARIABLE",
+        "ObjectName": "AkComponent'WeapTacticalShield_C:Ak_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.14"
       },
       "ParentComponentOrVariableName": "RootScene",
@@ -4854,21 +4893,22 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0",
     "Outer": "WeapTacticalShield_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "RootNodes": [
         {
-          "ObjectName": "SCS_Node WeapTacticalShield_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectName": "SCS_Node'WeapTacticalShield_C:SimpleConstructionScript_0.SCS_Node_1'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.20"
         }
       ],
       "AllNodes": [
         {
-          "ObjectName": "SCS_Node WeapTacticalShield_C:SimpleConstructionScript_0.SCS_Node_1",
+          "ObjectName": "SCS_Node'WeapTacticalShield_C:SimpleConstructionScript_0.SCS_Node_1'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.20"
         }
       ],
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapTacticalShield_C:SimpleConstructionScript_0.SCS_Node_0",
+        "ObjectName": "SCS_Node'WeapTacticalShield_C:SimpleConstructionScript_0.SCS_Node_0'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.19"
       }
     }
@@ -4878,10 +4918,11 @@
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapTacticalShield_C",
     "Template": "WeaponMesh3P",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "AnimationMode": "EAnimationMode::AnimationSingleNode",
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh SK_Shield",
+        "ObjectName": "SkeletalMesh'SK_Shield'",
         "ObjectPath": "TslGame/Content/Weapon/Melee/Shield/SK_Shield.0"
       },
       "BodyInstance": {
@@ -4945,7 +4986,7 @@
       },
       "CanCharacterStepUpOn": "ECB_No",
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapTacticalShield_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapTacticalShield_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Melee/WeapTacticalShield.17"
       }
     }

@@ -2,6 +2,7 @@
   {
     "Type": "WeaponTrajectoryData",
     "Name": "WeapMG3_WeaponTrajectoryData",
+    "Class": "UScriptClass'WeaponTrajectoryData'",
     "Properties": {
       "RecoilConfig": {
         "VerticalRecoilMin": 0.05,
@@ -11,7 +12,7 @@
         "VerticalRecoveryClamp": 4.0,
         "VerticalRecoveryMax": 2.0,
         "RecoilCurve": {
-          "ObjectName": "CurveVector C_Recoil_MG3",
+          "ObjectName": "CurveVector'C_Recoil_MG3'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/RecoilCurves/C_Recoil_MG3.0"
         },
         "BulletsPerSwitch": 2,
@@ -40,20 +41,24 @@
           "X": 0.016,
           "Y": 0.1
         },
-        "ROFRecoilMap": {
-          "EFiringMode::FullAutoFast": {
-            "StanceMap": {
-              "EAnimStance::Prone": 0.475
+        "ROFRecoilMap": [
+          {
+            "EFiringMode::FullAutoFast": {
+              "StanceMap": [
+                {
+                  "EAnimStance::Prone": 0.475
+                }
+              ]
             }
           }
-        }
+        ]
       },
       "TrajectoryConfig": {
         "InitialSpeed": 820.0,
         "HitDamage": 42.0,
         "VehicleDamageScalar": 1.25,
         "BallisticCurve": {
-          "ObjectName": "CurveVector C_Ballistic_MG3",
+          "ObjectName": "CurveVector'C_Ballistic_MG3'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/BallisticData/C_Ballistic_MG3.0"
         },
         "RangeModifier": 0.94,
@@ -62,13 +67,13 @@
         "VDragCoefficient": 0.75,
         "BDS": 0.95,
         "DamageType": {
-          "ObjectName": "BlueprintGeneratedClass DmgType_Gun_C",
+          "ObjectName": "BlueprintGeneratedClass'DmgType_Gun_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_Gun.0"
         },
         "WeaponSpread": 8.0
       },
       "ConsoleWeaponRecoilData": {
-        "ObjectName": "WeaponGunRecoilData WeapM249_RecoilDataConsole",
+        "ObjectName": "WeaponGunRecoilData'WeapM249_RecoilDataConsole'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapM249_RecoilDataConsole.0"
       }
     }

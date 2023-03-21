@@ -1,0 +1,852 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "ExplosionBlocker",
+    "Outer": "Carepackage_Container_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'BoxComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "P_CrateLand",
+    "Outer": "Carepackage_Container_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carepackage_Container_C:ExplosionBlocker'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.0"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'ParticleSystemComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "TslCarePackageHitComponent",
+    "Outer": "Carepackage_Container_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carepackage_Container_C:P_CrateLand'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.1"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCarePackageHitComponent'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Contains_ReturnValue",
+    "Outer": "ExecuteUbergraph_Carepackage_Container",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StrProperty",
+    "Name": "CallFunc_GetObjectName_ReturnValue",
+    "Outer": "ExecuteUbergraph_Carepackage_Container",
+    "Class": "UScriptClass'StrProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Carepackage_Container_C:ExecuteUbergraph_Carepackage_Container.CallFunc_Contains_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.3"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_ComponentBoundEvent_Hit",
+    "Outer": "ExecuteUbergraph_Carepackage_Container",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StrProperty'Carepackage_Container_C:ExecuteUbergraph_Carepackage_Container.CallFunc_GetObjectName_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.4"
+    },
+    "PropertyFlags": 549755813890,
+    "Struct": {
+      "ObjectName": "ScriptStruct'HitResult'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_ComponentBoundEvent_NormalImpulse",
+    "Outer": "ExecuteUbergraph_Carepackage_Container",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carepackage_Container_C:ExecuteUbergraph_Carepackage_Container.K2Node_ComponentBoundEvent_Hit'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.5"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_ComponentBoundEvent_OtherComp",
+    "Outer": "ExecuteUbergraph_Carepackage_Container",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carepackage_Container_C:ExecuteUbergraph_Carepackage_Container.K2Node_ComponentBoundEvent_NormalImpulse'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.6"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PrimitiveComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_ComponentBoundEvent_OtherActor",
+    "Outer": "ExecuteUbergraph_Carepackage_Container",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carepackage_Container_C:ExecuteUbergraph_Carepackage_Container.K2Node_ComponentBoundEvent_OtherComp'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.7"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_ComponentBoundEvent_HitComponent",
+    "Outer": "ExecuteUbergraph_Carepackage_Container",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carepackage_Container_C:ExecuteUbergraph_Carepackage_Container.K2Node_ComponentBoundEvent_OtherActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.8"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'PrimitiveComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "___bool_IsClosed_Variable",
+    "Outer": "ExecuteUbergraph_Carepackage_Container",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carepackage_Container_C:ExecuteUbergraph_Carepackage_Container.K2Node_ComponentBoundEvent_HitComponent'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.9"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "___bool_Has_Been_Initd_Variable",
+    "Outer": "ExecuteUbergraph_Carepackage_Container",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Carepackage_Container_C:ExecuteUbergraph_Carepackage_Container.___bool_IsClosed_Variable'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.10"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Carepackage_Container",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Carepackage_Container_C:ExecuteUbergraph_Carepackage_Container.___bool_Has_Been_Initd_Variable'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.11"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Carepackage_Container",
+    "Outer": "Carepackage_Container_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carepackage_Container_C:TslCarePackageHitComponent'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.2"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Carepackage_Container_C:ExecuteUbergraph_Carepackage_Container.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.12"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "Hit",
+    "Outer": "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "PropertyFlags": 549890032002,
+    "Struct": {
+      "ObjectName": "ScriptStruct'HitResult'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "NormalImpulse",
+    "Outer": "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carepackage_Container_C:BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature.Hit'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.14"
+    },
+    "PropertyFlags": 128,
+    "Struct": {
+      "ObjectName": "ScriptStruct'Vector'",
+      "ObjectPath": "/Script/CoreUObject"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OtherComp",
+    "Outer": "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Carepackage_Container_C:BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature.NormalImpulse'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.15"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'PrimitiveComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OtherActor",
+    "Outer": "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carepackage_Container_C:BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature.OtherComp'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.16"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "HitComponent",
+    "Outer": "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Carepackage_Container_C:BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature.OtherActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.17"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'PrimitiveComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature",
+    "Outer": "Carepackage_Container_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Carepackage_Container_C:ExecuteUbergraph_Carepackage_Container'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.13"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Carepackage_Container_C:BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature.HitComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.18"
+      }
+    ],
+    "FunctionFlags": 138412032
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "Carepackage_Container_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Carepackage_Container_C:BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.19"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Carepackage_Container_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Carepackage_Container_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.20"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Carepackage_Container_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "DynamicBindingObjects": [
+        {
+          "ObjectName": "ComponentDelegateBinding'Carepackage_Container_C:ComponentDelegateBinding_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.29"
+        }
+      ],
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Carepackage_Container_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.37"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Carepackage_Container_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.21"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Carepackage_Container_C:ExecuteUbergraph_Carepackage_Container'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.13"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'CarePackageItem'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Carepackage_Container_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.21"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Carepackage_Container": {
+        "ObjectName": "Function'Carepackage_Container_C:ExecuteUbergraph_Carepackage_Container'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.13"
+      },
+      "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature": {
+        "ObjectName": "Function'Carepackage_Container_C:BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.19"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'Carepackage_Container_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.20"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Carepackage_Container_C'Default__Carepackage_Container_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.23"
+    }
+  },
+  {
+    "Type": "Carepackage_Container_C",
+    "Name": "Default__Carepackage_Container_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.Carepackage_Container_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "ParachuteClass": null,
+      "SmokeFxClass": {
+        "ObjectName": "BlueprintGeneratedClass'P_Carepackage_Smoke_Container_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Smoke_Container.0"
+      },
+      "LightFxClass": {
+        "ObjectName": "BlueprintGeneratedClass'P_Carepackage_Light_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/P_Carepackage_Light.0"
+      },
+      "VisualStaticMesh": {
+        "ObjectName": "AsyncStaticMeshComponent'Default__Carepackage_Container_C:VisualStaticMesh'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.25"
+      },
+      "VisualPackageMesh": "/Game/Blueprints/CarePackage/Chimera/SM_CarePackage_Container_Chimera.SM_CarePackage_Container_Chimera",
+      "bIsFallLimited": false,
+      "LimitFallSpeed": 500.0,
+      "SmokeSocket": "Smoke",
+      "SmokeAirSocket": "Smoke_Air",
+      "LightSocket": "Light",
+      "LandSoundAk": {
+        "ObjectName": "AkAudioEvent'Vehicle_Helicopter_Container'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Vehicles/Helicopter/Vehicle_Helicopter_Container.0"
+      },
+      "MovementComponent": {
+        "ObjectName": "SimpleInterpolationMovement'Default__Carepackage_Container_C:MovementComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.38"
+      },
+      "BuoyancyForceComponent": {
+        "ObjectName": "BuoyancyForceComponent'Default__Carepackage_Container_C:BuoyancyForceComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.28"
+      },
+      "PackageName": {
+        "TableId": "/Game/StringTables/World/NS_NEGLECTEDSTRINGS.NS_NEGLECTEDSTRINGS",
+        "Key": "K_LPU_02"
+      },
+      "PackageIcon": {
+        "ObjectName": "Texture2D'BagIcon'",
+        "ObjectPath": "TslGame/Content/EditorAssets/Texture/BagIcon.0"
+      },
+      "BoxComponent": {
+        "ObjectName": "BoxComponent'Default__Carepackage_Container_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.27"
+      },
+      "InteractionComponent": {
+        "ObjectName": "OnceInteractionComponent'Default__Carepackage_Container_C:InteractionComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.30"
+      },
+      "DropStaticMesh": {
+        "ObjectName": "AsyncStaticMeshComponent'Default__Carepackage_Container_C:DropStaticMesh'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.24"
+      },
+      "SortPriority": 7,
+      "RootComponent": {
+        "ObjectName": "BoxComponent'Default__Carepackage_Container_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.27"
+      },
+      "OnDestroyed": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "Carepackage_Container_C'Default__Carepackage_Container_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.23"
+            },
+            "FunctionName": "OnDestroy"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "AsyncStaticMeshComponent",
+    "Name": "DropStaticMesh",
+    "Outer": "Default__Carepackage_Container_C",
+    "Class": "UScriptClass'AsyncStaticMeshComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__Carepackage_Container_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.27"
+      }
+    }
+  },
+  {
+    "Type": "AsyncStaticMeshComponent",
+    "Name": "VisualStaticMesh",
+    "Outer": "Default__Carepackage_Container_C",
+    "Class": "UScriptClass'AsyncStaticMeshComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__Carepackage_Container_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.27"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "ExplosionBlocker_GEN_VARIABLE",
+    "Outer": "Carepackage_Container_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 300.0,
+        "Y": 120.0,
+        "Z": 130.0
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "CollisionProfileName": "Custom",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldStatic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldDynamic",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Pawn",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Visibility",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Camera",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "PhysicsBody",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Vehicle",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Destructible",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Projectile",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "Grenade",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "InteractiveObject",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "CrosshairImpact",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Ignore"
+            }
+          ]
+        },
+        "bUseCCD": true,
+        "AngularDamping": 100.0,
+        "PhysMaterialOverride": {
+          "ObjectName": "PhysicalMaterial'PM_Carepackage'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/PM_Carepackage.0"
+        }
+      },
+      "bShouldUpdatePhysicsVolume": true,
+      "RelativeScale3D": {
+        "X": 0.8125845,
+        "Y": 0.802722,
+        "Z": 0.995098
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent",
+    "Outer": "Default__Carepackage_Container_C",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "BoxExtent": {
+        "X": 300.0,
+        "Y": 120.0,
+        "Z": 130.0
+      },
+      "BodyInstance": {
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "Weapon",
+              "Response": "ECR_Ignore"
+            },
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "MassInKgOverride": 1000.0,
+        "AngularDamping": 100.0,
+        "PhysMaterialOverride": {
+          "ObjectName": "PhysicalMaterial'PM_Carepackage'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/PM_Carepackage.0"
+        }
+      },
+      "PhysicsVolumeChangedDelegate": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "SimpleInterpolationMovement'Default__Carepackage_Container_C:MovementComponent'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.38"
+            },
+            "FunctionName": "PhysicsVolumeChanged"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "BuoyancyForceComponent",
+    "Name": "BuoyancyForceComponent",
+    "Outer": "Default__Carepackage_Container_C",
+    "Class": "UScriptClass'BuoyancyForceComponent'",
+    "Properties": {
+      "AttachParent": {
+        "ObjectName": "BoxComponent'Default__Carepackage_Container_C:BoxComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.27"
+      }
+    }
+  },
+  {
+    "Type": "ComponentDelegateBinding",
+    "Name": "ComponentDelegateBinding_2",
+    "Outer": "Carepackage_Container_C",
+    "Class": "UScriptClass'ComponentDelegateBinding'",
+    "Properties": {
+      "ComponentDelegateBindings": [
+        {
+          "ComponentPropertyName": "BoxComponent",
+          "DelegatePropertyName": "OnComponentHit",
+          "FunctionNameToBind": "BndEvt__BoxComponent_K2Node_ComponentBoundEvent_0_ComponentHitSignature__DelegateSignature"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "OnceInteractionComponent",
+    "Name": "InteractionComponent",
+    "Outer": "Default__Carepackage_Container_C",
+    "Class": "UScriptClass'OnceInteractionComponent'",
+    "Properties": {
+      "MaxInteractableDistance": 400.0,
+      "InteractionVerb": {
+        "TableId": "/Game/StringTables/World/NS_NEGLECTEDSTRINGS.NS_NEGLECTEDSTRINGS",
+        "Key": "K_LPU_03"
+      },
+      "InteractiveObjectName": {
+        "TableId": "/Game/StringTables/World/NS_NEGLECTEDSTRINGS.NS_NEGLECTEDSTRINGS",
+        "Key": "K_LPU_02"
+      },
+      "CastConfig": {
+        "CastName": {
+          "Namespace": "",
+          "Key": "K_CLEANKEY_364",
+          "SourceString": "OPEN Care Package",
+          "LocalizedString": "OPEN Care Package"
+        },
+        "CastLevel": "ECastLevel::Restriction"
+      },
+      "OnInteractBy": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "Carepackage_Container_C'Default__Carepackage_Container_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.23"
+            },
+            "FunctionName": "ServerOnInteractBy"
+          }
+        ]
+      },
+      "ClientOnInteractBy": {
+        "InvocationList": [
+          {
+            "Object": {
+              "ObjectName": "Carepackage_Container_C'Default__Carepackage_Container_C'",
+              "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.23"
+            },
+            "FunctionName": "ClientOnInteractBy"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "P_CrateLand_GEN_VARIABLE",
+    "Outer": "Carepackage_Container_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_CrateLand'",
+        "ObjectPath": "TslGame/Content/Assets/Effects/ParticleSystem/Weapon/P_CrateLand.20"
+      },
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 0.0,
+        "Y": 2.5242767,
+        "Z": -79.39617
+      },
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Carepackage_Container_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Carepackage_Container_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.32"
+      },
+      "VariableGuid": "EA35F677-4ACFD209-C8D4F89C-AE1A9828",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'BoxComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "BoxComponent'Carepackage_Container_C:ExplosionBlocker_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.26"
+      },
+      "ParentComponentOrVariableName": "BoxComponent",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "CC75E46A-4758DB27-365F06B5-2D4B8AFB",
+      "InternalVariableName": "ExplosionBlocker"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ParticleSystemComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent'Carepackage_Container_C:P_CrateLand_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.31"
+      },
+      "ParentComponentOrVariableName": "BoxComponent",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "546EBD33-48E3B805-CC361E9D-FB9705BD",
+      "InternalVariableName": "P_CrateLand"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'TslCarePackageHitComponent'",
+        "ObjectPath": "/Script/TslGame"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "TslCarePackageHitComponent'Carepackage_Container_C:TslCarePackageHitComponent_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.39"
+      },
+      "VariableGuid": "BC44E744-4A7B6F0D-6A93948A-3C52D0D1",
+      "InternalVariableName": "TslCarePackageHitComponent"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Carepackage_Container_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Carepackage_Container_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.34"
+        },
+        {
+          "ObjectName": "SCS_Node'Carepackage_Container_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.35"
+        },
+        {
+          "ObjectName": "SCS_Node'Carepackage_Container_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.36"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Carepackage_Container_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.34"
+        },
+        {
+          "ObjectName": "SCS_Node'Carepackage_Container_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.35"
+        },
+        {
+          "ObjectName": "SCS_Node'Carepackage_Container_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.36"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Carepackage_Container_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Chimera/Carepackage_Container.33"
+      }
+    }
+  },
+  {
+    "Type": "SimpleInterpolationMovement",
+    "Name": "MovementComponent",
+    "Outer": "Default__Carepackage_Container_C",
+    "Class": "UScriptClass'SimpleInterpolationMovement'",
+    "Properties": {
+      "LocationInterpTime": 0.1,
+      "RotationInterpTime": 0.1,
+      "bUseOnlyYawRotation": false
+    }
+  },
+  {
+    "Type": "TslCarePackageHitComponent",
+    "Name": "TslCarePackageHitComponent_GEN_VARIABLE",
+    "Outer": "Carepackage_Container_C",
+    "Class": "UScriptClass'TslCarePackageHitComponent'",
+    "Properties": {
+      "CharacterDamageSpeedCurve": {
+        "ObjectName": "CurveFloat'VehicleCollisionCharacterDamage'",
+        "ObjectPath": "TslGame/Content/Vehicles/Base_Vehicle/VehicleCollisionCharacterDamage.0"
+      },
+      "CharacterDamageSpeedCurve_Console": {
+        "ObjectName": "CurveFloat'VehicleCollisionCharacterDamage_Console'",
+        "ObjectPath": "TslGame/Content/Vehicles/Base_Vehicle/VehicleCollisionCharacterDamageConsole/VehicleCollisionCharacterDamage_Console.0"
+      },
+      "CharacterDamageMassCurve": {
+        "ObjectName": "CurveFloat'VehicleCollisionCharacterDamageMass'",
+        "ObjectPath": "TslGame/Content/Vehicles/Base_Vehicle/VehicleCollisionCharacterDamageMass.0"
+      },
+      "CharacterDamageVelocityUnitMultiplier": 0.036,
+      "CharacterDamageMassUnitMultiplier": 0.001,
+      "VehicleHitDamageType": {
+        "ObjectName": "BlueprintGeneratedClass'DmgType_VehicleHit_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgType_VehicleHit.0"
+      },
+      "MinimumCharacterDamage": 5.0,
+      "CharacterHitMinimumVehicleSpeed": 150.0,
+      "CharacterLaunchSpeedMultiplier": 1.5,
+      "MinimumCharacterLaunchSpeed": 300.0
+    }
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "Type": "Material",
+    "Name": "M_Snow_PostProcess",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "EmissiveColor": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionLinearInterpolate_1",
+        "UseConstant": false,
+        "Constant": {
+          "B": 0,
+          "G": 0,
+          "R": 0,
+          "A": 0,
+          "Hex": "000000"
+        }
+      },
+      "MaterialDomain": "MD_PostProcess",
+      "Expressions": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Snow_PostProcess:MaterialExpressionScalarParameter_1'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_Snow_PostProcess.1"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Snow_PostProcess:MaterialExpressionScalarParameter_2'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_Snow_PostProcess.2"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Snow_PostProcess:MaterialExpressionScalarParameter_3'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_Snow_PostProcess.3"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_Snow_PostProcess:MaterialExpressionScalarParameter_4'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_Snow_PostProcess.4"
+        },
+        null,
+        null,
+        null
+      ],
+      "bCanMaskedBeAssumedOpaque": true,
+      "StateId": "50DB1D40-46B401AB-73B482B4-A880BF5A"
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_1",
+    "Outer": "M_Snow_PostProcess",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 3000.0,
+      "ParameterName": "1",
+      "ExpressionGUID": "66878195-48EF1C2F-F1CAEFB2-DAAB60D5",
+      "Material": {
+        "ObjectName": "Material'M_Snow_PostProcess'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_Snow_PostProcess.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_2",
+    "Outer": "M_Snow_PostProcess",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 1200.0,
+      "ParameterName": "2",
+      "ExpressionGUID": "D55DD9F2-4F887DB0-09D0D7B4-98336A8C",
+      "Material": {
+        "ObjectName": "Material'M_Snow_PostProcess'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_Snow_PostProcess.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_3",
+    "Outer": "M_Snow_PostProcess",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 835.8,
+      "ParameterName": "3",
+      "ExpressionGUID": "5DB903BD-4DA94EF5-16F2A6AD-A6BC2EB9",
+      "Material": {
+        "ObjectName": "Material'M_Snow_PostProcess'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_Snow_PostProcess.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_4",
+    "Outer": "M_Snow_PostProcess",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 0.7073,
+      "ParameterName": "4",
+      "ExpressionGUID": "9ADF65DD-445493EF-5E2C3797-9E2ECE98",
+      "Material": {
+        "ObjectName": "Material'M_Snow_PostProcess'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_Snow_PostProcess.0"
+      }
+    }
+  }
+]

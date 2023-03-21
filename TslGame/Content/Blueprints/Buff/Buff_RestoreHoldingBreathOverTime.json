@@ -1,0 +1,720 @@
+[
+  {
+    "Type": "StructProperty",
+    "Name": "DelayAfterHoldingTimerHandle",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "PropertyFlags": 65541,
+    "Struct": {
+      "ObjectName": "ScriptStruct'TimerHandle'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "bCanBuff",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Buff_RestoreHoldingBreathOverTime_C:DelayAfterHoldingTimerHandle'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.0"
+    },
+    "PropertyFlags": 65541,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "LastTimeUnderwater",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_RestoreHoldingBreathOverTime_C:bCanBuff'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.1"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "DelayAfterHolding",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_RestoreHoldingBreathOverTime_C:LastTimeUnderwater'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.2"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "BreathRestoreRunnin",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_RestoreHoldingBreathOverTime_C:DelayAfterHolding'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.3"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "BreathRestoreRestBoost",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_RestoreHoldingBreathOverTime_C:BreathRestoreRunnin'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.4"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "BreathRestoreTickInterval",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_RestoreHoldingBreathOverTime_C:BreathRestoreRestBoost'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.5"
+    },
+    "PropertyFlags": 5
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "BreathPerTickMax",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_RestoreHoldingBreathOverTime_C:BreathRestoreTickInterval'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.6"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CharacterRef",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_RestoreHoldingBreathOverTime_C:BreathPerTickMax'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.7"
+    },
+    "PropertyFlags": 67589,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_RestoreHoldingBreathOverTime_C:CharacterRef'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.8"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "UnderlyingType",
+    "Outer": "CallFunc_GetBreathType_ReturnValue",
+    "Class": "UScriptClass'ByteProperty'",
+    "Next": null,
+    "Enum": null
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "UnderlyingType",
+    "Outer": "CallFunc_GetBreathType_ReturnValue2",
+    "Class": "UScriptClass'ByteProperty'",
+    "Next": null,
+    "Enum": null
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Multiply_FloatFloat_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_FMax_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_Multiply_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.12"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Square_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_FMax_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.13"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetBreathRatio_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_Square_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.14"
+    }
+  },
+  {
+    "Type": "EnumProperty",
+    "Name": "CallFunc_GetBreathType_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'EnumProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_GetBreathRatio_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.15"
+    },
+    "Enum": {
+      "ObjectName": "Enum'EBreathType'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "UnderlyingProp": {
+      "ObjectName": "ByteProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_GetBreathType_ReturnValue2.UnderlyingType'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.11"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanNOR_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "EnumProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_GetBreathType_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.16"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_K2_IsTimerActiveHandle_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_BooleanNOR_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.17"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_K2_IsTimerActiveHandle_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.18"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'TimerHandle'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsHoldingBreath_ReturnValue2",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_K2_SetTimerDelegate_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.19"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OtherCharacter",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_IsHoldingBreath_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.20"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetCharacter_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.K2Node_Event_OtherCharacter'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.21"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_GetCharacter_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.22"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_FindBuffWithOverlapId_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_IsValid_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.23"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslBuff'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsHoldingBreath_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_FindBuffWithOverlapId_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.24"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetBuffComponent_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_IsHoldingBreath_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.25"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'BuffComponet'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "DelegateProperty",
+    "Name": "K2Node_CreateDelegate_OutputDelegate",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'DelegateProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_GetBuffComponent_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.26"
+    },
+    "SignatureFunction": {
+      "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "EnumProperty",
+    "Name": "CallFunc_GetBreathType_ReturnValue",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'EnumProperty'",
+    "Next": {
+      "ObjectName": "DelegateProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.K2Node_CreateDelegate_OutputDelegate'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.27"
+    },
+    "Enum": {
+      "ObjectName": "Enum'EBreathType'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "UnderlyingProp": {
+      "ObjectName": "ByteProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_GetBreathType_ReturnValue.UnderlyingType'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.10"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "EnumProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.CallFunc_GetBreathType_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.28"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Buff_RestoreHoldingBreathOverTime_C:DefaultSceneRoot'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.9"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.29"
+      }
+    ],
+    "FunctionFlags": 8388608
+  },
+  {
+    "Type": "Function",
+    "Name": "AfterDelay",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.30"
+    },
+    "FunctionFlags": 201326592
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OtherCharacter",
+    "Outer": "TickBuff",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'TslCharacter'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "TickBuff",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_RestoreHoldingBreathOverTime_C:AfterDelay'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.31"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'TslBuff:TickBuff'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Buff_RestoreHoldingBreathOverTime_C:TickBuff.OtherCharacter'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.32"
+      }
+    ],
+    "FunctionFlags": 134350848
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_RestoreHoldingBreathOverTime_C:TickBuff'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.33"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_RestoreHoldingBreathOverTime_C:ReceiveBeginPlay'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.34"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "ByteProperty",
+    "Name": "UnderlyingType",
+    "Outer": "CallFunc_GetBreathType_ReturnValue",
+    "Class": "UScriptClass'ByteProperty'",
+    "Next": null,
+    "Enum": null
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_BooleanAND_ReturnValue",
+    "Outer": "CanApplyBuff",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Less_FloatFloat_ReturnValue",
+    "Outer": "CanApplyBuff",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_RestoreHoldingBreathOverTime_C:CanApplyBuff.CallFunc_BooleanAND_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.37"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_GetBreathRatio_ReturnValue",
+    "Outer": "CanApplyBuff",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_RestoreHoldingBreathOverTime_C:CanApplyBuff.CallFunc_Less_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.38"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_IsValid_ReturnValue",
+    "Outer": "CanApplyBuff",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Buff_RestoreHoldingBreathOverTime_C:CanApplyBuff.CallFunc_GetBreathRatio_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.39"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_CanApplyBuff_ReturnValue",
+    "Outer": "CanApplyBuff",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_RestoreHoldingBreathOverTime_C:CanApplyBuff.CallFunc_IsValid_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.40"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "EnumProperty",
+    "Name": "CallFunc_GetBreathType_ReturnValue",
+    "Outer": "CanApplyBuff",
+    "Class": "UScriptClass'EnumProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Buff_RestoreHoldingBreathOverTime_C:CanApplyBuff.CallFunc_CanApplyBuff_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.41"
+    },
+    "Enum": {
+      "ObjectName": "Enum'EBreathType'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "UnderlyingProp": {
+      "ObjectName": "ByteProperty'Buff_RestoreHoldingBreathOverTime_C:CanApplyBuff.CallFunc_GetBreathType_ReturnValue.UnderlyingType'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.36"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "ReturnValue",
+    "Outer": "CanApplyBuff",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "EnumProperty'Buff_RestoreHoldingBreathOverTime_C:CanApplyBuff.CallFunc_GetBreathType_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.42"
+    },
+    "PropertyFlags": 1408,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "Function",
+    "Name": "CanApplyBuff",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Buff_RestoreHoldingBreathOverTime_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.35"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'TslBuff:CanApplyBuff'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "BoolProperty'Buff_RestoreHoldingBreathOverTime_C:CanApplyBuff.ReturnValue'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.43"
+      }
+    ],
+    "FunctionFlags": 205654016
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Buff_RestoreHoldingBreathOverTime_C:CanApplyBuff'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.44"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Buff_RestoreHoldingBreathOverTime_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.50"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Buff_RestoreHoldingBreathOverTime_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.45"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.30"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'CharacterBreathBuff'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Buff_RestoreHoldingBreathOverTime_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.45"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime": {
+        "ObjectName": "Function'Buff_RestoreHoldingBreathOverTime_C:ExecuteUbergraph_Buff_RestoreHoldingBreathOverTime'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.30"
+      },
+      "AfterDelay": {
+        "ObjectName": "Function'Buff_RestoreHoldingBreathOverTime_C:AfterDelay'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.31"
+      },
+      "TickBuff": {
+        "ObjectName": "Function'Buff_RestoreHoldingBreathOverTime_C:TickBuff'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.33"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'Buff_RestoreHoldingBreathOverTime_C:ReceiveBeginPlay'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.34"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'Buff_RestoreHoldingBreathOverTime_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.35"
+      },
+      "CanApplyBuff": {
+        "ObjectName": "Function'Buff_RestoreHoldingBreathOverTime_C:CanApplyBuff'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.44"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Buff_RestoreHoldingBreathOverTime_C'Default__Buff_RestoreHoldingBreathOverTime_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.47"
+    }
+  },
+  {
+    "Type": "Buff_RestoreHoldingBreathOverTime_C",
+    "Name": "Default__Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.Buff_RestoreHoldingBreathOverTime_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "BreathPerTickMax": 10.0,
+      "DelayAfterHolding": 1.0,
+      "DelayAfterHoldingTimerHandle": {
+        "Handle": 0
+      },
+      "OverlapId": "Buff_RestoreBreath",
+      "BuffTickInterval": 0.1,
+      "BuffTickFirstDelay": 1.0,
+      "Infinite": true
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Buff_RestoreHoldingBreathOverTime_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.48"
+      },
+      "VariableGuid": "7D3CA3DE-4F1ACC23-A2EAE3B4-7F3CE93D",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Buff_RestoreHoldingBreathOverTime_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Buff_RestoreHoldingBreathOverTime_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.49"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Buff_RestoreHoldingBreathOverTime_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.49"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Buff_RestoreHoldingBreathOverTime_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/Buff/Buff_RestoreHoldingBreathOverTime.49"
+      }
+    }
+  }
+]

@@ -1,0 +1,263 @@
+[
+  {
+    "Type": "Material",
+    "Name": "M_DO_VistaMountains",
+    "Class": "UScriptClass'Material'",
+    "Properties": {
+      "MaterialAttributes": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionBlendMaterialAttributes_2"
+      },
+      "Expressions": [
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_DO_VistaMountains:MaterialExpressionScalarParameter_4'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_DO_VistaMountains.2"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample'M_DO_VistaMountains:MaterialExpressionTextureSample_3'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_DO_VistaMountains.3"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSample'M_DO_VistaMountains:MaterialExpressionTextureSample_4'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_DO_VistaMountains.4"
+        },
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSample'M_DO_VistaMountains:MaterialExpressionTextureSample_5'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_DO_VistaMountains.5"
+        },
+        {
+          "ObjectName": "MaterialExpressionScalarParameter'M_DO_VistaMountains:MaterialExpressionScalarParameter_21'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_DO_VistaMountains.1"
+        },
+        null,
+        null,
+        null,
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameter2D'M_DO_VistaMountains:MaterialExpressionTextureSampleParameter2D_0'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_DO_VistaMountains.6"
+        },
+        {
+          "ObjectName": "MaterialExpressionTextureSampleParameter2D'M_DO_VistaMountains:MaterialExpressionTextureSampleParameter2D_1'",
+          "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_DO_VistaMountains.7"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "bUseMaterialAttributes": true,
+      "StateId": "7005847F-4986B7DF-4D54EFA3-E972FC7F",
+      "TextureStreamingData": [
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "Snow_Windy_D"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "Snow_Windy_Height"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "Snow_Windy_N"
+        },
+        {
+          "SamplingScale": 0.25,
+          "UVChannelIndex": 0,
+          "TextureName": "Vistacolor"
+        },
+        {
+          "SamplingScale": 0.015625,
+          "UVChannelIndex": 0,
+          "TextureName": "VistaNormal"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_21",
+    "Outer": "M_DO_VistaMountains",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 512.0,
+      "ParameterName": "Texture Tile",
+      "ExpressionGUID": "EA0F46BE-43642349-B26F3CBB-24280218",
+      "Material": {
+        "ObjectName": "Material'M_DO_VistaMountains'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_DO_VistaMountains.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionScalarParameter",
+    "Name": "MaterialExpressionScalarParameter_4",
+    "Outer": "M_DO_VistaMountains",
+    "Class": "UScriptClass'MaterialExpressionScalarParameter'",
+    "Properties": {
+      "DefaultValue": 1.0,
+      "ParameterName": "Snow_Mid_Tiling",
+      "ExpressionGUID": "EAFD5952-404A138C-D9517B8F-E17187CC",
+      "Group": "UVTilingPerMaterial",
+      "Material": {
+        "ObjectName": "Material'M_DO_VistaMountains'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_DO_VistaMountains.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_3",
+    "Outer": "M_DO_VistaMountains",
+    "Class": "UScriptClass'MaterialExpressionTextureSample'",
+    "Properties": {
+      "Coordinates": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_1"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D'Snow_Windy_N'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/Textures/PBR/Snow_Windy_N.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material'M_DO_VistaMountains'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_DO_VistaMountains.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_4",
+    "Outer": "M_DO_VistaMountains",
+    "Class": "UScriptClass'MaterialExpressionTextureSample'",
+    "Properties": {
+      "Coordinates": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_1"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D'Snow_Windy_D'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/Textures/PBR/Snow_Windy_D.0"
+      },
+      "Material": {
+        "ObjectName": "Material'M_DO_VistaMountains'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_DO_VistaMountains.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSample",
+    "Name": "MaterialExpressionTextureSample_5",
+    "Outer": "M_DO_VistaMountains",
+    "Class": "UScriptClass'MaterialExpressionTextureSample'",
+    "Properties": {
+      "Coordinates": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionMultiply_1"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D'Snow_Windy_Height'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/Textures/PBR/Snow_Windy_Height.0"
+      },
+      "SamplerType": "SAMPLERTYPE_LinearGrayscale",
+      "Material": {
+        "ObjectName": "Material'M_DO_VistaMountains'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_DO_VistaMountains.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameter2D",
+    "Name": "MaterialExpressionTextureSampleParameter2D_0",
+    "Outer": "M_DO_VistaMountains",
+    "Class": "UScriptClass'MaterialExpressionTextureSampleParameter2D'",
+    "Properties": {
+      "ParameterName": "Color",
+      "ExpressionGUID": "FAE5F104-4FC6AB7B-DE138EBB-5ABBF666",
+      "Coordinates": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureCoordinate_0"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D'Vistacolor'",
+        "ObjectPath": "TslGame/Content/Assets/World/Common/Textures/DihorOtok/Vistacolor.0"
+      },
+      "Material": {
+        "ObjectName": "Material'M_DO_VistaMountains'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_DO_VistaMountains.0"
+      }
+    }
+  },
+  {
+    "Type": "MaterialExpressionTextureSampleParameter2D",
+    "Name": "MaterialExpressionTextureSampleParameter2D_1",
+    "Outer": "M_DO_VistaMountains",
+    "Class": "UScriptClass'MaterialExpressionTextureSampleParameter2D'",
+    "Properties": {
+      "ParameterName": "Normal",
+      "ExpressionGUID": "901FFC7B-4E43DFFF-E8BA7E85-D9CA1AD0",
+      "Coordinates": {
+        "Expression": null,
+        "OutputIndex": 0,
+        "InputName": "",
+        "Mask": 0,
+        "MaskR": 0,
+        "MaskG": 0,
+        "MaskB": 0,
+        "MaskA": 0,
+        "ExpressionName": "MaterialExpressionTextureCoordinate_0"
+      },
+      "Texture": {
+        "ObjectName": "Texture2D'VistaNormal'",
+        "ObjectPath": "TslGame/Content/Assets/World/Common/Textures/DihorOtok/VistaNormal.0"
+      },
+      "SamplerType": "SAMPLERTYPE_Normal",
+      "Material": {
+        "ObjectName": "Material'M_DO_VistaMountains'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/LandscapeMaterial/M_DO_VistaMountains.0"
+      }
+    }
+  }
+]

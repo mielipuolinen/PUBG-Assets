@@ -1,0 +1,193 @@
+[
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_UseCeremonyState_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_FinishMatch",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": null,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "CallFunc_GetGameMode_ReturnValue",
+    "Outer": "ExecuteUbergraph_Task_FinishMatch",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_FinishMatch_C:ExecuteUbergraph_Task_FinishMatch.CallFunc_UseCeremonyState_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.0"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'TslGameMode'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "K2Node_DynamicCast_bSuccess",
+    "Outer": "ExecuteUbergraph_Task_FinishMatch",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_FinishMatch_C:ExecuteUbergraph_Task_FinishMatch.CallFunc_GetGameMode_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.1"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_DynamicCast_AsBattle_Royale_Mode_Controller",
+    "Outer": "ExecuteUbergraph_Task_FinishMatch",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_FinishMatch_C:ExecuteUbergraph_Task_FinishMatch.K2Node_DynamicCast_bSuccess'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.2"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'BattleRoyaleModeController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OwnerActor",
+    "Outer": "ExecuteUbergraph_Task_FinishMatch",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_FinishMatch_C:ExecuteUbergraph_Task_FinishMatch.K2Node_DynamicCast_AsBattle_Royale_Mode_Controller'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.3"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Task_FinishMatch",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_FinishMatch_C:ExecuteUbergraph_Task_FinishMatch.K2Node_Event_OwnerActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.4"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Task_FinishMatch",
+    "Outer": "Task_FinishMatch_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Task_FinishMatch_C:ExecuteUbergraph_Task_FinishMatch.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.5"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OwnerActor",
+    "Outer": "ReceiveExecute",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveExecute",
+    "Outer": "Task_FinishMatch_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Task_FinishMatch_C:ExecuteUbergraph_Task_FinishMatch'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.6"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BTTask_BlueprintBase:ReceiveExecute'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Task_FinishMatch_C:ReceiveExecute.OwnerActor'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.7"
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Task_FinishMatch_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Task_FinishMatch_C:ReceiveExecute'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.8"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Task_FinishMatch_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Task_FinishMatch_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.9"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Task_FinishMatch_C:ExecuteUbergraph_Task_FinishMatch'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.6"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'BTTask_BlueprintBase'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Task_FinishMatch_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.9"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Task_FinishMatch": {
+        "ObjectName": "Function'Task_FinishMatch_C:ExecuteUbergraph_Task_FinishMatch'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.6"
+      },
+      "ReceiveExecute": {
+        "ObjectName": "Function'Task_FinishMatch_C:ReceiveExecute'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.8"
+      }
+    },
+    "ClassFlags": 262160,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Task_FinishMatch_C'Default__Task_FinishMatch_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_FinishMatch.11"
+    }
+  },
+  {
+    "Type": "Task_FinishMatch_C",
+    "Name": "Default__Task_FinishMatch_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Task_FinishMatch.Task_FinishMatch_C'",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]

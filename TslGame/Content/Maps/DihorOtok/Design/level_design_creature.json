@@ -1,0 +1,2955 @@
+[
+  {
+    "Type": "BlockingVolume",
+    "Name": "BlockingVolume_1",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'BlockingVolume'",
+    "Properties": {
+      "BrushType": "Brush_Add",
+      "Brush": {
+        "ObjectName": "Model'level_design_creature:PersistentLevel.BlockingVolume_1.Model_1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.67"
+      },
+      "BrushComponent": {
+        "ObjectName": "BrushComponent'level_design_creature:PersistentLevel.BlockingVolume_1.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.34"
+      },
+      "SavedSelections": [
+        {
+          "Type": 3,
+          "Index": 2,
+          "SelectionIndex": 0
+        },
+        {
+          "Type": 3,
+          "Index": 4,
+          "SelectionIndex": 1
+        }
+      ],
+      "bHidden": false,
+      "RootComponent": {
+        "ObjectName": "BrushComponent'level_design_creature:PersistentLevel.BlockingVolume_1.BrushComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.34"
+      }
+    }
+  },
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_1",
+    "Outer": "BrushComponent0",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "ConvexElems": [
+          {
+            "VertexData": [
+              {
+                "X": 181.99998,
+                "Y": 87.0,
+                "Z": 10.001015
+              },
+              {
+                "X": 88.0,
+                "Y": -139.0,
+                "Z": 26.001015
+              },
+              {
+                "X": 54.96875,
+                "Y": -124.0625,
+                "Z": 26.0
+              },
+              {
+                "X": 153.0,
+                "Y": 96.0,
+                "Z": 10.25
+              },
+              {
+                "X": 153.03125,
+                "Y": 96.0625,
+                "Z": -25.0
+              },
+              {
+                "X": 55.00283,
+                "Y": -124.00128,
+                "Z": -25.0
+              },
+              {
+                "X": 182.0,
+                "Y": 86.96875,
+                "Z": -25.0
+              },
+              {
+                "X": 152.9375,
+                "Y": 96.0,
+                "Z": -25.0
+              },
+              {
+                "X": 87.96875,
+                "Y": -139.0,
+                "Z": -25.0
+              }
+            ],
+            "ElemBox": {
+              "Min": {
+                "X": 54.96875,
+                "Y": -139.0,
+                "Z": -25.0
+              },
+              "Max": {
+                "X": 182.0,
+                "Y": 96.0625,
+                "Z": 26.001015
+              },
+              "IsValid": 1
+            },
+            "Transform": {
+              "Rotation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0,
+                "W": 1.0,
+                "IsNormalized": true,
+                "Size": 1.0,
+                "SizeSquared": 1.0
+              },
+              "Translation": {
+                "X": 0.0,
+                "Y": 0.0,
+                "Z": 0.0
+              },
+              "Scale3D": {
+                "X": 1.0,
+                "Y": 1.0,
+                "Z": 1.0
+              }
+            }
+          }
+        ]
+      },
+      "bGenerateMirroredCollision": false,
+      "CollisionTraceFlag": "CTF_UseSimpleAsComplex"
+    },
+    "BodySetupGuid": "D8F866F540DC04EA6D1F48A876094F48",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 470,
+        "SizeOnDisk": 470,
+        "OffsetInFile": "0xDE08"
+      }
+    }
+  },
+  {
+    "Type": "BoxComponent",
+    "Name": "BoxComponent0",
+    "Outer": "LevelBounds_0",
+    "Class": "UScriptClass'BoxComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "BodyInstance": {
+        "MaxDepenetrationVelocity": 100.0
+      },
+      "RelativeLocation": {
+        "X": 474916.38,
+        "Y": 397696.28,
+        "Z": 6471.8633
+      },
+      "RelativeScale3D": {
+        "X": 383967.22,
+        "Y": 522607.44,
+        "Z": 6560.4414
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart10",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart10.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.35"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart10.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.35"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart11",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart11.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.36"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart11.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.36"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart12",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart12.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.37"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart12.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.37"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart13",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "bCave": true,
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart13.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.38"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart13.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.38"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart14",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "bCave": true,
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart14.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.39"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart14.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.39"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart15",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart15.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.40"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart15.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.40"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart16",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart16.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.41"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart16.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.41"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart17",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart17.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.42"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart17.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.42"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart18",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "bCave": true,
+      "StartRadius": 400.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart18.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.43"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart18.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.43"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart19",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart19.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.44"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart19.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.44"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart2",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart2.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.45"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart2.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.45"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart20",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart20.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.46"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart20.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.46"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart21",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart21.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.47"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart21.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.47"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart22",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart22.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.48"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart22.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.48"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart23",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart23.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.49"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart23.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.49"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart24",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart24.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.50"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart24.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.50"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart25",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart25.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.51"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart25.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.51"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart26",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart26.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.52"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart26.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.52"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart27",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "bCave": true,
+      "StartRadius": 400.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart27.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.53"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart27.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.53"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart28",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart28.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.54"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart28.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.54"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart29",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart29.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.55"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart29.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.55"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart3",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "bCave": true,
+      "StartRadius": 400.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart3.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.56"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart3.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.56"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart30",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "bCave": true,
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart30.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.57"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart30.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.57"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart4",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart4.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.58"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart4.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.58"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart5",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "bCave": true,
+      "StartRadius": 400.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart5.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.59"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart5.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.59"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart6",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart6.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.60"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart6.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.60"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart7",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "bCave": true,
+      "StartRadius": 400.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart7.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.61"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart7.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.61"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart8",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart8.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.62"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart8.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.62"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart9",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "StartRadius": 500.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart9.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.63"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "SpawnCollisionHandlingMethod": "ESpawnActorCollisionHandlingMethod::AlwaysSpawn",
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart9.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.63"
+      }
+    }
+  },
+  {
+    "Type": "BP_BearSpawnStart_C",
+    "Name": "BP_BearSpawnStart_2",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_BearSpawnStart_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Monster/Bear/BP_BearSpawnStart.BP_BearSpawnStart_C'",
+    "Properties": {
+      "bCave": true,
+      "StartRadius": 400.0,
+      "CapsuleComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart_2.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.64"
+      },
+      "GoodSprite": null,
+      "BadSprite": null,
+      "RootComponent": {
+        "ObjectName": "CapsuleComponent'level_design_creature:PersistentLevel.BP_BearSpawnStart_2.CollisionCapsule'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.64"
+      }
+    }
+  },
+  {
+    "Type": "BP_TslPatrolPath_C",
+    "Name": "BP_TslPatrolPath_2",
+    "Outer": "PersistentLevel",
+    "Template": "Default__BP_TslPatrolPath_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/BP_TslPatrolPath.BP_TslPatrolPath_C'",
+    "Properties": {
+      "PatrolPoints": [
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -347.09375,
+              "Y": -483.125,
+              "Z": 181.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -115.09375,
+              "Y": 430.875,
+              "Z": 181.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -1006.09375,
+              "Y": 649.875,
+              "Z": 160.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -911.125,
+              "Y": -2824.125,
+              "Z": 1204.4941
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -911.125,
+              "Y": -2824.125,
+              "Z": 1204.4941
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -1289.125,
+              "Y": -2937.125,
+              "Z": 1057.4941
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -1647.125,
+              "Y": -2776.125,
+              "Z": 834.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -2122.125,
+              "Y": -2603.125,
+              "Z": 563.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -2465.0938,
+              "Y": -2185.125,
+              "Z": 396.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -2441.0938,
+              "Y": -1825.125,
+              "Z": 402.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -2321.0938,
+              "Y": -1454.125,
+              "Z": 341.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -2083.0938,
+              "Y": -1045.125,
+              "Z": 187.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -1598.0938,
+              "Y": -962.125,
+              "Z": 160.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -1152.0938,
+              "Y": -1073.125,
+              "Z": 219.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -496.09375,
+              "Y": -1354.125,
+              "Z": 201.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -233.09375,
+              "Y": -2218.125,
+              "Z": 201.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -208.09375,
+              "Y": -3076.125,
+              "Z": 201.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 354.90625,
+              "Y": -3989.125,
+              "Z": 230.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 996.90625,
+              "Y": -4988.125,
+              "Z": 210.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 1547.9062,
+              "Y": -5158.125,
+              "Z": 214.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 2026.9062,
+              "Y": -5401.125,
+              "Z": 213.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 2043.9062,
+              "Y": -5901.125,
+              "Z": 213.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 1605.9062,
+              "Y": -6262.125,
+              "Z": 205.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 1015.90625,
+              "Y": -6054.125,
+              "Z": 187.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 1056.9062,
+              "Y": -5257.125,
+              "Z": 205.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": 359.90625,
+              "Y": -4142.125,
+              "Z": 260.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -235.09375,
+              "Y": -2781.125,
+              "Z": 201.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        },
+        {
+          "Transform": {
+            "Rotation": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 0.0,
+              "W": 1.0,
+              "IsNormalized": true,
+              "Size": 1.0,
+              "SizeSquared": 1.0
+            },
+            "Translation": {
+              "X": -312.09375,
+              "Y": -1850.125,
+              "Z": 195.49414
+            },
+            "Scale3D": {
+              "X": 1.0,
+              "Y": 1.0,
+              "Z": 1.0
+            }
+          },
+          "bIsDefendPoint": false,
+          "RotateToSpecificAngle": true,
+          "StanceOnArrival": "STANCE_Stand",
+          "StanceOnLeave": "STANCE_Stand",
+          "MoveSpeed": "EPatrolSpeed::Walk",
+          "WaitTimeInSeconds": 1.0,
+          "ScanTheHorizon": false
+        }
+      ],
+      "RootComponent": {
+        "ObjectName": "SceneComponent'level_design_creature:PersistentLevel.BP_TslPatrolPath_2.RootComponent'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.69"
+      }
+    }
+  },
+  {
+    "Type": "BrushComponent",
+    "Name": "BrushComponent0",
+    "Outer": "BlockingVolume_1",
+    "Class": "UScriptClass'BrushComponent'",
+    "Properties": {
+      "Brush": {
+        "ObjectName": "Model'level_design_creature:PersistentLevel.BlockingVolume_1.Model_1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.67"
+      },
+      "BrushBodySetup": {
+        "ObjectName": "BodySetup'level_design_creature:PersistentLevel.BlockingVolume_1.BrushComponent0.BodySetup_1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.1"
+      },
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 382919.22,
+        "Y": 605581.06,
+        "Z": 8679.312
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart10",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 386140.0,
+        "Y": 608990.0,
+        "Z": 8208.618
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart11",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 383060.0,
+        "Y": 604580.0,
+        "Z": 8748.615
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart12",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 376730.0,
+        "Y": 606670.0,
+        "Z": 8532.281
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart13",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 374450.0,
+        "Y": 654980.0,
+        "Z": 6503.073
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart14",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 376650.0,
+        "Y": 650840.0,
+        "Z": 6887.0996
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart15",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 380424.0,
+        "Y": 616292.0,
+        "Z": 8572.36
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart16",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 367120.0,
+        "Y": 658500.0,
+        "Z": 6340.3115
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart17",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 370140.0,
+        "Y": 644190.0,
+        "Z": 6417.7227
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart18",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 522590.0,
+        "Y": 592230.0,
+        "Z": 6263.9917
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart19",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 527250.0,
+        "Y": 594640.0,
+        "Z": 6099.397
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart2",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 286432.78,
+        "Y": 138852.56,
+        "Z": 6489.6016
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart20",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 621820.0,
+        "Y": 583650.0,
+        "Z": 6421.8916
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart21",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 633190.0,
+        "Y": 582090.0,
+        "Z": 6940.642
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart22",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 624950.0,
+        "Y": 589050.0,
+        "Z": 6991.736
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart23",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 628500.0,
+        "Y": 596690.0,
+        "Z": 7466.8916
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart24",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 618640.0,
+        "Y": 596930.0,
+        "Z": 7219.166
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart25",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 650080.0,
+        "Y": 491440.0,
+        "Z": 5188.9033
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart26",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 642920.0,
+        "Y": 496720.0,
+        "Z": 5033.1763
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart27",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 664400.0,
+        "Y": 391680.0,
+        "Z": 6298.643
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart28",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 666400.0,
+        "Y": 385670.0,
+        "Z": 6434.2593
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart29",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 571530.0,
+        "Y": 289610.0,
+        "Z": 4662.208
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart3",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 528320.0,
+        "Y": 143000.0,
+        "Z": 9226.949
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart30",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 574140.0,
+        "Y": 293450.0,
+        "Z": 4261.74
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart4",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 527860.0,
+        "Y": 139070.0,
+        "Z": 9149.214
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart5",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 472070.0,
+        "Y": 358910.0,
+        "Z": 9210.806
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart6",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 475180.0,
+        "Y": 351250.0,
+        "Z": 9624.084
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart7",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 607620.0,
+        "Y": 176760.0,
+        "Z": 3319.6428
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart8",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 606280.0,
+        "Y": 176100.0,
+        "Z": 4246.753
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart9",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 619860.0,
+        "Y": 171090.0,
+        "Z": 4725.6587
+      }
+    }
+  },
+  {
+    "Type": "CapsuleComponent",
+    "Name": "CollisionCapsule",
+    "Outer": "BP_BearSpawnStart_2",
+    "Template": "CollisionCapsule",
+    "Class": "UScriptClass'CapsuleComponent'",
+    "Properties": {
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true,
+      "RelativeLocation": {
+        "X": 283332.78,
+        "Y": 136792.56,
+        "Z": 6147.879
+      }
+    }
+  },
+  {
+    "Type": "Level",
+    "Name": "PersistentLevel",
+    "Outer": "level_design_creature",
+    "Class": "UScriptClass'Level'",
+    "Properties": {
+      "LevelBuildDataId": "0A65644C-4DCAC96A-9A2B6E98-481CBD14",
+      "Model": {
+        "ObjectName": "Model'level_design_creature:PersistentLevel.Model_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.68"
+      },
+      "WorldSettings": {
+        "ObjectName": "WorldSettings'level_design_creature:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.71"
+      }
+    },
+    "Actors": [
+      {
+        "ObjectName": "WorldSettings'level_design_creature:PersistentLevel.WorldSettings'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.71"
+      },
+      null,
+      {
+        "ObjectName": "LevelBounds'level_design_creature:PersistentLevel.LevelBounds_0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.66"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart_2'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.32"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart2'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.13"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart3'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.24"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart4'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.26"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart5'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.27"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart6'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.28"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart7'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.29"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart8'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.30"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart9'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.31"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart10'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.3"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart11'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.4"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart12'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.5"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart13'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.6"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart14'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.7"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart15'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.8"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart16'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.9"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart17'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.10"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart18'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.11"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart19'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.12"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart20'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.14"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart21'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.15"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart22'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.16"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart23'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.17"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart24'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.18"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart25'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.19"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart26'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.20"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart27'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.21"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart28'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.22"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart29'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.23"
+      },
+      {
+        "ObjectName": "BP_BearSpawnStart_C'level_design_creature:PersistentLevel.BP_BearSpawnStart30'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.25"
+      },
+      {
+        "ObjectName": "BP_TslPatrolPath_C'level_design_creature:PersistentLevel.BP_TslPatrolPath_2'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.33"
+      },
+      {
+        "ObjectName": "BlockingVolume'level_design_creature:PersistentLevel.BlockingVolume_1'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.0"
+      },
+      null
+    ],
+    "URL": {
+      "Protocol": "unreal",
+      "Host": "",
+      "Port": 7777,
+      "Valid": true,
+      "Map": "/Game/Maps/lobby/TslLobby_Persistent_Main/TslLobby_Persistent_Main",
+      "Op": [],
+      "Portal": ""
+    },
+    "Model": {
+      "ObjectName": "Model'level_design_creature:PersistentLevel.Model_0'",
+      "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.68"
+    },
+    "ModelComponents": [],
+    "LevelScriptActor": null,
+    "NavListStart": null,
+    "NavListEnd": null,
+    "PrecomputedVisibilityHandler": {
+      "PrecomputedVisibilityCellBucketOriginXY": {
+        "X": 0.0,
+        "Y": 0.0
+      },
+      "PrecomputedVisibilityCellSizeXY": 0.0,
+      "PrecomputedVisibilityCellSizeZ": 0.0,
+      "PrecomputedVisibilityCellBucketSizeXY": 0,
+      "PrecomputedVisibilityNumCellBuckets": 0,
+      "PrecomputedVisibilityCellBuckets": []
+    },
+    "PrecomputedVolumeDistanceField": {
+      "VolumeMaxDistance": 0.0,
+      "VolumeBox": {
+        "Min": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "Max": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 0.0
+        },
+        "IsValid": 0
+      },
+      "VolumeSizeX": 0,
+      "VolumeSizeY": 0,
+      "VolumeSizeZ": 0,
+      "Data": []
+    }
+  },
+  {
+    "Type": "LevelBounds",
+    "Name": "LevelBounds_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'LevelBounds'",
+    "Properties": {
+      "RootComponent": {
+        "ObjectName": "BoxComponent'level_design_creature:PersistentLevel.LevelBounds_0.BoxComponent0'",
+        "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.2"
+      }
+    }
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_1",
+    "Outer": "BlockingVolume_1",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 118.5,
+        "Y": -21.5,
+        "Z": 0.5
+      },
+      "BoxExtent": {
+        "X": 63.5,
+        "Y": 117.5,
+        "Z": 25.5
+      },
+      "SphereRadius": 128.27606
+    },
+    "Vectors": [
+      {
+        "X": 0.027005902,
+        "Y": 0.059412982,
+        "Z": 0.99786806
+      },
+      {
+        "X": 0.8570022,
+        "Y": -0.5152584,
+        "Z": 0.0074848793
+      },
+      {
+        "X": 0.51460457,
+        "Y": 0.854973,
+        "Z": -0.06483208
+      },
+      {
+        "X": -0.9134688,
+        "Y": 0.40690884,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 1.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": -1.0
+      },
+      {
+        "X": 0.2963992,
+        "Y": 0.9550641,
+        "Z": 0.0
+      },
+      {
+        "X": 1.0,
+        "Y": -0.0,
+        "Z": 0.0
+      },
+      {
+        "X": 0.9233185,
+        "Y": -0.38403514,
+        "Z": 0.0
+      },
+      {
+        "X": 0.0,
+        "Y": -1.0,
+        "Z": 0.0
+      },
+      {
+        "X": -0.41380292,
+        "Y": -0.9103664,
+        "Z": 0.0
+      },
+      {
+        "X": -1.0,
+        "Y": -0.0,
+        "Z": -0.0
+      }
+    ],
+    "Points": [
+      {
+        "X": 182.0,
+        "Y": 87.0,
+        "Z": 10.0
+      },
+      {
+        "X": 55.0,
+        "Y": -124.0,
+        "Z": 26.0
+      },
+      {
+        "X": 88.0,
+        "Y": -139.0,
+        "Z": 26.0
+      },
+      {
+        "X": 153.0,
+        "Y": 96.0,
+        "Z": 10.0
+      },
+      {
+        "X": -100.0,
+        "Y": -100.0,
+        "Z": -100.0
+      },
+      {
+        "X": 55.0,
+        "Y": -124.0,
+        "Z": -25.0
+      },
+      {
+        "X": 153.0,
+        "Y": 96.0,
+        "Z": 10.0
+      },
+      {
+        "X": 153.0,
+        "Y": 96.0,
+        "Z": -25.0
+      },
+      {
+        "X": -100.0,
+        "Y": 100.0,
+        "Z": -100.0
+      },
+      {
+        "X": 182.0,
+        "Y": 87.0,
+        "Z": -25.0
+      },
+      {
+        "X": 100.0,
+        "Y": 100.0,
+        "Z": -100.0
+      },
+      {
+        "X": 88.0,
+        "Y": -139.0,
+        "Z": -25.0
+      },
+      {
+        "X": 100.0,
+        "Y": -100.0,
+        "Z": -100.0
+      },
+      {
+        "X": -100.0,
+        "Y": -100.0,
+        "Z": -100.0
+      }
+    ],
+    "Nodes": [
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.027005902,
+            "Y": 0.059412982,
+            "Z": 0.99786806
+          },
+          "W": 20.062683,
+          "X": 0.027005902,
+          "Y": 0.059412982,
+          "Z": 0.99786806
+        },
+        "iVertPool": 0,
+        "iSurf": 0,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 2,
+        "iFront": -1,
+        "iPlane": 1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 3,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.01978502,
+            "Y": 0.063751735,
+            "Z": 0.9977696
+          },
+          "W": 19.12497,
+          "X": 0.01978502,
+          "Y": 0.063751735,
+          "Z": 0.9977696
+        },
+        "iVertPool": 3,
+        "iSurf": 0,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": -1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 3,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": -0.9134688,
+            "Y": 0.40690884,
+            "Z": 0.0
+          },
+          "W": -100.69748,
+          "X": -0.9134688,
+          "Y": 0.40690884,
+          "Z": 0.0
+        },
+        "iVertPool": 6,
+        "iSurf": 1,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 3,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.2963992,
+            "Y": 0.9550641,
+            "Z": 0.0
+          },
+          "W": 137.03523,
+          "X": 0.2963992,
+          "Y": 0.9550641,
+          "Z": 0.0
+        },
+        "iVertPool": 10,
+        "iSurf": 2,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 4,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.9233185,
+            "Y": -0.38403514,
+            "Z": 0.0
+          },
+          "W": 134.6329,
+          "X": 0.9233185,
+          "Y": -0.38403514,
+          "Z": 0.0
+        },
+        "iVertPool": 14,
+        "iSurf": 3,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 5,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": -0.41380292,
+            "Y": -0.9103664,
+            "Z": 0.0
+          },
+          "W": 90.126274,
+          "X": -0.41380292,
+          "Y": -0.9103664,
+          "Z": 0.0
+        },
+        "iVertPool": 18,
+        "iSurf": 4,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": 6,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": -1,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      },
+      {
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 25.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "iVertPool": 22,
+        "iSurf": 5,
+        "iVertexIndex": 0,
+        "ComponentIndex": 0,
+        "ComponentNodeIndex": 0,
+        "ComponentElementIndex": 0,
+        "iBack": -1,
+        "iFront": -1,
+        "iPlane": -1,
+        "iCollisionBound": 0,
+        "iZone0": 0,
+        "iZone1": 0,
+        "NumVertices": 4,
+        "NodeFlags": 0,
+        "iLeaf0": -1,
+        "iLeaf1": -1
+      }
+    ],
+    "Surfs": [
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 0,
+        "vNormal": 0,
+        "vTextureU": 1,
+        "vTextureV": 2,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.027005902,
+            "Y": 0.059412982,
+            "Z": 0.99786806
+          },
+          "W": 20.062683,
+          "X": 0.027005902,
+          "Y": 0.059412982,
+          "Z": 0.99786806
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 4,
+        "vNormal": 3,
+        "vTextureU": 4,
+        "vTextureV": 5,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": -0.9134688,
+            "Y": 0.40690884,
+            "Z": 0.0
+          },
+          "W": -100.69748,
+          "X": -0.9134688,
+          "Y": 0.40690884,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 8,
+        "vNormal": 6,
+        "vTextureU": 7,
+        "vTextureV": 5,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.2963992,
+            "Y": 0.9550641,
+            "Z": 0.0
+          },
+          "W": 137.03523,
+          "X": 0.2963992,
+          "Y": 0.9550641,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 10,
+        "vNormal": 8,
+        "vTextureU": 9,
+        "vTextureV": 5,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.9233185,
+            "Y": -0.38403514,
+            "Z": 0.0
+          },
+          "W": 134.6329,
+          "X": 0.9233185,
+          "Y": -0.38403514,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 12,
+        "vNormal": 10,
+        "vTextureU": 11,
+        "vTextureV": 5,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": -0.41380292,
+            "Y": -0.9103664,
+            "Z": 0.0
+          },
+          "W": 90.126274,
+          "X": -0.41380292,
+          "Y": -0.9103664,
+          "Z": 0.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      },
+      {
+        "Material": null,
+        "PolyFlags": 0,
+        "pBase": 13,
+        "vNormal": 5,
+        "vTextureU": 7,
+        "vTextureV": 9,
+        "iBrushPoly": -1,
+        "Actor": null,
+        "Plane": {
+          "Vector": {
+            "X": 0.0,
+            "Y": 0.0,
+            "Z": -1.0
+          },
+          "W": 25.0,
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": -1.0
+        },
+        "LightMapScale": 32.0,
+        "iLightmassIndex": 0
+      }
+    ],
+    "NumSharedSides": 4,
+    "VertexBuffer": null,
+    "LightingGuid": "8D2F0472-437217BA-33AD87AD-7FF90DCB",
+    "LightmassSettings": [
+      {
+        "bUseTwoSidedLighting": false,
+        "bShadowIndirectOnly": false,
+        "bUseEmissiveForStaticLighting": false,
+        "bUseVertexNormalForHemisphereGather": false,
+        "EmissiveLightFalloffExponent": 8.0,
+        "EmissiveLightExplicitInfluenceRadius": 0.0,
+        "EmissiveBoost": 1.0,
+        "DiffuseBoost": 1.0,
+        "FullyOccludedSamplesFraction": 1.0
+      }
+    ]
+  },
+  {
+    "Type": "Model",
+    "Name": "Model_0",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'Model'",
+    "Bounds": {
+      "Origin": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "BoxExtent": {
+        "X": 0.0,
+        "Y": 0.0,
+        "Z": 0.0
+      },
+      "SphereRadius": 0.0
+    },
+    "Vectors": [],
+    "Points": [],
+    "Nodes": [],
+    "Surfs": [],
+    "NumSharedSides": 4,
+    "VertexBuffer": {
+      "Vertices": []
+    },
+    "LightingGuid": "37CD4020-4DBE86B3-7A082CAB-6C83D349",
+    "LightmassSettings": []
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "RootComponent",
+    "Outer": "BP_TslPatrolPath_2",
+    "Template": "RootComponent",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeLocation": {
+        "X": 380589.0,
+        "Y": 616599.0,
+        "Z": 8401.6875
+      }
+    }
+  },
+  {
+    "Type": "World",
+    "Name": "level_design_creature",
+    "Class": "UScriptClass'World'",
+    "Properties": {
+      "DefaultPhysicsVolume": null
+    },
+    "PersistentLevel": {
+      "ObjectName": "Level'level_design_creature:PersistentLevel'",
+      "ObjectPath": "TslGame/Content/Maps/DihorOtok/Design/level_design_creature.65"
+    },
+    "ExtraReferencedObjects": [],
+    "StreamingLevels": []
+  },
+  {
+    "Type": "WorldSettings",
+    "Name": "WorldSettings",
+    "Outer": "PersistentLevel",
+    "Class": "UScriptClass'WorldSettings'"
+  }
+]

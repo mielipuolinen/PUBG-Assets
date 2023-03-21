@@ -1,0 +1,190 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "DefaultSceneRoot",
+    "Outer": "Parachute_SmallPackage_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SceneComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "SkeletalMesh",
+    "Outer": "Parachute_SmallPackage_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Parachute_SmallPackage_C:DefaultSceneRoot'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.0"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'SkeletalMeshComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "Parachute_SmallPackage_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Parachute_SmallPackage_C:SkeletalMesh'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.1"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Parachute_SmallPackage_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'Parachute_SmallPackage_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.8"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "Children": [
+      {
+        "ObjectName": "Function'Parachute_SmallPackage_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.2"
+      }
+    ],
+    "FuncMap": {
+      "UserConstructionScript": {
+        "ObjectName": "Function'Parachute_SmallPackage_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.2"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Parachute_SmallPackage_C'Default__Parachute_SmallPackage_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.4"
+    }
+  },
+  {
+    "Type": "Parachute_SmallPackage_C",
+    "Name": "Default__Parachute_SmallPackage_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.Parachute_SmallPackage_C'"
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "Parachute_SmallPackage_C",
+    "Class": "UScriptClass'SceneComponent'",
+    "Properties": {
+      "RelativeScale3D": {
+        "X": 0.7,
+        "Y": 0.7,
+        "Z": 0.7
+      }
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'Parachute_SmallPackage_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.5"
+      },
+      "ChildNodes": [
+        {
+          "ObjectName": "SCS_Node'Parachute_SmallPackage_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.7"
+        }
+      ],
+      "VariableGuid": "E6BB590C-4B0F4439-A3D262B7-5A3381EA",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SkeletalMeshComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SkeletalMeshComponent'Parachute_SmallPackage_C:SkeletalMesh_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.9"
+      },
+      "VariableGuid": "03C523EF-448D0EBC-39042D95-D6DF0D58",
+      "InternalVariableName": "SkeletalMesh"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "Parachute_SmallPackage_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'Parachute_SmallPackage_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.6"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'Parachute_SmallPackage_C:SimpleConstructionScript_0.SCS_Node_0'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.6"
+        },
+        {
+          "ObjectName": "SCS_Node'Parachute_SmallPackage_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.7"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'Parachute_SmallPackage_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Tiger/Parachute_SmallPackage.6"
+      }
+    }
+  },
+  {
+    "Type": "SkeletalMeshComponent",
+    "Name": "SkeletalMesh_GEN_VARIABLE",
+    "Outer": "Parachute_SmallPackage_C",
+    "Class": "UScriptClass'SkeletalMeshComponent'",
+    "Properties": {
+      "ClothingSimulationFactory": {
+        "ObjectName": "Class'ClothingSimulationFactoryNv'",
+        "ObjectPath": "/Script/ClothingSystemRuntime"
+      },
+      "SkeletalMesh": {
+        "ObjectName": "SkeletalMesh'ParachuteCare'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/ParachuteCare.0"
+      },
+      "bAffectDistanceFieldLighting": false,
+      "bReceivesDecals": false,
+      "bDecalChannelValid": true
+    }
+  }
+]

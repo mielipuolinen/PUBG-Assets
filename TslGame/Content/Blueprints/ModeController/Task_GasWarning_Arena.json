@@ -1,0 +1,934 @@
+[
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OwnerActor",
+    "Outer": "ExecuteUbergraph_Task_GasWarning_Arena",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "K2Node_Event_DeltaSeconds",
+    "Outer": "ExecuteUbergraph_Task_GasWarning_Arena",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_GasWarning_Arena_C:ExecuteUbergraph_Task_GasWarning_Arena.K2Node_Event_OwnerActor'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.0"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "K2Node_Event_OwnerActor2",
+    "Outer": "ExecuteUbergraph_Task_GasWarning_Arena",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_GasWarning_Arena_C:ExecuteUbergraph_Task_GasWarning_Arena.K2Node_Event_DeltaSeconds'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.1"
+    },
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_Task_GasWarning_Arena",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'Task_GasWarning_Arena_C:ExecuteUbergraph_Task_GasWarning_Arena.K2Node_Event_OwnerActor2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.2"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_Task_GasWarning_Arena",
+    "Outer": "Task_GasWarning_Arena_C",
+    "Class": "UScriptClass'Function'",
+    "Next": null,
+    "Children": [
+      {
+        "ObjectName": "IntProperty'Task_GasWarning_Arena_C:ExecuteUbergraph_Task_GasWarning_Arena.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.3"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OwnerActor",
+    "Outer": "ReceiveExecute",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": null,
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveExecute",
+    "Outer": "Task_GasWarning_Arena_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Task_GasWarning_Arena_C:ExecuteUbergraph_Task_GasWarning_Arena'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.4"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BTTask_BlueprintBase:ReceiveExecute'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Task_GasWarning_Arena_C:ReceiveExecute.OwnerActor'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.5"
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "DeltaSeconds",
+    "Outer": "ReceiveTick",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "OwnerActor",
+    "Outer": "ReceiveTick",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_GasWarning_Arena_C:ReceiveTick.DeltaSeconds'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.7"
+    },
+    "PropertyFlags": 128,
+    "PropertyClass": {
+      "ObjectName": "Class'Actor'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveTick",
+    "Outer": "Task_GasWarning_Arena_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Task_GasWarning_Arena_C:ReceiveExecute'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.6"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'BTTask_BlueprintBase:ReceiveTick'",
+      "ObjectPath": "/Script/AIModule"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Task_GasWarning_Arena_C:ReceiveTick.OwnerActor'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.8"
+      }
+    ],
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "K2Node_MakeArray_Array",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct'FormatArgumentData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeArray_Array2",
+    "Outer": "K2Node_MakeArray_Array2",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct'FormatArgumentData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Add_IntInt_ReturnValue",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": null
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Array_Get_Item",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "IntProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.CallFunc_Add_IntInt_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.12"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_LessEqual_IntInt_ReturnValue",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.CallFunc_Array_Get_Item'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.13"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_LessEqual_FloatFloat_ReturnValue",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.CallFunc_LessEqual_IntInt_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.14"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "K2Node_Select_Default",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.CallFunc_LessEqual_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.15"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "CallFunc_Format_ReturnValue2",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.K2Node_Select_Default'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.16"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array2",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'ArrayProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.CallFunc_Format_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.17"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "StructProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.K2Node_MakeArray_Array2.K2Node_MakeArray_Array2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.11"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeStruct_FormatArgumentData",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ArrayProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.K2Node_MakeArray_Array2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.18"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'FormatArgumentData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Greater_FloatFloat_ReturnValue",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.K2Node_MakeStruct_FormatArgumentData'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.19"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "CallFunc_GetMinSecondsText_ReturnValue",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.CallFunc_Greater_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.20"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "___bool_Variable",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.CallFunc_GetMinSecondsText_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.21"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Array_LastIndex_ReturnValue",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.___bool_Variable'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.22"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "CallFunc_Format_ReturnValue",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "IntProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.CallFunc_Array_LastIndex_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.23"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'ArrayProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.CallFunc_Format_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.24"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "StructProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.K2Node_MakeArray_Array.K2Node_MakeArray_Array'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.10"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "NotifySeconds",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "ArrayProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.K2Node_MakeArray_Array'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.25"
+    },
+    "PropertyFlags": 1
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ModeController",
+    "Outer": "PoisonWarningBroadcast",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.NotifySeconds'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.26"
+    },
+    "PropertyFlags": 134218112,
+    "PropertyClass": {
+      "ObjectName": "Class'TslArenaModeController'",
+      "ObjectPath": "/Script/TslGame"
+    }
+  },
+  {
+    "Type": "Function",
+    "Name": "PoisonWarningBroadcast",
+    "Outer": "Task_GasWarning_Arena_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Task_GasWarning_Arena_C:ReceiveTick'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.9"
+    },
+    "Children": [
+      {
+        "ObjectName": "ObjectProperty'Task_GasWarning_Arena_C:PoisonWarningBroadcast.ModeController'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.27"
+      }
+    ],
+    "FunctionFlags": 214040576
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "K2Node_MakeArray_Array",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct'FormatArgumentData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeArray_Array2",
+    "Outer": "K2Node_MakeArray_Array2",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct'FormatArgumentData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeArray_Array3",
+    "Outer": "K2Node_MakeArray_Array3",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": null,
+    "Struct": {
+      "ObjectName": "ScriptStruct'FormatArgumentData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "CallFunc_Format_ReturnValue3",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": null
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array3",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'ArrayProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.CallFunc_Format_ReturnValue3'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.32"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "StructProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_MakeArray_Array3.K2Node_MakeArray_Array3'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.31"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeStruct_FormatArgumentData6",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ArrayProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_MakeArray_Array3'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.33"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'FormatArgumentData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "K2Node_Select4_Default",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_MakeStruct_FormatArgumentData6'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.34"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "CallFunc_Format_ReturnValue2",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_Select4_Default'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.35"
+    }
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array2",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'ArrayProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.CallFunc_Format_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.36"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "StructProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_MakeArray_Array2.K2Node_MakeArray_Array2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.30"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeStruct_FormatArgumentData5",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ArrayProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_MakeArray_Array2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.37"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'FormatArgumentData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeStruct_FormatArgumentData4",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_MakeStruct_FormatArgumentData5'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.38"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'FormatArgumentData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "K2Node_Select3_Default",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_MakeStruct_FormatArgumentData4'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.39"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "K2Node_Select2_Default",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_Select3_Default'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.40"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "___bool_Variable4",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_Select2_Default'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.41"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "___text_Variable6",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_GasWarning_Arena_C:GetMinSecondsText.___bool_Variable4'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.42"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "CallFunc_Format_ReturnValue",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.___text_Variable6'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.43"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "___bool_Variable3",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.CallFunc_Format_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.44"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "ArrayProperty",
+    "Name": "K2Node_MakeArray_Array",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'ArrayProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_GasWarning_Arena_C:GetMinSecondsText.___bool_Variable3'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.45"
+    },
+    "PropertyFlags": 134217728,
+    "Inner": {
+      "ObjectName": "StructProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_MakeArray_Array.K2Node_MakeArray_Array'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.29"
+    }
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeStruct_FormatArgumentData3",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "ArrayProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_MakeArray_Array'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.46"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'FormatArgumentData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "___text_Variable5",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_MakeStruct_FormatArgumentData3'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.47"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "K2Node_Select_Default",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.___text_Variable5'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.48"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "___bool_Variable2",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_Select_Default'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.49"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "___text_Variable4",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_GasWarning_Arena_C:GetMinSecondsText.___bool_Variable2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.50"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "___text_Variable3",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.___text_Variable4'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.51"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "___bool_Variable",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.___text_Variable3'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.52"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeStruct_FormatArgumentData2",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_GasWarning_Arena_C:GetMinSecondsText.___bool_Variable'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.53"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'FormatArgumentData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "___text_Variable2",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_MakeStruct_FormatArgumentData2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.54"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "CallFunc_Conv_IntToText_ReturnValue2",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.___text_Variable2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.55"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Greater_IntInt_ReturnValue3",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.CallFunc_Conv_IntToText_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.56"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "K2Node_MakeStruct_FormatArgumentData",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_GasWarning_Arena_C:GetMinSecondsText.CallFunc_Greater_IntInt_ReturnValue3'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.57"
+    },
+    "Struct": {
+      "ObjectName": "ScriptStruct'FormatArgumentData'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Greater_IntInt_ReturnValue2",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "StructProperty'Task_GasWarning_Arena_C:GetMinSecondsText.K2Node_MakeStruct_FormatArgumentData'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.58"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "CallFunc_Conv_IntToText_ReturnValue",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_GasWarning_Arena_C:GetMinSecondsText.CallFunc_Greater_IntInt_ReturnValue2'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.59"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_FFloor_ReturnValue",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.CallFunc_Conv_IntToText_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.60"
+    }
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "CallFunc_Greater_IntInt_ReturnValue",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "IntProperty'Task_GasWarning_Arena_C:GetMinSecondsText.CallFunc_FFloor_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.61"
+    },
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Divide_FloatFloat_ReturnValue",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_GasWarning_Arena_C:GetMinSecondsText.CallFunc_Greater_IntInt_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.62"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_Round_ReturnValue",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_GasWarning_Arena_C:GetMinSecondsText.CallFunc_Divide_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.63"
+    }
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "CallFunc_Percent_FloatFloat_ReturnValue",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "IntProperty'Task_GasWarning_Arena_C:GetMinSecondsText.CallFunc_Round_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.64"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "___text_Variable",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'Task_GasWarning_Arena_C:GetMinSecondsText.CallFunc_Percent_FloatFloat_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.65"
+    }
+  },
+  {
+    "Type": "TextProperty",
+    "Name": "ReturnValue",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'TextProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.___text_Variable'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.66"
+    },
+    "PropertyFlags": 1408
+  },
+  {
+    "Type": "BoolProperty",
+    "Name": "FullTextForMINSEC",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'BoolProperty'",
+    "Next": {
+      "ObjectName": "TextProperty'Task_GasWarning_Arena_C:GetMinSecondsText.ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.67"
+    },
+    "PropertyFlags": 130,
+    "BoolSize": 1,
+    "bIsNativeBool": true
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Seconds",
+    "Outer": "GetMinSecondsText",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "BoolProperty'Task_GasWarning_Arena_C:GetMinSecondsText.FullTextForMINSEC'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.68"
+    },
+    "PropertyFlags": 130
+  },
+  {
+    "Type": "Function",
+    "Name": "GetMinSecondsText",
+    "Outer": "Task_GasWarning_Arena_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'Task_GasWarning_Arena_C:PoisonWarningBroadcast'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.28"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'TslArenaTaskGasWarning:GetMinSecondsText'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "FloatProperty'Task_GasWarning_Arena_C:GetMinSecondsText.Seconds'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.69"
+      }
+    ],
+    "FunctionFlags": 482478080
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "Task_GasWarning_Arena_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'Task_GasWarning_Arena_C:GetMinSecondsText'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.70"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "Task_GasWarning_Arena_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'Task_GasWarning_Arena_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.71"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'Task_GasWarning_Arena_C:ExecuteUbergraph_Task_GasWarning_Arena'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.4"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslArenaTaskGasWarning'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'Task_GasWarning_Arena_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.71"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_Task_GasWarning_Arena": {
+        "ObjectName": "Function'Task_GasWarning_Arena_C:ExecuteUbergraph_Task_GasWarning_Arena'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.4"
+      },
+      "ReceiveExecute": {
+        "ObjectName": "Function'Task_GasWarning_Arena_C:ReceiveExecute'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.6"
+      },
+      "ReceiveTick": {
+        "ObjectName": "Function'Task_GasWarning_Arena_C:ReceiveTick'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.9"
+      },
+      "PoisonWarningBroadcast": {
+        "ObjectName": "Function'Task_GasWarning_Arena_C:PoisonWarningBroadcast'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.28"
+      },
+      "GetMinSecondsText": {
+        "ObjectName": "Function'Task_GasWarning_Arena_C:GetMinSecondsText'",
+        "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.70"
+      }
+    },
+    "ClassFlags": 262160,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "Task_GasWarning_Arena_C'Default__Task_GasWarning_Arena_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.73"
+    }
+  },
+  {
+    "Type": "Task_GasWarning_Arena_C",
+    "Name": "Default__Task_GasWarning_Arena_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/ModeController/Task_GasWarning_Arena.Task_GasWarning_Arena_C'",
+    "Properties": {
+      "UberGraphFrame": {}
+    }
+  }
+]

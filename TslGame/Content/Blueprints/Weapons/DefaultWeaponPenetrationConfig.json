@@ -2,60 +2,95 @@
   {
     "Type": "WeaponsPenetrationConfig",
     "Name": "DefaultWeaponPenetrationConfig",
+    "Class": "UScriptClass'WeaponsPenetrationConfig'",
     "Properties": {
       "DefaultMaterialConfigs": null,
-      "MaterialConfigOverrides": {
-        "0": {
-          "Resistanse": 5.0,
-          "Deflection": 0.0
+      "MaterialConfigOverrides": [
+        {
+          "0": {
+            "Resistanse": 5.0,
+            "Deflection": 0.0
+          }
         }
-      },
+      ],
       "IgnoredMaterials": [
         {
-          "ObjectName": "PhysicalMaterial PhysMat_Chainlink",
+          "ObjectName": "PhysicalMaterial'PhysMat_Chainlink'",
           "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Chainlink.0"
         }
       ],
-      "WeaponClassConfigs": {
-        "EWeaponClass::Class_Shotgun": {
-          "PowerMultipliers": {
-            "48": 0.0
+      "WeaponClassConfigs": [
+        {
+          "EWeaponClass::Class_Shotgun": {
+            "PowerMultipliers": [
+              {
+                "48": 0.0
+              }
+            ]
           }
         },
-        "EWeaponClass::Class_SMG": {
-          "PowerMultipliers": {
-            "48": 0.0
+        {
+          "EWeaponClass::Class_SMG": {
+            "PowerMultipliers": [
+              {
+                "48": 0.0
+              }
+            ]
           }
         }
-      },
-      "WeaponConfigOverridesMap": {
-        "/Game/Blueprints/Weapons/WeapCrossbow_1.WeapCrossbow_1_C": {
-          "PowerMultipliers": {
-            "48": 0.0,
-            "0": 6.9E-44
+      ],
+      "WeaponConfigOverridesMap": [
+        {
+          "/Game/Blueprints/Weapons/WeapCrossbow_1.WeapCrossbow_1_C": {
+            "PowerMultipliers": [
+              {
+                "48": 0.0
+              },
+              {
+                "0": 6.9E-44
+              }
+            ]
           }
         },
-        "/Game/Blueprints/Weapons/WeapVSS.WeapVSS_C": {
-          "PowerMultipliers": {
-            "48": 0.0
+        {
+          "/Game/Blueprints/Weapons/WeapVSS.WeapVSS_C": {
+            "PowerMultipliers": [
+              {
+                "48": 0.0
+              }
+            ]
           }
         },
-        "/Game/Blueprints/Weapons/WeapSawnOff.WeapSawnoff_C": {
-          "PowerMultipliers": {
-            "48": 0.0
+        {
+          "/Game/Blueprints/Weapons/WeapSawnOff.WeapSawnoff_C": {
+            "PowerMultipliers": [
+              {
+                "48": 0.0
+              }
+            ]
           }
         }
-      },
-      "PenetrationPowerCurves": {
-        "46": null,
-        "254": null,
-        "0": {
-          "ObjectName": "CurveFloat C_DefaultPenetrationPowerVsWater",
-          "ObjectPath": "TslGame/Content/Blueprints/Weapons/C_DefaultPenetrationPowerVsWater.0"
+      ],
+      "PenetrationPowerCurves": [
+        {
+          "46": null
         },
-        "49": null,
-        "254": null
-      },
+        {
+          "254": null
+        },
+        {
+          "0": {
+            "ObjectName": "CurveFloat'C_DefaultPenetrationPowerVsWater'",
+            "ObjectPath": "TslGame/Content/Blueprints/Weapons/C_DefaultPenetrationPowerVsWater.0"
+          }
+        },
+        {
+          "49": null
+        },
+        {
+          "254": null
+        }
+      ],
       "BodyPenetratableZones": [
         "EDamageZoneType::Arm"
       ],

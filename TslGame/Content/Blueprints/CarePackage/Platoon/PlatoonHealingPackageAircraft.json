@@ -1,0 +1,430 @@
+[
+  {
+    "Type": "FloatProperty",
+    "Name": "Sound_CurrentValue",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": null,
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Sound_TargetValue",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'PlatoonHealingPackageAircraft_C:Sound_CurrentValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.0"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "FloatProperty",
+    "Name": "Sound_InterptTime",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'FloatProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'PlatoonHealingPackageAircraft_C:Sound_TargetValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.1"
+    },
+    "PropertyFlags": 65541
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "Ak",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "FloatProperty'PlatoonHealingPackageAircraft_C:Sound_InterptTime'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.2"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'AkComponent'",
+      "ObjectPath": "/Script/AkAudio"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "ProjectileMovement",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'PlatoonHealingPackageAircraft_C:Ak'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.3"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'ProjectileMovementComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "ObjectProperty",
+    "Name": "P_AircraftRotor",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'ObjectProperty'",
+    "Next": {
+      "ObjectName": "ObjectProperty'PlatoonHealingPackageAircraft_C:ProjectileMovement'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.4"
+    },
+    "PropertyFlags": 17179869188,
+    "PropertyClass": {
+      "ObjectName": "Class'ParticleSystemComponent'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "CallFunc_PostAssociatedAkEvent_ReturnValue",
+    "Outer": "ExecuteUbergraph_PlatoonHealingPackageAircraft",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": null
+  },
+  {
+    "Type": "IntProperty",
+    "Name": "EntryPoint",
+    "Outer": "ExecuteUbergraph_PlatoonHealingPackageAircraft",
+    "Class": "UScriptClass'IntProperty'",
+    "Next": {
+      "ObjectName": "IntProperty'PlatoonHealingPackageAircraft_C:ExecuteUbergraph_PlatoonHealingPackageAircraft.CallFunc_PostAssociatedAkEvent_ReturnValue'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.6"
+    },
+    "PropertyFlags": 128
+  },
+  {
+    "Type": "Function",
+    "Name": "ExecuteUbergraph_PlatoonHealingPackageAircraft",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "ObjectProperty'PlatoonHealingPackageAircraft_C:P_AircraftRotor'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.5"
+    },
+    "Children": [
+      {
+        "ObjectName": "IntProperty'PlatoonHealingPackageAircraft_C:ExecuteUbergraph_PlatoonHealingPackageAircraft.EntryPoint'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.7"
+      }
+    ],
+    "FunctionFlags": 0
+  },
+  {
+    "Type": "Function",
+    "Name": "ReceiveBeginPlay",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'PlatoonHealingPackageAircraft_C:ExecuteUbergraph_PlatoonHealingPackageAircraft'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.8"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 134744064
+  },
+  {
+    "Type": "Function",
+    "Name": "UserConstructionScript",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'Function'",
+    "Next": {
+      "ObjectName": "Function'PlatoonHealingPackageAircraft_C:ReceiveBeginPlay'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.9"
+    },
+    "SuperStruct": {
+      "ObjectName": "Function'Actor:UserConstructionScript'",
+      "ObjectPath": "/Script/Engine"
+    },
+    "FunctionFlags": 201459712
+  },
+  {
+    "Type": "StructProperty",
+    "Name": "UberGraphFrame",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'StructProperty'",
+    "Next": {
+      "ObjectName": "Function'PlatoonHealingPackageAircraft_C:UserConstructionScript'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.10"
+    },
+    "PropertyFlags": 2105344,
+    "Struct": {
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
+      "ObjectPath": "/Script/Engine"
+    }
+  },
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Properties": {
+      "SimpleConstructionScript": {
+        "ObjectName": "SimpleConstructionScript'PlatoonHealingPackageAircraft_C:SimpleConstructionScript_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.22"
+      },
+      "UberGraphFramePointerProperty": {
+        "ObjectName": "StructProperty'PlatoonHealingPackageAircraft_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.11"
+      },
+      "UberGraphFunction": {
+        "ObjectName": "Function'PlatoonHealingPackageAircraft_C:ExecuteUbergraph_PlatoonHealingPackageAircraft'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.8"
+      }
+    },
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslPlatoonCarePackage'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "Children": [
+      {
+        "ObjectName": "StructProperty'PlatoonHealingPackageAircraft_C:UberGraphFrame'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.11"
+      }
+    ],
+    "FuncMap": {
+      "ExecuteUbergraph_PlatoonHealingPackageAircraft": {
+        "ObjectName": "Function'PlatoonHealingPackageAircraft_C:ExecuteUbergraph_PlatoonHealingPackageAircraft'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.8"
+      },
+      "ReceiveBeginPlay": {
+        "ObjectName": "Function'PlatoonHealingPackageAircraft_C:ReceiveBeginPlay'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.9"
+      },
+      "UserConstructionScript": {
+        "ObjectName": "Function'PlatoonHealingPackageAircraft_C:UserConstructionScript'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.10"
+      }
+    },
+    "ClassFlags": 8650772,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Game",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "PlatoonHealingPackageAircraft_C'Default__PlatoonHealingPackageAircraft_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.13"
+    }
+  },
+  {
+    "Type": "PlatoonHealingPackageAircraft_C",
+    "Name": "Default__PlatoonHealingPackageAircraft_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.PlatoonHealingPackageAircraft_C'",
+    "Properties": {
+      "UberGraphFrame": {},
+      "Sound_InterptTime": 0.2,
+      "Sound_TargetValue": 1.0,
+      "CarePackageItemSpawnerClass": {
+        "ObjectName": "BlueprintGeneratedClass'PlatoonHealingPackageItemSpawner_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/Spawn/Platoon/PlatoonHealingPackageItemSpawner.0"
+      },
+      "CarePackageItemClass": {
+        "ObjectName": "BlueprintGeneratedClass'Carapackage_FlareGun_C'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Carapackage_FlareGun.2"
+      },
+      "MeshComponent": {
+        "ObjectName": "StaticMeshComponent'Default__PlatoonHealingPackageAircraft_C:StaticMeshComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.24"
+      },
+      "MovementComponent": {
+        "ObjectName": "TslAircraftVehicleMovement'Default__PlatoonHealingPackageAircraft_C:MovementComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.25"
+      },
+      "SplineComponent": {
+        "ObjectName": "SplineComponent'Default__PlatoonHealingPackageAircraft_C:SplineComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.23"
+      },
+      "TotalFlyingTime": 90.0,
+      "bNetLoadOnClient": false,
+      "RootComponent": {
+        "ObjectName": "StaticMeshComponent'Default__PlatoonHealingPackageAircraft_C:StaticMeshComponent'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.24"
+      }
+    }
+  },
+  {
+    "Type": "AkComponent",
+    "Name": "Ak_GEN_VARIABLE",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'AkComponent'",
+    "Properties": {
+      "bUseDoppler": true,
+      "AkAudioEvent": {
+        "ObjectName": "AkAudioEvent'CarePackage_Aircraft'",
+        "ObjectPath": "TslGame/Content/WwiseAssets/Directing/CarePackage_Aircraft.0"
+      }
+    }
+  },
+  {
+    "Type": "ParticleSystemComponent",
+    "Name": "P_AircraftRotor_GEN_VARIABLE",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
+    "Properties": {
+      "Template": {
+        "ObjectName": "ParticleSystem'P_AircraftRotor'",
+        "ObjectPath": "TslGame/Content/Export_Marek/P_AircraftRotor.35"
+      },
+      "bDecalChannelValid": true
+    }
+  },
+  {
+    "Type": "ProjectileMovementComponent",
+    "Name": "ProjectileMovement_GEN_VARIABLE",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'ProjectileMovementComponent'",
+    "Properties": {
+      "ProjectileGravityScale": 0.0,
+      "bAutoActivate": false
+    }
+  },
+  {
+    "Type": "SceneComponent",
+    "Name": "DefaultSceneRoot_GEN_VARIABLE",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'SceneComponent'"
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_0",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'SceneComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "SceneComponent'PlatoonHealingPackageAircraft_C:DefaultSceneRoot_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.17"
+      },
+      "VariableGuid": "63A1072C-42C0D1A3-45B806A9-1515583B",
+      "InternalVariableName": "DefaultSceneRoot"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_1",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'AkComponent'",
+        "ObjectPath": "/Script/AkAudio"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "AkComponent'PlatoonHealingPackageAircraft_C:Ak_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.14"
+      },
+      "ParentComponentOrVariableName": "StaticMeshComponent",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "98C7A2C0-47E43BA7-21FEE88D-7DA8B3DF",
+      "InternalVariableName": "Ak"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_2",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ParticleSystemComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ParticleSystemComponent'PlatoonHealingPackageAircraft_C:P_AircraftRotor_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.15"
+      },
+      "ParentComponentOrVariableName": "StaticMeshComponent",
+      "bIsParentComponentNative": true,
+      "VariableGuid": "8AC46B43-48664EE4-C0F4439C-4447CB86",
+      "InternalVariableName": "P_AircraftRotor"
+    }
+  },
+  {
+    "Type": "SCS_Node",
+    "Name": "SCS_Node_3",
+    "Outer": "SimpleConstructionScript_0",
+    "Class": "UScriptClass'SCS_Node'",
+    "Properties": {
+      "ComponentClass": {
+        "ObjectName": "Class'ProjectileMovementComponent'",
+        "ObjectPath": "/Script/Engine"
+      },
+      "ComponentTemplate": {
+        "ObjectName": "ProjectileMovementComponent'PlatoonHealingPackageAircraft_C:ProjectileMovement_GEN_VARIABLE'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.16"
+      },
+      "VariableGuid": "F8BD991C-40264A76-3519FF9D-B843F456",
+      "InternalVariableName": "ProjectileMovement"
+    }
+  },
+  {
+    "Type": "SimpleConstructionScript",
+    "Name": "SimpleConstructionScript_0",
+    "Outer": "PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
+    "Properties": {
+      "RootNodes": [
+        {
+          "ObjectName": "SCS_Node'PlatoonHealingPackageAircraft_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.19"
+        },
+        {
+          "ObjectName": "SCS_Node'PlatoonHealingPackageAircraft_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.21"
+        },
+        {
+          "ObjectName": "SCS_Node'PlatoonHealingPackageAircraft_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.20"
+        }
+      ],
+      "AllNodes": [
+        {
+          "ObjectName": "SCS_Node'PlatoonHealingPackageAircraft_C:SimpleConstructionScript_0.SCS_Node_1'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.19"
+        },
+        {
+          "ObjectName": "SCS_Node'PlatoonHealingPackageAircraft_C:SimpleConstructionScript_0.SCS_Node_3'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.21"
+        },
+        {
+          "ObjectName": "SCS_Node'PlatoonHealingPackageAircraft_C:SimpleConstructionScript_0.SCS_Node_2'",
+          "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.20"
+        }
+      ],
+      "DefaultSceneRootNode": {
+        "ObjectName": "SCS_Node'PlatoonHealingPackageAircraft_C:SimpleConstructionScript_0.SCS_Node_0'",
+        "ObjectPath": "TslGame/Content/Blueprints/CarePackage/Platoon/PlatoonHealingPackageAircraft.18"
+      }
+    }
+  },
+  {
+    "Type": "SplineComponent",
+    "Name": "SplineComponent",
+    "Outer": "Default__PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'SplineComponent'"
+  },
+  {
+    "Type": "StaticMeshComponent",
+    "Name": "StaticMeshComponent",
+    "Outer": "Default__PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
+    "Properties": {
+      "StaticMesh": {
+        "ObjectName": "StaticMesh'C130_Care_Set'",
+        "ObjectPath": "TslGame/Content/Vehicles/Aircraft/C130_Care_Set.1"
+      }
+    }
+  },
+  {
+    "Type": "TslAircraftVehicleMovement",
+    "Name": "MovementComponent",
+    "Outer": "Default__PlatoonHealingPackageAircraft_C",
+    "Class": "UScriptClass'TslAircraftVehicleMovement'"
+  }
+]

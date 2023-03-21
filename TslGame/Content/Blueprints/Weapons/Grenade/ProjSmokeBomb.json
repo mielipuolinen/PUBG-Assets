@@ -3,6 +3,7 @@
     "Type": "FloatProperty",
     "Name": "HitTimeDelay",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": null,
     "PropertyFlags": 65541
   },
@@ -10,8 +11,9 @@
     "Type": "FloatProperty",
     "Name": "HitMinVelocity",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjSmokeBomb_C:HitTimeDelay",
+      "ObjectName": "FloatProperty'ProjSmokeBomb_C:HitTimeDelay'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.0"
     },
     "PropertyFlags": 65541
@@ -20,8 +22,9 @@
     "Type": "FloatProperty",
     "Name": "HitImpactMax",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjSmokeBomb_C:HitMinVelocity",
+      "ObjectName": "FloatProperty'ProjSmokeBomb_C:HitMinVelocity'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.1"
     },
     "PropertyFlags": 65541
@@ -30,8 +33,9 @@
     "Type": "FloatProperty",
     "Name": "HitImpactMin",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjSmokeBomb_C:HitImpactMax",
+      "ObjectName": "FloatProperty'ProjSmokeBomb_C:HitImpactMax'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.2"
     },
     "PropertyFlags": 65541
@@ -40,8 +44,9 @@
     "Type": "FloatProperty",
     "Name": "HitTimer",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjSmokeBomb_C:HitImpactMin",
+      "ObjectName": "FloatProperty'ProjSmokeBomb_C:HitImpactMin'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.3"
     },
     "PropertyFlags": 65541
@@ -50,13 +55,14 @@
     "Type": "ObjectProperty",
     "Name": "EndSmokeSound",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjSmokeBomb_C:HitTimer",
+      "ObjectName": "FloatProperty'ProjSmokeBomb_C:HitTimer'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.4"
     },
     "PropertyFlags": 5,
     "PropertyClass": {
-      "ObjectName": "Class AkAudioEvent",
+      "ObjectName": "Class'AkAudioEvent'",
       "ObjectPath": "/Script/AkAudio"
     }
   },
@@ -64,13 +70,14 @@
     "Type": "ObjectProperty",
     "Name": "StartSmokeSound",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:EndSmokeSound",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:EndSmokeSound'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.5"
     },
     "PropertyFlags": 5,
     "PropertyClass": {
-      "ObjectName": "Class AkAudioEvent",
+      "ObjectName": "Class'AkAudioEvent'",
       "ObjectPath": "/Script/AkAudio"
     }
   },
@@ -78,13 +85,14 @@
     "Type": "ObjectProperty",
     "Name": "Audio1",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:StartSmokeSound",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:StartSmokeSound'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.6"
     },
     "PropertyFlags": 17179869188,
     "PropertyClass": {
-      "ObjectName": "Class AudioComponent",
+      "ObjectName": "Class'AudioComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -92,13 +100,14 @@
     "Type": "ObjectProperty",
     "Name": "Ak",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:Audio1",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:Audio1'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.7"
     },
     "PropertyFlags": 17179869188,
     "PropertyClass": {
-      "ObjectName": "Class AkComponent",
+      "ObjectName": "Class'AkComponent'",
       "ObjectPath": "/Script/AkAudio"
     }
   },
@@ -106,9 +115,10 @@
     "Type": "ObjectProperty",
     "Name": "K2Node_CustomEvent_DamageCauser",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -116,12 +126,13 @@
     "Type": "ObjectProperty",
     "Name": "K2Node_CustomEvent_InstigatedBy",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_CustomEvent_DamageCauser",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_CustomEvent_DamageCauser'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.9"
     },
     "PropertyClass": {
-      "ObjectName": "Class Controller",
+      "ObjectName": "Class'Controller'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -129,13 +140,14 @@
     "Type": "ObjectProperty",
     "Name": "K2Node_CustomEvent_DamageType",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_CustomEvent_InstigatedBy",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_CustomEvent_InstigatedBy'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.10"
     },
     "PropertyFlags": 2,
     "PropertyClass": {
-      "ObjectName": "Class DamageType",
+      "ObjectName": "Class'DamageType'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -143,8 +155,9 @@
     "Type": "FloatProperty",
     "Name": "K2Node_CustomEvent_Damage",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_CustomEvent_DamageType",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_CustomEvent_DamageType'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.11"
     }
   },
@@ -152,12 +165,13 @@
     "Type": "ObjectProperty",
     "Name": "K2Node_CustomEvent_DamagedActor",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_CustomEvent_Damage",
+      "ObjectName": "FloatProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_CustomEvent_Damage'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.12"
     },
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -165,12 +179,13 @@
     "Type": "StructProperty",
     "Name": "CallFunc_K2_SetTimerDelegate_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_CustomEvent_DamagedActor",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_CustomEvent_DamagedActor'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.13"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct TimerHandle",
+      "ObjectName": "ScriptStruct'TimerHandle'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -178,21 +193,23 @@
     "Type": "DelegateProperty",
     "Name": "K2Node_CreateDelegate_OutputDelegate",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'DelegateProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.CallFunc_K2_SetTimerDelegate_ReturnValue",
+      "ObjectName": "StructProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.CallFunc_K2_SetTimerDelegate_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.14"
     },
     "SignatureFunction": {
-      "ObjectName": "DelegateFunction TimerDynamicDelegate__DelegateSignature",
+      "ObjectName": "DelegateFunction'TimerDynamicDelegate__DelegateSignature'",
       "ObjectPath": "/Script/Engine"
     }
   },
   {
     "Type": "BoolProperty",
-    "Name": "Temp_bool_IsClosed_Variable",
+    "Name": "___bool_IsClosed_Variable",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "DelegateProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_CreateDelegate_OutputDelegate",
+      "ObjectName": "DelegateProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_CreateDelegate_OutputDelegate'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.15"
     },
     "BoolSize": 1,
@@ -202,8 +219,9 @@
     "Type": "FloatProperty",
     "Name": "K2Node_Event_DeltaSeconds",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.Temp_bool_IsClosed_Variable",
+      "ObjectName": "BoolProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.___bool_IsClosed_Variable'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.16"
     }
   },
@@ -211,13 +229,14 @@
     "Type": "StructProperty",
     "Name": "K2Node_Event_Hit",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_DeltaSeconds",
+      "ObjectName": "FloatProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_DeltaSeconds'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.17"
     },
     "PropertyFlags": 549755813890,
     "Struct": {
-      "ObjectName": "ScriptStruct HitResult",
+      "ObjectName": "ScriptStruct'HitResult'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -225,12 +244,13 @@
     "Type": "StructProperty",
     "Name": "K2Node_Event_NormalImpulse",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_Hit",
+      "ObjectName": "StructProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_Hit'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.18"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -238,12 +258,13 @@
     "Type": "StructProperty",
     "Name": "K2Node_Event_HitNormal",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_NormalImpulse",
+      "ObjectName": "StructProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_NormalImpulse'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.19"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -251,12 +272,13 @@
     "Type": "StructProperty",
     "Name": "K2Node_Event_HitLocation",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_HitNormal",
+      "ObjectName": "StructProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_HitNormal'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.20"
     },
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -264,8 +286,9 @@
     "Type": "BoolProperty",
     "Name": "K2Node_Event_bSelfMoved",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_HitLocation",
+      "ObjectName": "StructProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_HitLocation'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.21"
     },
     "BoolSize": 1,
@@ -275,12 +298,13 @@
     "Type": "ObjectProperty",
     "Name": "K2Node_Event_OtherComp",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_bSelfMoved",
+      "ObjectName": "BoolProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_bSelfMoved'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.22"
     },
     "PropertyClass": {
-      "ObjectName": "Class PrimitiveComponent",
+      "ObjectName": "Class'PrimitiveComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -288,12 +312,13 @@
     "Type": "ObjectProperty",
     "Name": "K2Node_Event_Other",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_OtherComp",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_OtherComp'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.23"
     },
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -301,12 +326,13 @@
     "Type": "ObjectProperty",
     "Name": "K2Node_Event_MyComp",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_Other",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_Other'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.24"
     },
     "PropertyClass": {
-      "ObjectName": "Class PrimitiveComponent",
+      "ObjectName": "Class'PrimitiveComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -314,8 +340,9 @@
     "Type": "BoolProperty",
     "Name": "CallFunc_IsActive_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_MyComp",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.K2Node_Event_MyComp'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.25"
     },
     "BoolSize": 1,
@@ -325,8 +352,9 @@
     "Type": "IntProperty",
     "Name": "CallFunc_PostAkEvent_ReturnValue2",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.CallFunc_IsActive_ReturnValue",
+      "ObjectName": "BoolProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.CallFunc_IsActive_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.26"
     }
   },
@@ -334,17 +362,19 @@
     "Type": "IntProperty",
     "Name": "CallFunc_PostAkEvent_ReturnValue",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.CallFunc_PostAkEvent_ReturnValue2",
+      "ObjectName": "IntProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.CallFunc_PostAkEvent_ReturnValue2'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.27"
     }
   },
   {
     "Type": "BoolProperty",
-    "Name": "Temp_bool_Has_Been_Initd_Variable",
+    "Name": "___bool_Has_Been_Initd_Variable",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "IntProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.CallFunc_PostAkEvent_ReturnValue",
+      "ObjectName": "IntProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.CallFunc_PostAkEvent_ReturnValue'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.28"
     },
     "BoolSize": 1,
@@ -354,8 +384,9 @@
     "Type": "IntProperty",
     "Name": "EntryPoint",
     "Outer": "ExecuteUbergraph_ProjSmokeBomb",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.Temp_bool_Has_Been_Initd_Variable",
+      "ObjectName": "BoolProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.___bool_Has_Been_Initd_Variable'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.29"
     },
     "PropertyFlags": 128
@@ -364,13 +395,14 @@
     "Type": "Function",
     "Name": "ExecuteUbergraph_ProjSmokeBomb",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:Ak",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:Ak'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.8"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.EntryPoint",
+        "ObjectName": "IntProperty'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb.EntryPoint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.30"
       }
     ],
@@ -380,12 +412,13 @@
     "Type": "Function",
     "Name": "ReceiveBeginPlay",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb",
+      "ObjectName": "Function'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.31"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:ReceiveBeginPlay",
+      "ObjectName": "Function'Actor:ReceiveBeginPlay'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 134744064
@@ -394,10 +427,11 @@
     "Type": "ObjectProperty",
     "Name": "DamageCauser",
     "Outer": "OnTakeAnyDamage_Event",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyFlags": 128,
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -405,13 +439,14 @@
     "Type": "ObjectProperty",
     "Name": "InstigatedBy",
     "Outer": "OnTakeAnyDamage_Event",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:OnTakeAnyDamage_Event.DamageCauser",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:OnTakeAnyDamage_Event.DamageCauser'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.33"
     },
     "PropertyFlags": 128,
     "PropertyClass": {
-      "ObjectName": "Class Controller",
+      "ObjectName": "Class'Controller'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -419,13 +454,14 @@
     "Type": "ObjectProperty",
     "Name": "DamageType",
     "Outer": "OnTakeAnyDamage_Event",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:OnTakeAnyDamage_Event.InstigatedBy",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:OnTakeAnyDamage_Event.InstigatedBy'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.34"
     },
     "PropertyFlags": 130,
     "PropertyClass": {
-      "ObjectName": "Class DamageType",
+      "ObjectName": "Class'DamageType'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -433,8 +469,9 @@
     "Type": "FloatProperty",
     "Name": "Damage",
     "Outer": "OnTakeAnyDamage_Event",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:OnTakeAnyDamage_Event.DamageType",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:OnTakeAnyDamage_Event.DamageType'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.35"
     },
     "PropertyFlags": 128
@@ -443,13 +480,14 @@
     "Type": "ObjectProperty",
     "Name": "DamagedActor",
     "Outer": "OnTakeAnyDamage_Event",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "FloatProperty ProjSmokeBomb_C:OnTakeAnyDamage_Event.Damage",
+      "ObjectName": "FloatProperty'ProjSmokeBomb_C:OnTakeAnyDamage_Event.Damage'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.36"
     },
     "PropertyFlags": 128,
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -457,13 +495,14 @@
     "Type": "Function",
     "Name": "OnTakeAnyDamage_Event",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjSmokeBomb_C:ReceiveBeginPlay",
+      "ObjectName": "Function'ProjSmokeBomb_C:ReceiveBeginPlay'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.32"
     },
     "Children": [
       {
-        "ObjectName": "ObjectProperty ProjSmokeBomb_C:OnTakeAnyDamage_Event.DamagedActor",
+        "ObjectName": "ObjectProperty'ProjSmokeBomb_C:OnTakeAnyDamage_Event.DamagedActor'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.37"
       }
     ],
@@ -473,6 +512,7 @@
     "Type": "FloatProperty",
     "Name": "DeltaSeconds",
     "Outer": "ReceiveTick",
+    "Class": "UScriptClass'FloatProperty'",
     "Next": null,
     "PropertyFlags": 128
   },
@@ -480,17 +520,18 @@
     "Type": "Function",
     "Name": "ReceiveTick",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjSmokeBomb_C:OnTakeAnyDamage_Event",
+      "ObjectName": "Function'ProjSmokeBomb_C:OnTakeAnyDamage_Event'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.38"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:ReceiveTick",
+      "ObjectName": "Function'Actor:ReceiveTick'",
       "ObjectPath": "/Script/Engine"
     },
     "Children": [
       {
-        "ObjectName": "FloatProperty ProjSmokeBomb_C:ReceiveTick.DeltaSeconds",
+        "ObjectName": "FloatProperty'ProjSmokeBomb_C:ReceiveTick.DeltaSeconds'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.39"
       }
     ],
@@ -500,10 +541,11 @@
     "Type": "StructProperty",
     "Name": "Hit",
     "Outer": "ReceiveHit",
+    "Class": "UScriptClass'StructProperty'",
     "Next": null,
     "PropertyFlags": 549890032002,
     "Struct": {
-      "ObjectName": "ScriptStruct HitResult",
+      "ObjectName": "ScriptStruct'HitResult'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -511,13 +553,14 @@
     "Type": "StructProperty",
     "Name": "NormalImpulse",
     "Outer": "ReceiveHit",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjSmokeBomb_C:ReceiveHit.Hit",
+      "ObjectName": "StructProperty'ProjSmokeBomb_C:ReceiveHit.Hit'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.41"
     },
     "PropertyFlags": 128,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -525,13 +568,14 @@
     "Type": "StructProperty",
     "Name": "HitNormal",
     "Outer": "ReceiveHit",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjSmokeBomb_C:ReceiveHit.NormalImpulse",
+      "ObjectName": "StructProperty'ProjSmokeBomb_C:ReceiveHit.NormalImpulse'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.42"
     },
     "PropertyFlags": 128,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -539,13 +583,14 @@
     "Type": "StructProperty",
     "Name": "HitLocation",
     "Outer": "ReceiveHit",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjSmokeBomb_C:ReceiveHit.HitNormal",
+      "ObjectName": "StructProperty'ProjSmokeBomb_C:ReceiveHit.HitNormal'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.43"
     },
     "PropertyFlags": 128,
     "Struct": {
-      "ObjectName": "ScriptStruct Vector",
+      "ObjectName": "ScriptStruct'Vector'",
       "ObjectPath": "/Script/CoreUObject"
     }
   },
@@ -553,8 +598,9 @@
     "Type": "BoolProperty",
     "Name": "bSelfMoved",
     "Outer": "ReceiveHit",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": {
-      "ObjectName": "StructProperty ProjSmokeBomb_C:ReceiveHit.HitLocation",
+      "ObjectName": "StructProperty'ProjSmokeBomb_C:ReceiveHit.HitLocation'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.44"
     },
     "PropertyFlags": 128,
@@ -565,13 +611,14 @@
     "Type": "ObjectProperty",
     "Name": "OtherComp",
     "Outer": "ReceiveHit",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "BoolProperty ProjSmokeBomb_C:ReceiveHit.bSelfMoved",
+      "ObjectName": "BoolProperty'ProjSmokeBomb_C:ReceiveHit.bSelfMoved'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.45"
     },
     "PropertyFlags": 128,
     "PropertyClass": {
-      "ObjectName": "Class PrimitiveComponent",
+      "ObjectName": "Class'PrimitiveComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -579,13 +626,14 @@
     "Type": "ObjectProperty",
     "Name": "Other",
     "Outer": "ReceiveHit",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:ReceiveHit.OtherComp",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:ReceiveHit.OtherComp'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.46"
     },
     "PropertyFlags": 128,
     "PropertyClass": {
-      "ObjectName": "Class Actor",
+      "ObjectName": "Class'Actor'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -593,13 +641,14 @@
     "Type": "ObjectProperty",
     "Name": "MyComp",
     "Outer": "ReceiveHit",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": {
-      "ObjectName": "ObjectProperty ProjSmokeBomb_C:ReceiveHit.Other",
+      "ObjectName": "ObjectProperty'ProjSmokeBomb_C:ReceiveHit.Other'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.47"
     },
     "PropertyFlags": 128,
     "PropertyClass": {
-      "ObjectName": "Class PrimitiveComponent",
+      "ObjectName": "Class'PrimitiveComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -607,17 +656,18 @@
     "Type": "Function",
     "Name": "ReceiveHit",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjSmokeBomb_C:ReceiveTick",
+      "ObjectName": "Function'ProjSmokeBomb_C:ReceiveTick'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.40"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:ReceiveHit",
+      "ObjectName": "Function'Actor:ReceiveHit'",
       "ObjectPath": "/Script/Engine"
     },
     "Children": [
       {
-        "ObjectName": "ObjectProperty ProjSmokeBomb_C:ReceiveHit.MyComp",
+        "ObjectName": "ObjectProperty'ProjSmokeBomb_C:ReceiveHit.MyComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.48"
       }
     ],
@@ -627,8 +677,9 @@
     "Type": "Function",
     "Name": "End",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjSmokeBomb_C:ReceiveHit",
+      "ObjectName": "Function'ProjSmokeBomb_C:ReceiveHit'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.49"
     },
     "FunctionFlags": 201326592
@@ -637,12 +688,13 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function ProjSmokeBomb_C:End",
+      "ObjectName": "Function'ProjSmokeBomb_C:End'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.50"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 201459712
@@ -651,97 +703,100 @@
     "Type": "StructProperty",
     "Name": "UberGraphFrame",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "Function ProjSmokeBomb_C:UserConstructionScript",
+      "ObjectName": "Function'ProjSmokeBomb_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.51"
     },
     "PropertyFlags": 2105344,
     "Struct": {
-      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
       "ObjectPath": "/Script/Engine"
     }
   },
   {
     "Type": "BlueprintGeneratedClass",
     "Name": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript ProjSmokeBomb_C:SimpleConstructionScript_0__57659476",
+        "ObjectName": "SimpleConstructionScript'ProjSmokeBomb_C:SimpleConstructionScript_0__57659476'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.64"
       },
       "UberGraphFramePointerProperty": {
-        "ObjectName": "StructProperty ProjSmokeBomb_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjSmokeBomb_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.52"
       },
       "UberGraphFunction": {
-        "ObjectName": "Function ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb",
+        "ObjectName": "Function'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.31"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "Class TslProjectile",
+      "ObjectName": "Class'TslProjectile'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty ProjSmokeBomb_C:UberGraphFrame",
+        "ObjectName": "StructProperty'ProjSmokeBomb_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.52"
       }
     ],
     "FuncMap": {
       "ExecuteUbergraph_ProjSmokeBomb": {
-        "ObjectName": "Function ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb",
+        "ObjectName": "Function'ProjSmokeBomb_C:ExecuteUbergraph_ProjSmokeBomb'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.31"
       },
       "ReceiveBeginPlay": {
-        "ObjectName": "Function ProjSmokeBomb_C:ReceiveBeginPlay",
+        "ObjectName": "Function'ProjSmokeBomb_C:ReceiveBeginPlay'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.32"
       },
       "OnTakeAnyDamage_Event": {
-        "ObjectName": "Function ProjSmokeBomb_C:OnTakeAnyDamage_Event",
+        "ObjectName": "Function'ProjSmokeBomb_C:OnTakeAnyDamage_Event'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.38"
       },
       "ReceiveTick": {
-        "ObjectName": "Function ProjSmokeBomb_C:ReceiveTick",
+        "ObjectName": "Function'ProjSmokeBomb_C:ReceiveTick'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.40"
       },
       "ReceiveHit": {
-        "ObjectName": "Function ProjSmokeBomb_C:ReceiveHit",
+        "ObjectName": "Function'ProjSmokeBomb_C:ReceiveHit'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.49"
       },
       "End": {
-        "ObjectName": "Function ProjSmokeBomb_C:End",
+        "ObjectName": "Function'ProjSmokeBomb_C:End'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.50"
       },
       "UserConstructionScript": {
-        "ObjectName": "Function ProjSmokeBomb_C:UserConstructionScript",
+        "ObjectName": "Function'ProjSmokeBomb_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.51"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Engine",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "ProjSmokeBomb_C Default__ProjSmokeBomb_C",
+      "ObjectName": "ProjSmokeBomb_C'Default__ProjSmokeBomb_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.54"
     }
   },
   {
     "Type": "ProjSmokeBomb_C",
     "Name": "Default__ProjSmokeBomb_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.ProjSmokeBomb_C'",
     "Properties": {
       "UberGraphFrame": {},
       "StartSmokeSound": {
-        "ObjectName": "AkAudioEvent SmokeBomb_Explosion",
+        "ObjectName": "AkAudioEvent'SmokeBomb_Explosion'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/SmokeBomb/SmokeBomb_Explosion.0"
       },
       "EndSmokeSound": {
-        "ObjectName": "AkAudioEvent SmokeBomb_Explosion_Stop",
+        "ObjectName": "AkAudioEvent'SmokeBomb_Explosion_Stop'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/SmokeBomb/SmokeBomb_Explosion_Stop.0"
       },
       "HitImpactMin": 300.0,
@@ -749,27 +804,27 @@
       "HitMinVelocity": 50.0,
       "HitTimeDelay": 0.2,
       "MovementComp": {
-        "ObjectName": "TslProjectileMovementComponent Default__ProjSmokeBomb_C:ProjectileComp",
+        "ObjectName": "TslProjectileMovementComponent'Default__ProjSmokeBomb_C:ProjectileComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.68"
       },
       "CollisionComp": {
-        "ObjectName": "SphereComponent Default__ProjSmokeBomb_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjSmokeBomb_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.66"
       },
       "ParticleComp": {
-        "ObjectName": "ParticleSystemComponent Default__ProjSmokeBomb_C:ParticleComp",
+        "ObjectName": "ParticleSystemComponent'Default__ProjSmokeBomb_C:ParticleComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.58"
       },
       "MeshComp": {
-        "ObjectName": "StaticMeshComponent Default__ProjSmokeBomb_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjSmokeBomb_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.67"
       },
       "InterpolationTargetComp": {
-        "ObjectName": "SphereComponent Default__ProjSmokeBomb_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjSmokeBomb_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.65"
       },
       "ConstraintComp": {
-        "ObjectName": "PhysicsConstraintComponent Default__ProjSmokeBomb_C:MeshConstraint",
+        "ObjectName": "PhysicsConstraintComponent'Default__ProjSmokeBomb_C:MeshConstraint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.59"
       },
       "MeshInitialRotationRate": {
@@ -782,11 +837,11 @@
       "ExplosionRotationType": "EProjectileExplosionRotationType::ProjectileUpVector",
       "HideMeshAtExplosion": false,
       "ImpactSound": {
-        "ObjectName": "AkAudioEvent HandBomb_Common_Impact",
+        "ObjectName": "AkAudioEvent'HandBomb_Common_Impact'",
         "ObjectPath": "TslGame/Content/WwiseAssets/HandBomb/HandBomb_Common/HandBomb_Common_Impact.0"
       },
       "AkComp": {
-        "ObjectName": "AkComponent Default__ProjSmokeBomb_C:AkComp",
+        "ObjectName": "AkComponent'Default__ProjSmokeBomb_C:AkComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.55"
       },
       "VelocityCheckTimerTick": 0.1,
@@ -797,7 +852,7 @@
         "DamageType": null
       },
       "RootComponent": {
-        "ObjectName": "SphereComponent Default__ProjSmokeBomb_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjSmokeBomb_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.66"
       }
     }
@@ -806,9 +861,10 @@
     "Type": "AkComponent",
     "Name": "AkComp",
     "Outer": "Default__ProjSmokeBomb_C",
+    "Class": "UScriptClass'AkComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjSmokeBomb_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjSmokeBomb_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.66"
       }
     }
@@ -816,24 +872,27 @@
   {
     "Type": "AkComponent",
     "Name": "Ak_GEN_VARIABLE",
-    "Outer": "ProjSmokeBomb_C"
+    "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'AkComponent'"
   },
   {
     "Type": "AudioComponent",
     "Name": "AudioComponent_3__E5DBC81A",
-    "Outer": "ProjSmokeBomb_C"
+    "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'AudioComponent'"
   },
   {
     "Type": "ParticleSystemComponent",
     "Name": "ParticleComp",
     "Outer": "Default__ProjSmokeBomb_C",
+    "Class": "UScriptClass'ParticleSystemComponent'",
     "Properties": {
       "Template": {
-        "ObjectName": "ParticleSystem P_SmokeGrenade",
+        "ObjectName": "ParticleSystem'P_SmokeGrenade'",
         "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_SmokeGrenade.135"
       },
       "AttachParent": {
-        "ObjectName": "StaticMeshComponent Default__ProjSmokeBomb_C:MeshComp",
+        "ObjectName": "StaticMeshComponent'Default__ProjSmokeBomb_C:MeshComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.67"
       }
     }
@@ -842,6 +901,7 @@
     "Type": "PhysicsConstraintComponent",
     "Name": "MeshConstraint",
     "Outer": "Default__ProjSmokeBomb_C",
+    "Class": "UScriptClass'PhysicsConstraintComponent'",
     "Properties": {
       "ConstraintInstance": {
         "ProfileInstance": {
@@ -860,7 +920,7 @@
         }
       },
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjSmokeBomb_C:InterpolationTarget",
+        "ObjectName": "SphereComponent'Default__ProjSmokeBomb_C:InterpolationTarget'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.65"
       }
     }
@@ -868,19 +928,21 @@
   {
     "Type": "SceneComponent",
     "Name": "SceneComponent_1",
-    "Outer": "ProjSmokeBomb_C"
+    "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent ProjSmokeBomb_C:SceneComponent_1",
+        "ObjectName": "SceneComponent'ProjSmokeBomb_C:SceneComponent_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.60"
       },
       "VariableGuid": "56BC9799-C494E6E6-321D4295-7D5EB316",
@@ -891,13 +953,14 @@
     "Type": "SCS_Node",
     "Name": "SCS_Node_12",
     "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class AudioComponent",
+        "ObjectName": "Class'AudioComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "AudioComponent ProjSmokeBomb_C:AudioComponent_3__E5DBC81A",
+        "ObjectName": "AudioComponent'ProjSmokeBomb_C:AudioComponent_3__E5DBC81A'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.57"
       },
       "ParentComponentOrVariableName": "SphereComp",
@@ -910,13 +973,14 @@
     "Type": "SCS_Node",
     "Name": "SCS_Node_3",
     "Outer": "SimpleConstructionScript_0__57659476",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class AkComponent",
+        "ObjectName": "Class'AkComponent'",
         "ObjectPath": "/Script/AkAudio"
       },
       "ComponentTemplate": {
-        "ObjectName": "AkComponent ProjSmokeBomb_C:Ak_GEN_VARIABLE",
+        "ObjectName": "AkComponent'ProjSmokeBomb_C:Ak_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.56"
       },
       "ParentComponentOrVariableName": "SphereComp",
@@ -929,29 +993,30 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_0__57659476",
     "Outer": "ProjSmokeBomb_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "RootNodes": [
         {
-          "ObjectName": "SCS_Node ProjSmokeBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_12",
+          "ObjectName": "SCS_Node'ProjSmokeBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_12'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.62"
         },
         {
-          "ObjectName": "SCS_Node ProjSmokeBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_3",
+          "ObjectName": "SCS_Node'ProjSmokeBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_3'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.63"
         }
       ],
       "AllNodes": [
         {
-          "ObjectName": "SCS_Node ProjSmokeBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_12",
+          "ObjectName": "SCS_Node'ProjSmokeBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_12'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.62"
         },
         {
-          "ObjectName": "SCS_Node ProjSmokeBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_3",
+          "ObjectName": "SCS_Node'ProjSmokeBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_3'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.63"
         }
       ],
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node ProjSmokeBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_1",
+        "ObjectName": "SCS_Node'ProjSmokeBomb_C:SimpleConstructionScript_0__57659476.SCS_Node_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.61"
       }
     }
@@ -960,9 +1025,10 @@
     "Type": "SphereComponent",
     "Name": "InterpolationTarget",
     "Outer": "Default__ProjSmokeBomb_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjSmokeBomb_C:SphereComp",
+        "ObjectName": "SphereComponent'Default__ProjSmokeBomb_C:SphereComp'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.66"
       }
     }
@@ -971,6 +1037,7 @@
     "Type": "SphereComponent",
     "Name": "SphereComp",
     "Outer": "Default__ProjSmokeBomb_C",
+    "Class": "UScriptClass'SphereComponent'",
     "Properties": {
       "SphereRadius": 3.0,
       "BodyInstance": {
@@ -980,7 +1047,7 @@
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "ProjSmokeBomb_C Default__ProjSmokeBomb_C",
+              "ObjectName": "ProjSmokeBomb_C'Default__ProjSmokeBomb_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.54"
             },
             "FunctionName": "OnHit"
@@ -998,26 +1065,27 @@
     "Type": "StaticMeshComponent",
     "Name": "MeshComp",
     "Outer": "Default__ProjSmokeBomb_C",
+    "Class": "UScriptClass'StaticMeshComponent'",
     "Properties": {
       "StaticMesh": {
-        "ObjectName": "StaticMesh M18_01_Projectile",
+        "ObjectName": "StaticMesh'M18_01_Projectile'",
         "ObjectPath": "TslGame/Content/Weapon/Grenades/M18_Smoke/M18_01_Projectile.1"
       },
       "BodyInstance": {
         "PhysMaterialOverride": {
-          "ObjectName": "PhysicalMaterial PhysMat_Grenade",
+          "ObjectName": "PhysicalMaterial'PhysMat_Grenade'",
           "ObjectPath": "TslGame/Content/Environment/PhysicalMaterials/PhysMat_Grenade.0"
         }
       },
       "CanCharacterStepUpOn": "ECB_No",
+      "AttachParent": {
+        "ObjectName": "SphereComponent'Default__ProjSmokeBomb_C:InterpolationTarget'",
+        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.65"
+      },
       "RelativeLocation": {
         "X": 0.0,
         "Y": -1.7617636E-05,
         "Z": -0.08099653
-      },
-      "AttachParent": {
-        "ObjectName": "SphereComponent Default__ProjSmokeBomb_C:InterpolationTarget",
-        "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjSmokeBomb.65"
       },
       "bCanEverAffectNavigation": false
     }
@@ -1026,6 +1094,7 @@
     "Type": "TslProjectileMovementComponent",
     "Name": "ProjectileComp",
     "Outer": "Default__ProjSmokeBomb_C",
+    "Class": "UScriptClass'TslProjectileMovementComponent'",
     "Properties": {
       "InitialSpeed": 1300.0,
       "MaxSpeed": 4000.0,

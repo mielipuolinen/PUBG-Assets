@@ -3,10 +3,11 @@
     "Type": "ObjectProperty",
     "Name": "PointLight",
     "Outer": "WeapC4_C",
+    "Class": "UScriptClass'ObjectProperty'",
     "Next": null,
     "PropertyFlags": 17179869188,
     "PropertyClass": {
-      "ObjectName": "Class PointLightComponent",
+      "ObjectName": "Class'PointLightComponent'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -14,6 +15,7 @@
     "Type": "BoolProperty",
     "Name": "K2Node_Event_bIsActive",
     "Outer": "ExecuteUbergraph_WeapC4",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "PropertyFlags": 2,
     "BoolSize": 1,
@@ -23,8 +25,9 @@
     "Type": "IntProperty",
     "Name": "EntryPoint",
     "Outer": "ExecuteUbergraph_WeapC4",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "BoolProperty WeapC4_C:ExecuteUbergraph_WeapC4.K2Node_Event_bIsActive",
+      "ObjectName": "BoolProperty'WeapC4_C:ExecuteUbergraph_WeapC4.K2Node_Event_bIsActive'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.1"
     },
     "PropertyFlags": 128
@@ -33,13 +36,14 @@
     "Type": "Function",
     "Name": "ExecuteUbergraph_WeapC4",
     "Outer": "WeapC4_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "ObjectProperty WeapC4_C:PointLight",
+      "ObjectName": "ObjectProperty'WeapC4_C:PointLight'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.0"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty WeapC4_C:ExecuteUbergraph_WeapC4.EntryPoint",
+        "ObjectName": "IntProperty'WeapC4_C:ExecuteUbergraph_WeapC4.EntryPoint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.2"
       }
     ],
@@ -49,6 +53,7 @@
     "Type": "BoolProperty",
     "Name": "bIsActive",
     "Outer": "CustomTrigger_BP",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "PropertyFlags": 130,
     "BoolSize": 1,
@@ -58,17 +63,18 @@
     "Type": "Function",
     "Name": "CustomTrigger_BP",
     "Outer": "WeapC4_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function WeapC4_C:ExecuteUbergraph_WeapC4",
+      "ObjectName": "Function'WeapC4_C:ExecuteUbergraph_WeapC4'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.3"
     },
     "SuperStruct": {
-      "ObjectName": "Function TslWeapon_Throwable:CustomTrigger_BP",
+      "ObjectName": "Function'TslWeapon_Throwable:CustomTrigger_BP'",
       "ObjectPath": "/Script/TslGame"
     },
     "Children": [
       {
-        "ObjectName": "BoolProperty WeapC4_C:CustomTrigger_BP.bIsActive",
+        "ObjectName": "BoolProperty'WeapC4_C:CustomTrigger_BP.bIsActive'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.4"
       }
     ],
@@ -78,12 +84,13 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "WeapC4_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function WeapC4_C:CustomTrigger_BP",
+      "ObjectName": "Function'WeapC4_C:CustomTrigger_BP'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.5"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 201459712
@@ -92,6 +99,7 @@
     "Type": "BoolProperty",
     "Name": "IsActive",
     "Outer": "ToggleLight",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "PropertyFlags": 128,
     "BoolSize": 1,
@@ -101,13 +109,14 @@
     "Type": "Function",
     "Name": "ToggleLight",
     "Outer": "WeapC4_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function WeapC4_C:UserConstructionScript",
+      "ObjectName": "Function'WeapC4_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.6"
     },
     "Children": [
       {
-        "ObjectName": "BoolProperty WeapC4_C:ToggleLight.IsActive",
+        "ObjectName": "BoolProperty'WeapC4_C:ToggleLight.IsActive'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.7"
       }
     ],
@@ -117,13 +126,14 @@
     "Type": "StructProperty",
     "Name": "UberGraphFrame",
     "Outer": "WeapC4_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "Function WeapC4_C:ToggleLight",
+      "ObjectName": "Function'WeapC4_C:ToggleLight'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.8"
     },
     "PropertyFlags": 2105344,
     "Struct": {
-      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -131,58 +141,59 @@
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapC4_C",
     "Super": "DefaultGrenadeSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapC4_C:SimpleConstructionScript_1",
+        "ObjectName": "SimpleConstructionScript'WeapC4_C:SimpleConstructionScript_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.17"
       },
       "UberGraphFramePointerProperty": {
-        "ObjectName": "StructProperty WeapC4_C:UberGraphFrame",
+        "ObjectName": "StructProperty'WeapC4_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.9"
       },
       "UberGraphFunction": {
-        "ObjectName": "Function WeapC4_C:ExecuteUbergraph_WeapC4",
+        "ObjectName": "Function'WeapC4_C:ExecuteUbergraph_WeapC4'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.3"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "BlueprintGeneratedClass DefaultGrenadeSetting_C",
+      "ObjectName": "BlueprintGeneratedClass'DefaultGrenadeSetting_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DefaultGrenadeSetting.0"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty WeapC4_C:UberGraphFrame",
+        "ObjectName": "StructProperty'WeapC4_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.9"
       }
     ],
     "FuncMap": {
       "ExecuteUbergraph_WeapC4": {
-        "ObjectName": "Function WeapC4_C:ExecuteUbergraph_WeapC4",
+        "ObjectName": "Function'WeapC4_C:ExecuteUbergraph_WeapC4'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.3"
       },
       "CustomTrigger_BP": {
-        "ObjectName": "Function WeapC4_C:CustomTrigger_BP",
+        "ObjectName": "Function'WeapC4_C:CustomTrigger_BP'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.5"
       },
       "UserConstructionScript": {
-        "ObjectName": "Function WeapC4_C:UserConstructionScript",
+        "ObjectName": "Function'WeapC4_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.6"
       },
       "ToggleLight": {
-        "ObjectName": "Function WeapC4_C:ToggleLight",
+        "ObjectName": "Function'WeapC4_C:ToggleLight'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.8"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapC4_C Default__WeapC4_C",
+      "ObjectName": "WeapC4_C'Default__WeapC4_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.11"
     }
   },
@@ -190,21 +201,22 @@
     "Type": "WeapC4_C",
     "Name": "Default__WeapC4_C",
     "Template": "Default__DefaultGrenadeSetting_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.WeapC4_C'",
     "Properties": {
       "UberGraphFrame": {},
       "ThrowableConfig": {
         "ProjectileClass": {
-          "ObjectName": "BlueprintGeneratedClass ProjC4_C",
+          "ObjectName": "BlueprintGeneratedClass'ProjC4_C'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/ProjC4.10"
         },
         "CookingEffectClass": {
-          "ObjectName": "BlueprintGeneratedClass P_Grenade_Start_BP_C",
+          "ObjectName": "BlueprintGeneratedClass'P_Grenade_Start_BP_C'",
           "ObjectPath": "TslGame/Content/Effects/Clets/Particles/Weapons/Grenade/P_Grenade_Start_BP.5"
         },
         "ExplosionDelay": 16.0,
         "FireDelay": 0.5,
         "SpeedCurve": {
-          "ObjectName": "CurveFloat C4SpeedCurve",
+          "ObjectName": "CurveFloat'C4SpeedCurve'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/Curves/C4SpeedCurve.0"
         },
         "ThrowTime": 1.0,
@@ -219,7 +231,7 @@
         "Z": 0.1
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_c4",
+        "ObjectName": "Texture2D'weapons_c4'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_c4.0"
       },
       "WeaponIconRatio": 1.06,
@@ -230,16 +242,16 @@
         "WeaponReadyDuration": 1.0
       },
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapC4_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__WeapC4_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.18"
       },
       "AllowedThrowMode": "EAllowedThrowMode::ThrowLow",
       "WeaponAudioData": {
-        "ObjectName": "WeaponAudioData WeapC4_WeaponAudioData",
+        "ObjectName": "WeaponAudioData'WeapC4_WeaponAudioData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/DataAssets/WeapC4_WeaponAudioData.0"
       },
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapC4_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapC4_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.13"
       }
     }
@@ -248,6 +260,7 @@
     "Type": "PointLightComponent",
     "Name": "PointLight_GEN_VARIABLE",
     "Outer": "WeapC4_C",
+    "Class": "UScriptClass'PointLightComponent'",
     "Properties": {
       "AttenuationRadius": 8.0,
       "bUseInverseSquaredFalloff": false,
@@ -274,12 +287,13 @@
     "Name": "RootScene",
     "Outer": "Default__WeapC4_C",
     "Template": "RootScene",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapC4_C Default__WeapC4_C",
+              "ObjectName": "WeapC4_C'Default__WeapC4_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.11"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -291,19 +305,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapC4_C"
+    "Outer": "WeapC4_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapC4_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapC4_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.14"
       },
       "VariableGuid": "028EC49A-48E4171F-BF4E70B7-59BAFBFD",
@@ -314,13 +330,14 @@
     "Type": "SCS_Node",
     "Name": "SCS_Node_2",
     "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class PointLightComponent",
+        "ObjectName": "Class'PointLightComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "PointLightComponent WeapC4_C:PointLight_GEN_VARIABLE",
+        "ObjectName": "PointLightComponent'WeapC4_C:PointLight_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.12"
       },
       "ParentComponentOrVariableName": "WeaponMesh3P",
@@ -333,21 +350,22 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_1",
     "Outer": "WeapC4_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "RootNodes": [
         {
-          "ObjectName": "SCS_Node WeapC4_C:SimpleConstructionScript_1.SCS_Node_2",
+          "ObjectName": "SCS_Node'WeapC4_C:SimpleConstructionScript_1.SCS_Node_2'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.16"
         }
       ],
       "AllNodes": [
         {
-          "ObjectName": "SCS_Node WeapC4_C:SimpleConstructionScript_1.SCS_Node_2",
+          "ObjectName": "SCS_Node'WeapC4_C:SimpleConstructionScript_1.SCS_Node_2'",
           "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.16"
         }
       ],
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapC4_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectName": "SCS_Node'WeapC4_C:SimpleConstructionScript_1.SCS_Node_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.15"
       }
     }
@@ -357,19 +375,20 @@
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapC4_C",
     "Template": "WeaponMesh3P",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "AnimClass": {
-        "ObjectName": "AnimBlueprintGeneratedClass ABP_C4_C",
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_C4_C'",
         "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/C4/ABP_C4.15"
       },
       "AnimationData": {
         "AnimToPlay": {
-          "ObjectName": "AnimMontage C4_WeaponArm_Montage",
+          "ObjectName": "AnimMontage'C4_WeaponArm_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/C4/C4_WeaponArm_Montage.0"
         }
       },
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh SK_C4",
+        "ObjectName": "SkeletalMesh'SK_C4'",
         "ObjectPath": "TslGame/Content/Weapon/Grenades/C4/SK_C4.0"
       },
       "RelativeRotation": {
@@ -378,14 +397,14 @@
         "Roll": 0.0
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapC4_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapC4_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.13"
       },
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapC4_C Default__WeapC4_C",
+              "ObjectName": "WeapC4_C'Default__WeapC4_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/Grenade/WeapC4.11"
             },
             "FunctionName": "OnAttachmentChanged"

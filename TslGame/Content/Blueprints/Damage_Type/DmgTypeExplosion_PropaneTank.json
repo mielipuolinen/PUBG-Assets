@@ -1,0 +1,82 @@
+[
+  {
+    "Type": "BlueprintGeneratedClass",
+    "Name": "DmgTypeExplosion_PropaneTank_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
+    "Next": null,
+    "SuperStruct": {
+      "ObjectName": "Class'TslDamageType'",
+      "ObjectPath": "/Script/TslGame"
+    },
+    "ClassFlags": 327696,
+    "ClassWithin": {
+      "ObjectName": "Class'Object'",
+      "ObjectPath": "/Script/CoreUObject"
+    },
+    "ClassConfigName": "Engine",
+    "bCooked": true,
+    "ClassDefaultObject": {
+      "ObjectName": "DmgTypeExplosion_PropaneTank_C'Default__DmgTypeExplosion_PropaneTank_C'",
+      "ObjectPath": "TslGame/Content/Blueprints/Damage_Type/DmgTypeExplosion_PropaneTank.1"
+    }
+  },
+  {
+    "Type": "DmgTypeExplosion_PropaneTank_C",
+    "Name": "Default__DmgTypeExplosion_PropaneTank_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Damage_Type/DmgTypeExplosion_PropaneTank.DmgTypeExplosion_PropaneTank_C'",
+    "Properties": {
+      "DamageTypeCategory": "EDamageTypeCategory::Damage_Explosion_PropaneTank",
+      "HitForceFeedback": {
+        "ObjectName": "TslForceFeedbackEffect'TslFFE_Damaged'",
+        "ObjectPath": "TslGame/Content/Effects/ForceFeedback/TslFFE_Damaged.0"
+      },
+      "KilledForceFeedback": {
+        "ObjectName": "TslForceFeedbackEffect'TslFFE_Killed'",
+        "ObjectPath": "TslGame/Content/Effects/ForceFeedback/TslFFE_Killed.0"
+      },
+      "DamageRatioInfos": [
+        {
+          "DamageRatio": 5.0,
+          "DamageVictimActorType": "EDamageVictimActorType::DestructibleActor"
+        },
+        {
+          "DamageRatio": 2.0,
+          "DamageVictimActorType": "EDamageVictimActorType::Vehicle"
+        },
+        {
+          "DamageRatio": 2.0,
+          "DamageVictimActorType": "EDamageVictimActorType::Wheel"
+        }
+      ],
+      "DamageRatioInfos_Console": [
+        {
+          "DamageRatio": 5.0,
+          "DamageVictimActorType": "EDamageVictimActorType::DestructibleActor"
+        },
+        {
+          "DamageRatio": 2.2,
+          "DamageVictimActorType": "EDamageVictimActorType::Vehicle"
+        },
+        {
+          "DamageRatio": 2.2,
+          "DamageVictimActorType": "EDamageVictimActorType::Wheel"
+        }
+      ],
+      "StanceDamageRatios": [
+        {
+          "47": 0.0
+        }
+      ],
+      "bReducedByArmorRadial": true,
+      "bIgnoreCharacterImpulse": true,
+      "bUseDamageCameraShake": true,
+      "DamageCameraShake": {
+        "ObjectName": "BlueprintGeneratedClass'CameraShake_GrenadeDamage_C'",
+        "ObjectPath": "TslGame/Content/Effects/tooner/Camera/CameraShake_GrenadeDamage.0"
+      },
+      "bScaleMomentumByMass": false,
+      "bRadialDamageVelChange": true,
+      "DamageImpulse": 1000.0
+    }
+  }
+]

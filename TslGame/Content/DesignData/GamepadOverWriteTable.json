@@ -1,0 +1,55 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "GamepadOverWriteTable",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "ScriptStruct'GamepadOverWriteAction'",
+        "ObjectPath": "/Script/TslGame"
+      }
+    },
+    "Rows": {
+      "NewRow": {
+        "BaseActionName": "JumpPad",
+        "OverWriteActionOrAxis": [
+          {
+            "Name": "MoveUp",
+            "bIsAxis": true,
+            "Scale": 1.0
+          }
+        ]
+      },
+      "NewRow_0": {
+        "BaseActionName": "ToggleCrouchPad",
+        "OverWriteActionOrAxis": [
+          {
+            "Name": "MoveUp",
+            "bIsAxis": true,
+            "Scale": -1.0
+          }
+        ]
+      },
+      "NewRow_1": {
+        "BaseActionName": "StartJumpOnlyPad",
+        "OverWriteActionOrAxis": [
+          {
+            "Name": "MoveUp",
+            "bIsAxis": true,
+            "Scale": 1.0
+          }
+        ]
+      },
+      "NewRow_2": {
+        "BaseActionName": "StartCrouchPad",
+        "OverWriteActionOrAxis": [
+          {
+            "Name": "MoveUp",
+            "bIsAxis": true,
+            "Scale": -1.0
+          }
+        ]
+      }
+    }
+  }
+]

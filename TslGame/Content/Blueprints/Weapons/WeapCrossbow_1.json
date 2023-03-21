@@ -3,6 +3,7 @@
     "Type": "BoolProperty",
     "Name": "bWantsToReload",
     "Outer": "WeapCrossbow_1_C",
+    "Class": "UScriptClass'BoolProperty'",
     "Next": null,
     "PropertyFlags": 65541,
     "BoolSize": 1,
@@ -12,13 +13,14 @@
     "Type": "ByteProperty",
     "Name": "LastState",
     "Outer": "WeapCrossbow_1_C",
+    "Class": "UScriptClass'ByteProperty'",
     "Next": {
-      "ObjectName": "BoolProperty WeapCrossbow_1_C:bWantsToReload",
+      "ObjectName": "BoolProperty'WeapCrossbow_1_C:bWantsToReload'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.0"
     },
     "PropertyFlags": 65541,
     "Enum": {
-      "ObjectName": "UserDefinedEnum ENUM_CrossbowState",
+      "ObjectName": "UserDefinedEnum'ENUM_CrossbowState'",
       "ObjectPath": "TslGame/Content/Weapon/CrossBow/Animation/ENUM_CrossbowState.0"
     }
   },
@@ -26,13 +28,14 @@
     "Type": "ByteProperty",
     "Name": "CurrentState_0",
     "Outer": "WeapCrossbow_1_C",
+    "Class": "UScriptClass'ByteProperty'",
     "Next": {
-      "ObjectName": "ByteProperty WeapCrossbow_1_C:LastState",
+      "ObjectName": "ByteProperty'WeapCrossbow_1_C:LastState'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.1"
     },
     "PropertyFlags": 65573,
     "Enum": {
-      "ObjectName": "UserDefinedEnum ENUM_CrossbowState",
+      "ObjectName": "UserDefinedEnum'ENUM_CrossbowState'",
       "ObjectPath": "TslGame/Content/Weapon/CrossBow/Animation/ENUM_CrossbowState.0"
     }
   },
@@ -40,9 +43,10 @@
     "Type": "ByteProperty",
     "Name": "K2Node_CustomEvent_NewAmmoState",
     "Outer": "ExecuteUbergraph_WeapCrossbow_1",
+    "Class": "UScriptClass'ByteProperty'",
     "Next": null,
     "Enum": {
-      "ObjectName": "UserDefinedEnum ENUM_CrossbowState",
+      "ObjectName": "UserDefinedEnum'ENUM_CrossbowState'",
       "ObjectPath": "TslGame/Content/Weapon/CrossBow/Animation/ENUM_CrossbowState.0"
     }
   },
@@ -50,8 +54,9 @@
     "Type": "IntProperty",
     "Name": "EntryPoint",
     "Outer": "ExecuteUbergraph_WeapCrossbow_1",
+    "Class": "UScriptClass'IntProperty'",
     "Next": {
-      "ObjectName": "ByteProperty WeapCrossbow_1_C:ExecuteUbergraph_WeapCrossbow_1.K2Node_CustomEvent_NewAmmoState",
+      "ObjectName": "ByteProperty'WeapCrossbow_1_C:ExecuteUbergraph_WeapCrossbow_1.K2Node_CustomEvent_NewAmmoState'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.3"
     },
     "PropertyFlags": 128
@@ -60,13 +65,14 @@
     "Type": "Function",
     "Name": "ExecuteUbergraph_WeapCrossbow_1",
     "Outer": "WeapCrossbow_1_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "ByteProperty WeapCrossbow_1_C:CurrentState_0",
+      "ObjectName": "ByteProperty'WeapCrossbow_1_C:CurrentState_0'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.2"
     },
     "Children": [
       {
-        "ObjectName": "IntProperty WeapCrossbow_1_C:ExecuteUbergraph_WeapCrossbow_1.EntryPoint",
+        "ObjectName": "IntProperty'WeapCrossbow_1_C:ExecuteUbergraph_WeapCrossbow_1.EntryPoint'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.4"
       }
     ],
@@ -76,10 +82,11 @@
     "Type": "ByteProperty",
     "Name": "NewAmmoState",
     "Outer": "ServerSetAmmoState",
+    "Class": "UScriptClass'ByteProperty'",
     "Next": null,
     "PropertyFlags": 128,
     "Enum": {
-      "ObjectName": "UserDefinedEnum ENUM_CrossbowState",
+      "ObjectName": "UserDefinedEnum'ENUM_CrossbowState'",
       "ObjectPath": "TslGame/Content/Weapon/CrossBow/Animation/ENUM_CrossbowState.0"
     }
   },
@@ -87,13 +94,14 @@
     "Type": "Function",
     "Name": "ServerSetAmmoState",
     "Outer": "WeapCrossbow_1_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function WeapCrossbow_1_C:ExecuteUbergraph_WeapCrossbow_1",
+      "ObjectName": "Function'WeapCrossbow_1_C:ExecuteUbergraph_WeapCrossbow_1'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.5"
     },
     "Children": [
       {
-        "ObjectName": "ByteProperty WeapCrossbow_1_C:ServerSetAmmoState.NewAmmoState",
+        "ObjectName": "ByteProperty'WeapCrossbow_1_C:ServerSetAmmoState.NewAmmoState'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.6"
       }
     ],
@@ -103,12 +111,13 @@
     "Type": "Function",
     "Name": "UserConstructionScript",
     "Outer": "WeapCrossbow_1_C",
+    "Class": "UScriptClass'Function'",
     "Next": {
-      "ObjectName": "Function WeapCrossbow_1_C:ServerSetAmmoState",
+      "ObjectName": "Function'WeapCrossbow_1_C:ServerSetAmmoState'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.7"
     },
     "SuperStruct": {
-      "ObjectName": "Function Actor:UserConstructionScript",
+      "ObjectName": "Function'Actor:UserConstructionScript'",
       "ObjectPath": "/Script/Engine"
     },
     "FunctionFlags": 201459712
@@ -117,13 +126,14 @@
     "Type": "StructProperty",
     "Name": "UberGraphFrame",
     "Outer": "WeapCrossbow_1_C",
+    "Class": "UScriptClass'StructProperty'",
     "Next": {
-      "ObjectName": "Function WeapCrossbow_1_C:UserConstructionScript",
+      "ObjectName": "Function'WeapCrossbow_1_C:UserConstructionScript'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.8"
     },
     "PropertyFlags": 2105344,
     "Struct": {
-      "ObjectName": "ScriptStruct PointerToUberGraphFrame",
+      "ObjectName": "ScriptStruct'PointerToUberGraphFrame'",
       "ObjectPath": "/Script/Engine"
     }
   },
@@ -131,55 +141,56 @@
     "Type": "BlueprintGeneratedClass",
     "Name": "WeapCrossbow_1_C",
     "Super": "DefaultRifleSetting_C",
+    "Class": "UScriptClass'BlueprintGeneratedClass'",
     "Properties": {
       "NumReplicatedProperties": 1,
       "SimpleConstructionScript": {
-        "ObjectName": "SimpleConstructionScript WeapCrossbow_1_C:SimpleConstructionScript_1",
+        "ObjectName": "SimpleConstructionScript'WeapCrossbow_1_C:SimpleConstructionScript_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.15"
       },
       "UberGraphFramePointerProperty": {
-        "ObjectName": "StructProperty WeapCrossbow_1_C:UberGraphFrame",
+        "ObjectName": "StructProperty'WeapCrossbow_1_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.9"
       },
       "UberGraphFunction": {
-        "ObjectName": "Function WeapCrossbow_1_C:ExecuteUbergraph_WeapCrossbow_1",
+        "ObjectName": "Function'WeapCrossbow_1_C:ExecuteUbergraph_WeapCrossbow_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.5"
       }
     },
     "Next": null,
     "SuperStruct": {
-      "ObjectName": "BlueprintGeneratedClass DefaultRifleSetting_C",
+      "ObjectName": "BlueprintGeneratedClass'DefaultRifleSetting_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/DefaultRifleSetting.0"
     },
     "Children": [
       {
-        "ObjectName": "StructProperty WeapCrossbow_1_C:UberGraphFrame",
+        "ObjectName": "StructProperty'WeapCrossbow_1_C:UberGraphFrame'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.9"
       }
     ],
     "FuncMap": {
       "ExecuteUbergraph_WeapCrossbow_1": {
-        "ObjectName": "Function WeapCrossbow_1_C:ExecuteUbergraph_WeapCrossbow_1",
+        "ObjectName": "Function'WeapCrossbow_1_C:ExecuteUbergraph_WeapCrossbow_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.5"
       },
       "ServerSetAmmoState": {
-        "ObjectName": "Function WeapCrossbow_1_C:ServerSetAmmoState",
+        "ObjectName": "Function'WeapCrossbow_1_C:ServerSetAmmoState'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.7"
       },
       "UserConstructionScript": {
-        "ObjectName": "Function WeapCrossbow_1_C:UserConstructionScript",
+        "ObjectName": "Function'WeapCrossbow_1_C:UserConstructionScript'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.8"
       }
     },
     "ClassFlags": 8650772,
     "ClassWithin": {
-      "ObjectName": "Class Object",
+      "ObjectName": "Class'Object'",
       "ObjectPath": "/Script/CoreUObject"
     },
     "ClassConfigName": "Game",
     "bCooked": true,
     "ClassDefaultObject": {
-      "ObjectName": "WeapCrossbow_1_C Default__WeapCrossbow_1_C",
+      "ObjectName": "WeapCrossbow_1_C'Default__WeapCrossbow_1_C'",
       "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.11"
     }
   },
@@ -187,23 +198,26 @@
     "Type": "WeapCrossbow_1_C",
     "Name": "Default__WeapCrossbow_1_C",
     "Template": "Default__DefaultRifleSetting_C",
+    "Class": "BlueprintGeneratedClass'TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.WeapCrossbow_1_C'",
     "Properties": {
       "UberGraphFrame": {},
       "CurrentState_0": "ENUM_CrossbowState::NewEnumerator2",
       "LastState": "ENUM_CrossbowState::NewEnumerator2",
-      "UnderWaterTrailFXClassPerLength": {
-        "0": {
-          "ObjectName": "BlueprintGeneratedClass BP_UnderwaterArrowTrailEffect_C",
-          "ObjectPath": "TslGame/Content/Effects/ParticleSystems/Weapons/AssaultRifle/Muzzle/BP_UnderwaterArrowTrailEffect.0"
-        }
-      },
       "TrailFX": null,
       "ImpactTemplate": {
-        "ObjectName": "BlueprintGeneratedClass GunImpact_Arrow_C",
+        "ObjectName": "BlueprintGeneratedClass'GunImpact_Arrow_C'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeaponConfig/GunImpact_Arrow.0"
       },
+      "UnderWaterTrailFXClassPerLength": [
+        {
+          "0": {
+            "ObjectName": "BlueprintGeneratedClass'BP_UnderwaterArrowTrailEffect_C'",
+            "ObjectPath": "TslGame/Content/Effects/ParticleSystems/Weapons/AssaultRifle/Muzzle/BP_UnderwaterArrowTrailEffect.0"
+          }
+        }
+      ],
       "WeaponTrajectoryData": {
-        "ObjectName": "WeaponTrajectoryData WeapCrossbow_1_WeaponTrajectoryData",
+        "ObjectName": "WeaponTrajectoryData'WeapCrossbow_1_WeaponTrajectoryData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapCrossbow_1_WeaponTrajectoryData.0"
       },
       "bAlwaysUseIronSightZeroing": true,
@@ -216,15 +230,15 @@
         "DepthBlurBlackPoint": 40.0
       },
       "ReticlePostprocessData": {
-        "ObjectName": "ReticlePostprocessData Sight_Reddot_Crossbow_PostprocessData",
+        "ObjectName": "ReticlePostprocessData'Sight_Reddot_Crossbow_PostprocessData'",
         "ObjectPath": "TslGame/Content/Item/Attachment/AttachmentDataAssets/Sight_Reddot_Crossbow_PostprocessData.0"
       },
       "WeaponGunData": {
-        "ObjectName": "WeaponGunDataAsset WeapCrossbow_1_WeaponGunData",
+        "ObjectName": "WeaponGunDataAsset'WeapCrossbow_1_WeaponGunData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapCrossbow_1_WeaponGunData.0"
       },
       "WeaponIcon": {
-        "ObjectName": "Texture2D weapons_gun_crossbow",
+        "ObjectName": "Texture2D'weapons_gun_crossbow'",
         "ObjectPath": "TslGame/Content/UI/Weapon/weapons_gun_crossbow.0"
       },
       "WeaponIconRatio": 3.2,
@@ -246,7 +260,7 @@
           25.0
         ],
         "RecoilMontage": {
-          "ObjectName": "AnimMontage Weapon_Crossbow_Fire_Montage",
+          "ObjectName": "AnimMontage'Weapon_Crossbow_Fire_Montage'",
           "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Crossbow/Weapon_Crossbow_Fire_Montage.0"
         },
         "DestructibleDoor": false,
@@ -255,7 +269,7 @@
         "PhysicalBodyHitImpactPower": 8000.0
       },
       "Mesh3P": {
-        "ObjectName": "WeaponMeshComponent Default__WeapCrossbow_1_C:WeaponMesh3P",
+        "ObjectName": "WeaponMeshComponent'Default__WeapCrossbow_1_C:WeaponMesh3P'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.16"
       },
       "AttachmentAniRateCalculateType": "EAttachmentCalculateType::Multiply",
@@ -297,7 +311,7 @@
           "AttachmentMeshAsset": "/Game/Weapon/Accessories/TN_RDS/SM_RDS_Crossbow.SM_RDS_Crossbow",
           "AttachmentMeshName": "RDS",
           "AttachmentTemplate": {
-            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectName": "Class'AsyncStaticMeshComponent'",
             "ObjectPath": "/Script/TslGame"
           }
         },
@@ -307,7 +321,7 @@
           "AttachmentMeshAsset": "/Game/Weapon/CrossBow/Bolt_setting.Bolt_setting",
           "AttachmentMeshName": "Arrow",
           "AttachmentTemplate": {
-            "ObjectName": "Class AsyncStaticMeshComponent",
+            "ObjectName": "Class'AsyncStaticMeshComponent'",
             "ObjectPath": "/Script/TslGame"
           }
         }
@@ -315,31 +329,37 @@
       "WeaponTag": "Crossbow",
       "MuzzleFX": null,
       "ShellFxAttachPoint": "CartridgeChamber",
-      "EquipAnimData": {
-        "EAccessorySlot::Slot_Secondary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_SecondarySlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
-          },
-          "PlayRate": 1.5
+      "EquipAnimData": [
+        {
+          "EAccessorySlot::Slot_Secondary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_SecondarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_SecondarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.5
+          }
         },
-        "EAccessorySlot::Slot_SideArm": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PistolSlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_SideArm": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PistolSlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PistolSlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
         },
-        "EAccessorySlot::Slot_Primary": {
-          "Montage": {
-            "ObjectName": "AnimMontage Rifle_Combat_Stand_PrimarySlot_Montage_RD",
-            "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
-          },
-          "PlayRate": 1.0
+        {
+          "EAccessorySlot::Slot_Primary": {
+            "Montage": {
+              "ObjectName": "AnimMontage'Rifle_Combat_Stand_PrimarySlot_Montage_RD'",
+              "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/Equip/Redux/Rifle_Combat_Stand_PrimarySlot_Montage_RD.0"
+            },
+            "PlayRate": 1.0
+          }
         }
-      },
+      ],
       "WeaponAudioData": {
-        "ObjectName": "WeaponAudioData WeapCrossbow_1_WeaponAudioData",
+        "ObjectName": "WeaponAudioData'WeapCrossbow_1_WeaponAudioData'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/DataAssets/WeapCrossbow_1_WeaponAudioData.0"
       },
       "ReplicatedMovement": {
@@ -347,7 +367,7 @@
         "RotationQuantizationLevel": "ERotatorQuantization::ShortComponents"
       },
       "RootComponent": {
-        "ObjectName": "SceneComponent Default__WeapCrossbow_1_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapCrossbow_1_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.12"
       }
     }
@@ -357,12 +377,13 @@
     "Name": "RootScene",
     "Outer": "Default__WeapCrossbow_1_C",
     "Template": "RootScene",
+    "Class": "UScriptClass'SceneComponent'",
     "Properties": {
       "AttachmentChangedDelegate": {
         "InvocationList": [
           {
             "Object": {
-              "ObjectName": "WeapCrossbow_1_C Default__WeapCrossbow_1_C",
+              "ObjectName": "WeapCrossbow_1_C'Default__WeapCrossbow_1_C'",
               "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.11"
             },
             "FunctionName": "OnAttachmentChanged"
@@ -374,19 +395,21 @@
   {
     "Type": "SceneComponent",
     "Name": "DefaultSceneRoot_GEN_VARIABLE",
-    "Outer": "WeapCrossbow_1_C"
+    "Outer": "WeapCrossbow_1_C",
+    "Class": "UScriptClass'SceneComponent'"
   },
   {
     "Type": "SCS_Node",
     "Name": "SCS_Node_1",
     "Outer": "SimpleConstructionScript_1",
+    "Class": "UScriptClass'SCS_Node'",
     "Properties": {
       "ComponentClass": {
-        "ObjectName": "Class SceneComponent",
+        "ObjectName": "Class'SceneComponent'",
         "ObjectPath": "/Script/Engine"
       },
       "ComponentTemplate": {
-        "ObjectName": "SceneComponent WeapCrossbow_1_C:DefaultSceneRoot_GEN_VARIABLE",
+        "ObjectName": "SceneComponent'WeapCrossbow_1_C:DefaultSceneRoot_GEN_VARIABLE'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.13"
       },
       "VariableGuid": "D6F634D4-4DBF99D6-59773C9A-370D8B0F",
@@ -397,9 +420,10 @@
     "Type": "SimpleConstructionScript",
     "Name": "SimpleConstructionScript_1",
     "Outer": "WeapCrossbow_1_C",
+    "Class": "UScriptClass'SimpleConstructionScript'",
     "Properties": {
       "DefaultSceneRootNode": {
-        "ObjectName": "SCS_Node WeapCrossbow_1_C:SimpleConstructionScript_1.SCS_Node_1",
+        "ObjectName": "SCS_Node'WeapCrossbow_1_C:SimpleConstructionScript_1.SCS_Node_1'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.14"
       }
     }
@@ -409,20 +433,21 @@
     "Name": "WeaponMesh3P",
     "Outer": "Default__WeapCrossbow_1_C",
     "Template": "WeaponMesh3P",
+    "Class": "UScriptClass'WeaponMeshComponent'",
     "Properties": {
       "AnimClass": {
-        "ObjectName": "AnimBlueprintGeneratedClass ABP_Weapon_Crossbow_RD_C",
+        "ObjectName": "AnimBlueprintGeneratedClass'ABP_Weapon_Crossbow_RD_C'",
         "ObjectPath": "TslGame/Content/Animations/Battlegrounds/Anims/WeaponOperation/Crossbow/Redux/Weapon_RD/ABP_Weapon_Crossbow_RD.27"
       },
       "SkeletalMesh": {
-        "ObjectName": "SkeletalMesh crossbow",
+        "ObjectName": "SkeletalMesh'crossbow'",
         "ObjectPath": "TslGame/Content/Weapon/CrossBow/crossbow.0"
       },
       "BodyInstance": {
         "MassInKgOverride": 0.0
       },
       "AttachParent": {
-        "ObjectName": "SceneComponent Default__WeapCrossbow_1_C:RootScene",
+        "ObjectName": "SceneComponent'Default__WeapCrossbow_1_C:RootScene'",
         "ObjectPath": "TslGame/Content/Blueprints/Weapons/WeapCrossbow_1.12"
       }
     }

@@ -1,0 +1,175 @@
+[
+  {
+    "Type": "BodySetup",
+    "Name": "BodySetup_0",
+    "Outer": "BaseCube",
+    "Class": "UScriptClass'BodySetup'",
+    "Properties": {
+      "AggGeom": {
+        "BoxElems": [
+          {
+            "Center": {
+              "X": 0.0,
+              "Y": 0.0,
+              "Z": 50.0
+            },
+            "Rotation": {
+              "Pitch": 0.0,
+              "Yaw": 0.0,
+              "Roll": 0.0
+            },
+            "X": 100.0,
+            "Y": 100.0,
+            "Z": 100.0
+          }
+        ]
+      },
+      "DefaultInstance": {
+        "CollisionProfileName": "BlockAll",
+        "CollisionResponses": {
+          "ResponseArray": [
+            {
+              "Channel": "WorldCollision",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "MeleeWeapon",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "AudioObstruction",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "WallVerification",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "OverlapObject",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "Graffiti",
+              "Response": "ECR_Block"
+            },
+            {
+              "Channel": "VehicleTPPSpringArm",
+              "Response": "ECR_Block"
+            }
+          ]
+        },
+        "ObjectType": "ECC_WorldStatic"
+      }
+    },
+    "BodySetupGuid": "6A18BA5A4BD6B76314C9EF8F2E077786",
+    "CookedFormatData": {
+      "PhysXPC": {
+        "BulkDataFlags": "BULKDATA_SingleUse | BULKDATA_ForceInlinePayload",
+        "ElementCount": 453,
+        "SizeOnDisk": 453,
+        "OffsetInFile": "0x23BF"
+      }
+    }
+  },
+  {
+    "Type": "StaticMesh",
+    "Name": "BaseCube",
+    "Class": "UScriptClass'StaticMesh'",
+    "Properties": {
+      "StaticMaterials": [
+        {
+          "MaterialSlotName": "MI_Flatten_Doors_Tiled",
+          "UVChannelData": {
+            "bInitialized": true,
+            "bOverrideDensities": false,
+            "LocalUVDensities": 100.0,
+            "LocalUVDensities": 319.90005,
+            "LocalUVDensities": 0.0,
+            "LocalUVDensities": 0.0
+          }
+        }
+      ],
+      "LightmapUVDensity": 319.90005,
+      "LightMapResolution": 64,
+      "LightMapCoordinateIndex": 1,
+      "ExtendedBounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 50.0
+        },
+        "BoxExtent": {
+          "X": 50.0,
+          "Y": 50.0,
+          "Z": 50.0
+        },
+        "SphereRadius": 86.60254
+      }
+    },
+    "BodySetup": {
+      "ObjectName": "BodySetup'BaseCube:BodySetup_0'",
+      "ObjectPath": "TslGame/Content/Maps/DihorOtok/Art/DoorHLOD/BaseCube.0"
+    },
+    "NavCollision": null,
+    "LightingGuid": "30A299CD-4CC898F4-2A8B29BB-574FA369",
+    "RenderData": {
+      "LODs": [
+        {
+          "Sections": [
+            {
+              "MaterialIndex": 0,
+              "FirstIndex": 0,
+              "NumTriangles": 12,
+              "MinVertexIndex": 0,
+              "MaxVertexIndex": 23,
+              "bEnableCollision": true,
+              "bCastShadow": true,
+              "bForceOpaque": false,
+              "bVisibleInRayTracing": true
+            }
+          ],
+          "MaxDeviation": 0.0,
+          "PositionVertexBuffer": {
+            "Stride": 12,
+            "NumVertices": 24
+          },
+          "VertexBuffer": {
+            "NumTexCoords": 2,
+            "NumVertices": 24,
+            "Strides": 16,
+            "UseHighPrecisionTangentBasis": false,
+            "UseFullPrecisionUVs": false
+          },
+          "ColorVertexBuffer": {
+            "Stride": 0,
+            "NumVertices": 0
+          }
+        }
+      ],
+      "Bounds": {
+        "Origin": {
+          "X": 0.0,
+          "Y": 0.0,
+          "Z": 50.0
+        },
+        "BoxExtent": {
+          "X": 50.0,
+          "Y": 50.0,
+          "Z": 50.0
+        },
+        "SphereRadius": 86.60254
+      },
+      "bLODsShareStaticLighting": true,
+      "ScreenSize": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+]

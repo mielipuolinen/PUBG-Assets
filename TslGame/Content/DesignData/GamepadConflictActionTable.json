@@ -1,0 +1,225 @@
+[
+  {
+    "Type": "DataTable",
+    "Name": "GamepadConflictActionTable",
+    "Class": "UScriptClass'DataTable'",
+    "Properties": {
+      "RowStruct": {
+        "ObjectName": "ScriptStruct'ConflictActionList'",
+        "ObjectPath": "/Script/TslGame"
+      }
+    },
+    "Rows": {
+      "NewRow": {
+        "PrimaryKey": 0,
+        "BasicTabAction": [
+          "StartTargetingPad",
+          "StartInvertTargetingPad"
+        ],
+        "ConflictActionList": [
+          {
+            "AIM": {
+              "ActionArray": [
+                "IncreaseZeroingPad",
+                "DecreaseZeroingPad",
+                "ResetZeroingPad",
+                "HoldAngledPad",
+                "ToggleHoldBreathPad",
+                "StartScopeAdjustmentControlModifierPad",
+                "StartHoldBreathPad",
+                "PeekLeftPad",
+                "PeekRightPad"
+              ]
+            }
+          },
+          {
+            "VEHICLE": {
+              "ActionArray": [
+                "MoveVehicleSeatPad",
+                "InteractInVehiclePad"
+              ]
+            }
+          }
+        ]
+      },
+      "NewRow_0": {
+        "PrimaryKey": 1,
+        "BasicTabAction": [
+          "StartAimPad"
+        ],
+        "ConflictActionList": [
+          {
+            "VEHICLE": {
+              "ActionArray": [
+                "MoveVehicleSeatPad",
+                "InteractInVehiclePad"
+              ]
+            }
+          }
+        ]
+      },
+      "NewRow_1": {
+        "PrimaryKey": 2,
+        "BasicTabAction": [
+          "StartADSPad"
+        ],
+        "ConflictActionList": [
+          {
+            "VEHICLE": {
+              "ActionArray": [
+                "MoveVehicleSeatPad",
+                "InteractInVehiclePad"
+              ]
+            }
+          }
+        ]
+      },
+      "NewRow_2": {
+        "PrimaryKey": 3,
+        "BasicTabAction": [
+          "ToggleCameraPad",
+          "StartHoldRotationPad"
+        ],
+        "ConflictActionList": [
+          {
+            "AIM": {
+              "ActionArray": [
+                "PeekLeftPad",
+                "PeekRightPad",
+                "IncreaseZeroingPad",
+                "DecreaseZeroingPad",
+                "ResetZeroingPad",
+                "HoldAngledPad",
+                "ToggleHoldBreathPad",
+                "StartHoldBreathPad"
+              ]
+            }
+          },
+          {
+            "VEHICLE": {
+              "ActionArray": [
+                "MoveVehicleSeatPad",
+                "StartVehicleBoostPad",
+                "StartHandbrakePad",
+                "StartHornPad",
+                "ToggleVehicleRadio",
+                "ToggleAutoAcceleratePad",
+                "InteractInVehiclePade",
+                "ToggleVehicleBoostPad"
+              ]
+            }
+          }
+        ]
+      },
+      "NewRow_3": {
+        "PrimaryKey": 4,
+        "BasicTabAction": [
+          "StartFirePad",
+          "ToggleFiringModePad",
+          "ArmPad",
+          "ToggleCrouchPad",
+          "InteractGamepad",
+          "ReloadPad",
+          "NextMainWeaponPad",
+          "StartCrouchPad",
+          "MeleeWeaponOrUnarmPad",
+          "SubWeaponPad",
+          "ThrowWeaponPad",
+          "MeleeOrSideWeaponPad"
+        ],
+        "ConflictActionList": [
+          {
+            "AIM": {
+              "ActionArray": [
+                "PeekLeftPad",
+                "PeekRightPad",
+                "StartScopeAdjustmentControlModifierPad",
+                "IncreaseZeroingPad",
+                "DecreaseZeroingPad",
+                "ResetZeroingPad",
+                "ToggleHoldBreathPad",
+                "StartHoldBreathPad"
+              ]
+            }
+          },
+          {
+            "VEHICLE": {
+              "ActionArray": [
+                "MoveVehicleSeatPad",
+                "InteractInVehiclePad",
+                "DriverInteractPad"
+              ]
+            }
+          }
+        ]
+      },
+      "NewRow_4": {
+        "PrimaryKey": 5,
+        "BasicTabAction": [
+          "JumpPad",
+          "StartJumpOnlyPad",
+          "StartVaultOnlyPad"
+        ],
+        "ConflictActionList": [
+          {
+            "AIM": {
+              "ActionArray": [
+                "PeekLeftPad",
+                "PeekRightPad",
+                "StartScopeAdjustmentControlModifierPad",
+                "IncreaseZeroingPad",
+                "DecreaseZeroingPad",
+                "ResetZeroingPad",
+                "HoldAngledPad",
+                "ToggleHoldBreathPad",
+                "StartHoldBreathPad"
+              ]
+            }
+          }
+        ]
+      },
+      "NewRow_5": {
+        "PrimaryKey": 6,
+        "BasicTabAction": [
+          "StartPeekLeftPad",
+          "StartPeekRightPad"
+        ],
+        "ConflictActionList": [
+          {
+            "AIM": {
+              "ActionArray": [
+                "StartScopeAdjustmentControlModifierPad",
+                "IncreaseZeroingPad",
+                "DecreaseZeroingPad",
+                "ResetZeroingPad",
+                "HoldAngledPad",
+                "ToggleHoldBreathPad",
+                "StartHoldBreathPad"
+              ]
+            }
+          }
+        ]
+      },
+      "NewRow_6": {
+        "PrimaryKey": 7,
+        "BasicTabAction": [
+          "DriverInteractPad"
+        ],
+        "ConflictActionList": [
+          {
+            "VEHICLE": {
+              "ActionArray": [
+                "MoveVehicleSeatPad",
+                "InteractInVehiclePad",
+                "ExitVehiclePad",
+                "DriverReloadPad",
+                "ToggleAutoAcceleratePad",
+                "VehicleMoveForwardPad"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+]
